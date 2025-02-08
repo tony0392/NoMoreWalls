@@ -147,9 +147,19 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- alterId: 0
+  cipher: auto
+  name: '14,15,38,39|台湾1-1A-GPT #1'
+  port: 45078
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bffafa07-d481-4a39-ab33-ff0ae050069d
 - cipher: chacha20-ietf-poly1305
-  name: '14,38|台湾 1-1A #1'
-  password: af1cf6c0-6043-49be-8161-f032c6b894b4
+  name: '14,38|台湾 1 #1'
+  password: c8ade5ee-ea5c-4f02-a18f-052a519c3fce
   port: 20032
   server: gy.666666222.shop
   type: ss
@@ -163,34 +173,10 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7772d8e6-dfdc-4193-819a-9ac62599f852
+  uuid: bffafa07-d481-4a39-ab33-ff0ae050069d
 - cipher: chacha20-ietf-poly1305
-  name: '14,38|台湾 1-1B #1'
-  password: 24702ac5-9a4d-482e-b67d-2da9d8735507
-  port: 20032
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '14,15,38,39|台湾1-1A-GPT #1'
-  port: 45078
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7772d8e6-dfdc-4193-819a-9ac62599f852
-- cipher: chacha20-ietf-poly1305
-  name: '14,38|台湾01-1B #1'
-  password: 24702ac5-9a4d-482e-b67d-2da9d8735507
-  port: 47564
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '14,38|台湾01-1A #1'
-  password: af1cf6c0-6043-49be-8161-f032c6b894b4
+  name: '14,38|台湾01 #1'
+  password: c8ade5ee-ea5c-4f02-a18f-052a519c3fce
   port: 47564
   server: gy.666666222.shop
   type: ss
@@ -204,7 +190,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 72ae4ca7-9f71-4db4-a1dd-8e4b65cc1931
+  uuid: 64f63a86-c666-46c6-812a-c54324af6d54
 - alterId: 0
   cipher: auto
   name: '15,39|台湾1-1B-GPT #1'
@@ -214,67 +200,53 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 72ae4ca7-9f71-4db4-a1dd-8e4b65cc1931
-- cipher: aes-128-gcm
-  name: 22|@MxlShare 台湾 | TWN
-  password: 8d204ccb-ca6f-43f3-bdeb-310d9eee3701
-  port: 12029
-  server: mdss-tw.04z3susick.download
-  type: ss
+  uuid: 64f63a86-c666-46c6-812a-c54324af6d54
 - cipher: aes-128-gcm
   name: 22|@MxlShare 台湾 | TWN 2
-  password: 8d204ccb-ca6f-43f3-bdeb-310d9eee3701
-  port: 12030
-  server: mdss-tw.04z3susick.download
-  type: ss
-- cipher: aes-128-gcm
-  name: 22|@MxlShare 台湾 | TWN 3
-  password: 8d204ccb-ca6f-43f3-bdeb-310d9eee3701
-  port: 12031
-  server: mdss-tw.04z3susick.download
-  type: ss
-- cipher: aes-128-gcm
-  name: 22|@MxlShare 台湾 | TWN 4
-  password: 8d204ccb-ca6f-43f3-bdeb-310d9eee3701
+  password: 703a28b4-26a0-412a-a663-bccd1ad402a7
   port: 12032
   server: mdss-tw.04z3susick.download
   type: ss
 - cipher: aes-128-gcm
-  name: 22|@MxlShare 台湾 | TWN 5
-  password: 8d204ccb-ca6f-43f3-bdeb-310d9eee3701
-  port: 12033
+  name: 22|@MxlShare 台湾 | TWN 3
+  password: 703a28b4-26a0-412a-a663-bccd1ad402a7
+  port: 12031
   server: mdss-tw.04z3susick.download
   type: ss
-- name: 47|TW台湾(mibei77.com 米贝节点分享)
-  password: wb6368
-  port: 443
-  server: 103.137.63.3
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 47|TW台湾(mibei77.com 米贝节点分享) 3
-  password: Aimer
-  port: 443
-  server: 103.137.63.3
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: '61|台湾1 #2'
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: tw1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: '61|台湾2 #2'
+- name: '31,61|台湾2 #2'
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 1443
   server: twmoon1-cdn-route.couldflare-cdn.com
   skip-cert-verify: false
+  sni: twmoon1-cdn-route.couldflare-cdn.com
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: '31,61|台湾1 #2'
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: tw1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: tw1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: 31,64|🇹🇼 广港•台湾262•高速 - 飞翔吧
+  password: 4aa29a1f-360f-35fd-a48e-dc976d1f14b2
+  port: 36821
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z262.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 33|🇹🇼 台湾|TW02
+  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
+  port: 35805
+  server: 1w91dj53mb3tjunfqy7q3bdu1fo0sged.08.02.tw.88k.site
+  tfo: false
+  type: ss
 - name: 61|台湾4
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
@@ -307,7 +279,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 007d913b-eb90-3a5c-a7f8-5f9d93774bc9
+  uuid: 569053ac-300d-3d77-b531-a369cdd4bbda
   ws-opts:
     headers:
       Host: 19.mamamajd.site

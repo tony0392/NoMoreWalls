@@ -1,19 +1,25 @@
 proxies:
 - alterId: 0
   cipher: auto
-  delay: 1246
-  name: 2,9,19,25,28,59|德国 - Frankfurt Am Main - Hetzn...
+  country: 🇺🇸US
+  delay: 1687
+  h2-opts: {}
+  http-opts: {}
+  name: 2,19,59|德国 - 兰河畔林堡 - OVH SAS - 1
   network: ws
-  port: 2083
-  server: 91.107.166.68
-  skip-cert-verify: false
+  port: 80
+  server: 151.101.130.133
+  servername: telegram-isvvpn.ir
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 5016d935-aacb-4ac3-987c-a306afeed4c4
+  uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
   ws-opts:
-    path: /
+    headers:
+      HOST: telegram-isvvpn.ir
+    path: /racevpn?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
 - cipher: aes-256-cfb
-  delay: 2835
+  delay: 2205
   name: 2,9,19,28,59,73|SSR--NF解锁丹麦自制剧-ChatGPT-TikTok-...
   obfs: plain
   obfs-param: ''
@@ -23,9 +29,16 @@ proxies:
   protocol-param: ''
   server: 185.186.79.53
   type: ssr
+- cipher: aes-256-cfb
+  delay: 2538
+  name: '2,19,25,59,62|FI-37.143.129.230-4603 | 4.873... #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.143.129.230
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '4,21|🇩🇪 德国-1B #2'
+  name: '4,21|🇩🇪 德国-1A #2'
   network: ws
   port: 443
   server: visa.com
@@ -39,7 +52,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '4,21|🇩🇪 德国-1A #2'
+  name: '4,21|🇩🇪 德国-1B #2'
   network: ws
   port: 443
   server: visa.com
@@ -60,6 +73,17 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
+- alterId: 0
+  cipher: auto
+  name: '9,28|🇩🇪 德国 - Frankfurt Am Main - He... #1'
+  network: ws
+  port: 2083
+  server: 91.107.166.68
+  tls: false
+  type: vmess
+  uuid: 5016d935-aacb-4ac3-987c-a306afeed4c4
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: '10,29|🇩🇪 德国-1B #3'
@@ -177,11 +201,11 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- cipher: rc4-md5
-  name: 22,25,30,62|🇬🇧GB-169.150.210.233-0465 | 19...
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 169.150.210.233
+- cipher: aes-128-gcm
+  name: 22|@MxlShare 德国 | DEU 2
+  password: 0de787c5-575f-477c-98a6-2b2ce94709a9
+  port: 49206
+  server: south.sf0jm.xyz
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 25,62,65,73|SS-国-NF解锁大自制剧-ChatGPT-TikTok-Y...
@@ -190,14 +214,14 @@ proxies:
   server: 185.177.229.245
   type: ss
 - cipher: rc4-md5
-  name: 25,30,62|🇩🇪DE-193.108.119.230-0530 | 8....
+  name: '25,30,62|🇩🇪DE-193.108.119.230-0530 | 8.... #1'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
   type: ss
 - alterId: 0
   cipher: auto
-  name: 25,30,62|🇩🇪DE-57.129.24.125-8444 | 19.5...
+  name: '25,30,62|🇩🇪DE-57.129.24.125-8444 | 19.5... #1'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -211,7 +235,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25,30,62|🇩🇪DE-57.129.24.141-5734 | 15.9...
+  name: '25,30,62|🇩🇪DE-57.129.24.141-5734 | 15.9... #1'
   network: ws
   port: 443
   server: 57.129.24.141
@@ -222,27 +246,21 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: 25|🇩🇪DE-80.92.204.106-5350 | 18.8...
-  password: a3GFYt36Sm82Vys9
-  port: 9000
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 25|🇩🇪DE-80.92.204.106-5368 | 17.9...
-  password: TN2YqghxeFDKZfLU
-  port: 9037
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 25,62|🇩🇪DE-80.92.204.106-1390 | 2.71...
+  name: '25,62|🇩🇪DE-80.92.204.106-1390 | 2.71... #1'
   password: c3NtHJ5ujV2tGDfj
   port: 9084
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
-  name: 25|🇩🇪DE-80.92.204.106-5560 | 11.3...
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
+  name: '25,62|🇩🇪DE-80.92.204.106-5538 | 3.86... #1'
+  password: BejrQvtu9sqUeNuZ
+  port: 9024
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: '25,62|🇩🇪DE-80.92.204.106-5539 | 3.64... #1'
+  password: ZET59LF6DvCC8KVt
+  port: 9005
   server: 80.92.204.106
   type: ss
 - name: 30|🇩🇪DE-165.22.74.230-0453 | 23.6...
@@ -263,6 +281,466 @@ proxies:
   port: 1443
   server: de1.opensocks.site
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 4
+  network: ws
+  port: 443
+  server: visa.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 506063ef-d307-40e5-8846-b1f7006349a6
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 6
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 649793bc-ced5-47de-a042-0693c06ab87c
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 7
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a68403a8-5266-45cf-9c3d-d3e7bf3375b5
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 9
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ff76b52f-21e8-485f-87b5-4ff185c0580d
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 14
+  network: ws
+  port: 443
+  server: visa.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 08b6fb01-f520-46f1-a7ac-24990174c225
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 16
+  network: ws
+  port: 443
+  server: visa.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5198ac49-27de-42e4-acff-0a495e4f086c
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 17
+  network: ws
+  port: 443
+  server: visa.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a68403a8-5266-45cf-9c3d-d3e7bf3375b5
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 20
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 67507895-4104-40e8-968e-7ae8bbc5cf2b
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 21
+  network: ws
+  port: 443
+  server: visa.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2fca5d1b-ac54-49b2-a326-08feda03cfad
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 22
+  network: ws
+  port: 443
+  server: visa.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 649793bc-ced5-47de-a042-0693c06ab87c
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 23
+  network: ws
+  port: 443
+  server: visa.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 67507895-4104-40e8-968e-7ae8bbc5cf2b
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 26
+  network: ws
+  port: 443
+  server: visa.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ff76b52f-21e8-485f-87b5-4ff185c0580d
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 29
+  network: ws
+  port: 443
+  server: visa.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e35d4dbd-94c1-4493-9ef7-069961909585
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 30
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e35d4dbd-94c1-4493-9ef7-069961909585
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 31
+  port: 54787
+  server: i.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3a575788-9436-469b-8c09-b0f7b08216f8
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 32
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4626324b-d53c-43fe-8b44-4c862bbed9e7
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 33
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 49a11654-7dc7-44de-98e0-546ab2aa8fe0
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 35
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d902ab38-d8fb-4c7b-9e0d-e043dac90ac5
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 38
+  network: ws
+  port: 443
+  server: visa.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: eb34e175-5fad-4e88-bcc6-c236eabcc6ec
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 40
+  network: ws
+  port: 443
+  server: visa.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4626324b-d53c-43fe-8b44-4c862bbed9e7
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 41
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00c8b731-e779-4583-956f-bee05c198149
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 43
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 08b6fb01-f520-46f1-a7ac-24990174c225
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 45
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 506063ef-d307-40e5-8846-b1f7006349a6
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 47
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e0eba9e-82a0-4423-b089-8c19a526444e
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 48
+  network: ws
+  port: 443
+  server: visa.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e0eba9e-82a0-4423-b089-8c19a526444e
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 49
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  udp: true
+  uuid: eb34e175-5fad-4e88-bcc6-c236eabcc6ec
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 50
+  network: ws
+  port: 443
+  server: visa.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d902ab38-d8fb-4c7b-9e0d-e043dac90ac5
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 51
+  network: ws
+  port: 443
+  server: visa.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00c8b731-e779-4583-956f-bee05c198149
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 52
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2fca5d1b-ac54-49b2-a326-08feda03cfad
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 55
+  network: ws
+  port: 443
+  server: visa.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 49a11654-7dc7-44de-98e0-546ab2aa8fe0
+  ws-opts:
+    headers:
+      Host: go.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇩🇪 德国 | DEU 56
+  network: ws
+  port: 23451
+  server: frankfurt.faforex.eu.org
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5198ac49-27de-42e4-acff-0a495e4f086c
+  ws-opts:
+    headers:
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
 - name: 41|🇩🇪DE_214
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
@@ -279,18 +757,6 @@ proxies:
   type: vmess
   uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4
   ws-opts: {}
-- cipher: aes-256-cfb
-  name: 62|🇩🇪DE-80.92.204.106-5538 | 3.86...
-  password: BejrQvtu9sqUeNuZ
-  port: 9024
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 62|🇩🇪DE-80.92.204.106-5539 | 3.64...
-  password: ZET59LF6DvCC8KVt
-  port: 9005
-  server: 80.92.204.106
-  type: ss
 - alterId: 0
   cipher: auto
   name: 64|【高级】🇪德国 - 滑梯云
@@ -316,7 +782,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: cdc6a646-63b2-3fb2-af66-f27d61b97a56
+  uuid: f2c3143c-fab1-36d1-bcff-f78624a7733a
   ws-opts:
     headers:
       Host: 16.mamamajd.site
@@ -331,7 +797,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: cdc6a646-63b2-3fb2-af66-f27d61b97a56
+  uuid: f2c3143c-fab1-36d1-bcff-f78624a7733a
   ws-opts:
     headers:
       Host: 18.mamamajd.site

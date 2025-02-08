@@ -123,7 +123,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '25,30,62|🇨🇦CA-134.195.198.147-8297 | 29... #1'
+  name: 25,30,62|🇨🇦CA-134.195.198.147-8431 | 20...
   network: ws
   port: 443
   server: 134.195.198.147
@@ -136,26 +136,26 @@ proxies:
       Host: inna.cfd
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '25,30,62|🇨🇦CA-142.4.216.225-0535 | 24.2... #1'
+  name: 25,30,62|🇨🇦CA-142.4.216.225-0493 | 14.6...
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '25,30,62|🇨🇦CA-142.4.216.225-0547 | 26.1... #1'
+  name: 25,30,62|🇨🇦CA-142.4.216.225-0502 | 7.70...
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
 - cipher: aes-128-gcm
-  name: '25,30,62|🇨🇦CA-149.22.95.183-0427 | 30.0... #1'
+  name: 25,30,62|🇨🇦CA-149.22.95.183-0378 | 100....
   password: shadowsocks
   port: 443
   server: 149.22.95.183
   type: ss
 - alterId: 0
   cipher: auto
-  name: '25,30,62|🇨🇦CA-23.162.200.227-8299 | 35.... #1'
+  name: 25,30,62|🇨🇦CA-23.162.200.227-8473 | 26....
   network: ws
   port: 443
   server: 23.162.200.227
@@ -166,10 +166,16 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '25,30,62|🇨🇦CA-79.127.233.170-0432 | 62.... #1'
+  name: 25,30,62|🇨🇦CA-79.127.233.170-0383 | 71....
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 31|🇨🇦1 |  5.0MB/s
+  password: db0a527d-6969-4f0b-aa4d-cf84e423da17
+  port: 30104
+  server: vip.baima360.com
   type: ss
 - cipher: aes-256-cfb
   name: 32|🇨🇦 CA, Vancouver
@@ -185,44 +191,14 @@ proxies:
   server: 70luslivsskpwm855plfjwgt5h2atwvf.08.01.ca.88k.site
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 37|🇨🇦 加拿大 | CAN
-  port: 45112
-  server: qd.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c30677f1-4166-415b-88ce-67a8649593c0
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 37|🇨🇦 加拿大 | CAN 2
-  port: 45064
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 83ff4ffb-2b5e-4add-b737-3543ec6f35a7
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 37|🇨🇦 加拿大 | CAN 3
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 83ff4ffb-2b5e-4add-b737-3543ec6f35a7
-- name: 41|🇨🇦CA_204
+- name: 41|🇨🇦CA_196
   password: acfef609-b3c7-4e52-b292-8921d5fca90d
   port: 443
   server: 91.194.11.168
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 42|🇨🇦 CA_202
+  name: 42|🇨🇦 CA_194
   network: ws
   port: 443
   server: 68.168.31.196
@@ -247,11 +223,11 @@ proxies:
   uuid: 474e8680-701f-11ee-b436-205c6d5f5d78
   ws-opts:
     path: /
-- name: 65|CA-35.183.169.192-028
+- name: 62|🇨🇦CA-52.60.107.221-6278 | 37.1...
   password: telegram-id-directvpn
   port: 22222
-  server: 35.183.169.192
-  skip-cert-verify: true
+  server: 52.60.107.221
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
@@ -284,17 +260,9 @@ proxies:
     headers:
       HOST: ovhwuxian.pai50288.uk
     path: /
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 73|VMESS-未知>加拿大-NF解锁加拿大自制剧-ChatGP...
-  network: ws
-  port: 443
-  server: ca0.899994.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-  ws-opts:
-    path: /index
+- cipher: chacha20-ietf-poly1305
+  name: 73|SS-加拿大-NF解锁加拿大自制剧-ChatGPT-TikT...
+  password: ODZmZ
+  port: 8388
+  server: ca1.ssocks.wiki
+  type: ss

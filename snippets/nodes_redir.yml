@@ -506,16 +506,21 @@ proxies:
   server: a.naiun.node-is.green
   type: ss
   udp: true
-- cipher: auto
+- alterId: 0
+  cipher: auto
   ip-version: dual
-  name: 48,74|🇺🇸_US_美国->🇩🇪_DE_德国_2
+  name: 48,65,74|🇺🇸_US_美国->🇩🇪_DE_德国_2
   network: ws
   port: 80
   server: plex.com
   servername: telegram-isvvpn.ir
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
+  ws-headers:
+    Host: telegram-isvvpn.ir
+  ws-path: /racevpn?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
 - ip-version: dual
   name: '48,49,58,74|🇮🇪_IE_爱尔兰->🇺🇸_US_美国 #1'
   network: tcp
@@ -980,14 +985,6 @@ proxies:
   server: gy.58n.net
   skip-cert-verify: true
   sni: x83.flybar.work
-  type: trojan
-  udp: true
-- name: 64|🇭🇰 中转•香港102•高速 - 飞翔吧
-  password: 2aa6d924-bc53-31e3-a445-04853540dc9b
-  port: 43337
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z102.hongkongnode.top
   type: trojan
   udp: true
 - name: 64|🇭🇰 中转•香港307•高速 - 飞翔吧

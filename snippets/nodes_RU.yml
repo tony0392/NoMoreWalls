@@ -1,13 +1,12 @@
 proxies:
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '0,3,20,23,51,52,55,56,65,68,69,70|🇷🇺 俄罗斯|@ripaojiedian #3'
+  name: '0,3,20,23,51,55,56,65,68,69,70|🇷🇺 俄罗斯|@ripaojiedian #3'
   password: 1T5BLKXJ0M1WF2W4
   port: 20002
   server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   delay: 1644
@@ -258,34 +257,35 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '25,30,62|🇷🇺RU-45.151.62.54-5702 | 29.44... #1'
+  name: 25,30|🇷🇺RU-45.151.62.54-0560 | 13.66...
   password: 0zyDRZ1XmNXaaCAN7KEA8a
   port: 28825
   server: 45.151.62.54
   type: ss
-- name: 41|🇷🇺RU_389
-  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
-  port: 443
-  server: 194.246.114.54
-  type: trojan
-- name: 41|🇷🇺RU_390
+- name: 41|🇷🇺RU_382
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 45|俄罗斯 V2CROSS.COM
-  network: ws
-  port: 20313
-  server: 195.58.49.42
-  tls: false
-  type: vmess
-  uuid: c2775cff-cd2d-4903-ac5f-35eb30479dff
+- name: 41|🇷🇺RU_383
+  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
+  port: 443
+  server: 194.246.114.54
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 45|俄罗斯新西伯利亚+justhost.ru
+  network: tcp
+  password: '@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven'
+  port: 8443
+  server: 195.133.52.153
+  sni: ru2.asc-sam.io
+  type: trojan
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: ru2.asc-sam.io
 - cipher: aes-256-cfb
   name: '46,57|🇺_RU_ #1'
   password: TN2YqghxeFDKZfLU
@@ -351,21 +351,12 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 52|[SS] 🇷🇺 俄罗斯 V2CROSS.COM
+  name: 52,65|🇳🇱NL-185.242.86.156-019
   password: 36ZCHeabUSfKjfQEvJ4HDV
   port: 54170
   server: 185.242.86.156
   tfo: false
   type: ss
-  udp: true
-- name: 52|[Trojan] 🇷🇺 俄罗斯新西伯利亚 justhost....
-  password: '%40NoForcedHeaven%40NoForcedHeaven%40NoForcedHeaven%40NoForcedHeaven%40NoForcedHeaven'
-  port: 8443
-  server: 195.133.52.153
-  skip-cert-verify: true
-  sni: ru2.asc-sam.io
-  tfo: false
-  type: trojan
   udp: true
 - alterId: 0
   cipher: auto

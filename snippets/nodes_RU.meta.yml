@@ -1,12 +1,13 @@
 proxies:
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '0,3,20,23,51,55,56,65,68,69,70|🇷🇺 俄罗斯|@ripaojiedian #3'
+  name: '0,3,20,23,51,52,55,56,65,68,69,70|🇷🇺 俄罗斯|@ripaojiedian #3'
   password: 1T5BLKXJ0M1WF2W4
   port: 20002
   server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   delay: 1644
@@ -100,19 +101,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '4,21|🇷🇺 俄罗斯-圣彼得堡-015-1C #2'
-  network: ws
-  port: 20313
-  server: 195.58.49.42
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 53058452-344f-4697-8e75-6aaecb3863fb
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '4,21|🇷🇺 俄罗斯-圣彼得堡-015-1A #2'
+  name: '4,21|🇷🇺 俄罗斯-圣彼得堡-015-1D #1'
   network: ws
   port: 20313
   server: 195.58.49.42
@@ -131,19 +120,19 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 4091256d-54cb-46c7-87fa-3f6475fb9ab0
+  uuid: 16fb8509-ac22-4d9c-b17f-f28f29f0d56e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '4,21|🇷🇺 俄罗斯-圣彼得堡-015-1D #1'
+  name: '4,21|🇷🇺 俄罗斯-圣彼得堡-015-1C #2'
   network: ws
   port: 20313
   server: 195.58.49.42
   tls: false
   type: vmess
   udp: true
-  uuid: 487f26d3-cebc-4dea-8fc8-acd17db0bb5b
+  uuid: 53058452-344f-4697-8e75-6aaecb3863fb
   ws-opts:
     path: /
 - alterId: 0
@@ -155,7 +144,19 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 16fb8509-ac22-4d9c-b17f-f28f29f0d56e
+  uuid: 4091256d-54cb-46c7-87fa-3f6475fb9ab0
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '4,21|🇷🇺 俄罗斯-圣彼得堡-015-1A #2'
+  network: ws
+  port: 20313
+  server: 195.58.49.42
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 487f26d3-cebc-4dea-8fc8-acd17db0bb5b
   ws-opts:
     path: /
 - alterId: 0
@@ -262,39 +263,29 @@ proxies:
   port: 28825
   server: 45.151.62.54
   type: ss
-- auth: 7ee32f14-b07b-4a5c-8417-af90530f06e4
-  client-fingerprint: chrome
-  name: 31|🇷🇺1 |  3.5MB/s
-  password: 7ee32f14-b07b-4a5c-8417-af90530f06e4
-  port: 32548
-  server: 94.159.107.80
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
 - name: 41|🇷🇺RU_389
-  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
-  port: 443
-  server: hk-full.privateip.net
-  type: trojan
-- name: 41|🇷🇺RU_390
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: 194.246.114.54
   type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: 45|俄罗斯新西伯利亚+justhost.ru
-  network: tcp
-  password: '@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven'
-  port: 8443
-  server: 195.133.52.153
-  sni: ru2.asc-sam.io
+- name: 41|🇷🇺RU_390
+  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
+  port: 443
+  server: hk-full.privateip.net
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 45|俄罗斯 V2CROSS.COM
+  network: ws
+  port: 20313
+  server: 195.58.49.42
+  tls: false
+  type: vmess
+  uuid: c2775cff-cd2d-4903-ac5f-35eb30479dff
   ws-opts:
     headers:
-      Host: ru2.asc-sam.io
+      Host: ''
+    path: /
 - cipher: aes-256-cfb
   name: '46,57|🇺_RU_ #1'
   password: TN2YqghxeFDKZfLU
@@ -372,6 +363,14 @@ proxies:
   sni: www.bing.com
   type: hysteria
   up: 11 Mbps
+- cipher: chacha20-ietf-poly1305
+  name: 52|[SS] 🇷🇺 俄罗斯 V2CROSS.COM
+  password: 36ZCHeabUSfKjfQEvJ4HDV
+  port: 54170
+  server: 185.242.86.156
+  tfo: false
+  type: ss
+  udp: true
 - name: 52|[Trojan] 🇷🇺 俄罗斯新西伯利亚 justhost....
   password: '%40NoForcedHeaven%40NoForcedHeaven%40NoForcedHeaven%40NoForcedHeaven%40NoForcedHeaven'
   port: 8443

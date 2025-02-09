@@ -7,13 +7,11 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
   name: 23,51,65|🇨🇳CN-45.250.184.183-158
   password: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
   port: 6181
   server: 45.250.184.183
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: ss
 - cipher: aes-256-gcm
@@ -47,7 +45,7 @@ proxies:
   server: qh62onjn.slashdevslashnetslashtun.net
   type: ss
 - cipher: aes-256-gcm
-  name: 23,51,57,65|🇨🇳CN-113.99.142.172-159
+  name: 23,57,65|🇨🇳CN-113.99.142.172-159
   password: 866J4U7A62Y3BA7D
   port: 17003
   server: 8tv68qhq.slashdevslashnetslashtun.net
@@ -65,7 +63,7 @@ proxies:
   server: 183.61.177.234
   type: ss
 - cipher: aes-256-gcm
-  name: 23,51,65|🇨🇳CN-183.61.177.234-160
+  name: 23,65|🇨🇳CN-183.61.177.234-160
   password: 8RS3Y3L50W6YNV8V
   port: 18004
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -83,7 +81,7 @@ proxies:
   server: w72tapyb.slashdevslashnetslashtun.net
   type: ss
 - cipher: aes-256-gcm
-  name: 23,51,65|🇨🇳CN-183.61.177.234-152
+  name: 23,65|🇨🇳CN-183.61.177.234-152
   password: 8UB3I39KM113QT9N
   port: 18002
   server: 183.61.177.234
@@ -136,10 +134,10 @@ proxies:
   country: 🇨🇳CN
   h2-opts: {}
   http-opts: {}
-  name: 42,44,51|🟡_🇨🇳_💼_github.com/Ruk1ng001_31...
+  name: 42,44,51|🟡_🇨🇳_📶_github.com/Ruk1ng001_63...
   network: tcp
-  port: 50002
-  server: 47.104.186.133
+  port: 50004
+  server: 112.132.212.19
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -150,10 +148,10 @@ proxies:
   country: 🇨🇳CN
   h2-opts: {}
   http-opts: {}
-  name: 42,44,51|🟡_🇨🇳_📶_github.com/Ruk1ng001_63...
+  name: 42,44,51|🟡_🇨🇳_💼_github.com/Ruk1ng001_31...
   network: tcp
-  port: 50004
-  server: 112.132.212.19
+  port: 50002
+  server: 47.104.186.133
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -165,18 +163,19 @@ proxies:
   port: 3684
   server: jsyd.piaomiaoxu.net
   type: ss
-- name: 51|❓_🇨🇳_📶_github.com/Ruk1ng001_37...
-  password: 90c0bc87-d7dd-4233-9b1a-cc9e7cf30649
-  port: 23010
-  server: 120.233.171.82
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  name: 51|🟡_🇨🇳_📶_github.com/Ruk1ng001_61...
+  network: ws
+  password: ouo
+  port: 443
+  server: 103.44.255.81
+  skip-cert-verify: false
+  sni: tr.koxok.us.kg
   type: trojan
-- cipher: aes-128-gcm
-  name: 51|🟡_🇨🇳_💼_github.com/Ruk1ng001_38...
-  password: 90c0bc87-d7dd-4233-9b1a-cc9e7cf30649
-  port: 22027
-  server: 14.152.45.237
-  type: ss
+  ws-opts:
+    headers:
+      Host: tr.koxok.us.kg
+    path: /?ed=2560
 - alterId: 64
   cipher: auto
   name: 51|🟡_🇨🇳_📶_github.com/Ruk1ng001_34...
@@ -186,55 +185,22 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 51|❓_🇨🇳_📶_github.com/Ruk1ng001_33...
-  port: 44614
-  server: 120.198.71.219
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: '51|❓_🇨🇳_📶_github.com/Ruk1ng001_32... #2'
-  network: tcp
-  port: 45402
-  server: 120.232.153.123
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-cfb
+  name: 51|❓_🇨🇳_📶_github.com/Ruk1ng001_31...
+  password: hGkQ6915tD
+  port: 15084
+  server: 120.232.81.50
+  type: ss
+  udp: true
 - ip-version: dual
-  name: 51|🟡_🇨🇳_💼_github.com/Ruk1ng001_63...
+  name: 51,52|[Trojan] 🇨🇳 广东省广州市白云区 电信
   password: 20a84ebf-9341-4f5f-8245-3975e2fdeee5
   port: 21019
   server: 219.135.231.205
   skip-cert-verify: true
+  tfo: false
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 51|❓_🇨🇳_📶_github.com/Ruk1ng001_65...
-  password: f175d66f-7cf5-47aa-83be-a8e969cdbe2d
-  port: 40000
-  server: 120.232.218.174
-  type: ss
-- name: 51|🟡_🇨🇳_💼_github.com/Ruk1ng001_35...
-  password: 90c0bc87-d7dd-4233-9b1a-cc9e7cf30649
-  port: 23000
-  server: 14.152.45.229
-  skip-cert-verify: true
-  type: trojan
-- name: '51|🟡_🇨🇳_💼_github.com/Ruk1ng001_31... #1'
-  password: 90c0bc87-d7dd-4233-9b1a-cc9e7cf30649
-  port: 23014
-  server: 14.152.45.229
-  skip-cert-verify: true
-  type: trojan
 - cipher: aes-256-cfb
   name: '55,56|1|_CN_ #1'
   password: hGkQ6915tD
@@ -379,37 +345,35 @@ proxies:
   server: southvip1.pkyun.xyz
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '65,68,69|0|🇦2 |  2.4MB/s #1'
+  name: 65|🇳CN-120.232.81.100-064
   password: 9edd1908-b7f2-4791-ba78-62a43310c9ab
   port: 10683
   server: vip.baima360.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '65,68,69|0|🇺2 |  1.4MB/s #1'
+  name: 65|🇨🇳CN-120.232.81.100-071
   password: 9edd1908-b7f2-4791-ba78-62a43310c9ab
   port: 36511
   server: vip.baima360.com
   type: ss
-- name: '65,68,69|0|🇵1 |  1.4MB/s #1'
+- name: 65|🇨🇳CN-111.47.212.170-074
   password: 7d78b611-d26a-3828-ac5a-5f5ed29efeda
   port: 20300
   server: gy.58n.net
   skip-cert-verify: true
   sni: z300.hongkongnode.top
-  tfo: true
   type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '65,68,69|0|🇦1 |  4.9MB/s #1'
+  name: 65|🇨🇳CN-120.232.81.100-077
   password: 9edd1908-b7f2-4791-ba78-62a43310c9ab
   port: 30104
   server: vip.baima360.com
   type: ss
-- name: '65,68,69|15|speednode_0011 #1'
+- name: 65|🇨🇳CN-223.113.54.230-118
   password: 7cd29891-fe78-4f8f-8844-abb31b9d9a75
   port: 18147
   server: nb_ae7a7.kaiqsz.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: mm2.redapricotcloud.com
   type: trojan
 - name: 65|🇨🇳CN-42.236.73.72-121
@@ -450,12 +414,6 @@ proxies:
   password: b73cfaeb-387d-480c-95e0-20f1c3fac2c3
   port: 18522
   server: hkg-02.baiducdn.icu
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 65|🇨🇳CN-171.111.197.110-164
-  password: a422f6de-f257-49d4-b4cf-1254fb9eb39e
-  port: 30003
-  server: gdgs.tarioblink.me
   type: ss
 - cipher: chacha20-ietf
   name: 71|CN_0002

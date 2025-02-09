@@ -1,11 +1,13 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   delay: 1629
-  name: 17,24,41,45,53,117,150|SS-加拿大-NF解锁加拿大自制剧-TikTok-YouTu...
+  ip-version: dual
+  name: 17,24,41,45,53,97,117,150|SS-加拿大-NF解锁加拿大自制剧-TikTok-YouTu...
   password: ODZmZ
   port: 8388
   server: 146.19.106.5
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 21|🇨🇦 加拿大2
@@ -155,14 +157,13 @@ proxies:
       Host: inna.cfd
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇦CA
-  name: 47,55,68,78,126|🇨🇦CA-142.4.216.225-0493 | 11.9...
+  name: 47,55,78,126|🇨🇦CA-142.4.216.225-0493 | 11.9...
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 47,55,68,126|🇨🇦CA-142.4.216.225-0502 | 7.89...
+  name: 47,55,126|🇨🇦CA-142.4.216.225-0502 | 7.89...
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
@@ -199,8 +200,7 @@ proxies:
   server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇹 IT
-  name: '55,68,126|🇨🇦CA-185.213.20.227-5831 | 1.1... #1'
+  name: '55,126|🇨🇦CA-185.213.20.227-5831 | 1.1... #1'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.213.20.227
@@ -221,32 +221,50 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  country: 🇦 CA
-  h2-opts: {}
-  http-opts: {}
-  name: 68|🇦 CA_197
-  network: ws
-  port: 443
-  server: 68.168.31.196
-  servername: 68.168.31.196
-  skip-cert-verify: true
-  tls: true
+  client-fingerprint: chrome
+  name: 62|🇨🇦 加拿大 | CAN
+  port: 45065
+  server: xdd.dashuai.cyou
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: 68.168.31.196
-  ws-path: /linkvws
-- country: 🇨🇦CA
-  name: 68,70|🇨🇦CA_199
+  udp: true
+  uuid: 0288858d-1818-4d52-a323-a2323984a7bd
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 62|🇨🇦 加拿大 | CAN 2
+  port: 45064
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0288858d-1818-4d52-a323-a2323984a7bd
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 62|🇨🇦 加拿大 | CAN 3
+  port: 45112
+  server: qd.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bd1dcacd-61f6-4587-bdaa-f326958aad5a
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 62|🇨🇦 加拿大 | CAN 4
+  password: cc7e4b23-80b9-4d8e-a65f-2599d9a03749
+  port: 58809
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- name: 70|🇨🇦CA_203
   password: acfef609-b3c7-4e52-b292-8921d5fca90d
   port: 443
   server: 91.194.11.168
-  skip-cert-verify: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 71|🇨🇦 CA_197
+  name: 71|🇨🇦 CA_201
   network: ws
   port: 443
   server: 68.168.31.196
@@ -396,14 +414,6 @@ proxies:
   port: 443
   server: 38.111.114.133
   type: ss
-- name: 97|🟡_🇨🇦_💻_github.com/Ruk1ng001_65...
-  password: xjtZ2S5FgQ
-  port: 443
-  server: 149.248.54.233
-  skip-cert-verify: true
-  tfo: false
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 100|[VMess] 🇨🇦 _CA_加拿大
@@ -457,19 +467,6 @@ proxies:
     headers:
       Host: 100-110-239-147.s2.cn-db.top
     path: /dabai.in172.67.81.78
-- alterId: 0
-  cipher: auto
-  name: '105,106|加拿大 004 #1'
-  network: ws
-  port: 2082
-  server: s1.db-link01.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-39-195-198.s1.db-link01.top
-    path: /dabai.in104.16.26.37
 - alterId: 0
   cipher: auto
   name: '105,106|加拿大 005 #1'

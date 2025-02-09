@@ -475,20 +475,20 @@ proxies:
       Host: download.windowsupdate.com
     path: /download
 - cipher: aes-128-gcm
-  name: '46,57|_CN_国->🇺🇸_US_美国 #1'
+  name: 46|_CN_国->🇺🇸_US_美国
   password: 5911d36c-530a-40d6-b31c-505f238ca313
   port: 49216
   server: south.sf0jm.xyz
   type: ss
 - cipher: aes-128-gcm
-  name: 46,57|🇳_CN_中国->🇺🇸_US_美国_1
+  name: 46|🇨🇳_CN_中国->🇺🇸_US_美国_1
   password: 5911d36c-530a-40d6-b31c-505f238ca313
   port: 49227
   server: south.sf0jm.xyz
   type: ss
 - alterId: 2
   cipher: auto
-  name: '46,57|🇨🇳_CN_中国->🇺🇸_US_美国_2 #1'
+  name: 46|🇨🇳_CN_中国->🇺🇸_US_美国_2
   network: ws
   port: 23613
   server: 13.mamamajd.site
@@ -500,7 +500,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   ip-version: dual
-  name: '46,48,49,57,58,74|🇨🇳_CN_中国->🇮🇷_IR_伊朗 #1'
+  name: '46,48,49,58,74|🇨🇳_CN_中国->🇮🇷_IR_伊朗 #1'
   password: 9ffcf7da-fc63-450a-b586-7416558075c9
   port: 51105
   server: a.naiun.node-is.green
@@ -806,6 +806,60 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: '57,73|VMESS-美国>德国-NF解锁德国自制剧-ChatGPT-... #2'
+  network: ws
+  port: 80
+  server: 151.101.0.155
+  servername: telegram-isvvpn.ir
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
+  ws-opts:
+    headers:
+      HOST: telegram-isvvpn.ir
+    path: /racevpn
+- name: 57|🇺🇸_US_美国->🇦_UA_乌克兰
+  password: telegram-id-directvpn
+  port: 22222
+  server: 98.82.252.171
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 57|🇺🇸_US_美国->🇳_CN_中国_1
+  network: ws
+  port: 80
+  server: www.speedtest.net
+  type: vmess
+  uuid: e6afaf50-e32d-11ef-b534-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: us-21.hihu.net
+    path: /
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: 57,73|VMESS-美国>德国-ChatGPT-TikTok-You...
+  network: ws
+  port: 80
+  server: 151.101.194.133
+  servername: telegram-isvvpn.ir
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
+  ws-opts:
+    headers:
+      HOST: telegram-isvvpn.ir
+    path: /racevpn?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
 - name: 64|🇸🇬 中转•新加坡299•高速 - 飞翔吧
   password: 7d78b611-d26a-3828-ac5a-5f5ed29efeda
   port: 20299
@@ -852,14 +906,6 @@ proxies:
   server: gy.58n.net
   skip-cert-verify: true
   sni: x100.flybar.work
-  type: trojan
-  udp: true
-- name: 64|🇼 中转•台湾91•原生 - 飞翔吧
-  password: 7d78b611-d26a-3828-ac5a-5f5ed29efeda
-  port: 21247
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x91.flybar.work
   type: trojan
   udp: true
 - name: 64|🇸 中转•美国295•高速 - 飞翔吧

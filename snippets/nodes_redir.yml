@@ -431,7 +431,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 13|🇯🇵 No.193_JP_x1.50_广日隧道->Onevp...
+  name: '13,36|🇯🇵 No.193_JP_x1.50_广日隧道->Onevp... #1'
   network: ws
   port: 36101
   server: 120.82.70.149
@@ -446,7 +446,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 13|🇭🇰 No.397_SG_x1.50_皖港->GR_新加坡[...
+  name: '13,36|🇭🇰 No.397_SG_x1.50_皖港->GR_新加坡[... #1'
   network: ws
   port: 14954
   server: 91.200.242.187
@@ -461,7 +461,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 13|🇯🇵 No.113_JP_x0.50_江西联通->未填写商家...
+  name: '13,36|🇯🇵 No.113_JP_x0.50_江西联通->未填写商家... #1'
   network: ws
   port: 1552
   server: nas.ruyo.in
@@ -500,7 +500,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   ip-version: dual
-  name: '46,48,49,58,74|🇨🇳_CN_中国->🇮🇷_IR_伊朗 #1'
+  name: 46,48,49,74|🇨🇳_CN_中国->🇮🇷_IR_伊朗
   password: 9ffcf7da-fc63-450a-b586-7416558075c9
   port: 51105
   server: a.naiun.node-is.green
@@ -517,7 +517,7 @@ proxies:
   type: vmess
   uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
 - ip-version: dual
-  name: '48,49,58,74|🇮🇪_IE_爱尔兰->🇺🇸_US_美国 #1'
+  name: 48,49,74|🇮🇪_IE_爱尔兰->🇺🇸_US_美国
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -1012,6 +1012,22 @@ proxies:
     headers:
       HOST: telegram-isvvpn.ir
     path: /racevpn?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 58|🇺🇸_US_美国->🇨🇳_CN_中国
+  password: amazonskr05
+  port: 443
+  server: 54.213.141.30
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  ip-version: dual
+  name: 58,72|speednode_0028
+  password: e2c62a73-3132-48a6-a020-25c3ae0d8af2
+  port: 23733
+  server: cu1.guguyun.xyz
+  type: ss
+  udp: true
 - name: 64|🇸🇬 中转•新加坡299•高速 - 飞翔吧
   password: 7d78b611-d26a-3828-ac5a-5f5ed29efeda
   port: 20299
@@ -1063,6 +1079,15 @@ proxies:
   server: gy.58n.net
   skip-cert-verify: true
   sni: x100.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- name: 64|🇼 中转•台湾91•原生 - 飞翔吧
+  password: 7d78b611-d26a-3828-ac5a-5f5ed29efeda
+  port: 21247
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x91.flybar.work
   tfo: true
   type: trojan
   udp: true
@@ -1126,15 +1151,6 @@ proxies:
   server: gy.58n.net
   skip-cert-verify: true
   sni: z298.hongkongnode.top
-  tfo: true
-  type: trojan
-  udp: true
-- name: 64|🇯🇵 中转•日本300•原生 - 飞翔吧
-  password: 7d78b611-d26a-3828-ac5a-5f5ed29efeda
-  port: 20300
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z300.hongkongnode.top
   tfo: true
   type: trojan
   udp: true

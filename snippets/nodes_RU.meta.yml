@@ -1,4 +1,12 @@
 proxies:
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '13,18,42,107,108,130,141,142|🇷🇺 俄罗斯|@ripaojiedian #5'
+  password: 1T5BLKXJ0M1WF2W4
+  port: 20002
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   delay: 2501
@@ -14,14 +22,6 @@ proxies:
   uuid: 32d35c64-0cec-4753-8f4a-6e7dbf67c61d
   ws-opts:
     path: /
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '18,42,107,108,141,142|🇷🇺 俄罗斯|@ripaojiedian #4'
-  password: 1T5BLKXJ0M1WF2W4
-  port: 20002
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: '19,43|🇷🇺 俄罗斯-圣彼得堡-015-1B #2'
@@ -187,40 +187,63 @@ proxies:
   port: 28825
   server: 45.151.62.54
   type: ss
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 55 Mbps
+  name: 56,97|🟠_🇷🇺_💻_github.com/Ruk1ng001_62...
+  obfs: dongtaiwang.com
+  port: 15424
+  ports: 30000-40000
+  server: 185.22.155.71
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 11 Mbps
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 56,114|🇷🇺_RU_俄罗斯_8
+  password: UkXRsXvR6buDMG2Y
+  port: 9001
+  server: 217.30.10.18
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺 RU
-  name: 68|🇷 RU_372
+  name: 68|🇺 RU_369
   password: WfmxKX2FBJRU0Ie9VLIYDL
   port: 20012
   server: 141.98.234.93
   type: ss
 - cipher: aes-256-cfb
   country: 🇷🇺RU
-  name: 68,78|🇱NL(AzadNet.t.me)_011
-  password: PeHSHm5SqEjBuEXE
-  port: 9065
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 68|🇷RU_375
+  name: 68|🇷🇺RU_373
   password: S7KwUu7yBy58S3Ga
   port: 9042
   server: 45.89.52.66
   type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 68,78|🇱NL(AzadNet.t.me)_014
+  password: KnJGad3FqTvjqbaX
+  port: 9014
+  server: 45.89.52.66
+  type: ss
+- country: 🇺RU
+  name: 68,70|🇷🇺RU_375
+  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
+  port: 443
+  server: 194.246.114.54
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - country: 🇺RU
   name: 68,70|🇷🇺RU_376
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇺RU
-  name: 68,70|🇷🇺RU_377
-  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
-  port: 443
-  server: 194.246.114.54
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -295,6 +318,19 @@ proxies:
   ws-headers:
     host: insaneguo2333.top
   ws-path: /okoovws
+- alterId: 0
+  cipher: auto
+  name: '87,88|俄罗斯 V2CROSS.COM #1'
+  network: ws
+  port: 20315
+  server: 195.58.49.42
+  tls: false
+  type: vmess
+  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: aes-256-cfb
   name: 89|🇺_RU_
   password: TN2YqghxeFDKZfLU
@@ -349,19 +385,6 @@ proxies:
   server: 217.30.10.18
   type: ss
   udp: true
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 97|🟠_🇷🇺_💻_github.com/Ruk1ng001_62...
-  obfs: dongtaiwang.com
-  port: 15424
-  ports: 30000-40000
-  server: 185.22.155.71
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 11 Mbps
 - alterId: 0
   cipher: auto
   name: '107,108|2|🇷🇺_RU_俄罗斯联邦 #2'
@@ -469,14 +492,6 @@ proxies:
   name: 114|🇷🇺_RU_俄罗斯_7
   password: EXN3S3eQpjE7EJu8
   port: 9027
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 114|🇷🇺_RU_俄罗斯_8
-  password: UkXRsXvR6buDMG2Y
-  port: 9001
   server: 217.30.10.18
   type: ss
   udp: true

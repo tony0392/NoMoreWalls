@@ -1,16 +1,14 @@
 proxies:
 - client-fingerprint: chrome
-  name: '0,3,20,43,60,61,67|🇰🇷 韩国|@ripaojiedian #3'
+  name: '0,3,20,61,67|🇰🇷 韩国|@ripaojiedian #3'
   password: dc15d997-8b26-4294-870e-c90a5784dca4
   port: 13036
   server: naiu-other.05vr9nyqg5.download
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
-  tfo: false
   type: trojan
-  udp: true
 - client-fingerprint: chrome
-  name: '0,3,60,61,67|🇰🇷 韩国2|@ripaojiedian #3'
+  name: '0,3,61,67|🇰🇷 韩国2|@ripaojiedian #3'
   password: 415b770f-20de-4be4-a3c1-8376da50a1b7
   port: 39593
   server: lm.kaiqsz.com
@@ -19,7 +17,7 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '0,3,19,42,47,60,67|🇰🇷 韩国特殊|@ripaojiedian #3'
+  name: '0,3,19,23,42,47,67|🇰🇷 韩国特殊|@ripaojiedian #3'
   password: amazonskr05
   port: 443
   server: 52.77.248.74
@@ -99,17 +97,33 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 9|🇰🇷 韩国 - Yongin-si - SK Broadba...
+  country: 🇰🇷KR
+  delay: 1080
+  name: 9,53|韩国 - Gwangmyeong - SK Broadban...
   password: qwerREWQ@@
-  port: 51633
-  server: 211.178.105.134
+  port: 28902
+  server: 218.38.103.150
   type: ss
+- cipher: chacha20-ietf
+  delay: 628
+  name: 9,19,42,53,69,73|CN_speednode_0076
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8602
+  protocol: origin
+  protocol-param: ''
+  server: cn17.closeai.one
+  type: ssr
+  udp: true
 - cipher: aes-256-cfb
-  name: 9,42|❓_🇰🇷_💼_github.com/Ruk1ng001_38...
+  delay: 907
+  name: 9,42,53|韩国 - 首尔特别市 - Amazon Technologi...
   password: amazonskr05
   port: 443
-  server: 52.79.249.199
+  server: 54.180.158.248
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   delay: 939
   name: 9,42,53,69,73|KR_speednode_0130
@@ -118,6 +132,23 @@ proxies:
   server: 3.34.123.239
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  delay: 1167
+  name: 9,19,53,69,73|KR_speednode_0131
+  password: amazonskr05
+  port: 443
+  server: 3.35.0.140
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 10|🇰🇷 韩国 IEPL专线NO1
+  port: 20021
+  server: i.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0387d93c-89e1-4753-8df2-bef645424e4a
 - alterId: 1
   cipher: auto
   name: 13|🇰🇷 No.182_KR_x1.00_Oracle_首尔@o...
@@ -559,28 +590,9 @@ proxies:
   sni: kr-qingyun.dwyun.me
   type: trojan
   udp: true
-- cipher: chacha20-ietf
-  delay: 628
-  name: 19,42,53,69,73|CN_speednode_0076
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8602
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
 - cipher: aes-256-cfb
-  delay: 1167
-  name: 19,53,69,73|KR_speednode_0131
-  password: amazonskr05
-  port: 443
-  server: 3.35.0.140
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19,42|🟡_🇰🇷_💼_github.com/Ruk1ng001_63...
+  client-fingerprint: chrome
+  name: 19,23,42|🟡_🇰🇷_💼_github.com/Ruk1ng001_63...
   password: amazonskr05
   port: 443
   server: 3.38.190.194
@@ -606,19 +618,17 @@ proxies:
   server: 52.221.255.53
   type: ss
 - cipher: aes-256-cfb
+  name: 42|❓_🇰🇷_💼_github.com/Ruk1ng001_38...
+  password: amazonskr05
+  port: 443
+  server: 52.79.249.199
+  type: ss
+- cipher: aes-256-cfb
   name: 42|🟡_🇰🇷_💼_github.com/Ruk1ng001_64...
   password: amazonskr05
   port: 443
   server: 13.125.226.50
   type: ss
-- cipher: aes-256-cfb
-  delay: 907
-  name: 42,53|韩国 - 首尔特别市 - Amazon Technologi...
-  password: amazonskr05
-  port: 443
-  server: 54.180.158.248
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 42|🔴_🇰🇷_💻_github.com/Ruk1ng001_37...
   password: f8f7aCzcPKbsF8p3
@@ -748,7 +758,7 @@ proxies:
     headers:
       Host: 2112147127.online.video.downloader.0123456789kr2.niubi.site
     path: /
-- name: 52,60,61|🇰🇷 _韩国
+- name: 52,61|🇰🇷 _韩国
   network: tcp
   password: Aimer
   port: 50004
@@ -757,7 +767,7 @@ proxies:
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '52,60,61|🇰🇷 _韩国 #1'
+- name: '52,61|🇰🇷 _韩国 #1'
   network: tcp
   password: Aimer
   port: 50000
@@ -766,7 +776,7 @@ proxies:
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '52,60,61|🇰🇷 _韩国 #2'
+- name: '52,61|🇰🇷 _韩国 #2'
   network: tcp
   password: Aimer
   port: 50000
@@ -775,7 +785,7 @@ proxies:
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '52,60,61|🇰🇷 _韩国 #3'
+- name: '52,61|🇰🇷 _韩国 #3'
   network: tcp
   password: Aimer
   port: 36622
@@ -784,7 +794,7 @@ proxies:
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '52,60,61|🇰🇷 _韩国 #4'
+- name: '52,61|🇰🇷 _韩国 #4'
   network: tcp
   password: Aimer
   port: 10044
@@ -793,7 +803,7 @@ proxies:
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '52,60,61|🇰🇷 _韩国 #5'
+- name: '52,61|🇰🇷 _韩国 #5'
   network: tcp
   password: Aimer
   port: 17100
@@ -802,7 +812,7 @@ proxies:
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '52,60,61|🇰🇷 _韩国 #6'
+- name: '52,61|🇰🇷 _韩国 #6'
   network: tcp
   password: Aimer
   port: 12299
@@ -811,7 +821,7 @@ proxies:
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '52,60,61|🇰🇷 _韩国 #7'
+- name: '52,61|🇰🇷 _韩国 #7'
   network: tcp
   password: Aimer
   port: 11300
@@ -820,7 +830,7 @@ proxies:
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '52,60,61|🇰🇷 _韩国 #8'
+- name: '52,61|🇰🇷 _韩国 #8'
   network: tcp
   password: Aimer
   port: 50000
@@ -829,7 +839,7 @@ proxies:
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '52,60,61|🇰🇷 _韩国 #9'
+- name: '52,61|🇰🇷 _韩国 #9'
   network: tcp
   password: Aimer
   port: 50000
@@ -838,7 +848,7 @@ proxies:
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '52,60,61|🇰🇷 _韩国 #10'
+- name: '52,61|🇰🇷 _韩国 #10'
   network: tcp
   password: Aimer
   port: 50000
@@ -847,7 +857,7 @@ proxies:
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '52,60,61|🇰🇷 _韩国 #11'
+- name: '52,61|🇰🇷 _韩国 #11'
   network: tcp
   password: Aimer
   port: 50000
@@ -856,14 +866,6 @@ proxies:
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  delay: 1080
-  name: 53|韩国 - Gwangmyeong - SK Broadban...
-  password: qwerREWQ@@
-  port: 28902
-  server: 218.38.103.150
-  type: ss
 - alterId: 0
   cipher: auto
   name: 59|【高级】🇰🇷韩国1 - 滑梯云
@@ -909,12 +911,6 @@ proxies:
     headers:
       Host: 14.mamamajd.site
     path: /
-- name: 60,61|🇰🇷 韩国 首尔Choopa数据中心
-  password: xjtZ2S5FgQ
-  port: 443
-  server: 141.164.56.86
-  skip-cert-verify: false
-  type: trojan
 - name: 62|韩国[01]
   password: 7e7331ba-5095-405a-b301-c2a8e75c7d58
   port: 443

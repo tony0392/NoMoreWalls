@@ -1,12 +1,14 @@
 proxies:
 - client-fingerprint: chrome
-  name: '0,3,20,60,61,67|🇰🇷 韩国|@ripaojiedian #3'
+  name: '0,3,20,43,60,61,67|🇰🇷 韩国|@ripaojiedian #3'
   password: dc15d997-8b26-4294-870e-c90a5784dca4
   port: 13036
   server: naiu-other.05vr9nyqg5.download
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
+  tfo: false
   type: trojan
+  udp: true
 - client-fingerprint: chrome
   name: '0,3,60,61,67|🇰🇷 韩国2|@ripaojiedian #3'
   password: 415b770f-20de-4be4-a3c1-8376da50a1b7
@@ -22,30 +24,6 @@ proxies:
   port: 443
   server: 52.77.248.74
   tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  delay: 444
-  name: 2,9,53|韩国 - Yongin-si - SK Broadband ...
-  password: qwerREWQ@@
-  port: 51633
-  server: 211.178.105.134
-  type: ss
-- cipher: aes-256-cfb
-  delay: 1922
-  name: 2,9,42,53|韩国 - 首尔特别市 - Amazon Technologi...
-  password: amazonskr05
-  port: 443
-  server: 52.79.249.199
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  delay: 981
-  name: 2,9,19,42,53,69,73|KR_speednode_0130
-  password: amazonskr05
-  port: 443
-  server: 3.34.123.239
   type: ss
   udp: true
 - alterId: 0
@@ -119,6 +97,26 @@ proxies:
   skip-cert-verify: false
   sni: kr-qingyun.dwyun.me
   type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 9|🇰🇷 韩国 - Yongin-si - SK Broadba...
+  password: qwerREWQ@@
+  port: 51633
+  server: 211.178.105.134
+  type: ss
+- cipher: aes-256-cfb
+  name: 9,42|❓_🇰🇷_💼_github.com/Ruk1ng001_38...
+  password: amazonskr05
+  port: 443
+  server: 52.79.249.199
+  type: ss
+- cipher: aes-256-cfb
+  delay: 939
+  name: 9,42,53,69,73|KR_speednode_0130
+  password: amazonskr05
+  port: 443
+  server: 3.34.123.239
+  type: ss
   udp: true
 - alterId: 0
   cipher: auto
@@ -570,6 +568,26 @@ proxies:
   sni: kr-qingyun.dwyun.me
   type: trojan
   udp: true
+- cipher: chacha20-ietf
+  delay: 628
+  name: 19,42,53,69,73|CN_speednode_0076
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8602
+  protocol: origin
+  protocol-param: ''
+  server: cn17.closeai.one
+  type: ssr
+  udp: true
+- cipher: aes-256-cfb
+  delay: 1167
+  name: 19,53,69,73|KR_speednode_0131
+  password: amazonskr05
+  port: 443
+  server: 3.35.0.140
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 19,42|🟡_🇰🇷_💼_github.com/Ruk1ng001_63...
   password: amazonskr05
@@ -583,31 +601,6 @@ proxies:
   port: 443
   server: 52.78.5.163
   type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19,42|🟡_🇰🇷_💼_github.com/Ruk1ng001_38...
-  password: amazonskr05
-  port: 443
-  server: 54.180.158.248
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19|@MxlShare 韩国 | KOR 5
-  password: amazonskr05
-  port: 443
-  server: 47.129.211.106
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 19,42,69,73|CN_speednode_0076
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8602
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 21,56,64|🇰🇷KR-43.202.96.177-0372 | 1.08...
@@ -627,6 +620,14 @@ proxies:
   port: 443
   server: 13.125.226.50
   type: ss
+- cipher: aes-256-cfb
+  delay: 907
+  name: 42,53|韩国 - 首尔特别市 - Amazon Technologi...
+  password: amazonskr05
+  port: 443
+  server: 54.180.158.248
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 42|🔴_🇰🇷_💻_github.com/Ruk1ng001_37...
   password: f8f7aCzcPKbsF8p3
@@ -864,6 +865,14 @@ proxies:
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
   udp: true
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  delay: 1080
+  name: 53|韩国 - Gwangmyeong - SK Broadban...
+  password: qwerREWQ@@
+  port: 28902
+  server: 218.38.103.150
+  type: ss
 - alterId: 0
   cipher: auto
   name: 59|【高级】🇰🇷韩国1 - 滑梯云
@@ -904,7 +913,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 6c0521e2-69c9-39f4-a505-9eb861ab5d2e
+  uuid: 682a0ce4-b943-306f-8c0a-1f4512493bb5
   ws-opts:
     headers:
       Host: 14.mamamajd.site
@@ -921,13 +930,6 @@ proxies:
   server: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
   skip-cert-verify: false
   type: trojan
-- cipher: aes-256-cfb
-  name: 69,73|KR_speednode_0131
-  password: amazonskr05
-  port: 443
-  server: 3.35.0.140
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 74|KR_Seoul_Oracle Corporation
   password: f52SZksXnGNfc72Q

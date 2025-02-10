@@ -33,7 +33,8 @@ proxies:
   type: vmess
   uuid: 234dcf63-5809-44fd-9c53-86f51f2e76a7
 - client-fingerprint: chrome
-  name: 0,3,42,60,61,67,69,73|HK_speednode_0119
+  delay: 624
+  name: 0,3,35,42,53,60,61,67,69,73|HK_speednode_0119
   password: 43e5eeacbad3032bfe4c25a2f011b6b7
   port: 443
   server: 104.251.227.182
@@ -42,31 +43,10 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 4|🇭🇰 香港01
-  password: 628e5e41-2521-4e41-8882-8ec297a80bed
-  port: 34338
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 4|🇭🇰 公益路线1-香港HK 限速50MBPS
   password: d688f8fb-ac80-42b9-b9c6-439ea0f15a0d
   port: 49709
   server: jg647hf446ghvw.eucs.cn
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 4|🇭🇰 香港03
-  password: 628e5e41-2521-4e41-8882-8ec297a80bed
-  port: 20052
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 4|🇭🇰 香港02
-  password: 628e5e41-2521-4e41-8882-8ec297a80bed
-  port: 20035
-  server: gy.666666222.shop
   type: ss
   udp: true
 - alterId: 0
@@ -79,21 +59,21 @@ proxies:
   udp: true
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - cipher: chacha20-ietf-poly1305
-  name: '6|🇭🇰 香港01 #1'
+  name: 6|🇭🇰 香港01
   password: 0871a57c-64fd-44ff-a6aa-90d14d497b97
   port: 34338
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '6|🇭🇰 香港02 #1'
+  name: 6|🇭🇰 香港02
   password: 0871a57c-64fd-44ff-a6aa-90d14d497b97
   port: 20035
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '6|🇭🇰 香港03 #1'
+  name: 6|🇭🇰 香港03
   password: 0871a57c-64fd-44ff-a6aa-90d14d497b97
   port: 20052
   server: gy.666666222.shop
@@ -141,7 +121,7 @@ proxies:
   udp: true
   uuid: be716768-37d8-46d4-ab04-49b7121262d0
 - cipher: chacha20-ietf-poly1305
-  name: '10|🇭🇰 香港01 #2'
+  name: '10|🇭🇰 香港01 #1'
   password: 17188151-86d6-4b50-bb1e-ffb43109c7fc
   port: 34338
   server: gy.666666222.shop
@@ -190,14 +170,14 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '10|🇭🇰 香港03 #2'
+  name: '10|🇭🇰 香港03 #1'
   password: 17188151-86d6-4b50-bb1e-ffb43109c7fc
   port: 20052
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '10|🇭🇰 香港02 #2'
+  name: '10|🇭🇰 香港02 #1'
   password: 17188151-86d6-4b50-bb1e-ffb43109c7fc
   port: 20035
   server: gy.666666222.shop
@@ -958,29 +938,29 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- cipher: aes-256-cfb
-  name: 19,42|❓_🇨🇳_📶_github.com/Ruk1ng001_37...
-  password: hGkQ6915tD
-  port: 16088
-  server: 120.232.81.50
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 19|@MxlShare 香港 | HKG 5
-  password: 897ea72f-8b31-45a3-9139-058e908a0aa4
-  port: 20002
-  server: node4.721579.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19|@MxlShare 香港 | HKG 7
-  password: amazonskr05
-  port: 443
-  server: 47.128.14.130
-  type: ss
-  udp: true
+- cipher: rc4-md5
+  name: 19|@MxlShare 香港 | HKG
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40238
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 3.link-hub.click
+  type: ssr
+- cipher: rc4-md5
+  name: 19,42|github.com/Ruk1ng001_643134626...
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40239
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 3.link-hub.click
+  type: ssr
 - cipher: chacha20-ietf
-  name: 19,42|github.com/Ruk1ng001_386638316...
+  delay: 332
+  name: 19,42,53|中国 - 香港 - Akile LTD - 21
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -988,61 +968,6 @@ proxies:
   protocol: origin
   protocol-param: ''
   server: cn01.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19,23,42,69,73|CN_speednode_0005
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8102
-  protocol: origin
-  protocol-param: ''
-  server: cn01.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19,23,42,69,73|CN_speednode_0012
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8103
-  protocol: origin
-  protocol-param: ''
-  server: cn01.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19,23,42,69,73|CN_speednode_0004
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8104
-  protocol: origin
-  protocol-param: ''
-  server: cn02.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19,42,69,73|CN_speednode_0009
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8105
-  protocol: origin
-  protocol-param: ''
-  server: cn02.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19,42,69,73|CN_speednode_0002
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8106
-  protocol: origin
-  protocol-param: ''
-  server: cn02.closeai.one
   type: ssr
   udp: true
 - cipher: chacha20-ietf
@@ -1057,40 +982,8 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 19,42,69,73|CN_speednode_0049
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8108
-  protocol: origin
-  protocol-param: ''
-  server: cn02.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19,42,69,73|CN_speednode_0003
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8109
-  protocol: origin
-  protocol-param: ''
-  server: cn02.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19,42,69,73|CN_speednode_0007
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8110
-  protocol: origin
-  protocol-param: ''
-  server: cn02.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19,42|github.com/Ruk1ng001_316637366...
+  delay: 280
+  name: 19,42,53|中国 - 香港 - Akile LTD - 24
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -1112,8 +1005,8 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 19,23,42|github.com/Ruk1ng001_643837623...
+  delay: 738
+  name: 19,42,53|中国 - 香港 - Akile LTD - 5
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -1146,8 +1039,8 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 19,23,42|github.com/Ruk1ng001_393934396...
+  delay: 635
+  name: 19,42,53|中国 - 香港 - Akile LTD - 4
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -1158,7 +1051,8 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 19,42|github.com/Ruk1ng001_646264313...
+  client-fingerprint: chrome
+  name: 19,23,42|github.com/Ruk1ng001_646264313...
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -1169,7 +1063,8 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 19,42|github.com/Ruk1ng001_373266316...
+  delay: 257
+  name: 19,42,53|中国 - 香港 - Akile LTD - 26
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -1180,8 +1075,8 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 19,23,42|github.com/Ruk1ng001_356334356...
+  delay: 279
+  name: 19,42,53|中国 - 香港 - Akile LTD - 17
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -1192,7 +1087,8 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 19,42|github.com/Ruk1ng001_363634303...
+  delay: 401
+  name: 19,42,53|中国 - 香港 - Akile LTD - 25
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -1203,7 +1099,8 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 19,42|github.com/Ruk1ng001_333936336...
+  delay: 403
+  name: 19,42,53|中国 - 香港 - Akile LTD - 22
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -1214,7 +1111,102 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 19,42,69,73|CN_speednode_0006
+  name: 19,42,69,73|CN_speednode_0005
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8102
+  protocol: origin
+  protocol-param: ''
+  server: cn01.closeai.one
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  delay: 309
+  name: 19,42,53,69,73|CN_speednode_0012
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8103
+  protocol: origin
+  protocol-param: ''
+  server: cn01.closeai.one
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  delay: 672
+  name: 19,42,53,69,73|CN_speednode_0004
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8104
+  protocol: origin
+  protocol-param: ''
+  server: cn02.closeai.one
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  delay: 330
+  name: 19,42,53,69,73|CN_speednode_0009
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8105
+  protocol: origin
+  protocol-param: ''
+  server: cn02.closeai.one
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  delay: 251
+  name: 19,42,53,69,73|CN_speednode_0002
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8106
+  protocol: origin
+  protocol-param: ''
+  server: cn02.closeai.one
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: 19,42,69,73|CN_speednode_0049
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8108
+  protocol: origin
+  protocol-param: ''
+  server: cn02.closeai.one
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  delay: 316
+  name: 19,42,53,69,73|CN_speednode_0003
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8109
+  protocol: origin
+  protocol-param: ''
+  server: cn02.closeai.one
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  delay: 504
+  name: 19,42,53,69,73|CN_speednode_0007
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8110
+  protocol: origin
+  protocol-param: ''
+  server: cn02.closeai.one
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  delay: 518
+  name: 19,42,53,69,73|CN_speednode_0006
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -1225,7 +1217,8 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 19,42,69,73|CN_speednode_0040
+  delay: 403
+  name: 19,42,53,69,73|CN_speednode_0040
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -1236,7 +1229,8 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 19,42,69,73|CN_speednode_0011
+  delay: 379
+  name: 19,42,53,69,73|CN_speednode_0011
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -1247,7 +1241,8 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 19,23,42,69,73|CN_speednode_0095
+  delay: 373
+  name: 19,23,42,53,69,73|CN_speednode_0095
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -1258,7 +1253,8 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 19,23,42,69,73|CN_speednode_0001
+  delay: 497
+  name: 19,42,53,69,73|CN_speednode_0001
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -1269,27 +1265,17 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇷🇺 RU
-  name: 21,27,56,64|🇭🇰HK-141.98.234.93-5598 | 1.07...
+  name: 21,56,64|🇭🇰HK-141.98.234.93-5598 | 1.07...
   password: WfmxKX2FBJRU0Ie9VLIYDL
   port: 20012
   server: 141.98.234.93
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 23,69,73|CN_speednode_0060
-  network: ws
-  port: 16632
-  server: yes.mojcn.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
-  ws-opts:
-    headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
-    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇭🇰1 |  3.3MB/s
+  password: e0208ace-02d0-4fab-bcd2-31cfc183f3cc
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
 - cipher: aes-256-cfb
   name: 24|🇭🇰 HK, Kowloon
   password: amazonskr05
@@ -1375,86 +1361,6 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇭🇰 香港 | HKG
-  password: 09a3dbe7-018a-468e-acee-9efccc01d2e2
-  port: 34004
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 2
-  password: 2e071525-d9fb-4fee-bd4f-cfa9259e6306
-  port: 19946
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 3
-  password: f6ef5b15-291e-477d-8a0b-a9540febea81
-  port: 50815
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 4
-  password: 09a3dbe7-018a-468e-acee-9efccc01d2e2
-  port: 34001
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 5
-  password: 630a9504-13b7-4c32-885c-3332bab95df3
-  port: 49709
-  server: jg647hf446ghvw.eucs.cn
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 6
-  password: f6ef5b15-291e-477d-8a0b-a9540febea81
-  port: 19055
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 7
-  password: 09a3dbe7-018a-468e-acee-9efccc01d2e2
-  port: 34003
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 8
-  password: 2e071525-d9fb-4fee-bd4f-cfa9259e6306
-  port: 54016
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 9
-  password: f6ef5b15-291e-477d-8a0b-a9540febea81
-  port: 54016
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 10
-  password: 8311080b-034d-4677-90f3-9a2dcd7d577b
-  port: 49709
-  server: jg647hf446ghvw.eucs.cn
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 11
   password: edb9db01-db8a-4a25-a802-1ccdf797eb84
   port: 49709
   server: jg647hf446ghvw.eucs.cn
@@ -1462,81 +1368,23 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 12
-  password: f5b1ad18-54fe-4dfe-a12f-53efca562adb
-  port: 49709
-  server: jg647hf446ghvw.eucs.cn
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 13
-  port: 19901
-  server: xg.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b3e63ada-947d-4a4f-b326-219dbac9e45b
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 14
-  password: da185005-05fc-4735-86eb-1bf340cbc548
+  name: 26|🇭🇰 香港 | HKG 2
+  password: 630a9504-13b7-4c32-885c-3332bab95df3
   port: 49709
   server: jg647hf446ghvw.eucs.cn
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 15
-  password: 2e071525-d9fb-4fee-bd4f-cfa9259e6306
-  port: 19055
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 16
-  password: f6ef5b15-291e-477d-8a0b-a9540febea81
-  port: 19946
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 17
-  password: f6ef5b15-291e-477d-8a0b-a9540febea81
-  port: 54804
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 18
-  password: 4cfb4bd4-e35b-4f81-b5d2-49807e4db4ce
+  name: 26|🇭🇰 香港 | HKG 3
+  password: 8311080b-034d-4677-90f3-9a2dcd7d577b
   port: 49709
   server: jg647hf446ghvw.eucs.cn
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 19
-  password: 0da59fda-71a9-4cb5-9b5d-3545646352d9
-  port: 49709
-  server: jg647hf446ghvw.eucs.cn
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 20
-  password: 2e071525-d9fb-4fee-bd4f-cfa9259e6306
-  port: 50815
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 21
+  name: 26|🇭🇰 香港 | HKG 4
   password: b251c000-09e2-4c09-95bb-14591da2441a
   port: 49709
   server: jg647hf446ghvw.eucs.cn
@@ -1544,15 +1392,15 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 22
-  password: 89e37530-1d2a-40dd-934e-95dc9dc5102e
+  name: 26|🇭🇰 香港 | HKG 5
+  password: 0da59fda-71a9-4cb5-9b5d-3545646352d9
   port: 49709
   server: jg647hf446ghvw.eucs.cn
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 23
+  name: 26|🇭🇰 香港 | HKG 6
   password: 283db163-f886-4e3a-8ad4-a0766100e14e
   port: 49709
   server: jg647hf446ghvw.eucs.cn
@@ -1560,37 +1408,45 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 24
-  password: 2e071525-d9fb-4fee-bd4f-cfa9259e6306
-  port: 54804
-  server: chiyu.myfczy169.top
+  name: 26|🇭🇰 香港 | HKG 7
+  password: 89e37530-1d2a-40dd-934e-95dc9dc5102e
+  port: 49709
+  server: jg647hf446ghvw.eucs.cn
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 27| HK_275
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港 | HKG 8
+  password: f5b1ad18-54fe-4dfe-a12f-53efca562adb
+  port: 49709
+  server: jg647hf446ghvw.eucs.cn
   type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰 HK
-  name: 27|🇰 HK_276
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港 | HKG 9
+  password: 4cfb4bd4-e35b-4f81-b5d2-49807e4db4ce
+  port: 49709
+  server: jg647hf446ghvw.eucs.cn
   type: ss
-- name: 35|香港+香港宽频
-  network: ws
-  password: amclubs2024
-  port: 443
-  server: 58.176.95.46
-  sni: tr.amclub.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tr.amclub.us.kg
-    path: '%2F%3Fed%3D2560'
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港 | HKG 10
+  password: da185005-05fc-4735-86eb-1bf340cbc548
+  port: 49709
+  server: jg647hf446ghvw.eucs.cn
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 35|香港 LeaseWeb HKG10数据中心
+  network: tcp
+  port: 52785
+  server: 203.23.128.229
+  tls: false
+  type: vmess
+  uuid: e6384328-7de2-43e5-840b-8c746efa8d5d
 - cipher: aes-128-gcm
   name: 37|HK香港(mibei77.com 米贝节点分享)
   password: e2c62a73-3132-48a6-a020-25c3ae0d8af2
@@ -1613,6 +1469,15 @@ proxies:
   password: 5QCGV4AXFQAJE5KA
   port: 18012
   server: ti3hyra4.slashdevslashnetslashtun.net
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇦🇺 AU
+  delay: 2364
+  name: '37,42,53|新加坡 - 新加坡 - Akari Networks - 1... #4'
+  password: 3FB23A19-9424-40C7-9139-3540228283FA
+  port: 40005
+  server: sgp.fastsoonlink.com
   type: ss
   udp: true
 - name: 37|HK香港(mibei77.com 米贝节点分享) 5
@@ -1664,6 +1529,16 @@ proxies:
   ws-headers:
     Host: fiwejniavzoj.xn--fiqs8sjz2bull.com
   ws-path: /
+- country: 🇨🇳CN
+  delay: 2058
+  name: 53|沙特阿拉伯 - 利雅得省 - Kaopu Cloud HK ...
+  password: d0cfea6c-2052-4add-aef5-501a4714d2f8
+  port: 32035
+  server: lbso.bnnodeservice.com
+  skip-cert-verify: true
+  sni: cert.bitbyte.one
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 54|🇭🇰 香港-1B
@@ -1672,7 +1547,16 @@ proxies:
   server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: de6d4356-4a26-4aef-8873-3e503004848c
+  uuid: 1ecb1b96-95b8-4f08-abaf-520251ac91c2
+- alterId: 0
+  cipher: auto
+  name: 54|🇭🇰 香港-1D
+  network: tcp
+  port: '19901'
+  server: xg.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: fafb33b0-c389-4763-af43-fc462c04cd31
 - alterId: 0
   cipher: auto
   name: 54|🇭🇰 香港-1A
@@ -1681,7 +1565,16 @@ proxies:
   server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 17c4770f-ae5e-4f08-b0bd-06787e41eabd
+  uuid: bb59270b-df8b-429d-9097-66ea60fde0d3
+- alterId: 0
+  cipher: auto
+  name: 54|🇭🇰 香港-1C
+  network: tcp
+  port: '19901'
+  server: xg.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 913d145b-6151-4f08-8a9d-1a88d88c1a19
 - alterId: 2
   cipher: auto
   name: 59|🇰 [vip①]①香港 - MG Network
@@ -1692,13 +1585,13 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 6c0521e2-69c9-39f4-a505-9eb861ab5d2e
+  uuid: 682a0ce4-b943-306f-8c0a-1f4512493bb5
   ws-opts:
     headers:
       Host: 12.mamamajd.site
     path: /
 - name: 59|🇰 广港•香港309•专线 - 飞翔吧
-  password: 0c5eeaac-2133-3c84-a8d6-6e6e6dc03a12
+  password: 6d05891f-499d-3e4f-9e50-3a363a9833a6
   port: 20309
   server: gyl.58n.net
   skip-cert-verify: true
@@ -1706,7 +1599,7 @@ proxies:
   type: trojan
   udp: true
 - name: 59|🇭🇰 广港•香港143•高速 - 飞翔吧
-  password: 0c5eeaac-2133-3c84-a8d6-6e6e6dc03a12
+  password: 6d05891f-499d-3e4f-9e50-3a363a9833a6
   port: 28678
   server: gy.58n.net
   skip-cert-verify: true
@@ -1714,7 +1607,7 @@ proxies:
   type: trojan
   udp: true
 - name: 59|🇭🇰 广港•香港259•高速 - 飞翔吧
-  password: 0c5eeaac-2133-3c84-a8d6-6e6e6dc03a12
+  password: 6d05891f-499d-3e4f-9e50-3a363a9833a6
   port: 24603
   server: gy.58n.net
   skip-cert-verify: true
@@ -1722,7 +1615,7 @@ proxies:
   type: trojan
   udp: true
 - name: 59|🇭🇰 广港•香港269•高速 - 飞翔吧
-  password: 0c5eeaac-2133-3c84-a8d6-6e6e6dc03a12
+  password: 6d05891f-499d-3e4f-9e50-3a363a9833a6
   port: 22741
   server: gy.58n.net
   skip-cert-verify: true
@@ -1730,7 +1623,7 @@ proxies:
   type: trojan
   udp: true
 - name: 59|🇭🇰 广港•香港278•高速 - 飞翔吧
-  password: 0c5eeaac-2133-3c84-a8d6-6e6e6dc03a12
+  password: 6d05891f-499d-3e4f-9e50-3a363a9833a6
   port: 20278
   server: gy.58n.net
   skip-cert-verify: true
@@ -1738,7 +1631,7 @@ proxies:
   type: trojan
   udp: true
 - name: 59|🇭🇰 广港•香港279•高速 - 飞翔吧
-  password: 0c5eeaac-2133-3c84-a8d6-6e6e6dc03a12
+  password: 6d05891f-499d-3e4f-9e50-3a363a9833a6
   port: 20279
   server: gy.58n.net
   skip-cert-verify: true
@@ -1746,7 +1639,7 @@ proxies:
   type: trojan
   udp: true
 - name: 59|🇭🇰 广港•香港294•高速 - 飞翔吧
-  password: 0c5eeaac-2133-3c84-a8d6-6e6e6dc03a12
+  password: 6d05891f-499d-3e4f-9e50-3a363a9833a6
   port: 20294
   server: gy.58n.net
   skip-cert-verify: true
@@ -1883,13 +1776,6 @@ proxies:
   sni: hkvip105.qlgq.fun
   type: trojan
   udp: true
-- name: 60,61|🇺🇸 美国 佐治亚州亚特兰大市BellSouth公司
-  password: 299beacf-37f0-41c6-a122-9260c75731bf
-  port: 49782
-  server: 41699d8ad5e758d2c6e42c1e7f40e820.v1.cac.node-is.green
-  skip-cert-verify: false
-  sni: hk12.bilibili.com
-  type: trojan
 - name: 62|香港[01]
   password: 7e7331ba-5095-405a-b301-c2a8e75c7d58
   port: 158

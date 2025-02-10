@@ -86,16 +86,6 @@ proxies:
   uuid: 0387d93c-89e1-4753-8df2-bef645424e4a
 - alterId: 0
   cipher: auto
-  name: 14,15|加拿大1-1A
-  port: 45064
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bffafa07-d481-4a39-ab33-ff0ae050069d
-- alterId: 0
-  cipher: auto
   name: 14,15|加拿大2-1A
   port: 45065
   server: xdd.dashuai.cyou
@@ -103,17 +93,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: bffafa07-d481-4a39-ab33-ff0ae050069d
+  uuid: 9315e23a-d555-45d7-a9a7-0edb152ee21a
 - alterId: 0
   cipher: auto
-  name: 15|加拿大2-1B
-  port: 45065
-  server: xdd.dashuai.cyou
+  name: 14,15|加拿大1-1A
+  port: 45064
+  server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 64f63a86-c666-46c6-812a-c54324af6d54
+  uuid: 9315e23a-d555-45d7-a9a7-0edb152ee21a
 - alterId: 0
   cipher: auto
   name: 15|加拿大1-1B
@@ -123,7 +113,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 64f63a86-c666-46c6-812a-c54324af6d54
+  uuid: 97fae41f-96f5-4696-bd3a-344c27f66419
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大2-1B
+  port: 45065
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 97fae41f-96f5-4696-bd3a-344c27f66419
 - alterId: 0
   cipher: auto
   name: 19,44,54,62|🇨🇦CA-134.195.198.147-8329 | 39...
@@ -196,6 +196,17 @@ proxies:
   port: 990
   server: 79.127.233.170
   type: ss
+- cipher: chacha20-ietf
+  name: 21,40,71|CN_speednode_0001
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8126
+  protocol: origin
+  protocol-param: ''
+  server: cn05.closeai.one
+  type: ssr
+  udp: true
 - cipher: aes-256-cfb
   name: 22|🇨🇦 CA, Vancouver
   password: amazonskr05
@@ -212,10 +223,48 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  name: 24|🇨🇦 加拿大 | CAN
+  port: 45112
+  server: qd.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0bddb982-2dd5-4e72-a169-7390afd3dc56
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 24|🇨🇦 加拿大 | CAN 2
+  port: 45064
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 55ca5c81-d076-4047-b9cf-5a540bdd74fd
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 24|🇨🇦 加拿大 | CAN 3
+  password: ad14a110-5b80-470b-adfb-396bfbb4128c
+  port: 58809
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 24|🇨🇦 加拿大 | CAN 4
+  port: 45065
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 55ca5c81-d076-4047-b9cf-5a540bdd74fd
+- alterId: 0
+  cipher: auto
   country: 🇦 CA
   h2-opts: {}
   http-opts: {}
-  name: 25|🇦 CA_200
+  name: 25|🇦 CA_197
   network: ws
   port: 443
   server: 68.168.31.196
@@ -227,8 +276,8 @@ proxies:
   ws-headers:
     HOST: 68.168.31.196
   ws-path: /linkvws
-- country: 🇨🇦CA
-  name: 25,27|🇨🇦CA_202
+- country: 🇦CA
+  name: 25,27|🇨🇦CA_199
   password: acfef609-b3c7-4e52-b292-8921d5fca90d
   port: 443
   server: 91.194.11.168
@@ -237,7 +286,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 28|🇨🇦 CA_200
+  name: 28|🇨🇦 CA_197
   network: ws
   port: 443
   server: 68.168.31.196
@@ -248,6 +297,15 @@ proxies:
     headers:
       Host: 68.168.31.196
     path: /linkvws
+- name: 33,41|[Trojan] 🇨🇦 加拿大 V2CROSS.COM
+  password: 072c477b-90c1-4600-998f-1a2990542782
+  port: 20230
+  server: sg005.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  tfo: false
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 41|[VMess] 🇨🇦 _CA_加拿大
@@ -383,22 +441,6 @@ proxies:
     headers:
       Host: 100-223-174-216.s1.db-link01.top
     path: /
-- alterId: 0
-  cipher: auto
-  name: 44|加拿大 011
-  network: ws
-  port: 2082
-  server: s5.cn-db.top
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-219-162-241.s5.cn-db.top
-    path: /dabai.in172.64.23.14
 - alterId: 0
   cipher: auto
   name: 44|加拿大 012

@@ -230,14 +230,14 @@ proxies:
   udp: true
   uuid: 97fae41f-96f5-4696-bd3a-344c27f66419
 - cipher: aes-128-gcm
-  name: 19,23,42,69,73|CN_speednode_0010
+  name: 19,42,69,73|CN_speednode_0010
   password: 6419ff34-6c3e-4cbf-b58b-b6bb34e1ccff
   port: 12008
   server: mdss-hk.04z3susick.download
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 19,23,42,69,73|CN_speednode_0077
+  name: 19,42,69,73|CN_speednode_0077
   password: 6419ff34-6c3e-4cbf-b58b-b6bb34e1ccff
   port: 12009
   server: mdss-hk.04z3susick.download
@@ -284,7 +284,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 19,23,42,69,73|CN_speednode_0013
+  name: 19,42,69,73|CN_speednode_0013
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -317,7 +317,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 19,42,69,73|CN_speednode_0070
+  name: 19,23,42,69,73|CN_speednode_0070
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -335,12 +335,19 @@ proxies:
   server: 1w91dj53mb3tjunfqy7q3bdu1fo0sged.08.02.tw.88k.site
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' TW'
+  name: 27|🇹 TW_369
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: 2.58.241.42
+  type: ss
 - alterId: 0
   cipher: auto
   name: 35|台湾省桃园市 中华电信
   network: ws
   port: 25780
-  server: qdfhytmhg.fask511.cfd
+  server: kkkghdragxc.fask511.cfd
   tls: false
   type: vmess
   uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
@@ -353,7 +360,7 @@ proxies:
   name: '35|台湾省桃园市 中华电信 #1'
   network: ws
   port: 25780
-  server: bvdhgfhfs.fask511.cfd
+  server: hhhfksdcbr.fask511.cfd
   tls: false
   type: vmess
   uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
@@ -363,15 +370,25 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 35,43,61|🇨🇳 台湾省桃园市 中华电信
+  name: '35,61|🇨🇳 台湾省桃园市 中华电信 #1'
   network: ws
-  port: '25774'
+  port: '25775'
   server: hhhfksdcbr.fask511.cfd
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
-  udp: true
+  uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
+  ws-opts:
+    headers:
+      Host: www.douyin.com
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: '35|台湾省桃园市 中华电信 #4'
+  network: ws
+  port: 25775
+  server: tttxbmsm.fask511.cfd
+  tls: false
+  type: vmess
   uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
   ws-opts:
     headers:
@@ -401,7 +418,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2eee9852-ea37-3976-8ff4-86bc91f149a0
+  uuid: 6c0521e2-69c9-39f4-a505-9eb861ab5d2e
   ws-opts:
     headers:
       Host: 19.mamamajd.site

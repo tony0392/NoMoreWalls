@@ -49,15 +49,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4|🇷🇺 俄罗斯-圣彼得堡-015-1E
+  name: 4,35|俄罗斯 V2CROSS.COM
   network: ws
-  port: 20315
+  port: '20315'
   server: 195.58.49.42
+  servername: ''
   tls: false
   type: vmess
   udp: true
   uuid: 4091256d-54cb-46c7-87fa-3f6475fb9ab0
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -131,80 +134,6 @@ proxies:
   uuid: 32d35c64-0cec-4753-8f4a-6e7dbf67c61d
   ws-opts:
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇷🇺 俄罗斯 莫斯科
-  password: 333a425b-c159-4f38-8bb6-85d999f959f0
-  port: 58837
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '10|🇷🇺 俄罗斯-圣彼得堡-015-1A #1'
-  network: ws
-  port: 20315
-  server: 195.58.49.42
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bb58d777-ab6a-469a-833b-3b2e4eeb3ca9
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '10|🇷🇺 俄罗斯-圣彼得堡-015-1B #1'
-  network: ws
-  port: 20315
-  server: 195.58.49.42
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b0c3d77-8f22-4768-b622-f6b3490072e7
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '10|🇷🇺 俄罗斯-圣彼得堡-015-1D #1'
-  network: ws
-  port: 20315
-  server: 195.58.49.42
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3c139d85-1ce9-4f4a-9e9a-e895a6f51c26
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '10|🇷🇺 俄罗斯-圣彼得堡-015-1C #1'
-  network: ws
-  port: 20315
-  server: 195.58.49.42
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6e13984b-ea45-4a8e-b3be-f74ec314ce58
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '10|🇷🇺 俄罗斯-圣彼得堡-015-1E #1'
-  network: ws
-  port: 20315
-  server: 195.58.49.42
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a64ee5da-bc11-48e8-8d84-01d65d976598
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇷🇺 白俄罗斯 明斯克市
-  password: 333a425b-c159-4f38-8bb6-85d999f959f0
-  port: 58838
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 20|俄罗斯【付费推荐：https://socks.news】20
@@ -229,16 +158,43 @@ proxies:
   port: 28825
   server: 45.151.62.54
   type: ss
-- name: 29|🇷🇺RU_350
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 27| RU_332
+  password: gmYDzSG6K35s8b19oY4fGz
+  port: 18622
+  server: 92.118.112.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 27|🇷🇺 RU_334
+  password: a0605527-28e4-449c-80ee-5642cc16a8af
+  port: 81
+  server: 176.124.202.137
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇺RU
+  name: 27|🇺RU_336
+  password: PeHSHm5SqEjBuEXE
+  port: 9065
+  server: 45.89.52.66
+  type: ss
+- country: 🇺RU
+  name: 27,29|🇷🇺RU_337
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
+  skip-cert-verify: true
   type: trojan
-- name: 29|🇷🇺RU_351
+  udp: true
+- country: 🇺RU
+  name: 27,29|🇷🇺RU_338
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: 194.246.114.54
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
   country: 🇵🇱PL
   delay: 1277
@@ -309,14 +265,6 @@ proxies:
   server: 217.30.10.18
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 39|🇷🇺_RU_俄罗斯_6
-  password: GA9KzeEgvfxNrgmM
-  port: 9019
-  server: 217.30.10.18
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   delay: 1142
@@ -332,21 +280,6 @@ proxies:
   udp: true
   uuid: a828394a-c871-4916-bb59-4ba5da177803
   ws-opts: {}
-- alterId: 0
-  cipher: auto
-  delay: 1058
-  name: 43,53|俄罗斯 - 圣彼得堡 - LLC Baxet - 6
-  network: ws
-  port: 20315
-  server: 195.58.49.42
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c8972631-fca7-4f2e-ae9e-3547904f8170
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: 47|2|🇷🇺_RU_俄罗斯联邦
@@ -415,14 +348,6 @@ proxies:
   name: '51,72|🇷🇺_RU_俄罗斯_3 #5'
   password: QWDDvVE9npNurQfA
   port: 9026
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '51|🇷🇺_RU_俄罗斯_5 #3'
-  password: UTJA57ypk2XKQpnm
-  port: 9033
   server: 217.30.10.18
   type: ss
   udp: true
@@ -535,6 +460,19 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 7ce71f9c-09b2-494e-a600-d06429b4e119
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  delay: 1058
+  name: 53|俄罗斯 - 圣彼得堡 - LLC Baxet - 6
+  network: ws
+  port: 20315
+  server: 195.58.49.42
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c8972631-fca7-4f2e-ae9e-3547904f8170
   ws-opts:
     path: /
 - cipher: aes-256-cfb

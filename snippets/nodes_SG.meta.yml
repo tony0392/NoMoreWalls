@@ -1,6 +1,6 @@
 proxies:
 - client-fingerprint: chrome
-  name: 0,3,33,59,65,71|CN_speednode_0092
+  name: 0,3,33,59,65,67,71|CN_speednode_0092
   password: dc15d997-8b26-4294-870e-c90a5784dca4
   port: 13028
   server: naiu-sg.05vr9nyqg5.download
@@ -42,25 +42,11 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   delay: 2710
-  name: 2,9,50,51|新加坡 - 新加坡 - Velo Link, Inc. - ...
+  name: 2,9,51|新加坡 - 新加坡 - Velo Link, Inc. - ...
   password: 0HBGSZP1UCOGQDZW
   port: 16002
   server: 183.61.177.234
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 4|🇸🇬 新加坡西部-1A
-  network: ws
-  port: 23452
-  server: westsg2-ddns.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7c3ac70f-d784-4c8a-be4f-909dea49fe80
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
 - alterId: 0
   cipher: auto
   name: 4|🇸🇬 新加坡西部-1B
@@ -77,13 +63,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4|🇸🇬 新加坡 IEPL专线NO1
-  port: 20015
-  server: i.needss.top
+  name: 4|🇸🇬 新加坡西部-1A
+  network: ws
+  port: 23452
+  server: westsg2-ddns.oraclenat.cc
   tls: false
   type: vmess
   udp: true
-  uuid: 0a32e457-55e7-464b-9281-1cf90a7ea52e
+  uuid: 7c3ac70f-d784-4c8a-be4f-909dea49fe80
+  ws-opts:
+    headers:
+      Host: westsg2-ddns.oraclenat.cc
+    path: /
 - alterId: 0
   cipher: auto
   name: 5|🇸🇬 **新加坡节点DigitalOcean**
@@ -215,7 +206,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10|🇸🇬 新加坡 IEPL专线NO1 #1'
+  name: 10|🇸🇬 新加坡 IEPL专线NO1
   port: 20015
   server: i.needss.top
   tls: false
@@ -244,12 +235,12 @@ proxies:
   skip-cert-verify: true
   type: tuic
   uuid: 19389f45-9b2f-4fb6-a63d-4821f0f5b0f7
-- name: 12|Singapore  Pro 5
+- name: 12|Singapore  Pro 1
   password: '!!str 3648425794742788096'
   port: 443
-  server: flying-tuna.treefrog761.one
+  server: amazed-gobbler.treefrog761.one
   skip-cert-verify: false
-  sni: flying-tuna.treefrog761.one
+  sni: amazed-gobbler.treefrog761.one
   type: trojan
   udp: true
 - name: 12|Singapore  Pro 3
@@ -260,20 +251,12 @@ proxies:
   sni: guiding-raven.treefrog761.one
   type: trojan
   udp: true
-- name: 12|Singapore  Pro 1
+- name: 12|Singapore  Pro 5
   password: '!!str 3648425794742788096'
   port: 443
-  server: amazed-gobbler.treefrog761.one
+  server: flying-tuna.treefrog761.one
   skip-cert-verify: false
-  sni: amazed-gobbler.treefrog761.one
-  type: trojan
-  udp: true
-- name: 12|Singapore  Pro 4
-  password: '!!str 3648425794742788096'
-  port: 443
-  server: probable-drum.treefrog761.one
-  skip-cert-verify: false
-  sni: probable-drum.treefrog761.one
+  sni: flying-tuna.treefrog761.one
   type: trojan
   udp: true
 - name: 12|Singapore  Pro 2
@@ -282,6 +265,14 @@ proxies:
   server: exotic-bengal.treefrog761.one
   skip-cert-verify: false
   sni: exotic-bengal.treefrog761.one
+  type: trojan
+  udp: true
+- name: 12|Singapore  Pro 4
+  password: '!!str 3648425794742788096'
+  port: 443
+  server: probable-drum.treefrog761.one
+  skip-cert-verify: false
+  sni: probable-drum.treefrog761.one
   type: trojan
   udp: true
 - alterId: 0
@@ -929,7 +920,7 @@ proxies:
   server: 13.229.181.179
   type: ss
 - cipher: aes-256-cfb
-  name: '19,54|🇸🇬SG-13.250.12.185-5866 | 12.5... #1'
+  name: '19,21,54|🇸🇬SG-13.250.12.185-5866 | 12.5... #1'
   password: amazonskr05
   port: 443
   server: 13.250.12.185
@@ -1052,12 +1043,12 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   name: 24|🇸🇬 新加坡 | SGP
-  port: 45055
-  server: xdd.dashuai.cyou
+  port: 20015
+  server: i.needss.top
   tls: false
   type: vmess
   udp: true
-  uuid: 55ca5c81-d076-4047-b9cf-5a540bdd74fd
+  uuid: 0bddb982-2dd5-4e72-a169-7390afd3dc56
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -1068,7 +1059,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: b9d5bd3c-2bed-488f-844d-0ce307097c99
+  uuid: 649793bc-ced5-47de-a042-0693c06ab87c
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
@@ -1083,7 +1074,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 506063ef-d307-40e5-8846-b1f7006349a6
+  uuid: 67507895-4104-40e8-968e-7ae8bbc5cf2b
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
@@ -1098,7 +1089,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 67507895-4104-40e8-968e-7ae8bbc5cf2b
+  uuid: 506063ef-d307-40e5-8846-b1f7006349a6
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
@@ -1118,105 +1109,10 @@ proxies:
     headers:
       Host: westsg2-ddns.oraclenat.cc
     path: /
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 24|🇸🇬 新加坡 | SGP 6
-  password: 450b8ba3-93b2-43cc-917f-bf94f5527e72
-  port: 26867
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 7
-  network: ws
-  port: 23452
-  server: westsg2-ddns.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 649793bc-ced5-47de-a042-0693c06ab87c
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 8
-  port: 20015
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0bddb982-2dd5-4e72-a169-7390afd3dc56
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 9
-  password: d8399264-1bb6-4718-a380-08e57ddf6569
-  port: 36774
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 10
-  network: ws
-  port: 23452
-  server: westsg2-ddns.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e35d4dbd-94c1-4493-9ef7-069961909585
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 11
-  password: d8399264-1bb6-4718-a380-08e57ddf6569
-  port: 26867
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 12
-  password: ad14a110-5b80-470b-adfb-396bfbb4128c
-  port: 34301
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 13
-  network: ws
-  port: 23452
-  server: westsg2-ddns.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4626324b-d53c-43fe-8b44-4c862bbed9e7
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 14
-  password: 450b8ba3-93b2-43cc-917f-bf94f5527e72
-  port: 36774
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 15
   network: ws
   port: 23452
   server: westsg2-ddns.oraclenat.cc
@@ -1228,66 +1124,10 @@ proxies:
     headers:
       Host: westsg2-ddns.oraclenat.cc
     path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 16
-  password: 450b8ba3-93b2-43cc-917f-bf94f5527e72
-  port: 37958
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 17
-  network: ws
-  port: 23452
-  server: westsg2-ddns.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 49a11654-7dc7-44de-98e0-546ab2aa8fe0
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 18
-  network: ws
-  port: 23452
-  server: westsg2-ddns.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a68403a8-5266-45cf-9c3d-d3e7bf3375b5
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 19
-  password: ad14a110-5b80-470b-adfb-396bfbb4128c
-  port: 34302
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 20
-  port: 45054
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 55ca5c81-d076-4047-b9cf-5a540bdd74fd
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 22
+  name: 24|🇸🇬 新加坡 | SGP 7
   network: ws
   port: 23452
   server: westsg2-ddns.oraclenat.cc
@@ -1302,14 +1142,14 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 23
+  name: 24|🇸🇬 新加坡 | SGP 8
   network: ws
   port: 23452
   server: westsg2-ddns.oraclenat.cc
   tls: false
   type: vmess
   udp: true
-  uuid: d902ab38-d8fb-4c7b-9e0d-e043dac90ac5
+  uuid: 2fca5d1b-ac54-49b2-a326-08feda03cfad
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
@@ -1317,7 +1157,22 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 24
+  name: 24|🇸🇬 新加坡 | SGP 9
+  network: ws
+  port: 23452
+  server: westsg2-ddns.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 49a11654-7dc7-44de-98e0-546ab2aa8fe0
+  ws-opts:
+    headers:
+      Host: westsg2-ddns.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 24|🇸🇬 新加坡 | SGP 10
   network: ws
   port: 23452
   server: westsg2-ddns.oraclenat.cc
@@ -1332,53 +1187,22 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 25
+  name: 24|🇸🇬 新加坡 | SGP 12
   network: ws
   port: 23452
   server: westsg2-ddns.oraclenat.cc
   tls: false
   type: vmess
   udp: true
-  uuid: 2fca5d1b-ac54-49b2-a326-08feda03cfad
+  uuid: e35d4dbd-94c1-4493-9ef7-069961909585
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
     path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 26
-  password: d8399264-1bb6-4718-a380-08e57ddf6569
-  port: 37958
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 27
-  network: ws
-  port: 23452
-  server: westsg2-ddns.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 08b6fb01-f520-46f1-a7ac-24990174c225
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 28
-  password: ad14a110-5b80-470b-adfb-396bfbb4128c
-  port: 34303
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24|🇸🇬 新加坡 | SGP 29
+  name: 24|🇸🇬 新加坡 | SGP 13
   network: ws
   port: 23452
   server: westsg2-ddns.oraclenat.cc
@@ -1390,6 +1214,81 @@ proxies:
     headers:
       Host: westsg2-ddns.oraclenat.cc
     path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 24|🇸🇬 新加坡 | SGP 14
+  network: ws
+  port: 23452
+  server: westsg2-ddns.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d902ab38-d8fb-4c7b-9e0d-e043dac90ac5
+  ws-opts:
+    headers:
+      Host: westsg2-ddns.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 24|🇸🇬 新加坡 | SGP 15
+  network: ws
+  port: 23452
+  server: westsg2-ddns.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4626324b-d53c-43fe-8b44-4c862bbed9e7
+  ws-opts:
+    headers:
+      Host: westsg2-ddns.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 24|🇸🇬 新加坡 | SGP 16
+  network: ws
+  port: 23452
+  server: westsg2-ddns.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 08b6fb01-f520-46f1-a7ac-24990174c225
+  ws-opts:
+    headers:
+      Host: westsg2-ddns.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 24|🇸🇬 新加坡 | SGP 17
+  network: ws
+  port: 23452
+  server: westsg2-ddns.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a68403a8-5266-45cf-9c3d-d3e7bf3375b5
+  ws-opts:
+    headers:
+      Host: westsg2-ddns.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 24|🇸🇬 新加坡 | SGP 18
+  network: ws
+  port: 23452
+  server: westsg2-ddns.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b9d5bd3c-2bed-488f-844d-0ce307097c99
+  ws-opts:
+    headers:
+      Host: westsg2-ddns.oraclenat.cc
+    path: /
 - cipher: aes-256-cfb
   name: 40|🟠_🇸🇬_💼_github.com/Ruk1ng001_38...
   password: amazonskr05
@@ -1397,7 +1296,7 @@ proxies:
   server: 47.129.207.193
   type: ss
 - cipher: aes-256-cfb
-  name: 40,71|SG_speednode_0138
+  name: 40,67,71|SG_speednode_0138
   password: amazonskr05
   port: 443
   server: 13.213.40.92
@@ -1466,7 +1365,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: d58e02c7-282a-37a4-bb66-aa8c169a11d6
+  uuid: 27cb8b73-6e6e-3719-b76e-a13e954280e3
   ws-opts:
     headers:
       Host: 17.mamamajd.site
@@ -1564,40 +1463,10 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 59,62|RELAY-104.19.48.236-0284 | 24....
-  network: ws
-  port: 80
-  server: 104.19.48.236
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
-  ws-opts:
-    headers:
-      Host: chunchuan.kejixiaoqi666.store
-    path: /
-- alterId: 0
-  cipher: auto
   name: 59,62|RELAY-104.17.213.241-0497 | 27...
   network: ws
   port: 80
   server: 104.17.213.241
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
-  ws-opts:
-    headers:
-      Host: chunchuan.kejixiaoqi666.store
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59,62|RELAY-104.16.155.10-0283 | 21....
-  network: ws
-  port: 80
-  server: 104.16.155.10
   servername: ''
   skip-cert-verify: false
   tls: false
@@ -1615,20 +1484,6 @@ proxies:
   server: 198.41.209.70
   servername: ''
   skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
-  ws-opts:
-    headers:
-      Host: chunchuan.kejixiaoqi666.store
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '59|VMESS-未知>新加坡-NF解锁新加坡自制剧-ChatGP... #4'
-  network: ws
-  port: 80
-  server: 104.17.221.248
-  servername: ''
   tls: false
   type: vmess
   uuid: e6543319-0574-42ac-b778-1c4325d626f5
@@ -1667,10 +1522,59 @@ proxies:
   server: 64.176.85.73
   type: ss
 - cipher: aes-256-cfb
-  name: 67|SG_b1769_0023
+  name: 67,71|SG_speednode_0134
   password: amazonskr05
   port: 443
-  server: 13.213.72.75
+  server: 13.212.177.74
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 67,71|SG_speednode_0135
+  password: amazonskr05
+  port: 443
+  server: 13.212.48.245
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 67,71|SG_speednode_0136
+  password: amazonskr05
+  port: 443
+  server: 52.221.234.117
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 67,71|SG_speednode_0137
+  password: amazonskr05
+  port: 443
+  server: 47.129.8.91
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 67,71|SG_speednode_0139
+  password: amazonskr05
+  port: 443
+  server: 54.179.36.235
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 67,71|SG_speednode_0140
+  password: amazonskr05
+  port: 443
+  server: 54.255.247.242
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 67,71|SG_speednode_0141
+  password: amazonskr05
+  port: 443
+  server: 18.143.140.182
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 67,71|SG_speednode_0142
+  password: amazonskr05
+  port: 443
+  server: 47.129.201.205
   type: ss
   udp: true
 - alterId: 0
@@ -1737,62 +1641,6 @@ proxies:
     headers:
       HOST: chunchuan.kejixiaoqi666.store
     path: /
-- cipher: aes-256-cfb
-  name: 71|SG_speednode_0134
-  password: amazonskr05
-  port: 443
-  server: 13.212.177.74
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 71|SG_speednode_0135
-  password: amazonskr05
-  port: 443
-  server: 13.212.48.245
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 71|SG_speednode_0136
-  password: amazonskr05
-  port: 443
-  server: 52.221.234.117
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 71|SG_speednode_0137
-  password: amazonskr05
-  port: 443
-  server: 47.129.8.91
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 71|SG_speednode_0139
-  password: amazonskr05
-  port: 443
-  server: 54.179.36.235
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 71|SG_speednode_0140
-  password: amazonskr05
-  port: 443
-  server: 54.255.247.242
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 71|SG_speednode_0141
-  password: amazonskr05
-  port: 443
-  server: 18.143.140.182
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 71|SG_speednode_0142
-  password: amazonskr05
-  port: 443
-  server: 47.129.201.205
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 72|SG_Singapore_Oracle Corporatio...
   password: 75ly0yJ90LP5Ural
@@ -2170,14 +2018,6 @@ proxies:
   sni: probable-drum.treefrog761.one
   type: trojan
   udp: true
-- name: '74|Singapore  Pro 5 #1'
-  password: '!!str 3747000103274291200'
-  port: 443
-  server: flying-tuna.treefrog761.one
-  skip-cert-verify: false
-  sni: flying-tuna.treefrog761.one
-  type: trojan
-  udp: true
 - name: '74|Singapore  Pro 2 #1'
   password: '!!str 3747000103274291200'
   port: 443
@@ -2186,12 +2026,12 @@ proxies:
   sni: exotic-bengal.treefrog761.one
   type: trojan
   udp: true
-- name: '74|Singapore  Pro 1 #1'
+- name: '74|Singapore  Pro 5 #1'
   password: '!!str 3747000103274291200'
   port: 443
-  server: amazed-gobbler.treefrog761.one
+  server: flying-tuna.treefrog761.one
   skip-cert-verify: false
-  sni: amazed-gobbler.treefrog761.one
+  sni: flying-tuna.treefrog761.one
   type: trojan
   udp: true
 - name: '74|Singapore  Pro 3 #1'
@@ -2200,6 +2040,14 @@ proxies:
   server: guiding-raven.treefrog761.one
   skip-cert-verify: false
   sni: guiding-raven.treefrog761.one
+  type: trojan
+  udp: true
+- name: '74|Singapore  Pro 1 #1'
+  password: '!!str 3747000103274291200'
+  port: 443
+  server: amazed-gobbler.treefrog761.one
+  skip-cert-verify: false
+  sni: amazed-gobbler.treefrog761.one
   type: trojan
   udp: true
 - name: 78|新加坡-Trojan

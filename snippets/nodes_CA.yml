@@ -1,11 +1,13 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   delay: 1629
-  name: 17,24,41,45,53,117|加拿大 - 多伦多 - Tangram Canada Inc...
+  ip-version: dual
+  name: 17,24,41,45,53,114,117|加拿大 - 多伦多 - Tangram Canada Inc...
   password: ODZmZ
   port: 8388
   server: 146.19.106.5
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '19,43|🇨🇦 加拿大 IEPL专线 NO1 #2'
@@ -167,7 +169,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '47,55,105,106,126|🇨🇦CA-134.195.198.147-8431 | 11... #1'
+  name: 47,55,105,106,126|🇨🇦CA-134.195.198.147-8157 | 76...
   network: ws
   port: 443
   server: 134.195.198.147
@@ -181,33 +183,33 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: '47,55,68,78,126|🇨🇦CA-142.4.216.225-0493 | 11.9... #1'
+  name: 47,55,68,78,126|🇨🇦CA-142.4.216.225-0467 | 18.8...
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '47,55,68,126|🇨🇦CA-142.4.216.225-0502 | 7.89... #1'
+  name: 47,55,68,126|🇨🇦CA-142.4.216.225-0460 | 18.1...
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
 - cipher: aes-128-gcm
-  name: '47,55,126|🇨🇦CA-149.22.95.183-0378 | 24.6... #1'
+  name: 47,55,126|🇨🇦CA-149.22.95.183-0331 | 40.0...
   password: shadowsocks
   port: 443
   server: 149.22.95.183
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇹 IT
-  name: '47,68,126|🇨🇦CA-185.213.20.227-5831 | 1.1... #1'
+  name: 47,68| IT_318
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.213.20.227
   type: ss
 - alterId: 0
   cipher: auto
-  name: '47,55,126|🇨🇦CA-23.162.200.227-8473 | 105... #1'
+  name: 47,55,126|🇨🇦CA-23.162.200.227-8149 | 51....
   network: ws
   port: 443
   server: 23.162.200.227
@@ -218,7 +220,7 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '47,55,126|🇨🇦CA-79.127.233.170-0383 | 20.... #1'
+  name: 47,55,126|🇨🇦CA-79.127.233.170-0332 | 41....
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
@@ -239,10 +241,48 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  name: 62|🇨🇦 加拿大 | CAN
+  port: 45065
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 94cc7bb6-09f4-4ab5-8864-6d18b161a1d7
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 62|🇨🇦 加拿大 | CAN 2
+  port: 45112
+  server: qd.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0047bf38-4fa2-442a-86ac-d3fd208e6843
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 62|🇨🇦 加拿大 | CAN 3
+  port: 45064
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 94cc7bb6-09f4-4ab5-8864-6d18b161a1d7
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 62|🇨🇦 加拿大 | CAN 4
+  password: 5f960163-ea2d-44c6-99e6-e749d5b34875
+  port: 58809
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
   country: 🇦 CA
   h2-opts: {}
   http-opts: {}
-  name: 68|🇦 CA_215
+  name: 68|🇦 CA_213
   network: ws
   port: 443
   server: 68.168.31.196
@@ -255,7 +295,7 @@ proxies:
     HOST: 68.168.31.196
   ws-path: /linkvws
 - country: 🇦CA
-  name: 68,70|🇨🇦CA_217
+  name: 68,70|🇨🇦CA_215
   password: acfef609-b3c7-4e52-b292-8921d5fca90d
   port: 443
   server: 91.194.11.168
@@ -264,7 +304,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 71|🇨🇦 CA_215
+  name: 71|🇨🇦 CA_213
   network: ws
   port: 443
   server: 68.168.31.196
@@ -469,19 +509,6 @@ proxies:
     path: /dabai.in172.67.81.78
 - alterId: 0
   cipher: auto
-  name: '105,106|加拿大 004 #1'
-  network: ws
-  port: 2082
-  server: s1.db-link01.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-39-195-198.s1.db-link01.top
-    path: /dabai.in104.16.26.37
-- alterId: 0
-  cipher: auto
   name: '105,106|加拿大 005 #1'
   network: ws
   port: 2095
@@ -536,6 +563,38 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: '105,106|加拿大 011 #1'
+  network: ws
+  port: 2082
+  server: s5.cn-db.top
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-219-162-241.s5.cn-db.top
+    path: /dabai.in172.64.23.14
+- alterId: 0
+  cipher: auto
+  name: '105,106|加拿大 012 #1'
+  network: ws
+  port: 80
+  server: s2.db-link01.top
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-55-60-174.s2.db-link01.top
+    path: /dabai.in172.67.60.154
+- alterId: 0
+  cipher: auto
   name: '105,106|加拿大 015 #1'
   network: ws
   port: 8880
@@ -547,13 +606,27 @@ proxies:
     headers:
       Host: 100-177-17-45.s2.db-link01.top
     path: /dabai.in172.67.92.156
-- name: 130,131|🇺🇸 美国 惠普HP
+- name: 126,130,131|🇺🇸 美国 惠普HP
   password: telegram-id-directvpn
   port: 22222
   server: 15.157.238.153
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 126|🇨🇦CA-23.162.200.227-0819 | 70....
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.162.200.227
+    path: /
 - alterId: 0
   cipher: auto
   name: 144|CA_0001

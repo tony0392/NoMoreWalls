@@ -1,23 +1,26 @@
 proxies:
-- client-fingerprint: chrome
-  name: '0,3,61,67|🇹🇼 台湾|@ripaojiedian #2'
-  password: 415b770f-20de-4be4-a3c1-8376da50a1b7
-  port: 18147
-  server: wb.kaiqsz.com
-  skip-cert-verify: false
-  sni: mm2.redapricotcloud.com
-  type: trojan
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: '0,3,67|🇹🇼 台湾2|@ripaojiedian #2'
-  port: 19490
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
+  delay: 346
+  name: 0,3,9,19,42,53,67,69,73|CN_speednode_0061
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8801
+  protocol: origin
+  protocol-param: ''
+  server: cn00.closeai.one
+  type: ssr
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  delay: 1278
+  name: '0,3,9,53,67|🇹🇼 台湾2|@ripaojiedian #2'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 234dcf63-5809-44fd-9c53-86f51f2e76a7
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 6|🇹🇼 台湾 1-1B
   password: 0871a57c-64fd-44ff-a6aa-90d14d497b97
@@ -216,21 +219,22 @@ proxies:
   udp: true
   uuid: 97fae41f-96f5-4696-bd3a-344c27f66419
 - cipher: aes-128-gcm
-  name: 19|@MxlShare 台湾 | TWN 8
+  name: 19,42|github.com/Ruk1ng001_333134346...
   password: 896fe3b1-aff4-4795-aa8b-48cabbff8e2d
   port: 12005
   server: mdss-hk.04z3susick.download
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 19|@MxlShare 台湾 | TWN 11
+  client-fingerprint: chrome
+  name: 19,23,42|github.com/Ruk1ng001_36373133
   password: 896fe3b1-aff4-4795-aa8b-48cabbff8e2d
   port: 12029
   server: mdss-tw.04z3susick.download
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 19|@MxlShare 台湾 | TWN 12
+  name: 19,42|github.com/Ruk1ng001_373065633...
   password: 896fe3b1-aff4-4795-aa8b-48cabbff8e2d
   port: 12031
   server: mdss-tw.04z3susick.download
@@ -251,7 +255,7 @@ proxies:
   sni: tw-05-591.flztjc.net
   type: trojan
   udp: true
-- name: 19|@MxlShare 台湾 | TWN 15
+- name: 19,42|github.com/Ruk1ng001_366363396...
   password: 069a7054-7269-554b-bfab-a7f2651f92e5
   port: 5302
   server: dozo01.flztjc.top
@@ -267,7 +271,7 @@ proxies:
   sni: tw-1-544.flztjc.net
   type: trojan
   udp: true
-- name: 19|@MxlShare 台湾 | TWN 17
+- name: 19,42|github.com/Ruk1ng001_353862356...
   password: 069a7054-7269-554b-bfab-a7f2651f92e5
   port: 5303
   server: dozo01.flztjc.top
@@ -275,7 +279,7 @@ proxies:
   sni: tw-03-505.flztjc.net
   type: trojan
   udp: true
-- name: 19|@MxlShare 台湾 | TWN 18
+- name: 19,42|github.com/Ruk1ng001_353965323...
   password: 069a7054-7269-554b-bfab-a7f2651f92e5
   port: 5306
   server: dozo01.flztjc.top
@@ -291,9 +295,27 @@ proxies:
   sni: tw-04-590.flztjc.net
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 25|🇹🇼 台湾|TW02
+  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
+  port: 35805
+  server: 1w91dj53mb3tjunfqy7q3bdu1fo0sged.08.02.tw.88k.site
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 47,61|🇨🇳 台湾2|@ripaojiedian
+  network: tcp
+  port: '19490'
+  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 234dcf63-5809-44fd-9c53-86f51f2e76a7
 - alterId: 2
   cipher: auto
-  name: 23,59|🇼 [vip①]台湾1|解锁NF|2.5倍率 - MG Ne...
+  name: 59|🇼 [vip①]台湾1|解锁NF|2.5倍率 - MG Ne...
   network: ws
   port: 23619
   server: 19.mamamajd.site
@@ -306,76 +328,6 @@ proxies:
     headers:
       Host: 19.mamamajd.site
     path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 25|🇹🇼 台湾|TW02
-  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
-  port: 35805
-  server: 1w91dj53mb3tjunfqy7q3bdu1fo0sged.08.02.tw.88k.site
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 35|台湾省桃园市 中华电信
-  network: ws
-  port: 25774
-  server: qdfhytmhg.fask511.cfd
-  tls: false
-  type: vmess
-  uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
-  ws-opts:
-    headers:
-      Host: www.douyin.com
-    path: /?ed=1024
-- alterId: 0
-  cipher: auto
-  name: '35,61|🇨🇳 台湾省桃园市 中华电信 #3'
-  network: ws
-  port: '25776'
-  server: kkkghdragxc.fask511.cfd
-  tls: false
-  type: vmess
-  uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
-  ws-opts:
-    headers:
-      Host: www.douyin.com
-    path: /?ed=1024
-- alterId: 0
-  cipher: auto
-  name: '35|台湾省桃园市 中华电信 #3'
-  network: ws
-  port: 25780
-  server: hhhfksdcbr.fask511.cfd
-  tls: false
-  type: vmess
-  uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
-  ws-opts:
-    headers:
-      Host: www.douyin.com
-    path: /?ed=1024
-- alterId: 0
-  cipher: auto
-  name: '35|台湾省桃园市 中华电信 #4'
-  network: ws
-  port: 25779
-  server: hhhfksdcbr.fask511.cfd
-  tls: false
-  type: vmess
-  uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
-  ws-opts:
-    headers:
-      Host: www.douyin.com
-    path: /?ed=1024
-- alterId: 0
-  cipher: auto
-  name: 47,61|🇨🇳 台湾2|@ripaojiedian
-  network: tcp
-  port: '19490'
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 234dcf63-5809-44fd-9c53-86f51f2e76a7
 - alterId: 0
   cipher: auto
   name: 59|🇼 台湾 1 动画疯 - 西瓜皮是真的皮

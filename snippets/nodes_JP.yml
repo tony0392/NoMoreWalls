@@ -14,10 +14,11 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   delay: 796
-  name: '0,3,9,53,61,67|🇯🇵 日本2|@ripaojiedian #3'
+  name: '0,3,9,47,53,61,67|🇯🇵 日本2|@ripaojiedian #3'
   network: ws
   port: 25775
   server: tttxbmsm.fask511.cfd
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -31,7 +32,7 @@ proxies:
 - cipher: chacha20-ietf
   client-fingerprint: chrome
   delay: 664
-  name: 0,3,9,19,42,53,67,69,73|CN_speednode_0031
+  name: 0,3,9,19,42,47,53,67,69,73|CN_speednode_0031
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -43,7 +44,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '0,3,67|🇯🇵 日本特殊|@ripaojiedian #3'
+  name: '0,3,47,67|🇯🇵 日本特殊|@ripaojiedian #3'
   password: amazonskr05
   port: 443
   server: 52.192.7.214
@@ -114,11 +115,12 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 858
-  name: '9,53|日本 - Osaka - Oracle Corporatio... #1'
+  name: '9,43,53|日本 - Osaka - Oracle Corporatio... #1'
   network: ws
   port: 25775
   server: hhhfksdcbr.fask511.cfd
   skip-cert-verify: true
+  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -173,7 +175,8 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 9,19|@MxlShare 日本 | JPN 36
+  delay: 2852
+  name: 9,19,46|美国 028
   network: ws
   port: 2080
   server: jpp.556855.xyz
@@ -188,13 +191,15 @@ proxies:
       Host: jpp.556855.xyz
     path: /
 - delay: 714
-  name: 9,20,53,61|🇯🇵 日本4|@ripaojiedian
+  name: 9,20,35,43,53,61|🇯🇵 日本4|@ripaojiedian
   password: dc15d997-8b26-4294-870e-c90a5784dca4
   port: 13011
   server: naiu-jp.05vr9nyqg5.download
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
+  tfo: false
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
   delay: 884
   name: 9,42,53,69,73|CN_speednode_0068
@@ -1470,19 +1475,21 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  name: '20,42,70|SS-美国-NF解锁自制剧-ChatGPT-TikTok-Y... #6'
+  name: '20,42,43,70|SS-美国-NF解锁自制剧-ChatGPT-TikTok-Y... #6'
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 38.68.135.239
+  tfo: false
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20,21,56,64|🇯🇵JP-52.197.171.218-0399 | 1.7...
+  name: '20,21,56|🇯🇵JP-52.197.171.218-0399 | 1.8... #1'
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: japan-5.keenvpn.me
   type: ss
 - cipher: aes-128-gcm
-  name: 21,56,64|🇯🇵JP-149.22.87.204-0363 | 1.19...
+  name: 21,56,64|🇯🇵JP-149.22.87.204-0363 | 31.8...
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -1599,37 +1606,48 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN
-  port: 45057
-  server: xdd.dashuai.cyou
-  tls: false
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 27| JP_284
+  network: ws
+  port: 11443
+  server: tls.17.node-for-bigairport.win
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  udp: true
-  uuid: fed5770a-1899-4570-ad03-16f07a30264e
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 2
-  port: 20017
-  server: i.needss.top
-  tls: false
+  country: 🇯🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 27|🇵 JP_285
+  network: ws
+  port: 42359
+  server: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  udp: true
-  uuid: f7c97ede-912a-4fd8-b73f-26f62f6b971e
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 3
-  port: 45056
-  server: haa.dashuai.cyou
-  tls: false
+  name: 30|🇯🇵 JP_284
+  network: ws
+  port: 11443
+  server: tls.17.node-for-bigairport.win
+  tls: true
   type: vmess
-  udp: true
-  uuid: fed5770a-1899-4570-ad03-16f07a30264e
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
-  name: 30|🇯🇵 JP_283
+  name: 30|🇯🇵 JP_285
   network: ws
   port: 42359
   server: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
@@ -1640,30 +1658,29 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇯🇵 JP_284
-  network: ws
-  port: 14443
-  server: tls.14.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- name: 35|日本+东京Amazon数据中心
-  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
-  port: 20230
-  server: jp006.421421.xyz
-  sni: 421421.xyz
-  type: trojan
 - name: 37|JP日本(mibei77.com 米贝节点分享)
   password: wb6368
   port: 2083
   server: 103.116.7.103
   skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 43|[Trojan] 🇯🇵 日本 V2CROSS.COM
+  password: 299beacf-37f0-41c6-a122-9260c75731bf
+  port: 49782
+  server: 43.199.216.251
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  tfo: false
+  type: trojan
+  udp: true
+- name: 43|[Trojan] 🇯🇵 日本 东京Amazon数据中心
+  password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
+  port: 20230
+  server: jp005.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  tfo: false
   type: trojan
   udp: true
 - client-fingerprint: chrome
@@ -1682,14 +1699,14 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: '47,61|🇯🇵 日本3|@ripaojiedian #2'
+  name: 47|16|日本|@ripaojiedian
   network: tcp
-  port: '39131'
-  server: 45.159.51.161
+  port: '33184'
+  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 2abcabf6-d7bf-48eb-aed2-07f090b7008a
+  uuid: e1541125-9df4-4ee7-bb05-e68f85d7937f
 - alterId: 0
   cipher: auto
   name: 48|日本-1
@@ -1730,12 +1747,6 @@ proxies:
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 52|🇯🇵_日本_4
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  type: ss
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
@@ -1761,7 +1772,6 @@ proxies:
   server: gy.58n.net
   skip-cert-verify: true
   sni: x114.flybar.work
-  tfo: true
   type: trojan
   udp: true
 - name: 59|🇵 日本•高速115•高速 - 飞翔吧
@@ -1770,7 +1780,6 @@ proxies:
   server: gy.58n.net
   skip-cert-verify: true
   sni: x115.flybar.work
-  tfo: true
   type: trojan
   udp: true
 - name: 59|🇵 日本•高速139•铂金 - 飞翔吧
@@ -1779,7 +1788,6 @@ proxies:
   server: gy.58n.net
   skip-cert-verify: true
   sni: z139.hongkongnode.top
-  tfo: true
   type: trojan
   udp: true
 - name: 59|🇯🇵 日本•高速140•铂金 - 飞翔吧
@@ -1788,7 +1796,6 @@ proxies:
   server: gy.58n.net
   skip-cert-verify: true
   sni: z140.hongkongnode.top
-  tfo: true
   type: trojan
   udp: true
 - name: 59|🇯🇵 日本•高速141•铂金 - 飞翔吧
@@ -1797,7 +1804,6 @@ proxies:
   server: gy.58n.net
   skip-cert-verify: true
   sni: z141.hongkongnode.top
-  tfo: true
   type: trojan
   udp: true
 - name: 59|🇯🇵 日本•高速142•原生 - 飞翔吧
@@ -1806,7 +1812,6 @@ proxies:
   server: gy.58n.net
   skip-cert-verify: true
   sni: z142.hongkongnode.top
-  tfo: true
   type: trojan
   udp: true
 - name: 59|🇵 日本•高速59•青铜 - 飞翔吧
@@ -1815,7 +1820,6 @@ proxies:
   server: gy.58n.net
   skip-cert-verify: true
   sni: x59.flybar.work
-  tfo: true
   type: trojan
   udp: true
 - name: 59|🇵 日本•高速71•高速 - 飞翔吧
@@ -1824,7 +1828,6 @@ proxies:
   server: gy.58n.net
   skip-cert-verify: true
   sni: x71.flybar.work
-  tfo: true
   type: trojan
   udp: true
 - name: 59|🇵 日本•高速76•高速 - 飞翔吧
@@ -1833,7 +1836,6 @@ proxies:
   server: gy.58n.net
   skip-cert-verify: true
   sni: x76.flybar.work
-  tfo: true
   type: trojan
   udp: true
 - alterId: 0
@@ -1863,6 +1865,21 @@ proxies:
   skip-cert-verify: false
   sni: mmbiz1.redapricotcloud.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '61|🇯🇵 日本3|@ripaojiedian #2'
+  network: tcp
+  port: '39131'
+  server: 45.159.51.161
+  tls: false
+  type: vmess
+  uuid: 2abcabf6-d7bf-48eb-aed2-07f090b7008a
+- cipher: chacha20-ietf
+  name: 64|🇯🇵JP-107.148.6.121-5891 | 18.1...
+  password: asd123456
+  port: 8388
+  server: 107.148.6.121
+  type: ss
 - cipher: aes-256-cfb
   name: 69,73|JP_speednode_0120
   password: amazonskr05

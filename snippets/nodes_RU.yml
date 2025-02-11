@@ -3,14 +3,16 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   delay: 1247
-  name: '0,3,9,53,67|🇷🇺 俄罗斯|@ripaojiedian #2'
+  name: '0,3,9,35,43,47,53,67|🇷🇺 俄罗斯|@ripaojiedian #2'
   network: ws
   port: 25780
   server: bvdhgfhfs.fask511.cfd
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
   ws-opts:
     headers:
@@ -328,29 +330,69 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21,56,64|🇷🇺RU-45.151.62.54-0449 | 3.664...
+  country: 🇺 RU
+  name: '21,27,56|🇷🇺RU-45.151.62.54-0449 | 2.664... #1'
   password: 0zyDRZ1XmNXaaCAN7KEA8a
   port: 28825
   server: 45.151.62.54
   type: ss
-- name: 29|🇷🇺RU_380
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 27,64|🇺🇸US-92.118.112.111-0429 | 33....
+  password: gmYDzSG6K35s8b19oY4fGz
+  port: 18622
+  server: 92.118.112.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 27,64|SE-176.124.202.137-0496 | 17.9...
+  password: a0605527-28e4-449c-80ee-5642cc16a8af
+  port: 81
+  server: 176.124.202.137
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇺RU
+  name: 27|🇷🇺RU_379
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 27|🇺RU_380
+  password: PeHSHm5SqEjBuEXE
+  port: 9065
+  server: 45.89.52.66
+  type: ss
+- country: 🇺RU
+  name: 27,29|🇷🇺RU_381
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
+  skip-cert-verify: true
   type: trojan
-- name: 29|🇷🇺RU_381
+  udp: true
+- country: 🇺RU
+  name: 27,29|🇷🇺RU_382
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: 194.246.114.54
+  skip-cert-verify: true
   type: trojan
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 36,51|🇷🇺_RU_俄罗斯_8
-  password: ueLXVkvh4hckhErQ
-  port: 9060
-  server: 217.30.10.18
-  type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 35|俄罗斯 V2CROSS.COM
+  network: ws
+  port: 20315
+  server: 195.58.49.42
+  tls: false
+  type: vmess
+  uuid: 5dd415f9-b4b1-425a-9936-d9be0a09dbdc
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: aes-256-cfb
   ip-version: dual
   name: '36,38,39|🇷🇺_RU_俄罗斯_4 #2'
@@ -385,14 +427,6 @@ proxies:
   server: 217.30.10.18
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 39|🇷🇺_RU_俄罗斯_6
-  password: GA9KzeEgvfxNrgmM
-  port: 9019
-  server: 217.30.10.18
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   delay: 1142
@@ -408,6 +442,36 @@ proxies:
   udp: true
   uuid: a828394a-c871-4916-bb59-4ba5da177803
   ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 43,46|俄罗斯 001
+  network: ws
+  port: 8443
+  server: 193.9.49.89
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      Host: lax1.ibgfw.top
+    path: /xrenvws
+- alterId: 0
+  cipher: auto
+  name: 46|俄罗斯 003
+  network: ws
+  port: 20315
+  server: 195.58.49.42
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 77fdd97d-6ea6-4227-a3f1-13cc4749c44c
+  ws-opts:
+    headers:
+      Host: 195.58.49.42
+    path: /
 - alterId: 0
   cipher: auto
   name: 47|2|🇷🇺_RU_俄罗斯联邦
@@ -428,14 +492,6 @@ proxies:
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     path: /
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '50,51|🇷🇺_RU_俄罗斯_5 #2'
-  password: UTJA57ypk2XKQpnm
-  port: 9033
-  server: 217.30.10.18
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   ip-version: dual
   name: '50,72|🇷🇺_RU_俄罗斯_1 #2'

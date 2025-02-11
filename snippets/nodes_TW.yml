@@ -15,7 +15,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   delay: 1278
-  name: '0,3,9,47,53,60,67|🇹🇼 台湾2|@ripaojiedian #2'
+  name: '0,3,9,47,53,67|🇹🇼 台湾2|@ripaojiedian #2'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
@@ -231,8 +231,7 @@ proxies:
   sni: tw-05-591.flztjc.net
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 19,23,42|github.com/Ruk1ng001_613132336...
+- name: 19,42|github.com/Ruk1ng001_613132336...
   password: 069a7054-7269-554b-bfab-a7f2651f92e5
   port: 5304
   server: dozo01.flztjc.top
@@ -240,8 +239,7 @@ proxies:
   sni: tw-04-590.flztjc.net
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: '19,23,42,74|TW_Changhua_Akari Networks_Ope... #6'
+- name: '19,42,74|TW_Changhua_Akari Networks_Ope... #6'
   password: 069a7054-7269-554b-bfab-a7f2651f92e5
   port: 5302
   server: dozo01.flztjc.top
@@ -257,15 +255,20 @@ proxies:
   sni: tw-1-544.flztjc.net
   type: trojan
 - client-fingerprint: chrome
-  name: '23,42,43,69,73,74|TW_Changhua_Akari Networks_Ope... #7'
+  name: '23,42,69,73,74|TW_Changhua_Akari Networks_Ope... #7'
   password: 069a7054-7269-554b-bfab-a7f2651f92e5
   port: 5306
   server: dozo01.flztjc.top
   skip-cert-verify: true
   sni: tw-06-592.flztjc.net
-  tfo: false
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇹🇼4 |  5.5MB/s
+  password: 2ccefcbc-9ee9-4d30-b9a2-1ab8d1d94ad8
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 25|🇹🇼 台湾|TW02
@@ -276,21 +279,34 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇼 TW
-  name: 27| TW_363
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: 2.58.241.42
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇼 TW
-  name: 27|🇼 TW_364
+  name: 27| TW_371
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: taiwan-2.keenvpn.me
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇼 TW
+  name: 27|🇼 TW_372
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: 2.58.241.42
+  type: ss
 - alterId: 0
   cipher: auto
   name: 35|台湾省新竹市 中华电信
+  network: ws
+  port: 25780
+  server: qdfhytmhg.fask511.cfd
+  tls: false
+  type: vmess
+  uuid: 6b83a28c-e872-4f7e-9b13-ffcef4b5fc44
+  ws-opts:
+    headers:
+      Host: www.douyin.com
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: '35|台湾省新竹市 中华电信 #1'
   network: ws
   port: 25774
   server: tttxbmsm.fask511.cfd
@@ -303,15 +319,12 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 35,43|[VMess] 🇨🇳 台湾省新竹市 中华电信
+  name: '35|台湾省新竹市 中华电信 #2'
   network: ws
-  port: 25780
-  server: bvdhgfhfs.fask511.cfd
-  skip-cert-verify: true
-  tfo: false
+  port: 25777
+  server: qdfhytmhg.fask511.cfd
   tls: false
   type: vmess
-  udp: true
   uuid: 6b83a28c-e872-4f7e-9b13-ffcef4b5fc44
   ws-opts:
     headers:
@@ -352,32 +365,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 075c16e6-67cb-3599-aa5a-025b478db156
-- alterId: 0
-  cipher: auto
-  name: 60|🇹TW-114.44.80.187-102
-  network: ws
-  port: 25775
-  server: tttxbmsm.fask511.cfd
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
-  ws-headers:
-    Host: www.douyin.com
-  ws-path: /?ed=1024
-- alterId: 0
-  cipher: auto
-  name: 60|🇼TW-114.44.80.187-114
-  network: ws
-  port: 25780
-  server: bvdhgfhfs.fask511.cfd
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
-  ws-headers:
-    Host: www.douyin.com
-  ws-path: /?ed=1024
 - alterId: 0
   cipher: auto
   name: 74|TW_Chang-hua_Chunghwa Telecom ...

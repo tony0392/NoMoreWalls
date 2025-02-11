@@ -1,12 +1,14 @@
 proxies:
 - client-fingerprint: chrome
-  name: '0,3,20,60,61,67|🇸🇬 新加坡3|@ripaojiedian #3'
+  name: '0,3,20,43,60,61,67|🇸🇬 新加坡3|@ripaojiedian #3'
   password: dc15d997-8b26-4294-870e-c90a5784dca4
   port: 13028
   server: naiu-sg.05vr9nyqg5.download
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
+  tfo: false
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   delay: 789
@@ -476,12 +478,12 @@ proxies:
   port: 31304
   server: claw6.870710.xyz
   type: ss
-- name: 12|Singapore  Pro 4
+- name: 12|Singapore  Pro 5
   password: '!!str 3648425794742788096'
   port: 443
-  server: probable-drum.treefrog761.one
+  server: flying-tuna.treefrog761.one
   skip-cert-verify: false
-  sni: probable-drum.treefrog761.one
+  sni: flying-tuna.treefrog761.one
   type: trojan
   udp: true
 - name: 12|Singapore  Pro 2
@@ -492,28 +494,28 @@ proxies:
   sni: exotic-bengal.treefrog761.one
   type: trojan
   udp: true
-- name: 12|Singapore  Pro 1
-  password: '!!str 3648425794742788096'
-  port: 443
-  server: amazed-gobbler.treefrog761.one
-  skip-cert-verify: false
-  sni: amazed-gobbler.treefrog761.one
-  type: trojan
-  udp: true
-- name: 12|Singapore  Pro 5
-  password: '!!str 3648425794742788096'
-  port: 443
-  server: flying-tuna.treefrog761.one
-  skip-cert-verify: false
-  sni: flying-tuna.treefrog761.one
-  type: trojan
-  udp: true
 - name: 12|Singapore  Pro 3
   password: '!!str 3648425794742788096'
   port: 443
   server: guiding-raven.treefrog761.one
   skip-cert-verify: false
   sni: guiding-raven.treefrog761.one
+  type: trojan
+  udp: true
+- name: 12|Singapore  Pro 4
+  password: '!!str 3648425794742788096'
+  port: 443
+  server: probable-drum.treefrog761.one
+  skip-cert-verify: false
+  sni: probable-drum.treefrog761.one
+  type: trojan
+  udp: true
+- name: 12|Singapore  Pro 1
+  password: '!!str 3648425794742788096'
+  port: 443
+  server: amazed-gobbler.treefrog761.one
+  skip-cert-verify: false
+  sni: amazed-gobbler.treefrog761.one
   type: trojan
   udp: true
 - alterId: 0
@@ -1198,8 +1200,7 @@ proxies:
   sni: sgp-3-548.flztjc.net
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 19,23,42|github.com/Ruk1ng001_383636346...
+- name: 19,42|github.com/Ruk1ng001_383636346...
   password: 069a7054-7269-554b-bfab-a7f2651f92e5
   port: 9302
   server: dozo01.flztjc.top
@@ -1244,6 +1245,16 @@ proxies:
   port: 8080
   server: 68.183.227.4
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 23,26|🇦🇷 阿根廷 | ARG
+  port: 20014
+  server: i.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ad625d13-1801-41af-bfd1-c52e4b40dbfd
 - cipher: aes-256-cfb
   name: 24|🇸🇬 SG, Singapore
   password: amazonskr05
@@ -1332,7 +1343,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a68403a8-5266-45cf-9c3d-d3e7bf3375b5
+  uuid: 649793bc-ced5-47de-a042-0693c06ab87c
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
@@ -1347,7 +1358,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 49a11654-7dc7-44de-98e0-546ab2aa8fe0
+  uuid: 5198ac49-27de-42e4-acff-0a495e4f086c
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
@@ -1356,16 +1367,36 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   name: 26|🇸🇬 新加坡 | SGP 3
-  port: 20015
-  server: i.needss.top
+  network: ws
+  port: 23452
+  server: westsg2-ddns.oraclenat.cc
   tls: false
   type: vmess
   udp: true
-  uuid: ad625d13-1801-41af-bfd1-c52e4b40dbfd
+  uuid: e35d4dbd-94c1-4493-9ef7-069961909585
+  ws-opts:
+    headers:
+      Host: westsg2-ddns.oraclenat.cc
+    path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 26|🇸🇬 新加坡 | SGP 4
+  network: ws
+  port: 23452
+  server: westsg2-ddns.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 67507895-4104-40e8-968e-7ae8bbc5cf2b
+  ws-opts:
+    headers:
+      Host: westsg2-ddns.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 26|🇸🇬 新加坡 | SGP 5
   network: ws
   port: 23452
   server: westsg2-ddns.oraclenat.cc
@@ -1381,17 +1412,12 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   name: 26|🇸🇬 新加坡 | SGP 6
-  network: ws
-  port: 23452
-  server: westsg2-ddns.oraclenat.cc
+  port: 20015
+  server: i.needss.top
   tls: false
   type: vmess
   udp: true
-  uuid: 00c8b731-e779-4583-956f-bee05c198149
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
+  uuid: ad625d13-1801-41af-bfd1-c52e4b40dbfd
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -1402,7 +1428,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 67507895-4104-40e8-968e-7ae8bbc5cf2b
+  uuid: 8e0eba9e-82a0-4423-b089-8c19a526444e
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
@@ -1417,7 +1443,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: e35d4dbd-94c1-4493-9ef7-069961909585
+  uuid: b9d5bd3c-2bed-488f-844d-0ce307097c99
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
@@ -1432,7 +1458,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 8e0eba9e-82a0-4423-b089-8c19a526444e
+  uuid: 00c8b731-e779-4583-956f-bee05c198149
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
@@ -1462,7 +1488,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 5198ac49-27de-42e4-acff-0a495e4f086c
+  uuid: 49a11654-7dc7-44de-98e0-546ab2aa8fe0
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
@@ -1477,7 +1503,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 3dec410e-95ce-482c-bb55-be2874156a5d
+  uuid: 2fca5d1b-ac54-49b2-a326-08feda03cfad
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
@@ -1492,7 +1518,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 4626324b-d53c-43fe-8b44-4c862bbed9e7
+  uuid: ff76b52f-21e8-485f-87b5-4ff185c0580d
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
@@ -1507,7 +1533,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: eb34e175-5fad-4e88-bcc6-c236eabcc6ec
+  uuid: 4626324b-d53c-43fe-8b44-4c862bbed9e7
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
@@ -1522,7 +1548,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2fca5d1b-ac54-49b2-a326-08feda03cfad
+  uuid: 08b6fb01-f520-46f1-a7ac-24990174c225
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
@@ -1537,7 +1563,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: b9d5bd3c-2bed-488f-844d-0ce307097c99
+  uuid: eb34e175-5fad-4e88-bcc6-c236eabcc6ec
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
@@ -1552,7 +1578,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 08b6fb01-f520-46f1-a7ac-24990174c225
+  uuid: 3dec410e-95ce-482c-bb55-be2874156a5d
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
@@ -1567,28 +1593,13 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 649793bc-ced5-47de-a042-0693c06ab87c
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇸🇬 新加坡 | SGP 19
-  network: ws
-  port: 23452
-  server: westsg2-ddns.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ff76b52f-21e8-485f-87b5-4ff185c0580d
+  uuid: a68403a8-5266-45cf-9c3d-d3e7bf3375b5
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
     path: /
 - country: 🇬SG
-  name: 27,29|🇸🇬SG_364
+  name: 27,29|🇸🇬SG_360
   password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
   port: 443
   server: sg-full.privateip.net
@@ -1607,6 +1618,13 @@ proxies:
   password: amazonskr05
   port: 443
   server: 18.138.252.136
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 42,69,73|SG_speednode_0059
+  password: amazonskr05
+  port: 443
+  server: 47.129.223.160
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -1637,6 +1655,13 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
+  name: 42|🟠_🇸🇬_💼_github.com/Ruk1ng001_66...
+  password: amazonskr05
+  port: 443
+  server: 47.129.235.184
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
   name: 42|❓_🇸🇬_💼_github.com/Ruk1ng001_65...
   password: amazonskr05
   port: 443
@@ -1649,6 +1674,13 @@ proxies:
   port: 443
   server: 47.129.207.193
   type: ss
+- cipher: aes-256-cfb
+  name: 42|🟡_🇸🇬_💼_github.com/Ruk1ng001_34...
+  password: amazonskr05
+  port: 443
+  server: 18.143.103.137
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 45|🇸🇬 敏感时期，更新暂停
@@ -1704,7 +1736,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 60b7fc64-0fdd-30d6-a283-e604caeeb689
+  uuid: d983af2f-0b3d-3e11-8651-47c7dfef6e88
   ws-opts:
     headers:
       Host: 17.mamamajd.site
@@ -1800,6 +1832,21 @@ proxies:
   sni: sgvip101.qlgq.fun
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 61,64|RELAY-104.19.48.236-0250 | 9.2...
+  network: ws
+  port: 80
+  server: 104.19.48.236
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    headers:
+      Host: chunchuan.kejixiaoqi666.store
+    path: /
 - alterId: 0
   cipher: auto
   name: 61,64|RELAY-104.16.155.10-0249 | 9.4...
@@ -1972,20 +2019,12 @@ proxies:
   tls: false
   type: vmess
   uuid: d50eadc6-2eef-453f-98db-0a56685f7daa
-- name: '76|Singapore  Pro 4 #1'
+- name: '76|Singapore  Pro 5 #1'
   password: '!!str 3747000103274291200'
   port: 443
-  server: probable-drum.treefrog761.one
+  server: flying-tuna.treefrog761.one
   skip-cert-verify: false
-  sni: probable-drum.treefrog761.one
-  type: trojan
-  udp: true
-- name: '76|Singapore  Pro 3 #1'
-  password: '!!str 3747000103274291200'
-  port: 443
-  server: guiding-raven.treefrog761.one
-  skip-cert-verify: false
-  sni: guiding-raven.treefrog761.one
+  sni: flying-tuna.treefrog761.one
   type: trojan
   udp: true
 - name: '76|Singapore  Pro 1 #1'
@@ -2004,12 +2043,20 @@ proxies:
   sni: exotic-bengal.treefrog761.one
   type: trojan
   udp: true
-- name: '76|Singapore  Pro 5 #1'
+- name: '76|Singapore  Pro 3 #1'
   password: '!!str 3747000103274291200'
   port: 443
-  server: flying-tuna.treefrog761.one
+  server: guiding-raven.treefrog761.one
   skip-cert-verify: false
-  sni: flying-tuna.treefrog761.one
+  sni: guiding-raven.treefrog761.one
+  type: trojan
+  udp: true
+- name: '76|Singapore  Pro 4 #1'
+  password: '!!str 3747000103274291200'
+  port: 443
+  server: probable-drum.treefrog761.one
+  skip-cert-verify: false
+  sni: probable-drum.treefrog761.one
   type: trojan
   udp: true
 - name: 80|新加坡-Trojan

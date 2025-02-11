@@ -231,7 +231,8 @@ proxies:
   sni: tw-05-591.flztjc.net
   type: trojan
   udp: true
-- name: 19,42|github.com/Ruk1ng001_613132336...
+- client-fingerprint: chrome
+  name: 19,23,42|github.com/Ruk1ng001_613132336...
   password: 069a7054-7269-554b-bfab-a7f2651f92e5
   port: 5304
   server: dozo01.flztjc.top
@@ -255,23 +256,16 @@ proxies:
   skip-cert-verify: true
   sni: tw-1-544.flztjc.net
   type: trojan
-- name: '23,35,42,69,73,74|TW_Changhua_Akari Networks_Ope... #7'
+- client-fingerprint: chrome
+  name: '23,42,43,69,73,74|TW_Changhua_Akari Networks_Ope... #7'
   password: 069a7054-7269-554b-bfab-a7f2651f92e5
   port: 5306
   server: dozo01.flztjc.top
   skip-cert-verify: true
   sni: tw-06-592.flztjc.net
+  tfo: false
   type: trojan
   udp: true
-- name: 23|🇹🇼4 |  5.5MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: tw1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: tw1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 25|🇹🇼 台湾|TW02
@@ -282,33 +276,42 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇼 TW
-  name: 27| TW_367
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: taiwan-2.keenvpn.me
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇼 TW
-  name: 27|🇼 TW_368
-  password: 79739832-b888-415a-a454-8b53911c944a
-  port: 30332
-  server: vps.200566.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇼 TW
-  name: 27|🇼 TW_369
+  name: 27| TW_363
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: 2.58.241.42
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇼 TW
+  name: 27|🇼 TW_364
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: taiwan-2.keenvpn.me
   type: ss
 - alterId: 0
   cipher: auto
   name: 35|台湾省新竹市 中华电信
   network: ws
   port: 25774
-  server: bvdhgfhfs.fask511.cfd
+  server: tttxbmsm.fask511.cfd
   tls: false
   type: vmess
+  uuid: 6b83a28c-e872-4f7e-9b13-ffcef4b5fc44
+  ws-opts:
+    headers:
+      Host: www.douyin.com
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 35,43|[VMess] 🇨🇳 台湾省新竹市 中华电信
+  network: ws
+  port: 25780
+  server: bvdhgfhfs.fask511.cfd
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
   uuid: 6b83a28c-e872-4f7e-9b13-ffcef4b5fc44
   ws-opts:
     headers:
@@ -324,7 +327,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 60b7fc64-0fdd-30d6-a283-e604caeeb689
+  uuid: d983af2f-0b3d-3e11-8651-47c7dfef6e88
   ws-opts:
     headers:
       Host: 19.mamamajd.site

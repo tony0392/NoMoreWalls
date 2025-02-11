@@ -8,6 +8,50 @@ proxies:
   tfo: false
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  delay: 1080
+  name: 2,9,53|韩国 - Gwangmyeong - SK Broadban...
+  password: qwerREWQ@@
+  port: 28902
+  server: 218.38.103.150
+  type: ss
+- cipher: chacha20-ietf
+  delay: 628
+  name: 2,9,19,42,53,69,73|CN_speednode_0076
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8602
+  protocol: origin
+  protocol-param: ''
+  server: cn17.closeai.one
+  type: ssr
+  udp: true
+- cipher: aes-256-cfb
+  delay: 907
+  name: 2,9,53,56,64|🇰🇷KR-54.180.158.248-5787 | 27....
+  password: amazonskr05
+  port: 443
+  server: 54.180.158.248
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  delay: 939
+  name: 2,9,42,53,69,73|KR_speednode_0130
+  password: amazonskr05
+  port: 443
+  server: 3.34.123.239
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  delay: 1167
+  name: 2,9,19,53,69,73|KR_speednode_0131
+  password: amazonskr05
+  port: 443
+  server: 3.35.0.140
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5|🇰🇷 韩国春川节点
@@ -79,50 +123,6 @@ proxies:
   skip-cert-verify: false
   sni: kr-qingyun.dwyun.me
   type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  delay: 1080
-  name: 9,53|韩国 - Gwangmyeong - SK Broadban...
-  password: qwerREWQ@@
-  port: 28902
-  server: 218.38.103.150
-  type: ss
-- cipher: chacha20-ietf
-  delay: 628
-  name: 9,19,42,53,69,73|CN_speednode_0076
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8602
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- cipher: aes-256-cfb
-  delay: 907
-  name: 9,53,64|🇰🇷KR-54.180.158.248-5787 | 27....
-  password: amazonskr05
-  port: 443
-  server: 54.180.158.248
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  delay: 939
-  name: 9,42,53,69,73|KR_speednode_0130
-  password: amazonskr05
-  port: 443
-  server: 3.34.123.239
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  delay: 1167
-  name: 9,19,53,69,73|KR_speednode_0131
-  password: amazonskr05
-  port: 443
-  server: 3.35.0.140
-  type: ss
   udp: true
 - alterId: 0
   cipher: auto
@@ -600,6 +600,13 @@ proxies:
   port: 443
   server: 52.221.255.53
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷 KR
+  name: 27| KR_291
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40032
+  server: kr.fastsoonlink.com
+  type: ss
 - cipher: aes-256-cfb
   name: 42|🟡_🇰🇷_💼_github.com/Ruk1ng001_35...
   password: amazonskr05
@@ -607,7 +614,7 @@ proxies:
   server: 54.180.248.97
   type: ss
 - cipher: aes-256-cfb
-  name: 42,64|🇰🇷KR-13.125.226.50-5816 | 29.0...
+  name: 42,56,64|🇰🇷KR-13.125.226.50-5816 | 29.0...
   password: amazonskr05
   port: 443
   server: 13.125.226.50
@@ -624,116 +631,6 @@ proxies:
   port: 443
   server: 52.79.249.199
   type: ss
-- client-fingerprint: chrome
-  name: 46|韩国 002
-  network: ws
-  password: Aimer
-  port: 50000
-  server: 183.102.181.112
-  skip-cert-verify: true
-  sni: ngepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ngepo.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 46|韩国 003
-  network: ws
-  password: Aimer
-  port: 17100
-  server: 210.222.30.180
-  skip-cert-verify: true
-  sni: ngepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ngepo.ambercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 46|韩国 004
-  network: ws
-  password: Aimer
-  port: 10044
-  server: 210.99.204.14
-  skip-cert-verify: true
-  sni: ngepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ngepo.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 46|韩国 005
-  network: ws
-  password: Aimer
-  port: 12601
-  server: 210.103.48.53
-  skip-cert-verify: true
-  sni: ngepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ngepo.ambercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 46|韩国 006
-  network: ws
-  password: Aimer
-  port: 50000
-  server: 14.35.59.67
-  skip-cert-verify: true
-  sni: ngepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ngepo.ambercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 46|韩国 007
-  network: ws
-  password: Aimer
-  port: 50000
-  server: 14.36.202.242
-  skip-cert-verify: true
-  sni: ngepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ngepo.ambercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 46|韩国 008
-  network: ws
-  password: Aimer
-  port: 50000
-  server: 14.32.9.120
-  skip-cert-verify: true
-  sni: ngepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ngepo.ambercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 46|韩国 009
-  network: ws
-  password: Aimer
-  port: 50004
-  server: 222.97.9.166
-  skip-cert-verify: true
-  sni: ngepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ngepo.ambercc.filegear-sg.me
-    path: /?ed=2560
 - alterId: 0
   cipher: auto
   name: 48|韩国-2

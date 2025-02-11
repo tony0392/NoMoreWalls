@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 4|🇩🇪 德国-1B
+  name: 4|🇩🇪 德国-1A
   network: ws
   port: 443
   server: visa.com
@@ -15,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 4|🇩🇪 德国-1A
+  name: 4|🇩🇪 德国-1B
   network: ws
   port: 443
   server: visa.com
@@ -38,7 +38,7 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - cipher: chacha20-ietf
   delay: 740
-  name: 9,19,42,53,69|CN_bdf9a_0057
+  name: 9,19,53|澳大利亚 - 阿德莱德 - Network Presence...
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -50,7 +50,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf
   delay: 844
-  name: 9,19,42,53,69|CN_bdf9a_0064
+  name: '9,19,53|澳大利亚 - 阿德莱德 - Network Presence... #1'
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -77,17 +77,19 @@ proxies:
     path: /edgikmfhnrusb?ed=2560
 - country: 🇪🇸ES
   delay: 1528
-  name: 9,53,73|ES_speednode_0026
+  name: 9,42,43,53,69|ES_4a6d7_0026
   password: '!!str 3774827088566296576'
   port: 443
   server: next-hippo.treefrog761.one
   skip-cert-verify: true
   sni: next-hippo.treefrog761.one
+  tfo: false
   type: trojan
   udp: true
 - cipher: aes-256-cfb
   delay: 2751
-  name: 9,36,42,50,53|秘鲁 - 利馬 - ONEPROVIDER - 1
+  ip-version: dual
+  name: '9,36,42,50,53,72|🇺🇸_US_美国_6 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.47.252.251
@@ -190,16 +192,14 @@ proxies:
       Host: download.windowsupdate.com
     path: /download
 - cipher: aes-256-cfb
-  ip-version: dual
-  name: 19,72|🇩🇰_DK_丹麦
+  name: 19|@MxlShare 德国 | DEU
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.186.79.53
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: 20,27|🇱🇹 LT_311
+  name: 20,27|🇱🇹 LT_317
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: beesyar.org
@@ -769,23 +769,16 @@ proxies:
     path: /itdog?ed=2560
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 27|🇩🇪DE_196
+  name: 27|🇪DE_197
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇪DE_198
   password: S7KwUu7yBy58S3Ga
   port: 9042
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 27|🇩🇪DE_197
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 27|🇩🇪DE_198
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
@@ -797,48 +790,55 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 27|🇪DE_200
-  password: FAdUvMJUq5vDgKEq
-  port: 9006
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 27|🇩🇪DE_201
-  password: 4R3hUfZ2FHhDmNcP
-  port: 9061
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 27|🇩🇪DE_202
-  password: XPtzA9sCug3SPR4c
-  port: 9025
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 27|🇩🇪DE_203
+  name: 27|🇩🇪DE_200
   password: ZpNDDKRu9MagNvaf
   port: 9015
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 27|🇩🇪DE_204
+  name: 27|🇩🇪DE_201
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇩🇪DE_202
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇩🇪DE_203
   password: NvS8N4Vf8qAGPSCL
   port: 9046
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
+  name: 27|🇩🇪DE_204
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
   name: 27|🇩🇪DE_205
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 27|🇩🇪DE_206
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 80.92.204.106
   type: ss
 - country: 🇪DE
-  name: '27,29|🇩🇪DE_206 #1'
+  name: '27,29|🇩🇪DE_207 #1'
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -846,24 +846,30 @@ proxies:
   sni: de2-full.privateip.net
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 35|德国 V2CROSS.COM
+- country: 🇩🇪DE
+  name: 42|🟡_🇩🇪_💼_github.com/Ruk1ng001_39...
   network: tcp
-  port: 36712
-  server: 62.146.233.112
-  tls: false
-  type: vmess
-  uuid: 9266df42-0830-48c2-8509-4c57b30fe29d
-- alterId: 0
-  cipher: auto
-  name: '35|德国 V2CROSS.COM #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.153.117.143
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: 🇩🇪DE
+  name: 42|❓_🇩🇪_💼_github.com/Ruk1ng001_31...
   network: tcp
-  port: 27575
-  server: 194.233.72.228
-  tls: false
-  type: vmess
-  uuid: 16509262-dbe2-43ba-99ce-07913d2a18b4
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.176.27.55
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 42,70|SS-德国-NF解锁德国自制剧-ChatGPT-YouTub...
+  password: ZTUxOTQ5
+  port: 8388
+  server: 146.19.247.183
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 42,70|SS--NF解锁德国自制剧-ChatGPT-TikTok-Y...
   password: OTBkYmFk
@@ -937,7 +943,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a2d2e3aa-eef7-359a-9e0e-341a93285b9e
+  uuid: 70695c7e-59ee-3f9b-a56e-ef4ab5b3ffe2
   ws-opts:
     headers:
       Host: 16.mamamajd.site
@@ -952,20 +958,20 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a2d2e3aa-eef7-359a-9e0e-341a93285b9e
+  uuid: 70695c7e-59ee-3f9b-a56e-ef4ab5b3ffe2
   ws-opts:
     headers:
       Host: 18.mamamajd.site
     path: /
+- name: '60,61|🇩🇪 德国 黑森州法兰克福Amazon数据中心 #1'
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.156.53.109
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - cipher: aes-256-gcm
-  name: 69|DE_bdf9a_0110
-  password: OdMsqNpo4ook59xf
-  port: 8388
-  server: fra5.vpntype.dev
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 73|DE_speednode_0025
+  name: 69,73|DE_speednode_0017
   password: RAGKt8GhvV4KnVSM
   port: 8388
   server: fra5.vpntype.dev

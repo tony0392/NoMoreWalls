@@ -101,7 +101,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   delay: 907
-  name: 9,19,21,53,56,64|🇰🇷KR-54.180.158.248-0431 | 34....
+  name: 9,19,21,53|韩国 - 首尔特别市 - Amazon Technologi...
   password: amazonskr05
   port: 443
   server: 54.180.158.248
@@ -109,7 +109,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   delay: 939
-  name: 9,21,53,56,64,74|3.34.123.239_OpenAI_Claude
+  name: 9,21,53,74|3.34.123.239_OpenAI_Claude
   password: amazonskr05
   port: 443
   server: 3.34.123.239
@@ -606,7 +606,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 19,74|❓_🇰🇷_💼_github.com/Ruk1ng001_
+  name: 19,56,74|❓_🇰🇷_💼_github.com/Ruk1ng001_
   password: amazonskr05
   port: 443
   server: 52.78.5.163
@@ -625,27 +625,11 @@ proxies:
   server: p1.bxy-edge.xyz
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 21,42,56,60,64|🇰🇷KR-43.202.96.177-0416 | 36.9...
+  name: 21,42|github.com/Ruk1ng001_316331623...
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: south-korea-2.keenvpn.me
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 23,74|KR_Seoul_KOR VULTR_OpenAI_Clau...
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21154
-  server: 510613.frederica.xyz
-  type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '23,74|KR_Seoul_KOR VULTR_OpenAI_Clau... #1'
-  network: tcp
-  port: 31154
-  server: 510613.frederica.xyz
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - cipher: aes-256-cfb
   name: 24|🇰🇷 KR, Incheon
   password: amazonskr05
@@ -654,11 +638,13 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇷 KR
-  name: 27| KR_267
+  name: 27,43,60|🇷KR-61.111.247.242-017
   password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
   port: 40032
   server: kr.fastsoonlink.com
+  tfo: false
   type: ss
+  udp: true
 - name: 37|KR韩国(mibei77.com 米贝节点分享)
   password: Aimer
   port: 50000
@@ -674,13 +660,13 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 42|🟡_🇰🇷_💼_github.com/Ruk1ng001_35...
+  name: 42,56|🇰🇷KR-54.180.248.97-5825 | 16.9...
   password: amazonskr05
   port: 443
   server: 54.180.248.97
   type: ss
 - cipher: aes-256-cfb
-  name: 42|❓_🇰🇷_💼_github.com/Ruk1ng001_38...
+  name: 42,64|🇰🇷KR-52.79.249.199-5336 | 8.37...
   password: amazonskr05
   port: 443
   server: 52.79.249.199
@@ -691,14 +677,6 @@ proxies:
   port: 989
   server: 154.90.63.177
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 43,60|🇶NOWHERE-0.0.0.0-041
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 26667
-  server: service.ouluyun9803.com
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 48|韩国-2
@@ -712,51 +690,60 @@ proxies:
     headers:
       Host: 2112147127.online.video.downloader.0123456789kr2.niubi.site
     path: /
-- alterId: 0
-  cipher: auto
-  name: 59|【高级】🇰🇷韩国1 - 滑梯云
-  network: ws
-  port: 20011
-  server: htsub-2024.899696998.xyz
+- name: 52|🇰🇷_韩国_1
+  network: tcp
+  password: Aimer
+  port: 17100
+  server: 210.222.30.180
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: agepq.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: eb9b6d07-8644-437f-a1c5-dbed378d38ed
-  ws-opts:
-    headers:
-      Host: yyyt-kr1-2024.mofaxw.top
-    path: /2024
-- alterId: 0
-  cipher: auto
-  name: 59|【高级】🇰🇷韩国2 - 滑梯云
-  network: ws
-  port: 20011
-  server: htsub-2024.899696998.xyz
+- name: 52|🇰🇷_韩国_3
+  network: tcp
+  password: Aimer
+  port: 12601
+  server: 210.103.48.53
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: ngepo.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: eb9b6d07-8644-437f-a1c5-dbed378d38ed
-  ws-opts:
-    headers:
-      Host: yyyt-kr2-2024.mofaxw.top
-    path: /2024
-- alterId: 2
-  cipher: auto
-  name: 59|🇷 [vip①]韩国1 - MG Network
-  network: ws
-  port: 23614
-  server: 14.mamamajd.site
+- name: 52|🇰🇷_韩国_4
+  network: tcp
+  password: Aimer
+  port: 10044
+  server: 210.99.204.14
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: ngepo.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: 59be789b-4026-32cb-a970-18226732d50a
-  ws-opts:
-    headers:
-      Host: 14.mamamajd.site
-    path: /
+- name: 52|🇰🇷_韩国_5
+  network: tcp
+  password: Aimer
+  port: 50000
+  server: 14.36.202.242
+  skip-cert-verify: true
+  sni: ngepo.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 52|🇰🇷_韩国_6
+  network: tcp
+  password: Aimer
+  port: 50000
+  server: 14.32.9.120
+  skip-cert-verify: true
+  sni: ngepo.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 52|🇰🇷_韩国_7
+  network: tcp
+  password: Aimer
+  port: 50000
+  server: 14.35.59.67
+  skip-cert-verify: true
+  sni: ngepo.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
 - name: 62|韩国[01]
   password: 0e5c1bb8-ee08-4839-b2af-2838a8d3add1
   port: 443
@@ -769,6 +756,14 @@ proxies:
   port: 21241
   server: 910281.chasel.sbs
   type: ss
+- alterId: 0
+  cipher: auto
+  name: '74|KR_Anyang-si_Nerocloud LTD_Ope... #1'
+  network: tcp
+  port: 31247
+  server: 581023.horace.im
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0
   cipher: auto
   name: '74|KR_Anyang-si_Nerocloud LTD_Ope... #2'
@@ -788,6 +783,12 @@ proxies:
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
   port: 21348
   server: 510613.frederica.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: '74|KR_Anyang-si_Nerocloud LTD_Ope... #5'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21243
+  server: 581610.eveline.lol
   type: ss
 - cipher: aes-256-gcm
   name: '74|KR_Anyang-si_Nerocloud LTD_Ope... #6'
@@ -823,6 +824,20 @@ proxies:
   network: tcp
   port: 31246
   server: 581023.horace.im
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- cipher: aes-256-gcm
+  name: 74|KR_Seoul_KOR VULTR_OpenAI_Clau...
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21154
+  server: 510613.frederica.xyz
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '74|KR_Seoul_KOR VULTR_OpenAI_Clau... #1'
+  network: tcp
+  port: 31154
+  server: 510613.frederica.xyz
   type: vmess
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - name: 80|韩国-Trojan

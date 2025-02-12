@@ -12,7 +12,7 @@ proxies:
   uuid: 0acfdca6-a960-469a-a7b8-2634371fd9d3
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '0,3,67|🇯🇵 日本2|@ripaojiedian #3'
+  name: '0,3,47,67|🇯🇵 日本2|@ripaojiedian #3'
   password: ee2d2b8b-18b0-4fdd-afd1-a7c0030ec635
   port: 58148
   server: lm.kaiqsz.com
@@ -20,7 +20,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0,3,19,42,67,74|43.206.238.113_OpenAI_Claude
+  name: 0,3,19,23,42,47,67,74|43.206.238.113_OpenAI_Claude
   password: amazonskr05
   port: 443
   server: 43.206.238.113
@@ -91,15 +91,12 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
   delay: 796
-  name: '9,47,53,61|🇯🇵 日本2|@ripaojiedian #2'
+  name: '9,53,61|🇯🇵 日本2|@ripaojiedian #2'
   network: ws
   port: '25775'
   server: tttxbmsm.fask511.cfd
-  servername: ''
   skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -149,9 +146,8 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  client-fingerprint: chrome
   delay: 664
-  name: 9,47,53|日本 - 东京 - Akari Networks - 9
+  name: 9,53|日本 - 东京 - Akari Networks - 9
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -1333,7 +1329,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 19,42,69,73|JP_speednode_0023
+  name: 19,23,42,69,73|JP_speednode_0023
   password: amazonskr05
   port: 443
   server: 13.115.39.161
@@ -1361,7 +1357,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 19,23,42,69,73|JP_speednode_0028
+  name: 19,42,69,73|JP_speednode_0028
   password: amazonskr05
   port: 443
   server: 52.195.185.150
@@ -1448,7 +1444,8 @@ proxies:
   sni: xx.t2.ll.c0.107421.xyz
   type: trojan
 - alterId: 0
-  name: 19,42,69,73|JP_speednode_0032
+  client-fingerprint: chrome
+  name: 19,23,42,69,73|JP_speednode_0032
   password: 6557bf4a-852b-4a69-ad35-d53293386a13
   port: 443
   server: vn.mjt000.com
@@ -1469,29 +1466,48 @@ proxies:
   tls: true
   type: ss
 - cipher: aes-128-gcm
-  name: 21,56,64|🇯🇵JP-149.22.87.204-0488 | 15.9...
+  name: 21,56,64|🇯🇵JP-149.22.87.204-0411 | 37.7...
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
 - cipher: aes-128-gcm
-  name: 21,24,56,64|🇯🇵JP-149.22.87.240-0487 | 18.6...
+  name: 21,24,56,64|🇯🇵JP-149.22.87.240-0413 | 37.6...
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
 - cipher: aes-128-gcm
-  name: 21,56,64|🇯🇵JP-149.22.87.241-0485 | 16.7...
+  name: 21,56,64|🇯🇵JP-149.22.87.241-0429 | 37.6...
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 23|🇯🇵1 |  5.2MB/s
-  password: d626953d-cde0-4f52-9554-a12b116f853c
-  port: 36113
-  server: free.2weradf.xyz
-  type: ss
+- name: 23,59|🇵 日本•高速139•铂金 - 飞翔吧
+  password: a4ed7a0c-d92c-3742-b788-f70385a8e384
+  port: 20139
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z139.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 23,59|🇯🇵 日本•高速114•高速 - 飞翔吧
+  password: a4ed7a0c-d92c-3742-b788-f70385a8e384
+  port: 41767
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x114.flybar.work
+  type: trojan
+  udp: true
+- name: 23|🇯🇵5 |  3.9MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: jpgmo102-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: jpgmo102-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - cipher: aes-256-cfb
   name: 24|🇯🇵 JP, Osaka
   password: amazonskr05
@@ -1590,78 +1606,9 @@ proxies:
   server: 05w3bfqa176u15igufwgvhebwck0w0l3.08.01.ng.88k.site
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN
-  password: 136f349a-6c8c-41b3-b0fe-d9f0688e55b4
-  port: 20002
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 2
-  password: 136f349a-6c8c-41b3-b0fe-d9f0688e55b4
-  port: 20008
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 3
-  port: 45056
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a84109e4-fc28-46f6-b129-51eb335ebbe7
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 4
-  port: 20017
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6e209c50-8f12-4777-b2cf-f4669f52955f
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 5
-  password: 136f349a-6c8c-41b3-b0fe-d9f0688e55b4
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 6
-  port: 45057
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a84109e4-fc28-46f6-b129-51eb335ebbe7
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 7
-  password: 136f349a-6c8c-41b3-b0fe-d9f0688e55b4
-  port: 20006
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 42,74|52.195.215.236_OpenAI_Claude
-  password: amazonskr05
-  port: 443
-  server: 52.195.215.236
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 42,47|15|🇸🇬 狮城特殊|@ripaojiedian
+  name: 42|🟡_🇯🇵_💼_github.com/Ruk1ng001_33...
   password: amazonskr05
   port: 443
   server: 43.206.240.27
@@ -1687,25 +1634,28 @@ proxies:
     headers:
       Host: ngepo.ambercc.filegear-sg.me
     path: /?ed=2560
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 47,69,73|JP_speednode_0029
-  password: amazonskr05
-  port: 443
-  server: 52.192.7.214
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '47,61|🇯🇵 日本|@ripaojiedian #2'
+  name: 46,61|🇺🇸 美国 V2CROSS.COM
+  network: tcp
+  port: '8881'
+  server: 45.76.60.123
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+  ws-headers:
+    Host: moi.ir
+- alterId: 0
+  cipher: auto
+  name: 47|16|日本|@ripaojiedian
   network: tcp
   port: '33184'
   server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
   servername: ''
   tls: false
   type: vmess
-  uuid: e1541125-9df4-4ee7-bb05-e68f85d7937f
+  uuid: 0acfdca6-a960-469a-a7b8-2634371fd9d3
 - alterId: 0
   cipher: auto
   name: 48|日本-1
@@ -1747,28 +1697,12 @@ proxies:
     headers:
       HOST: jpp.556855.xyz
     path: /
-- name: 59|🇯🇵 日本•高速114•高速 - 飞翔吧
-  password: a4ed7a0c-d92c-3742-b788-f70385a8e384
-  port: 41767
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x114.flybar.work
-  type: trojan
-  udp: true
 - name: 59|🇵 日本•高速115•高速 - 飞翔吧
   password: a4ed7a0c-d92c-3742-b788-f70385a8e384
   port: 54178
   server: gy.58n.net
   skip-cert-verify: true
   sni: x115.flybar.work
-  type: trojan
-  udp: true
-- name: 59|🇵 日本•高速139•铂金 - 飞翔吧
-  password: a4ed7a0c-d92c-3742-b788-f70385a8e384
-  port: 20139
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z139.hongkongnode.top
   type: trojan
   udp: true
 - name: 59|🇯🇵 日本•高速140•铂金 - 飞翔吧
@@ -1839,11 +1773,27 @@ proxies:
   type: vmess
   udp: true
   uuid: 075c16e6-67cb-3599-aa5a-025b478db156
+- alterId: 0
+  cipher: auto
+  name: '61|🇯🇵 日本|@ripaojiedian #2'
+  network: tcp
+  port: '33184'
+  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
+  tls: false
+  type: vmess
+  uuid: e1541125-9df4-4ee7-bb05-e68f85d7937f
 - cipher: aes-256-cfb
   name: 69,73|JP_speednode_0026
   password: amazonskr05
   port: 443
   server: 54.249.114.132
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 69,73|JP_speednode_0029
+  password: amazonskr05
+  port: 443
+  server: 52.192.7.214
   type: ss
   udp: true
 - alterId: 0

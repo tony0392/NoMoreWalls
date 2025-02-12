@@ -3740,22 +3740,6 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|哈撒哈斯坦中转 01-1A
-  password: f0712421-e0f2-4284-b69a-17000f989421
-  port: 21081
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|哈撒哈斯坦中转 01-1B
-  password: ccf99c8c-9793-4f8e-bb41-f98431647376
-  port: 21081
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -3780,7 +3764,7 @@ proxies:
   h2-opts: {}
   http-opts: {}
   ip-version: dual
-  name: '36,39,50,52,70|VMESS-美国>德国-NF解锁德国自制剧-ChatGPT-... #3'
+  name: '36,39,52,70|VMESS-美国>德国-NF解锁德国自制剧-ChatGPT-... #3'
   network: ws
   port: 80
   server: 151.101.0.155
@@ -3911,12 +3895,28 @@ proxies:
   type: vmess
   udp: true
   uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 39|_CN_->_GB_国
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40034
+  server: fr.fastsoonlink.com
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   ip-version: dual
   name: 39|🇬_SG_->🇺🇸_US_美国
   password: amazonskr05
   port: 443
   server: 13.229.181.179
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 39,50,69,73|CN_speednode_0004
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40001
+  server: us.fastsoonlink.com
   type: ss
   udp: true
 - alterId: 0
@@ -4181,6 +4181,34 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇳_CN_中国->🇷_TR_
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40019
+  server: tur.fastsoonlink.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '50,52,70|VMESS-美国>德国-NF解锁德国自制剧-ChatGPT-... #1'
+  network: ws
+  port: 80
+  server: plex.com
+  servername: telegram-isvvpn.ir
+  skip-cert-verify: true
+  type: vmess
+  uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
+  ws-opts:
+    headers:
+      HOST: telegram-isvvpn.ir
+    path: /racevpn?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
+- cipher: chacha20-ietf-poly1305
+  name: 50|🇨🇳_CN_中国->_PL_兰
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40030
+  server: pr.fastsoonlink.com
+  type: ss
 - cipher: aes-128-gcm
   ip-version: dual
   name: 51|🇨🇳_CN_中国->🇺🇸_US_美国

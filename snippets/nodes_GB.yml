@@ -162,25 +162,26 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 20|英国【付费推荐：https://socks.news】20
+  country: 🇧 GB
+  name: 20,27|🇬🇧 GB_246
   password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
   port: 40000
   server: hk.fastsoonlink.com
   type: ss
 - alterId: 0
   ip-version: dual
-  name: 20,42,43,50,51|🇨🇳_CN_中国->🇬🇧_GB_英国
+  name: 20,42,50,51|🇨🇳_CN_中国->🇬🇧_GB_英国
   password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
   port: 40007
   server: uk.fastsoonlink.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: uknode.soon.guru
-  tfo: false
   tls: true
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  name: 21,56,64|🇬🇧GB-141.98.101.178-0407 | 15....
+  country: 🇬🇧 GB
+  name: 21,27,56,64|🇬🇧GB-141.98.101.178-0407 | 15....
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -216,69 +217,71 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-gcm
-  name: 21,56,64|🇬🇧GB-212.102.53.193-0367 | 26....
+  name: 21,27,56,64|🇬🇧GB-212.102.53.193-0367 | 26....
   password: shadowsocks
   port: 443
   server: 212.102.53.193
   type: ss
 - cipher: aes-128-gcm
-  name: 21,56,64|🇬🇧GB-212.102.53.194-0130 | 32....
+  name: 21,27,56,64|🇬🇧GB-212.102.53.194-0130 | 32....
   password: shadowsocks
   port: 443
   server: 212.102.53.194
   type: ss
 - cipher: aes-128-gcm
-  name: 21,56,64|🇬🇧GB-212.102.53.195-0375 | 31....
+  country: 🇬🇧GB
+  name: 21,27,56,64|🇬🇧GB-212.102.53.195-0375 | 31....
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
-  name: 21,56,64|🇬🇧GB-212.102.53.196-0378 | 32....
+  name: 21,27,56,64|🇬🇧GB-212.102.53.196-0378 | 32....
   password: shadowsocks
   port: 443
   server: 212.102.53.196
   type: ss
 - cipher: aes-128-gcm
   ip-version: dual
-  name: 21,39,56,64|🇬🇧GB-212.102.53.197-0365 | 32....
+  name: 21,27,39,56,64|🇬🇧GB-212.102.53.197-0365 | 32....
   password: shadowsocks
   port: 443
   server: uk-dc1.yangon.club
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 21,56,64|🇬🇧GB-212.102.53.197-0381 | 31....
+  name: 21,27,56,64|🇬🇧GB-212.102.53.197-0381 | 31....
   password: shadowsocks
   port: 443
   server: 212.102.53.197
   type: ss
 - cipher: aes-128-gcm
-  name: 21,56,64|🇬🇧GB-212.102.53.198-0372 | 31....
+  country: 🇬🇧GB
+  name: 21,27,56,64|🇬🇧GB-212.102.53.198-0372 | 31....
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
 - cipher: aes-128-gcm
-  name: 21,56,64|🇬🇧GB-212.102.53.78-0373 | 31.7...
+  name: 21,27,56,64|🇬🇧GB-212.102.53.78-0373 | 31.7...
   password: shadowsocks
   port: 443
   server: 212.102.53.78
   type: ss
 - cipher: aes-128-gcm
-  name: 21,56,64|🇬🇧GB-212.102.53.79-0371 | 32.6...
+  name: 21,27,56,64|🇬🇧GB-212.102.53.79-0371 | 32.6...
   password: shadowsocks
   port: 443
   server: 212.102.53.79
   type: ss
 - cipher: aes-128-gcm
-  name: 21,56,64|🇬🇧GB-212.102.53.80-0399 | 32.4...
+  name: 21,27,56,64|🇬🇧GB-212.102.53.80-0399 | 32.4...
   password: shadowsocks
   port: 443
   server: 212.102.53.80
   type: ss
 - cipher: aes-128-gcm
-  name: 21,56,64|🇬🇧GB-212.102.53.81-0383 | 32.5...
+  name: 21,27,56,64|🇬🇧GB-212.102.53.81-0383 | 32.5...
   password: shadowsocks
   port: 443
   server: 212.102.53.81
@@ -302,6 +305,13 @@ proxies:
   port: 443
   server: series-a1.samanehha.co
   type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '23,74|KR_Anyang-si_Nerocloud LTD_Ope... #5'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21243
+  server: 581610.eveline.lol
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 25|🇬🇧 英国|COV2
@@ -310,92 +320,135 @@ proxies:
   server: r8tbhtn9jty9ebzesikuygvc8y0b2koq.08.02.uk.88k.site
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 26|🇬🇧 英国 | GBR
-  password: bd2902be-0b95-4fc6-9427-f77d4acf75ee
-  port: 26480
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇬🇧 英国 | GBR 2
-  password: 91c66c88-a344-4b14-95de-8372bdaa616e
-  port: 58811
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇬🇧 英国 | GBR 3
-  password: a6a4bcea-16de-4b5b-bbb0-2ccc83966719
-  port: 19115
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇬🇧 英国 | GBR 4
-  password: bd2902be-0b95-4fc6-9427-f77d4acf75ee
-  port: 19115
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇬🇧 英国 | GBR 6
-  password: a6a4bcea-16de-4b5b-bbb0-2ccc83966719
-  port: 57329
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇬🇧 英国 | GBR 7
-  port: 54774
-  server: qd.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fd66d138-c9f6-4953-9782-fc1886f0db97
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇬🇧 英国 | GBR 8
-  password: a6a4bcea-16de-4b5b-bbb0-2ccc83966719
-  port: 26480
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇬🇧 英国 | GBR 9
   port: 45067
   server: xdd.dashuai.cyou
   tls: false
   type: vmess
   udp: true
   uuid: ea33c329-db76-4188-a29e-c36e76db96a9
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇬🇧 英国 | GBR 10
-  password: bd2902be-0b95-4fc6-9427-f77d4acf75ee
-  port: 57329
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 26|🇬🇧 英国 | GBR 11
+  name: 26|🇬🇧 英国 | GBR 2
+  port: 54774
+  server: qd.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fd66d138-c9f6-4953-9782-fc1886f0db97
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 26|🇬🇧 英国 | GBR 3
   port: 45066
   server: haa.dashuai.cyou
   tls: false
   type: vmess
   udp: true
   uuid: ea33c329-db76-4188-a29e-c36e76db96a9
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 27| GB_237
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.255.22
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 27|🇧 GB_238
+  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
+  port: 52952
+  server: 185.24.151.214
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 27|🇧 GB_239
+  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
+  port: 55988
+  server: mx2.drawnrisha.one
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 27|🇬🇧 GB_240
+  password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
+  port: 55988
+  server: mx2.drawnrisha.one
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 27|🇬🇧 GB_241
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.250
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 27|🇧 GB_243
+  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 27|🇬🇧 GB_244
+  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 27|🇧 GB_245
+  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 27|🇧 GB_247
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 27|🇬🇧 GB_248
+  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  ip-version: dual
+  name: 27,39|_CN_->_GB_国
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40034
+  server: fr.fastsoonlink.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 27|🇬🇧 GB_250
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40003
+  server: jp.fastsoonlink.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 35|英国 V2CROSS.COM
+  network: ws
+  port: 20315
+  server: 185.121.134.12
+  tls: false
+  type: vmess
+  uuid: e1cae0cf-536b-4931-acf3-ca778beb7916
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - name: 36|_GB_国
   password: telegram-id-privatevpns
   port: 22222
@@ -523,7 +576,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 734fd02b-13e7-3c3b-9f8e-6e8d3153916f
+  uuid: 59be789b-4026-32cb-a970-18226732d50a
   ws-opts:
     headers:
       Host: 5.mamamajd.site
@@ -538,7 +591,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 734fd02b-13e7-3c3b-9f8e-6e8d3153916f
+  uuid: 59be789b-4026-32cb-a970-18226732d50a
   ws-opts:
     headers:
       Host: 13.mamamajd.site
@@ -576,21 +629,6 @@ proxies:
   sni: ukvip101.qlgq.fun
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 69|GB_5cb9e_0034
-  network: http
-  port: 49691
-  server: 193.42.25.242
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c7e04382-01be-40ab-b174-4dbff44b5cf4
 - alterId: 0
   cipher: auto
   name: 74|GB_London_Baxet Group Inc._Ope...

@@ -322,7 +322,8 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21,56,64|🇷🇺RU-45.151.62.54-0432 | 14.79...
+  country: 🇺 RU
+  name: 21,27,56,64|🇷🇺RU-45.151.62.54-0425 | 16.06...
   password: 0zyDRZ1XmNXaaCAN7KEA8a
   port: 28825
   server: 45.151.62.54
@@ -366,22 +367,101 @@ proxies:
   port: 21108
   server: 581023.horace.im
   type: ss
-- name: 29|🇷🇺RU_371
+- cipher: chacha20-ietf-poly1305
+  country: 🇷 RU
+  name: 27|🇺 RU_359
+  password: WfmxKX2FBJRU0Ie9VLIYDL
+  port: 20012
+  server: 141.98.234.93
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 27|🇺 RU_361
+  password: a0605527-28e4-449c-80ee-5642cc16a8af
+  port: 81
+  server: 176.124.202.137
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 27|🇷🇺 RU_362
+  password: CLphyEMQT8nbG8EImX0A2D
+  port: 45635
+  server: 5.35.47.122
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇺RU
+  name: 27|🇷🇺RU_364
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 45.89.52.66
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺RU
+  name: 27|🇺RU_365
+  password: afKAHp1VfRWZu91LIi9o0D
+  port: 58176
+  server: 94.228.165.178
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 27|🇷🇺RU_366
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 27|🇺RU_367
+  password: ZET59LF6DvCC8KVt
+  port: 9005
+  server: 45.89.52.66
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 27|🇷🇺RU_368
+  password: JdmRK9gMEqFgs8nP
+  port: 9003
+  server: 45.89.52.66
+  type: ss
+- country: 🇺RU
+  name: 27,29|🇷🇺RU_369
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
+  skip-cert-verify: true
   type: trojan
-- name: 29|🇷🇺RU_372
+  udp: true
+- country: 🇺RU
+  name: 27,29|🇷🇺RU_370
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: 194.246.114.54
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 35|俄罗斯 V2CROSS.COM
+  name: 35,43|[VMess] 🇷🇺 俄罗斯 V2CROSS.COM
   network: ws
-  port: '2052'
+  port: 2052
   server: 185.174.138.199
+  servername: ''
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: yellow-paper-029c.yvonna.workers.dev
+    path: /az05.beyondy.cfd/link?/TM@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '35|俄罗斯 V2CROSS.COM #1'
+  network: ws
+  port: '2082'
+  server: 185.174.138.196
   servername: ''
   tls: false
   type: vmess
@@ -415,13 +495,11 @@ proxies:
   server: 217.30.10.18
   type: ss
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
   ip-version: dual
-  name: '36,37,47,51,60,72,74|IS_Keflavík_STARK INDUSTRIES S... #1'
+  name: '36,37,51,60,72,74|IS_Keflavík_STARK INDUSTRIES S... #1'
   password: NjBlZDlk
   port: 8388
   server: 89.221.224.166
-  tfo: false
   type: ss
   udp: true
 - name: 37|RU俄罗斯(mibei77.com 米贝节点分享)
@@ -498,14 +576,6 @@ proxies:
   server: 89.221.224.166
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 39|🇷🇺_RU_俄罗斯_4
-  password: ueLXVkvh4hckhErQ
-  port: 9060
-  server: 217.30.10.18
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 42,69,73|RU_speednode_0092
@@ -517,6 +587,14 @@ proxies:
   type: vmess
   udp: true
   uuid: c8972631-fca7-4f2e-ae9e-3547904f8170
+- cipher: chacha20-ietf-poly1305
+  name: 43|[SS] 🇷🇺 俄罗斯 V2CROSS.COM
+  password: 36ZCHeabUSfKjfQEvJ4HDV
+  port: 54170
+  server: 185.242.86.156
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 46|俄罗斯 001
@@ -547,6 +625,22 @@ proxies:
     headers:
       Host: 195.58.49.42
     path: /
+- alterId: 0
+  cipher: auto
+  name: 46|俄罗斯 005
+  network: ws
+  port: 2052
+  server: 185.174.138.199
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: yellow-paper-029c.yvonna.workers.dev
+    path: /az05.beyondy.cfd/link?/TM
 - alterId: 0
   cipher: auto
   name: 47|2|🇷🇺_RU_俄罗斯联邦

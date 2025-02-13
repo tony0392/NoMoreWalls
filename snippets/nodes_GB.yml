@@ -1,26 +1,4 @@
 proxies:
-- country: 🇬🇧GB
-  delay: 1137
-  name: 2,9,53|英国 - 伦敦 - OVH SAS - 1
-  password: 8ea8d6f0-e617-11ef-90c6-1239d0255272
-  port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
-  sni: uk1.test3.net
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf
-  delay: 1074
-  name: 2,9,53|英国 - 考文垂 - Eclipse Networking ...
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8601
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
 - alterId: 0
   cipher: auto
   name: 5|🇬🇧 英国伦敦节点
@@ -60,6 +38,28 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
+- country: 🇬🇧GB
+  delay: 1137
+  name: 9,53|英国 - 伦敦 - OVH SAS - 1
+  password: 8ea8d6f0-e617-11ef-90c6-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  sni: uk1.test3.net
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf
+  delay: 1074
+  name: 9,53|英国 - 考文垂 - Eclipse Networking ...
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8601
+  protocol: origin
+  protocol-param: ''
+  server: cn17.closeai.one
+  type: ssr
+  udp: true
 - alterId: 0
   cipher: auto
   name: 10|🇬🇧 英国 IEPL专线NO1
@@ -108,14 +108,14 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 14|英国1
+  name: 14,15|英国1-1A
   port: 45066
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 8230a749-1a63-4f0a-bc49-85d14aae61c3
+  uuid: 1f1a319c-4e05-44f8-812b-133f2fa98a33
 - alterId: 0
   cipher: auto
   name: 14,15|英国2-1A
@@ -125,7 +125,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 8230a749-1a63-4f0a-bc49-85d14aae61c3
+  uuid: 1f1a319c-4e05-44f8-812b-133f2fa98a33
+- alterId: 0
+  cipher: auto
+  name: 15|英国2-1B
+  port: 45067
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4c591189-6886-4e18-9aa1-5b9dbe115e6d
 - alterId: 0
   cipher: auto
   name: 15|英国1-1B
@@ -135,7 +145,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: e4f02dd4-6ac0-4d9a-91b9-41f3b9fb1ac2
+  uuid: 4c591189-6886-4e18-9aa1-5b9dbe115e6d
 - cipher: chacha20-ietf-poly1305
   name: 19|@MxlShare 英国 | GBR
   password: 9c98ec59-231c-4091-ba05-a0c881021335
@@ -166,7 +176,7 @@ proxies:
   server: hk.fastsoonlink.com
   type: ss
 - ip-version: dual
-  name: '20,51,61,72|🇨🇳_CN_中国->🇬🇧_GB_英国 #1'
+  name: '20,51,55,61,72|🇨🇳_CN_中国->🇬🇧_GB_英国 #1'
   password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
   port: 40007
   server: uk.fastsoonlink.com
@@ -175,50 +185,50 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  country: 🇬🇧 GB
-  name: 21,27,56,64|🇬🇧GB-141.98.101.178-0471 | 16....
+  country: 🇧 GB
+  name: 21,27,55,56,64|🇬🇧GB-141.98.101.178-0471 | 16....
   password: shadowsocks
   port: 443
   server: 141.98.101.178
   type: ss
 - cipher: aes-128-gcm
-  name: 21,24,56,64|🇬🇧GB-141.98.101.179-0464 | 22....
+  name: 21,24,55,56,64|🇬🇧GB-141.98.101.179-0464 | 22....
   password: shadowsocks
   port: 443
   server: 141.98.101.179
   type: ss
 - cipher: aes-128-gcm
-  name: 21,56,64|🇬🇧GB-141.98.101.180-0391 | 18....
+  name: 21,55,56,64|🇬🇧GB-141.98.101.180-0391 | 18....
   password: shadowsocks
   port: 443
   server: 141.98.101.180
   type: ss
 - cipher: rc4-md5
-  name: 21,56,64|🇬🇧GB-146.70.61.18-0306 | 36.84...
+  name: 21,55,56,64|🇬🇧GB-146.70.61.18-0306 | 36.84...
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 146.70.61.18
   type: ss
-- name: 21,56,64|🇬🇧GB-161.35.34.48-5797 | 20.18...
+- name: 21,55,56,64|🇬🇧GB-161.35.34.48-5797 | 20.18...
   password: 2cba4104747d49d18319e5ade1b93ab5
   port: 443
   server: 161.35.34.48
   skip-cert-verify: false
   sni: yourjobnavigator.online
   type: trojan
-- name: '21,56|🇬🇧GB-161.35.34.48-6020 | 23.31... #1'
+- name: '21,55,56|🇬🇧GB-161.35.34.48-6020 | 23.31... #1'
   password: 2cba4104747d49d18319e5ade1b93ab5
   port: 443
   server: yourjobnavigator.online
   skip-cert-verify: false
   type: trojan
 - cipher: rc4-md5
-  name: 21,56,64|🇬🇧GB-169.150.210.233-0354 | 20...
+  name: 21,55,56,64|🇬🇧GB-169.150.210.233-0354 | 20...
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 169.150.210.233
   type: ss
-- name: 21,42,56,61|🇬🇧 英国 伦敦Amazon数据中心
+- name: 21,42,55,56,61|🇬🇧 英国 伦敦Amazon数据中心
   password: telegram-id-directvpn
   port: 22222
   server: 18.130.81.127
@@ -227,14 +237,14 @@ proxies:
   tfo: false
   type: trojan
   udp: true
-- name: '21,56,61|🇺🇸 美国 麻省理工学院 #1'
+- name: '21,55,56,61|🇺🇸 美国 麻省理工学院 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 18.133.167.84
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '21,56|🇬🇧GB-18.135.122.249-1277 | 18.... #1'
+- name: '21,55,56|🇬🇧GB-18.135.122.249-1277 | 18.... #1'
   password: telegram-id-directvpn
   port: 22222
   server: 18.135.122.249
@@ -242,98 +252,82 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: aes-128-gcm
-  name: 21,27,56,64|🇬🇧GB-212.102.53.193-0364 | 22....
+  name: 21,27,55,56,64|🇬🇧GB-212.102.53.193-0364 | 22....
   password: shadowsocks
   port: 443
   server: 212.102.53.193
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 21,27,56,64|🇬🇧GB-212.102.53.195-0385 | 22....
+  name: 21,27,55,56,64|🇬🇧GB-212.102.53.195-0385 | 22....
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
-  name: 21,27,56,64|🇬🇧GB-212.102.53.196-0363 | 22....
+  name: 21,27,55,56,64|🇬🇧GB-212.102.53.196-0363 | 22....
   password: shadowsocks
   port: 443
   server: 212.102.53.196
   type: ss
 - cipher: aes-128-gcm
   ip-version: dual
-  name: 21,27,39,56,64|🇬🇧GB-212.102.53.197-0350 | 24....
+  name: 21,27,39,55,56,64|🇬🇧GB-212.102.53.197-0350 | 24....
   password: shadowsocks
   port: 443
   server: uk-dc1.yangon.club
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 21,27,56,64|🇬🇧GB-212.102.53.197-0392 | 24....
+  name: 21,27,55,56,64|🇬🇧GB-212.102.53.197-0392 | 24....
   password: shadowsocks
   port: 443
   server: 212.102.53.197
   type: ss
 - cipher: aes-128-gcm
-  name: 21,27,56,64|🇬🇧GB-212.102.53.78-0351 | 26.7...
+  name: 21,27,55,56,64|🇬🇧GB-212.102.53.78-0351 | 26.7...
   password: shadowsocks
   port: 443
   server: 212.102.53.78
   type: ss
 - cipher: aes-128-gcm
-  name: 21,27,56,64|🇬🇧GB-212.102.53.79-0361 | 23.7...
+  name: 21,27,55,56,64|🇬🇧GB-212.102.53.79-0361 | 23.7...
   password: shadowsocks
   port: 443
   server: 212.102.53.79
   type: ss
 - cipher: aes-128-gcm
-  name: 21,27,56,64|🇬🇧GB-212.102.53.80-0396 | 26.6...
+  name: 21,27,55,56,64|🇬🇧GB-212.102.53.80-0396 | 26.6...
   password: shadowsocks
   port: 443
   server: 212.102.53.80
   type: ss
 - cipher: aes-128-gcm
-  name: 21,27,56,64|🇬🇧GB-212.102.53.81-0356 | 24.7...
+  name: 21,27,55,56,64|🇬🇧GB-212.102.53.81-0356 | 24.7...
   password: shadowsocks
   port: 443
   server: 212.102.53.81
   type: ss
 - cipher: aes-256-cfb
   ip-version: dual
-  name: '21,56,64,72|🇬🇧_GB_英国 #1'
+  name: '21,55,56,64,72|🇬🇧_GB_英国 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 62.100.205.48
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21,56,64|🇬🇧GB-20.162.146.42-0342 | 27.8...
+  name: 21,55,56,64|🇬🇧GB-20.162.146.42-0342 | 27.8...
   password: mps3FwmDjLrWaOVg
   port: 443
   server: series-a2.varzesh360.co
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 21,56,64|🇬🇧GB-20.162.146.42-0321 | 18.6...
+  name: 21,55,56,64|🇬🇧GB-20.162.146.42-0321 | 18.6...
   password: mps3FwmDjLrWaOVg
   port: 443
   server: series-a1.samanehha.co
   type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 23,42|github.com/Ruk1ng001_663866313...
-  password: a198b290-7f12-40d4-8b0f-3f388148809e
-  port: 26597
-  server: 3278.03.ddns-dm.cc
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 23,42|github.com/Ruk1ng001_366332396...
-  password: 4abcfe47-d1bb-42fc-b560-648c10cd32a4
-  port: 33712
-  server: temp.haoyf.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 25|🇬🇧 英国|COV2
@@ -343,84 +337,170 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇬🇧 英国 | GBR 2
+  password: b2306e67-8b62-4c15-88f2-c2941ea0d018
+  port: 57329
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇬🇧 英国 | GBR 3
+  password: b2306e67-8b62-4c15-88f2-c2941ea0d018
+  port: 19115
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇬🇧 英国 | GBR 4
+  password: c6a67e43-1405-467c-ae50-6132d1f2579f
+  port: 58811
+  server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇬🇧 英国 | GBR 5
+  password: 7aa61f06-1791-4941-8bd3-36a3d445b9ff
+  port: 26480
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 26|🇬🇧 英国 | GBR 6
+  port: 45066
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8c5cb94c-3b1a-4984-baf7-73de48e37453
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇬🇧 英国 | GBR 7
+  password: b2306e67-8b62-4c15-88f2-c2941ea0d018
+  port: 26480
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 26|🇬🇧 英国 | GBR 8
+  port: 54774
+  server: qd.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 14d25f44-7d4e-4b49-95a4-31d293bd71c3
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇬🇧 英国 | GBR 9
+  password: 7aa61f06-1791-4941-8bd3-36a3d445b9ff
+  port: 19115
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇬🇧 英国 | GBR 10
+  password: 7aa61f06-1791-4941-8bd3-36a3d445b9ff
+  port: 57329
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 26|🇬🇧 英国 | GBR 11
+  port: 45067
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8c5cb94c-3b1a-4984-baf7-73de48e37453
+- cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 27| GB_263
-  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
+  name: 27|🇧 GB_261
+  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
   port: 55988
   server: 185.5.38.111
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 27|🇧 GB_264
-  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
-  port: 52952
-  server: 185.24.151.214
-  type: ss
-- cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 27|🇬🇧 GB_265
-  password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 27|🇧 GB_266
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.239.250
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 27|🇧 GB_267
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 27|🇬🇧 GB_268
-  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 27|🇧 GB_270
-  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 27|🇬🇧 GB_271
+  name: 27,55|🇵PR-185.47.255.22-5484
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.255.22
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 27|🇬🇧 GB_272
+  name: 27,55|RU-185.126.239.250-5485
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.250
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 27|🇬🇧 GB_264
+  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 27,55|🇬🇧GB-185.5.38.111-5481
+  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 27,55|EC-185.47.253.227-5480
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.253.227
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 27|🇬🇧 GB_273
-  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
+  name: 27|🇬🇧 GB_267
+  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
   port: 55988
   server: 185.5.38.111
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 27,55|IR-185.24.151.214-5483
+  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
+  port: 52952
+  server: 185.24.151.214
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 27|🇬🇧 GB_269
+  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
+  port: 55988
+  server: mx2.drawnrisha.one
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 27,55|🇧GB-185.5.38.111-5482
+  password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
+  port: 55988
+  server: mx2.drawnrisha.one
+  type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 27,64|🇬🇧GB-212.102.53.198-0400 | 23....
+  name: 27,55,64|🇬🇧GB-212.102.53.198-0400 | 23....
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
 - country: 🇬🇧GB
-  name: '27,29|🇬🇧GB_276 #1'
+  name: '27,29|🇬🇧GB_273 #1'
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
@@ -468,6 +548,1452 @@ proxies:
   sni: agepq.ambercc.filegear-sg.me
   type: trojan
   udp: true
+- cipher: aes-256-gcm
+  name: 55|GB-172.99.190.39-0011
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.39-0012
+  password: Y6R9pAtvxxzmGC
+  port: 5600
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.188-0015
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 172.99.190.188
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.149-0017
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 172.99.190.149
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.149-0026
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 172.99.190.149
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.188-0029
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 172.99.190.188
+  type: ss
+- name: 55|🇧GB-18.169.245.178-0298
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.169.245.178
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 55|🇬🇧GB-18.175.105.52-0299
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.175.105.52
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 55|🇧GB-18.135.167.255-0315
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.135.167.255
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- cipher: aes-128-gcm
+  name: 55,64|🇬🇧GB-141.98.101.182-0409 | 22....
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.182
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇧GB-78.129.253.9-0537
+  password: G!yBwPWH3Vao
+  port: 809
+  server: 78.129.253.9
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.39-0558
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.39-0560
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 172.99.190.39
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 55|🇧GB-51.89.138.147-0607
+  network: ws
+  port: 80
+  server: 51.89.138.147
+  servername: 51.89.138.147
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 0f95cb36-4f7d-45be-b44d-d7a4f221ad49
+  ws-opts:
+    path: /vmess
+- alterId: 64
+  cipher: auto
+  name: 55|🇧GB-83.142.225.59-0740
+  network: ws
+  port: 443
+  server: 83.142.225.59
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 5267ca71-97e6-44c8-8fb5-9fe4afe0954e
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇧GB-64.176.184.129-1268
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 64.176.184.129
+  type: ss
+- name: 55|🇧GB-18.132.122.152-1280
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.132.122.152
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- cipher: aes-256-gcm
+  name: 55|🇧GB-185.108.105.129-1389
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 185.108.105.129
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-86.106.136.125-1391
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 86.106.136.125
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇧GB-167.99.192.30-1428
+  password: HGBdOKdcIer5
+  port: 3567
+  server: 167.99.192.30
+  type: ss
+- name: 55|🇧GB-5.83.221.31-1644
+  password: 61c6ceee-ee4f-475f-867d-dcfda15490fb
+  port: 30017
+  server: v01.gutingting.com
+  skip-cert-verify: false
+  sni: v2hgc01.fuqiangren.com
+  type: trojan
+- name: 55|🇧GB-5.83.221.31-1645
+  password: b46a2da5-79eb-47d1-ad1e-30b988c0f93b
+  port: 20224
+  server: v01.gutingting.com
+  skip-cert-verify: false
+  sni: v2usa01.fuqiangren.com
+  type: trojan
+- name: 55|🇬🇧GB-5.83.221.31-1646
+  password: f89390de-248e-4a5f-b50e-35be0cd965a1
+  port: 20220
+  server: v01.gutingting.com
+  skip-cert-verify: false
+  sni: v2jp01.fuqiangren.com
+  type: trojan
+- name: 55|🇬🇧GB-5.83.221.31-1647
+  password: 8cf18212-6899-4d09-9cdc-b7dd91cc4611
+  port: 30050
+  server: v01.gutingting.com
+  skip-cert-verify: false
+  sni: v2sg02.fuqiangren.com
+  type: trojan
+- name: 55|🇬🇧GB-5.83.221.31-1678
+  password: fc2e30d6-474a-42a4-8de2-32720698c97f
+  port: 30038
+  server: v02.gutingting.com
+  skip-cert-verify: false
+  sni: v2hgc02.fuqiangren.com
+  type: trojan
+- name: 55|🇧GB-5.83.221.31-1680
+  password: 261ccd4c-425d-43a2-bf2a-59c3d1f02e94
+  port: 30006
+  server: v02.gutingting.com
+  skip-cert-verify: false
+  sni: v2hgc02.fuqiangren.com
+  type: trojan
+- name: 55|🇬🇧GB-5.83.221.31-1691
+  password: 261ccd4c-425d-43a2-bf2a-59c3d1f02e94
+  port: 30054
+  server: v02.gutingting.com
+  skip-cert-verify: false
+  sni: v1jp01.fuqiangren.com
+  type: trojan
+- name: 55|🇧GB-5.83.221.31-1716
+  password: b504c643-d081-4c90-8f50-9b0bf0b0902d
+  port: 20223
+  server: v02.gutingting.com
+  skip-cert-verify: false
+  sni: v2sg01.fuqiangren.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 55|🇬🇧GB-5.83.221.31-1718
+  network: ws
+  port: 30023
+  server: v01.gutingting.com
+  servername: gz.fastcloud.club
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: dc773e17-d94e-4f6e-a3cd-26c972a08b89
+  ws-opts:
+    headers:
+      Host: v01.gutingting.com
+    path: /aceamedv
+- alterId: 0
+  cipher: auto
+  name: 55|🇧GB-5.83.221.31-1719
+  network: ws
+  port: 30015
+  server: v02.gutingting.com
+  servername: gz.fastcloud.club
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: dc773e17-d94e-4f6e-a3cd-26c972a08b89
+  ws-opts:
+    headers:
+      Host: v02.gutingting.com
+    path: /aceamedv
+- name: 55|🇬🇧GB-5.83.221.31-1726
+  password: dc773e17-d94e-4f6e-a3cd-26c972a08b89
+  port: 30049
+  server: v02.gutingting.com
+  skip-cert-verify: false
+  sni: v2sg02.fuqiangren.com
+  type: trojan
+- name: 55|🇧GB-5.83.221.31-1727
+  password: c1596d35-5f68-4cef-bf5f-ac0d2ab88b2f
+  port: 30056
+  server: v01.gutingting.com
+  skip-cert-verify: false
+  sni: v1kr01.fuqiangren.com
+  type: trojan
+- name: 55|🇬🇧GB-5.83.221.31-1728
+  password: c1596d35-5f68-4cef-bf5f-ac0d2ab88b2f
+  port: 30052
+  server: v02.gutingting.com
+  skip-cert-verify: false
+  sni: v2th01.fuqiangren.com
+  type: trojan
+- name: 55|🇬🇧GB-5.83.221.31-1729
+  password: c1596d35-5f68-4cef-bf5f-ac0d2ab88b2f
+  port: 30053
+  server: v02.gutingting.com
+  skip-cert-verify: false
+  sni: v2phl01.fuqiangren.com
+  type: trojan
+- name: 55|🇬🇧GB-5.83.221.31-1764
+  password: 1957909a-4f2a-4d9c-99ad-119d45f052c1
+  port: 30002
+  server: v01.gutingting.com
+  skip-cert-verify: false
+  sni: v2tw01.fuqiangren.com
+  type: trojan
+- name: 55|🇬🇧GB-5.83.221.31-1765
+  password: 1957909a-4f2a-4d9c-99ad-119d45f052c1
+  port: 30055
+  server: v02.gutingting.com
+  skip-cert-verify: false
+  sni: v1jp02.fuqiangren.com
+  type: trojan
+- name: 55|🇬🇧GB-35.177.137.88-1767
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.177.137.88
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 55|🇬🇧GB-5.83.221.31-1772
+  network: ws
+  port: 30041
+  server: v02.gutingting.com
+  servername: sh01.fastcloud.club
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d3d90998-7bfd-4fc6-930e-35bf96083d8b
+  ws-opts:
+    headers:
+      Host: v02.gutingting.com
+    path: /aceamedv
+- name: 55|🇬🇧GB-5.83.221.31-1777
+  password: b17fe152-2615-4fe1-b80e-3c61b557481d
+  port: 30051
+  server: v02.gutingting.com
+  skip-cert-verify: false
+  sni: v2vn01.fuqiangren.com
+  type: trojan
+- name: 55|🇬🇧GB-5.83.221.31-1786
+  password: a0087535-9c6f-42cd-9220-a7bb8eeae6cc
+  port: 30057
+  server: v02.gutingting.com
+  skip-cert-verify: false
+  sni: v1kr02.fuqiangren.com
+  type: trojan
+- name: 55|GB-185.49.33.47-1997
+  password: shenmegui
+  port: 8461
+  server: 185.49.33.47
+  skip-cert-verify: false
+  sni: $jp.swiftfalcon.app
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇧GB-3.10.20.47-2105
+  password: G!yBwPWH3Vao
+  port: 806
+  server: 3.10.20.47
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 55|🇧GB-51.195.246.150-2160
+  network: ws
+  port: 33018
+  server: vtors43.net2vip.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 259f345d-617e-4cfb-a9fa-57d3dc244288
+  ws-opts:
+    headers:
+      Host: vtors43.net2vip.com
+    path: /
+- name: 55|GB-140.238.123.200-2672
+  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
+  port: 18818
+  server: london11.yukiss.eu.org
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.39-2697
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 172.99.190.39
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 55|🇧GB-198.244.232.39-3385
+  network: ws
+  port: 2096
+  server: 198.244.232.39
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: df46384b-1ad5-40a6-812e-48d60fb80283
+  ws-opts:
+    path: /
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.39-2744
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.39-2767
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 172.99.190.39
+  type: ss
+- name: 55|🇧GB-146.19.230.241-2768
+  password: xxoo
+  port: 443
+  server: 146.19.230.241
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.39-2812
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.7-2849
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 172.99.190.7
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.7-2856
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 172.99.190.7
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.39-2889
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.39-2899
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 172.99.190.39
+  type: ss
+- name: 55|🇬🇧GB-132.145.51.172-2913
+  password: 02e653c9-7c93-46a9-999d-11834bd0c577
+  port: 443
+  server: 132.145.51.172
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.7-3019
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 172.99.190.7
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 55|🇬🇧GB-51.75.160.126-4238
+  network: ws
+  port: 80
+  server: 51.75.160.126
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b739a204-ea0d-428b-bbf5-a632ec05edcf
+  ws-opts:
+    path: /vmess
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇧GB-78.129.253.9-4242
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 78.129.253.9
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇧GB-78.129.253.9-4243
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 78.129.253.9
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇧GB-78.129.253.9-4253
+  password: G!yBwPWH3Vao
+  port: 802
+  server: 78.129.253.9
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇧GB-78.129.253.9-4254
+  password: G!yBwPWH3Vao
+  port: 805
+  server: 78.129.253.9
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇧GB-78.129.253.9-4255
+  password: G!yBwPWH3Vao
+  port: 808
+  server: 78.129.253.9
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇧GB-78.129.253.9-4265
+  password: G!yBwPWH3Vao
+  port: 807
+  server: 78.129.253.9
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇬🇧GB-78.129.253.9-4287
+  password: G!yBwPWH3Vao
+  port: 804
+  server: 78.129.253.9
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇬🇧GB-178.62.16.161-4486
+  password: Ultr@r00t_2017
+  port: 811
+  server: 178.62.16.161
+  type: ss
+- name: 55|GB-185.44.76.188-4847
+  password: 8697fe6b-1lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
+  port: 443
+  server: 185.44.76.188
+  skip-cert-verify: false
+  type: trojan
+- name: 55|🇬🇧GB-51.89.22.228-4850
+  password: 67e200f1-4ff5-42ca-8425-3f16f7986c29
+  port: 443
+  server: 51.89.22.228
+  skip-cert-verify: false
+  sni: t1.samsung.bforward2.uk
+  type: trojan
+- alterId: 4
+  cipher: auto
+  name: 55|🇧GB-146.70.46.68-4909
+  network: ws
+  port: 443
+  server: 146.70.46.68
+  servername: uk-manchester.eiw2eemo.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: uk-manchester.eiw2eemo.com
+    path: /ws
+- alterId: 4
+  cipher: auto
+  name: 55|🇧GB-165.227.231.254-5137
+  network: ws
+  port: 8080
+  server: 165.227.231.254
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 0c7caa09-5c69-42dc-8048-8e8b0d7efd4a
+  ws-opts:
+    path: /cctv13/hd.m3u8
+- alterId: 0
+  cipher: auto
+  name: 55|🇧GB-68.168.31.196-5406
+  network: ws
+  port: 443
+  server: 68.168.31.196
+  servername: 68.168.31.196
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇧GB-198.105.123.190-5410
+  password: 2UrSffeNABXGXXfNhoL6xBUnh1RzqMizrQ2s9QfC38P2YPuYPRTqW5zZg6jGisiNhkzM4SRjF6nzvFb18GPtESWoXWjhqyC8
+  port: 46902
+  server: 198.105.123.190
+  type: ss
+- name: 55|🇧GB-198.244.190.189-5476
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: 198.244.190.189
+  skip-cert-verify: false
+  type: trojan
+- name: 55|🇬🇧GB-198.244.190.189-5477
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: uk-full.privateip.net
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.87-6580
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 172.99.190.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.87-6581
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 172.99.190.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.7-6583
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 172.99.190.7
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.87-6584
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 172.99.190.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.87-6585
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 172.99.190.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.149-6586
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 172.99.190.149
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.87-6587
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 172.99.190.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.149-6599
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 172.99.190.149
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.87-6600
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 172.99.190.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.87-6601
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 172.99.190.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.149-6607
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 172.99.190.149
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.149-6635
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 172.99.190.149
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.39-6874
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.61-6881
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.61-6922
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.39-6941
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.149-6958
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 172.99.190.149
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.39-6994
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.87-7001
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 172.99.190.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.39-7002
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.61-7011
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.61-7013
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.39-7016
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.87-7036
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 172.99.190.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.149-7064
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 172.99.190.149
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.87-7073
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 172.99.190.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.87-7086
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 172.99.190.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.39-7093
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.39-7135
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.61-7206
+  password: Y6R9pAtvxxzmGC
+  port: 5600
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.149-7237
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 172.99.190.149
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.61-7247
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.87-7248
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 172.99.190.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.7-7260
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 172.99.190.7
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.61-7261
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.61-7271
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.39-7273
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.39-7295
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.61-7299
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.61-7308
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.39-7309
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.149-7314
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 172.99.190.149
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.61-7328
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.149-7336
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 172.99.190.149
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.87-7366
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 172.99.190.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.39-7426
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.39-7459
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.61-7461
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.39-7463
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.39-7479
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.149-7481
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 172.99.190.149
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.149-7482
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 172.99.190.149
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.87-7504
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 172.99.190.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.61-7529
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.61-7621
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.87-7634
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 172.99.190.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.61-7644
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.61-7657
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.87-7660
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 172.99.190.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.7-7661
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 172.99.190.7
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.39-7675
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.61-7676
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.149-7703
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 172.99.190.149
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.61-7708
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.149-7725
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 172.99.190.149
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇧GB-172.99.190.39-7778
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.39-7791
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 172.99.190.39
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.61-7796
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 172.99.190.61
+  type: ss
+- cipher: aes-256-gcm
+  name: 55|🇬🇧GB-172.99.190.39-7815
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 172.99.190.39
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 55|🇧GB-198.244.148.214-7911
+  network: ws
+  port: 443
+  server: 198.244.148.214
+  servername: goodfamily19.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4
+  ws-opts:
+    path: /wmzmvws
+- alterId: 0
+  cipher: auto
+  name: 55|🇧GB-198.244.148.214-7913
+  network: ws
+  port: 443
+  server: 198.244.148.214
+  servername: lg30.cfcdn3.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  ws-opts:
+    path: /ray
+- alterId: 0
+  cipher: auto
+  name: 55|🇬🇧GB-68.168.31.196-7946
+  network: ws
+  port: 443
+  server: 68.168.31.196
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 68.168.31.196
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 55|🇧GB-149.7.16.248-8005
+  network: ws
+  port: 443
+  server: 149.7.16.248
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 149.7.16.248
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 55|🇧GB-68.168.31.242-8057
+  network: ws
+  port: 443
+  server: 68.168.31.242
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 68.168.31.242
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 55|🇬🇧GB-172.99.190.209-8062
+  network: ws
+  port: 443
+  server: 172.99.190.209
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 172.99.190.209
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 55|🇬🇧GB-172.99.190.50-8063
+  network: ws
+  port: 443
+  server: 172.99.190.50
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 172.99.190.50
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 55|🇧GB-149.7.16.188-8065
+  network: ws
+  port: 443
+  server: 149.7.16.188
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 149.7.16.188
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 55|🇧GB-149.7.16.194-8079
+  network: ws
+  port: 443
+  server: 149.7.16.194
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 55|🇧GB-149.7.16.75-8084
+  network: ws
+  port: 443
+  server: 149.7.16.75
+  servername: inna.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 55|🇬🇧GB-149.7.16.174-8086
+  network: ws
+  port: 443
+  server: 149.7.16.174
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 55|🇬🇧GB-149.7.16.73-8087
+  network: ws
+  port: 443
+  server: 149.7.16.73
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 55|🇬🇧GB-172.99.190.206-8111
+  network: ws
+  port: 443
+  server: 172.99.190.206
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- alterId: 64
+  cipher: auto
+  name: 55|🇧GB-51.89.78.48-8137
+  network: ws
+  port: 30008
+  server: 51.89.78.48
+  servername: www.12268626.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.12268626.xyz
+    path: /path/240811062813
+- alterId: 0
+  cipher: auto
+  name: 55|🇬🇧GB-149.7.16.102-8157
+  network: ws
+  port: 443
+  server: 149.7.16.102
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: jader.fun
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 55|GB-217.163.76.147-8287
+  network: ws
+  port: 443
+  server: 217.163.76.147
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 55|🇬🇧GB-38.114.120.211-8322
+  network: ws
+  port: 443
+  server: 38.114.120.211
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 38.114.120.211
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 55|🇬🇧GB-8.211.192.102-8358
+  network: ws
+  port: 20292
+  server: 8.211.192.102
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 57f5c2bd-bb79-4fd8-eea1-a84d1ddf3a21
+  ws-opts:
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 55|🇧GB-172.99.190.228-8430
+  network: ws
+  port: 443
+  server: 172.99.190.228
+  servername: 172.99.190.228
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 172.99.190.228
+    path: linkvws
+- alterId: 64
+  cipher: auto
+  name: 55|🇬🇧GB-51.89.122.175-8505
+  network: ws
+  port: 30000
+  server: 51.89.122.175
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 9f58234c-355b-4065-ae21-d4a63099aba5
+  ws-opts:
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 55|🇬🇧GB-51.89.2.48-8519
+  network: ws
+  port: 30000
+  server: 51.89.2.48
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 9f58234c-355b-4065-ae21-d4a63099aba5
+  ws-opts:
+    headers:
+      Host: www.25311731.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 55|GB-38.59.224.38-8751
+  network: ws
+  port: 80
+  server: 38.59.224.38
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c989c263-08c7-4820-95f4-a507a446d2b9
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 55|🇧GB-83.142.225.59-8755
+  network: ws
+  port: 30000
+  server: 83.142.225.59
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 5267ca71-97e6-44c8-8fb5-9fe4afe0954e
+  ws-opts:
+    headers:
+      Host: www.41825759.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: /
+  name: 55|GB-95.164.37.67-9040
+  network: grpc
+  port: 443
+  server: 95.164.37.67
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 81594e2a-a2a1-4190-9a62-dc389f829807
+- alterId: 0
+  cipher: auto
+  name: 55|🇧GB-8.208.30.41-9060
+  network: ws
+  port: 443
+  server: 8.208.30.41
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 3e9165fe-9145-4ff2-a058-56678d85ca6b
+  ws-opts:
+    path: /swoole
+- cipher: aes-256-cfb
+  name: 55|🇬🇧GB-77.72.5.150-9061
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 77.72.5.150
+  type: ss
+- name: 55|🇧GB-51.38.71.175-9103
+  password: b640d791-ff83-4300-b509-c2a02f97f167
+  port: 80
+  server: 51.38.71.175
+  skip-cert-verify: false
+  sni: uk1.trojanvh.xyz
+  type: trojan
+- alterId: 64
+  cipher: auto
+  name: 55|🇧GB-45.86.8.6-9161
+  network: ws
+  port: 443
+  server: 45.86.8.6
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    path: /path/1689935243027
+- alterId: 64
+  cipher: auto
+  name: 55|🇬🇧GB-45.86.8.117-9162
+  network: ws
+  port: 443
+  server: 45.86.8.117
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    path: /path/1689935243027
+- alterId: 64
+  cipher: auto
+  name: 55|🇬🇧GB-45.86.8.117-9163
+  network: ws
+  port: 443
+  server: 45.86.8.117
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    path: /path/1689767805929
+- cipher: aes-256-cfb
+  name: 55|🇧GB-37.235.55.21-9205
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.235.55.21
+  type: ss
+- name: 55|🇧GB-3.8.123.26-9240
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.8.123.26
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 55|🇬🇧GB-18.135.6.102-9448
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.135.6.102
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 55|🇬🇧GB-18.132.35.140-9454
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.132.35.140
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 55|🇧GB-18.130.204.79-9457
+  password: telegram-id-directvpn
+  port: 22222
+  server: 18.130.204.79
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 55|GB-146.19.230.241-9707
+  password: xxoo
+  port: 443
+  server: 146.19.230.241
+  skip-cert-verify: false
+  sni: loader.tapsell.ir
+  type: trojan
+- name: 55|🇬🇧GB-146.19.230.241-9711
+  password: xxoo
+  port: 443
+  server: 146.19.230.241
+  skip-cert-verify: false
+  sni: bmi.ir
+  type: trojan
+- alterId: 64
+  cipher: auto
+  name: 55|🇧GB-140.99.128.86-9731
+  network: ws
+  port: 443
+  server: 140.99.128.86
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    path: /path/1689673828070
+- alterId: 64
+  cipher: auto
+  name: 55|🇧GB-140.99.128.125-9733
+  network: ws
+  port: 443
+  server: 140.99.128.125
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    path: /path/1689849487190
+- alterId: 64
+  cipher: auto
+  name: 55|🇧GB-140.99.120.187-9734
+  network: ws
+  port: 443
+  server: 140.99.120.187
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    path: /path/1689935243027
+- alterId: 64
+  cipher: auto
+  name: 55|🇬🇧GB-140.99.120.182-9735
+  network: ws
+  port: 443
+  server: 140.99.120.182
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    path: /path/1685613581032
+- name: 55|🇬🇧GB-13.40.3.71-9781
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.40.3.71
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
 - name: '61|🇬🇧 _英国 #1'
   password: Aimer
   port: 8443
@@ -475,19 +2001,6 @@ proxies:
   skip-cert-verify: false
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '61|🇬🇧 _英国 #2'
-  network: ws
-  port: '20315'
-  server: 185.121.134.12
-  tls: false
-  type: vmess
-  uuid: fa2a3c9b-47c0-41ba-8a8e-ff66ba96a286
-  ws-opts:
-    headers:
-      Host: 185.121.134.12
-    path: /
 - alterId: 0
   cipher: auto
   name: '61|🇬🇧 _英国 #3'
@@ -501,12 +2014,6 @@ proxies:
     headers:
       Host: 185.121.134.12
     path: /
-- cipher: aes-128-gcm
-  name: 64|🇬🇧GB-141.98.101.182-0409 | 22....
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.182
-  type: ss
 - alterId: 0
   cipher: auto
   name: 74|GB_London_Baxet Group Inc._Ope...

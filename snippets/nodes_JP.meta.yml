@@ -1,32 +1,42 @@
 proxies:
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  delay: 884
+  name: 0,3,9,19,23,42,53,67,74|❓_🇨🇳_📶_github.com/Ruk1ng001_1
+  password: hGkQ6915tD
+  port: 15084
+  server: 120.232.81.50
+  tfo: false
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  delay: 714
+  name: '0,3,9,19,42,53,67|🇯🇵 日本2|@ripaojiedian #3'
+  password: dc15d997-8b26-4294-870e-c90a5784dca4
+  port: 13011
+  server: naiu-jp.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,67|🇯🇵 日本|@ripaojiedian #3'
+  name: '0,3,67|🇯🇵 日本3|@ripaojiedian #2'
   port: 33184
   server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 0acfdca6-a960-469a-a7b8-2634371fd9d3
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '0,3,47,60,67|🇯🇵 日本2|@ripaojiedian #3'
-  password: ee2d2b8b-18b0-4fdd-afd1-a7c0030ec635
-  port: 58148
-  server: lm.kaiqsz.com
-  tfo: false
-  type: ss
+  uuid: b2d1e704-59f5-48ec-ba97-9a5e2005b37b
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0,3,19,42,47,60,67,74|43.206.238.113_OpenAI_Claude
+  name: '0,3,19,67|🇯🇵 日本特殊|@ripaojiedian #3'
   password: amazonskr05
   port: 443
-  server: 43.206.238.113
+  server: 13.124.57.244
   tfo: false
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 6|🇯🇵 CM 隧道 日本 NO1
@@ -193,23 +203,6 @@ proxies:
     headers:
       Host: jpp.556855.xyz
     path: /
-- client-fingerprint: chrome
-  delay: 714
-  name: 9,19,42,53|日本 - 东京 - Shenzhen lesuyun Net...
-  password: dc15d997-8b26-4294-870e-c90a5784dca4
-  port: 13011
-  server: naiu-jp.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-- cipher: aes-256-cfb
-  delay: 884
-  name: 9,19,42,53,74|❓_🇨🇳_📶_github.com/Ruk1ng001_1
-  password: hGkQ6915tD
-  port: 15084
-  server: 120.232.81.50
-  type: ss
-  udp: true
 - cipher: chacha20-ietf
   delay: 632
   name: 9,53|日本 - 東京都 - Akile LTD - 7
@@ -1295,7 +1288,7 @@ proxies:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
 - cipher: aes-256-cfb
-  name: 19,42,64|🇯🇵JP-13.230.111.71-5419 | 14.2...
+  name: 19,64|🇯🇵JP-13.230.111.71-5419 | 14.2...
   password: amazonskr05
   port: 443
   server: 13.230.111.71
@@ -1308,6 +1301,15 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 19,42,47,60,74|43.206.238.113_OpenAI_Claude
+  password: amazonskr05
+  port: 443
+  server: 43.206.238.113
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
   name: 19,42|🟡_🇯🇵_💼_github.com/Ruk1ng001_64...
   password: amazonskr05
   port: 443
@@ -1315,10 +1317,12 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 19,64|🇯🇵JP-43.206.240.27-1367 | 13.5...
+  client-fingerprint: chrome
+  name: 19,42,64|🇯🇵JP-43.206.240.27-1367 | 13.5...
   password: amazonskr05
   port: 443
   server: 43.206.240.27
+  tfo: false
   type: ss
 - cipher: aes-256-cfb
   name: 19,42,74|52.195.215.236_OpenAI_Claude
@@ -1342,11 +1346,12 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '19,21,56|🇯🇵JP-54.249.60.76-5731 | 20.43... #1'
+  name: '19,21,42,56|🇯🇵JP-54.249.60.76-5731 | 20.43... #1'
   password: amazonskr05
   port: 443
   server: 54.249.60.76
   type: ss
+  udp: true
 - cipher: rc4-md5
   name: 19|@MxlShare 日本 | JPN 10
   password: RenzheCloudSS
@@ -1450,12 +1455,15 @@ proxies:
   protocol-param: 92902:pFWGOQ
   server: 3.link-hub.click
   type: ssr
-- name: '20,60,61|🇺🇸 美国4|@ripaojiedian #2'
+- alterId: 0
+  name: 20,42,60,61|🇺🇸 美国4|@ripaojiedian
   password: '!!str 65086441068973800'
   port: 443
   server: grateful-lark.shiner427.skin
   skip-cert-verify: false
+  tls: true
   type: trojan
+  udp: true
 - cipher: aes-128-gcm
   name: 21,56,64|🇯🇵JP-149.22.87.204-0458 | 14.1...
   password: shadowsocks
@@ -1481,6 +1489,14 @@ proxies:
   server: 3.112.28.118
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 21,42,47,56,60|🇯🇵JP-43.207.97.53-132
+  password: amazonskr05
+  port: 443
+  server: 43.207.97.53
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   name: 21,56,74|52.68.247.21_OpenAI_Claude
   password: amazonskr05
@@ -1510,7 +1526,7 @@ proxies:
   name: 25|🇯🇵 日本|T01
   password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
   port: 20038
-  server: c2veyhxymurpbfocdiuduuhd05fggpi8.08.01.jp.88k.site
+  server: c2veyhxymurpbfocdiuduuhd05fggpi8.08.01.jp.6l6.site
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -1518,7 +1534,7 @@ proxies:
   name: 25|🇯🇵 日本|T02
   password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
   port: 10954
-  server: tq1j9kndywgu7ro6e34iezxed17cvcds.08.02.jp.88k.site
+  server: tq1j9kndywgu7ro6e34iezxed17cvcds.08.02.jp.6l6.site
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -1526,7 +1542,7 @@ proxies:
   name: 25|🇯🇵 日本|T03
   password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
   port: 40546
-  server: jgd3twbg0g8hw8uyzb4df5h4bgntp81o.08.03.jp.88k.site
+  server: jgd3twbg0g8hw8uyzb4df5h4bgntp81o.08.03.jp.6l6.site
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -1534,7 +1550,7 @@ proxies:
   name: 25|🇯🇵 日本|T04
   password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
   port: 36708
-  server: j7sutoljqlv0rjsa6i690uycdqnzoszo.08.04.jp.88k.site
+  server: j7sutoljqlv0rjsa6i690uycdqnzoszo.08.04.jp.6l6.site
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -1542,7 +1558,7 @@ proxies:
   name: 25|🇯🇵 日本|T05
   password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
   port: 23718
-  server: hyz7lvcwhceoeq542gtezksrlm94sif5.08.05.jp.88k.site
+  server: hyz7lvcwhceoeq542gtezksrlm94sif5.08.05.jp.6l6.site
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -1550,7 +1566,7 @@ proxies:
   name: 25|🇯🇵 日本|T06
   password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
   port: 13465
-  server: 2z4xeackauvjtt6o2czshcyn447sj5qz.08.06.jp.88k.site
+  server: 2z4xeackauvjtt6o2czshcyn447sj5qz.08.06.jp.6l6.site
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -1558,7 +1574,7 @@ proxies:
   name: 25|🇯🇵 日本|T07
   password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
   port: 14882
-  server: fftcjsyxpsybvtddqdlvk1q9wffc5rxv.08.07.jp.88k.site
+  server: fftcjsyxpsybvtddqdlvk1q9wffc5rxv.08.07.jp.6l6.site
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -1566,7 +1582,7 @@ proxies:
   name: 25|🇯🇵 日本|T08
   password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
   port: 25109
-  server: w4gol4912t3v766zrkpv71z1fl7rrjq6.08.08.jp.88k.site
+  server: w4gol4912t3v766zrkpv71z1fl7rrjq6.08.08.jp.6l6.site
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -1574,7 +1590,7 @@ proxies:
   name: 25|🇯🇵 日本|T09
   password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
   port: 27334
-  server: fs7lhzq2dirw5k57x9gvuzecff0yedz7.08.09.jp.88k.site
+  server: fs7lhzq2dirw5k57x9gvuzecff0yedz7.08.09.jp.6l6.site
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -1582,185 +1598,29 @@ proxies:
   name: 25|🇳🇬 尼日利亚|LOS1
   password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
   port: 16496
-  server: 05w3bfqa176u15igufwgvhebwck0w0l3.08.01.ng.88k.site
+  server: 05w3bfqa176u15igufwgvhebwck0w0l3.08.01.ng.6l6.site
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇯🇵 日本 | JPN
-  port: 45056
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
+  password: e762f7fe-25e1-4902-b184-e0361a42326e
+  port: 20004
+  server: gy.666666222.shop
+  type: ss
   udp: true
-  uuid: 96ee292b-0d10-4149-89c6-bae10638dc24
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇯🇵 日本 | JPN 2
-  password: 957ad052-6ffa-485e-a1d4-90417e3d2634
-  port: 20006
+  password: bc41bc7d-5fbf-4b72-bbff-5ed159f88a11
+  port: 20002
   server: gy.666666222.shop
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 26|🇯🇵 日本 | JPN 3
-  password: e762f7fe-25e1-4902-b184-e0361a42326e
-  port: 20006
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 4
-  password: 957ad052-6ffa-485e-a1d4-90417e3d2634
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 5
-  password: e5385e4e-61ca-4d2c-91f1-1c6c521a2ca6
-  port: 20006
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 6
-  password: bc41bc7d-5fbf-4b72-bbff-5ed159f88a11
-  port: 20002
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 7
-  password: bc41bc7d-5fbf-4b72-bbff-5ed159f88a11
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 8
-  password: e5385e4e-61ca-4d2c-91f1-1c6c521a2ca6
-  port: 20008
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 9
-  password: bc41bc7d-5fbf-4b72-bbff-5ed159f88a11
-  port: 20008
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 10
-  password: bab4f614-2b60-4429-aa7a-cf878f1de28a
-  port: 25578
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 11
-  password: 9e283332-c187-4352-9387-dea24f8e7001
-  port: 41473
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 12
-  password: e5385e4e-61ca-4d2c-91f1-1c6c521a2ca6
-  port: 20002
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 13
-  password: bab4f614-2b60-4429-aa7a-cf878f1de28a
-  port: 22834
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 14
-  password: e762f7fe-25e1-4902-b184-e0361a42326e
-  port: 20008
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 15
-  password: 582ae0f6-73f1-4073-b5f4-7160c494cedd
-  port: 34103
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 16
-  password: e5385e4e-61ca-4d2c-91f1-1c6c521a2ca6
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 17
-  password: 9e283332-c187-4352-9387-dea24f8e7001
-  port: 22834
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 18
-  port: 45057
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 96ee292b-0d10-4149-89c6-bae10638dc24
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 19
-  password: e762f7fe-25e1-4902-b184-e0361a42326e
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 20
-  password: e762f7fe-25e1-4902-b184-e0361a42326e
-  port: 20002
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 21
-  password: bc41bc7d-5fbf-4b72-bbff-5ed159f88a11
-  port: 20006
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 23
   port: 20017
   server: i.needss.top
   tls: false
@@ -1769,23 +1629,7 @@ proxies:
   uuid: 1d12b467-0691-444f-ae78-c5b8987af3a6
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 24
-  password: 9e283332-c187-4352-9387-dea24f8e7001
-  port: 25578
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 26
-  password: 582ae0f6-73f1-4073-b5f4-7160c494cedd
-  port: 34102
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 27
+  name: 26|🇯🇵 日本 | JPN 4
   password: 957ad052-6ffa-485e-a1d4-90417e3d2634
   port: 20008
   server: gy.666666222.shop
@@ -1793,23 +1637,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 28
-  password: bab4f614-2b60-4429-aa7a-cf878f1de28a
-  port: 41473
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 29
-  password: 582ae0f6-73f1-4073-b5f4-7160c494cedd
-  port: 34104
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本 | JPN 30
+  name: 26|🇯🇵 日本 | JPN 5
   password: 957ad052-6ffa-485e-a1d4-90417e3d2634
   port: 20002
   server: gy.666666222.shop
@@ -1817,76 +1645,106 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇳🇬 尼日利亚 | NGA
-  password: 582ae0f6-73f1-4073-b5f4-7160c494cedd
-  port: 58804
-  server: southvip1.pkyun.xyz
+  name: 26|🇯🇵 日本 | JPN 6
+  password: e5385e4e-61ca-4d2c-91f1-1c6c521a2ca6
+  port: 20004
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇯🇵 日本 | JPN 7
+  password: e5385e4e-61ca-4d2c-91f1-1c6c521a2ca6
+  port: 20002
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇯🇵 日本 | JPN 8
+  password: 957ad052-6ffa-485e-a1d4-90417e3d2634
+  port: 20006
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇯🇵 日本 | JPN 9
+  password: e5385e4e-61ca-4d2c-91f1-1c6c521a2ca6
+  port: 20006
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇯🇵 日本 | JPN 10
+  password: e5385e4e-61ca-4d2c-91f1-1c6c521a2ca6
+  port: 20008
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇯🇵 日本 | JPN 11
+  password: bc41bc7d-5fbf-4b72-bbff-5ed159f88a11
+  port: 20004
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇯🇵 日本 | JPN 12
+  password: bc41bc7d-5fbf-4b72-bbff-5ed159f88a11
+  port: 20006
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇯🇵 日本 | JPN 13
+  password: 957ad052-6ffa-485e-a1d4-90417e3d2634
+  port: 20004
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇯🇵 日本 | JPN 14
+  password: e762f7fe-25e1-4902-b184-e0361a42326e
+  port: 20002
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇯🇵 日本 | JPN 15
+  password: e762f7fe-25e1-4902-b184-e0361a42326e
+  port: 20008
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇯🇵 日本 | JPN 16
+  password: bc41bc7d-5fbf-4b72-bbff-5ed159f88a11
+  port: 20008
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇯🇵 日本 | JPN 17
+  password: e762f7fe-25e1-4902-b184-e0361a42326e
+  port: 20006
+  server: gy.666666222.shop
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  country: 🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 27| JP_256
-  network: ws
-  port: 443
-  server: tls.84.node-for-bigairport.win
-  servername: tls.84.node-for-bigairport.win
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
-  ws-headers:
-    HOST: tls.84.node-for-bigairport.win
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 27|🇵 JP_257
+  name: 30|🇯🇵 JP_276
   network: ws
   port: 11443
-  server: tls.01.node-for-bigairport.win
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 27|🇵 JP_258
-  network: ws
-  port: 14443
-  server: tls.14.node-for-bigairport.win
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇯🇵 JP_256
-  network: ws
-  port: 443
-  server: tls.84.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
-  ws-opts:
-    headers:
-      Host: tls.84.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇯🇵 JP_257
-  network: ws
-  port: 11443
-  server: tls.01.node-for-bigairport.win
+  server: tls.17.node-for-bigairport.win
   tls: true
   type: vmess
   uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
@@ -1894,46 +1752,20 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇯🇵 JP_258
-  network: ws
-  port: 14443
-  server: tls.14.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- name: 35|日本+东京樱花网络数据中心
-  network: tcp
-  password: 3bcd9e33-8377-4b32-af33-217158577ff3
-  port: 443
-  server: 160.16.74.162
-  sni: kdlsupport.zendesk.com
-  type: trojan
 - name: 35|日本+东京Sakura樱花云数据中心
   network: tcp
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
-  server: 160.16.198.83
+  server: 160.16.135.40
   sni: kdlsupport.zendesk.com
   type: trojan
-- name: '35|日本+东京Sakura樱花云数据中心 #1'
-  network: tcp
-  password: 3bcd9e33-8377-4b32-af33-217158577ff3
+- cipher: chacha20-ietf-poly1305
+  name: 37,52,60|🇻🇳VN-160.19.78.75-081
+  password: Nk9asglDzHzjktVzTkvhaA
   port: 443
-  server: 160.16.144.90
-  sni: kdlsupport.zendesk.com
-  type: trojan
-- name: 35|日本+东京Amazon数据中心
-  password: 47072f01-8e77-4136-8e85-b0f0d9d08f1d
-  port: 20230
-  server: jp007.421421.xyz
-  sni: 421421.xyz
-  type: trojan
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 42|❓_🇯🇵_💼_github.com/Ruk1ng001_61...
   password: amazonskr05
@@ -1967,6 +1799,14 @@ proxies:
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
   ws-headers:
     Host: moi.ir
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 47,60|🇨🇳CN-223.113.54.230-122
+  password: ee2d2b8b-18b0-4fdd-afd1-a7c0030ec635
+  port: 58148
+  server: lm.kaiqsz.com
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: '47,60,61|🇯🇵 日本|@ripaojiedian #2'
@@ -2074,10 +1914,10 @@ proxies:
   server: 581610.eveline.lol
   type: ss
 - cipher: aes-256-gcm
-  name: '74|JP_Tokyo_Akari Networks_OpenAI... #4'
+  name: '74|JP_Tokyo_Akari Networks_OpenAI... #3'
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21239
-  server: 581023.horace.im
+  port: 21237
+  server: 581610.eveline.lol
   type: ss
 - cipher: aes-256-gcm
   name: '74|JP_Tokyo_Akari Networks_OpenAI... #5'
@@ -2165,17 +2005,17 @@ proxies:
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0
   cipher: auto
-  name: '74|JP_Tokyo_Akari Networks_OpenAI... #17'
+  name: '74|JP_Tokyo_Akari Networks_OpenAI... #16'
   network: tcp
-  port: 31235
+  port: 31236
   server: 581610.eveline.lol
   type: vmess
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0
   cipher: auto
-  name: '74|JP_Tokyo_Akari Networks_OpenAI... #18'
+  name: '74|JP_Tokyo_Akari Networks_OpenAI... #17'
   network: tcp
-  port: 31233
+  port: 31235
   server: 581610.eveline.lol
   type: vmess
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD

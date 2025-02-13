@@ -3740,28 +3740,12 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|哈撒哈斯坦中转 01-1A
-  password: 9e283332-c187-4352-9387-dea24f8e7001
-  port: 21081
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|哈撒哈斯坦中转 01-1B
-  password: bab4f614-2b60-4429-aa7a-cf878f1de28a
-  port: 21081
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
   ip-version: dual
-  name: '36,39,42,70|VMESS-美国>德国-NF解锁德国自制剧-ChatGPT-... #4'
+  name: '36,39,42,50,70|VMESS-美国>德国-NF解锁德国自制剧-ChatGPT-... #4'
   network: ws
   port: 80
   server: join.ISVvpn.fastly80-3.hosting-ip.com
@@ -3780,7 +3764,7 @@ proxies:
   h2-opts: {}
   http-opts: {}
   ip-version: dual
-  name: '36,39,52,70|VMESS-美国>德国-NF解锁德国自制剧-ChatGPT-... #5'
+  name: '36,39,50,52,70|VMESS-美国>德国-NF解锁德国自制剧-ChatGPT-... #5'
   network: ws
   port: 80
   server: 151.101.0.155
@@ -3820,6 +3804,14 @@ proxies:
     headers:
       HOST: telegram-isvvpn.ir
     path: /racevpn?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 36,37,39,64|🇳🇱NL-193.29.139.189-0686 | 19....
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 193.29.139.189
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -4198,14 +4190,25 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- ip-version: dual
-  name: '50,64,72|🇩🇪_DE_德国->🇺🇸_US_美国 #1'
-  password: 4732adfa16c6450bbef87264e41332db
-  port: 443
-  server: nextstepcareer.online
-  skip-cert-verify: false
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 50|🇺🇸_US_美国->_CN_国
+  network: tcp
+  port: 15717
+  server: 104.245.97.166
+  sni: ''
+  type: vmess
+  uuid: 8b252dc4-b20c-419f-8f62-be72f057938f
+- alpn:
+  - http/1.1
+  name: 50|🇪_DE_德国->🇸_US_美国
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.126.41.247
+  sni: trojan.burgerip.co.uk
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -4217,6 +4220,7 @@ proxies:
   server: plex.com
   servername: telegram-isvvpn.ir
   skip-cert-verify: true
+  sni: ''
   type: vmess
   udp: true
   uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
@@ -4224,6 +4228,12 @@ proxies:
     headers:
       HOST: telegram-isvvpn.ir
     path: /racevpn?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
+- cipher: chacha20-ietf
+  name: 50|🇺🇸_US_美国->🇪_BE_比利时
+  password: asd123456
+  port: 8388
+  server: 137.175.113.193
+  type: ss
 - alpn:
   - http/1.1
   ip-version: dual

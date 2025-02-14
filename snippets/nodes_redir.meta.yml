@@ -3740,6 +3740,22 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|哈撒哈斯坦中转 01-1A
+  password: c5e5576a-7d32-4d60-b718-527d961ec557
+  port: 21081
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|哈撒哈斯坦中转 01-1B
+  password: 77a26db6-3920-4dc5-8c27-ed2d4f253f14
+  port: 21081
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   ip-version: dual
@@ -3770,14 +3786,6 @@ proxies:
     headers:
       host: telegram-isvvpn.ir
     path: /racevpn
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 36,38,49,54,70|🇮🇹_IT_意大利
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.143.129.230
-  type: ss
-  udp: true
 - name: 36|🇺🇸_US_美国->🇩🇪_DE_德国_2
   password: telegram-id-directvpn
   port: 22222
@@ -3803,11 +3811,10 @@ proxies:
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: 36,39,50|🇺🇸_US_美国->🇫🇷_FR_法国_1
+  name: 36,39|_US_国->_FR_国_1
   network: ws
   port: 80
   server: 151.101.130.133
-  sni: ''
   type: vmess
   udp: true
   uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
@@ -3817,7 +3824,7 @@ proxies:
     path: /racevpn?telegram-
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 38|🇸_US_美国->_CN_国_1
+  name: 38,50|🇺🇸_US_美国->🇨🇳_CN_中国
   password: amazonskr05
   port: 443
   server: 35.87.114.59
@@ -3826,18 +3833,14 @@ proxies:
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: '38,58,70|🇺🇸_US_美国->🇩🇪_DE_德国_2 #2'
+  name: '38,70|🇺🇸_US_美国->🇩🇪_DE_德国_2 #2'
   network: ws
   port: 80
   server: 151.101.0.155
-  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
-  ws-headers:
-    Host: telegram-isvvpn.ir
-  ws-path: /racevpn
 - cipher: aes-256-gcm
   ip-version: dual
   name: 38|🇨🇳_CN_中国->🇸_US_美国_1
@@ -4062,227 +4065,105 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 46,56,58|🏁RELAY-104.19.57.4-050
+  name: '46,56|1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿... #2'
   network: ws
   port: 2086
   server: 104.19.57.4
-  skip-cert-verify: true
   sni: ip11.freegradely.xyz
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-headers:
-    Host: 104.19.57.4
   ws-opts: {}
-  ws-path: /
-- cipher: aes-256-cfb
-  name: 46,54,58|🇫🇷FR-163.172.64.22-052
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 163.172.64.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 46,51,54,58|🇺🇸US-34.220.236.38-062
-  password: 2062a5ca-a34e-47bf-9810-db91185f07fc
-  port: 59019
-  server: fuck5.mmmmmmmmmm.cfd
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 46,56,58|🏁RELAY-104.18.57.111-065
+  name: '46,56|1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿... #3'
   network: ws
   port: 2086
   server: 104.18.57.111
-  skip-cert-verify: true
   sni: ip11.freegradely.xyz
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-headers:
-    Host: 104.18.57.111
   ws-opts: {}
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 46,54,56,59|🇸🇬 2,11|2,11|2|🇺🇸_US_美国->🇸🇬_SG...
-  network: ws
-  port: '2052'
-  server: cfcdn2.sanfencdn9.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: ccd92698-4499-472d-a06f-f90e7e89ba4f
-  ws-opts:
-    headers:
-      Host: rpmlybgzsg2.yofnhkfc.xyz
-    path: /video/3YKfzGw4
-- alterId: 0
-  cipher: auto
-  name: 46,54,56,59|🇺🇸 2,11|2,11|2|🇺🇸_US_美国->🇮🇳_IN...
-  network: ws
-  port: '2052'
-  server: 104.17.156.224
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      Host: in4.wish.ml
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '46,54,56,59|🇺🇸 2,11|2,11|2|🇺🇸_US_美国->🇮🇳_IN... #1'
-  network: ws
-  port: '2052'
-  server: 172.67.164.78
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      Host: in3.wish.ml
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 46,56,58|🇦🇶NOWHERE-0.0.0.0-085
-  network: ws
-  port: 16928
-  server: vip3.niuniupremium.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
-  ws-headers:
-    Host: vip3.niuniupremium.xyz
-  ws-opts: {}
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 46,54,56,59|🇺🇸 2,11|2,11|2|🇺🇸_US_美国->🇫🇷_FR...
-  network: ws
-  port: '2082'
-  server: 104.21.8.157
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 46,56,58|🏁RELAY-104.18.37.248-089
+  name: '46,56|3,11,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2 #1'
   network: ws
   port: 2052
   server: 104.18.37.248
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
-  ws-headers:
-    Host: 104.18.37.248
   ws-opts: {}
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 46,56,58|🏁RELAY-104.19.47.16-090
+  name: '46,56|3,11,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3 #1'
   network: ws
   port: 8080
   server: 104.19.47.16
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  ws-headers:
-    Host: 104.19.47.16
   ws-opts: {}
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 46,56,58|🏁RELAY-104.19.47.65-091
+  name: '46,56|3,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8 #1'
   network: ws
   port: 2086
   server: 104.19.47.65
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-headers:
-    Host: 104.19.47.65
   ws-opts: {}
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 46,56,58|🇨🇳CN-120.232.240.56-092
+  name: '46,56|3,11,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3 #1'
   network: ws
   port: 16928
   server: 120.232.240.56
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
-  ws-headers:
-    Host: 120.232.240.56
   ws-opts: {}
-  ws-path: /
 - alterId: 64
   cipher: auto
-  name: '46,51,56,58,59|🇺🇸 3,11,17|🇨🇳_CN_中国->🇺🇸_US_美国 ... #1'
+  name: '46,51,56,59|_中国 #4'
   network: tcp
   port: '54002'
   server: 183.240.235.162
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.240.235.162
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 46,56,58|🇦🇶NOWHERE-0.0.0.0-094
+  name: '46,56|3,11,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3 #1'
   network: ws
   port: 2052
   server: p3.v2raybrasil.cloud
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
-  ws-headers:
-    Host: p3.v2raybrasil.cloud
   ws-opts: {}
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 46,56,58|🏁RELAY-172.67.130.140-098
+  name: '46,56|3,11,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2 #1'
   network: ws
   port: 2082
   server: 172.67.130.140
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-headers:
-    Host: 172.67.130.140
   ws-opts: {}
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 46,56,58|🏁RELAY-172.64.175.213-099
+  name: '46,56|3,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #1... #1'
   network: ws
   port: 2086
   server: 172.64.175.213
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-headers:
-    Host: 172.64.175.213
   ws-opts: {}
-  ws-path: /
 - name: 49|🇺🇸_US_美国->_MD_
   network: ws
   password: 936c6853-6bbf-4e24-8667-ec5b2fc275b3
@@ -4314,7 +4195,7 @@ proxies:
   sni: grand-horse.adder289.quest
   type: trojan
 - cipher: aes-256-cfb
-  name: 49,54|PT-185.231.233.173-0658
+  name: 49|🇺_RU_->🇺🇸_US_美国
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.173
@@ -4331,79 +4212,22 @@ proxies:
     headers:
       host: md1.safecdn.site
     path: /Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2
-- alpn:
-  - http/1.1
+- cipher: aes-128-gcm
   ip-version: dual
-  name: 50|🇩🇪_DE_德国->🇺🇸_US_美国
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.122.174.190
-  sni: trojan.burgerip.co.uk
-  type: trojan
+  name: 50|🇨🇳_CN_中国->🇺🇸_US_美国
+  password: e622f777-276a-45f1-849b-9d9ce03f64e3
+  port: 49225
+  server: south.sf0jm.xyz
+  type: ss
   udp: true
-- ip-version: dual
-  name: 50|🇧🇪_BE_比利时->🏳️_unKnow_未知
-  password: 6557bf4a-852b-4a69-ad35-d53293386a13
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 50|🇺🇸_US_美国->🇷🇴_RO_罗马尼亚
+  password: amazonskr05
   port: 443
-  server: vn.mjt000.com
-  sni: vn.mjt000.com
-  type: trojan
+  server: 34.213.236.232
+  type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: 50|🇺🇸_US_美国->🇩🇪_DE_德国
-  network: ws
-  port: 80
-  server: dave.ns.cloudflare.com
-  type: vmess
-  udp: true
-  uuid: f46bb68f-3069-494d-8650-f8e2a9294c92
-  ws-opts:
-    headers:
-      host: vmessde.trevely.us.kg
-    path: /serv00?ed=2048
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: 50|🇺🇸_US_美国->🇫🇷_FR_法国_2
-  network: ws
-  port: 80
-  server: plex.com
-  type: vmess
-  udp: true
-  uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
-  ws-opts:
-    headers:
-      host: telegram-isvvpn.ir
-    path: /racevpn?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
-- alterId: 0
-  cipher: auto
-  name: 59|🇺🇸 2,11|2,11|2|🇨🇳_CN_中国->🇺🇸_US...
-  network: ws
-  port: '16928'
-  server: vip3.niuniupremium.xyz
-  tls: false
-  type: vmess
-  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
-  ws-opts:
-    headers:
-      Host: vip3.niuniupremium.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '59|🇺🇸 3,11,17|🇺🇸_US_美国->🇧🇷_BR_巴西 ... #1'
-  network: ws
-  port: '2052'
-  server: p3.v2raybrasil.cloud
-  tls: false
-  type: vmess
-  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
-  ws-opts:
-    headers:
-      Host: p3.v2raybrasil.cloud
-    path: /
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -4421,6 +4245,21 @@ proxies:
     headers:
       HOST: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
+- cipher: chacha20-ietf-poly1305
+  name: 68|SS->-NF解锁兰自制剧-ChatGPT-YouTube-...
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.58
+  type: ss
+- ip-version: dual
+  name: 70|🇺🇸_US_美国->🇫🇷_FR_法国
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 54.155.7.122
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   ip-version: dual
@@ -4435,7 +4274,7 @@ proxies:
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: 70|🇺🇸_US_美国->🇨🇳_CN_中国
+  name: '70|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
   network: tcp
   port: 15717
   server: 104.245.97.166
@@ -4446,13 +4285,22 @@ proxies:
 - alpn:
   - http/1.1
   ip-version: dual
-  name: '70|🇩🇪_DE_德国->🇺🇸_US_美国 #1'
+  name: 70|🇩🇪_DE_德国->🇺🇸_US_美国
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 3.126.41.247
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- ip-version: dual
+  name: 70|🇺🇸_US_美国->🇮🇳_IN_印度
+  password: 3bcd9e33-8377-4b32-af33-217158577ff3
+  port: 443
+  server: 198.199.78.30
+  skip-cert-verify: true
+  sni: kdlsupport.zendesk.com
   type: trojan
   udp: true
 - cipher: auto
@@ -4465,3 +4313,11 @@ proxies:
   type: vmess
   udp: true
   uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
+- cipher: chacha20-ietf
+  ip-version: dual
+  name: 70|🇺🇸_US_美国->🇧🇪_BE_比利时_1
+  password: asd123456
+  port: 8388
+  server: 137.175.113.193
+  type: ss
+  udp: true

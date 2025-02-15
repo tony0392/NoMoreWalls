@@ -2,49 +2,51 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,19,41,44,65|🇭🇰 香港|@ripaojiedian #3'
-  port: 20776
-  server: AZHJ001.dmak.cyou
+  name: '0,3,41,44,65|🇭🇰 香港|@ripaojiedian #3'
+  port: 21718
+  server: AZHJ.dmak.cyou
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
   uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
-- alterId: 0
-  cipher: auto
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '0,3,19,41,42,44,65|🇭🇰 香港2|@ripaojiedian #3'
-  port: 20965
-  server: AZHJ001.dmak.cyou
-  skip-cert-verify: false
+  name: '0,3,44,46,51,65|🇭🇰 香港2|@ripaojiedian #3'
+  password: PT2N60DCUH6VCQPC
+  port: 15004
+  server: 156.245.190.13
   tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '0,3,44,46,51,65|🇭🇰 香港3|@ripaojiedian #3'
+  password: AN3FTAV65XV9BQKG
+  port: 15009
+  server: 156.245.190.18
+  tfo: false
+  type: ss
 - alterId: 0
   client-fingerprint: chrome
-  delay: 624
-  name: '0,2,3,9,19,35,41,42,52,59,65,72|🟡_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001... #2'
+  delay: 669
+  name: '0,2,3,9,19,41,52,59,65|🇭🇰 香港4|@ripaojiedian #3'
   network: tcp
   password: 43e5eeacbad3032bfe4c25a2f011b6b7
   port: 443
   server: 104.251.227.182
   skip-cert-verify: true
   sni: hezijiasuqi.com
-  tfo: false
   tls: true
   type: trojan
   udp: true
-- country: 🇨🇳CN
-  delay: 2058
-  name: 2,9,52|沙特阿拉伯 - 利雅得省 - Kaopu Cloud HK ...
-  password: d0cfea6c-2052-4add-aef5-501a4714d2f8
-  port: 32035
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: true
-  sni: cert.bitbyte.one
-  type: trojan
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '0,3,42,44,46,51,65|🇭🇰 香港5|@ripaojiedian #3'
+  password: RAMLXXTO5NSM786O
+  port: 15006
+  server: 156.245.190.15
+  tfo: false
+  type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 4|🇭🇰 公益路线1-香港HK 限速50MBPS
@@ -379,16 +381,20 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- alterId: 0
-  cipher: auto
-  name: 14|香港NO.1
-  port: 45050
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 14|香港01
+  password: 0ca22e1d-afa2-41b9-afd4-fa4e0104fb9e
+  port: 34338
+  server: gy.666666222.shop
+  type: ss
   udp: true
-  uuid: 1f1a319c-4e05-44f8-812b-133f2fa98a33
+- cipher: chacha20-ietf-poly1305
+  name: 14|香港03
+  password: 0ca22e1d-afa2-41b9-afd4-fa4e0104fb9e
+  port: 20052
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 14|香港
@@ -398,7 +404,34 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 1f1a319c-4e05-44f8-812b-133f2fa98a33
+  uuid: c3962ff4-a3bd-4c53-8fa6-d0e61c73d028
+- alterId: 0
+  cipher: auto
+  name: 14,15|香港NO.1-1A-GPT
+  port: 45050
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c3962ff4-a3bd-4c53-8fa6-d0e61c73d028
+- cipher: chacha20-ietf-poly1305
+  name: 14|香港02
+  password: 0ca22e1d-afa2-41b9-afd4-fa4e0104fb9e
+  port: 20035
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 15|香港NO.1-1B-GPT
+  port: 45050
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 855d5535-a7c4-46e8-9815-065e460999b7
 - alterId: 0
   cipher: auto
   name: 17|HK | 香港 LB-1V
@@ -918,58 +951,25 @@ proxies:
   skip-cert-verify: true
   sni: xx.tc.hk.go.107421.xyz
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 19,41|github.com/Ruk1ng001_363732626...
-  port: 21720
-  server: AZHJ.dmak.cyou
-  tls: false
-  type: vmess
-  uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
-- alterId: 0
-  cipher: auto
-  name: 19,41|github.com/Ruk1ng001_316137636...
-  port: 21718
-  server: AZHJ.dmak.cyou
-  tls: false
-  type: vmess
-  uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
-- alterId: 0
-  cipher: auto
-  name: 19|@MxlShare 香港 | HKG 4
-  network: ws
-  port: 40952
-  server: CMZS.dmak.cyou
-  tls: false
-  type: vmess
-  uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
-  ws-opts:
-    headers:
-      Host: CMZS.dmak.cyou
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19,41|github.com/Ruk1ng001_376631336...
-  port: 20827
-  server: AZHJ.dmak.cyou
-  tls: false
-  type: vmess
-  uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
-- name: 19|@MxlShare 香港 | HKG 14
-  password: vzhXXZVw
-  port: 14505
-  server: 223.113.54.149
+- cipher: aes-128-gcm
+  name: 19|@MxlShare 香港 | HKG 2
+  password: 01bdf97d-75be-4f2e-82a5-66109ab78fdd
+  port: 29899
+  server: lhxt-gy.lhxt.xyz
+  type: ss
+- name: 19|@MxlShare 香港 | HKG 3
+  password: 2c78ed9f-96de-45f6-a459-74dc790002a6
+  port: 43781
+  server: 8932.03.ddns-dm.cc
   skip-cert-verify: true
-  sni: 223.113.54.149
+  sni: apps.apple.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 19,41|github.com/Ruk1ng001_636363363...
-  port: 20780
-  server: AZHJ001.dmak.cyou
-  tls: false
-  type: vmess
-  uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
+- cipher: chacha20-ietf-poly1305
+  name: 19|@MxlShare 香港 | HKG 4
+  password: 9c98ec59-231c-4091-ba05-a0c881021335
+  port: 11407
+  server: p1.bxy-fun1.xyz
+  type: ss
 - alterId: 0
   cipher: auto
   name: 19,41|github.com/Ruk1ng001_656465336...
@@ -978,8 +978,26 @@ proxies:
   tls: false
   type: vmess
   uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
+- alterId: 0
+  cipher: auto
+  name: 19,42,44,69|🇭🇰 11,16|香港2|@ripaojiedian
+  port: 20965
+  server: AZHJ001.dmak.cyou
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
+- name: 19|@MxlShare 香港 | HKG 42
+  password: vzhXXZVw
+  port: 14505
+  server: 223.113.54.149
+  skip-cert-verify: true
+  sni: 223.113.54.149
+  type: trojan
 - cipher: rc4-md5
-  name: 19|@MxlShare 香港 | HKG 20
+  name: 19|@MxlShare 香港 | HKG 44
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -989,7 +1007,7 @@ proxies:
   server: 2.hublink.pro
   type: ssr
 - cipher: rc4-md5
-  name: 19|@MxlShare 香港 | HKG 21
+  name: 19|@MxlShare 香港 | HKG 45
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -999,7 +1017,7 @@ proxies:
   server: 2.hublink.pro
   type: ssr
 - cipher: rc4-md5
-  name: 19,41|github.com/Ruk1ng001_656262646...
+  name: '19,41,72|HK_Fortress Hill_Datacamp Limi... #1'
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -1009,7 +1027,7 @@ proxies:
   server: 3.link-hub.click
   type: ssr
 - cipher: rc4-md5
-  name: 19,41|github.com/Ruk1ng001_643134626...
+  name: 19,41,72|HK_Fortress Hill_Datacamp Limi...
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -1018,22 +1036,20 @@ proxies:
   protocol-param: 92902:pFWGOQ
   server: 3.link-hub.click
   type: ssr
-- cipher: chacha20-ietf
-  name: 21,54,55,62|🇭🇰HK-103.149.183.61-5798 | 11....
-  password: asd123456
-  port: 8388
-  server: 103.149.183.61
+- cipher: chacha20-ietf-poly1305
+  name: 21,51,54,55|🇰 HK-203.23.128.79-5542
+  password: dt31KYYCCAUBwu09QwG9flPBIuP9jA6VXnjN8StKTkgc45ny
+  port: 51348
+  server: 203.23.128.79
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 21,27,54,55,62|🇭🇰HK-216.250.97.118-0515 | 17....
+  name: 21,54,55,62|🇭🇰HK-216.250.97.118-0482 | 26....
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: hong-kong.keenvpn.me
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇭🇰 HK
-  name: 21,27,54,55,62|🇭🇰HK-216.250.97.118-0522 | 16....
+  name: 21,54,55,62|🇭🇰HK-216.250.97.118-0486 | 25....
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: 216.250.97.118
@@ -1058,70 +1074,6 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 25|🇭🇰 香港|HK01
-  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
-  port: 40803
-  server: h4uwi2jl1my103r8o95ahc2wtkbkylqs.08.01.hk.6l6.site
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 25|🇭🇰 香港|HK03
-  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
-  port: 22299
-  server: c9qayob1sfx9z88ejmjbtoifqbt1hicf.08.03.hk.6l6.site
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 25|🇭🇰 香港|HK04
-  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
-  port: 49486
-  server: m8nbxa50xfqcjw47gm1iw4hm2j4e46nc.08.04.hk.6l6.site
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 25|🇭🇰 香港|HK05
-  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
-  port: 48464
-  server: kv2gi3g7m1xq4fc2w8s661elr2uyppwi.08.05.hk.6l6.site
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 25|🇭🇰 香港|HK06
-  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
-  port: 37870
-  server: mb7oa1432h1cx1dfmmp0beyabl36lnw7.06.08.hk.6l6.site
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 25|🇭🇰 香港|HK07
-  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
-  port: 44244
-  server: 9fud864ad6of555z582ukzid5fvl2fnc.07.08.hk.6l6.site
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 25|🇭🇰 香港|HK08
-  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
-  port: 44071
-  server: cq568galh4qichs9jup1jx75f6r4z0ai.08.08.hk.6l6.site
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 25|🇭🇰 香港|HK09
-  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
-  port: 24616
-  server: mpxpb99rhtxnp0hcryh6wza4729ha0j0.09.08.hk.6l6.site
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
   name: 26|🇭🇰 香港 | HKG
   password: 0da59fda-71a9-4cb5-9b5d-3545646352d9
   port: 49709
@@ -1131,94 +1083,22 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇭🇰 香港 | HKG 2
-  password: bfd8c8ec-317b-4cda-9f8b-eeba5513b0a2
-  port: 34338
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 3
-  password: da185005-05fc-4735-86eb-1bf340cbc548
-  port: 49709
-  server: jg647hf446ghvw.eucs.cn
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 4
-  password: 9c37fdd9-0267-4c4a-8678-b985314b6b18
-  port: 20035
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 5
-  password: 283db163-f886-4e3a-8ad4-a0766100e14e
-  port: 49709
-  server: jg647hf446ghvw.eucs.cn
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 6
-  password: b610f3c0-70ed-4c74-acca-adbc5c43c7a2
-  port: 20035
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 7
-  password: 4cfb4bd4-e35b-4f81-b5d2-49807e4db4ce
-  port: 49709
-  server: jg647hf446ghvw.eucs.cn
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 8
-  password: edb9db01-db8a-4a25-a802-1ccdf797eb84
-  port: 49709
-  server: jg647hf446ghvw.eucs.cn
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 9
-  password: bfd8c8ec-317b-4cda-9f8b-eeba5513b0a2
+  password: f1bc58b6-b6cd-40b2-bf2e-67fede3d853b
   port: 20052
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 10
-  password: f5b1ad18-54fe-4dfe-a12f-53efca562adb
-  port: 49709
-  server: jg647hf446ghvw.eucs.cn
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 11
-  password: bfd8c8ec-317b-4cda-9f8b-eeba5513b0a2
+  name: 26|🇭🇰 香港 | HKG 3
+  password: aa16ad84-56ef-4470-98c1-075e035f8598
   port: 20035
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 12
-  password: 01dcd002-9e3d-4562-aaf5-b1a7981cdf1f
-  port: 34338
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 13
+  name: 26|🇭🇰 香港 | HKG 4
   password: 630a9504-13b7-4c32-885c-3332bab95df3
   port: 49709
   server: jg647hf446ghvw.eucs.cn
@@ -1226,39 +1106,15 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 14
-  password: 89e37530-1d2a-40dd-934e-95dc9dc5102e
-  port: 49709
-  server: jg647hf446ghvw.eucs.cn
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 15
-  password: 9c37fdd9-0267-4c4a-8678-b985314b6b18
-  port: 20052
+  name: 26|🇭🇰 香港 | HKG 5
+  password: 5b356ad1-6588-4123-bd94-879685d8acb6
+  port: 20035
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 16
-  password: 8311080b-034d-4677-90f3-9a2dcd7d577b
-  port: 49709
-  server: jg647hf446ghvw.eucs.cn
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 17
-  password: 01dcd002-9e3d-4562-aaf5-b1a7981cdf1f
-  port: 20052
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 18
+  name: 26|🇭🇰 香港 | HKG 6
   password: b251c000-09e2-4c09-95bb-14591da2441a
   port: 49709
   server: jg647hf446ghvw.eucs.cn
@@ -1266,46 +1122,142 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 19
-  password: b610f3c0-70ed-4c74-acca-adbc5c43c7a2
+  name: 26|🇭🇰 香港 | HKG 7
+  password: 5b356ad1-6588-4123-bd94-879685d8acb6
   port: 20052
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港 | HKG 20
-  password: b610f3c0-70ed-4c74-acca-adbc5c43c7a2
+  name: 26|🇭🇰 香港 | HKG 8
+  password: aa16ad84-56ef-4470-98c1-075e035f8598
   port: 34338
   server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港 | HKG 9
+  password: b3e86850-4d88-46d3-8e9b-24ff6aa89779
+  port: 34338
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港 | HKG 10
+  password: aa16ad84-56ef-4470-98c1-075e035f8598
+  port: 20052
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港 | HKG 11
+  password: f1bc58b6-b6cd-40b2-bf2e-67fede3d853b
+  port: 20035
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港 | HKG 12
+  password: 8311080b-034d-4677-90f3-9a2dcd7d577b
+  port: 49709
+  server: jg647hf446ghvw.eucs.cn
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港 | HKG 13
+  password: b3e86850-4d88-46d3-8e9b-24ff6aa89779
+  port: 20052
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26,41|github.com/Ruk1ng001_633866633...
+  password: 4cfb4bd4-e35b-4f81-b5d2-49807e4db4ce
+  port: 49709
+  server: jg647hf446ghvw.eucs.cn
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港 | HKG 15
+  password: 283db163-f886-4e3a-8ad4-a0766100e14e
+  port: 49709
+  server: jg647hf446ghvw.eucs.cn
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港 | HKG 16
+  password: da185005-05fc-4735-86eb-1bf340cbc548
+  port: 49709
+  server: jg647hf446ghvw.eucs.cn
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港 | HKG 17
+  password: f1bc58b6-b6cd-40b2-bf2e-67fede3d853b
+  port: 34338
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港 | HKG 18
+  password: 5b356ad1-6588-4123-bd94-879685d8acb6
+  port: 34338
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港 | HKG 19
+  password: edb9db01-db8a-4a25-a802-1ccdf797eb84
+  port: 49709
+  server: jg647hf446ghvw.eucs.cn
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26,41|github.com/Ruk1ng001_393566646...
+  password: 89e37530-1d2a-40dd-934e-95dc9dc5102e
+  port: 49709
+  server: jg647hf446ghvw.eucs.cn
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇭🇰 香港 | HKG 21
-  password: 9c37fdd9-0267-4c4a-8678-b985314b6b18
-  port: 34338
-  server: gy.666666222.shop
+  password: f5b1ad18-54fe-4dfe-a12f-53efca562adb
+  port: 49709
+  server: jg647hf446ghvw.eucs.cn
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇭🇰 香港 | HKG 22
-  password: 01dcd002-9e3d-4562-aaf5-b1a7981cdf1f
+  password: b3e86850-4d88-46d3-8e9b-24ff6aa89779
   port: 20035
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇰 HK
-  name: 27|🇰 HK_295
+  name: 27| HK_298
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
 - cipher: chacha20-ietf
   country: 🇰 HK
-  name: 27|🇰 HK_296
+  name: 27|🇰 HK_299
   password: asd123456
   port: 8388
   server: 103.36.91.23
@@ -1326,7 +1278,17 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '46,59|🇭🇰 香港|@ripaojiedian #2'
+  name: 44,69|🇭🇰 11,16|香港|@ripaojiedian
+  port: 20776
+  server: AZHJ001.dmak.cyou
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
+- alterId: 0
+  cipher: auto
+  name: '46,51,56,59|🇭🇰 11|11,16|香港|@ripaojiedian #1'
   network: tcp
   port: '20776'
   server: AZHJ001.dmak.cyou
@@ -1336,13 +1298,112 @@ proxies:
   uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
 - alterId: 0
   cipher: auto
-  name: 53|🇭🇰 香港-1B
+  name: '46,59|🇭🇰 香港|@ripaojiedian #2'
   network: tcp
-  port: '19901'
-  server: xg.dashuai.cyou
+  port: '21718'
+  server: AZHJ.dmak.cyou
+  servername: ''
   tls: false
   type: vmess
-  uuid: 0ff242d5-91a1-457c-a6dd-948af1bce419
+  uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇭🇰 中继香港01 1x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 50200
+  server: hk01.ssyhi.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇭🇰 中继香港02 1x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 50201
+  server: hk02.ssyhi.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇭🇰 IEPL香港03 3x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 50202
+  server: hk03.ssyhi.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇭🇰 中继香港04 1x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 50203
+  server: hk04.ssyhi.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇭🇰 中继香港05 1x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 50204
+  server: hk05.ssyhi.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇭🇰 中继香港06 1x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 50205
+  server: hk06.ssyhi.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇭🇰 IEPL香港07 3x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 50206
+  server: hk07.ssyhi.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇭🇰 中继香港08 1x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 50207
+  server: hk08.ssyhi.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇭🇰 中继香港09 1x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 50208
+  server: hk09.ssyhi.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇭🇰 中继香港10 1x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 50209
+  server: hk10.ssyhi.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇭🇰 中继香港11 1x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 58456
+  server: hk11.ssyhi.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇭🇰 中继香港12 1x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 50252
+  server: hk13.ssyhi.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇭🇰 中继香港14 1x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 50254
+  server: hk15.ssyhi.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇭🇰 中继香港15 1x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 50255
+  server: hk16.ssyhi.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 53|🇭🇰 香港-1A
@@ -1351,7 +1412,16 @@ proxies:
   server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 014928ed-6e8a-4713-9ae9-153fc727584b
+  uuid: 34260a03-71f9-4313-a772-46c1f596c8ef
+- alterId: 0
+  cipher: auto
+  name: 53|🇭🇰 香港-1B
+  network: tcp
+  port: '19901'
+  server: xg.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: c32d96d4-910d-43ed-97e5-ac4f42c0f653
 - name: 60|香港[01]
   password: 0e5c1bb8-ee08-4839-b2af-2838a8d3add1
   port: 158
@@ -1364,75 +1434,33 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- cipher: aes-256-gcm
-  name: 72|(SS)E-IEPL-香港
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21201
-  server: 910281.chasel.sbs
-  type: ss
+- name: 72|HK_Ho Man Tin_Nearoute Limited...
+  password: 5adfc828-440d-4022-9571-0299a905b98e
+  port: 443
+  server: waphk.mjt000.com
+  sni: waphk.mjt000.com
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 72|E-IEPL-香港
-  network: tcp
-  port: 31100
-  server: 910281.chasel.sbs
+  name: 72|HK_Hong Kong_Akile LTD
+  port: 20780
+  server: AZHJ001.dmak.cyou
+  tls: false
   type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- cipher: aes-256-gcm
+  uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
+- alterId: 0
+  cipher: auto
   name: 72|HK_Hong Kong_Lshiy LLC_OpenAI_...
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21123
-  server: 910281.chasel.sbs
-  type: ss
-- cipher: aes-256-gcm
+  network: tcp
+  port: 443
+  server: node-hkg-ph11.suvip.xyz
+  servername: node-hkg-ph11.suvip.xyz
+  tls: true
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
   name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #1'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21109
-  server: 581023.horace.im
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #2'
-  network: tcp
-  port: 31202
-  server: 910281.chasel.sbs
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #3'
-  network: tcp
-  port: 31123
-  server: 910281.chasel.sbs
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #4'
-  network: tcp
-  port: 31105
-  server: 581610.eveline.lol
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #5'
-  network: tcp
-  port: 31103
-  server: 581610.eveline.lol
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #6'
-  network: tcp
-  port: 31107
-  server: 581610.eveline.lol
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #7'
   network: tcp
   port: 31106
   server: 581610.eveline.lol
@@ -1440,7 +1468,115 @@ proxies:
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0
   cipher: auto
+  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #2'
+  network: tcp
+  port: 31105
+  server: 581610.eveline.lol
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- cipher: aes-256-gcm
+  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #3'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21103
+  server: 581610.eveline.lol
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #4'
+  network: tcp
+  port: 31108
+  server: 581023.horace.im
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- cipher: aes-256-gcm
+  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #5'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21123
+  server: 910281.chasel.sbs
+  type: ss
+- cipher: aes-256-gcm
+  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #6'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21109
+  server: 581023.horace.im
+  type: ss
+- cipher: aes-256-gcm
+  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #7'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21105
+  server: 581610.eveline.lol
+  type: ss
+- cipher: aes-256-gcm
   name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #8'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21108
+  server: 581023.horace.im
+  type: ss
+- cipher: aes-256-gcm
+  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #9'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21122
+  server: 581023.horace.im
+  type: ss
+- cipher: aes-256-gcm
+  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #10'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21104
+  server: 581610.eveline.lol
+  type: ss
+- cipher: aes-256-gcm
+  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #11'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21202
+  server: 910281.chasel.sbs
+  type: ss
+- cipher: aes-256-gcm
+  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #12'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21107
+  server: 581610.eveline.lol
+  type: ss
+- cipher: aes-256-gcm
+  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #13'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21106
+  server: 581610.eveline.lol
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #14'
+  network: tcp
+  port: 31123
+  server: 910281.chasel.sbs
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #15'
+  network: tcp
+  port: 31122
+  server: 581023.horace.im
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #16'
+  network: tcp
+  port: 31103
+  server: 581610.eveline.lol
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #17'
+  network: tcp
+  port: 31202
+  server: 910281.chasel.sbs
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #18'
   network: tcp
   port: 31104
   server: 581610.eveline.lol
@@ -1448,149 +1584,21 @@ proxies:
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0
   cipher: auto
-  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #9'
-  network: tcp
-  port: 31109
-  server: 581023.horace.im
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #10'
-  network: tcp
-  port: 31108
-  server: 581023.horace.im
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- cipher: aes-256-gcm
-  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #11'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21202
-  server: 910281.chasel.sbs
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #12'
-  network: tcp
-  port: 31122
-  server: 581023.horace.im
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- cipher: aes-256-gcm
-  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #13'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21103
-  server: 581610.eveline.lol
-  type: ss
-- cipher: aes-256-gcm
-  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #14'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21107
-  server: 581610.eveline.lol
-  type: ss
-- cipher: aes-256-gcm
-  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #15'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21105
-  server: 581610.eveline.lol
-  type: ss
-- cipher: aes-256-gcm
-  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #16'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21106
-  server: 581610.eveline.lol
-  type: ss
-- cipher: aes-256-gcm
-  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #17'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21104
-  server: 581610.eveline.lol
-  type: ss
-- cipher: aes-256-gcm
-  name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #18'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21108
-  server: 581023.horace.im
-  type: ss
-- cipher: aes-256-gcm
   name: '72|HK_Hong Kong_Lshiy LLC_OpenAI_... #19'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21122
-  server: 581023.horace.im
-  type: ss
+  network: tcp
+  port: 31107
+  server: 581610.eveline.lol
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - cipher: aes-256-gcm
   name: 72|HK_Hong Kong_Polonetwork Limit...
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21102
-  server: 910281.chasel.sbs
+  port: 21112
+  server: 581023.horace.im
   type: ss
 - alterId: 0
   cipher: auto
   name: '72|HK_Hong Kong_Polonetwork Limit... #1'
-  network: tcp
-  port: 31102
-  server: 910281.chasel.sbs
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Hong Kong_Polonetwork Limit... #2'
-  network: tcp
-  port: 31116
-  server: 510613.frederica.xyz
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Hong Kong_Polonetwork Limit... #3'
-  network: tcp
-  port: 31150
-  server: 510613.frederica.xyz
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Hong Kong_Polonetwork Limit... #4'
-  network: tcp
-  port: 31151
-  server: 510613.frederica.xyz
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Hong Kong_Polonetwork Limit... #5'
-  network: tcp
-  port: 31152
-  server: 510613.frederica.xyz
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Hong Kong_Polonetwork Limit... #6'
-  network: tcp
-  port: 31124
-  server: 510613.frederica.xyz
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Hong Kong_Polonetwork Limit... #7'
-  network: tcp
-  port: 31112
-  server: 581023.horace.im
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Hong Kong_Polonetwork Limit... #8'
-  network: tcp
-  port: 31159
-  server: 581023.horace.im
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Hong Kong_Polonetwork Limit... #9'
   network: tcp
   port: 31113
   server: 581023.horace.im
@@ -1598,35 +1606,97 @@ proxies:
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0
   cipher: auto
-  name: '72|HK_Hong Kong_Polonetwork Limit... #10'
+  name: '72|HK_Hong Kong_Polonetwork Limit... #2'
   network: tcp
-  port: 31111
+  port: 31159
   server: 581023.horace.im
   type: vmess
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- cipher: aes-256-gcm
-  name: '72|HK_Hong Kong_Polonetwork Limit... #11'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21150
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Hong Kong_Polonetwork Limit... #3'
+  network: tcp
+  port: 31102
+  server: 910281.chasel.sbs
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Hong Kong_Polonetwork Limit... #4'
+  network: tcp
+  port: 31112
+  server: 581023.horace.im
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Hong Kong_Polonetwork Limit... #5'
+  network: tcp
+  port: 31116
   server: 510613.frederica.xyz
-  type: ss
-- cipher: aes-256-gcm
-  name: '72|HK_Hong Kong_Polonetwork Limit... #12'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21151
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Hong Kong_Polonetwork Limit... #6'
+  network: tcp
+  port: 31152
   server: 510613.frederica.xyz
-  type: ss
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Hong Kong_Polonetwork Limit... #7'
+  network: tcp
+  port: 31150
+  server: 510613.frederica.xyz
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - cipher: aes-256-gcm
-  name: '72|HK_Hong Kong_Polonetwork Limit... #13'
+  name: '72|HK_Hong Kong_Polonetwork Limit... #8'
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
   port: 21116
   server: 510613.frederica.xyz
   type: ss
 - cipher: aes-256-gcm
+  name: '72|HK_Hong Kong_Polonetwork Limit... #9'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21113
+  server: 581023.horace.im
+  type: ss
+- cipher: aes-256-gcm
+  name: '72|HK_Hong Kong_Polonetwork Limit... #10'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21151
+  server: 510613.frederica.xyz
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Hong Kong_Polonetwork Limit... #11'
+  network: tcp
+  port: 443
+  server: node-hkg-ph23.suvip.xyz
+  servername: node-hkg-ph23.suvip.xyz
+  tls: true
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- cipher: aes-256-gcm
+  name: '72|HK_Hong Kong_Polonetwork Limit... #12'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21150
+  server: 510613.frederica.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: '72|HK_Hong Kong_Polonetwork Limit... #13'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21102
+  server: 910281.chasel.sbs
+  type: ss
+- cipher: aes-256-gcm
   name: '72|HK_Hong Kong_Polonetwork Limit... #14'
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21152
-  server: 510613.frederica.xyz
+  port: 21111
+  server: 581023.horace.im
   type: ss
 - cipher: aes-256-gcm
   name: '72|HK_Hong Kong_Polonetwork Limit... #15'
@@ -1637,32 +1707,76 @@ proxies:
 - cipher: aes-256-gcm
   name: '72|HK_Hong Kong_Polonetwork Limit... #16'
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21159
-  server: 581023.horace.im
+  port: 21152
+  server: 510613.frederica.xyz
   type: ss
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: auto
   name: '72|HK_Hong Kong_Polonetwork Limit... #17'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21111
-  server: 581023.horace.im
-  type: ss
+  network: tcp
+  port: 443
+  server: node-hkg-phdm.suvip.xyz
+  servername: node-hkg-phdm.suvip.xyz
+  tls: true
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - cipher: aes-256-gcm
   name: '72|HK_Hong Kong_Polonetwork Limit... #18'
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21113
+  port: 21100
+  server: 910281.chasel.sbs
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Hong Kong_Polonetwork Limit... #19'
+  network: tcp
+  port: 443
+  server: node-hkg-phhkt.suvip.xyz
+  servername: node-hkg-phhkt.suvip.xyz
+  tls: true
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Hong Kong_Polonetwork Limit... #20'
+  network: tcp
+  port: 31100
+  server: 910281.chasel.sbs
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- cipher: aes-256-gcm
+  name: '72|HK_Hong Kong_Polonetwork Limit... #21'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21159
   server: 581023.horace.im
   type: ss
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Hong Kong_Polonetwork Limit... #22'
+  network: tcp
+  port: 31124
+  server: 510613.frederica.xyz
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Hong Kong_Polonetwork Limit... #23'
+  network: tcp
+  port: 31151
+  server: 510613.frederica.xyz
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - cipher: aes-256-gcm
   name: 72|HK_Wan Chai_Akari Networks_Ope...
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21101
+  port: 21201
   server: 910281.chasel.sbs
   type: ss
 - alterId: 0
   cipher: auto
   name: '72|HK_Wan Chai_Akari Networks_Ope... #1'
   network: tcp
-  port: 31201
+  port: 31101
   server: 910281.chasel.sbs
   type: vmess
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
@@ -1670,45 +1784,89 @@ proxies:
   cipher: auto
   name: '72|HK_Wan Chai_Akari Networks_Ope... #2'
   network: tcp
+  port: 31118
+  server: 510613.frederica.xyz
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- cipher: aes-256-gcm
+  name: '72|HK_Wan Chai_Akari Networks_Ope... #3'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21118
+  server: 510613.frederica.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: '72|HK_Wan Chai_Akari Networks_Ope... #4'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21121
+  server: 581610.eveline.lol
+  type: ss
+- cipher: aes-256-gcm
+  name: '72|HK_Wan Chai_Akari Networks_Ope... #5'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21119
+  server: 510613.frederica.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: '72|HK_Wan Chai_Akari Networks_Ope... #6'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21120
+  server: 510613.frederica.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: '72|HK_Wan Chai_Akari Networks_Ope... #7'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21115
+  server: 510613.frederica.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: '72|HK_Wan Chai_Akari Networks_Ope... #8'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21101
+  server: 910281.chasel.sbs
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Wan Chai_Akari Networks_Ope... #9'
+  network: tcp
+  port: 31110
+  server: 581023.horace.im
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Wan Chai_Akari Networks_Ope... #10'
+  network: tcp
+  port: 443
+  server: node-hkg-phhkbnsc.suvip.xyz
+  servername: node-hkg-phhkbnsc.suvip.xyz
+  tls: true
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- cipher: aes-256-gcm
+  name: '72|HK_Wan Chai_Akari Networks_Ope... #11'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21110
+  server: 581023.horace.im
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Wan Chai_Akari Networks_Ope... #12'
+  network: tcp
   port: 31120
   server: 510613.frederica.xyz
   type: vmess
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0
   cipher: auto
-  name: '72|HK_Wan Chai_Akari Networks_Ope... #3'
+  name: '72|HK_Wan Chai_Akari Networks_Ope... #13'
   network: tcp
-  port: 31115
-  server: 510613.frederica.xyz
+  port: 31201
+  server: 910281.chasel.sbs
   type: vmess
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0
   cipher: auto
-  name: '72|HK_Wan Chai_Akari Networks_Ope... #4'
-  network: tcp
-  port: 31118
-  server: 510613.frederica.xyz
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Wan Chai_Akari Networks_Ope... #5'
-  network: tcp
-  port: 31119
-  server: 510613.frederica.xyz
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Wan Chai_Akari Networks_Ope... #6'
-  network: tcp
-  port: 31121
-  server: 581610.eveline.lol
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|HK_Wan Chai_Akari Networks_Ope... #7'
+  name: '72|HK_Wan Chai_Akari Networks_Ope... #14'
   network: tcp
   port: 31117
   server: 581023.horace.im
@@ -1716,62 +1874,40 @@ proxies:
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0
   cipher: auto
-  name: '72|HK_Wan Chai_Akari Networks_Ope... #8'
+  name: '72|HK_Wan Chai_Akari Networks_Ope... #15'
   network: tcp
-  port: 31110
-  server: 581023.horace.im
+  port: 31121
+  server: 581610.eveline.lol
   type: vmess
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- cipher: aes-256-gcm
-  name: '72|HK_Wan Chai_Akari Networks_Ope... #9'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21118
-  server: 510613.frederica.xyz
-  type: ss
-- cipher: aes-256-gcm
-  name: '72|HK_Wan Chai_Akari Networks_Ope... #10'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21115
-  server: 510613.frederica.xyz
-  type: ss
-- cipher: aes-256-gcm
-  name: '72|HK_Wan Chai_Akari Networks_Ope... #11'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21119
-  server: 510613.frederica.xyz
-  type: ss
-- cipher: aes-256-gcm
-  name: '72|HK_Wan Chai_Akari Networks_Ope... #12'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21120
-  server: 510613.frederica.xyz
-  type: ss
-- cipher: aes-256-gcm
-  name: '72|HK_Wan Chai_Akari Networks_Ope... #13'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21121
-  server: 581610.eveline.lol
-  type: ss
-- cipher: aes-256-gcm
-  name: '72|HK_Wan Chai_Akari Networks_Ope... #14'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21117
-  server: 581023.horace.im
-  type: ss
-- cipher: aes-256-gcm
-  name: '72|HK_Wan Chai_Akari Networks_Ope... #15'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21110
-  server: 581023.horace.im
-  type: ss
 - alterId: 0
   cipher: auto
   name: '72|HK_Wan Chai_Akari Networks_Ope... #16'
   network: tcp
-  port: 31101
-  server: 910281.chasel.sbs
+  port: 31119
+  server: 510613.frederica.xyz
   type: vmess
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '72|HK_Wan Chai_Akari Networks_Ope... #17'
+  network: tcp
+  port: 31115
+  server: 510613.frederica.xyz
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- name: 72|香港wap-T1
+  password: f89748f5-cee5-44dd-89fd-f6d49645d060
+  port: 443
+  server: waphk.mjt000.com
+  sni: waphk.mjt000.com
+  type: trojan
+- name: 72|香港wap-T2
+  password: a6f0acd5-0852-432a-b191-854658db6a92
+  port: 443
+  server: waphk.mjt000.com
+  sni: waphk.mjt000.com
+  type: trojan
 - name: 78|香港-Trojan
   password: b8e7b9eb-877a-382a-81d5-610021a53abd
   port: 443

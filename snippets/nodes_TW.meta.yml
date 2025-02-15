@@ -1,12 +1,4 @@
 proxies:
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '0,3,44,46,65|🇹🇼 台湾|@ripaojiedian #2'
-  password: 961ab95c-7b17-4fea-8a3f-6b27a426172d
-  port: 48497
-  server: wb.kaiqsz.com
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 6|🇹🇼 台湾 1-1B
   password: 0871a57c-64fd-44ff-a6aa-90d14d497b97
@@ -152,24 +144,38 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 14|台湾2
+  name: 14,15|台湾2-1A-GPT
   port: 45077
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 1f1a319c-4e05-44f8-812b-133f2fa98a33
+  uuid: c3962ff4-a3bd-4c53-8fa6-d0e61c73d028
+- cipher: chacha20-ietf-poly1305
+  name: 14|台湾 1
+  password: 0ca22e1d-afa2-41b9-afd4-fa4e0104fb9e
+  port: 20032
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 14,15|台湾1-1A-GPT
+  name: 14|台湾1
   port: 45078
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 1f1a319c-4e05-44f8-812b-133f2fa98a33
+  uuid: c3962ff4-a3bd-4c53-8fa6-d0e61c73d028
+- cipher: chacha20-ietf-poly1305
+  name: 14|台湾01
+  password: 0ca22e1d-afa2-41b9-afd4-fa4e0104fb9e
+  port: 47564
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 15|台湾2-1B-GPT
@@ -179,29 +185,59 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 4c591189-6886-4e18-9aa1-5b9dbe115e6d
+  uuid: 855d5535-a7c4-46e8-9815-065e460999b7
+- alterId: 0
+  cipher: auto
+  name: 15|台湾1-1B-GPT
+  port: 45078
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 855d5535-a7c4-46e8-9815-065e460999b7
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 25|🇹🇼 台湾|TW02
-  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
-  port: 35805
-  server: 1w91dj53mb3tjunfqy7q3bdu1fo0sged.08.02.tw.6l6.site
-  tfo: false
+  name: 19|@MxlShare 台湾 | TWN
+  password: 9c98ec59-231c-4091-ba05-a0c881021335
+  port: 23105
+  server: p1.bxy-fun2.xyz
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇼 TW
-  name: 27| TW_403
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  name: 19|@MxlShare 台湾 | TWN 2
+  password: 9c98ec59-231c-4091-ba05-a0c881021335
+  port: 23106
+  server: p1.bxy-fun3.xyz
+  type: ss
+- name: 23|🇹🇼1 |  4.4MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
-  server: taiwan-2.keenvpn.me
+  server: tw4-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: tw4-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇹🇼 IEPL台湾01 3x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 50234
+  server: tw01.ssyhi.xyz
   type: ss
-- cipher: aes-128-gcm
-  country: 🇼 TW
-  name: 27|🇹🇼 TW_405
-  password: 79739832-b888-415a-a454-8b53911c944a
-  port: 30332
-  server: vps.200566.xyz
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇹🇼 中继台湾02 1x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 50235
+  server: tw02.ssyhi.xyz
   type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 47|🇹🇼 中继台湾03 1x
+  password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
+  port: 50757
+  server: tw03.ssyhi.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 72|TW_Chang-hua_Chunghwa Telecom ...
@@ -213,39 +249,33 @@ proxies:
 - cipher: aes-256-gcm
   name: 72|TW_Changhua_Akari Networks_Ope...
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21142
+  port: 21136
+  server: 581610.eveline.lol
+  type: ss
+- cipher: aes-256-gcm
+  name: '72|TW_Changhua_Akari Networks_Ope... #1'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21141
   server: 510613.frederica.xyz
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '72|TW_Changhua_Akari Networks_Ope... #1'
-  network: tcp
-  port: 31141
-  server: 510613.frederica.xyz
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
+- cipher: aes-256-gcm
   name: '72|TW_Changhua_Akari Networks_Ope... #2'
-  network: tcp
-  port: 31136
-  server: 581610.eveline.lol
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21140
+  server: 581023.horace.im
+  type: ss
+- cipher: aes-256-gcm
   name: '72|TW_Changhua_Akari Networks_Ope... #3'
-  network: tcp
-  port: 31137
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21137
   server: 581610.eveline.lol
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  type: ss
 - alterId: 0
   cipher: auto
   name: '72|TW_Changhua_Akari Networks_Ope... #4'
   network: tcp
-  port: 31140
-  server: 581023.horace.im
+  port: 31143
+  server: 510613.frederica.xyz
   type: vmess
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0
@@ -256,43 +286,51 @@ proxies:
   server: 581023.horace.im
   type: vmess
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- name: '72|TW_Changhua_Akari Networks_Ope... #6'
-  password: 069a7054-7269-554b-bfab-a7f2651f92e5
-  port: 5302
-  server: dozo01.flztjc.top
-  skip-cert-verify: true
-  sni: tw-2-545.flztjc.net
-  type: trojan
-- name: '72|TW_Changhua_Akari Networks_Ope... #7'
-  password: 069a7054-7269-554b-bfab-a7f2651f92e5
-  port: 5306
-  server: dozo01.flztjc.top
-  skip-cert-verify: true
-  sni: tw-06-592.flztjc.net
-  type: trojan
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: auto
+  name: '72|TW_Changhua_Akari Networks_Ope... #6'
+  network: tcp
+  port: 31140
+  server: 581023.horace.im
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '72|TW_Changhua_Akari Networks_Ope... #7'
+  network: tcp
+  port: 31142
+  server: 510613.frederica.xyz
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
   name: '72|TW_Changhua_Akari Networks_Ope... #8'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21141
-  server: 510613.frederica.xyz
-  type: ss
-- cipher: aes-256-gcm
-  name: '72|TW_Changhua_Akari Networks_Ope... #9'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21143
-  server: 510613.frederica.xyz
-  type: ss
-- cipher: aes-256-gcm
-  name: '72|TW_Changhua_Akari Networks_Ope... #10'
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21137
+  network: tcp
+  port: 31136
   server: 581610.eveline.lol
-  type: ss
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '72|TW_Changhua_Akari Networks_Ope... #9'
+  network: tcp
+  port: 31137
+  server: 581610.eveline.lol
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '72|TW_Changhua_Akari Networks_Ope... #10'
+  network: tcp
+  port: 31141
+  server: 510613.frederica.xyz
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - cipher: aes-256-gcm
   name: '72|TW_Changhua_Akari Networks_Ope... #11'
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21136
-  server: 581610.eveline.lol
+  port: 21143
+  server: 510613.frederica.xyz
   type: ss
 - cipher: aes-256-gcm
   name: '72|TW_Changhua_Akari Networks_Ope... #12'
@@ -303,50 +341,40 @@ proxies:
 - cipher: aes-256-gcm
   name: '72|TW_Changhua_Akari Networks_Ope... #13'
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21140
-  server: 581023.horace.im
+  port: 21142
+  server: 510613.frederica.xyz
   type: ss
 - alterId: 0
   cipher: auto
-  name: '72|TW_Changhua_Akari Networks_Ope... #14'
-  network: tcp
-  port: 31142
-  server: 510613.frederica.xyz
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|TW_Changhua_Akari Networks_Ope... #15'
-  network: tcp
-  port: 31143
-  server: 510613.frederica.xyz
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- cipher: aes-256-gcm
   name: 72|TW_Taipei_Chunghwa Telecom Co....
-  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-  port: 21133
-  server: 910281.chasel.sbs
-  type: ss
+  network: tcp
+  port: 31138
+  server: 581023.horace.im
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - cipher: aes-256-gcm
   name: '72|TW_Taipei_Chunghwa Telecom Co.... #1'
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
   port: 21138
   server: 581023.horace.im
   type: ss
+- cipher: aes-256-gcm
+  name: '72|TW_Taipei_Chunghwa Telecom Co.... #2'
+  password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+  port: 21133
+  server: 910281.chasel.sbs
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '72|TW_Taipei_Chunghwa Telecom Co.... #2'
+  name: '72|TW_Taipei_Chunghwa Telecom Co.... #3'
   network: tcp
   port: 31133
   server: 910281.chasel.sbs
   type: vmess
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
-- alterId: 0
-  cipher: auto
-  name: '72|TW_Taipei_Chunghwa Telecom Co.... #3'
-  network: tcp
-  port: 31138
-  server: 581023.horace.im
-  type: vmess
-  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- name: 72|台湾WAP-T-GPT
+  password: 61339b6c-df0c-423c-93a6-84d7d4e234d1
+  port: 443
+  server: hinet.mjt000.com
+  sni: hinet.mjt000.com
+  type: trojan

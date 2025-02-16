@@ -2,11 +2,13 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇨🇦CA
   delay: 1194
-  name: 2,9,19,21,41,52,54,55,68|SS--NF解锁拿大自制剧-ChatGPT-YouTube-...
+  ip-version: dual
+  name: 2,9,19,20,50,52|加拿大 - 多伦多 - Tangram Canada Inc...
   password: MzZjN
   port: 8388
   server: ca1.ssocks.wiki
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 6|🇨🇦 加拿大2
@@ -106,7 +108,7 @@ proxies:
   uuid: 855d5535-a7c4-46e8-9815-065e460999b7
 - alterId: 0
   cipher: auto
-  name: 21,54,55,62|🇨🇦CA-134.195.198.147-8210 | 44...
+  name: 21,54,55,62|🇨🇦CA-134.195.198.147-8065 | 65...
   network: ws
   port: 443
   server: 134.195.198.147
@@ -120,20 +122,26 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 21,27,54,55,62|🇨🇦CA-142.4.216.225-0436 | 23.1...
+  name: 21,27,54,55,62|🇨🇦CA-142.4.216.225-0436 | 19.3...
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 21,27,54,55,62|🇨🇦CA-142.4.216.225-0438 | 15.0...
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
 - cipher: aes-128-gcm
-  name: 21,54,55,62|🇨🇦CA-149.22.95.183-0346 | 55.3...
+  name: 21,54,55,62|🇨🇦CA-149.22.95.183-0313 | 40.0...
   password: shadowsocks
   port: 443
   server: 149.22.95.183
   type: ss
 - alterId: 0
   cipher: auto
-  name: 21,54,55,62|🇨🇦CA-23.162.200.227-8227 | 32....
+  name: 21,54,55,62|🇨🇦CA-23.162.200.227-8041 | 34....
   network: ws
   port: 443
   server: 23.162.200.227
@@ -144,23 +152,39 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 21,54,55,62|🇨🇦CA-79.127.233.170-0370 | 71....
+  name: 21,54,55,62|🇨🇦CA-79.127.233.170-0308 | 36....
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
   type: ss
+- name: 23|🇨🇦1 |  1.1MB/s
+  password: d452c293-a8f4-3ca9-895e-fc290530ccf5
+  port: 21970
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x41.flybar.work
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 24|🇨🇦 CA, Vancouver
   password: amazonskr05
   port: 443
   server: 54.200.54.11
   type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 25|🇨🇦 加拿大|CA1
+  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
+  port: 19915
+  server: 70luslivsskpwm855plfjwgt5h2atwvf.08.01.ca.6l6.site
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇦 CA
   h2-opts: {}
   http-opts: {}
-  name: 27|🇦 CA_204
+  name: 27|🇦 CA_181
   network: ws
   port: 443
   server: 68.168.31.196
@@ -172,8 +196,8 @@ proxies:
   ws-headers:
     HOST: 68.168.31.196
   ws-path: /linkvws
-- country: 🇦CA
-  name: 27,29|🇨🇦CA_206
+- country: 🇨🇦CA
+  name: 27,29|🇨🇦CA_183
   password: acfef609-b3c7-4e52-b292-8921d5fca90d
   port: 443
   server: 91.194.11.168
@@ -182,7 +206,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 30|🇨🇦 CA_204
+  name: 30|🇨🇦 CA_181
   network: ws
   port: 443
   server: 68.168.31.196
@@ -291,6 +315,38 @@ proxies:
     headers:
       Host: 100-149-191-2.s5.db-link02.top
     path: /
+- alterId: 0
+  cipher: auto
+  name: 45|加拿大 007
+  network: ws
+  port: 80
+  server: s5.cn-db.top
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-116-186-216.s5.cn-db.top
+    path: /dabai.in104.25.66.1
+- alterId: 0
+  cipher: auto
+  name: 45|加拿大 008
+  network: ws
+  port: 8880
+  server: 104.16.155.10
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-103-58-39.s1.db-link02.top
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 47|🇨🇦 加拿大
   password: b72fd5c0-6a7f-4eff-8d3a-12bf2f37e9ff
@@ -299,7 +355,7 @@ proxies:
   type: ss
   udp: true
 - ip-version: dual
-  name: 50,70|🇨🇦_CA_加拿大
+  name: 70|🇨🇦_CA_加拿大
   network: tcp
   password: telegram-id-directvpn
   port: 22222
@@ -309,12 +365,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 68|SS-加拿大-NF解锁加拿大自制剧-ChatGPT-TikT...
-  password: MzZjN
-  port: 8388
-  server: 146.19.106.5
-  type: ss
 - alterId: 0
   cipher: auto
   name: 72|CA_Toronto_Akamai Technologies...

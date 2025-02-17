@@ -1,18 +1,25 @@
 proxies:
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 19,36,38,41,49,50|🇷🇴_RO_罗马尼亚_1
+  name: 19,36,38,41,49|🇷🇴_RO_罗马尼亚_1
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.193.49.88
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 21,54,55,62|EE-147.45.60.33-1081 | 31.97MB
-  password: LqlPI19oqnunGNSLMvdXyB
-  port: 16356
-  server: 147.45.60.33
-  type: ss
+- alpn:
+  - h2,http/1.1
+  name: 19|@MxlShare 爱沙尼亚 | EST 2
+  network: ws
+  password: Trevely
+  port: 443
+  server: duke.ns.cloudflare.com
+  sni: trojanfr.trevely.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojanfr.trevely.us.kg
+    path: /trojanfr.trevely.us.kg
 - cipher: aes-256-cfb
   ip-version: dual
   name: 41,49,50,72|188.214.36.155_OpenAI

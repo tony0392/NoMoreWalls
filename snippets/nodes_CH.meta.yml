@@ -1,37 +1,46 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺RU
+  delay: 1462
+  name: 2,9,41,52|瑞士 - 伯尔尼 - Aeza International ...
+  password: UQggIxCSCABoBALH599HxE
+  port: 19057
+  server: 91.103.253.151
+  type: ss
+- cipher: aes-256-cfb
+  delay: 728
+  name: 2,9,19,21,49,52,54,55,62|CH-84.17.53.160-0358 | 31.694M...
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 84.17.53.160
+  type: ss
 - cipher: aes-128-gcm
   country: 🇸 US
-  name: 21,27,54,55,62|CH-156.146.62.161-0361 | 32.02...
+  name: 21,27,54,55,62|CH-156.146.62.161-0406 | 29.46...
   password: shadowsocks
   port: 443
   server: 156.146.62.161
   type: ss
 - cipher: aes-128-gcm
   country: 🇸 US
-  name: 21,27,54,55,62|CH-156.146.62.162-0362 | 36.51...
+  name: 21,27,54,55,62|CH-156.146.62.162-0374 | 28.94...
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
 - cipher: aes-128-gcm
-  country: 🇸 US
-  name: 21,27,54,55,62|CH-156.146.62.163-0366 | 32.84...
+  country: 🇺🇸 US
+  name: 21,27,54,55,62|CH-156.146.62.163-0396 | 29.84...
   password: shadowsocks
   port: 443
   server: 156.146.62.163
   type: ss
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 21,27,54,55,62|CH-156.146.62.164-0365 | 36.14...
+  name: 21,27,54,55,62|CH-156.146.62.164-0377 | 29.46...
   password: shadowsocks
   port: 443
   server: 156.146.62.164
-  type: ss
-- cipher: aes-256-cfb
-  name: 21,54,55,62|CH-84.17.53.160-0335 | 38.486M...
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 84.17.53.160
   type: ss
 - cipher: aes-256-cfb
   name: 42|[SS] 🇨🇭 _CH_瑞士
@@ -41,8 +50,8 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- name: 51,58,59|🇨🇭 _瑞士
-  network: tcp
+- name: 45|瑞士 002
+  network: ws
   password: Aimer
   port: 443
   server: 64.110.89.92
@@ -50,3 +59,17 @@ proxies:
   sni: agepw.ambercc.filegear-sg.me
   type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: agepw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- grpc-opts:
+    grpc-service-name: grpc
+  name: 45|瑞士 003
+  network: grpc
+  password: 8d31967e-7af4-4ead-bf99-32b810dab193
+  port: 443
+  server: 138.124.183.89
+  sni: us1.safecdn.site
+  tls: true
+  type: trojan

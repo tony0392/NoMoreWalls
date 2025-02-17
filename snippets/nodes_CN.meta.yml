@@ -1,37 +1,45 @@
 proxies:
+- cipher: aes-256-gcm
+  name: '20,41,69|🇨🇳 15|🇹🇼 台湾2|@ripaojiedian #1'
+  password: QVEA1CX5SETMCW02
+  port: 21005
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: '20,41,69|🇨🇳 15|🇹🇼 台湾|@ripaojiedian #1'
+  password: 7H6G6GF38VT7LIS2
+  port: 21002
+  server: qh62onjn.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: '20,69|🇭🇰 15|🇭🇰 香港|@ripaojiedian #1'
+  password: DSSFTF2MJGHSTOOF
+  port: 15011
+  server: 156.245.190.20
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: '20,69|🇭🇰 15|🇭🇰 香港3|@ripaojiedian #1'
+  password: DW1B46PTWS3XSPYU
+  port: 15003
+  server: 156.245.190.12
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20,21,51,54,55,58,62|🇰🇷KR-154.90.63.193-5634 | 13.7...
+  country: 🇸 US
+  name: 20,27|🇸 US_385
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 154.90.63.193
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇨 CN
-  name: 27| CN_184
-  password: 99301d55-a41f-4919-986b-1435996533aa
-  port: 20001
-  server: 183.233.187.157
-  type: ss
 - alterId: 64
   cipher: auto
   country: 🇳 CN
   h2-opts: {}
   http-opts: {}
-  name: '27,30,33|Github搜索TrojanLinks #10'
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  country: 🇳 CN
-  h2-opts: {}
-  http-opts: {}
-  name: '27,30,33|Github搜索TrojanLinks #7'
+  name: 27,30,33|Github搜索TrojanLinks
   network: tcp
   port: '50004'
   server: 112.132.212.19
@@ -45,7 +53,21 @@ proxies:
   country: 🇳 CN
   h2-opts: {}
   http-opts: {}
-  name: '27,30,33|Github搜索TrojanLinks #15'
+  name: '27,30,33|Github搜索TrojanLinks #28'
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  country: 🇳 CN
+  h2-opts: {}
+  http-opts: {}
+  name: '27,30,33|Github搜索TrojanLinks #5'
   network: tcp
   port: '50002'
   server: 47.92.152.169
@@ -56,10 +78,10 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  country: 🇨🇳 CN
+  country: 🇨 CN
   h2-opts: {}
   http-opts: {}
-  name: '27,30,33|Github搜索TrojanLinks #13'
+  name: '27,30,33|Github搜索TrojanLinks #9'
   network: tcp
   port: '50002'
   server: 47.104.186.133
@@ -68,12 +90,32 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-path: /afrhms16v.bestxray.buzz/linkws
+- cipher: aes-256-cfb
+  name: 41|❓_🇨🇳_📶_github.com/Ruk1ng001_31...
+  password: hGkQ6915tD
+  port: 15084
+  server: 120.232.81.50
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 41|🟡_🇨🇳_📶_github.com/Ruk1ng001_61...
+  network: ws
+  password: ouo
+  port: 443
+  server: 103.44.255.81
+  skip-cert-verify: false
+  sni: tr.koxok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koxok.us.kg
+    path: /?ed=2560
 - alterId: 64
   cipher: auto
   country: 🇨🇳CN
   h2-opts: {}
   http-opts: {}
-  name: 41,46,56,58,59,72|HK_Hong Kong_Cnservers LLC_Cla...
+  name: 41,46,56,59,72|HK_Hong Kong_Cnservers LLC_Cla...
   network: tcp
   port: 45402
   server: 120.232.153.123
@@ -82,27 +124,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.232.153.123
-  ws-path: /
-- alterId: 0
+- alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 41|❓_🇨🇳_📶_github.com/Ruk1ng001_37...
-  network: ws
-  port: 80
-  server: 111.47.212.184
+  name: 41|❓_🇨🇳_📶_github.com/Ruk1ng001_38...
+  password: '!!str 65086441068973800'
+  port: 45402
+  server: 120.232.153.123
   skip-cert-verify: false
+  sni: live-serval.shiner427.skin
   tfo: false
   tls: false
   type: vmess
-  uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
-  name: '46,58,69|1|_CN_ #3'
+  name: '46,69|1|_CN_ #3'
   password: hGkQ6915tD
   port: 15082
   server: 59.56.77.178
@@ -110,17 +146,13 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: '46,56,58,59|🇨🇳 3,11,17|🇨🇳_CN_中国 #1'
+  name: '46,56,59|🇨🇳 3,11,17|🇨🇳_CN_中国 #1'
   network: tcp
   port: '54882'
   server: 183.240.235.162
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.240.235.162
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: '46,56,59,69|🇨🇳 11,12|广东省移动 7 #1'
@@ -137,33 +169,7 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- ip-version: dual
-  name: 50|🇨🇳_CN_中国
-  password: '!!str 3747000103274291200'
-  port: 443
-  server: 154.205.151.46
-  sni: loving-boa.treefrog761.one
-  type: trojan
-  udp: true
-- name: 51,58,59|_中国
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 116.206.93.56
-  skip-cert-verify: true
-  sni: agepw.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: '51,58,59|_中国 #1'
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 154.197.64.248
-  skip-cert-verify: true
-  sni: agepw.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: '51,58,59|_中国 #2'
+- name: 51,59|_中国
   network: tcp
   password: Aimer
   port: 443
@@ -172,25 +178,16 @@ proxies:
   sni: agepw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '51,58,59|_中国 #3'
+- name: '51,59|_中国 #1'
   network: tcp
   password: Aimer
   port: 443
-  server: 154.197.64.252
+  server: 154.197.64.67
   skip-cert-verify: true
-  sni: agepw.ambercc.filegear-sg.me
+  sni: agepq.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '51,58,59|_中国 #4'
-  network: tcp
-  password: Aimer
-  port: 2087
-  server: 45.194.53.81
-  skip-cert-verify: true
-  sni: agepw.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: '51,58,59|_中国 #5'
+- name: '51,59|_中国 #2'
   network: tcp
   password: Aimer
   port: 2087
@@ -199,7 +196,16 @@ proxies:
   sni: agepw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '51,58,59|_中国 #6'
+- name: '51,59|_中国 #3'
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 154.197.64.252
+  skip-cert-verify: true
+  sni: agepw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: '51,59|_中国 #4'
   network: tcp
   password: Aimer
   port: 2096
@@ -208,126 +214,33 @@ proxies:
   sni: agepw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-035
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 34104
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-036
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 34103
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-037
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 34102
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-038
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 34001
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-039
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 34003
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-040
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 34004
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-041
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 34301
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-042
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 34302
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-043
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 34501
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-044
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 34403
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-045
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 34402
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-046
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 34303
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-047
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 58854
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-048
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 58808
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-049
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 58831
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-050
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 32306
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-051
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 58801
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-052
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 58809
-  server: southvip1.pkyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 58|🇨🇳CN-183.214.197.27-053
-  password: 95cdd785-13be-40cd-aa0e-45991b631629
-  port: 58846
-  server: southvip1.pkyun.xyz
-  type: ss
-- name: '58,59|🇭🇰 香港2|@ripaojiedian #2'
-  password: 5359e8f0df6e49e98268292567cf3a9f
-  port: 3387
-  server: iepl2.lgjf.top
+- name: '51,59|_中国 #5'
+  network: tcp
+  password: Aimer
+  port: 2087
+  server: 154.197.64.189
   skip-cert-verify: true
+  sni: agepq.ambercc.filegear-sg.me
   type: trojan
+  udp: true
+- name: '51,59|_中国 #6'
+  network: tcp
+  password: Aimer
+  port: 2087
+  server: 27.50.49.74
+  skip-cert-verify: true
+  sni: agepq.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: 59|🇨🇳 广东省湛江市 移动
+  network: tcp
+  port: '44614'
+  server: 120.198.71.219
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 66|CN-1

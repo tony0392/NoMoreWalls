@@ -368,15 +368,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 0387d93c-89e1-4753-8df2-bef645424e4a
-- alpn:
-  - h3
-  name: 7|🇺🇸 RN-tuic
-  password: ''
-  port: 39234
-  server: 192.3.127.209
-  skip-cert-verify: true
-  type: tuic
-  uuid: e253c56a-b0c6-40d9-b8e1-f27b41ee6c5d
 - alterId: 0
   cipher: auto
   name: 9|No.963_US_x1.00_评分后5折:14時51分_V...
@@ -508,8 +499,7 @@ proxies:
   udp: true
   uuid: 9d6be68a-4974-414a-b1f8-eb29b51d98d9
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '15,16,29,48|US_Portland_Amazon.com, Inc._O... #8'
+  name: '15,29,48|US_Portland_Amazon.com, Inc._O... #8'
   password: amazonskr05
   port: 443
   server: 34.216.193.190
@@ -534,8 +524,7 @@ proxies:
   server: 35.160.134.223
   type: ss
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '15,16,48|US_Portland_Amazon.com, Inc._O... #5'
+  name: '15,48|US_Portland_Amazon.com, Inc._O... #5'
   password: amazonskr05
   port: 443
   server: 52.41.168.231
@@ -623,31 +612,52 @@ proxies:
   server: 2.hublink.pro
   type: ssr
   udp: true
-- name: 16|🇺🇸2 |  5.4MB/s
+- name: 16|🇺🇸2 |  1.5MB/s
   password: 9e9fc8bf-2765-393e-9bc8-957ba1d455b5
-  port: 22741
+  port: 30767
   server: gy.58n.net
   skip-cert-verify: true
-  sni: dufu.hongkongnode.top
+  sni: z61.hongkongnode.top
   type: trojan
   udp: true
-- name: 16|🇺🇸7 |  1.6MB/s
-  password: 9e9fc8bf-2765-393e-9bc8-957ba1d455b5
-  port: 24603
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z259.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 16|🇺🇸9 |  2.8MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
+- alterId: 64
+  cipher: auto
+  name: 16|🇺🇸3 |  4.8MB/s
+  network: ws
+  port: 31005
+  server: 38.11.50.68
+  servername: www.65420682.xyz
   skip-cert-verify: false
-  sni: jp104-cdn-route.couldflare-cdn.com
   tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.65420682.xyz
+    path: /path/1739875088754
+- name: 16|🇺🇸4 |  1.1MB/s
+  password: 9e9fc8bf-2765-393e-9bc8-957ba1d455b5
+  port: 20303
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z303.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 16|🇺🇸10 |  1.1MB/s
+  password: 9e9fc8bf-2765-393e-9bc8-957ba1d455b5
+  port: 28678
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z143.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '16,29|🟡_🇰🇷_💼_github.com/Ruk1ng001_63... #1'
+  password: amazonskr05
+  port: 443
+  server: 3.36.73.26
+  type: ss
 - cipher: aes-128-gcm
   name: 17|🇺🇸 us
   password: shadowsocks
@@ -718,15 +728,75 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   name: 19|🇦🇺 澳大利亚 | AUS
+  port: 45063
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1ce1cdb-5d1d-4d31-b108-32dd2c4431a4
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇦🇺 澳大利亚 | AUS 2
   port: 20011
   server: i.needss.top
   tls: false
   type: vmess
   udp: true
-  uuid: 4b7ce356-d548-48b3-94d7-be1cf752fa2a
-- cipher: chacha20-ietf-poly1305
+  uuid: ed278918-5518-4250-a497-68db20542106
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇦🇺 澳大利亚 | AUS 3
+  port: 45062
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1ce1cdb-5d1d-4d31-b108-32dd2c4431a4
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 19|🇺🇲 美国 | USA
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 649793bc-ced5-47de-a042-0693c06ab87c
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 2
+  port: 45052
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1ce1cdb-5d1d-4d31-b108-32dd2c4431a4
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 3
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2d383b64-3bd8-4558-b272-7a357fa9644f
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 4
   password: 0bec4968-cf61-40d0-8787-866cf22d6e96
   port: 20013
   server: gy.666666222.shop
@@ -735,22 +805,30 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 2
+  name: 19|🇺🇲 美国 | USA 5
   network: ws
   port: 23451
   server: shhh001.oraclenat.cc
   tls: false
   type: vmess
   udp: true
-  uuid: 97a13c1f-5be4-435a-ae42-65139abab58d
+  uuid: fdd58c02-87b3-4a22-bd37-0e08e1d4b3c2
   ws-opts:
     headers:
       Host: shhh001.oraclenat.cc
     path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 6
+  password: 9f0d2bce-d504-4817-ab27-cb88a145f58f
+  port: 20013
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 3
+  name: 19|🇺🇲 美国 | USA 7
   network: ws
   port: 23451
   server: shhh001.oraclenat.cc
@@ -765,297 +843,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 4
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 08b6fb01-f520-46f1-a7ac-24990174c225
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 5
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 49a11654-7dc7-44de-98e0-546ab2aa8fe0
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 6
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2d383b64-3bd8-4558-b272-7a357fa9644f
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 7
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d902ab38-d8fb-4c7b-9e0d-e043dac90ac5
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
   name: 19|🇺🇲 美国 | USA 8
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 649793bc-ced5-47de-a042-0693c06ab87c
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 9
-  password: 9f0d2bce-d504-4817-ab27-cb88a145f58f
-  port: 20016
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 10
-  password: 0bec4968-cf61-40d0-8787-866cf22d6e96
-  port: 20016
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 11
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00c8b731-e779-4583-956f-bee05c198149
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 12
-  port: 54770
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b7ce356-d548-48b3-94d7-be1cf752fa2a
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 13
-  password: 9f0d2bce-d504-4817-ab27-cb88a145f58f
-  port: 20013
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 14
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2fca5d1b-ac54-49b2-a326-08feda03cfad
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 15
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 48394d3a-4971-4e53-a2f3-4d0b0103de75
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 16
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c9340eb2-8924-4cd7-81aa-b8ba613baff9
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 17
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 67507895-4104-40e8-968e-7ae8bbc5cf2b
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 18
-  password: b3ac650b-8a8e-433d-aa9e-0d3fff93ab3b
-  port: 20013
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 19
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 506063ef-d307-40e5-8846-b1f7006349a6
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 20
-  password: 0398e424-b646-4954-8290-7570c8a11293
-  port: 20016
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 21
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fdd58c02-87b3-4a22-bd37-0e08e1d4b3c2
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 22
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ae84b832-7852-4680-87f5-5de0081e1021
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 23
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ff76b52f-21e8-485f-87b5-4ff185c0580d
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 24
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 23d8e935-b5ef-45d7-b97e-d3db1abe59e3
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 25
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: afd525d9-8180-48ca-b614-b9c68ecd777f
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 26
   network: ws
   port: 23451
   server: shhh001.oraclenat.cc
@@ -1070,7 +858,133 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 27
+  name: 19|🇺🇲 美国 | USA 9
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ae84b832-7852-4680-87f5-5de0081e1021
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 10
+  password: b3ac650b-8a8e-433d-aa9e-0d3fff93ab3b
+  port: 20016
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 11
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c9340eb2-8924-4cd7-81aa-b8ba613baff9
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 12
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e35d4dbd-94c1-4493-9ef7-069961909585
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 13
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 49a11654-7dc7-44de-98e0-546ab2aa8fe0
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 14
+  password: 9f0d2bce-d504-4817-ab27-cb88a145f58f
+  port: 20016
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 15
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 08b6fb01-f520-46f1-a7ac-24990174c225
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 16
+  port: 45053
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1ce1cdb-5d1d-4d31-b108-32dd2c4431a4
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 17
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ff76b52f-21e8-485f-87b5-4ff185c0580d
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 18
+  port: 54770
+  server: i.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ed278918-5518-4250-a497-68db20542106
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 19
   network: ws
   port: 23451
   server: shhh001.oraclenat.cc
@@ -1082,18 +996,93 @@ proxies:
     headers:
       Host: shhh001.oraclenat.cc
     path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 20
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2fca5d1b-ac54-49b2-a326-08feda03cfad
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 21
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d902ab38-d8fb-4c7b-9e0d-e043dac90ac5
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 28
-  password: b3ac650b-8a8e-433d-aa9e-0d3fff93ab3b
-  port: 20016
+  name: 19|🇺🇲 美国 | USA 22
+  password: 7c8c51ed-2951-4148-8c0d-5273cab8434a
+  port: 20013
   server: gy.666666222.shop
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 29
+  name: 19|🇺🇲 美国 | USA 23
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 48394d3a-4971-4e53-a2f3-4d0b0103de75
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 24
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3dec410e-95ce-482c-bb55-be2874156a5d
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 25
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 23d8e935-b5ef-45d7-b97e-d3db1abe59e3
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 26
   network: ws
   port: 23451
   server: shhh001.oraclenat.cc
@@ -1108,30 +1097,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 30
-  network: ws
-  port: 23451
-  server: shhh001.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3dec410e-95ce-482c-bb55-be2874156a5d
-  ws-opts:
-    headers:
-      Host: shhh001.oraclenat.cc
-    path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 31
-  password: 0398e424-b646-4954-8290-7570c8a11293
-  port: 20013
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 32
+  name: 19|🇺🇲 美国 | USA 27
   network: ws
   port: 23451
   server: shhh001.oraclenat.cc
@@ -1143,10 +1109,18 @@ proxies:
     headers:
       Host: shhh001.oraclenat.cc
     path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 28
+  password: 7c8c51ed-2951-4148-8c0d-5273cab8434a
+  port: 20016
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 19|🇺🇲 美国 | USA 33
+  name: 19|🇺🇲 美国 | USA 29
   network: ws
   port: 23451
   server: shhh001.oraclenat.cc
@@ -1161,6 +1135,52 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 30
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 67507895-4104-40e8-968e-7ae8bbc5cf2b
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 31
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 97a13c1f-5be4-435a-ae42-65139abab58d
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 32
+  password: b3ac650b-8a8e-433d-aa9e-0d3fff93ab3b
+  port: 20013
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 33
+  password: 0bec4968-cf61-40d0-8787-866cf22d6e96
+  port: 20016
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
   name: 19|🇺🇲 美国 | USA 34
   network: ws
   port: 23451
@@ -1168,7 +1188,37 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: e35d4dbd-94c1-4493-9ef7-069961909585
+  uuid: 00c8b731-e779-4583-956f-bee05c198149
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 35
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 506063ef-d307-40e5-8846-b1f7006349a6
+  ws-opts:
+    headers:
+      Host: shhh001.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇺🇲 美国 | USA 36
+  network: ws
+  port: 23451
+  server: shhh001.oraclenat.cc
+  tls: false
+  type: vmess
+  udp: true
+  uuid: afd525d9-8180-48ca-b614-b9c68ecd777f
   ws-opts:
     headers:
       Host: shhh001.oraclenat.cc
@@ -1253,11 +1303,10 @@ proxies:
 - cipher: aes-256-gcm
   country: 🇸 US
   ip-version: dual
-  name: '20,36,46|🇺🇸_US_美国_6 #1'
+  name: '20,36|🇺🇸_US_美国_3 #1'
   password: ef713649-c164-4a36-9fc2-ebf93d76e14f
   port: 8443
   server: 170.64.237.214
-  tls: false
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -1846,11 +1895,13 @@ proxies:
   ws-path: /path/181721272114
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 20,29|🔴_🇺🇸_💻_github.com/Ruk1ng001_65...
+  name: 20,29,30|[SS] 🇺🇸 美国 华盛顿Cogent通信公司 8
   password: XKFKl2rULjIp74
   port: 8009
   server: 38.121.43.71
+  tfo: false
   type: ss
+  udp: true
 - cipher: aes-256-gcm
   country: 🇺🇸US
   name: 20|🇸US_432
@@ -1909,11 +1960,13 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 20,29|🔴_🇺🇸_💻_github.com/Ruk1ng001_36...
+  name: 20,29,30|[SS] 🇺🇸 美国 华盛顿Cogent通信公司 2
   password: kDWvXYZoTBcGkC4
   port: 8881
   server: 38.121.43.71
+  tfo: false
   type: ss
+  udp: true
 - cipher: aes-128-gcm
   country: 🇺🇸US
   name: 20|🇸US_441
@@ -1930,18 +1983,22 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 20|🇸US_443
+  name: 20,30|[SS] 🇺🇸 美国 华盛顿Cogent通信公司 3
   password: pKEW8JPByTVTLtM
   port: 4444
   server: 38.121.43.71
+  tfo: false
   type: ss
+  udp: true
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 20,29|🔴_🇺🇸_💻_github.com/Ruk1ng001_33...
+  name: 20,29,30|[SS] 🇺🇸 美国 华盛顿Cogent通信公司 4
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 38.121.43.71
+  tfo: false
   type: ss
+  udp: true
 - cipher: aes-256-gcm
   country: 🇺🇸US
   name: 20|🇸US_445
@@ -2007,11 +2064,13 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: '20,29|🔴_🇺🇸_💻_github.com/Ruk1ng001_32... #1'
+  name: 20,29,30|[SS] 🇺🇸 美国 华盛顿Cogent通信公司 7
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 38.121.43.71
+  tfo: false
   type: ss
+  udp: true
 - cipher: aes-256-gcm
   country: 🇺🇸US
   name: 20|🇺🇸US_455
@@ -2037,170 +2096,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 24,30|[VMess] 🇺🇸 美国 CloudFlare节点
-  network: ws
-  port: 443
-  server: cf.fovi.tk
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-  ws-opts:
-    headers:
-      Host: foxlux.fovi.tk
-    path: /eisasqa
-- alterId: 0
-  cipher: auto
-  name: 24,30|[VMess] 🇺🇸 美国 V2CROSS.COM
-  network: ws
-  port: 8443
-  server: 45.144.48.128
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a4850481-9b95-430f-9b2d-192d2410b4f4
-  ws-opts:
-    path: /vmess/
-- name: 24,30,39|🇺🇸 美国 Amazon数据中心
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.42.81.29
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  tfo: false
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 24,30|[VMess] 🇺🇸 美国 CloudFlare节点 2
-  network: ws
-  port: 8880
-  server: 104.16.155.10
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-103-58-39.s1.db-link02.top
-    path: /dabai.in104.25.249.215
-- alterId: 0
-  cipher: auto
-  name: '24,30,39|🇺🇸 美国 CloudFlare节点 #2'
-  network: ws
-  port: '2052'
-  server: s2.db-link02.top
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-34-100-44.s2.db-link02.top
-    path: /dabai.in172.64.6.224
-- alterId: 0
-  cipher: auto
-  name: 24,30|[VMess] 🇺🇸 美国 CloudFlare节点 4
+  name: 24,30|[VMess] 🇺🇸 美国 CloudFlare节点 3
   network: ws
   port: 2086
-  server: s1.cn-db.top
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-47-154-9.s1.cn-db.top
-    path: /dabai.in104.24.181.189
-- alterId: 0
-  cipher: auto
-  name: 24,30|[VMess] 🇺🇸 美国 CloudFlare节点 5
-  network: ws
-  port: 443
-  server: hkvm.gecs.top
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 0a3cd062-241a-43fc-9c50-eccacbbd5aae
-  ws-opts:
-    headers:
-      Host: hkvm.gecs.top
-    path: /vm
-- alpn:
-  - h2
-  - http/1.1
-  name: 24|美国+CloudFlare节点
-  network: ws
-  password: qCfu8t$s{2m;sTxm
-  port: 2053
-  server: 172.66.44.194
-  sni: JOinMaHdISeRvEr-C1C.PaGES.dEV
-  type: trojan
-  ws-opts:
-    headers:
-      Host: joinmahdiserver-c1c.pages.dev
-    path: '%2Ftrj9FI2oIGn7dZc4g3%3Fed%3D2560'
-- alterId: 0
-  cipher: auto
-  name: '24|美国 CloudFlare节点 #5'
-  network: ws
-  port: 2082
-  server: s1.db-link01.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-32-21-187.s1.db-link01.top
-    path: /dabai.in104.25.184.216
-- alterId: 0
-  cipher: auto
-  name: 24,30,38|11,12|美国CloudFla...
-  network: ws
-  port: 8080
-  server: www.darkroom.lol
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      Host: www.darkroom.lol
-    path: /
-- alpn:
-  - h2
-  - http/1.1
-  name: '24|美国+CloudFlare节点 #1'
-  network: ws
-  password: qCfu8t$s{2m;sTxm
-  port: 2053
-  server: 172.66.47.62
-  sni: JOinMaHdISeRvEr-C1C.PaGES.dEV
-  type: trojan
-  ws-opts:
-    headers:
-      Host: joinmahdiserver-c1c.pages.dev
-    path: '%2Ftrj9FI2oIGn7dZc4g3%3Fed%3D2560'
-- alterId: 0
-  cipher: auto
-  name: 24,30|[VMess] 🇺🇸 美国 CloudFlare节点 7
-  network: ws
-  port: 8880
   server: s5.db-link02.top
   skip-cert-verify: true
   tfo: false
@@ -2210,43 +2108,13 @@ proxies:
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: 100-85-25-119.s5.db-link02.top
-    path: /dabai.in104.19.220.104
+      Host: 100-68-4-71.s5.db-link02.top
+    path: /dabai.in104.25.98.224
 - alterId: 0
   cipher: auto
-  name: '24|美国 CloudFlare节点 #7'
+  name: 24,30|[VMess] 🇺🇸 美国 CloudFlare节点 9
   network: ws
   port: 2052
-  server: s5.db-link01.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-62-189-118.s5.db-link01.top
-    path: /dabai.in104.24.204.143
-- alterId: 0
-  cipher: auto
-  name: 24,30,33|加拿大 001
-  network: ws
-  port: 2052
-  server: s2.db-link01.top
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-189-132-241.s2.db-link01.top
-    path: /dabai.in104.24.227.22
-- alterId: 0
-  cipher: auto
-  name: 24,30|[VMess] 🇺🇸 美国 CloudFlare节点 10
-  network: ws
-  port: 2086
   server: 104.16.155.10
   skip-cert-verify: true
   tfo: false
@@ -2256,14 +2124,27 @@ proxies:
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: 100-47-154-9.s1.cn-db.top
-    path: /dabai.in104.24.181.189
+      Host: 100-102-247-92.s1.db-link02.top
+    path: /dabai.in104.25.175.137
 - alterId: 0
   cipher: auto
-  name: 24,30|[VMess] 🇺🇸 美国 CloudFlare节点 11
+  name: '24,39|🇺🇸 美国 CloudFlare节点 #10'
   network: ws
-  port: 8880
-  server: s2.cn-db.top
+  port: '2082'
+  server: s2.db-link02.top
+  tls: false
+  type: vmess
+  uuid: 13514c2c-d5a4-335f-965a-5dc292e36759
+  ws-opts:
+    headers:
+      Host: 100-87-160-252.s2.db-link02.top
+    path: /dabai.in104.24.60.200
+- alterId: 0
+  cipher: auto
+  name: 24,30|[VMess] 🇺🇸 美国 CloudFlare节点 6
+  network: ws
+  port: 2082
+  server: s1.db-link01.top
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -2272,51 +2153,154 @@ proxies:
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: 100-165-40-54.s2.cn-db.top
-    path: /dabai.in104.24.231.155
-- cipher: aes-256-gcm
-  name: 25|🇺🇸_US_美国
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 38.91.107.72
-  type: ss
-- cipher: aes-256-cfb
-  name: 25|🇺🇸_US_美国_1
-  password: amazonskr05
+      Host: 100-32-21-187.s1.db-link01.top
+    path: /dabai.in104.25.184.216
+- alterId: 0
+  cipher: auto
+  name: '24|美国 CloudFlare节点 #4'
+  network: ws
   port: 443
-  server: 54.212.56.86
-  type: ss
-- cipher: aes-256-gcm
-  name: 25|🇺🇸_US_美国_2
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 38.91.107.43
-  type: ss
-- name: 25|🇸_US_美国_5
+  server: zmkkyc.whmvmkwuey.store
+  tls: true
+  type: vmess
+  uuid: bec28b1e-155f-4020-87b7-aca115039bb9
+  ws-opts:
+    headers:
+      Host: zmkkyc.whmvmkwuey.store
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24,30|[VMess] 🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: 8080
+  server: s1.db-link01.top
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-79-28-26.s1.db-link01.top
+    path: /dabai.in172.64.55.203
+- alterId: 0
+  cipher: auto
+  name: '24,39|🇺🇸 美国 CloudFlare节点 #5'
+  network: ws
+  port: '2082'
+  server: 104.16.155.10
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-38-62-25.s5.db-link02.top
+    path: /dabai.in104.18.42.172
+- alterId: 0
+  cipher: auto
+  name: '24|美国 CloudFlare节点 #7'
+  network: ws
+  port: 2095
+  server: s2.db-link01.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-130-136-50.s2.db-link01.top
+    path: /dabai.in104.21.133.12
+- alpn:
+  - http/1.1
+  name: 24|美国+Amazon数据中心
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 3.79.83.178
+  server: 13.42.81.29
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: aes-256-cfb
-  name: 25,29|🟠_🇵🇪_💻_github.com/Ruk1ng001_63...
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.47.252.251
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: '24|美国 CloudFlare节点 #8'
+  network: ws
+  port: 2086
+  server: 104.16.155.10
+  tls: false
+  type: vmess
+  uuid: f518cff0-ee41-3cde-a453-9f3fbccd7ff8
+  ws-opts:
+    headers:
+      Host: 100-57-35-141.s2.db-link02.top
+    path: /dabai.in104.20.130.8
+- alterId: 0
+  cipher: auto
+  name: '24|美国 CloudFlare节点 #9'
+  network: ws
+  port: 2086
+  server: s2.cn-db.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-28-190-253.s2.cn-db.top
+    path: /dabai.in104.18.128.173
+- alterId: 0
+  cipher: auto
+  name: '24|美国 CloudFlare节点 #10'
+  network: ws
+  port: 2082
+  server: s5.db-link01.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-241-177-44.s5.db-link01.top
+    path: /dabai.in104.16.174.235
+- alterId: 0
+  cipher: auto
+  name: 24|美国 华盛顿Cogent通信公司
+  network: ws
+  port: 2053
+  server: 38.54.94.122
+  tls: true
+  type: vmess
+  uuid: 2ca8b9c3-a2c7-4f3e-b3f4-acd85525ace1
+  ws-opts:
+    headers:
+      Host: ''
+    path: /L0229-16
+- alterId: 0
+  cipher: auto
+  name: 24,30|[VMess] 🇺🇸 美国 CloudFlare节点 4
+  network: ws
+  port: 2095
+  server: 104.16.155.10
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: aes-256-cfb
-  name: 25,29|🟡_🇺🇸_💼_github.com/Ruk1ng001_35...
-  password: amazonskr05
-  port: 443
-  server: 34.221.167.203
-  type: ss
-- cipher: aes-256-cfb
-  name: 25|🇺🇸_US_美国_10
-  password: amazonskr05
-  port: 443
-  server: 54.212.222.229
-  type: ss
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-209-47-141.s2.db-link02.top
+    path: /dabai.in104.20.27.115
+- alterId: 0
+  cipher: auto
+  name: '24|美国 CloudFlare节点 #12'
+  network: ws
+  port: 80
+  server: s2.db-link01.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-55-60-174.s2.db-link01.top
+    path: /dabai.in172.67.60.154
 - alterId: 64
   cipher: auto
   name: 26,29|🟡_🇨🇳_📶_github.com/Ruk1ng001_34...
@@ -2471,106 +2455,48 @@ proxies:
   sni: duke.ns.cloudflare.com
   type: trojan
   udp: true
-- cipher: auto
+- cipher: aes-256-cfb
   ip-version: dual
-  name: 27|_US_国_1
-  network: ws
-  port: 80
-  server: 104.18.15.147
+  name: 27,29|🟠_🇵🇪_💻_github.com/Ruk1ng001_63...
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.47.252.251
   tls: false
-  type: vmess
+  type: ss
   udp: true
-  uuid: 384648b3-bcc5-401e-b145-dc91f57ee5e6
-- cipher: auto
+- cipher: aes-256-cfb
   ip-version: dual
-  name: '27|🇺🇸_US_美国_2 #1'
-  network: ws
-  port: 80
-  server: 104.18.154.42
+  name: 27|🇺🇸_US_美国_2
+  password: amazonskr05
+  port: 443
+  server: 54.212.222.229
   tls: false
-  type: vmess
+  type: ss
   udp: true
-  uuid: 384648b3-bcc5-401e-b145-dc91f57ee5e6
-- cipher: auto
+- cipher: aes-256-gcm
   ip-version: dual
   name: 27|🇺🇸_US_美国_3
-  network: ws
-  port: 8080
-  server: www.nahck.site
+  password: X1GBLWQ3U4ULO6XV
+  port: 17005
+  server: 23.185.248.15
   tls: false
-  type: vmess
+  type: ss
   udp: true
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-- cipher: auto
+- cipher: aes-256-cfb
   ip-version: dual
-  name: 27|🇸_US_美国_4
-  network: ws
-  port: 80
-  server: 209.141.37.89
+  name: 27|🇸_US_美国_6
+  password: amazonskr05
+  port: 443
+  server: 34.221.182.25
   tls: false
-  type: vmess
+  type: ss
   udp: true
-  uuid: 384648b3-bcc5-401e-b145-dc91f57ee5e6
-- cipher: auto
-  ip-version: dual
-  name: 27|🇺🇸_US_美国_5
-  network: http
-  port: 3389
-  server: 5.161.220.92
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-- cipher: auto
-  ip-version: dual
-  name: 27|🇺🇸_US_美国_6
-  network: ws
-  port: 80
-  server: zula.ir
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e8bdec3c-f2c7-469a-b6cc-a38cfea5aa19
-- cipher: auto
-  ip-version: dual
-  name: 27|🇸_US_美国_7
-  network: ws
-  port: 8080
-  server: 104.21.31.244
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-- cipher: auto
-  ip-version: dual
-  name: '27|🇺🇸_US_美国_9 #1'
-  network: ws
-  port: 8880
-  server: 104.21.1.28
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
-- cipher: auto
-  ip-version: dual
-  name: '27|🇺🇸_US_美国_10 #1'
-  network: ws
-  port: 80
-  server: 104.18.15.149
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 384648b3-bcc5-401e-b145-dc91f57ee5e6
-- cipher: auto
-  ip-version: dual
-  name: 27|🇺🇸_US_美国_11
-  network: ws
-  port: 8080
-  server: 172.67.180.248
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+- cipher: aes-256-cfb
+  name: 29|🟡_🇺🇸_💼_github.com/Ruk1ng001_35...
+  password: amazonskr05
+  port: 443
+  server: 34.221.167.203
+  type: ss
 - cipher: aes-256-cfb
   name: 29|❓_🇺🇸_💼_github.com/Ruk1ng001_66...
   password: amazonskr05
@@ -2692,26 +2618,12 @@ proxies:
   uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     path: /
-- name: 30|[Trojan] 🇺🇸 美国 CloudFlare节点
-  network: ws
-  password: qCfu8t%24s%7B2m%3BsTxm
-  port: 2053
-  server: 172.66.44.194
-  skip-cert-verify: true
-  sni: JOinMaHdISeRvEr-C1C.PaGES.dEV
-  tfo: false
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: JOinMaHdISeRvEr-C1C.PaGES.dEV
-    path: /trj9FI2oIGn7dZc4g3?ed=2560
 - alterId: 0
   cipher: auto
-  name: 30|[VMess] 🇺🇸 美国 CloudFlare节点 6
+  name: 30|[VMess] 🇺🇸 美国 CloudFlare节点 2
   network: ws
-  port: 2082
-  server: s1.db-link01.top
+  port: 80
+  server: 104.16.155.10
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -2720,22 +2632,24 @@ proxies:
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: 100-32-21-187.s1.db-link01.top
-    path: /
-- name: 30|[Trojan] 🇺🇸 美国 CloudFlare节点 2
+      Host: 100-49-141-209.s1.db-link02.top
+    path: /dabai.in104.17.169.115
+- alterId: 0
+  cipher: auto
+  name: 30|[VMess] 🇺🇸 美国 CloudFlare节点 5
   network: ws
-  password: qCfu8t%24s%7B2m%3BsTxm
-  port: 2053
-  server: 172.66.47.62
+  port: 80
+  server: s1.cn-db.top
   skip-cert-verify: true
-  sni: JOinMaHdISeRvEr-C1C.PaGES.dEV
   tfo: false
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: JOinMaHdISeRvEr-C1C.PaGES.dEV
-    path: /trj9FI2oIGn7dZc4g3?ed=2560
+      Host: 100-215-151-174.s1.cn-db.top
+    path: /dabai.in172.64.34.18
 - alterId: 0
   cipher: auto
   name: 30,33|加拿大 004
@@ -2753,6 +2667,47 @@ proxies:
     headers:
       Host: 100-62-189-118.s5.db-link01.top
     path: /
+- alterId: 0
+  cipher: auto
+  name: '30,39|🇺🇸 美国 CloudFlare节点 #7'
+  network: ws
+  port: '8080'
+  server: s5.db-link02.top
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-149-191-2.s5.db-link02.top
+    path: /dabai.in104.20.16.209
+- alterId: 64
+  cipher: auto
+  name: 30|[VMess] 🇺🇸 美国 加利福尼亚州洛杉矶市SharkT...
+  network: ws
+  port: 30001
+  server: 107.167.20.180
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.15314695.xyz
+    path: /path/091615350227
+- name: 30|[Trojan] 🇺🇸 美国 麻省理工学院
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.134.50.101
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tfo: false
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 33|美国 004
@@ -3246,20 +3201,18 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: '36,46|🇺🇸_US_美国_1 #2'
+  name: 36|🇺🇸_US_美国_1
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.237.185.160
-  tls: false
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: '36,46|🇺🇸_US_美国_5 #1'
+  name: '36|🇺🇸_US_美国_2 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.47.253.171
-  tls: false
   type: ss
   udp: true
 - alterId: 0
@@ -3292,6 +3245,19 @@ proxies:
   type: vmess
   uuid: b7c56170-edb4-4c4a-bb64-ed5ef40b8739
   ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 38|11,12|美国CloudFla...
+  network: ws
+  port: 8080
+  server: www.darkroom.lol
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.darkroom.lol
+    path: /
 - alterId: 0
   cipher: auto
   name: '38|11,12|美国CloudFla... #1'
@@ -3391,6 +3357,19 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  name: '39|🇺🇸 美国 CloudFlare节点 #2'
+  network: ws
+  port: '2052'
+  server: s2.db-link02.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-34-100-44.s2.db-link02.top
+    path: /dabai.in172.64.6.224
+- alterId: 0
+  cipher: auto
   name: '39|🇺🇸 美国 CloudFlare节点 #3'
   network: ws
   port: '8443'
@@ -3409,19 +3388,6 @@ proxies:
   skip-cert-verify: false
   sni: jOinMAhdIsErvEr-53k.pAGeS.Dev
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '39|🇺🇸 美国 CloudFlare节点 #5'
-  network: ws
-  port: '2082'
-  server: 104.16.155.10
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-38-62-25.s5.db-link02.top
-    path: /dabai.in104.18.42.172
 - name: '39|🇺🇸 美国 CloudFlare节点 #6'
   password: :Z#%3cdIG'c*;*O}
   port: 443
@@ -3429,19 +3395,6 @@ proxies:
   skip-cert-verify: false
   sni: JoinmAhDiSeRvER-csn.PaGeS.DEv
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '39|🇺🇸 美国 CloudFlare节点 #7'
-  network: ws
-  port: '8080'
-  server: s5.db-link02.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-149-191-2.s5.db-link02.top
-    path: /dabai.in104.20.16.209
 - alterId: 0
   cipher: auto
   name: '39|🇺🇸 美国 CloudFlare节点 #8'
@@ -3455,6 +3408,13 @@ proxies:
     headers:
       Host: esna.twn24.ir
     path: /?ed=2048
+- name: 39|🇺🇸 美国 Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.42.81.29
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '39|🇺🇸 美国 CloudFlare节点 #9'
@@ -3468,19 +3428,6 @@ proxies:
     headers:
       Host: 100-250-32-53.s1.db-link01.top
     path: /dabai.in172.67.95.35
-- alterId: 0
-  cipher: auto
-  name: '39|🇺🇸 美国 CloudFlare节点 #10'
-  network: ws
-  port: '2082'
-  server: s2.db-link02.top
-  tls: false
-  type: vmess
-  uuid: 13514c2c-d5a4-335f-965a-5dc292e36759
-  ws-opts:
-    headers:
-      Host: 100-87-160-252.s2.db-link02.top
-    path: /dabai.in104.24.60.200
 - alterId: 0
   cipher: auto
   name: '39|🇺🇸 美国 CloudFlare节点 #11'
@@ -3847,51 +3794,6 @@ proxies:
   tls: false
   type: vmess
   uuid: a5e99fc4-5b87-4312-aa8a-52cad1971b92
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: 46|🇺🇸_美国_3
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 169.197.142.187
-  tls: false
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: 46|🇺🇸_美国_4
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 169.197.142.187
-  tls: false
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: 46|🇺🇸_美国_5
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 169.197.142.187
-  tls: false
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: 46|🇺🇸_美国_6
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 169.197.142.187
-  tls: false
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: 46|🇺🇸_美国_7
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 169.197.142.187
-  tls: false
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
   name: 48|US_Ashburn_Internet Utilities ...
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD

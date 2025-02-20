@@ -124,12 +124,32 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   name: 19|🇬🇧 英国 | GBR
+  port: 45066
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1ce1cdb-5d1d-4d31-b108-32dd2c4431a4
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇬🇧 英国 | GBR 2
   port: 54774
   server: qd.needss.top
   tls: false
   type: vmess
   udp: true
-  uuid: 4b7ce356-d548-48b3-94d7-be1cf752fa2a
+  uuid: ed278918-5518-4250-a497-68db20542106
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇬🇧 英国 | GBR 3
+  port: 45067
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1ce1cdb-5d1d-4d31-b108-32dd2c4431a4
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
   name: 20| GB_251
@@ -229,17 +249,30 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- ip-version: dual
-  name: 27|_GB_国
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.43.210.187
-  skip-cert-verify: true
-  sni: trojan.miwan.co.uk
-  tls: true
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|英国 V2CROSS.COM
+  network: ws
+  port: 20326
+  server: 185.121.134.12
+  tls: false
+  type: vmess
+  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 27|_GB_
+  network: ws
+  port: 20320
+  server: 185.121.134.12
+  tls: false
+  type: vmess
   udp: true
+  uuid: 7ccd3f8b-8751-42f0-b684-9ef43aebe926
 - cipher: aes-128-gcm
   name: 34|🇭🇰香港01 1x
   password: 0e1465ef-0502-4e36-b767-20f5921512cc

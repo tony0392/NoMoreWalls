@@ -226,57 +226,36 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 15|@MxlShare 韩国 | KOR
+  client-fingerprint: chrome
+  name: '15,29,43|🇯🇵 日本特殊|@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 13.124.66.120
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '15,16,29|🟡_🇰🇷_💼_github.com/Ruk1ng001_35... #2'
-  password: amazonskr05
-  port: 443
-  server: 43.203.208.32
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 15,16,29|🟡_🇰🇷_💼_github.com/Ruk1ng001_63...
-  password: amazonskr05
-  port: 443
-  server: 43.203.212.161
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '15,16,29|🟡_🇰🇷_💼_github.com/Ruk1ng001_35... #1'
-  password: amazonskr05
-  port: 443
-  server: 3.38.214.76
+  tfo: false
   type: ss
 - cipher: aes-256-cfb
   name: 15,29|🟡_🇰🇷_💼_github.com/Ruk1ng001_35...
   password: amazonskr05
   port: 443
+  server: 43.203.208.32
+  type: ss
+- cipher: aes-256-cfb
+  name: '15,29|🟡_🇰🇷_💼_github.com/Ruk1ng001_35... #2'
+  password: amazonskr05
+  port: 443
   server: 3.39.248.156
   type: ss
 - cipher: aes-256-cfb
-  name: 15,29|🟡_🇰🇷_💼_github.com/Ruk1ng001_38...
+  name: 15|@MxlShare 韩国 | KOR 4
   password: amazonskr05
   port: 443
   server: 13.125.186.115
   type: ss
 - cipher: aes-256-cfb
-  name: 15|@MxlShare 韩国 | KOR 7
+  name: 15,29|🟡_🇰🇷_💼_github.com/Ruk1ng001_31...
   password: amazonskr05
   port: 443
   server: 43.203.240.54
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '15,43|🇯🇵 日本特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 13.125.111.28
-  tfo: false
   type: ss
 - cipher: aes-256-cfb
   name: 15,29|🟡_🇰🇷_💼_github.com/Ruk1ng001_65...
@@ -285,24 +264,28 @@ proxies:
   server: 3.35.236.132
   type: ss
 - cipher: aes-256-cfb
-  name: 15|@MxlShare 韩国 | KOR 10
+  name: 15,29|❓_🇰🇷_💼_github.com/Ruk1ng001_63...
   password: amazonskr05
   port: 443
   server: 52.79.101.162
   type: ss
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '15,29,43|🇰🇷 韩国特殊|@ripaojiedian #1'
+  name: '15,29|🟡_🇰🇷_💼_github.com/Ruk1ng001_34... #1'
   password: amazonskr05
   port: 443
-  server: 3.39.249.88
-  tfo: false
+  server: 13.124.62.225
   type: ss
 - cipher: aes-256-cfb
-  name: 17|🇰🇷 KR, Incheon
+  name: 15,29,48|43.202.60.105_OpenAI_Claude
   password: amazonskr05
   port: 443
-  server: 52.221.255.53
+  server: 43.202.60.105
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 15|@MxlShare 韩国 | KOR 10
+  password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
+  port: 40032
+  server: kr.fastsoonlink.com
   type: ss
 - alterId: 0
   cipher: auto
@@ -313,7 +296,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: ed278918-5518-4250-a497-68db20542106
+  uuid: b5af0a6b-a6e7-4319-ab6f-e5667aa8f378
 - cipher: aes-256-cfb
   ip-version: dual
   name: 25,36|🇰🇷_KR_韩国
@@ -337,11 +320,28 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 29,48|43.202.60.105_OpenAI_Claude
+  name: 29|🟡_🇰🇷_💼_github.com/Ruk1ng001_34...
   password: amazonskr05
   port: 443
-  server: 43.202.60.105
+  server: 3.39.249.88
   type: ss
+- cipher: aes-256-cfb
+  name: '29|🟡_🇰🇷_💼_github.com/Ruk1ng001_35... #1'
+  password: amazonskr05
+  port: 443
+  server: 3.38.214.76
+  type: ss
+- alterId: 0
+  name: 29|🟡_🇰🇷_💼_github.com/Ruk1ng001_33...
+  network: tcp
+  password: '!!str 3747000103274291200'
+  port: 443
+  server: 13.125.85.5
+  skip-cert-verify: true
+  sni: moral-buffalo.treefrog761.one
+  tls: true
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   name: 33|韩国 001
   network: ws
@@ -441,34 +441,6 @@ proxies:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 33|韩国 009
-  network: ws
-  password: Aimer
-  port: 48975
-  server: 193.122.125.209
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 33|韩国 010
-  network: ws
-  password: Aimer
-  port: 21246
-  server: 118.32.223.205
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: chrome
   name: 33|韩国 011
   network: ws
   password: Aimer
@@ -484,94 +456,143 @@ proxies:
     path: /?ed=2560
 - name: 39|🇰🇷 _韩国
   password: Aimer
-  port: 12523
-  server: 115.23.163.214
+  port: 10071
+  server: 220.122.114.61
   skip-cert-verify: true
-  sni: agept.ambercc.filegear-sg.me
+  sni: agepy.aimercc.filegear-sg.me
   type: trojan
 - name: '39|🇰🇷 _韩国 #1'
-  password: Aimer
-  port: 18004
-  server: 121.153.45.186
-  skip-cert-verify: true
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: '39|🇰🇷 _韩国 #2'
-  password: Aimer
-  port: 15831
-  server: 175.198.236.155
-  skip-cert-verify: true
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: '39|🇰🇷 _韩国 #3'
-  password: Aimer
-  port: 12167
-  server: 14.47.103.113
-  skip-cert-verify: true
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: '39|🇰🇷 _韩国 #4'
-  password: Aimer
-  port: 50000
-  server: 175.214.237.120
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-- name: '39|🇰🇷 _韩国 #5'
-  password: Aimer
-  port: 12373
-  server: 175.208.25.75
-  skip-cert-verify: true
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: '39|🇰🇷 _韩国 #6'
-  password: Aimer
-  port: 12499
-  server: 59.4.59.224
-  skip-cert-verify: true
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: '39|🇰🇷 _韩国 #7'
-  password: Aimer
-  port: 21246
-  server: 118.32.223.205
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-- name: '39|🇰🇷 _韩国 #8'
   password: Aimer
   port: 12115
   server: 14.47.175.40
   skip-cert-verify: true
   sni: agept.ambercc.filegear-sg.me
   type: trojan
+- name: '39|🇰🇷 _韩国 #2'
+  password: Aimer
+  port: 12167
+  server: 14.47.103.113
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+- name: '39|🇰🇷 _韩国 #3'
+  password: Aimer
+  port: 12250
+  server: 211.105.11.175
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+- name: '39|🇰🇷 _韩国 #4'
+  password: Aimer
+  port: 12373
+  server: 175.208.25.75
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+- name: '39|🇰🇷 _韩国 #5'
+  password: Aimer
+  port: 12395
+  server: 121.140.238.170
+  skip-cert-verify: true
+  sni: agepy.aimercc.filegear-sg.me
+  type: trojan
+- name: '39|🇰🇷 _韩国 #8'
+  password: Aimer
+  port: 12499
+  server: 59.4.59.224
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
 - name: '39|🇰🇷 _韩国 #9'
+  password: Aimer
+  port: 12523
+  server: 115.23.163.214
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+- name: '39|🇰🇷 _韩国 #10'
   password: Aimer
   port: 14443
   server: 220.127.49.73
   skip-cert-verify: true
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '39|🇰🇷 _韩国 #10'
+- name: '39|🇰🇷 _韩国 #11'
+  password: Aimer
+  port: 15831
+  server: 175.198.236.155
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+- name: '39|🇰🇷 _韩国 #12'
+  password: Aimer
+  port: 18004
+  server: 121.153.45.186
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+- name: '39|🇰🇷 _韩国 #13'
+  password: Aimer
+  port: 18048
+  server: 118.46.215.195
+  skip-cert-verify: true
+  sni: agepy.aimercc.filegear-sg.me
+  type: trojan
+- name: '39|🇰🇷 _韩国 #14'
+  password: Aimer
+  port: 21082
+  server: 222.120.196.136
+  skip-cert-verify: true
+  sni: agepy.aimercc.filegear-sg.me
+  type: trojan
+- name: '39|🇰🇷 _韩国 #15'
+  password: Aimer
+  port: 22206
+  server: 59.26.208.19
+  skip-cert-verify: true
+  sni: agepy.ambercc.filegear-sg.me
+  type: trojan
+- name: '39|🇰🇷 _韩国 #16'
+  password: Aimer
+  port: 32400
+  server: 121.172.164.106
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+- name: '39|🇰🇷 _韩国 #17'
+  password: Aimer
+  port: 37722
+  server: 59.2.75.64
+  skip-cert-verify: true
+  sni: agepy.ambercc.filegear-sg.me
+  type: trojan
+- name: '39|🇰🇷 _韩国 #18'
+  password: Aimer
+  port: 38122
+  server: 218.158.249.21
+  skip-cert-verify: true
+  sni: agepy.aimercc.filegear-sg.me
+  type: trojan
+- name: '39|🇰🇷 _韩国 #19'
+  password: Aimer
+  port: 38422
+  server: 121.151.51.114
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+- name: '39|🇰🇷 _韩国 #20'
   password: Aimer
   port: 50000
   server: 221.153.216.221
   skip-cert-verify: true
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '39|🇰🇷 _韩国 #11'
+- name: '39|🇰🇷 _韩国 #21'
   password: Aimer
   port: 50003
   server: 175.199.169.221
   skip-cert-verify: true
   sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: '39|🇰🇷 _韩国 #12'
-  password: Aimer
-  port: 48975
-  server: 193.122.125.209
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
   type: trojan
 - name: 40|韩国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
@@ -579,15 +600,6 @@ proxies:
   server: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
   skip-cert-verify: false
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 43,45,47|CN_speednode_0012
-  password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
-  port: 40032
-  server: kr.fastsoonlink.com
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 48|KR_Anyang-si_Nerocloud LTD_Ope...

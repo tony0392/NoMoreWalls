@@ -87,16 +87,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 10,11|台湾2-1A-GPT
-  port: 45077
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6e548e90-68a3-4096-9cbb-bc256c0b03d1
-- alterId: 0
-  cipher: auto
   name: 10,11|台湾1-1A-GPT
   port: 45078
   server: haa.dashuai.cyou
@@ -104,27 +94,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 6e548e90-68a3-4096-9cbb-bc256c0b03d1
+  uuid: 3b5cafbf-ea02-44af-b949-d194e1d739b3
 - alterId: 0
   cipher: auto
-  name: 11|台湾2-1B-GPT
+  name: 10|台湾2
   port: 45077
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 7d6a61f0-9108-40bd-9d63-a098656d49cd
-- alterId: 0
-  cipher: auto
-  name: 11|台湾1-1B-GPT
-  port: 45078
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7d6a61f0-9108-40bd-9d63-a098656d49cd
+  uuid: 3b5cafbf-ea02-44af-b949-d194e1d739b3
 - cipher: aes-256-cfb
   name: 15,45,47|TW_speednode_0068
   password: f8f7aCzcPKbsF8p3
@@ -146,10 +126,11 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 16,42,48|TW_Changhua_Akari Networks_Ope...
+  name: 16,32,42,48|TW_Changhua_Akari Networks_Ope...
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
   port: 21140
   server: 581023.horace.im
+  tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
@@ -167,6 +148,15 @@ proxies:
   server: 1w91dj53mb3tjunfqy7q3bdu1fo0sged.08.02.tw.6l6.site
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' TW'
+  name: 20,29,30|[SS] 乌克兰 V2CROSS.COM 2
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: taiwan-2.keenvpn.me
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
@@ -178,48 +168,55 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇼 TW
-  name: 20,29|github.com/Ruk1ng001_626234623...
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: taiwan-2.keenvpn.me
-  type: ss
-- cipher: aes-128-gcm
-  name: 32|2|🇹🇼1 |  3.7MB/s
-  password: 7b218398-f93d-41aa-907e-97c6e45f6d4c
-  port: 12029
-  server: mdss-tw.04z3susick.download
+- alterId: 0
+  cipher: auto
+  name: 32|2|🇹🇼2 |  2.9MB/s
+  port: 31135
+  server: 910281.chasel.sbs
+  skip-cert-verify: true
   tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  name: 32|2|🇹🇼2 |  6.2MB/s
-  password: 7b218398-f93d-41aa-907e-97c6e45f6d4c
-  port: 12032
-  server: mdss-tw.04z3susick.download
+  tls: false
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: 32|2|🇹🇼3 |  2.4MB/s
+  port: 31140
+  server: 581023.horace.im
+  skip-cert-verify: true
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - cipher: chacha20-ietf-poly1305
   name: 42|0| 01 | 1x TW
-  password: 3286980e-661e-466b-a72b-dbc457957ec0
+  password: 36a117c1-edf9-42a9-b23c-23e45ede07e7
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 42|0|🇼台湾 02 | 1x TW
-  password: 3286980e-661e-466b-a72b-dbc457957ec0
+  password: 36a117c1-edf9-42a9-b23c-23e45ede07e7
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 42|0|🇼台湾 03 | 1x TW
-  password: 3286980e-661e-466b-a72b-dbc457957ec0
+  password: 36a117c1-edf9-42a9-b23c-23e45ede07e7
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 48|TW_Chang-hua_Chunghwa Telecom ...
+  network: tcp
+  port: 31135
+  server: 910281.chasel.sbs
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - cipher: aes-256-gcm
   name: '48|TW_Changhua_Akari Networks_Ope... #1'
   password: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
@@ -252,6 +249,14 @@ proxies:
   network: tcp
   port: 31136
   server: 581610.eveline.lol
+  type: vmess
+  uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
+- alterId: 0
+  cipher: auto
+  name: '48|TW_Changhua_Akari Networks_Ope... #6'
+  network: tcp
+  port: 31140
+  server: 581023.horace.im
   type: vmess
   uuid: 8C4D2A21-3912-FEC5-737F-9FF8FDEB0ABD
 - alterId: 0

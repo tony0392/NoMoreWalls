@@ -25,16 +25,6 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - alterId: 0
   cipher: auto
-  name: 10,11|英国1-1A
-  port: 45066
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6e548e90-68a3-4096-9cbb-bc256c0b03d1
-- alterId: 0
-  cipher: auto
   name: 10,11|英国2-1A
   port: 45067
   server: xdd.dashuai.cyou
@@ -42,7 +32,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 6e548e90-68a3-4096-9cbb-bc256c0b03d1
+  uuid: 3b5cafbf-ea02-44af-b949-d194e1d739b3
+- alterId: 0
+  cipher: auto
+  name: 10,11|英国1-1A
+  port: 45066
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3b5cafbf-ea02-44af-b949-d194e1d739b3
 - alterId: 0
   cipher: auto
   name: 11|英国2-1B
@@ -52,7 +52,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7d6a61f0-9108-40bd-9d63-a098656d49cd
+  uuid: 2d6f3a77-28e3-4b2a-b390-b0d935f36401
 - alterId: 0
   cipher: auto
   name: 11|英国1-1B
@@ -62,7 +62,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7d6a61f0-9108-40bd-9d63-a098656d49cd
+  uuid: 2d6f3a77-28e3-4b2a-b390-b0d935f36401
 - name: 15|@MxlShare 英国 | GBR
   password: '!!str 3747000103274291200'
   port: 443
@@ -70,8 +70,7 @@ proxies:
   sni: fond-moth.treefrog761.one
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15,20,29,45,47|GB_speednode_0014
+  name: 15,29,45,47|GB_speednode_0014
   password: vcUpZCJzOuaVoN8OL2cYvK
   port: 443
   server: 78.129.140.11
@@ -85,30 +84,100 @@ proxies:
   server: r8tbhtn9jty9ebzesikuygvc8y0b2koq.08.02.uk.6l6.site
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇬🇧 英国 | GBR
+  port: 45067
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8190cfb5-bafb-4a40-9559-7c232437d640
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 19|🇬🇧 英国 | GBR 2
+  port: 45066
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8190cfb5-bafb-4a40-9559-7c232437d640
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 20| GB_256
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
+  name: 20| GB_257
+  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
   port: 55988
-  server: mx2.drawnrisha.one
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 20|🇧 GB_258
+  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 20|🇧 GB_259
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.255.22
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 20|🇧 GB_260
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.250
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧 GB
+  name: 20|🇬🇧 GB_261
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 20|🇧 GB_257
-  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
+  name: 20|🇧 GB_262
+  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
+  port: 52952
+  server: 185.24.151.214
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 20|🇬🇧 GB_263
+  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
   port: 55988
   server: 185.5.38.111
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
   ip-version: dual
-  name: '20,25,26,27,29,46|🇬🇧_GB_英国_3 #1'
+  name: '20,25,26,27,29,30,46|🇬🇧_GB_英国_3 #1'
   password: 6edTuN9WSufTkYhvfJD0js
   port: 2239
   server: 77.239.122.39
+  tfo: false
   tls: false
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 20|🇬🇧 GB_265
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 20|🇬🇧 GB_266
+  password: 3FB23A19-9424-40C7-9139-3540228283FA
+  port: 40000
+  server: hk.fastsoonlink.com
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
   ip-version: dual
@@ -120,81 +189,32 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 20,29|github.com/Ruk1ng001_633730636...
-  password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
-  port: 40034
-  server: fr.fastsoonlink.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇧 GB_261
-  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
-  port: 52952
-  server: 185.24.151.214
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇬🇧 GB_263
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 20|🇧 GB_264
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.239.250
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧 GB
-  name: 20|🇬🇧 GB_265
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇧 GB_266
-  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇬🇧 GB_267
-  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
   name: 20|🇬🇧 GB_268
-  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
+  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
   port: 55988
   server: 185.5.38.111
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
   name: 20|🇬🇧 GB_269
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 20|🇬🇧 GB_270
   password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
   port: 55988
   server: mx2.drawnrisha.one
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 20|🇬🇧 GB_271
-  password: 3FB23A19-9424-40C7-9139-3540228283FA
-  port: 40000
-  server: hk.fastsoonlink.com
+  name: 20|🇬🇧 GB_270
+  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
+  port: 55988
+  server: mx2.drawnrisha.one
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 20,29|github.com/Ruk1ng001_633730636...
+  password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
+  port: 40034
+  server: fr.fastsoonlink.com
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
@@ -237,16 +257,15 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 30|[SS] 🇬🇧 英国 社会保险安全部
-  password: wqvT8xKyd0Zt8VE8Vs0ihl
-  port: 17027
-  server: 51.107.212.180
+  name: 32|🇬🇧 0|🇬🇧英国家宽 01 | 1x UK
+  password: 3286980e-661e-466b-a72b-dbc457957ec0
+  port: 31271
+  server: free.2apzhfa.xyz
   tfo: false
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 42|0|国家宽 01 | 1x UK
-  password: 3286980e-661e-466b-a72b-dbc457957ec0
+  password: 36a117c1-edf9-42a9-b23c-23e45ede07e7
   port: 31271
   server: free.2apzhfa.xyz
   type: ss

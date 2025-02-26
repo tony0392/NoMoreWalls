@@ -75,7 +75,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 3b5cafbf-ea02-44af-b949-d194e1d739b3
+  uuid: 9b8f611c-73a4-457b-80c2-ed36c90f6775
 - alterId: 0
   cipher: auto
   name: 10,11|加拿大1-1A
@@ -85,7 +85,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 3b5cafbf-ea02-44af-b949-d194e1d739b3
+  uuid: 9b8f611c-73a4-457b-80c2-ed36c90f6775
 - alterId: 0
   cipher: auto
   name: 11|加拿大2-1B
@@ -95,7 +95,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2d6f3a77-28e3-4b2a-b390-b0d935f36401
+  uuid: 6c49c77b-06a2-43a5-9e2a-cd34abbef56b
 - alterId: 0
   cipher: auto
   name: 11|加拿大1-1B
@@ -105,7 +105,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2d6f3a77-28e3-4b2a-b390-b0d935f36401
+  uuid: 6c49c77b-06a2-43a5-9e2a-cd34abbef56b
 - cipher: aes-256-cfb
   name: 17|🇨🇦 CA, Vancouver
   password: amazonskr05
@@ -120,6 +120,47 @@ proxies:
   server: 70luslivsskpwm855plfjwgt5h2atwvf.08.01.ca.6l6.site
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇦 CA
+  h2-opts: {}
+  http-opts: {}
+  name: 20|🇦 CA_175
+  network: ws
+  port: 443
+  server: 68.168.31.196
+  servername: 68.168.31.196
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: 68.168.31.196
+  ws-path: /linkvws
+- cipher: chacha20-ietf-poly1305
+  country: 🇦CA
+  name: 20|🇨🇦CA_176
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: ca225.vpnbook.com
+  type: ss
+- country: 🇦CA
+  name: 20|🇦CA_177
+  password: acfef609-b3c7-4e52-b292-8921d5fca90d
+  port: 443
+  server: 91.194.11.168
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: 27|_CA__1
+  password: lGqs95QkFHo2NV
+  port: 5498
+  server: 23.154.136.137
+  tls: false
+  type: ss
+  udp: true
 - cipher: rc4-md5
   name: 29|🟠_🇨🇦_💻_github.com/Ruk1ng001_65...
   obfs: plain
@@ -144,134 +185,16 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 32|🇨🇦 0|🇨🇦加拿大 01 | 1x CA
-  password: 46a64e73-3f18-4279-a466-cfc5b1158271
+  password: a27fa09c-1a9c-4cf0-a5f2-055d3a439b15
   port: 31441
   server: free.2apzhfa.xyz
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 33|加拿大 001
-  network: ws
-  port: 2052
-  server: s2.db-link01.top
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-189-132-241.s2.db-link01.top
-    path: /dabai.in104.24.227.22
-- alterId: 0
-  cipher: auto
-  name: 33|加拿大 002
-  network: ws
-  port: 2086
-  server: s1.db-link01.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-191-129-167.s1.db-link01.top
-    path: /
-- alterId: 0
-  cipher: auto
-  delay: 2097
-  name: 33|加拿大 003
-  network: ws
-  port: 2095
-  server: s1.cn-db.top
-  servername: 100-139-204-73.s1.cn-db.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-139-204-73.s1.cn-db.top
-    path: /dabai.in104.25.132.97
-- alterId: 0
-  cipher: auto
-  name: 33|加拿大 004
-  network: ws
-  port: 2052
-  server: s5.db-link01.top
-  servername: 100-62-189-118.s5.db-link01.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-62-189-118.s5.db-link01.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 33|加拿大 005
-  network: ws
-  port: 2082
-  server: s1.db-link02.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-113-212-3.s1.db-link02.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 33|加拿大 006
-  network: ws
-  port: 2095
-  server: s5.cn-db.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-27-240-19.s5.cn-db.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 33|加拿大 007
-  network: ws
-  port: 2082
-  server: 104.16.155.10
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-38-62-25.s5.db-link02.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 33|加拿大 008
-  network: ws
-  port: 2082
-  server: s5.db-link02.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-38-62-25.s5.db-link02.top
-    path: /
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: 46|🇨🇦_CA_加拿大_1
-  password: lGqs95QkFHo2NV
-  port: 5498
-  server: 23.154.136.137
-  tls: false
+- cipher: chacha20-ietf-poly1305
+  name: 42|0|🇦加大 01 | 1x CA
+  password: 435b5e1d-d852-4870-9dc1-0e99e368ecb9
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0

@@ -89,14 +89,6 @@ proxies:
     headers:
       HOST: telegram-isvvpn.dev
     path: /racevpn
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 23|🇫🇷 法国|PAR1
-  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
-  port: 15715
-  server: ojrandvej2ruev8ejki2unopb5etrur3.08.01.fr.6l6.site
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -547,20 +539,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 29|法国 国际航空电讯集团公司(SITA)
-  network: ws
-  port: 443
-  server: 57.129.24.125
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
 - alpn:
   - http/1.1
   name: 29|法国+巴黎Amazon数据中心
@@ -570,6 +548,39 @@ proxies:
   server: 15.188.215.183
   sni: trojan.burgerip.co.uk
   type: trojan
+- cipher: aes-256-cfb
+  name: 35|[SS] 🇫🇷 _FR_法国
+  password: asdKkaskJKfnsa
+  port: 443
+  server: 51.158.54.209
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 35|[VMess] 🇫🇷 法国 国际航空电讯集团公司(SITA)
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /
+- name: 35|[Trojan] 🇫🇷 法国 巴黎Amazon数据中心
+  password: telegram-id-directvpn
+  port: 22222
+  server: 15.188.215.183
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tfo: false
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 44|VMESS-未知>法国-NF解锁法国地区非自制剧-ChatG...

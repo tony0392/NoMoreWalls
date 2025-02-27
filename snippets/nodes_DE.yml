@@ -1,4 +1,24 @@
 proxies:
+- alpn:
+  - http/1.1
+  ip-version: dual
+  name: '3,5|🇩🇪_DE_德国_1 #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.59.173.57
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 5,34,40,51|🇩🇪_DE_德国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 134.255.210.49
+  tls: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 9|🇩🇪 IEPL专线 德国 NO1
@@ -1010,6 +1030,14 @@ proxies:
   skip-cert-verify: true
   sni: de2-full.privateip.net
   type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 35|[SS] 🇩🇪 德国下萨克森州萨尔茨吉特 德国电信
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20003
+  server: service.ouluyun9803.com
+  tfo: false
+  type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 37|🇩🇪 0|🇩🇪德国 01 | 1x DE

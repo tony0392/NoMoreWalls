@@ -102,14 +102,6 @@ proxies:
   port: 443
   server: 54.200.54.11
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 23|🇨🇦 加拿大|CA1
-  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
-  port: 19915
-  server: 70luslivsskpwm855plfjwgt5h2atwvf.08.01.ca.6l6.site
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -188,6 +180,20 @@ proxies:
   protocol: origin
   server: 193.108.119.230
   type: ssr
+- alterId: 0
+  cipher: auto
+  name: 35|[VMess] 🇨🇦 _CA_加拿大
+  network: ws
+  port: 80
+  server: 108.181.10.17
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 474e8680-701f-11ee-b436-205c6d5f5d78
+  ws-opts:
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 37|🇨🇦 0|🇨🇦加拿大 01 | 1x CA
   password: a27fa09c-1a9c-4cf0-a5f2-055d3a439b15

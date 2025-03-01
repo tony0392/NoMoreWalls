@@ -97,6 +97,14 @@ proxies:
   server: gy.666666222.shop
   type: ss
   udp: true
+- name: 12|Taiwan Pro 1
+  password: '!!str 3648425794742788096'
+  port: 443
+  server: witty-shrimp.husky461.skin
+  skip-cert-verify: false
+  sni: witty-shrimp.husky461.skin
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 13|🇹🇼 No.951_TW_x0.50_GCP_Taiwan@...
@@ -151,7 +159,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 8ff2f289-67d0-4a0f-93a6-0c658d7c4c5f
+  uuid: 684e3e45-9713-49f5-ad99-037b5a6bd61e
 - alterId: 0
   cipher: auto
   name: 14,15|台湾1-1A-GPT
@@ -161,14 +169,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 8ff2f289-67d0-4a0f-93a6-0c658d7c4c5f
-- cipher: chacha20-ietf-poly1305
-  name: 15|台湾01-1B
-  password: 960bcbbb-ef27-411b-8229-5b7ff2982aa5
-  port: 47564
-  server: gy.666666222.shop
-  type: ss
+  uuid: 684e3e45-9713-49f5-ad99-037b5a6bd61e
+- alterId: 0
+  cipher: auto
+  name: 15|台湾1-1B-GPT
+  port: 45078
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
+  uuid: 2ff7da89-198c-492d-baa6-3093dd36a77c
 - alterId: 0
   cipher: auto
   name: 18|@MxlShare 台湾 | TWN
@@ -195,7 +206,7 @@ proxies:
   uuid: f837b510-7050-4dec-b182-a777dc358469
 - alterId: 0
   cipher: auto
-  name: 18,32|github.com/Ruk1ng001_646632306...
+  name: 18|@MxlShare 台湾 | TWN 4
   port: 15210
   server: tw-detour-10.grabgo.pro
   tls: false
@@ -203,7 +214,7 @@ proxies:
   uuid: f837b510-7050-4dec-b182-a777dc358469
 - alterId: 0
   cipher: auto
-  name: 18,32,45|2|🇼1 |  5.3MB/s
+  name: 18|@MxlShare 台湾 | TWN 5
   port: 15223
   server: tw-detour-23.grabgo.pro
   tls: false
@@ -211,17 +222,21 @@ proxies:
   uuid: f837b510-7050-4dec-b182-a777dc358469
 - alterId: 0
   cipher: auto
-  name: 18,32|github.com/Ruk1ng001_333231376...
+  name: 18|@MxlShare 台湾 | TWN 6
   port: 15220
   server: tw-detour-20.grabgo.pro
   tls: false
   type: vmess
   uuid: f837b510-7050-4dec-b182-a777dc358469
 - cipher: chacha20-ietf-poly1305
-  name: 19|🇹🇼1 |  11.8MB/s
-  password: 7a352f9e-7b37-4978-b2d9-41c7542f1495
-  port: 36241
-  server: free.2weradf.xyz
+  name: 19|🇹🇼1 |  8.8MB/s
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 84858fa.vpnhat.t.me:73643
+    mode: tls
+  port: 2377
+  server: 84858fa.t5.gladns.com
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
@@ -240,22 +255,64 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 45|0|  01 | 1x TW
-  password: 0e54e50f-76bf-4cb1-86e4-4ff81b1d4ef3
+  country: 🇼 TW
+  name: 23| TW_394
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: taiwan-2.keenvpn.me
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇼 TW
+  name: 23|🇼 TW_395
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: 2.58.241.42
+  type: ss
+- name: 42|2|🇹🇼3 |  3.6MB/s
+  password: c7fc812c-7c57-3386-8140-07935d060404
+  port: 59021
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x100.flybar.work
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 45|0| 01 | 1x TW
+  password: 87a80f35-79bc-43f2-8f0f-1da51361850e
+  port: 31241
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|0|🇼台湾 02 | 1x TW
+  password: 87a80f35-79bc-43f2-8f0f-1da51361850e
+  port: 31243
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|0|🇼台湾 03 | 1x TW
+  password: 87a80f35-79bc-43f2-8f0f-1da51361850e
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|1|🇼 台湾 01 | 1x TW
+  password: 4f034bf4-a9e4-4050-bda1-ac5151194571
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|0|🇹🇼 台湾 02 | 1x TW
-  password: 0e54e50f-76bf-4cb1-86e4-4ff81b1d4ef3
+  name: 45|1|🇹🇼 台湾 02 | 1x TW
+  password: 4f034bf4-a9e4-4050-bda1-ac5151194571
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|0|🇼 台湾 03 | 1x TW
-  password: 0e54e50f-76bf-4cb1-86e4-4ff81b1d4ef3
+  name: 45|1|🇼 台湾 03 | 1x TW
+  password: 4f034bf4-a9e4-4050-bda1-ac5151194571
   port: 36245
   server: free.2weradf.xyz
   type: ss

@@ -68,6 +68,16 @@ proxies:
   uuid: 0387d93c-89e1-4753-8df2-bef645424e4a
 - alterId: 0
   cipher: auto
+  name: 14,15|加拿大1-1A
+  port: 45064
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 684e3e45-9713-49f5-ad99-037b5a6bd61e
+- alterId: 0
+  cipher: auto
   name: 14|加拿大2
   port: 45065
   server: xdd.dashuai.cyou
@@ -75,27 +85,29 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 8ff2f289-67d0-4a0f-93a6-0c658d7c4c5f
-- alterId: 0
-  cipher: auto
-  name: 14|加拿大1
-  port: 45064
-  server: haa.dashuai.cyou
+  uuid: 684e3e45-9713-49f5-ad99-037b5a6bd61e
+- cipher: aes-256-cfb
+  name: 19,32|🟠_🇸🇬_💼_github.com/Ruk1ng001_39...
+  password: amazonskr05
+  port: 443
+  server: 47.128.243.171
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 19,32|🟠_🇸🇬_💼_github.com/Ruk1ng001_33...
+  password: amazonskr05
+  port: 443
+  server: 47.129.7.198
+  tfo: false
+  type: ss
+- name: 19|🇨🇦3 |  1.5MB/s
+  password: f2595170-cb25-309e-8a13-dac38e08a10b
+  port: 20295
+  server: gy.58n.net
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: z295.hongkongnode.top
+  type: trojan
   udp: true
-  uuid: 8ff2f289-67d0-4a0f-93a6-0c658d7c4c5f
-- alterId: 0
-  cipher: auto
-  name: 15|加拿大1-1B
-  port: 45064
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 942e1d8b-9b6b-4a78-b950-9db225a414cc
 - cipher: aes-256-cfb
   name: 20|🇨🇦 CA, Vancouver
   password: amazonskr05
@@ -110,24 +122,30 @@ proxies:
   server: 70luslivsskpwm855plfjwgt5h2atwvf.08.01.ca.6l6.site
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: 30|_CA__1
-  password: lGqs95QkFHo2NV
-  port: 5498
-  server: 23.154.136.137
-  tls: false
+- alterId: 0
+  cipher: auto
+  country: 🇦 CA
+  h2-opts: {}
+  http-opts: {}
+  name: 23|🇦 CA_193
+  network: ws
+  port: 443
+  server: 68.168.31.196
+  servername: 68.168.31.196
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: 68.168.31.196
+  ws-path: /linkvws
+- cipher: chacha20-ietf-poly1305
+  country: 🇦CA
+  name: 23|🇨🇦CA_194
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: ca225.vpnbook.com
   type: ss
-  udp: true
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: 30|🇨🇦_CA_加拿大_2
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 23.154.136.148
-  tls: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 33|[VMess] 🇨🇦 _CA_加拿大
@@ -165,9 +183,51 @@ proxies:
     headers:
       Host: 100-68-4-71.s5.db-link02.top
     path: /dabai.in104.25.98.224
+- alterId: 0
+  cipher: auto
+  name: 36|加拿大 002
+  network: ws
+  port: 2052
+  server: s2.cn-db.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-252-79-9.s2.cn-db.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|加拿大 003
+  network: ws
+  port: 2052
+  server: s1.cn-db.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-70-193-42.s1.cn-db.top
+    path: /
+- name: 42|2|🇨🇦1 |  2.6MB/s
+  password: c7fc812c-7c57-3386-8140-07935d060404
+  port: 20295
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z295.hongkongnode.top
+  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 45|0|🇦 加大 01 | 1x CA
-  password: 0e54e50f-76bf-4cb1-86e4-4ff81b1d4ef3
+  name: 45|0|🇦加大 01 | 1x CA
+  password: 87a80f35-79bc-43f2-8f0f-1da51361850e
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|1|🇦 加拿大 01 | 1x CA
+  password: 4f034bf4-a9e4-4050-bda1-ac5151194571
   port: 36441
   server: free.2weradf.xyz
   type: ss

@@ -558,17 +558,34 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 8ff2f289-67d0-4a0f-93a6-0c658d7c4c5f
+  uuid: 684e3e45-9713-49f5-ad99-037b5a6bd61e
 - alterId: 0
   cipher: auto
-  name: 14,15|日本NO.1-1A
+  name: 14|日本NO.1
   port: 45056
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 8ff2f289-67d0-4a0f-93a6-0c658d7c4c5f
+  uuid: 684e3e45-9713-49f5-ad99-037b5a6bd61e
+- alterId: 0
+  cipher: auto
+  name: 15|日本NO.2-1B
+  port: 45057
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2ff7da89-198c-492d-baa6-3093dd36a77c
+- cipher: chacha20-ietf-poly1305
+  name: 15|日本02
+  password: 7e8047a3-9769-4add-bc6d-76b09eb6eb25
+  port: 20004
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 15|日本NO.1-1B
@@ -578,7 +595,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 942e1d8b-9b6b-4a78-b950-9db225a414cc
+  uuid: 2ff7da89-198c-492d-baa6-3093dd36a77c
 - alterId: 0
   cipher: auto
   name: 17|JP | 日本 LB-1T
@@ -1093,18 +1110,15 @@ proxies:
     path: /stream
 - alterId: 0
   cipher: auto
-  name: 18,32,33|[VMess] 🇨🇳 广东省深圳市 移动
+  name: 18|@MxlShare 日本 | JPN 2
   port: 15602
   server: jp-02.grabgo.pro
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: f837b510-7050-4dec-b182-a777dc358469
 - alterId: 0
   cipher: auto
-  name: 18,32|github.com/Ruk1ng001_353539633...
+  name: 18|@MxlShare 日本 | JPN 3
   port: 15601
   server: jp-01.grabgo.pro
   tls: false
@@ -1112,7 +1126,7 @@ proxies:
   uuid: f837b510-7050-4dec-b182-a777dc358469
 - alterId: 0
   cipher: auto
-  name: 18,32|github.com/Ruk1ng001_653463646...
+  name: 18|@MxlShare 日本 | JPN 4
   port: 15604
   server: jp-04.grabgo.pro
   tls: false
@@ -1120,8 +1134,7 @@ proxies:
   uuid: f837b510-7050-4dec-b182-a777dc358469
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 18,19,32|github.com/Ruk1ng001_393436666...
+  name: 18|@MxlShare 日本 | JPN 5
   port: 15612
   server: sz-jp-02.grabgo.pro
   tls: false
@@ -1138,7 +1151,8 @@ proxies:
   server: 2.hublink.pro
   type: ssr
 - cipher: rc4-md5
-  name: 18,51|45.89.109.181_OpenAI_Claude
+  client-fingerprint: chrome
+  name: 18,32,51|45.89.109.181_OpenAI_Claude
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -1148,7 +1162,7 @@ proxies:
   server: 2.hublink.pro
   type: ssr
 - cipher: rc4-md5
-  name: 18|@MxlShare 日本 | JPN 9
+  name: 18,32|github.com/Ruk1ng001_636661373...
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -1157,6 +1171,7 @@ proxies:
   protocol-param: 92902:pFWGOQ
   server: 3.link-hub.click
   type: ssr
+  udp: true
 - cipher: rc4-md5
   name: 18,32|github.com/Ruk1ng001_663861356...
   obfs: plain
@@ -1167,49 +1182,51 @@ proxies:
   protocol-param: 92902:pFWGOQ
   server: 3.link-hub.click
   type: ssr
-- name: 19|🇯🇵1 |  6.1MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇯🇵1 |  5.0MB/s
+  password: b1659b9a-fcbe-457d-a52f-8796849fc392
+  port: 36113
+  server: free.2weradf.xyz
+  type: ss
+- name: 19|🇯🇵2 |  2.5MB/s
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
-  server: jpgmo101-cdn-route.couldflare-cdn.com
+  server: jpgmo102-cdn-route.couldflare-cdn.com
   skip-cert-verify: false
-  sni: jpgmo101-cdn-route.couldflare-cdn.com
+  sni: jpgmo102-cdn-route.couldflare-cdn.com
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 19|🇯🇵3 |  3.0MB/s
-  password: af2bfe05-e7c6-388b-ad41-e091b214f0e0
-  port: 20142
+- name: 19|🇯🇵3 |  2.2MB/s
+  password: f2595170-cb25-309e-8a13-dac38e08a10b
+  port: 20059
   server: gy.58n.net
   skip-cert-verify: true
-  sni: z142.hongkongnode.top
-  tfo: true
+  sni: x59.flybar.work
   type: trojan
   udp: true
-- name: 19|🇯🇵4 |  6.2MB/s
-  password: af2bfe05-e7c6-388b-ad41-e091b214f0e0
-  port: 20140
+- name: 19|🇯🇵4 |  6.1MB/s
+  password: f2595170-cb25-309e-8a13-dac38e08a10b
+  port: 20298
   server: gy.58n.net
   skip-cert-verify: true
-  sni: z140.hongkongnode.top
-  tfo: true
+  sni: z298.hongkongnode.top
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '19,42|_中国 #55'
-  network: tcp
-  port: '30565'
-  server: 120.198.71.214
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 19|🇯🇵6 |  2.1MB/s
-  password: af2bfe05-e7c6-388b-ad41-e091b214f0e0
-  port: 54178
+- name: 19|🇯🇵5 |  6.2MB/s
+  password: f2595170-cb25-309e-8a13-dac38e08a10b
+  port: 20141
   server: gy.58n.net
   skip-cert-verify: true
-  sni: x115.flybar.work
-  tfo: true
+  sni: z141.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 19|🇯🇵6 |  3.2MB/s
+  password: f2595170-cb25-309e-8a13-dac38e08a10b
+  port: 41767
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x114.flybar.work
   type: trojan
   udp: true
 - cipher: aes-128-gcm
@@ -1318,564 +1335,110 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 3
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 23| JP_296
   network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 03f22897-4299-4e2d-a721-f84ad73ba274
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 5
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4da65c6e-f3c5-49c1-b135-5174ecce3a83
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 6
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c360a74a-7576-43ee-99d6-3371c08bb14a
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 8
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1ca84db5-3916-40ab-90e4-baea4e9a2051
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 9
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6250cac4-cdc4-4625-aceb-8f3a02f2ee3f
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 13
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 09fb541c-aaa5-44a2-88df-1cc497d00e8f
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 14
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8a973329-9f45-49b2-a82a-d55e3e343605
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 15
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b3418d13-a138-4d8b-9c4e-58e6b5b254ff
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 19
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 54dbba1c-1351-4e33-935e-c25a2afc0c20
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 21
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e05cbcd6-de36-4efc-88c5-17deb5b5e32e
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 22
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0ea21f8b-5cea-4cbe-907e-2307844bffba
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 25
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 901048ff-61bd-44c0-8b08-a442a4ccd69b
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 26
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 536d274a-e3f3-4e7a-a411-50193cd08d34
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 27
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a92e470d-f2ab-4417-9151-d79f154e46aa
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 30
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5b5fde30-cca8-42fc-bc90-d5c8a99a06d9
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 31
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ed8c1e71-4116-498d-8b87-4034ccf001b6
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 33
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a3291ca-87f5-4d78-96b9-c2605b58bc41
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 34
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bac98554-79fa-4769-ab72-f3115e00c004
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 35
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3fcd9659-7333-43c2-a7ac-8fff8a9cfe6e
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 36
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f8b02e0e-2310-4b44-92e7-bed8d4bb9f4f
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 37
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: beaad91b-40cb-4aa5-9bc8-b412a023f1ca
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 40
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e847c424-8033-4da5-b798-c6e8384cd350
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 41
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5ddf352f-ab2b-4c07-b4d5-3b85600a2ca9
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 42
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b5eaccf8-1038-406b-adb2-e78cdf365d07
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 43
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18b7c6c2-9102-40d0-8323-133cb645a0c4
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 44
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d91827a6-b2f2-42dc-8b2e-45bffe47ab22
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 45
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9448821d-5e20-4ce8-b675-7be03f1d1ffe
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 47
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 70061251-41e2-443a-8ce4-0b1c411029ff
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 48
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9072d368-667b-43f1-a649-e686ce13bca4
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 51
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4187fdd4-ffae-4a3d-b620-ab23e04599fc
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 57
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 33e90477-0775-40f5-a89d-1430c366c1b2
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 62
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cd06417c-bb5d-4144-ba79-247e3c44e4ac
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 63
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 238488cd-928e-408c-b56e-be8176928b84
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 64
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1361ab42-0a62-4973-ab99-4c7461663a18
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 65
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5298df24-da4a-447a-8deb-96ab9ca35413
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 69
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d357a733-c687-4d73-a64e-26f5a2fdf738
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 70
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 26d75361-c745-4c37-a2ed-4fcd485fbefa
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 71
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ee259634-975c-47b2-9181-6f387fb9a3ca
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 74
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4d4810ec-3ae1-475a-b92b-382ff1d6439e
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 77
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: df784264-5d85-469a-a4aa-9b0293c69454
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 79
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bc2b36fa-b873-4bbe-b887-7cba63663de1
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇯🇵 日本 | JPN 84
-  network: ws
-  port: 20327
-  server: 212.192.221.4
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e78a02d5-ef67-4550-8634-e4017dbc7a31
-  ws-opts:
-    path: /
-- name: 27,33|[Trojan] 🇯🇵 日本 东京Amazon数据中心
-  password: 7d9c7804-1f7d-43f7-b19a-fa7c2fff4569
-  port: 20230
-  server: jp007.421421.xyz
+  port: 11443
+  server: tls.01.node-for-bigairport.win
   skip-cert-verify: true
-  sni: 421421.xyz
-  tfo: false
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇯🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 23|🇵 JP_297
+  network: ws
+  port: 443
+  server: tls.84.node-for-bigairport.win
+  servername: tls.84.node-for-bigairport.win
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  ws-headers:
+    HOST: tls.84.node-for-bigairport.win
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 23|🇵 JP_298
+  network: tcp
+  port: 46484
+  server: jp05-vm0.entry.srthdw.art
+  skip-cert-verify: true
+  type: vmess
+  uuid: 65cdb2a2-ac65-3dc6-992d-a58b8cb996b9
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  country: 🇯🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 23|🇵JP_299
+  network: tcp
+  port: 21585
+  server: jp01-alt-vm0.entry.srthdw.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+- alterId: 1
+  cipher: auto
+  country: 🇯🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 23|🇯🇵JP_300
+  network: tcp
+  port: 21585
+  server: jp03-alt-vm0.entry.srthdw.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+- alterId: 1
+  cipher: auto
+  country: 🇯🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 23|🇯🇵JP_301
+  port: 444
+  server: 7gqt4-g01.jp04-3771-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
+- alterId: 1
+  cipher: auto
+  country: 🇯🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 23|🇯🇵JP_302
+  network: tcp
+  port: 21583
+  server: jp01-alt-vm0.entry.srthdw.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534
+- name: 29|JP日本(mibei77.com 米贝节点分享)
+  password: wb6368
+  port: 2083
+  server: 103.116.7.103
+  skip-cert-verify: true
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 32|❓_🇯🇵_💼_github.com/Ruk1ng001_39...
+  name: 32|🟡_🇯🇵_💼_github.com/Ruk1ng001_34...
   password: amazonskr05
   port: 443
-  server: 35.72.9.98
+  server: 18.181.198.147
   type: ss
 - cipher: aes-256-cfb
   name: 32|🟡_🇯🇵_💼_github.com/Ruk1ng001_36...
@@ -1884,16 +1447,10 @@ proxies:
   server: 3.112.1.95
   type: ss
 - cipher: aes-256-cfb
-  name: '32|🟡_🇯🇵_💼_github.com/Ruk1ng001_36... #1'
+  name: 32|❓_🇯🇵_💼_github.com/Ruk1ng001_39...
   password: amazonskr05
   port: 443
-  server: 54.238.247.32
-  type: ss
-- cipher: aes-256-cfb
-  name: 32|🟡_🇯🇵_💼_github.com/Ruk1ng001_63...
-  password: amazonskr05
-  port: 443
-  server: 3.112.216.127
+  server: 35.72.9.98
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 35|🇯🇵 0|🇯🇵日本 01 | 1x JP
@@ -1958,6 +1515,16 @@ proxies:
   tfo: false
   type: ss
 - alterId: 0
+  cipher: auto
+  delay: 1036
+  name: 36|日本 003
+  network: tcp
+  port: 48889
+  server: gy.youaremygod.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
+- alterId: 0
   cipher: none
   name: 41|11|11|11|11|11|11,16|日本|@ripao...
   network: tcp
@@ -1977,33 +1544,87 @@ proxies:
   tls: false
   type: vmess
   uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
-- name: 42|🇯🇵 _日本
-  password: wb6368
-  port: 2083
-  server: 103.116.7.103
+- name: 42|2|🇯🇵3 |  3.6MB/s
+  password: '!!str 3787016276694802432'
+  port: 443
+  server: apparent-blowfish.husky461.skin
   skip-cert-verify: true
-  sni: hsdgbuys.pages.dev
+  sni: apparent-blowfish.husky461.skin
   type: trojan
+- alterId: 1
+  cipher: auto
+  name: 42|2|🇯🇵5 |  4.5MB/s
+  network: tcp
+  port: '28783'
+  server: cfwkw-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
 - cipher: chacha20-ietf-poly1305
-  name: 45|0|  01 | 1x JP
-  password: 0e54e50f-76bf-4cb1-86e4-4ff81b1d4ef3
+  name: 45|0| 01 | 1x JP
+  password: 87a80f35-79bc-43f2-8f0f-1da51361850e
+  port: 31111
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|0|🇵日本 02 | 1x JP
+  password: 87a80f35-79bc-43f2-8f0f-1da51361850e
+  port: 31113
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|0|🇵日本 03 | 1x JP
+  password: 87a80f35-79bc-43f2-8f0f-1da51361850e
+  port: 31115
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|1|🇵 日本 01 | 1x JP
+  password: 4f034bf4-a9e4-4050-bda1-ac5151194571
   port: 36111
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|0|🇵 日本 02 | 1x JP
-  password: 0e54e50f-76bf-4cb1-86e4-4ff81b1d4ef3
+  name: 45|1|🇯🇵 日本 02 | 1x JP
+  password: 4f034bf4-a9e4-4050-bda1-ac5151194571
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|0|🇵 日本 03 | 1x JP
-  password: 0e54e50f-76bf-4cb1-86e4-4ff81b1d4ef3
+  name: 45|1|🇵 日本 03 | 1x JP
+  password: 4f034bf4-a9e4-4050-bda1-ac5151194571
   port: 36115
   server: free.2weradf.xyz
   type: ss
+  udp: true
+- name: 45|2|🇯🇵1 |  6.0MB/s
+  password: b2f95c69-59cd-3da9-8977-d8474b0e12d8
+  port: 20139
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z139.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 45|2|🇯🇵2 |  6.0MB/s
+  password: b2f95c69-59cd-3da9-8977-d8474b0e12d8
+  port: 20140
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z140.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 45|2|🇯🇵3 |  3.1MB/s
+  password: b2f95c69-59cd-3da9-8977-d8474b0e12d8
+  port: 54178
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x115.flybar.work
+  type: trojan
   udp: true
 - cipher: aes-256-gcm
   name: 51|JP_Ebara_Choopa_OpenAI_Claude1

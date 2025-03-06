@@ -55,16 +55,6 @@ proxies:
   uuid: be716768-37d8-46d4-ab04-49b7121262d0
 - alterId: 0
   cipher: auto
-  name: 14,15|法国1-1A
-  port: 45072
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 144ed7f2-1eb0-4d3f-be2b-37b7194705cf
-- alterId: 0
-  cipher: auto
   name: 14|法国2
   port: 45071
   server: xdd.dashuai.cyou
@@ -72,7 +62,37 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 144ed7f2-1eb0-4d3f-be2b-37b7194705cf
+  uuid: 086805b6-39eb-470e-b8de-70a4a80578f3
+- alterId: 0
+  cipher: auto
+  name: 14,15|法国1-1A
+  port: 45072
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 086805b6-39eb-470e-b8de-70a4a80578f3
+- alterId: 0
+  cipher: auto
+  name: 15|法国2-1B
+  port: 45071
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e407288e-1692-404b-b13b-50ff6cb992c8
+- alterId: 0
+  cipher: auto
+  name: 15|法国1-1B
+  port: 45072
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e407288e-1692-404b-b13b-50ff6cb992c8
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 21|🇫🇷 法国|PAR1
@@ -86,7 +106,7 @@ proxies:
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 23| FR_215
+  name: 23| FR_211
   network: ws
   port: 443
   server: 163.5.159.231
@@ -103,7 +123,24 @@ proxies:
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 23|🇷 FR_216
+  name: 23|🇷 FR_212
+  network: ws
+  port: 443
+  server: 146.19.168.161
+  servername: az05.beyondy.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-headers:
+    HOST: az05.beyondy.cfd
+  ws-path: /link
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 23|🇫🇷 FR_213
   network: ws
   port: 443
   server: 51.77.20.136
@@ -120,7 +157,7 @@ proxies:
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 23|🇫🇷 FR_217
+  name: 23|🇫🇷 FR_214
   network: ws
   port: 443
   server: 51.77.20.132
@@ -137,7 +174,24 @@ proxies:
   country: 🇫🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 23|🇫🇷 FR_218
+  name: 23|🇫🇷 FR_215
+  network: ws
+  port: 443
+  server: az05.beyondy.cfd
+  servername: az05.beyondy.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-headers:
+    HOST: az05.beyondy.cfd
+  ws-path: /link
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 23|🇷 FR_216
   network: ws
   port: 443
   server: 51.77.20.137
@@ -151,184 +205,198 @@ proxies:
   ws-path: /linkvws
 - cipher: aes-256-gcm
   country: 🇷FR
+  name: 23|🇫🇷FR_217
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_218
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
   name: 23|🇫🇷FR_219
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_220
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_221
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_222
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_223
   password: pKEW8JPByTVTLtM
   port: 4444
   server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 23|🇫🇷FR_224
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_225
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_226
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_227
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_228
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_229
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_230
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_231
-  password: e4FCWrgpkji3QY
-  port: 9102
-  server: 54.36.174.181
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_232
+  name: 23|🇫🇷FR_220
   password: cdBIDV42DCwnfIN
   port: 8119
-  server: 217.182.198.219
+  server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 23|🇫🇷FR_233
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_234
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_235
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 217.182.198.219
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_236
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_237
+  name: 23|🇫🇷FR_221
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 23|🇫🇷FR_238
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_239
+  name: 23|🇫🇷FR_222
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 23|🇫🇷FR_240
+  name: 23|🇫🇷FR_223
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_224
   password: XKFKl2rULjIp74
-  port: 8009
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_241
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_242
-  password: faBAoD54k87UJG7
-  port: 2376
+  port: 8008
   server: 54.36.174.181
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 23|🇫🇷FR_243
+  name: 23|🇫🇷FR_225
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_226
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_227
   password: pKEW8JPByTVTLtM
   port: 4444
   server: 145.239.6.202
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 23|🇫🇷FR_244
+  name: 23|🇫🇷FR_228
   password: faBAoD54k87UJG7
   port: 2375
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_229
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_230
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_231
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_232
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_233
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_234
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_235
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_236
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_237
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_238
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_239
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷FR
+  name: 23|🇫🇷FR_240
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.185.174
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_241
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 217.182.198.219
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_242
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 145.239.6.202
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_243
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 23|🇫🇷FR_244
+  password: XKFKl2rULjIp74
+  port: 8009
   server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
@@ -341,36 +409,36 @@ proxies:
 - cipher: aes-256-gcm
   country: 🇫🇷FR
   name: 23|🇫🇷FR_246
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 54.36.174.181
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 145.239.6.202
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
   name: 23|🇫🇷FR_247
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 149.202.82.172
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 145.239.6.202
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
   name: 23|🇫🇷FR_248
   password: Y6R9pAtvxxzmGC
   port: 3306
-  server: 217.182.198.219
+  server: 145.239.6.202
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
   name: 23|🇫🇷FR_249
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 149.202.82.172
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 145.239.6.202
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
   name: 23|🇫🇷FR_250
-  password: TEzjfAYq2IjtuoS
-  port: 6697
+  password: Y6R9pAtvxxzmGC
+  port: 5001
   server: 54.36.174.181
   type: ss
 - cipher: aes-256-gcm
@@ -378,66 +446,73 @@ proxies:
   name: 23|🇫🇷FR_251
   password: Y6R9pAtvxxzmGC
   port: 5000
-  server: 217.182.198.219
+  server: 145.239.6.202
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
   name: 23|🇫🇷FR_252
   password: PCnnH6SQSnfoS27
-  port: 8090
+  port: 8091
   server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
   name: 23|🇫🇷FR_253
-  password: Y6R9pAtvxxzmGC
-  port: 3389
+  password: RexnBgU7EV5ADxG
+  port: 7001
   server: 145.239.6.202
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
   name: 23|🇫🇷FR_254
-  password: FoOiGlkAA9yPEGP
-  port: 7306
+  password: cdBIDV42DCwnfIN
+  port: 8118
   server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
   name: 23|🇫🇷FR_255
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 149.202.82.172
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 54.36.174.181
   type: ss
 - cipher: aes-256-gcm
   country: 🇫🇷FR
   name: 23|🇫🇷FR_256
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 145.239.6.202
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷FR
-  name: 23|🇫🇷FR_257
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 195.154.185.174
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 23|🇫🇷FR_258
-  password: e4FCWrgpkji3QY
-  port: 9101
+  password: faBAoD54k87UJG7
+  port: 2376
   server: 217.182.198.219
   type: ss
-- name: 27,33|[Trojan] 🇫🇷 法国 国际航空电讯集团公司(SITA...
-  password: b44da489-fc70-4fd0-8997-a83b51f59267
-  port: 20230
-  server: jp008.421421.xyz
+- alterId: 0
+  cipher: auto
+  name: 27,33|[VMess] 🇫🇷 法国 国际航空电讯集团公司(SITA)
+  network: ws
+  port: 443
+  server: 57.129.24.141
   skip-cert-verify: true
-  sni: 421421.xyz
   tfo: false
-  type: trojan
+  tls: true
+  type: vmess
   udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 27,33|[VMess] 🇫🇷 法国 国际航空电讯集团公司(SITA)...
+  network: ws
+  port: 443
+  server: 57.128.184.127
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
 - cipher: aes-256-cfb
   name: 33|[SS] 🇫🇷 _FR_法国
   password: asdKkaskJKfnsa
@@ -460,6 +535,22 @@ proxies:
     headers:
       Host: food.zhaal.ir
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|法国 002
+  network: ws
+  port: 443
+  server: 51.77.20.136
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: capellare.com
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 42|VMESS-未知>法国-NF解锁法国地区非自制剧-ChatG...

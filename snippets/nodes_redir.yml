@@ -1,44 +1,24 @@
 proxies:
-- cipher: aes-256-cfb
+- ip-version: dual
+  name: '3,5|🇫🇷_FR_法国->🇺🇸_US_美国 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.236.167.194
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
   ip-version: dual
-  name: '3,5,38,39|🇺🇸_US_美国->🇧🇪_BE_比利时 #2'
-  password: amazonskr05
-  port: 443
-  server: 54.244.204.173
+  name: '3,5|🇺🇦_UA_乌克兰->🇺🇸_US_美国 #1'
+  password: d0fa3a9b-2115-4cc0-a8f5-7f4f7caf6ec1
+  port: 8080
+  server: 85.90.194.200
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: '3,5,39|🇨🇭_CH_瑞士->🇺🇸_US_美国 #2'
-  network: ws
-  port: 42634
-  server: 141.148.158.99
-  type: vmess
-  udp: true
-  uuid: 3c5350be-a97a-4ee6-9c50-7155f88aba01
-  ws-opts:
-    path: /https://t.me/fqzw9
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '3,5,18,39|🇸🇬_SG_新加坡->🇨🇳_CN_中国 #2'
-  password: amazonskr05
-  port: 443
-  server: 54.169.244.122
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '3,5,18,32,39|🇺🇸_US_美国->🇸🇬_SG_新加坡 #2'
-  password: amazonskr05
-  port: 443
-  server: 35.91.235.173
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: '3,5,28,38,39|🇺🇸_US_美国->🇩🇪_DE_德国 #2'
+  name: 3,5,28,32,38|🇺🇸_US_美国->🇷🇺_RU_俄罗斯
   network: ws
   port: 80
   server: 151.101.66.168
@@ -50,14 +30,49 @@ proxies:
     headers:
       host: amd.al
     path: /XESALISTHEBEST?ed=2048
-- ip-version: dual
-  name: '3,5,39|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.49.45.134
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: '3,5,18,49|🇺🇸_US_美国->🇬🇧_GB_英国_1 #2'
+  password: amazonskr05
+  port: 443
+  server: 34.222.44.5
+  tls: false
+  type: ss
   udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: '3,5,18,49|🇺🇸_US_美国->🇬🇧_GB_英国_3 #2'
+  password: amazonskr05
+  port: 443
+  server: 54.200.183.45
+  tls: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: '3,5,18,49|🇺🇸_US_美国->🇬🇧_GB_英国_2 #2'
+  password: amazonskr05
+  port: 443
+  server: 54.186.195.135
+  tls: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: '3,5|🇳🇱_NL_荷兰->🇺🇸_US_美国 #1'
+  network: ws
+  port: 2082
+  server: 45.142.120.190
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      host: yellow-paper-029c.yvonna.workers.dev
+    path: /az05.beyondy.cfd/link#
 - cipher: chacha20-ietf-poly1305
   name: 7|🇸🇬 新加坡中转 02
   password: b103d104-bff0-4cee-b42a-85dad07e2036
@@ -4003,6 +4018,73 @@ proxies:
     path: /mehdi
 - alterId: 0
   cipher: auto
+  name: 39|_CA_->🇺🇸_US_美国_1
+  network: ws
+  port: 8080
+  server: 23.227.38.11
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4a5ae806-ee72-473a-83b2-531808f454d5
+  ws-opts:
+    headers:
+      host: championship-bidding-oxygen-brochure.trycloudflare.com
+    path: 4a5ae806-ee72-473a-83b2-531808f454d5-vm
+- name: 39|🇨🇦_CA_加拿大->🇺🇸_US_美国_2
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /argox-tr
+- alterId: 0
+  cipher: auto
+  name: 39|🇺🇸_US_美国->_DE_国
+  network: ws
+  port: 8080
+  server: de-01.cloudlion.me
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
+  ws-opts:
+    headers:
+      host: de-01.cloudlion.me
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 39|🇪_AE_联->🇷_FR_国
+  network: ws
+  port: 8880
+  server: 94.140.0.110
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  ws-opts:
+    headers:
+      host: food.zhaal.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 39|🇸_US_美国->🇦_CA_加拿大
+  network: ws
+  port: 8080
+  server: fbi.gov
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 0a5903c5-0ff3-4d79-9420-2a966873f787
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: 0a5903c5-0ff3-4d79-9420-2a966873f787-vm
+- alterId: 0
+  cipher: auto
   name: 41|1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿...
   network: ws
   port: 2086
@@ -4100,12 +4182,13 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- cipher: auto
-  ip-version: dual
-  name: 49|🇨🇳_CN_中国->🇺🇸_US_美国
-  network: tcp
-  port: 15468
-  server: frtf.cokecloud.top
-  tls: false
-  type: vmess
-  uuid: baa572cf-3d43-41f3-8b3a-d3edb6797cd2
+- ip-version: dual
+  name: 49|🇨🇳_CN_中国->🇬🇧_GB_英国
+  password: e06739e1-5c25-32de-8fb7-95ce8e8f9576
+  port: 20295
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z295.hongkongnode.top
+  tls: true
+  type: trojan
+  udp: true

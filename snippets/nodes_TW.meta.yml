@@ -170,9 +170,16 @@ proxies:
   type: vmess
   udp: true
   uuid: 69beb37e-95a2-4ee5-8d99-69b08daf5670
+- name: 18|@MxlShare 台湾 | TWN 2
+  password: 9d1e4d09-35d2-3ff3-ae7c-91da66a4c60c
+  port: 42147
+  server: tw3.biyu763.xyz
+  sni: tw3.biyu763.xyz
+  type: trojan
+  udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 18,32,33,35,45,46|🇹🇼 台湾3|@ripaojiedian
+  name: 18,32,45,46|🇹🇼 台湾3|@ripaojiedian
   password: Y2U58S90E3GST1AQ
   port: 21001
   server: ti3hyra4.slashdevslashnetslashtun.net
@@ -181,23 +188,11 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 18,32,35,45,46|🇹🇼 台湾4|@ripaojiedian
+  name: 18,32,45,46|🇹🇼 台湾4|@ripaojiedian
   password: HQJQFA7U2Z5HGZWH
   port: 21003
   server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 18,32,35,45,46|🇹🇼 台湾2|@ripaojiedian
-  password: QF377GGQ00RATCMK
-  port: 21004
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  skip-cert-verify: true
-  tfo: false
-  tls: true
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -214,12 +209,40 @@ proxies:
   server: 183.61.177.172
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇹🇼1 |  2.5MB/s
-  password: 819497f8-68fd-42c9-a569-a1edba7167a9
-  port: 36241
-  server: free.2weradf.xyz
-  type: ss
+- cipher: chacha20-ietf
+  name: 18|@MxlShare 台湾 | TWN 7
+  obfs: http_simple
+  obfs-param: b4ff5202018.microsoft.com
+  password: lbNVOz
+  port: 7051
+  protocol: auth_aes128_md5
+  protocol-param: 202018:1FstQvihnBRscXZP
+  server: cname02a-a56xgycr7j4km32e.brahmin12.com
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 18,45,46|🇹🇼 台湾|@ripaojiedian
+  obfs: http_simple
+  obfs-param: b4ff5202018.microsoft.com
+  password: lbNVOz
+  port: 7051
+  protocol: auth_aes128_md5
+  protocol-param: 202018:1FstQvihnBRscXZP
+  server: cname02b-a56xgycr7j4km32e.bestgosht.com
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: 18,51|TW_Keelung_Chunghwa Telecom Co...
+  obfs: http_simple
+  obfs-param: b4ff5202018.microsoft.com
+  password: lbNVOz
+  port: 7005
+  protocol: auth_aes128_md5
+  protocol-param: 202018:1FstQvihnBRscXZP
+  server: cname02-a56xgycr7j4km32e.brahmin12.com
+  type: ssr
+  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 21|🇹🇼 台湾|TW01
@@ -237,41 +260,47 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 45|1| 01 | 1x TW
-  password: 7bd4636d-a9a2-4c53-bd90-1b8dfaf3451f
+  name: 45|0| 01 | 1x TW
+  password: 75ec7be5-d7e7-46e0-9678-57a6d3bea479
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|1|🇼台湾 02 | 1x TW
-  password: 7bd4636d-a9a2-4c53-bd90-1b8dfaf3451f
+  name: 45|0|🇼台湾 02 | 1x TW
+  password: 75ec7be5-d7e7-46e0-9678-57a6d3bea479
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|1|🇼台湾 03 | 1x TW
-  password: 7bd4636d-a9a2-4c53-bd90-1b8dfaf3451f
+  name: 45|0|🇼台湾 03 | 1x TW
+  password: 75ec7be5-d7e7-46e0-9678-57a6d3bea479
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|2|🇹🇼1 |  3.3MB/s
-  password: 48f858ba-bc55-42b9-b17f-750b8e592dea
+  name: 45|1|🇼 台湾 01 | 1x TW
+  password: bd7a927b-86e0-4080-a832-c2a0ffbad710
   port: 36241
   server: free.2weradf.xyz
   type: ss
-- client-fingerprint: chrome
-  name: 45,46|🇹🇼 台湾|@ripaojiedian
-  network: tcp
-  password: 9d5e41f7-3ae7-41d4-8560-6177f1c36b78
-  port: 10310
-  server: dest01.to.userver01.cc
-  skip-cert-verify: false
-  sni: www.tmall.com
-  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|1|🇹🇼 台湾 02 | 1x TW
+  password: bd7a927b-86e0-4080-a832-c2a0ffbad710
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|1|🇼 台湾 03 | 1x TW
+  password: bd7a927b-86e0-4080-a832-c2a0ffbad710
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 48,50|TW_speednode_0055
   password: f8f7aCzcPKbsF8p3
@@ -279,41 +308,3 @@ proxies:
   server: 154.223.20.79
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 51|TW_Chang-hua_Chunghwa Telecom ...
-  port: 63018
-  server: in06.xxxoooxxxooo.net
-  type: vmess
-  udp: true
-  uuid: 2ecc00a4-25c3-344e-ae6c-8872b9092e25
-- alterId: 0
-  cipher: auto
-  name: '51|TW_Chang-hua_Chunghwa Telecom ... #1'
-  port: 63018
-  server: in06.xxxoooxxxooo.net
-  type: vmess
-  udp: true
-  uuid: 26a934b4-d088-3cd6-88c2-11180ed1e53b
-- cipher: chacha20-ietf-poly1305
-  name: 51|TW_Taipei_Akari Networks_OpenA...
-  password: 09e86b59-c965-4051-a1ce-d24f53bd6f7c
-  port: 20093
-  server: viptw.nicenode.cc
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 51|TW_Xizhi District_Chunghwa Tel...
-  port: 63017
-  server: in06.xxxoooxxxooo.net
-  type: vmess
-  udp: true
-  uuid: 2ecc00a4-25c3-344e-ae6c-8872b9092e25
-- alterId: 0
-  cipher: auto
-  name: '51|TW_Xizhi District_Chunghwa Tel... #1'
-  port: 63017
-  server: in06.xxxoooxxxooo.net
-  type: vmess
-  udp: true
-  uuid: 26a934b4-d088-3cd6-88c2-11180ed1e53b

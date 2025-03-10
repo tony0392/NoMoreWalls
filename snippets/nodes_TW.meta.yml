@@ -170,25 +170,49 @@ proxies:
   type: vmess
   udp: true
   uuid: 69beb37e-95a2-4ee5-8d99-69b08daf5670
-- name: 18|@MxlShare 台湾 | TWN 2
-  password: 9d1e4d09-35d2-3ff3-ae7c-91da66a4c60c
-  port: 42147
-  server: tw3.biyu763.xyz
-  sni: tw3.biyu763.xyz
-  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  disable-sni: true
+  name: 18,19,32,45,46|🇹🇼 台湾2|@ripaojiedian
+  network: ws
+  port: 12883
+  server: gtm1.ktmwan.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 9207a3fc-18cc-4af7-ab1c-1c0000e57e37
+  ws-opts:
+    headers:
+      Host: gtm1.ktmwan.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 18,32|❓_🇨🇳_📶_github.com/Ruk1ng001_38...
+  network: ws
+  port: 40013
+  server: 183.236.51.21
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 09e71e3b-1f9f-44ab-9a10-02e0e10e2f05
+  ws-opts:
+    path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 18,32,45,46|🇹🇼 台湾3|@ripaojiedian
-  password: Y2U58S90E3GST1AQ
-  port: 21001
-  server: ti3hyra4.slashdevslashnetslashtun.net
+  name: 18,45,46|🇹🇼 台湾|@ripaojiedian
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+  port: 21115
+  server: okanc.node-is.green
   tfo: false
   type: ss
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 18,32,45,46|🇹🇼 台湾4|@ripaojiedian
+  name: 18,29,32,45,46|🇹🇼 台湾4|@ripaojiedian
   password: HQJQFA7U2Z5HGZWH
   port: 21003
   server: w72tapyb.slashdevslashnetslashtun.net
@@ -202,47 +226,34 @@ proxies:
   server: 183.61.177.234
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 18,32|github.com/Ruk1ng001_613736353...
-  password: QF377GGQ00RATCMK
-  port: 21004
-  server: 183.61.177.172
+- alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 18,29,32,33,45,46|🇹🇼 台湾3|@ripaojiedian
+  password: Y2U58S90E3GST1AQ
+  port: 21001
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: ss
   udp: true
-- cipher: chacha20-ietf
-  name: 18|@MxlShare 台湾 | TWN 7
-  obfs: http_simple
-  obfs-param: b4ff5202018.microsoft.com
-  password: lbNVOz
-  port: 7051
-  protocol: auth_aes128_md5
-  protocol-param: 202018:1FstQvihnBRscXZP
-  server: cname02a-a56xgycr7j4km32e.brahmin12.com
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 18,45,46|🇹🇼 台湾|@ripaojiedian
-  obfs: http_simple
-  obfs-param: b4ff5202018.microsoft.com
-  password: lbNVOz
-  port: 7051
-  protocol: auth_aes128_md5
-  protocol-param: 202018:1FstQvihnBRscXZP
-  server: cname02b-a56xgycr7j4km32e.bestgosht.com
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 18,51|TW_Keelung_Chunghwa Telecom Co...
-  obfs: http_simple
-  obfs-param: b4ff5202018.microsoft.com
-  password: lbNVOz
-  port: 7005
-  protocol: auth_aes128_md5
-  protocol-param: 202018:1FstQvihnBRscXZP
-  server: cname02-a56xgycr7j4km32e.brahmin12.com
-  type: ssr
-  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇹🇼1 |  4.6MB/s
+  password: b4dfd6fe-6a5f-4c85-a4ca-083f17da7be1
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+- client-fingerprint: chrome
+  name: 19|🇹🇼2 |  4.7MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: twmoon1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 21|🇹🇼 台湾|TW01
@@ -260,45 +271,45 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 45|0| 01 | 1x TW
-  password: 75ec7be5-d7e7-46e0-9678-57a6d3bea479
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|0|🇼台湾 02 | 1x TW
-  password: 75ec7be5-d7e7-46e0-9678-57a6d3bea479
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|0|🇼台湾 03 | 1x TW
-  password: 75ec7be5-d7e7-46e0-9678-57a6d3bea479
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|1|🇼 台湾 01 | 1x TW
-  password: bd7a927b-86e0-4080-a832-c2a0ffbad710
+  name: 45|0|  01 | 1x TW
+  password: 50325683-7f8f-4539-8a75-0c57d470e09a
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|1|🇹🇼 台湾 02 | 1x TW
-  password: bd7a927b-86e0-4080-a832-c2a0ffbad710
+  name: 45|0|🇼 台湾 02 | 1x TW
+  password: 50325683-7f8f-4539-8a75-0c57d470e09a
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|1|🇼 台湾 03 | 1x TW
-  password: bd7a927b-86e0-4080-a832-c2a0ffbad710
+  name: 45|0|🇼 台湾 03 | 1x TW
+  password: 50325683-7f8f-4539-8a75-0c57d470e09a
   port: 36245
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|2|🇼台湾 01 | 1x TW
+  password: e7be3dba-3079-4bc0-b0db-f60f3bffdd3f
+  port: 31241
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|2|🇹🇼台湾 02 | 1x TW
+  password: e7be3dba-3079-4bc0-b0db-f60f3bffdd3f
+  port: 31243
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|2|🇼台湾 03 | 1x TW
+  password: e7be3dba-3079-4bc0-b0db-f60f3bffdd3f
+  port: 31245
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -308,3 +319,13 @@ proxies:
   server: 154.223.20.79
   type: ss
   udp: true
+- cipher: chacha20-ietf
+  name: 51|TW_Keelung_Chunghwa Telecom Co...
+  obfs: http_simple
+  obfs-param: b4ff5202018.microsoft.com
+  password: lbNVOz
+  port: 7005
+  protocol: auth_aes128_md5
+  protocol-param: 202018:1FstQvihnBRscXZP
+  server: cname02-a56xgycr7j4km32e.brahmin12.com
+  type: ssr

@@ -42,71 +42,6 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: '10|🇹🇼 台湾2 #1'
-  port: 45077
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: be716768-37d8-46d4-ab04-49b7121262d0
-- cipher: chacha20-ietf-poly1305
-  name: '10|🇹🇼 台湾01 #1'
-  password: 17188151-86d6-4b50-bb1e-ffb43109c7fc
-  port: 47564
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '10|🇹🇼 台湾1 #1'
-  port: 45078
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: be716768-37d8-46d4-ab04-49b7121262d0
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇹🇼 TW 01 DUO
-  password: 333a425b-c159-4f38-8bb6-85d999f959f0
-  port: 34501
-  server: southvip1.pkyun.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 10|🇹🇼 台湾 IEPL专线NO3
-  port: 20016
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0387d93c-89e1-4753-8df2-bef645424e4a
-- alterId: 0
-  cipher: auto
-  name: 10|🇹🇼 台湾 IEPL专线NO1
-  port: 52103
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0387d93c-89e1-4753-8df2-bef645424e4a
-- cipher: chacha20-ietf-poly1305
-  name: 10|🇹🇼 台湾 1
-  password: 17188151-86d6-4b50-bb1e-ffb43109c7fc
-  port: 20032
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- name: 12|Taiwan Pro 1
-  password: '!!str 3648425794742788096'
-  port: 443
-  server: fine-worm.redbird832.xyz
-  skip-cert-verify: false
-  sni: fine-worm.redbird832.xyz
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
   name: 13|🇹🇼 No.951_TW_x0.50_GCP_Taiwan@...
   network: ws
   port: 8080
@@ -152,24 +87,55 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 15|台湾1-GPT
-  port: 45078
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 69beb37e-95a2-4ee5-8d99-69b08daf5670
-- alterId: 0
-  cipher: auto
-  name: 15|台湾2-GPT
+  name: 14,15|台湾2-1A-GPT
   port: 45077
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 69beb37e-95a2-4ee5-8d99-69b08daf5670
+  uuid: 44e981d4-d41c-4b83-a35e-8bd983393cd3
+- cipher: chacha20-ietf-poly1305
+  name: 14|台湾01
+  password: ac6a9d0a-f1a7-410a-a22b-c44afc6250d5
+  port: 47564
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 14|台湾1
+  port: 45078
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 44e981d4-d41c-4b83-a35e-8bd983393cd3
+- cipher: chacha20-ietf-poly1305
+  name: 14,15|台湾 1-1A
+  password: ac6a9d0a-f1a7-410a-a22b-c44afc6250d5
+  port: 20032
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|台湾 1-1B
+  password: 0d6d89ec-0f21-47a3-9c23-7ec5066444af
+  port: 20032
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 15|台湾2-1B-GPT
+  port: 45077
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f7018794-b0fa-46f9-a568-f31215f7bdba
 - cipher: aes-256-gcm
   name: 18|@MxlShare 台湾 | TWN
   password: KIH7OL63ASOPIICY
@@ -226,7 +192,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 18,45,46|🇹🇼 台湾|@ripaojiedian
+  name: 18,32,45,46|🇹🇼 台湾|@ripaojiedian
   password: KM16ID6XDW3XRC7K
   port: 21006
   server: qh62onjn.slashdevslashnetslashtun.net
@@ -234,12 +200,13 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 18,45,46|🇹🇼 台湾2|@ripaojiedian
+  name: 18,32,33,45,46|🇹🇼 台湾2|@ripaojiedian
   password: ECOQAU8O56QGBV28
   port: 21002
   server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
+  udp: true
 - alterId: 0
   cipher: aes-256-gcm
   client-fingerprint: chrome
@@ -254,34 +221,34 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 18,45,46|🇹🇼 台湾4|@ripaojiedian
+  name: 18,32,33,45,46|🇹🇼 台湾4|@ripaojiedian
   password: F7XGGN9MP0DGPLII
   port: 21007
   server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 18|@MxlShare 台湾 | TWN 14
+  name: 18,45|2|1- |  4.8MB/s
   network: ws
   port: 40013
   server: 183.236.51.21
   tls: false
   type: vmess
+  udp: true
   uuid: 09e71e3b-1f9f-44ab-9a10-02e0e10e2f05
   ws-opts:
     path: /
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 18,29,32|github.com/Ruk1ng001_323733363...
+  name: 18,29|US美国(mibei77.com 米贝节点分享) 27
   password: HQJQFA7U2Z5HGZWH
   port: 21003
   server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 18,32|github.com/Ruk1ng001_396335613...
+  name: 18|@MxlShare 台湾 | TWN 16
   password: HQJQFA7U2Z5HGZWH
   port: 21003
   server: 183.61.177.234
@@ -289,7 +256,7 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 18,29,32|github.com/Ruk1ng001_383438386...
+  name: 18,29,32|github.com/Ruk1ng001_343264633...
   password: Y2U58S90E3GST1AQ
   port: 21001
   server: ti3hyra4.slashdevslashnetslashtun.net
@@ -316,42 +283,42 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 45|0|  01 | 1x TW
-  password: 78f7b673-83a4-4395-9ae6-51239f0505e2
+  password: 1811ea8a-402f-4010-9916-be754143fee2
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|0|🇼 台湾 02 | 1x TW
-  password: 78f7b673-83a4-4395-9ae6-51239f0505e2
+  password: 1811ea8a-402f-4010-9916-be754143fee2
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|0|🇼 台湾 03 | 1x TW
-  password: 78f7b673-83a4-4395-9ae6-51239f0505e2
+  password: 1811ea8a-402f-4010-9916-be754143fee2
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|2|🇼台湾 01 | 1x TW
-  password: 5aaa2df6-e98e-49f9-97ab-2a1819f6f516
+  name: 45|1|🇼台湾 01 | 1x TW
+  password: 34beba20-7313-4b1f-b76e-cf001794d19d
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|2|🇹🇼台湾 02 | 1x TW
-  password: 5aaa2df6-e98e-49f9-97ab-2a1819f6f516
+  name: 45|1|🇹🇼台湾 02 | 1x TW
+  password: 34beba20-7313-4b1f-b76e-cf001794d19d
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|2|🇼台湾 03 | 1x TW
-  password: 5aaa2df6-e98e-49f9-97ab-2a1819f6f516
+  name: 45|1|🇼台湾 03 | 1x TW
+  password: 34beba20-7313-4b1f-b76e-cf001794d19d
   port: 31245
   server: free.2apzhfa.xyz
   type: ss

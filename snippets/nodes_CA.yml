@@ -49,7 +49,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 802570c3-fcb0-4225-ae9a-547f200c7787
+  uuid: bd42d33b-2d9c-4c61-a498-e477757a7531
 - alterId: 0
   cipher: auto
   name: 14,15|加拿大2-1A
@@ -59,36 +59,34 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 802570c3-fcb0-4225-ae9a-547f200c7787
-- cipher: chacha20-ietf-poly1305
-  name: 18|@MxlShare 加拿大 | CAN 2
-  password: 620c5b5108120a72
-  port: 11201
-  server: 23.162.56.206
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 18|@MxlShare 加拿大 | CAN 3
-  password: 3f97bf6f-beed-426b-8a3e-8b49ac5dbe71
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-- cipher: aes-128-gcm
-  name: 18|@MxlShare 加拿大 | CAN 4
-  password: 2c8cfc48-c211-4973-bc95-9d532ac42c35
-  port: 12045
-  server: mdss-other.04z3susick.download
-  type: ss
+  uuid: bd42d33b-2d9c-4c61-a498-e477757a7531
 - alterId: 0
   cipher: auto
-  name: 18|@MxlShare 加拿大 | CAN 5
+  name: 15|加拿大2-1B
+  port: 45065
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ff3c8e0d-e292-43d9-9768-813334afb4f4
+- alterId: 0
+  cipher: auto
+  name: 18|@MxlShare 加拿大 | CAN 2
   network: ws
-  port: 20015
+  port: 20016
   server: 141.195.112.53
   tls: false
   type: vmess
-  uuid: 281927a3-e031-4154-988d-71dc4e37b957
+  uuid: 363d0358-29c1-4319-9210-1b335b171501
   ws-opts:
     path: /
+- cipher: aes-128-gcm
+  name: 18|@MxlShare 加拿大 | CAN 4
+  password: 3946ff88-2d5c-4cb4-b06b-3375d90a6a6b
+  port: 12045
+  server: mdss-other.04z3susick.download
+  type: ss
 - cipher: aes-256-cfb
   name: 20|🇨🇦 CA, Vancouver
   password: amazonskr05
@@ -108,7 +106,7 @@ proxies:
   country: 🇦 CA
   h2-opts: {}
   http-opts: {}
-  name: 23|🇦 CA_189
+  name: 23|🇦 CA_191
   network: ws
   port: 443
   server: 68.168.31.196
@@ -122,20 +120,11 @@ proxies:
   ws-path: /linkvws
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 23|🇦CA_190
+  name: 23|🇦CA_192
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
-- name: 27,33|[Trojan] 🇨🇦 加拿大 V2CROSS.COM
-  password: '!!str 74260716866785000'
-  port: 443
-  server: hardy-haddock.shiner427.skin
-  skip-cert-verify: true
-  sni: hardy-haddock.shiner427.skin
-  tfo: false
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 33|[VMess] 🇨🇦 _CA_加拿大
@@ -152,14 +141,14 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 35|🇨🇦 0|🇨🇦加拿大 01 | 1x CA
-  password: ca3cf30e-ff18-40d6-b0fd-9bbd337cc207
+  password: f8a5dfeb-e3e6-4b8d-bc5f-e4bebffe4516
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 35|🇨🇦 1|🇨🇦 加拿大 01 | 1x CA
-  password: 1cb63334-18b6-4765-a4cd-a8d3887ac2dc
+  name: 35|🇨🇦 14|🇨🇦 加拿大 01 | 1x CA
+  password: 3c507612-41ea-4ff4-a6d0-83c07480a53a
   port: 36441
   server: free.2weradf.xyz
   type: ss
@@ -195,6 +184,22 @@ proxies:
     headers:
       Host: 100-128-12-180.s4.db-link02.top
     path: /dabai.in104.25.239.131
+- alterId: 0
+  cipher: auto
+  name: 36|加拿大 003
+  network: ws
+  port: 8080
+  server: 104.16.155.10
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-149-191-2.s5.db-link02.top
+    path: /dabai.in104.20.16.209
 - alterId: 0
   cipher: auto
   name: 36|加拿大 004
@@ -269,22 +274,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|加拿大 010
-  network: ws
-  port: 2095
-  server: s4.db-link02.top
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-187-244-205.s4.db-link02.top
-    path: /dabai.in104.19.97.91
-- alterId: 0
-  cipher: auto
   delay: 2329
   name: 36|加拿大 012
   network: ws
@@ -344,16 +333,24 @@ proxies:
     headers:
       Host: 68.168.31.196
     path: /linkvws
+- name: 37|V1-加拿大-IPv6
+  password: 0d9ccc89-59cc-4600-a24d-26dd3a72b003
+  port: 46013
+  server: 66d53a1ffbeaab727a4652d5ecf93321.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: ca1.bilibili.com
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|0|🇦加大 01 | 1x CA
-  password: 7a973c52-ce58-426d-9505-21fe0f5d0c22
+  password: e154e3ec-34ea-4152-84f9-e1cf05f6dfaf
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|1|🇦 加拿大 01 | 1x CA
-  password: 94bef836-5610-4536-844a-a35fcac9fb5f
+  name: 45|2|🇦 加拿大 01 | 1x CA
+  password: 40dc014c-8ba0-46c4-ac88-d880037d1c0a
   port: 36441
   server: free.2weradf.xyz
   type: ss

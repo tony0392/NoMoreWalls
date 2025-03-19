@@ -94,17 +94,52 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 6516b391-328a-419b-97fd-e4a6d1521c74
+  uuid: 40d6d6f8-c63e-4ccc-b71c-a6534337bdab
+- cipher: chacha20-ietf-poly1305
+  name: 14|台湾 1-1A
+  password: fa4c0dca-f094-40ef-8b39-ce4d2e40fd01
+  port: 20032
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|台湾01-1A
+  password: fa4c0dca-f094-40ef-8b39-ce4d2e40fd01
+  port: 47564
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '14,15|台湾 1-1A #1'
+  password: a001ae60-4ad4-4747-942a-4f7077cb9758
+  port: 20032
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 14,15|台湾1-1A-GPT
+  name: 14|台湾1
   port: 45078
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 6516b391-328a-419b-97fd-e4a6d1521c74
+  uuid: 40d6d6f8-c63e-4ccc-b71c-a6534337bdab
+- cipher: chacha20-ietf-poly1305
+  name: '14,15|台湾01-1A #1'
+  password: a001ae60-4ad4-4747-942a-4f7077cb9758
+  port: 47564
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 15|台湾 1-1C
+  password: d6e30c7c-0f20-435a-a32a-c7dde420f7ce
+  port: 20032
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 15|台湾2-1B-GPT
@@ -114,10 +149,10 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 277a225b-f4b9-4f8a-b040-77b4237d1f20
+  uuid: 7e5cc45a-05c6-4eab-9e1b-ee837f49fa68
 - cipher: chacha20-ietf-poly1305
-  name: 15|台湾01
-  password: fa4c0dca-f094-40ef-8b39-ce4d2e40fd01
+  name: 15|台湾01-1C
+  password: d6e30c7c-0f20-435a-a32a-c7dde420f7ce
   port: 47564
   server: gy.666666222.shop
   type: ss
@@ -131,24 +166,56 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 277a225b-f4b9-4f8a-b040-77b4237d1f20
+  uuid: 7e5cc45a-05c6-4eab-9e1b-ee837f49fa68
 - cipher: aes-256-gcm
-  name: 18,32|github.com/Ruk1ng001_646166323...
-  password: 84HMRAWILKB49QUZ
-  port: 18002
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  type: ss
-- cipher: aes-256-gcm
-  name: 18|@MxlShare 台湾 | TWN 2
-  password: 291V7ZTGW8OLNSQ1
+  name: 18|@MxlShare 台湾 | TWN
+  password: SAL3MFN3ZS6KE6UA
   port: 21002
   server: ti3hyra4.slashdevslashnetslashtun.net
   type: ss
+- name: 18|@MxlShare 台湾 | TWN 2
+  password: 0979046d-90cc-4f58-9595-75ba19550d1c
+  port: 27201
+  server: aafrtpfxr.twl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- alterId: 64
+  cipher: auto
+  name: 18|@MxlShare 台湾 | TWN 3
+  port: 50002
+  server: 112.132.215.12
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 2
+  cipher: auto
+  name: 18|@MxlShare 台湾 | TWN 4
+  network: ws
+  port: 22642
+  server: tk.hzlt.tkddns.xyz
+  tls: true
+  type: vmess
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: tk.hzlt.tkddns.xyz
+    path: /
 - cipher: aes-256-gcm
-  name: 18,32|github.com/Ruk1ng001_623239633...
-  password: P55GCW0YZWPAAPFQ
+  client-fingerprint: chrome
+  name: 18,33,45,46|🇹🇼 台湾2|@ripaojiedian
+  password: XQE0LHCL1YBGOG3L
+  port: 21004
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 18,45,46|🇹🇼 台湾3|@ripaojiedian
+  password: 2RAU7DLUZ84KYQDW
   port: 21006
   server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
   type: ss
 - cipher: aes-256-gcm
   name: 18,32|github.com/Ruk1ng001_366262373...
@@ -156,35 +223,6 @@ proxies:
   port: 21002
   server: qh62onjn.slashdevslashnetslashtun.net
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 18,32,35,45,46|🇹🇼 台湾|@ripaojiedian
-  password: KM16ID6XDW3XRC7K
-  port: 21006
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-  udp: true
-- name: 18|@MxlShare 台湾 | TWN 6
-  password: 7pE3OSjFe9xFey8YyCgaIaz3Zu2CORpananc34DRlgSyO83XTyNjC4xAIue30YKFCCDlx
-  port: 443
-  server: sohtsa.taiwanesefood.link
-  skip-cert-verify: true
-  sni: sohtsa.taiwanesefood.link
-  type: trojan
-- name: 18,32|github.com/Ruk1ng001_353130363...
-  password: ZZKC9RDCeClE87u3D0NZ3xSRgAD8B3aSI3YOaDjFjR2aTqy6enpS6Fw4Y3unXpK9aAgAz
-  port: 28332
-  server: levuior.taiwanesefood.link
-  type: trojan
-- alterId: 64
-  cipher: auto
-  name: 18|@MxlShare 台湾 | TWN 8
-  port: 50002
-  server: 112.132.215.12
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 21|🇹🇼 台湾|TW01
@@ -201,48 +239,20 @@ proxies:
   server: 1w91dj53mb3tjunfqy7q3bdu1fo0sged.08.02.tw.6l6.site
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 45|2|  01 | 1x TW
-  password: 9f2d6fd0-db37-48e5-a40e-b2cbab84c61c
-  port: 36241
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|2|🇼 台湾 02 | 1x TW
-  password: 9f2d6fd0-db37-48e5-a40e-b2cbab84c61c
-  port: 36243
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|2|🇼 台湾 03 | 1x TW
-  password: 9f2d6fd0-db37-48e5-a40e-b2cbab84c61c
-  port: 36245
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 45,46|🇹🇼 台湾2|@ripaojiedian
-  port: 11112
-  server: bgp1.bgp1.miaomiaowu114514.org
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 035374e8-60ff-34b3-9e7a-cca4cce31013
-- alterId: 0
-  cipher: auto
-  name: 45|13|台湾2|@ripaojiedian
-  network: tcp
-  port: '11112'
-  server: bgp1.bgp1.miaomiaowu114514.org
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 035374e8-60ff-34b3-9e7a-cca4cce31013
+- name: '42|2|🇹🇼1 |  3.3MB/s #1'
+  password: 93e7a8d5-c477-3ef2-8056-307a6e766b5a
+  port: 21247
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x91.flybar.work
+  type: trojan
+- name: '42|2|🇹🇼2 |  6.1MB/s #1'
+  password: 93e7a8d5-c477-3ef2-8056-307a6e766b5a
+  port: 36821
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z262.hongkongnode.top
+  type: trojan
 - cipher: aes-256-cfb
   name: 48,50|TW_speednode_0055
   password: f8f7aCzcPKbsF8p3

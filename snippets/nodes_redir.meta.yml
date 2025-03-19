@@ -1,69 +1,37 @@
 proxies:
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   ip-version: dual
-  name: '3,5|🇷🇺_RU_俄罗斯->🇺🇸_US_美国 #1'
-  network: ws
-  port: 2095
-  server: 185.174.138.209
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      host: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link?/TM
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: '3,5|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
-  network: tcp
-  port: 30302
-  server: 183.236.51.38
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: '3,5|🇳🇱_NL_荷兰->🇺🇸_US_美国 #1'
-  network: ws
-  port: 2082
-  server: 45.142.120.190
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      host: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link#
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '3,5,18,51|US_Portland_Amazon.com, Inc._O... #9'
-  password: amazonskr05
-  port: 443
-  server: 54.202.63.169
+  name: '3,5|🇯🇴_JO_约旦->🇺🇸_US_美国 #1'
+  password: 1a17c1f74cdc51d5
+  port: 40006
+  server: 91.106.109.17
   type: ss
   udp: true
+- ip-version: dual
+  name: '3,5,18,42|2|🇺🇸7 |  1.3MB/s #1'
+  password: 6COpljDaSNl2wy8BaFCK3FncI4yOYAZYxRZAxe3uCaDqS3R8ezD0T9g357pESX
+  port: 443
+  server: privacy.taiwanesefood.link
+  skip-cert-verify: false
+  sni: privacy.taiwanesefood.link
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: '3,5,28,30,38,49|🇨🇭_CH_瑞士->🇨🇳_CN_中国 #2'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 84.17.53.160
+  name: '3,5,28,30,32|🟡_🇺🇸_💼_github.com/Ruk1ng001_31... #1'
+  password: amazonskr05
+  port: 443
+  server: 54.218.61.43
   tls: false
   type: ss
   udp: true
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
+  country: 🇵🇱 PL
   ip-version: dual
-  name: '3,5|🇬🇧_GB_英国->🇦🇹_AT_奥地利 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.23.63
+  name: 3,5,18,23,32|🟡_🇵🇱_📶_github.com/Ruk1ng001_34...
+  password: a0665971fb6fd5ed
+  port: 11202
+  server: 151.115.43.27
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -3674,39 +3642,15 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
-- cipher: aes-256-cfb
+- cipher: aes-256-gcm
   ip-version: dual
-  name: '30,51|US_Portland_Amazon.com, Inc._O... #3'
-  password: amazonskr05
-  port: 443
-  server: 35.92.145.143
+  name: '28,30|_CN_国->🇺🇸_US_美国 #1'
+  password: 54SY1SP5HU73E00Z
+  port: 17001
+  server: ti3hyra4.slashdevslashnetslashtun.net
   tls: false
   type: ss
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 30|🇺🇸_US_美国->🇨🇳_CN_中国_2
-  password: amazonskr05
-  port: 443
-  server: 18.237.73.216
-  tls: false
-  type: ss
-- cipher: auto
-  ip-version: dual
-  name: 30|🇨_CN_中国->🇸_US_美国
-  network: tcp
-  port: 41699
-  server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 30|🇺🇸_US_美国->🇨🇳_CN_中国_3
-  password: amazonskr05
-  port: 443
-  server: 34.217.100.159
-  tls: false
-  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 33|[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国
@@ -3859,21 +3803,74 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
-- ip-version: dual
-  name: 38,49|🇺🇸_US_美国->🇯🇵_JP_日本
-  network: ws
-  password: 85950277-f447-48f0-9ead-aaf6d5ff3cad
+- cipher: aes-256-gcm
+  name: 38|_US_国->🇨🇳_CN_中国
+  password: 1MD7Y1HE8FFHAB0N
+  port: 19008
+  server: 206.245.211.18
+  type: ss
+- name: 38|🇺🇸_US_美国->🇨🇳_CN_中国_1
+  password: gyDw5KSa9D4ReNSYxnI8Z6zO8llAA53CFRKpCjpx6YjRDlwF3aeX3Oa2DCA37BeTzygaI
   port: 443
-  server: 104.21.34.159
-  skip-cert-verify: false
-  sni: df6xxxx.2031.pp.ua
-  tls: true
+  server: product.wireshop.net
+  sni: product.wireshop.net
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: df6xxxx.2031.pp.ua
-    path: /I4L1BP2DQVYmx5NYQ76MGGq
+- cipher: aes-256-gcm
+  name: 38|_IT_->🇨🇳_CN_中国
+  password: 9F2G2EP8ET1PL6Q5
+  port: 20029
+  server: 185.213.20.36
+  type: ss
+- name: 38|🇺🇸_US_美国->🇨🇳_CN_中国_2
+  network: tcp
+  password: 6d0a7f2f-c26c-466a-8f90-d6630ba97928
+  port: 443
+  server: 137.184.120.86
+  skip-cert-verify: true
+  sni: 829D7BDE-64B9-E759-C661-78BC73E582A0.1c2871ba-6025-61e2-e87f-a5c9e0ac8c1d.9d8f269f96b25232-759cbb36d6548597.kaufen
+  type: trojan
+- name: 38|🇺🇸_US_美国->_KR_国
+  password: 9FC33glcaEeYYTnOqOS9DOZgBZ5CDazy33SCS2j4Cz36A7AIN88uaKRx5xDyR8pxu3x4D
+  port: 28332
+  server: closet.homeofbrave.net
+  sni: closet.homeofbrave.net
+  type: trojan
+- cipher: aes-256-gcm
+  name: 38|_GB_国->🇰🇷_KR_韩国
+  password: NP5SL4R12N0ABTMJ
+  port: 20025
+  server: 185.186.77.137
+  type: ss
+- name: 38|🇬🇧_GB_英国->🇳_CN_中国
+  password: RDY3RCBe82XylFcyOaa8CKl8Aga0YSSy9ZBFSZYuq3nDjI0OaEwZDn3Ap6pSTaxOxORDe
+  port: 443
+  server: coliseum.coffeekit.net
+  sni: coliseum.coffeekit.net
+  type: trojan
+- cipher: aes-256-gcm
+  name: 38|🇺🇸_US_美国->🇸_ES_
+  password: 55N09NCXWEH7GQMF
+  port: 19015
+  server: 206.245.211.25
+  type: ss
+- name: 38|🇸_US_美国->🇰🇷_KR_韩国_1
+  password: 8cwxYqlSeC4Xw8KOApT3SxCIX69eZ7zBNZDE0Dap3y9AZTFBFlD5a2euA7A3YzR2DpSyI
+  port: 443
+  server: 154.17.21.41
+  sni: bedsheet.homeofbrave.net
+  type: trojan
+- name: 38|🇺🇸_US_美国->🇬_SG_
+  password: ZI3OeTA9Clx3AFS78DejwENjaZAa3FSwSluxY3EOClyycDqyzpYD0a6DI2eS28q7X3NpC
+  port: 28334
+  server: aluminum.wireshop.net
+  sni: aluminum.wireshop.net
+  type: trojan
+- name: 38|🇺🇸_US_美国->🇸🇬_SG_新加坡_1
+  password: ZS9yA0YxpC6X3aDj88YAy5l3KS4FwCcy3DCDR3F322DOS3BRO7N3nFOxEKxSY6Ky3aXCNSxAEAaNnl4
+  port: 443
+  server: dilmun.starspace.link
+  sni: dilmun.starspace.link
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 41|1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿...
@@ -3973,3 +3970,90 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
+- cipher: auto
+  ip-version: dual
+  name: 49|🇺🇸_US_美国->🇨🇦_CA_加拿大_1
+  network: ws
+  port: 8080
+  server: 162.159.1.33
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
+- grpc-opts:
+    grpc-service-name: lK1wclmJRbMxj4FxIzvwxUDoX
+  ip-version: dual
+  name: 49|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
+  network: grpc
+  password: 4db45bb4-dcca-4d37-a639-cb55213ee406
+  port: 2096
+  server: 172.67.132.6
+  skip-cert-verify: true
+  sni: channel.v2bamdad.tech
+  tls: true
+  type: trojan
+  udp: true
+- cipher: auto
+  ip-version: dual
+  name: 49|🇺🇸_US_美国->🇨🇦_CA_加拿大_2
+  network: ws
+  port: 8080
+  server: 162.159.137.249
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
+- cipher: auto
+  ip-version: dual
+  name: 49|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
+  network: ws
+  port: 8880
+  server: 94.140.0.110
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+- ip-version: dual
+  name: 49|🇨🇦_CA_加拿大->🇺🇸_US_美国
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers: {}
+    path: /argox-tr
+- cipher: auto
+  ip-version: dual
+  name: 49|🇺🇸_US_美国->🇨🇦_CA_加拿大_3
+  network: ws
+  port: 8080
+  server: yh3.freeh1.xyz
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
+- cipher: auto
+  ip-version: dual
+  name: 49|🇺🇸_US_美国->🇨🇦_CA_加拿大_4
+  network: ws
+  port: 8080
+  server: 162.159.5.6
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
+- ip-version: dual
+  name: 49|🇬🇧_GB_英国->🇰🇿_KZ_哈萨克斯坦
+  network: tcp
+  password: c2c76420-257f-492a-b20f-6560f3bfa78d
+  port: 443
+  server: kz.mjt000.com
+  skip-cert-verify: true
+  tls: false
+  type: trojan
+  udp: true

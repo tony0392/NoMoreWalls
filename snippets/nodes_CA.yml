@@ -1,4 +1,12 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 3,5,32|🟡_🇺🇸_💻_github.com/Ruk1ng001_65...
+  password: 7bbb0021ab931024
+  port: 11202
+  server: 67.220.67.59
+  type: ss
+  udp: true
 - name: 6|🇨🇦 加拿大
   password: 64f4f8e7-cf41-4e53-b123-5e8e9f27defa
   port: 50121
@@ -42,16 +50,6 @@ proxies:
     path: /xyz
 - alterId: 0
   cipher: auto
-  name: 14,15|加拿大2-1A
-  port: 45065
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6516b391-328a-419b-97fd-e4a6d1521c74
-- alterId: 0
-  cipher: auto
   name: 14,15|加拿大1-1A
   port: 45064
   server: haa.dashuai.cyou
@@ -59,7 +57,27 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 6516b391-328a-419b-97fd-e4a6d1521c74
+  uuid: 40d6d6f8-c63e-4ccc-b71c-a6534337bdab
+- alterId: 0
+  cipher: auto
+  name: 14,15|加拿大2-1A
+  port: 45065
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 40d6d6f8-c63e-4ccc-b71c-a6534337bdab
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大1-1B
+  port: 45064
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7e5cc45a-05c6-4eab-9e1b-ee837f49fa68
 - alterId: 0
   cipher: auto
   name: 15|加拿大2-1B
@@ -69,15 +87,13 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 277a225b-f4b9-4f8a-b040-77b4237d1f20
-- cipher: aes-256-gcm
-  country: 🇷FR
-  delay: 919
-  name: 19,32,45|1|🇦1 |  2.1MB/s
-  password: 3DYJXCU98P1M9B5A
-  port: 20036
-  server: 185.237.185.77
-  type: ss
+  uuid: 7e5cc45a-05c6-4eab-9e1b-ee837f49fa68
+- name: 18|@MxlShare 加拿大 | CAN
+  password: 0979046d-90cc-4f58-9595-75ba19550d1c
+  port: 34016
+  server: aafrtpfxr.cal01i9zjfegelp.5xfsur8v62.gosdk.xyz
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - cipher: aes-256-cfb
   name: 20|🇨🇦 CA, Vancouver
   password: amazonskr05
@@ -97,7 +113,7 @@ proxies:
   country: 🇦 CA
   h2-opts: {}
   http-opts: {}
-  name: 23|🇦 CA_185
+  name: 23|🇦 CA_191
   network: ws
   port: 443
   server: 68.168.31.196
@@ -111,7 +127,7 @@ proxies:
   ws-path: /linkvws
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 23|🇨🇦CA_186
+  name: 23|🇨🇦CA_192
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
@@ -130,20 +146,6 @@ proxies:
   uuid: 474e8680-701f-11ee-b436-205c6d5f5d78
   ws-opts:
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 35|🇨🇦 0|🇨🇦 加拿大 01 | 1x CA
-  password: 09db0c0c-e47f-4f30-b16a-1d47500249bc
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 35|🇨🇦 2|🇨🇦加拿大 01 | 1x CA
-  password: 30dfe42f-4227-4853-aff2-9eaad1965bd3
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   delay: 1166
@@ -206,10 +208,12 @@ proxies:
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: 36|加拿大 007
+  name: '36,42|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T... #1'
   network: ws
   port: 80
   server: 51.79.103.76
+  servername: ''
+  tls: false
   type: vmess
   udp: true
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -249,22 +253,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|加拿大 010
-  network: ws
-  port: 2095
-  server: s4.db-link02.top
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-187-244-205.s4.db-link02.top
-    path: /dabai.in104.19.97.91
-- alterId: 0
-  cipher: auto
   delay: 2329
   name: 36|加拿大 012
   network: ws
@@ -294,22 +282,6 @@ proxies:
     path: /dabai.in172.64.8.26
 - alterId: 0
   cipher: auto
-  name: 36|加拿大 014
-  network: ws
-  port: 8880
-  server: s1.db-link01.top
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-250-32-53.s1.db-link01.top
-    path: /dabai.in172.67.95.35
-- alterId: 0
-  cipher: auto
   name: 36|加拿大 015
   network: ws
   port: 443
@@ -324,10 +296,67 @@ proxies:
     headers:
       Host: 68.168.31.196
     path: /linkvws
-- cipher: chacha20-ietf-poly1305
-  name: 45|2|🇦 加大 01 | 1x CA
-  password: 9f2d6fd0-db37-48e5-a40e-b2cbab84c61c
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 42|VMESS-加拿大-NF解锁加拿大自制剧-ChatGPT-T...
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: 51.79.102.253
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- cipher: auto
+  ip-version: dual
+  name: 49|🇨🇦_CA_加拿大_1
+  network: ws
+  port: 8080
+  server: 23.227.39.24
+  tls: false
+  type: vmess
   udp: true
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
+- cipher: auto
+  ip-version: dual
+  name: 49|🇨🇦_CA_加拿大_2
+  network: ws
+  port: 8080
+  server: 23.227.38.22
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
+- cipher: auto
+  ip-version: dual
+  name: 49|🇨🇦_CA_加拿大_3
+  network: ws
+  port: 8080
+  server: 108.181.23.161
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
+- cipher: auto
+  ip-version: dual
+  name: 49|🇨🇦_CA_加拿大_4
+  network: http
+  port: 3389
+  server: 134.122.41.160
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+- cipher: auto
+  ip-version: dual
+  name: 49|🇨🇦_CA_加拿大_5
+  network: ws
+  port: 8080
+  server: 23.227.38.23
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b

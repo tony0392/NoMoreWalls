@@ -221,30 +221,40 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- cipher: chacha20-ietf-poly1305
+  name: 14|香港01
+  password: 2bb7d303-9e8c-4dac-8c53-94709860b010
+  port: 34338
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|香港03
+  password: 2bb7d303-9e8c-4dac-8c53-94709860b010
+  port: 20052
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 14|香港NO.2
+  name: 14,15|香港NO.2-1A-GPT
   port: 45051
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: da61d68d-d45b-4f3a-80b0-bdcd844c35bf
-- cipher: chacha20-ietf-poly1305
-  name: 14|香港01
-  password: 3e534a07-19e2-40f0-ad4b-ee4dc5556313
-  port: 34338
-  server: gy.666666222.shop
-  type: ss
+  uuid: 9aaca81a-0816-432b-b180-6944e0bfbb00
+- alterId: 0
+  cipher: auto
+  name: 14,15|香港NO.1-1A-GPT
+  port: 45050
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|香港02
-  password: 3e534a07-19e2-40f0-ad4b-ee4dc5556313
-  port: 20035
-  server: gy.666666222.shop
-  type: ss
-  udp: true
+  uuid: 9aaca81a-0816-432b-b180-6944e0bfbb00
 - alterId: 0
   cipher: auto
   name: 14,15|香港-1A
@@ -254,24 +264,24 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: da61d68d-d45b-4f3a-80b0-bdcd844c35bf
+  uuid: 9aaca81a-0816-432b-b180-6944e0bfbb00
+- cipher: chacha20-ietf-poly1305
+  name: 14|香港02
+  password: 2bb7d303-9e8c-4dac-8c53-94709860b010
+  port: 20035
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 14,15|香港NO.1-1A
-  port: 45050
-  server: haa.dashuai.cyou
+  name: 15|香港NO.2-1B-GPT
+  port: 45051
+  server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: da61d68d-d45b-4f3a-80b0-bdcd844c35bf
-- cipher: chacha20-ietf-poly1305
-  name: 14|香港03
-  password: 3e534a07-19e2-40f0-ad4b-ee4dc5556313
-  port: 20052
-  server: gy.666666222.shop
-  type: ss
-  udp: true
+  uuid: 339b7510-54e8-49ba-b405-c5840ddfeecb
 - alterId: 0
   cipher: auto
   name: 15|香港NO.1-1B-GPT
@@ -281,7 +291,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 30455d58-13ed-4ecc-b628-4a235024cbf4
+  uuid: 339b7510-54e8-49ba-b405-c5840ddfeecb
 - alterId: 0
   cipher: auto
   name: 17|HK | 香港 LB-1V
@@ -808,7 +818,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 18,22,32|github.com/Ruk1ng001_353035613...
+  name: 18,32|github.com/Ruk1ng001_353035613...
   password: 630a9504-13b7-4c32-885c-3332bab95df3
   port: 49709
   server: jg647hf446ghvw.gym0boy.com
@@ -832,14 +842,48 @@ proxies:
   server: aafrtpfxr.hkl02i9zjfegelp.5xfsur8v62.gosdk.xyz
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: 19|🇭🇰1 |  6.2MB/s
-  password: 05e82148-0869-3dcb-9d78-df6225c8b372
-  port: 20278
+- alterId: 0
+  cipher: auto
+  name: '19,42|_中国 #12'
+  network: tcp
+  port: '55754'
+  server: 183.236.51.38
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.38
+  ws-path: /
+- name: 19|🇭🇰4 |  6.0MB/s
+  password: 33003801-8cb0-32da-af43-032cd5e944fa
+  port: 20294
   server: gy.58n.net
   skip-cert-verify: true
-  sni: z278.hongkongnode.top
+  sni: z294.hongkongnode.top
   type: trojan
   udp: true
+- name: 19|🇭🇰5 |  6.3MB/s
+  password: 33003801-8cb0-32da-af43-032cd5e944fa
+  port: 20279
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z279.hongkongnode.top
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '19,42|_中国 #20'
+  network: tcp
+  port: '34093'
+  server: 120.198.71.214
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.198.71.214
+  ws-path: /
 - cipher: aes-256-cfb
   name: 20|🇭🇰 HK, Kowloon
   password: amazonskr05
@@ -925,53 +969,53 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG
+  name: '22,32|❓_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001... #1'
   network: ws
-  port: 23023
+  port: 23025
   server: 212.192.13.68
   tls: false
   type: vmess
   udp: true
-  uuid: f633e2a3-f66a-4776-bed3-6496e09e646b
+  uuid: 8408ac03-4774-4807-aa10-c21a5474757f
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 2
+  name: 22|🇭🇰 香港 | HKG 4
   network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 76fe7977-788f-4f21-8e17-8532154080e5
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 3
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 60609cca-82bf-40b9-aad2-4526712708c6
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 6
-  network: ws
-  port: 21023
+  port: 21025
   server: 212.192.13.110
   tls: false
   type: vmess
   udp: true
-  uuid: a6764dce-0a85-45f0-b5e8-a826f680f473
+  uuid: f8a25a9c-8b1f-422e-abb7-19576de21a62
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 22|🇭🇰 香港 | HKG 7
+  network: ws
+  port: 22025
+  server: 212.192.13.198
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8408ac03-4774-4807-aa10-c21a5474757f
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 22|🇭🇰 香港 | HKG 8
+  network: ws
+  port: 21025
+  server: 212.192.13.110
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 345145c7-a396-4a21-95d0-ac47f3676f9d
   ws-opts:
     path: /
 - alterId: 0
@@ -979,12 +1023,25 @@ proxies:
   client-fingerprint: chrome
   name: 22|🇭🇰 香港 | HKG 9
   network: ws
-  port: 22023
+  port: 22025
   server: 212.192.13.198
   tls: false
   type: vmess
   udp: true
-  uuid: 15f1e492-cb1e-4ac0-8646-8f6c54f820ae
+  uuid: b7274fbe-2377-4413-8b3b-22e72539178e
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 22,45|2|4-CN |  1.5MB/s
+  network: ws
+  port: 23025
+  server: 212.192.13.68
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 345145c7-a396-4a21-95d0-ac47f3676f9d
   ws-opts:
     path: /
 - alterId: 0
@@ -992,12 +1049,12 @@ proxies:
   client-fingerprint: chrome
   name: 22|🇭🇰 香港 | HKG 11
   network: ws
-  port: 23023
-  server: 212.192.13.68
+  port: 21025
+  server: 212.192.13.110
   tls: false
   type: vmess
   udp: true
-  uuid: b7e1c340-afe8-412d-902b-080ae1ffd51d
+  uuid: b7274fbe-2377-4413-8b3b-22e72539178e
   ws-opts:
     path: /
 - alterId: 0
@@ -1005,12 +1062,12 @@ proxies:
   client-fingerprint: chrome
   name: 22|🇭🇰 香港 | HKG 12
   network: ws
-  port: 21023
-  server: 212.192.13.110
+  port: 23025
+  server: 212.192.13.68
   tls: false
   type: vmess
   udp: true
-  uuid: abd7c11d-8e8c-48db-b813-ec26e15c9ed6
+  uuid: f8a25a9c-8b1f-422e-abb7-19576de21a62
   ws-opts:
     path: /
 - alterId: 0
@@ -1018,853 +1075,53 @@ proxies:
   client-fingerprint: chrome
   name: 22|🇭🇰 香港 | HKG 13
   network: ws
-  port: 21023
-  server: 212.192.13.110
+  port: 22025
+  server: 212.192.13.198
   tls: false
   type: vmess
   udp: true
-  uuid: afdaf0d8-1f8d-4449-afb6-e234c8aad9bd
+  uuid: 345145c7-a396-4a21-95d0-ac47f3676f9d
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 20
+  name: 22|🇭🇰 香港 | HKG 16
   network: ws
-  port: 23023
+  port: 23025
   server: 212.192.13.68
   tls: false
   type: vmess
   udp: true
-  uuid: abd7c11d-8e8c-48db-b813-ec26e15c9ed6
+  uuid: b7274fbe-2377-4413-8b3b-22e72539178e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 21
+  name: 22|🇭🇰 香港 | HKG 18
   network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 520657f8-8b23-46da-974e-0a04ac5ceede
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 23
-  network: ws
-  port: 21023
+  port: 21025
   server: 212.192.13.110
   tls: false
   type: vmess
   udp: true
-  uuid: 60609cca-82bf-40b9-aad2-4526712708c6
+  uuid: 8408ac03-4774-4807-aa10-c21a5474757f
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 27
+  name: 22,32|❓_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001...
   network: ws
-  port: 22023
+  port: 22025
   server: 212.192.13.198
   tls: false
   type: vmess
   udp: true
-  uuid: e68aab3c-79a5-4d53-bd6d-27637c0fae34
+  uuid: f8a25a9c-8b1f-422e-abb7-19576de21a62
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 31
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2d9f7ce5-c272-4fd3-aef7-5043ed850fd8
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 34
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 15f1e492-cb1e-4ac0-8646-8f6c54f820ae
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 37
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f633e2a3-f66a-4776-bed3-6496e09e646b
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 39
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f633e2a3-f66a-4776-bed3-6496e09e646b
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 45
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2dabfab0-bca6-409d-b71b-2f90c11c9b31
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 48
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: abd7c11d-8e8c-48db-b813-ec26e15c9ed6
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 49
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 98d30ce3-cf8c-499e-ba2b-fbc9b008fc07
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 50
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f20165b6-eab5-454e-a0e1-bf265d333195
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 51
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6ecb1287-4998-4aa6-bdac-09cc9a2f50b9
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 52
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6ecb1287-4998-4aa6-bdac-09cc9a2f50b9
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 53
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 76fe7977-788f-4f21-8e17-8532154080e5
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 54
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2fb95fb8-a065-4443-9340-ad86f8bc1247
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 56
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: afdaf0d8-1f8d-4449-afb6-e234c8aad9bd
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 57
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2fb95fb8-a065-4443-9340-ad86f8bc1247
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 58
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 56aebebe-5e0a-43ca-b082-e09dafa6f990
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 59
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cfb611bf-c93e-413b-b04c-3090f4f7cbbb
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 60
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 23a2f504-dba7-480a-ab62-ed078a2c23a5
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 61
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 56aebebe-5e0a-43ca-b082-e09dafa6f990
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 62
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 520657f8-8b23-46da-974e-0a04ac5ceede
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 65
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2dabfab0-bca6-409d-b71b-2f90c11c9b31
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 66
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8c792eff-7dde-4e94-93de-9d3b0fae5eae
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 67
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2fb95fb8-a065-4443-9340-ad86f8bc1247
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 68
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 76fe7977-788f-4f21-8e17-8532154080e5
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 69
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8f8d3e5a-edb3-4826-8449-3d860082ac59
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 70
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2d9f7ce5-c272-4fd3-aef7-5043ed850fd8
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 72
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 98d30ce3-cf8c-499e-ba2b-fbc9b008fc07
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 73
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 15f1e492-cb1e-4ac0-8646-8f6c54f820ae
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 75
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2b6bead8-60e6-4168-96be-ebdb7a19830c
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 76
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b7e1c340-afe8-412d-902b-080ae1ffd51d
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 77
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8f8d3e5a-edb3-4826-8449-3d860082ac59
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 78
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0e326162-0ee0-4503-96fc-bc67ca49dacb
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 80
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 60609cca-82bf-40b9-aad2-4526712708c6
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 81
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 56aebebe-5e0a-43ca-b082-e09dafa6f990
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 82
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a6764dce-0a85-45f0-b5e8-a826f680f473
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 86
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2b6bead8-60e6-4168-96be-ebdb7a19830c
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 88
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2b6bead8-60e6-4168-96be-ebdb7a19830c
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 90
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 23a2f504-dba7-480a-ab62-ed078a2c23a5
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 91
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8f8d3e5a-edb3-4826-8449-3d860082ac59
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 94
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e68aab3c-79a5-4d53-bd6d-27637c0fae34
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 95
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6ecb1287-4998-4aa6-bdac-09cc9a2f50b9
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 99
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2dabfab0-bca6-409d-b71b-2f90c11c9b31
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 100
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: afdaf0d8-1f8d-4449-afb6-e234c8aad9bd
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 101
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8c792eff-7dde-4e94-93de-9d3b0fae5eae
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 103
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 98d30ce3-cf8c-499e-ba2b-fbc9b008fc07
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 104
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ce031376-b2fe-472e-974a-b92943b02dcf
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 107
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cfb611bf-c93e-413b-b04c-3090f4f7cbbb
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 109
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2d9f7ce5-c272-4fd3-aef7-5043ed850fd8
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 110
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8c792eff-7dde-4e94-93de-9d3b0fae5eae
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 116
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ce031376-b2fe-472e-974a-b92943b02dcf
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 118
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0e326162-0ee0-4503-96fc-bc67ca49dacb
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 120
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e68aab3c-79a5-4d53-bd6d-27637c0fae34
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 121
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 23a2f504-dba7-480a-ab62-ed078a2c23a5
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 128
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cfb611bf-c93e-413b-b04c-3090f4f7cbbb
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 130
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b7e1c340-afe8-412d-902b-080ae1ffd51d
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 131
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f20165b6-eab5-454e-a0e1-bf265d333195
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 134
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ce031376-b2fe-472e-974a-b92943b02dcf
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 135
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f20165b6-eab5-454e-a0e1-bf265d333195
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 136
-  network: ws
-  port: 21023
-  server: 212.192.13.110
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 520657f8-8b23-46da-974e-0a04ac5ceede
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 139
-  network: ws
-  port: 22023
-  server: 212.192.13.198
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0e326162-0ee0-4503-96fc-bc67ca49dacb
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 22|🇭🇰 香港 | HKG 142
-  network: ws
-  port: 23023
-  server: 212.192.13.68
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a6764dce-0a85-45f0-b5e8-a826f680f473
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf
-  country: 🇰 HK
-  name: 23| HK_286
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
 - alterId: 64
   cipher: auto
   name: 29|HK香港(mibei77.com 米贝节点分享) 5
@@ -1892,7 +1149,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '29,32|❓_🇨🇳_📶_github.com/Ruk1ng001_62... #1'
+  name: 29,32|❓_🇨🇳_📶_github.com/Ruk1ng001_62...
   port: 42055
   server: 120.198.71.219
   skip-cert-verify: true
@@ -1901,90 +1158,66 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
-  name: 35|🇭🇰 0|🇭🇰 香港 01 | 1x HK
-  password: 2acad85d-5ede-4e69-a63e-ff3b3cfd5597
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 35|🇭🇰 0|🇭🇰 香港 02 | 1x HK
-  password: 2acad85d-5ede-4e69-a63e-ff3b3cfd5597
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 35|🇭🇰 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 2acad85d-5ede-4e69-a63e-ff3b3cfd5597
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: '35,42,45,46|🇭🇰 香港6|@ripaojiedian #1'
-  network: tcp
-  password: VMhGp5wEIyCDf90T
-  port: 42303
-  server: csuzhou01.1cooldns.com
-  skip-cert-verify: false
-  sni: hk06.run.place
-  type: trojan
-  udp: true
-- name: 35|1|🇭🇰4 |  5.7MB/s
-  password: f3f77845-1b35-3def-945f-2bf030f52223
-  port: 20307
-  server: gy.58n.net
-  skip-cert-verify: false
-  sni: z307.hongkongnode.top
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '35,45,46|🇭🇰 香港|@ripaojiedian #1'
-  password: SQIDT5H25BVNZXZE
-  port: 15007
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '35,45,46|🇭🇰 香港2|@ripaojiedian #1'
-  password: Q3PP7TUVTV756YSB
-  port: 15008
-  server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '35,45,46|🇭🇰 香港4|@ripaojiedian #1'
-  password: 53HVTBHCBNKKC66Q
-  port: 15014
-  server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 35|🇭🇰 14|🇭🇰香港 01 | 1x HK
-  password: 2b9829e3-ac9c-485e-9405-0940167e5bc2
+  name: 35|🇭🇰 0|🇭🇰香港 01 | 1x HK
+  password: 7b9b5ee9-041e-4898-a540-85973b21e273
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 35|🇭🇰 14|🇭🇰香港 02 | 1x HK
-  password: 2b9829e3-ac9c-485e-9405-0940167e5bc2
+  name: 35|🇭🇰 0|🇭🇰香港 02 | 1x HK
+  password: 7b9b5ee9-041e-4898-a540-85973b21e273
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 35|🇭🇰 14|🇭🇰香港家宽 03 | 1x HK
-  password: 2b9829e3-ac9c-485e-9405-0940167e5bc2
+  name: 35|🇭🇰 0|🇭🇰香港家宽 03 | 1x HK
+  password: 7b9b5ee9-041e-4898-a540-85973b21e273
   port: 31145
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '35,45,46|🇭🇰 香港5|@ripaojiedian #1'
+  port: 10701
+  server: 120.198.71.184
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: CE361194-7D70-614C-780B-D3BDB61D0257
+- cipher: chacha20-ietf-poly1305
+  name: 35|🇭🇰 2|🇭🇰 香港 01 | 1x HK
+  password: 8850680f-5d82-4eb7-a727-8f98150f158b
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 35|🇭🇰 2|🇭🇰 香港 02 | 1x HK
+  password: 8850680f-5d82-4eb7-a727-8f98150f158b
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 35|🇭🇰 2|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 8850680f-5d82-4eb7-a727-8f98150f158b
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: '35,45,46|🇭🇰 香港2|@ripaojiedian #1'
+  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
+  port: 11002
+  server: 183.232.229.164
+  tfo: false
   type: ss
   udp: true
 - alterId: 0
@@ -1995,7 +1228,7 @@ proxies:
   server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: aae174bf-b7d8-4359-9efe-caf6698c012e
+  uuid: 4cb30c8d-c3be-43ef-ba65-000aac952f16
 - alterId: 0
   cipher: auto
   name: 40|🇭🇰 香港-1A
@@ -2004,7 +1237,7 @@ proxies:
   server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: f79af5b7-3ccb-44d3-823f-6e95c721efb5
+  uuid: 88f121e5-3f90-42ab-9607-9a5ac5711d07
 - alterId: 0
   cipher: auto
   name: 41|11|11|11|11|11|11,16|香港|@ripao...
@@ -2015,6 +1248,44 @@ proxies:
   tls: false
   type: vmess
   uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
+- alterId: 0
+  cipher: auto
+  name: 42,45|13|香港6|@ripaojiedian
+  network: tcp
+  port: '55714'
+  server: 47.86.37.135
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 30e39072-e97f-4ff0-f356-94372889d1df
+- alterId: 0
+  cipher: auto
+  name: 42|🇭🇰 香港4|BGP|0.2x
+  network: tcp
+  port: '26014'
+  server: bgp-xdd.blue-bgp.xyz
+  tls: false
+  type: vmess
+  uuid: 3a6c789f-0548-4ca3-83c0-2c78acbee811
+- alterId: 0
+  cipher: auto
+  name: 42|🇭🇰 香港3|BGP|0.2x
+  network: tcp
+  port: '26013'
+  server: bgp-xdd.blue-bgp.xyz
+  tls: false
+  type: vmess
+  uuid: 3a6c789f-0548-4ca3-83c0-2c78acbee811
+- alterId: 0
+  cipher: auto
+  name: 42,45|13|香港5|@ripaojiedian
+  network: tcp
+  port: '10701'
+  server: 120.198.71.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: CE361194-7D70-614C-780B-D3BDB61D0257
 - alterId: 0
   cipher: auto
   name: 42,45|13|香港3|@ripaojiedian
@@ -2059,51 +1330,59 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 45|0| 01 | 1x HK
-  password: 23f5e2c3-d68c-41c8-8f21-fab3504ee2db
+  password: 40dcdf1e-e3c1-4824-9641-6dc20c814020
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|0|🇭🇰香港 02 | 1x HK
-  password: 23f5e2c3-d68c-41c8-8f21-fab3504ee2db
+  password: 40dcdf1e-e3c1-4824-9641-6dc20c814020
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|0|🇭🇰香港 03 | 1x HK
-  password: 23f5e2c3-d68c-41c8-8f21-fab3504ee2db
+  password: 40dcdf1e-e3c1-4824-9641-6dc20c814020
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|1|🇭🇰 香港 01 | 1x HK
-  password: 9a53a881-3073-447f-ae3d-a2cbb6299b0d
+  password: d6e1f81c-9832-44da-bfaa-31c7d95ae67d
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|1|🇭🇰 香港 02 | 1x HK
-  password: 9a53a881-3073-447f-ae3d-a2cbb6299b0d
+  password: d6e1f81c-9832-44da-bfaa-31c7d95ae67d
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 45|1|🇭🇰 香港IP 03 | 1x HK
-  password: 9a53a881-3073-447f-ae3d-a2cbb6299b0d
+  password: d6e1f81c-9832-44da-bfaa-31c7d95ae67d
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 45|2|🇭🇰2 |  6.1MB/s
-  password: f00f490e-c01c-3fa1-a5b3-831fbe4c2d8c
-  port: 28678
+- name: 45|2|🇭🇰5 |  6.3MB/s
+  password: f0adb579-c185-3f3f-9795-adaeb36b676b
+  port: 20294
   server: gy.58n.net
   skip-cert-verify: true
-  sni: z143.hongkongnode.top
+  sni: z294.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 45|2|🇭🇰6 |  6.5MB/s
+  password: f0adb579-c185-3f3f-9795-adaeb36b676b
+  port: 24603
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z259.hongkongnode.top
   type: trojan
   udp: true

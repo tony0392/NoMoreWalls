@@ -85,6 +85,20 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- cipher: chacha20-ietf-poly1305
+  name: 14|台湾01-1A
+  password: 54e81322-26de-4fd5-b1aa-abc350626c25
+  port: 47564
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|台湾 1-1A
+  password: 54e81322-26de-4fd5-b1aa-abc350626c25
+  port: 20032
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 14,15|台湾1-1A-GPT
@@ -94,7 +108,14 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 9aaca81a-0816-432b-b180-6944e0bfbb00
+  uuid: 9d8d0995-089f-4f36-8cb4-091f4b63803f
+- cipher: chacha20-ietf-poly1305
+  name: '14,15|台湾 1-1A #1'
+  password: ea2bcda6-d5dd-4601-b528-77de9acf5629
+  port: 20032
+  server: gy.666666222.shop
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 14,15|台湾2-1A-GPT
@@ -104,21 +125,54 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 9aaca81a-0816-432b-b180-6944e0bfbb00
+  uuid: 9d8d0995-089f-4f36-8cb4-091f4b63803f
 - cipher: chacha20-ietf-poly1305
-  name: 14|台湾 1
-  password: 2bb7d303-9e8c-4dac-8c53-94709860b010
+  name: '14,15|台湾01-1A #1'
+  password: ea2bcda6-d5dd-4601-b528-77de9acf5629
+  port: 47564
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '15|台湾 1-1B #1'
+  password: a2af8ce4-3fcb-4db5-b355-0909a41e45a3
   port: 20032
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 14|台湾01
-  password: 2bb7d303-9e8c-4dac-8c53-94709860b010
+  name: '15|台湾01-1B #1'
+  password: a2af8ce4-3fcb-4db5-b355-0909a41e45a3
   port: 47564
   server: gy.666666222.shop
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 15|台湾2-1B-GPT
+  port: 45077
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e2e57afb-3001-4720-b3cd-635894148772
+- alterId: 0
+  cipher: auto
+  name: 15|台湾1-1B-GPT
+  port: 45078
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e2e57afb-3001-4720-b3cd-635894148772
+- cipher: aes-128-gcm
+  name: 18,32|github.com/Ruk1ng001_363631326...
+  password: VMhGp5wEIyCDf90T
+  port: 15375
+  server: bsuqian01.dynu.net
+  type: ss
 - cipher: aes-256-cfb
   name: 18,48,50|TW_speednode_0055
   password: f8f7aCzcPKbsF8p3
@@ -126,24 +180,33 @@ proxies:
   server: 154.223.20.79
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 18,32,35,45,46|🇹🇼 台湾2|@ripaojiedian
-  port: 11110
-  server: 156.224.77.98
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 111032f8-eabc-46c0-fe89-8acceaeb34e5
 - cipher: aes-128-gcm
-  name: 18,32|github.com/Ruk1ng001_363631326...
-  password: VMhGp5wEIyCDf90T
-  port: 15375
-  server: bsuqian01.dynu.net
+  name: 18|@MxlShare 台湾 | TWN 6
+  password: 59b920bc-25e0-4842-a661-4fa6e210075a
+  port: 45571
+  server: tw01.dns-node.top
   type: ss
+- cipher: aes-128-gcm
+  name: 18|@MxlShare 台湾 | TWN 7
+  password: 59b920bc-25e0-4842-a661-4fa6e210075a
+  port: 45614
+  server: tw02.dns-node.top
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 18,32,35,45,46|🇹🇼 台湾|@ripaojiedian
+  password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f
+  port: 41705
+  server: zf1.10101251.xyz
+  tfo: false
+  type: ss
+  udp: true
+- name: 18|@MxlShare 台湾 | TWN 9
+  password: 0b98bdca-9cce-4a94-9027-ac1a916f0e28
+  port: 27201
+  server: aafrtpfxr.twl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - name: 19,32,47|Ruku-HTTP-1
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
@@ -153,14 +216,6 @@ proxies:
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 19|🇹🇼3 |  6.2MB/s
-  password: 33003801-8cb0-32da-af43-032cd5e944fa
-  port: 36821
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z262.hongkongnode.top
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 21|🇹🇼 台湾|TW01
@@ -178,47 +233,55 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 45|0| 01 | 1x TW
-  password: 40dcdf1e-e3c1-4824-9641-6dc20c814020
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|0|🇼台湾 02 | 1x TW
-  password: 40dcdf1e-e3c1-4824-9641-6dc20c814020
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|0|🇼台湾 03 | 1x TW
-  password: 40dcdf1e-e3c1-4824-9641-6dc20c814020
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|1|🇼 台湾 01 | 1x TW
-  password: d6e1f81c-9832-44da-bfaa-31c7d95ae67d
+  name: 45|0|  01 | 1x TW
+  password: bab31764-1661-4220-9ac3-72abdfb3f120
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|1|🇹🇼 台湾 02 | 1x TW
-  password: d6e1f81c-9832-44da-bfaa-31c7d95ae67d
+  name: 45|0|🇼 台湾 02 | 1x TW
+  password: bab31764-1661-4220-9ac3-72abdfb3f120
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|1|🇼 台湾 03 | 1x TW
-  password: d6e1f81c-9832-44da-bfaa-31c7d95ae67d
+  name: 45|0|🇼 台湾 03 | 1x TW
+  password: bab31764-1661-4220-9ac3-72abdfb3f120
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|1|🇼台湾 01 | 1x TW
+  password: 7f5a252b-c2e9-4a11-9c82-366d179bec4d
+  port: 31241
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|1|🇹🇼台湾 02 | 1x TW
+  password: 7f5a252b-c2e9-4a11-9c82-366d179bec4d
+  port: 31243
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|1|🇼台湾 03 | 1x TW
+  password: 7f5a252b-c2e9-4a11-9c82-366d179bec4d
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 45,46|🇹🇼 台湾2|@ripaojiedian
+  password: YY1SVLAEC2CXXGRW
+  port: 21005
+  server: 150.116.11.9
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf
   name: 51|TW_Keelung_Chunghwa Telecom Co...
   obfs: http_simple

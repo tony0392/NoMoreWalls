@@ -1,4 +1,12 @@
 proxies:
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 3,5,39|🇬🇧_GB_英国->🇺🇦_UA_乌克兰
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.15.82
+  type: ss
+  udp: true
 - name: 6|🇬🇧 英国
   password: 64f4f8e7-cf41-4e53-b123-5e8e9f27defa
   port: 59358
@@ -33,16 +41,6 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - alterId: 0
   cipher: auto
-  name: 14|英国2
-  port: 45067
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9aaca81a-0816-432b-b180-6944e0bfbb00
-- alterId: 0
-  cipher: auto
   name: 14|英国1
   port: 45066
   server: haa.dashuai.cyou
@@ -50,7 +48,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 9aaca81a-0816-432b-b180-6944e0bfbb00
+  uuid: 9d8d0995-089f-4f36-8cb4-091f4b63803f
+- alterId: 0
+  cipher: auto
+  name: 14,15|英国2-1A
+  port: 45067
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9d8d0995-089f-4f36-8cb4-091f4b63803f
 - alterId: 0
   cipher: auto
   name: 15|英国1-1B
@@ -60,7 +68,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 339b7510-54e8-49ba-b405-c5840ddfeecb
+  uuid: e2e57afb-3001-4720-b3cd-635894148772
 - alterId: 0
   cipher: auto
   name: 15|英国2-1B
@@ -70,36 +78,31 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 339b7510-54e8-49ba-b405-c5840ddfeecb
-- alterId: 2
+  uuid: e2e57afb-3001-4720-b3cd-635894148772
+- cipher: aes-128-gcm
+  name: 18|@MxlShare 英国 | GBR
+  password: 59b920bc-25e0-4842-a661-4fa6e210075a
+  port: 45615
+  server: uk01.dns-node.top
+  type: ss
+- name: 18|@MxlShare 英国 | GBR 2
+  password: 0b98bdca-9cce-4a94-9027-ac1a916f0e28
+  port: 44397
+  server: aafrtpfxr.gbl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- alterId: 0
   cipher: auto
-  name: 19|🇬🇧1 |  5.1MB/s
+  name: 18|@MxlShare 英国 | GBR 3
   network: ws
-  port: 23605
-  server: 5.mamamajd.site
-  skip-cert-verify: true
+  port: 20032
+  server: 2fea6447-81c4-2d7d-d592-a4f729209777.7head.icu
   tls: false
   type: vmess
-  udp: true
-  uuid: 966476e3-5c3e-39a8-b91d-ba6a66b70115
+  uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
   ws-opts:
     headers:
-      Host: 5.mamamajd.site
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 19|🇬🇧4 |  4.9MB/s
-  network: ws
-  port: 23613
-  server: 13.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 966476e3-5c3e-39a8-b91d-ba6a66b70115
-  ws-opts:
-    headers:
-      Host: 13.mamamajd.site
+      Host: 2fea6447-81c4-2d7d-d592-a4f729209777.7head.icu
     path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
@@ -109,9 +112,110 @@ proxies:
   server: r8tbhtn9jty9ebzesikuygvc8y0b2koq.08.02.uk.6l6.site
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 23| GB_263
+  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 23|🇧 GB_264
+  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
+  port: 55988
+  server: mx2.drawnrisha.one
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 23|🇬🇧 GB_265
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 23|🇧 GB_266
+  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇧 GB
+  name: 23|🇧 GB_267
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 23|🇧 GB_268
+  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 23|🇬🇧 GB_269
+  password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
+  port: 55988
+  server: mx2.drawnrisha.one
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 23|🇬🇧 GB_270
+  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 23|🇬🇧 GB_271
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.250
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 23|🇬🇧 GB_272
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.255.22
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 23|🇬🇧GB_273
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇧GB
+  name: 23|🇬🇧GB_274
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- country: 🇬🇧GB
+  name: 23|🇬🇧GB_275
+  password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
+  port: 443
+  server: uk2-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 27,33,42|🇬🇧 英国 伦敦Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.179.250.47
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  tfo: false
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 28,30,49|🇬🇧_GB_英国_2
+  name: 28,30|🇧_GB_英国->🇫🇮_FI_芬兰
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 62.100.205.48
@@ -126,33 +230,17 @@ proxies:
   tls: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 35|🇬🇧 0|🇬🇧英国家宽 01 | 1x UK
-  password: 7b9b5ee9-041e-4898-a540-85973b21e273
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '35,42|1|🇬🇧3 |  4.3MB/s #2'
-  network: ws
-  port: '2083'
-  server: Support.onetwothree123.ir
-  servername: support.onetwothree123.ir
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 2ca1bdb5-41aa-4ecb-a779-de43825dda5a
-  ws-opts:
-    headers:
-      Host: Support.onetwothree123.ir
-    path: /🆔@M3HDIO1
-- cipher: chacha20-ietf-poly1305
-  name: 35|🇬🇧 2|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 8850680f-5d82-4eb7-a727-8f98150f158b
+  name: 35|🇬🇧 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 75c91963-e865-4f2e-b171-51ffd1d11b90
   port: 36271
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 35|🇬🇧 14|🇬🇧英国家宽 01 | 1x UK
+  password: fb70ce3c-9632-4cd1-9bb0-4e3471a97842
+  port: 31271
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -169,56 +257,24 @@ proxies:
     headers:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
-- name: 42|🇬🇧 英国 社会保险安全部
+- name: 42|🇬🇧 _英国
   password: telegram-id-directvpn
   port: 22222
-  server: 51.44.138.115
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '42|🇬🇧 英国 社会保险安全部 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.24.52.189
+  server: 52.56.203.122
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 45|0|国家宽 01 | 1x UK
-  password: 40dcdf1e-e3c1-4824-9641-6dc20c814020
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|1|🇧 英国住宅IP 01 | 1x UK
-  password: d6e1f81c-9832-44da-bfaa-31c7d95ae67d
+  name: 45|0| 国住宅IP 01 | 1x UK
+  password: bab31764-1661-4220-9ac3-72abdfb3f120
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
-- allowInsecure: ''
-  name: 45|2|🇬🇧5 |  2.7MB/s
-  network: ws
-  password: 4PbOjiMDLh
-  port: 2096
-  server: 104.21.44.185
-  skip-cert-verify: false
-  sni: support.onetwothree123.ir
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: support.onetwothree123.ir
-    path: /@M3HDIO1
-- cipher: auto
-  ip-version: dual
-  name: 49|🇬🇧_GB_英国_1
-  network: ws
-  port: 2082
-  server: 185.184.70.90
-  servername: www.bing.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 7e84b5b9-e9fe-4dbe-906d-4abd67c09376
+- cipher: chacha20-ietf-poly1305
+  name: 45|1|🇧英国家宽 01 | 1x UK
+  password: 7f5a252b-c2e9-4a11-9c82-366d179bec4d
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true

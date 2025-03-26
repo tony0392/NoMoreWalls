@@ -1,60 +1,59 @@
 proxies:
-- alpn:
-  - http/1.1
-  ip-version: dual
-  name: '3,5,39,49|🇬🇧_GB_英国->🇺🇸_US_美国 #3'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 52.56.203.122
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: '3,5,18,39,49|🇺🇸_US_美国->🇧🇪_BE_比利时 #3'
+  name: '3,5,28,38,49|🇺🇸_US_美国->🇮🇷_IR_伊朗_1 #2'
   password: amazonskr05
   port: 443
-  server: 34.209.89.4
+  server: 54.187.221.114
   tls: false
   type: ss
   udp: true
-- cipher: rc4-md5
+- cipher: chacha20-ietf-poly1305
   ip-version: dual
-  name: '3,5,39,49|🇩🇪_DE_德国->🇸🇪_SE_瑞典 #3'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
+  name: '3,5,38,49|🇳🇱_NL_荷兰->🇨🇳_CN_中国 #2'
+  password: GfKGyjTs7WQXalgedr9FU3
+  port: 23822
+  server: 178.208.78.170
   tls: false
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: '3,5,18,28,39,49|🇺🇸_US_美国->🇸🇪_SE_瑞典 #3'
+  name: '3,5,28,39,49|🇺🇸_US_美国->🇮🇷_IR_伊朗_2 #2'
   password: amazonskr05
   port: 443
   server: 35.94.124.230
   tls: false
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: '3,5,32,38,49|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
+  password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f
+  port: 41705
+  server: zf1.10101251.xyz
+  tls: false
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  ip-version: dual
+  name: 3,5,38|🇨🇳_CN_中国->_IR_
+  password: VMhGp5wEIyCDf90T
+  port: 56226
+  server: bsuqian01.dynu.net
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  country: 🇦 CA
-  h2-opts: {}
-  http-opts: {}
   ip-version: dual
-  name: '3,5,23,39,49|🇨🇦_CA_加拿大->🇺🇸_US_美国 #3'
+  name: '3,5,38,42|2|🇩🇪10 |  4.8MB/s #1'
   network: tcp
-  port: 30606
-  server: 142.214.153.82
-  skip-cert-verify: true
+  port: '56635'
+  server: 185.231.59.202
   tls: false
   type: vmess
   udp: true
-  uuid: 4012915a-0190-4cbd-ba2c-3f751c66f127
-  ws-path: /
+  uuid: dd9a594a-0572-4365-84da-e6dc8022c05a
 - cipher: chacha20-ietf-poly1305
   name: 7|🇸🇬 新加坡中转 02
   password: b103d104-bff0-4cee-b42a-85dad07e2036
@@ -3664,15 +3663,13 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  ip-version: dual
-  name: '28,30,38|🇺🇸_US_美国_13 #2'
+  name: 28|🇺🇸_US_美国->_BE_
   password: amazonskr05
   port: 443
-  server: 35.87.29.54
-  tls: false
+  server: 34.221.169.63
   type: ss
 - cipher: aes-128-gcm
-  name: 28,38|🇨🇳_CN_中国->🇸_US_美国
+  name: 28|_CN_国->🇺_AU_利
   password: VMhGp5wEIyCDf90T
   port: 18755
   server: csuzhou01.1cooldns.com
@@ -3683,19 +3680,27 @@ proxies:
   port: 443
   server: 54.202.63.169
   type: ss
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 28,30|_CH_
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 84.17.53.160
+  tls: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 28,35|1|🇦🇪2 |  1.3MB/s
+  name: 28|🇺🇸_US_美国->🏳️_unKnow_未知_1
   network: ws
   port: 80
   server: 172.67.152.71
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: ''
-  tls: false
   type: vmess
-  udp: true
   uuid: 27c85fdb-5e8f-43ea-bf43-4ed4d0a3b306
   ws-opts:
+    headers:
+      host: 462583301568512025032010340527704.dblxc.chibaba.filegear-sg.me
     path: /dubai.html?ed=2048
 - alterId: 0
   cipher: auto
@@ -3849,12 +3854,50 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
-- cipher: aes-128-gcm
-  name: 38|_CN_->🇳_IN_
-  password: VMhGp5wEIyCDf90T
-  port: 56226
-  server: bsuqian01.dynu.net
+- name: 38|🇷_FR_国->🇺_UA_兰
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.181.211.16
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  ip-version: dual
+  name: 39|🇬🇧_GB_英国->🇺🇸_US_美国
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.56.203.122
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 39|🇺🇸_US_美国->🇧🇪_BE_比利时
+  password: amazonskr05
+  port: 443
+  server: 34.209.89.4
   type: ss
+  udp: true
+- cipher: rc4-md5
+  ip-version: dual
+  name: 39|🇩🇪_DE_德国->🇸🇪_SE_瑞典
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 39|🇨🇦_CA_加拿大->🇺🇸_US_美国
+  network: tcp
+  port: 30606
+  server: 142.214.153.82
+  type: vmess
+  udp: true
+  uuid: 4012915a-0190-4cbd-ba2c-3f751c66f127
 - alterId: 0
   cipher: auto
   name: 41|1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿...

@@ -1,58 +1,13 @@
 proxies:
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '3,5,28,32,38,39,49|🇺🇸_US_美国->🇮🇷_IR_伊朗_1 #3'
-  password: amazonskr05
-  port: 443
-  server: 54.187.221.114
-  tls: false
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
   ip-version: dual
-  name: '3,5,38,39,49|🇳🇱_NL_荷兰->🇨🇳_CN_中国 #3'
-  password: GfKGyjTs7WQXalgedr9FU3
-  port: 23822
-  server: 178.208.78.170
-  tls: false
+  name: '3,5,23,39|🇩🇪_DE_德国->🇺🇸_US_美国 #2'
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.154
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '3,5,28,39,49|🇺🇸_US_美国->🇮🇷_IR_伊朗_2 #3'
-  password: amazonskr05
-  port: 443
-  server: 35.94.124.230
-  tls: false
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: '3,5,32,38,39,49|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
-  password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f
-  port: 41705
-  server: zf1.10101251.xyz
-  tls: false
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  ip-version: dual
-  name: '3,5,32,38,39|🇨🇳_CN_中国->🇮🇷_IR_伊朗 #2'
-  password: VMhGp5wEIyCDf90T
-  port: 56226
-  server: bsuqian01.dynu.net
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: '3,5,38,39|🇷🇺_RU_俄罗斯->🇺🇸_US_美国 #2'
-  network: tcp
-  port: 56635
-  server: 185.231.59.202
-  type: vmess
-  udp: true
-  uuid: dd9a594a-0572-4365-84da-e6dc8022c05a
 - cipher: chacha20-ietf-poly1305
   name: 7|🇸🇬 新加坡中转 02
   password: b103d104-bff0-4cee-b42a-85dad07e2036
@@ -3661,49 +3616,61 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 28|🇺🇸_US_美国->_BE_
-  password: amazonskr05
-  port: 443
-  server: 34.221.169.63
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: '28,29,30,38,49|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f
+  port: 41705
+  server: zf1.10101251.xyz
+  tls: false
   type: ss
+  udp: true
 - cipher: aes-128-gcm
-  name: 28|_CN_国->🇺_AU_利
+  ip-version: dual
+  name: 28,29,38,49|🇨🇳_CN_中国->🇮🇷_IR_伊朗
   password: VMhGp5wEIyCDf90T
-  port: 18755
-  server: csuzhou01.1cooldns.com
+  port: 56226
+  server: bsuqian01.dynu.net
+  tls: false
   type: ss
-- cipher: aes-256-cfb
-  name: '28,51|US_Portland_Amazon.com, Inc._O... #9'
-  password: amazonskr05
-  port: 443
-  server: 54.202.63.169
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 28,29,30,49|🇳🇱_NL_荷兰->🇨🇳_CN_中国
+  password: GfKGyjTs7WQXalgedr9FU3
+  port: 23822
+  server: 178.208.78.170
+  tls: false
   type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 28,49|🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+  network: tcp
+  port: 56635
+  server: 185.231.59.202
+  tls: false
+  type: vmess
+  uuid: dd9a594a-0572-4365-84da-e6dc8022c05a
+- name: 28|🇷_FR_国->🇺_UA_兰
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.181.211.16
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 28,30|_CH_
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 84.17.53.160
+  name: '30,49|🇺🇸_US_美国->🇮🇷_IR_伊朗_2 #1'
+  password: amazonskr05
+  port: 443
+  server: 35.94.124.230
   tls: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: 28|🇺🇸_US_美国->🏳️_unKnow_未知_1
-  network: ws
-  port: 80
-  server: 172.67.152.71
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 27c85fdb-5e8f-43ea-bf43-4ed4d0a3b306
-  ws-opts:
-    headers:
-      host: 462583301568512025032010340527704.dblxc.chibaba.filegear-sg.me
-    path: /dubai.html?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 33|[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国
+  name: 33|[VMess] 🇹🇼 _TW_台湾->🇺🇸_US_美国
   network: ws
   port: 80
   server: 107.167.182.230
@@ -3717,7 +3684,7 @@ proxies:
     path: /tg@hkaa0
 - alterId: 0
   cipher: auto
-  name: 33|[VMess] 🇩🇪 _US_美国->🇩🇪_DE_德国
+  name: 33|[VMess] 🇺🇸 _US_美国->🇩🇪_DE_德国
   network: ws
   port: 80
   server: flkf2.shabijichang.com
@@ -3733,7 +3700,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 33|[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_1
+  name: 33|[VMess] 🇺🇸 _US_美国->🇬🇧_GB_英国_1
   network: ws
   port: 80
   server: mrb2.shabijichang.com
@@ -3749,7 +3716,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 33|[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_2
+  name: 33|[VMess] 🇺🇸 _US_美国->🇬🇧_GB_英国_2
   network: ws
   port: 80
   server: ld2.shabijichang.com
@@ -3765,7 +3732,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 33|[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_1
+  name: 33|[VMess] 🇺🇸 _US_美国->🇮🇳_IN_印度_1
   network: ws
   port: 80
   server: 104.17.18.26
@@ -3779,7 +3746,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 33|[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_2
+  name: 33|[VMess] 🇺🇸 _US_美国->🇮🇳_IN_印度_2
   network: ws
   port: 80
   server: 104.26.8.44
@@ -3793,7 +3760,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 33|[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_3
+  name: 33|[VMess] 🇺🇸 _US_美国->🇮🇳_IN_印度_3
   network: ws
   port: 80
   server: mm2.shabijichang.com
@@ -3809,7 +3776,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 33|[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_4
+  name: 33|[VMess] 🇺🇸 _US_美国->🇮🇳_IN_印度_4
   network: ws
   port: 80
   server: mm3.shabijichang.com
@@ -3825,7 +3792,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 33|[VMess] 🇳🇱 _US_美国->🇳🇱_NL_荷兰
+  name: 33|[VMess] 🇺🇸 _US_美国->🇳🇱_NL_荷兰
   network: ws
   port: 30000
   server: 45.199.138.191
@@ -3839,7 +3806,7 @@ proxies:
     path: /path/1696251522438
 - alterId: 0
   cipher: auto
-  name: 33|[VMess] 🇸🇦 _US_美国->🇸🇦_SA_沙特阿拉伯
+  name: 33|[VMess] 🇺🇸 _US_美国->🇸🇦_SA_沙特阿拉伯
   network: ws
   port: 80
   server: jd3.shabijichang.com
@@ -3853,13 +3820,6 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
-- name: 38|🇷_FR_国->🇺_UA_兰
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.181.211.16
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 41|1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿...

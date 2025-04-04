@@ -186,7 +186,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2243e555-05da-4453-a7bd-1b014b33d3c7
+  uuid: 2c4ecf83-af1e-40d2-b0e3-4647027e6190
 - alterId: 0
   cipher: auto
   name: 14|韩国 专线NO1
@@ -196,41 +196,31 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2243e555-05da-4453-a7bd-1b014b33d3c7
-- name: 14|韩国-三网优化2-1B
-  password: 45d2b4ca-1333-47ca-862a-251c4765b7ed
-  port: 44732
-  server: kr-qingyun.dwyun.me
-  skip-cert-verify: true
-  sni: kr-qingyun.dwyun.me
-  type: trojan
-  udp: true
-- name: 14|韩国-三网优化2-1A
-  password: b777f135-31e7-4a43-b1d2-83cdf272657b
-  port: 44732
-  server: kr-qingyun.dwyun.me
-  skip-cert-verify: true
-  sni: kr-qingyun.dwyun.me
-  type: trojan
-  udp: true
+  uuid: 2c4ecf83-af1e-40d2-b0e3-4647027e6190
 - cipher: aes-256-cfb
   name: 20|🇰🇷 KR, Incheon
   password: amazonskr05
   port: 443
   server: 52.221.255.53
   type: ss
-- cipher: aes-256-cfb
-  name: 32|🟡_🇰🇷_💼_github.com/Ruk1ng001_63...
-  password: amazonskr05
-  port: 443
-  server: 3.38.92.181
-  type: ss
-- cipher: aes-256-cfb
-  name: 32|🟡_🇰🇷_💼_github.com/Ruk1ng001_66...
-  password: amazonskr05
-  port: 443
-  server: 43.202.67.225
-  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '27,32,33,36,42,45,46|🇯🇵 日本2|@ripaojiedian #1'
+  network: ws
+  port: 10390
+  server: 222.104.240.250
+  servername: oracleipv4.till.nyc.mn
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a13f1b5a-7071-4bbc-8bae-f4f74fd77ace
+  ws-opts:
+    headers:
+      Host: oracleipv4.till.nyc.mn
+    path: /123
 - name: 42|🇰🇷 _韩国
   password: Aimer
   port: 12205
@@ -308,31 +298,31 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 45|0|  01 | 1x KR
-  password: 864f7ca4-5ebe-4e2c-bb93-b245c31f14ae
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|0|🇷 韩国 02 | 1x KR
-  password: 864f7ca4-5ebe-4e2c-bb93-b245c31f14ae
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|1|🇷韩国 01 | 1x KR
-  password: c836a80f-0ac1-41fe-b034-760b7fd05877
+  name: 45|0| 01 | 1x KR
+  password: 5e7de13d-85d4-4e2e-a022-4fe9471d5be1
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|1|🇰🇷韩国 02 | 1x KR
-  password: c836a80f-0ac1-41fe-b034-760b7fd05877
+  name: 45|0|🇷韩国 02 | 1x KR
+  password: 5e7de13d-85d4-4e2e-a022-4fe9471d5be1
   port: 31313
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|1|🇷 韩国 01 | 1x KR
+  password: 7af9f3fd-f608-4874-abee-ce77821a1cc3
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|1|🇰🇷 韩国 02 | 1x KR
+  password: 7af9f3fd-f608-4874-abee-ce77821a1cc3
+  port: 36313
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -341,13 +331,5 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '45,46|🇰🇷 韩国特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 47.129.230.32
   tfo: false
   type: ss

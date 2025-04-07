@@ -2,7 +2,7 @@ proxies:
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: '3,5|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  name: '3,5,39|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -16,26 +16,21 @@ proxies:
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: '3,5,27,33,42|🇺🇸 _美国 #39'
+  name: '3,5,39|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
   network: ws
-  port: '12269'
+  port: 12269
   server: 2.58.87.221
-  servername: ''
   skip-cert-verify: true
   sni: ''
-  tfo: false
-  tls: false
   type: vmess
   udp: true
   uuid: db85ff0e-c33f-401d-c415-4c7cce135704
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alpn:
   - http/1.1
   ip-version: dual
-  name: '3,5|🇮🇪_IE_爱尔兰->🇮🇳_IN_印度 #1'
+  name: '3,5,39|🇮🇪_IE_爱尔兰->🇮🇳_IN_印度 #2'
   network: tcp
   password: telegram-id-directvpn
   port: 22222
@@ -46,7 +41,7 @@ proxies:
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: 3,5,38|_CN_国->🇨_CA_
+  name: '3,5,38,39|🇨🇳_CN_中国->🇨🇦_CA_加拿大 #2'
   network: ws
   port: 30825
   server: v25.heduian.link
@@ -3719,6 +3714,7 @@ proxies:
   server: 34.209.118.169
   tls: false
   type: ss
+  udp: true
 - ip-version: dual
   name: 30|🇺🇸_US_美国->_IN_度
   network: tcp
@@ -3881,101 +3877,18 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
-- alpn:
-  - http/1.1
-  name: 38|_GB_国->🇸_US_美国
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.44.56.143
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 38|🇸_US_美国->🇨_CN_中国
-  network: ws
-  port: 5210
-  server: 7f93c487-sub0g0-sv11pd-1g8k0.losa.plebai.net
-  type: vmess
-  uuid: d4018e28-e328-11ed-98a7-f23c913c8d2b
-  ws-opts:
-    headers:
-      host: 7f93c487-sub0g0-sv11pd-1g8k0.losa.plebai.net
-    path: /
-- alpn:
-  - http/1.1
-  name: 38|🇪_IE_->🇺🇸_US_美国
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.16.133.231
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 38|🇳_CN_中国->🇸_US_美国
+  name: 38|_CN_国->🇺🇸_US_美国
   network: ws
   port: 30840
   server: v40.heduian.link
-  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       host: api100-core-quic-lf.amemv.com
     path: /index
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: '38,39,49|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
-  password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f
-  port: 41705
-  server: zf1.10101251.xyz
-  tls: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: 39|🇨🇳_CN_中国->🇺🇸_US_美国_1
-  network: tcp
-  port: 3683
-  server: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
-  type: vmess
-  udp: true
-  uuid: f39baabc-ef78-11ef-b714-f23c93136cb3
-- alterId: 2
-  cipher: auto
-  ip-version: dual
-  name: 39|🇨🇳_CN_中国->🇨🇷_CR_哥斯达黎加
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: 39|🇩🇪_DE_德国->🇸🇬_SG_新加坡_1
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.154
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: 39|🇨🇳_CN_中国->🇺🇸_US_美国_3
-  network: tcp
-  port: 3683
-  server: 1387ebdd-su7b40-su6828-eme.b.fosant.com
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: 16d93f14-af0e-11ee-8ebe-f23c93136cb3
 - alterId: 0
   cipher: auto
   name: 41|1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿...
@@ -4075,6 +3988,17 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: '49|🇨🇳_CN_中国->🇨🇦_CA_加拿大 #3'
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-128-gcm
   ip-version: dual
   name: 49|🇧🇬_BG_保加利亚->🇺🇸_US_美国
@@ -4083,6 +4007,7 @@ proxies:
   server: 149.34.244.80
   tls: false
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   ip-version: dual
   name: 49|🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
@@ -4091,6 +4016,7 @@ proxies:
   server: 89.221.225.88
   tls: false
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   ip-version: dual
   name: 49|🇬🇧_GB_英国->🇯🇵_JP_日本
@@ -4099,11 +4025,4 @@ proxies:
   server: 51.15.15.82
   tls: false
   type: ss
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 49|🇺🇸_US_美国->🇯🇵_JP_日本
-  password: amazonskr05
-  port: 443
-  server: 54.187.221.114
-  tls: false
-  type: ss
+  udp: true

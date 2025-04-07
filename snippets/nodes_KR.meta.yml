@@ -203,126 +203,71 @@ proxies:
   port: 443
   server: 52.221.255.53
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 35|🇰🇷 0|🇰🇷 韩国 01 | 1x KR
+  password: 719b3056-126a-43fd-b45b-e4a205e54512
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 35|🇰🇷 0|🇰🇷 韩国 02 | 1x KR
+  password: 719b3056-126a-43fd-b45b-e4a205e54512
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 35|🇰🇷 1|🇰🇷韩国 01 | 1x KR
+  password: 21d3bf45-d63b-427f-9be6-714da4fdc844
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 35|🇰🇷 1|🇰🇷韩国 02 | 1x KR
+  password: 21d3bf45-d63b-427f-9be6-714da4fdc844
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 32|🟡_🇰🇷_💼_github.com/Ruk1ng001_66...
+  client-fingerprint: chrome
+  name: '35,45,46|🇰🇷 韩国特殊|@ripaojiedian #1'
   password: amazonskr05
   port: 443
-  server: 3.35.55.190
+  server: 18.140.50.192
+  tfo: false
   type: ss
-- cipher: aes-256-cfb
-  name: '32|🟡_🇰🇷_💼_github.com/Ruk1ng001_66... #1'
-  password: amazonskr05
-  port: 443
-  server: 43.202.67.225
-  type: ss
-- cipher: aes-256-cfb
-  name: '32|🟡_🇰🇷_💼_github.com/Ruk1ng001_66... #2'
-  password: amazonskr05
-  port: 443
-  server: 13.209.12.6
-  type: ss
-- cipher: aes-256-cfb
-  name: 32,45|1|🇰🇷4 |  5.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.34.142.98
-  type: ss
-- cipher: aes-256-cfb
-  name: 32|🟡_🇰🇷_💼_github.com/Ruk1ng001_39...
-  password: amazonskr05
-  port: 443
-  server: 43.203.233.87
-  type: ss
-- cipher: aes-256-cfb
-  name: 32,45|1|🇷3 |  6.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.36.52.106
-  type: ss
-- name: 42|🇰🇷 _韩国
+  udp: true
+- allowInsecure: ''
+  name: 36|韩国 002
+  network: ws
   password: Aimer
-  port: 587
-  server: 140.238.11.169
-  skip-cert-verify: false
-  sni: epccq.ambercc.filegear-sg.me
-  type: trojan
-- name: '42|🇰🇷 _韩国 #1'
-  password: Aimer
-  port: 35241
-  server: 125.134.157.224
+  port: 12205
+  server: 121.135.67.36
   skip-cert-verify: false
   sni: epccw.ambercc.filegear-sg.me
+  tls: true
   type: trojan
-- name: '42|🇰🇷 _韩国 #2'
+  ws-opts:
+    headers:
+      Host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- allowInsecure: ''
+  name: 36|韩国 003
+  network: ws
   password: Aimer
-  port: 12527
-  server: 61.72.115.195
+  port: 32443
+  server: 121.175.42.160
   skip-cert-verify: false
   sni: epccq.ambercc.filegear-sg.me
+  tls: true
   type: trojan
-- name: '42|🇰🇷 _韩国 #3'
-  password: Aimer
-  port: 12274
-  server: 121.155.127.127
-  skip-cert-verify: false
-  sni: epccq.ambercc.filegear-sg.me
-  type: trojan
-- name: '42|🇰🇷 _韩国 #4'
-  password: Aimer
-  port: 12323
-  server: 221.144.200.91
-  skip-cert-verify: false
-  sni: epcce.ambercc.filegear-sg.me
-  type: trojan
-- name: '42|🇰🇷 _韩国 #5'
-  password: Aimer
-  port: 12314
-  server: 121.156.155.161
-  skip-cert-verify: false
-  sni: epcce.ambercc.filegear-sg.me
-  type: trojan
-- name: '42|🇰🇷 _韩国 #6'
-  password: Aimer
-  port: 35622
-  server: 220.72.36.107
-  skip-cert-verify: false
-  sni: epccq.ambercc.filegear-sg.me
-  type: trojan
-- name: '42|🇰🇷 _韩国 #7'
-  password: Aimer
-  port: 12172
-  server: 121.186.243.22
-  skip-cert-verify: false
-  sni: epcce.ambercc.filegear-sg.me
-  type: trojan
-- name: '42|🇰🇷 _韩国 #8'
-  password: Aimer
-  port: 10205
-  server: 125.139.48.108
-  skip-cert-verify: false
-  sni: epccq.ambercc.filegear-sg.me
-  type: trojan
-- name: '42|🇰🇷 _韩国 #9'
-  password: Aimer
-  port: 18077
-  server: 175.198.63.31
-  skip-cert-verify: false
-  sni: epcce.ambercc.filegear-sg.me
-  type: trojan
-- name: '42|🇰🇷 _韩国 #10'
-  password: Aimer
-  port: 12382
-  server: 175.205.164.6
-  skip-cert-verify: false
-  sni: epccq.ambercc.filegear-sg.me
-  type: trojan
-- name: '42|🇰🇷 _韩国 #11'
-  password: Aimer
-  port: 14895
-  server: 211.184.62.104
-  skip-cert-verify: false
-  sni: epccw.ambercc.filegear-sg.me
-  type: trojan
+  ws-opts:
+    headers:
+      Host: epccq.ambercc.filegear-sg.me
+    path: /?ed=2560
 - name: 43|韩国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
@@ -330,30 +275,37 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 45|0| 01 | 1x KR
-  password: 991d8642-135b-4ce0-9cc8-465770d2b1f7
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|0|🇷韩国 02 | 1x KR
-  password: 991d8642-135b-4ce0-9cc8-465770d2b1f7
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 45|2|🇷 韩国 01 | 1x KR
-  password: 93ec36c7-c601-4be7-9971-6c0654c2cd9a
+  name: 45|0|  01 | 1x KR
+  password: d07fe4ef-fa1e-46d2-a81a-5e4287d992d9
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|2|🇰🇷 韩国 02 | 1x KR
-  password: 93ec36c7-c601-4be7-9971-6c0654c2cd9a
+  name: 45|0|🇷 韩国 02 | 1x KR
+  password: d07fe4ef-fa1e-46d2-a81a-5e4287d992d9
   port: 36313
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|1|🇷韩国 01 | 1x KR
+  password: 10836127-2639-408d-ad75-e35bfda7d659
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|1|🇰🇷韩国 02 | 1x KR
+  password: 10836127-2639-408d-ad75-e35bfda7d659
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 48,50|KR_speednode_0025
+  password: amazonskr05
+  port: 443
+  server: 54.180.154.25
   type: ss
   udp: true

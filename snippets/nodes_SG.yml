@@ -163,24 +163,34 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 15|新加坡NO.2
+  name: 14|新加坡NO.2
   port: 45055
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 7e0c3ce7-d37c-41bb-b6c6-c35df0ed4917
+  uuid: db3021c7-ac57-41f3-8678-0008801e7549
 - alterId: 0
   cipher: auto
-  name: 15|新加坡NO.1
+  name: 14|新加坡NO.1
   port: 45054
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 7e0c3ce7-d37c-41bb-b6c6-c35df0ed4917
+  uuid: db3021c7-ac57-41f3-8678-0008801e7549
+- alterId: 0
+  cipher: auto
+  name: 15|新加坡NO.2-1B
+  port: 45055
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c8dc2bc5-2185-41c6-8d19-c306dbb00c13
 - alterId: 0
   cipher: auto
   name: 17,36|美国 091
@@ -693,6 +703,27 @@ proxies:
     headers:
       Host: d16henb377mok4.cloudfront.net
     path: /stream
+- alterId: 0
+  cipher: auto
+  name: 19,32,45|1|🇬3 |  1.6MB/s
+  port: 17231
+  server: 03d929ef-suk9s0-tcmdts-1mmu6.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 2ee8f830-09e2-11f0-90e2-f23c913c8d2b
+- alterId: 0
+  cipher: auto
+  name: '19,42|1|🇸🇬3 |  3.9MB/s #1'
+  network: tcp
+  port: '17231'
+  server: 6f316071-suk9s0-swtza9-1q91p.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  ws-headers:
+    Host: 6f316071-suk9s0-swtza9-1q91p.cm5.p5pv.com
+  ws-path: /
 - cipher: aes-256-cfb
   name: 20|🇸🇬 SG, Singapore
   password: amazonskr05
@@ -830,6 +861,14 @@ proxies:
   server: iepl.ytxfx.xyz
   type: ss
   udp: true
+- country: 🇬SG
+  name: 23|SG_248
+  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
+  port: 443
+  server: sg-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: 29|SG新加坡(mibei77.com 米贝节点分享)
   password: Aimer
   port: 2096
@@ -851,73 +890,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 35|🇸🇬 1|🇸🇬新加坡 01 | 1x SG
-  password: 6f411881-272d-4bc3-b7dd-072263b05643
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 35|🇸🇬 1|🇸🇬新加坡 02 | 1x SG
-  password: 6f411881-272d-4bc3-b7dd-072263b05643
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 35|🇸🇬 1|🇸🇬新加坡 03 | 1x SG
-  password: 6f411881-272d-4bc3-b7dd-072263b05643
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 35|🇸🇬 2|🇸🇬 新加坡 01 | 1x SG
-  password: a3999a4c-7f06-4521-83ea-1202ea1c37ab
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 35|🇸🇬 2|🇸🇬 新加坡 02 | 1x SG
-  password: a3999a4c-7f06-4521-83ea-1202ea1c37ab
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 35|🇸🇬 2|🇸🇬 新加坡 03 | 1x SG
-  password: a3999a4c-7f06-4521-83ea-1202ea1c37ab
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 35|🇸🇬 12,13|新加坡|@ripaojiedian
-  network: ws
-  port: 16618
-  server: yes.mojcn.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6400c720-13f6-45b0-81ea-419b89873cd2
-  ws-opts:
-    headers:
-      Host: 66d0c215104536850c337da2227b21cb.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 35|🇸🇬 13|新加坡2|@ripaojiedian
-  port: 4137
-  server: 41158001-suh6o0-sv6d5y-ddgs.c.volczijie.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c870fe5a-0729-11f0-8cf9-f23c93136cb3
 - alterId: 0
   cipher: auto
   name: 41|11|11|11|11|11|15|🇸🇬 新加坡5|@rip...
@@ -927,19 +899,88 @@ proxies:
   tls: false
   type: vmess
   uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
+- alterId: 0
+  cipher: auto
+  name: '42|1|🇸🇬4 |  3.1MB/s #1'
+  network: tcp
+  port: '17231'
+  server: 03d929ef-suk9s0-tcmdts-1mmu6.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 2ee8f830-09e2-11f0-90e2-f23c913c8d2b
+- alterId: 0
+  cipher: auto
+  name: 42,45|13|新加坡|@ripaojiedian
+  network: tcp
+  port: '3681'
+  server: d131cc2e-sukw00-sw1b1x-4550.c.volczijie.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6286105c-fb6d-11ef-be96-f23c93136cb3
+- name: '42|🇸🇬 _新加坡 #1'
+  password: 86920f59-7e5e-4272-abec-271bb931121c
+  port: 443
+  server: sg.lyyyds.club
+  skip-cert-verify: false
+  sni: sg.lyyyds.club
+  type: trojan
 - name: 43|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 45|0|  01 | 1x SG
+  password: 474b0248-8ffa-4e49-a415-49d907171fc6
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|0|🇬 新加坡 02 | 1x SG
+  password: 474b0248-8ffa-4e49-a415-49d907171fc6
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|0|🇬 新加坡 03 | 1x SG
+  password: 474b0248-8ffa-4e49-a415-49d907171fc6
+  port: 36175
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|2|🇬新加坡 01 | 1x SG
+  password: d57fefbc-c4cb-4d82-9452-ef2c31cfb005
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|2|🇸🇬新加坡 02 | 1x SG
+  password: d57fefbc-c4cb-4d82-9452-ef2c31cfb005
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45|2|🇬新加坡 03 | 1x SG
+  password: d57fefbc-c4cb-4d82-9452-ef2c31cfb005
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 45,48,50|CN_speednode_0006
-  port: 4135
-  server: 40dde1d3-suj1c0-sv88d5-b3yb.d.volczijie.com
+  client-fingerprint: chrome
+  name: '45,46|🇸🇬 新加坡|@ripaojiedian #1'
+  port: 3681
+  server: d131cc2e-sukw00-sw1b1x-4550.c.volczijie.com
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  udp: true
-  uuid: 31abebae-08c0-11f0-8ac2-f23c93136cb3
+  uuid: 6286105c-fb6d-11ef-be96-f23c93136cb3

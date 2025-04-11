@@ -42,16 +42,6 @@ proxies:
     path: /xyz
 - alterId: 0
   cipher: auto
-  name: 14|加拿大1
-  port: 45064
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: db3021c7-ac57-41f3-8678-0008801e7549
-- alterId: 0
-  cipher: auto
   name: 14,15|加拿大2-1A
   port: 45065
   server: xdd.dashuai.cyou
@@ -59,17 +49,27 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: db3021c7-ac57-41f3-8678-0008801e7549
+  uuid: b688b870-22e7-481d-a9b4-b32b520e6019
 - alterId: 0
   cipher: auto
-  name: 15|加拿大2-1B
-  port: 45065
-  server: xdd.dashuai.cyou
+  name: 14,15|加拿大1-1A
+  port: 45064
+  server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: c8dc2bc5-2185-41c6-8d19-c306dbb00c13
+  uuid: b688b870-22e7-481d-a9b4-b32b520e6019
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大1-1B
+  port: 45064
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4409df54-450e-46d1-899f-6ac482731168
 - cipher: aes-256-cfb
   name: 20|🇨🇦 CA, Vancouver
   password: amazonskr05
@@ -106,7 +106,7 @@ proxies:
   uuid: 5eb8a504-4855-4011-a6bb-6d9488dbcb22
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 23|🇦CA_113
+  name: 23|🇦CA_99
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
@@ -237,57 +237,17 @@ proxies:
     headers:
       Host: 51.79.102.253
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: 42|VMESS-未知>乌克兰-NF解锁加拿大地区非自制剧-Cha...
-  network: ws
-  port: 80
-  server: 104.21.112.1
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7f8a1bb9-bee0-40a8-f908-21a65da0f3cc
-  ws-opts:
-    headers:
-      Host: us2vmess.rnmcnm.com
-    path: /123qwe
-- alterId: 0
-  cipher: auto
-  name: '42|🇨🇦 _加拿大 #2'
-  network: ws
-  port: '80'
-  server: 51.79.103.76
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '42|🇨🇦 _加拿大 #3'
-  network: ws
-  port: '80'
-  server: 51.79.102.253
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 45|0|🇦 加大 01 | 1x CA
-  password: 474b0248-8ffa-4e49-a415-49d907171fc6
-  port: 36441
-  server: free.2weradf.xyz
+  name: 45|0|🇦加大 01 | 1x CA
+  password: 6d497783-4e06-4c6f-900f-04d974eeee0a
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 45|2|🇦加拿大 01 | 1x CA
-  password: d57fefbc-c4cb-4d82-9452-ef2c31cfb005
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 45|1|🇦 加拿大 01 | 1x CA
+  password: 2d65c723-a5bd-431c-a450-9755ad28987d
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true

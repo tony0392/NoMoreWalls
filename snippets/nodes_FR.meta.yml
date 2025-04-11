@@ -1,4 +1,14 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  country: 🇱 PL
+  ip-version: dual
+  name: '3,5,23,38,39,49|🇫🇷_FR_法国 #3'
+  password: sVjPo5m8PUrhHuB9lDZzNS
+  port: 443
+  server: 151.115.88.168
+  tls: false
+  type: ss
+  udp: true
 - name: 6|🇫🇷 法国
   password: 64f4f8e7-cf41-4e53-b123-5e8e9f27defa
   port: 52508
@@ -36,6 +46,16 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
+  name: 14,15|法国1-1A
+  port: 45072
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b688b870-22e7-481d-a9b4-b32b520e6019
+- alterId: 0
+  cipher: auto
   name: 14,15|法国2-1A
   port: 45071
   server: xdd.dashuai.cyou
@@ -43,17 +63,27 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: db3021c7-ac57-41f3-8678-0008801e7549
+  uuid: b688b870-22e7-481d-a9b4-b32b520e6019
 - alterId: 0
   cipher: auto
-  name: 14|法国1
+  name: 15|法国2-1B
+  port: 45071
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4409df54-450e-46d1-899f-6ac482731168
+- alterId: 0
+  cipher: auto
+  name: 15|法国1-1B
   port: 45072
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: db3021c7-ac57-41f3-8678-0008801e7549
+  uuid: 4409df54-450e-46d1-899f-6ac482731168
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 21|🇫🇷 法国|PAR1
@@ -87,24 +117,7 @@ proxies:
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 23| FR_134
-  network: ws
-  port: 443
-  server: 163.5.159.231
-  servername: irvideo.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-headers:
-    HOST: irvideo.cfd
-  ws-path: /linkws
-- alterId: 0
-  cipher: auto
-  country: 🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 23|🇷 FR_135
+  name: 23| FR_120
   network: ws
   port: 443
   server: 51.77.20.136
@@ -121,24 +134,24 @@ proxies:
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 23|🇫🇷 FR_136
+  name: 23|🇷 FR_121
   network: ws
   port: 443
-  server: 51.77.20.137
-  servername: tilebani.com
+  server: 51.77.20.132
+  servername: a.baradiha.com
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-headers:
-    HOST: tilebani.com
+    HOST: a.baradiha.com
   ws-path: /linkvws
 - alterId: 0
   cipher: auto
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 23|🇫🇷 FR_137
+  name: 23|🇫🇷 FR_122
   network: ws
   port: 443
   server: 146.19.168.161
@@ -152,23 +165,23 @@ proxies:
   ws-path: /link
 - alterId: 0
   cipher: auto
-  country: 🇷 FR
+  country: 🇫🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 23|🇫🇷 FR_138
+  name: 23|🇫🇷 FR_123
   network: ws
   port: 443
-  server: 51.77.20.132
-  servername: a.baradiha.com
+  server: 51.77.20.137
+  servername: tilebani.com
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-headers:
-    HOST: a.baradiha.com
+    HOST: tilebani.com
   ws-path: /linkvws
 - country: 🇷FR
-  name: 23|🇫🇷FR_139
+  name: 23|🇫🇷FR_124
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -176,7 +189,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 23|🇷FR_140
+  name: 23|🇷FR_125
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -184,7 +197,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 23|🇫🇷FR_141
+  name: 23|🇫🇷FR_126
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
@@ -211,56 +224,17 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '42|🇫🇷 _法国 #4'
+  name: '42|2|🇫🇷1 |  5.7MB/s #1'
   network: ws
-  port: '443'
-  server: 51.77.20.132
+  port: '2095'
+  server: 185.174.138.209
   tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   ws-opts:
     headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '42|🇫🇷 _法国 #5'
-  network: ws
-  port: '443'
-  server: 51.77.20.137
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '42|🇫🇷 _法国 #6'
-  network: ws
-  port: '443'
-  server: 146.59.55.50
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '42|🇫🇷 _法国 #7'
-  network: ws
-  port: '443'
-  server: 51.77.20.136
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+      Host: yellow-paper-029c.yvonna.workers.dev
+    path: /az05.beyondy.cfd/link?/TM
 - name: 43|法国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

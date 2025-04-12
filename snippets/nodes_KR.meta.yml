@@ -376,11 +376,12 @@ proxies:
   udp: true
   uuid: 4409df54-450e-46d1-899f-6ac482731168
 - cipher: aes-256-cfb
-  name: 11,37|1|🇰🇷8 |  5.5MB/s
+  name: 11,24,37|1|🇰🇷8 |  5.5MB/s
   password: amazonskr05
   port: 443
   server: 13.125.87.74
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 12|🇰🇷 KR, Incheon
   password: amazonskr05
@@ -519,6 +520,13 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: aes-256-cfb
+  name: 24,37|1|🇷4 |  6.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.36.94.132
+  type: ss
+  udp: true
 - allowInsecure: ''
   name: 28|韩国 002
   network: ws
@@ -561,6 +569,19 @@ proxies:
     headers:
       Host: oracle2ipv4.till.nyc.mn
     path: /
+- client-fingerprint: chrome
+  name: '28,37,38|🇰🇷 韩国2|@ripaojiedian #1'
+  network: ws
+  password: ji0612uenfs
+  port: 50000
+  server: 121.167.108.242
+  skip-cert-verify: false
+  sni: ji0612e.nfjunka.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ji0612e.nfjunka.xyz
+    path: /?ed=2560&proxyip=121.167.108.242:50000
 - name: '34|🇰🇷 13|韩国2|@ripaojiedian #1'
   password: ji0612uenfs
   port: 50000
@@ -783,19 +804,6 @@ proxies:
   port: 443
   server: 13.124.81.166
   type: ss
-- client-fingerprint: chrome
-  name: '37,38|🇰🇷 韩国2|@ripaojiedian #1'
-  network: ws
-  password: ji0612uenfs
-  port: 50000
-  server: 121.167.108.242
-  skip-cert-verify: false
-  sni: ji0612e.nfjunka.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ji0612e.nfjunka.xyz
-    path: /?ed=2560&proxyip=121.167.108.242:50000
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: '37,38|🇰🇷 韩国3|@ripaojiedian #1'

@@ -49,27 +49,27 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: b688b870-22e7-481d-a9b4-b32b520e6019
+  uuid: 43c111b6-6d9e-4e7d-8a14-15d134a15130
 - alterId: 0
   cipher: auto
-  name: 7,8|加拿大1-1A
+  name: 7|加拿大1
   port: 45064
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: b688b870-22e7-481d-a9b4-b32b520e6019
+  uuid: 43c111b6-6d9e-4e7d-8a14-15d134a15130
 - alterId: 0
   cipher: auto
-  name: 8|加拿大1-1B
-  port: 45064
-  server: haa.dashuai.cyou
+  name: 8|加拿大2-1B
+  port: 45065
+  server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 4409df54-450e-46d1-899f-6ac482731168
+  uuid: 51aa34c4-cff6-46e0-a17d-3264a122af3a
 - cipher: aes-256-cfb
   name: 12|🇨🇦 CA, Vancouver
   password: amazonskr05
@@ -106,11 +106,27 @@ proxies:
   uuid: 5eb8a504-4855-4011-a6bb-6d9488dbcb22
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 15|🇦CA_96
+  name: 15|🇦CA_107
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  ip-version: dual
+  name: 24,28,34,41|🇮🇱_IL_以色列->🇨🇷_CR_哥斯达黎加_1
+  network: tcp
+  port: 28984
+  server: 91.194.11.178
+  skip-cert-verify: true
+  sni: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
+  ws-headers:
+    Host: 91.194.11.178
 - alterId: 0
   cipher: auto
   name: 25|[VMess] 🇨🇦 _CA_加拿大
@@ -251,37 +267,17 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: '34|2|🇨🇦1 |  5.4MB/s #1'
-  network: ws
-  port: '12897'
-  server: gtm1.ktmwan.net
-  tls: false
-  type: vmess
-  uuid: 1bfc69ad-1855-4dfe-b169-886d7156e0f3
-  ws-opts:
-    headers:
-      Host: gtm1.ktmwan.net
-    path: /
-- name: 34|🇨🇦 _加拿大
-  password: Aimer
-  port: 2087
-  server: 104.234.239.235
-  skip-cert-verify: false
-  sni: epcct.ambercc.filegear-sg.me
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 37|0|🇦 加大 01 | 1x CA
-  password: ad5511d7-4e09-48b9-a783-f3e472533c35
-  port: 36441
-  server: free.2weradf.xyz
+  name: 37|1|加大 01 | 1x CA
+  password: 556fec82-5324-40b9-a8c8-3aebfc168588
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|14|🇦加拿大 01 | 1x CA
-  password: d44e0276-ca95-4265-bc59-d754586f60a6
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 37|14|🇦 加拿大 01 | 1x CA
+  password: f0091a8f-b8ea-411c-a7c9-58e277594b1a
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true

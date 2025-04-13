@@ -1,4 +1,12 @@
 proxies:
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: '0,1,31|🇬🇧_GB_英国 #2'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.15.82
+  type: ss
+  udp: true
 - name: 2|🇬🇧 英国
   password: 64f4f8e7-cf41-4e53-b123-5e8e9f27defa
   port: 59358
@@ -33,34 +41,24 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - alterId: 0
   cipher: auto
-  name: 7|英国2
+  name: 7,8|英国2-1A
   port: 45067
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: b688b870-22e7-481d-a9b4-b32b520e6019
+  uuid: 43c111b6-6d9e-4e7d-8a14-15d134a15130
 - alterId: 0
   cipher: auto
-  name: 7,8|英国1-1A
+  name: 7|英国1
   port: 45066
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: b688b870-22e7-481d-a9b4-b32b520e6019
-- alterId: 0
-  cipher: auto
-  name: 8|英国1-1B
-  port: 45066
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4409df54-450e-46d1-899f-6ac482731168
+  uuid: 43c111b6-6d9e-4e7d-8a14-15d134a15130
 - alterId: 0
   cipher: auto
   name: 8|英国2-1B
@@ -70,7 +68,16 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 4409df54-450e-46d1-899f-6ac482731168
+  uuid: 51aa34c4-cff6-46e0-a17d-3264a122af3a
+- name: 11,25|[Trojan] 🇺🇸 美国 Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.175.71.57
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tfo: false
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇬🇧 英国|COV2
@@ -109,168 +116,81 @@ proxies:
   uuid: 5eb8a504-4855-4011-a6bb-6d9488dbcb22
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 15| GB_125
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15|🇧 GB_126
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15|🇧 GB_127
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.239.250
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15|🇬🇧 GB_128
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15|🇬🇧 GB_129
-  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15|🇬🇧 GB_130
-  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15|🇬🇧 GB_131
-  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇧 GB
-  name: 15|🇧 GB_132
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15|🇧 GB_133
+  name: 15| GB_141
   password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
   port: 55988
   server: 185.5.38.111
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 15|🇬🇧 GB_134
-  password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
+  name: 15|🇧 GB_142
+  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
   port: 55988
   server: mx2.drawnrisha.one
   type: ss
 - cipher: aes-128-gcm
+  country: 🇧 GB
+  name: 15|🇧 GB_143
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 15|🇧 GB_144
+  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 15|🇬🇧 GB_145
+  password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
+  port: 55988
+  server: mx2.drawnrisha.one
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 15|🇬🇧 GB_146
+  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 15|🇬🇧 GB_147
+  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 15|🇬🇧 GB_148
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 15|🇧 GB_149
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.250
+  type: ss
+- cipher: aes-128-gcm
   country: 🇧GB
-  name: 15|🇬🇧GB_135
+  name: 15|🇬🇧GB_150
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
 - cipher: aes-128-gcm
   country: 🇧GB
-  name: 15|🇬🇧GB_136
+  name: 15|🇬🇧GB_151
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   type: ss
-- country: 🇬🇧GB
-  name: 15|🇬🇧GB_137
-  password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
-  port: 443
-  server: uk2-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19,34|🇬🇧 英国 V2CROSS.COM
-  network: tcp
-  port: '29999'
-  server: 46.250.237.196
-  tls: false
-  type: vmess
-  uuid: b31fc134-978e-4176-8579-8107d6a0cede
-- alterId: 0
-  cipher: auto
-  name: '19|英国 V2CROSS.COM #1'
-  network: tcp
-  port: 45317
-  server: 46.250.234.32
-  tls: false
-  type: vmess
-  uuid: b2836369-220b-4840-80c4-8cf904c735ee
-- alpn:
-  - http/1.1
-  name: 19|英国+伦敦Amazon数据中心
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.178.163.218
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 21|GB英国(mibei77.com 米贝节点分享)
-  password: FiSo7J6vfS
-  port: 1935
-  server: 51.68.13.106
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 21|GB英国(mibei77.com 米贝节点分享) 2
-  password: Aimer
-  port: 8443
-  server: 51.195.85.90
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 25|[VMess] 🇬🇧 英国 V2CROSS.COM
-  port: 29999
-  server: 46.250.237.196
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b31fc134-978e-4176-8579-8107d6a0cede
-- alterId: 0
-  cipher: auto
-  name: 25|[VMess] 🇬🇧 英国 V2CROSS.COM 2
-  port: 45317
-  server: 46.250.234.32
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b2836369-220b-4840-80c4-8cf904c735ee
-- name: '25,34|🇬🇧 英国 伦敦Amazon数据中心 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.178.163.218
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  tfo: false
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 28|英国 002
@@ -402,38 +322,27 @@ proxies:
     headers:
       Host: vc.fly.dev
     path: /vc
-- name: 34|🇬🇧 英国 伦敦Amazon数据中心
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.9.247.80
+- allowInsecure: ''
+  name: 28|英国 016
+  network: tcp
+  password: I46LpSIM1f
+  port: 1935
+  server: 194.164.57.9
   skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 34|🇬🇧 _英国
-  password: Aimer
-  port: 19000
-  server: 89.213.182.253
-  skip-cert-verify: false
-  sni: epccr.ambercc.filegear-sg.me
-  type: trojan
-- name: '34|🇬🇧 _英国 #1'
-  password: Aimer
-  port: 39231
-  server: 5.253.36.226
-  skip-cert-verify: false
-  sni: epcct.ambercc.filegear-sg.me
+  sni: x4ger-ionos.devefun.net
+  tls: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 37|0| 国住宅IP 01 | 1x UK
-  password: ad5511d7-4e09-48b9-a783-f3e472533c35
-  port: 36271
-  server: free.2weradf.xyz
+  name: 37|1|国家宽 01 | 1x UK
+  password: 556fec82-5324-40b9-a8c8-3aebfc168588
+  port: 31271
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|14|🇧英国家宽 01 | 1x UK
-  password: d44e0276-ca95-4265-bc59-d754586f60a6
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: 37|14|🇧 英国住宅IP 01 | 1x UK
+  password: f0091a8f-b8ea-411c-a7c9-58e277594b1a
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true

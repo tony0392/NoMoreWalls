@@ -1,4 +1,13 @@
 proxies:
+- cipher: rc4-md5
+  ip-version: dual
+  name: '0,1,15,20,22,31,41|🇩🇪_DE_德国 #3'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  tls: false
+  type: ss
+  udp: true
 - name: 2|🇩🇪 德国
   password: 64f4f8e7-cf41-4e53-b123-5e8e9f27defa
   port: 21463
@@ -61,21 +70,27 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- alterId: 2
-  cipher: auto
-  name: 11|🇩🇪1 |  5.0MB/s
+- cipher: chacha20-ietf-poly1305
+  country: 🇪 DE
+  name: 11,15,37|2|🇩🇪6 |  5.5MB/s
+  password: q7jwtcA0MmyYi0JddUgXXj
+  port: 42037
+  server: 85.208.139.31
+  type: ss
+- allowInsecure: ''
+  name: 11,28|美国 492
   network: ws
-  port: 23618
-  server: 18.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0b4c36ab-4385-353a-9305-566f12dcf4a5
+  password: redfree8
+  port: 443
+  server: 104.17.148.22
+  skip-cert-verify: false
+  sni: redfree8-p1.pooriashop.ir
+  tls: true
+  type: trojan
   ws-opts:
     headers:
-      Host: 18.mamamajd.site
-    path: /
+      Host: redfree8-p1.pooriashop.ir
+    path: /trJF1XisQEbWZpxEHh?ed=2560
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -892,83 +907,83 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇪 DE
-  name: 15|🇪 DE_119
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 92.118.205.228
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
   name: 15|🇪 DE_120
   password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
   port: 54075
   server: beta.mattenadene.org
   type: ss
-- cipher: aes-256-cfb
-  country: 🇪DE
-  name: 15|🇪DE_121
-  password: FAdUvMJUq5vDgKEq
-  port: 9006
-  server: 80.92.204.106
+- cipher: chacha20-ietf-poly1305
+  country: 🇪 DE
+  name: 15|🇪 DE_121
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 92.118.205.228
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
   name: 15|🇪DE_122
-  password: XPtzA9sCug3SPR4c
-  port: 9025
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 15|🇩🇪DE_123
+  name: 15|🇪DE_123
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_124
   password: 4R3hUfZ2FHhDmNcP
   port: 9061
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 15|🇩🇪DE_124
+  name: 15|🇩🇪DE_125
   password: BwcAUZk8hUFAkDGN
   port: 9031
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 15|🇩🇪DE_125
+  name: 15|🇩🇪DE_126
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 15|🇩🇪DE_126
+  name: 15|🇩🇪DE_127
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_128
   password: ZpNDDKRu9MagNvaf
   port: 9015
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 15|🇩🇪DE_127
+  name: 15|🇩🇪DE_129
   password: NvS8N4Vf8qAGPSCL
   port: 9046
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 15|🇩🇪DE_128
+  name: 15|🇩🇪DE_130
   password: S7KwUu7yBy58S3Ga
   port: 9042
   server: 80.92.204.106
   type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 15|🇩🇪DE_129
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
-  server: 80.92.204.106
-  type: ss
 - country: 🇩🇪DE
-  name: 15|🇩🇪DE_130
+  name: 15|🇩🇪DE_131
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -976,6 +991,13 @@ proxies:
   sni: de2-full.privateip.net
   type: trojan
   udp: true
+- name: 24|🟡_🇩🇪_💻_github.com/Ruk1ng001_31...
+  password: I46LpSIM1f
+  port: 1935
+  server: 194.164.57.9
+  skip-cert-verify: true
+  sni: 194.164.57.9
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 28|德国 017
@@ -1042,6 +1064,31 @@ proxies:
   uuid: d61ef6c6-b70a-4f05-8df6-14b37ec8720a
 - alterId: 0
   cipher: auto
+  name: 28|德国 023
+  network: tcp
+  port: 3378
+  raw:
+    add: fi.pr0xymare.com
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 6e53b146-1756-4297-ba10-c0370fa9c471
+    net: tcp
+    path: ''
+    port: 3378
+    ps: 🔥Join+Telegram:@FarahVPN🟣
+    scy: auto
+    sni: ''
+    tls: none
+    type: ''
+    v: '2'
+  server: fi.pr0xymare.com
+  tls: false
+  type: vmess
+  uuid: 6e53b146-1756-4297-ba10-c0370fa9c471
+- alterId: 0
+  cipher: auto
   name: 34|VMESS-未知>德国-NF解锁德国地区非自制剧-ChatG...
   network: ws
   port: 2096
@@ -1054,30 +1101,24 @@ proxies:
     headers:
       Host: de01.sh-cloudflare.sbs
     path: /
-- alterId: 0
-  cipher: auto
-  name: '34|2|🇩🇪4 |  2.7MB/s #1'
-  network: ws
-  port: '20050'
-  server: 91.149.233.178
-  tls: false
-  type: vmess
-  uuid: a099b1cf-ac27-4273-9169-4cf51d19212e
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+- name: 34|🇩🇪 _德国
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: nextstepcareer.online
+  skip-cert-verify: false
+  sni: nextstepcareer.online
+  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 37|1|国 01 | 1x DE
-  password: 556fec82-5324-40b9-a8c8-3aebfc168588
-  port: 31471
-  server: free.2apzhfa.xyz
+  name: 37|0| 国 01 | 1x DE
+  password: fff38f40-4d13-45f4-b9f5-150b3486253c
+  port: 36471
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|14|🇪 德国 01 | 1x DE
-  password: f0091a8f-b8ea-411c-a7c9-58e277594b1a
-  port: 36471
-  server: free.2weradf.xyz
+  name: 37|1|🇪德国 01 | 1x DE
+  password: b77de874-b287-49a2-9ece-cabc7fb56d66
+  port: 31471
+  server: free.2apzhfa.xyz
   type: ss
   udp: true

@@ -693,6 +693,36 @@ proxies:
     headers:
       Host: d16henb377mok4.cloudfront.net
     path: /stream
+- cipher: chacha20-ietf
+  name: 11,37|2|🇸🇬3 |  6.1MB/s
+  obfs: http_simple
+  obfs-param: 20581-passw0rd.download.microsoft.com
+  password: passwd
+  port: 8215
+  protocol: origin
+  protocol-param: ''
+  server: cn09.closeai.one
+  type: ssr
+- cipher: chacha20-ietf
+  name: 11,37|2|🇸🇬1 |  6.2MB/s
+  obfs: http_simple
+  obfs-param: 20581-passw0rd.download.microsoft.com
+  password: passwd
+  port: 8211
+  protocol: origin
+  protocol-param: ''
+  server: cn08.closeai.one
+  type: ssr
+- cipher: chacha20-ietf
+  name: 11|🇸🇬4 |  6.3MB/s
+  obfs: http_simple
+  obfs-param: 20581-passw0rd.download.microsoft.com
+  password: passwd
+  port: 8207
+  protocol: origin
+  protocol-param: ''
+  server: cn07.closeai.one
+  type: ssr
 - cipher: aes-256-cfb
   name: 12|🇸🇬 SG, Singapore
   password: amazonskr05
@@ -831,19 +861,11 @@ proxies:
   type: ss
   udp: true
 - country: 🇬SG
-  name: 15|SG_232
+  name: 15|SG_243
   password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
   port: 443
   server: sg-full.privateip.net
   skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 19,24,25,34|🇸🇬 新加坡 Microsoft数据中心
-  password: dQUWbcwECl
-  port: 443
-  server: automq4-proxy.automq-sg.com
-  skip-cert-verify: false
-  tfo: false
   type: trojan
   udp: true
 - name: 21|SG新加坡(mibei77.com 米贝节点分享)
@@ -855,23 +877,13 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '24,37,38|🇸🇬 新加坡|@ripaojiedian #1'
+  name: '25,37,38|🇸🇬 新加坡|@ripaojiedian #1'
   password: '!!str 1234'
   port: 1234
   server: 54.255.247.220
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 24|🔴_🇸🇬_💻_github.com/Ruk1ng001_39...
-  port: 44396
-  server: 84.247.148.192
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
   udp: true
-  uuid: 3ca35e0a-e430-43fe-9c12-2e2eea70f873
 - alterId: 0
   cipher: auto
   name: 33|11|11|11|11|11|15|🇸🇬 新加坡5|@rip...
@@ -881,6 +893,13 @@ proxies:
   tls: false
   type: vmess
   uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
+- name: '34|2|🇸🇬2 |  1.6MB/s #1'
+  password: VMhGp5wEIyCDf90T
+  port: 38340
+  server: gysz0000.dynu.net
+  skip-cert-verify: true
+  sni: hk39.work.gd
+  type: trojan
 - name: 35|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
@@ -888,44 +907,52 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 37|1|🇬 01 | 1x SG
-  password: 556fec82-5324-40b9-a8c8-3aebfc168588
+  name: 37|0|  01 | 1x SG
+  password: fff38f40-4d13-45f4-b9f5-150b3486253c
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|0|🇬 新加坡 02 | 1x SG
+  password: fff38f40-4d13-45f4-b9f5-150b3486253c
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|0|🇬 新加坡 03 | 1x SG
+  password: fff38f40-4d13-45f4-b9f5-150b3486253c
+  port: 36175
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|1|🇬新加坡 01 | 1x SG
+  password: b77de874-b287-49a2-9ece-cabc7fb56d66
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|1|🇬新加坡 02 | 1x SG
-  password: 556fec82-5324-40b9-a8c8-3aebfc168588
+  name: 37|1|🇸🇬新加坡 02 | 1x SG
+  password: b77de874-b287-49a2-9ece-cabc7fb56d66
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 37|1|🇬新加坡 03 | 1x SG
-  password: 556fec82-5324-40b9-a8c8-3aebfc168588
+  password: b77de874-b287-49a2-9ece-cabc7fb56d66
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|14|🇬 新加坡 01 | 1x SG
-  password: f0091a8f-b8ea-411c-a7c9-58e277594b1a
-  port: 36171
-  server: free.2weradf.xyz
+  client-fingerprint: chrome
+  name: '37,38|🇸🇬 新加坡3|@ripaojiedian #1'
+  password: d192a833-b118-4b46-8e54-12cf5025d4cd
+  port: 33461
+  server: gsyd.aicheetah.lol
+  tfo: false
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|14|🇸🇬 新加坡 02 | 1x SG
-  password: f0091a8f-b8ea-411c-a7c9-58e277594b1a
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|14|🇬 新加坡 03 | 1x SG
-  password: f0091a8f-b8ea-411c-a7c9-58e277594b1a
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
-  udp: true

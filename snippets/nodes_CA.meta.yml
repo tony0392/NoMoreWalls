@@ -9,7 +9,40 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 6,7|加拿大1-1A
+  name: 3|🇨🇦 加拿大2
+  port: 45065
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
+- alterId: 0
+  cipher: auto
+  name: 3|🇨🇦 加拿大1
+  port: 45064
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
+- alterId: 0
+  cipher: auto
+  name: 3|🇨🇦 加拿大专线
+  network: ws
+  port: 30000
+  server: xr003.louwangzhiyu.xyz
+  servername: xr001.louwangzhiyu.xyz
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 228f31f4-392c-4f8f-80d5-149fd6417ada
+  ws-opts:
+    headers:
+      Host: www.louwangzhiyu.xyz
+    path: /xyz
+- alterId: 0
+  cipher: auto
+  name: 7,8|加拿大1-1A
   port: 45064
   server: haa.dashuai.cyou
   skip-cert-verify: true
@@ -19,7 +52,7 @@ proxies:
   uuid: ed5b6a2b-f204-4ea2-92a0-8dad380f376a
 - alterId: 0
   cipher: auto
-  name: 6,7|加拿大2-1A
+  name: 7,8|加拿大2-1A
   port: 45065
   server: xdd.dashuai.cyou
   skip-cert-verify: true
@@ -29,7 +62,7 @@ proxies:
   uuid: ed5b6a2b-f204-4ea2-92a0-8dad380f376a
 - alterId: 0
   cipher: auto
-  name: 7|加拿大2-1B
+  name: 8|加拿大2-1B
   port: 45065
   server: xdd.dashuai.cyou
   skip-cert-verify: true
@@ -39,7 +72,7 @@ proxies:
   uuid: 7a66cfde-3ca7-4952-ba97-918fbaded686
 - alterId: 0
   cipher: auto
-  name: 7|加拿大1-1B
+  name: 8|加拿大1-1B
   port: 45064
   server: haa.dashuai.cyou
   skip-cert-verify: true
@@ -48,14 +81,14 @@ proxies:
   udp: true
   uuid: 7a66cfde-3ca7-4952-ba97-918fbaded686
 - cipher: aes-256-cfb
-  name: 11|🇨🇦 CA, Vancouver
+  name: 12|🇨🇦 CA, Vancouver
   password: amazonskr05
   port: 443
   server: 54.200.54.11
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 12|🇨🇦 加拿大|CA1
+  name: 13|🇨🇦 加拿大|CA1
   password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
   port: 19915
   server: 70luslivsskpwm855plfjwgt5h2atwvf.08.01.ca.6l6.site
@@ -64,7 +97,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇨🇦 加拿大 | CAN
+  name: 14|🇨🇦 加拿大 | CAN
   port: 45065
   server: xdd.dashuai.cyou
   tls: false
@@ -74,7 +107,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇨🇦 加拿大 | CAN 2
+  name: 14|🇨🇦 加拿大 | CAN 2
   port: 45064
   server: haa.dashuai.cyou
   tls: false
@@ -83,7 +116,7 @@ proxies:
   uuid: 5eb8a504-4855-4011-a6bb-6d9488dbcb22
 - alterId: 0
   cipher: auto
-  name: 22|[VMess] 🇨🇦 _CA_加拿大
+  name: 25|[VMess] 🇨🇦 _CA_加拿大
   network: ws
   port: 80
   server: 108.181.10.17
@@ -96,14 +129,14 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇨🇦 0|🇨🇦 加拿大 01 | 1x CA
+  name: 27|🇨🇦 0|🇨🇦 加拿大 01 | 1x CA
   password: 781d9351-648c-4590-9058-9a29c873cb12
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇨🇦 1|🇨🇦加拿大 01 | 1x CA
+  name: 27|🇨🇦 1|🇨🇦加拿大 01 | 1x CA
   password: 6e470d24-4a6e-484d-85eb-e786a0939460
   port: 31441
   server: free.2apzhfa.xyz
@@ -112,7 +145,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1166
-  name: 25|加拿大 001
+  name: 28|加拿大 001
   network: ws
   port: 2052
   server: s1.db-link01.top
@@ -126,7 +159,7 @@ proxies:
     path: /dabai.in172.67.2.142
 - alterId: 0
   cipher: auto
-  name: 25|加拿大 002
+  name: 28|加拿大 002
   network: ws
   port: 8880
   server: s4.db-link02.top
@@ -142,7 +175,7 @@ proxies:
     path: /dabai.in104.25.239.131
 - alterId: 0
   cipher: auto
-  name: 25|加拿大 003
+  name: 28|加拿大 003
   network: ws
   port: 8080
   server: 104.16.155.10
@@ -158,7 +191,7 @@ proxies:
     path: /dabai.in104.20.16.209
 - alterId: 0
   cipher: auto
-  name: 25|加拿大 004
+  name: 28|加拿大 004
   network: ws
   port: 2086
   server: s1.cn-db.top
@@ -172,7 +205,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|加拿大 006
+  name: 28|加拿大 006
   network: ws
   port: 443
   server: us159.vp1000.net
@@ -186,7 +219,7 @@ proxies:
     path: /cp100vp800kkkdsnx
 - alterId: 0
   cipher: auto
-  name: 25|加拿大 008
+  name: 28|加拿大 008
   network: ws
   port: 8080
   server: s4.db-link02.top
@@ -198,7 +231,7 @@ proxies:
       Host: 100-217-184-172.s4.db-link02.top
     path: /dabai.in104.25.238.226
 - allowInsecure: ''
-  name: 25|加拿大 009
+  name: 28|加拿大 009
   network: tcp
   password: ef23ddd0-14c5-39c2-9880-af55ce892363
   port: 52492
@@ -209,7 +242,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 31|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
+  name: 34|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
   network: ws
   port: 80
   server: 51.79.102.253
@@ -223,7 +256,7 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '31|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP... #1'
+  name: '34|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP... #1'
   network: ws
   port: 80
   server: 51.79.103.76
@@ -235,7 +268,7 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: 31|🇨🇦 _加拿大
+- name: 34|🇨🇦 _加拿大
   password: Aimer
   port: 2087
   server: 104.234.239.235
@@ -243,14 +276,14 @@ proxies:
   sni: epccu.ambercc.filegear-sg.me
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 34|0|🇦 加大 01 | 1x CA
+  name: 37|0|🇦 加大 01 | 1x CA
   password: e7fd91b8-a7cc-4c36-a2cc-1081d4b93912
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 34|1|🇦加拿大 01 | 1x CA
+  name: 37|1|🇦加拿大 01 | 1x CA
   password: 5b4c5db6-f751-4c9e-b8ae-56b2dee3c33e
   port: 31441
   server: free.2apzhfa.xyz

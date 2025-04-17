@@ -72,12 +72,6 @@ proxies:
   udp: true
   uuid: 7a66cfde-3ca7-4952-ba97-918fbaded686
 - cipher: chacha20-ietf-poly1305
-  name: 11|🇬🇧3 |  2.8MB/s
-  password: mps3FwmDjLrWaOVg
-  port: 443
-  server: series-a2.varzesh360.co
-  type: ss
-- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇬🇧 英国|COV2
   password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
@@ -114,18 +108,67 @@ proxies:
   udp: true
   uuid: 5eb8a504-4855-4011-a6bb-6d9488dbcb22
 - cipher: chacha20-ietf-poly1305
-  name: 27|🇬🇧 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 781d9351-648c-4590-9058-9a29c873cb12
-  port: 36271
-  server: free.2weradf.xyz
+  country: 🇧 GB
+  name: 15| GB_156
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 27|🇬🇧 1|🇬🇧英国家宽 01 | 1x UK
-  password: 6e470d24-4a6e-484d-85eb-e786a0939460
-  port: 31271
-  server: free.2apzhfa.xyz
+  country: 🇧 GB
+  name: 15|🇧 GB_157
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.250
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 15|🇬🇧 GB_158
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.255.22
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 15|🇬🇧GB_159
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇧GB
+  name: 15|🇧GB_160
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- grpc-opts:
+    grpc-service-name: freehr01
+  name: 19|英国+V2CROSS.COM
+  network: grpc
+  password: 63dbc6d0-4890-320c-8874-56f9f002d425
+  port: 15446
+  server: 158.180.82.98
+  sni: freehr01.jd0001.top
+  type: trojan
+- client-fingerprint: chrome
+  name: '19,25,34,37,38|🇯🇵 日本3|@ripaojiedian #1'
+  password: '!!str 74260696553770700'
+  port: 443
+  server: robust-redfish.shiner427.skin
+  skip-cert-verify: false
+  sni: robust-redfish.shiner427.skin
+  tfo: false
+  type: trojan
+  udp: true
+- name: '25,34|🇬🇧 英国 V2CROSS.COM #1'
+  password: 63dbc6d0-4890-320c-8874-56f9f002d425
+  port: 15446
+  server: 158.180.82.98
+  skip-cert-verify: false
+  sni: freehr01.jd0001.top
+  tfo: false
+  type: trojan
   udp: true
 - alterId: 0
   cipher: auto
@@ -206,7 +249,7 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: '28,34|2|🇯🇵4 |  4.4MB/s #1'
+  name: 28|英国 012
   network: tcp
   password: '!!str 74260698218909400'
   port: 443
@@ -321,17 +364,23 @@ proxies:
     headers:
       Host: beyonddsz.cfd
     path: /linkws
+- cipher: aes-256-cfb
+  name: '30|_GB_国 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.15.82
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 37|0| 国住宅IP 01 | 1x UK
-  password: e7fd91b8-a7cc-4c36-a2cc-1081d4b93912
-  port: 36271
-  server: free.2weradf.xyz
+  name: 37|0|国家宽 01 | 1x UK
+  password: f3fd9490-c1e0-47a7-9a86-bee573dd659c
+  port: 31271
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|1|🇧英国家宽 01 | 1x UK
-  password: 5b4c5db6-f751-4c9e-b8ae-56b2dee3c33e
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: 37|2|🇧 英国住宅IP 01 | 1x UK
+  password: b47435fd-cd6f-4bea-a27a-f65bd5a3da7f
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true

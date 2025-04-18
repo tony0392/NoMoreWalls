@@ -215,6 +215,16 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
+  name: 7|香港NO.1
+  port: 45050
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3dd80bf5-2a32-4d8f-a56e-a21b28c38720
+- alterId: 0
+  cipher: auto
   name: 7,8|香港-1A
   port: 19901
   server: xg.dashuai.cyou
@@ -222,7 +232,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: ed5b6a2b-f204-4ea2-92a0-8dad380f376a
+  uuid: 3dd80bf5-2a32-4d8f-a56e-a21b28c38720
 - alterId: 0
   cipher: auto
   name: 7,8|香港NO.2-1A-GPT
@@ -232,17 +242,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: ed5b6a2b-f204-4ea2-92a0-8dad380f376a
-- alterId: 0
-  cipher: auto
-  name: 7,8|香港NO.1-1A-GPT
-  port: 45050
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ed5b6a2b-f204-4ea2-92a0-8dad380f376a
+  uuid: 3dd80bf5-2a32-4d8f-a56e-a21b28c38720
 - alterId: 0
   cipher: auto
   name: 8|香港NO.2-1B-GPT
@@ -252,17 +252,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7a66cfde-3ca7-4952-ba97-918fbaded686
-- alterId: 0
-  cipher: auto
-  name: 8|香港NO.1-1B-GPT
-  port: 45050
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a66cfde-3ca7-4952-ba97-918fbaded686
+  uuid: 5ad71df3-d9a0-4c85-9bc1-615fb114ccfd
 - alterId: 0
   cipher: auto
   name: 8|香港-1B
@@ -272,10 +262,10 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7a66cfde-3ca7-4952-ba97-918fbaded686
+  uuid: 5ad71df3-d9a0-4c85-9bc1-615fb114ccfd
 - alterId: 0
   cipher: auto
-  name: 10,28|美国 095
+  name: 10|HK | 香港 LB-1V
   network: ws
   port: 443
   server: hkcft01.xqc.best
@@ -785,6 +775,41 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 11,37|1|🇰1 |  2.4MB/s
+  network: tcp
+  port: 30251
+  raw:
+    add: 35.220.230.251
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 86c9c119-c46d-45a9-82a6-75a886e5e795
+    net: tcp
+    path: ''
+    port: '30251'
+    ps: Join+Telegram:@FarahVPN
+    scy: auto
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 35.220.230.251
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 86c9c119-c46d-45a9-82a6-75a886e5e795
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11,24|github.com/Ruk1ng001_646561383...
+  port: 15229
+  server: 2130c4e3-surog0-szxfsm-v3c2.cm.plebai.net
+  tls: false
+  type: vmess
+  uuid: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
 - cipher: aes-256-cfb
   name: 12|🇭🇰 HK, Kowloon
   password: amazonskr05
@@ -953,14 +978,21 @@ proxies:
   uuid: 5eb8a504-4855-4011-a6bb-6d9488dbcb22
 - cipher: chacha20-ietf-poly1305
   country: 🇰 HK
-  name: 15| HK_165
+  name: 15| HK_176
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
+- cipher: chacha20-ietf
+  country: 🇭🇰 HK
+  name: 15|🇰 HK_177
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '21,24|❓_🇨🇳_📶_github.com/Ruk1ng001_63... #1'
+  name: 21,24|❓_🇨🇳_📶_github.com/Ruk1ng001_63...
   port: 42355
   server: 120.198.71.219
   skip-cert-verify: true
@@ -970,14 +1002,12 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  ip-version: dual
-  name: '21,41|🇺🇸_US_美国->🇨🇷_CR_哥斯达黎加_1 #4'
+  name: 21|HK香港(mibei77.com 米贝节点分享) 2
   network: ws
   port: 80
   server: 172.67.70.188
-  servername: 834402699488042025041118280456411.s15.chibaba.filegear-sg.me
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   udp: true
   uuid: 06135553-6f54-4d32-af08-83bc94823e7e
@@ -987,7 +1017,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 21,24|❓_🇨🇳_📶_github.com/Ruk1ng001_37...
+  name: 21,24,25|[VMess] 🇨🇳 广东省广州市 移动 2
   port: 43121
   server: 183.236.51.38
   skip-cert-verify: true
@@ -1017,9 +1047,25 @@ proxies:
   ws-headers:
     Host: 403933558134832025041118280436159.s15.chibaba.filegear-sg.me
   ws-path: /s15.html
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: 21,22|_CN_->_US_国_1
+  network: ws
+  port: 30807
+  server: v7.heduian.link
+  servername: ocbc.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: ocbc.com
+  ws-path: /oooo
 - alterId: 0
   cipher: auto
-  name: '21,24|❓_🇨🇳_📶_github.com/Ruk1ng001_38... #1'
+  name: 21,24|❓_🇨🇳_📶_github.com/Ruk1ng001_38...
   port: 59554
   server: 183.236.51.38
   skip-cert-verify: true
@@ -1055,6 +1101,20 @@ proxies:
   server: agaungzhou01.bumbleshrimp.com
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 21|HK香港(mibei77.com 米贝节点分享) 11
+  network: ws
+  port: 30809
+  server: v9.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: baidu.com
+  ws-path: /oooo
 - cipher: aes-256-gcm
   name: 21|HK香港(mibei77.com 米贝节点分享) 12
   password: RexnBgU7EV5ADxG
@@ -1166,13 +1226,21 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '21,24,25,37,38|🇭🇰 香港3|@ripaojiedian #1'
+  name: '21,24,37,38|🇭🇰 香港3|@ripaojiedian #1'
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52612
   server: 111.29.57.125
   skip-cert-verify: true
   tfo: false
   tls: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 25|[SS] 🇭🇰 香港 特别行政区
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 154.90.63.193
+  tfo: false
   type: ss
   udp: true
 - alterId: 0
@@ -1183,7 +1251,7 @@ proxies:
   server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: dc87db29-c775-4754-bef4-cdc2fae55d65
+  uuid: d7b484ad-dccf-4346-978f-8ab7ba696a26
 - alterId: 0
   cipher: auto
   name: 33|11|11|11|11|11|11,16|香港|@ripao...
@@ -1194,36 +1262,43 @@ proxies:
   tls: false
   type: vmess
   uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
-- alterId: 0
-  cipher: auto
-  name: 34|🇭🇰 香港 腾讯云
-  network: ws
-  port: '1935'
-  server: 43.154.34.74
-  tls: true
-  type: vmess
-  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
-  ws-opts:
-    headers:
-      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
-    path: /vmess-argo
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
   name: '34,37,38|🇭🇰 香港4|@ripaojiedian #1'
   network: ws
-  port: 30809
-  server: v9.heduian.link
+  port: 80
+  server: f1bbc8a1-sux8g0-swvpe2-1tetp.hgc1.tcpbbr.net
   servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 56d4be76-f24d-11ef-9b69-f23c9164ca5d
   ws-opts:
     headers:
-      Host: baidu.com
-    path: /oooo
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: 34|🇭🇰 香港 腾讯云
+  password: oIwjHDXpKePvYIg8
+  port: 443
+  server: 43.161.255.183
+  skip-cert-verify: false
+  sni: myvps.lol
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '34|2|🇭🇰6 |  2.2MB/s #1'
+  network: ws
+  port: '443'
+  server: 104.17.137.127
+  tls: true
+  type: vmess
+  uuid: 47eab0de-97f9-49be-f2f3-2e4eb17268e6
+  ws-opts:
+    headers:
+      Host: hk.niskakowski.ggff.net
+    path: /aa
 - alterId: 0
   cipher: auto
   name: 34,37|13|香港5|@ripaojiedian
@@ -1234,23 +1309,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  name: '34,37,38|🇭🇰 香港6|@ripaojiedian #1'
-  network: ws
-  port: 16892
-  server: xb-vm-hk.718181.xyz
+  name: 34,37|13|香港7|@ripaojiedian
+  network: tcp
+  port: '36609'
+  server: 120.232.153.40
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
-  uuid: 2426b3d5-f377-44ca-a1d2-c527ef52c67f
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 35|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158
@@ -1264,44 +1332,44 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 37|0| 01 | 1x HK
-  password: f3fd9490-c1e0-47a7-9a86-bee573dd659c
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|0|🇭🇰香港 02 | 1x HK
-  password: f3fd9490-c1e0-47a7-9a86-bee573dd659c
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|0|🇭🇰香港 03 | 1x HK
-  password: f3fd9490-c1e0-47a7-9a86-bee573dd659c
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|2|🇭🇰 香港 01 | 1x HK
-  password: b47435fd-cd6f-4bea-a27a-f65bd5a3da7f
+  name: 37|0|  01 | 1x HK
+  password: df64ff41-2595-4501-bf42-69162d81d9aa
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|2|🇭🇰 香港 02 | 1x HK
-  password: b47435fd-cd6f-4bea-a27a-f65bd5a3da7f
+  name: 37|0|🇭🇰 香港 02 | 1x HK
+  password: df64ff41-2595-4501-bf42-69162d81d9aa
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|2|🇭🇰 香港IP 03 | 1x HK
-  password: b47435fd-cd6f-4bea-a27a-f65bd5a3da7f
+  name: 37|0|🇭🇰 香港IP 03 | 1x HK
+  password: df64ff41-2595-4501-bf42-69162d81d9aa
   port: 36145
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|2|🇭🇰香港 01 | 1x HK
+  password: a9e27912-082b-4928-82d6-b1f3a7a7e93a
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|2|🇭🇰香港 02 | 1x HK
+  password: a9e27912-082b-4928-82d6-b1f3a7a7e93a
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|2|🇭🇰香港 03 | 1x HK
+  password: a9e27912-082b-4928-82d6-b1f3a7a7e93a
+  port: 31145
+  server: free.2apzhfa.xyz
   type: ss
   udp: true

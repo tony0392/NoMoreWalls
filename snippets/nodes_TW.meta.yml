@@ -87,6 +87,16 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
+  name: 7|台湾1
+  port: 45078
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3dd80bf5-2a32-4d8f-a56e-a21b28c38720
+- alterId: 0
+  cipher: auto
   name: 7,8|台湾2-1A-GPT
   port: 45077
   server: xdd.dashuai.cyou
@@ -94,27 +104,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: ed5b6a2b-f204-4ea2-92a0-8dad380f376a
-- alterId: 0
-  cipher: auto
-  name: 7,8|台湾1-1A-GPT
-  port: 45078
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ed5b6a2b-f204-4ea2-92a0-8dad380f376a
-- alterId: 0
-  cipher: auto
-  name: 8|台湾1-1B-GPT
-  port: 45078
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a66cfde-3ca7-4952-ba97-918fbaded686
+  uuid: 3dd80bf5-2a32-4d8f-a56e-a21b28c38720
 - alterId: 0
   cipher: auto
   name: 8|台湾2-1B-GPT
@@ -124,7 +114,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7a66cfde-3ca7-4952-ba97-918fbaded686
+  uuid: 5ad71df3-d9a0-4c85-9bc1-615fb114ccfd
+- client-fingerprint: chrome
+  name: 11,24|github.com/Ruk1ng001_346534303...
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: twmoon1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇹🇼 台湾|TW01
@@ -141,48 +141,66 @@ proxies:
   server: 1w91dj53mb3tjunfqy7q3bdu1fo0sged.08.02.tw.6l6.site
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 37|0| 01 | 1x TW
-  password: f3fd9490-c1e0-47a7-9a86-bee573dd659c
-  port: 31241
-  server: free.2apzhfa.xyz
+- cipher: aes-128-gcm
+  country: 🇼 TW
+  name: 15| TW_267
+  password: 79739832-b888-415a-a454-8b53911c944a
+  port: 30332
+  server: vps.200566.xyz
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|0|🇼台湾 02 | 1x TW
-  password: f3fd9490-c1e0-47a7-9a86-bee573dd659c
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|0|🇼台湾 03 | 1x TW
-  password: f3fd9490-c1e0-47a7-9a86-bee573dd659c
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|2|🇼 台湾 01 | 1x TW
-  password: b47435fd-cd6f-4bea-a27a-f65bd5a3da7f
+  name: 37|0|  01 | 1x TW
+  password: df64ff41-2595-4501-bf42-69162d81d9aa
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|2|🇹🇼 台湾 02 | 1x TW
-  password: b47435fd-cd6f-4bea-a27a-f65bd5a3da7f
+  name: 37|0|🇼 台湾 02 | 1x TW
+  password: df64ff41-2595-4501-bf42-69162d81d9aa
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|2|🇼 台湾 03 | 1x TW
-  password: b47435fd-cd6f-4bea-a27a-f65bd5a3da7f
+  name: 37|0|🇼 台湾 03 | 1x TW
+  password: df64ff41-2595-4501-bf42-69162d81d9aa
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|2|🇼台湾 01 | 1x TW
+  password: a9e27912-082b-4928-82d6-b1f3a7a7e93a
+  port: 31241
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|2|🇹🇼台湾 02 | 1x TW
+  password: a9e27912-082b-4928-82d6-b1f3a7a7e93a
+  port: 31243
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|2|🇼台湾 03 | 1x TW
+  password: a9e27912-082b-4928-82d6-b1f3a7a7e93a
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37,38|🇹🇼 台湾|@ripaojiedian
+  port: 45078
+  server: haa.dashuai.cyou
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 9a1322b0-9c6e-433c-8fb3-d7690b3093f2
 - alterId: 0
   cipher: auto
   name: 37|13|台湾2|@ripaojiedian

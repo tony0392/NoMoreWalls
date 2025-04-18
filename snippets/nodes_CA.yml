@@ -42,16 +42,6 @@ proxies:
     path: /xyz
 - alterId: 0
   cipher: auto
-  name: 7,8|加拿大1-1A
-  port: 45064
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ed5b6a2b-f204-4ea2-92a0-8dad380f376a
-- alterId: 0
-  cipher: auto
   name: 7,8|加拿大2-1A
   port: 45065
   server: xdd.dashuai.cyou
@@ -59,7 +49,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: ed5b6a2b-f204-4ea2-92a0-8dad380f376a
+  uuid: 3dd80bf5-2a32-4d8f-a56e-a21b28c38720
+- alterId: 0
+  cipher: auto
+  name: 7|加拿大1
+  port: 45064
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3dd80bf5-2a32-4d8f-a56e-a21b28c38720
 - alterId: 0
   cipher: auto
   name: 8|加拿大2-1B
@@ -69,17 +69,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7a66cfde-3ca7-4952-ba97-918fbaded686
-- alterId: 0
-  cipher: auto
-  name: 8|加拿大1-1B
-  port: 45064
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a66cfde-3ca7-4952-ba97-918fbaded686
+  uuid: 5ad71df3-d9a0-4c85-9bc1-615fb114ccfd
 - cipher: aes-256-cfb
   name: 12|🇨🇦 CA, Vancouver
   password: amazonskr05
@@ -116,7 +106,7 @@ proxies:
   uuid: 5eb8a504-4855-4011-a6bb-6d9488dbcb22
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 15|🇦CA_119
+  name: 15|🇦CA_125
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
@@ -198,43 +188,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|加拿大 006
-  network: ws
-  port: 443
-  server: us159.vp1000.net
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a9326a5a-b890-46e3-bd3d-a4f9d5082323
-  ws-opts:
-    headers:
-      Host: us148.vp1000.net
-    path: /cp100vp800kkkdsnx
-- alterId: 0
-  cipher: auto
-  name: 28|加拿大 008
-  network: ws
-  port: 8080
-  server: s4.db-link02.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-217-184-172.s4.db-link02.top
-    path: /dabai.in104.25.238.226
-- allowInsecure: ''
-  name: 28|加拿大 009
-  network: tcp
-  password: ef23ddd0-14c5-39c2-9880-af55ce892363
-  port: 52492
-  server: 142.171.162.85
-  skip-cert-verify: false
-  sni: t28.qifei.app
-  tls: true
-  type: trojan
-- alterId: 0
-  cipher: auto
   name: 34|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
   network: ws
   port: 80
@@ -261,38 +214,17 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: '34|1|🇨🇦4 |  2.5MB/s #1'
-  password: amclubs
-  port: 2053
-  server: 154.83.2.94
-  skip-cert-verify: true
-  sni: tran.amclubstest.nyc.mn
-  type: trojan
-- name: 34|🇨🇦 _加拿大
-  password: Aimer
-  port: 2087
-  server: 104.234.239.235
-  skip-cert-verify: false
-  sni: epcco.ambercc.filegear-sg.me
-  type: trojan
-- name: '34|🇨🇦 _加拿大 #1'
-  password: Aimer
-  port: 2087
-  server: 104.234.239.235
-  skip-cert-verify: false
-  sni: epccu.ambercc.filegear-sg.me
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 37|0|🇦加大 01 | 1x CA
-  password: f3fd9490-c1e0-47a7-9a86-bee573dd659c
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 37|0|🇦 加大 01 | 1x CA
+  password: df64ff41-2595-4501-bf42-69162d81d9aa
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|2|🇦 加拿大 01 | 1x CA
-  password: b47435fd-cd6f-4bea-a27a-f65bd5a3da7f
-  port: 36441
-  server: free.2weradf.xyz
+  name: 37|2|🇦加拿大 01 | 1x CA
+  password: a9e27912-082b-4928-82d6-b1f3a7a7e93a
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true

@@ -94,17 +94,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 50884c27-d5d4-4ada-8c3d-cad2e37cce97
+  uuid: e59e7e16-c0d9-4ad1-bf91-a879578656ac
 - alterId: 0
   cipher: auto
-  name: 7|台湾1
+  name: 7,8|台湾1-1A-GPT
   port: 45078
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 50884c27-d5d4-4ada-8c3d-cad2e37cce97
+  uuid: e59e7e16-c0d9-4ad1-bf91-a879578656ac
 - alterId: 0
   cipher: auto
   name: 8|台湾2-1B-GPT
@@ -114,7 +114,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 745caea9-7f90-4936-899d-93526385e5af
+  uuid: 2bf67db5-34f5-4752-a9b0-d4c49433767c
+- alterId: 0
+  cipher: auto
+  name: 8|台湾1-1B-GPT
+  port: 45078
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2bf67db5-34f5-4752-a9b0-d4c49433767c
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇹🇼 台湾|TW01
@@ -133,50 +143,85 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇼 TW
-  name: 15| TW_491
+  name: 15| TW_563
   password: 79739832-b888-415a-a454-8b53911c944a
   port: 30332
   server: vps.200566.xyz
   type: ss
+- alterId: 2
+  cipher: auto
+  name: '34|1|🇹🇼1 |  4.1MB/s #1'
+  network: ws
+  port: '23619'
+  server: 19.mamamajd.site
+  tls: false
+  type: vmess
+  uuid: 26bc8681-0318-3097-bc64-64ab051eb81a
+  ws-opts:
+    headers:
+      Host: 19.mamamajd.site
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 37|0|  01 | 1x TW
-  password: e1f9e2da-c94a-4702-a196-877d9dad3c01
-  port: 36241
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|0|🇼 台湾 02 | 1x TW
-  password: e1f9e2da-c94a-4702-a196-877d9dad3c01
-  port: 36243
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|0|🇼 台湾 03 | 1x TW
-  password: e1f9e2da-c94a-4702-a196-877d9dad3c01
-  port: 36245
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|14|🇼台湾 01 | 1x TW
-  password: 15233927-1c80-4083-bee1-65eafc93b1b6
+  name: 37|0| 01 | 1x TW
+  password: 1c35517e-6743-4c7a-b205-151b60273ec1
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|14|🇹🇼台湾 02 | 1x TW
-  password: 15233927-1c80-4083-bee1-65eafc93b1b6
+  name: 37|0|🇼台湾 02 | 1x TW
+  password: 1c35517e-6743-4c7a-b205-151b60273ec1
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|14|🇼台湾 03 | 1x TW
-  password: 15233927-1c80-4083-bee1-65eafc93b1b6
+  name: 37|0|🇼台湾 03 | 1x TW
+  password: 1c35517e-6743-4c7a-b205-151b60273ec1
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|2|🇼 台湾 01 | 1x TW
+  password: b5b3ff8b-b3b7-46f4-b28b-57520b0aa6df
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|2|🇹🇼 台湾 02 | 1x TW
+  password: b5b3ff8b-b3b7-46f4-b28b-57520b0aa6df
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|2|🇼 台湾 03 | 1x TW
+  password: b5b3ff8b-b3b7-46f4-b28b-57520b0aa6df
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37,38|🇹🇼 台湾|@ripaojiedian
+  port: 10546
+  server: xwogpb.cjjvmm.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: daa4d73e-aca3-3ef7-a9dd-3a2487fcb38d
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37,38|🇹🇼 台湾2|@ripaojiedian
+  port: 45285
+  server: 36.150.232.128
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1

@@ -370,6 +370,14 @@ proxies:
   udp: true
   uuid: 11f1a333-d31b-4430-a41f-235c0e83290a
 - cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '11,37,38|🇰🇷 韩国特殊|@ripaojiedian #1'
+  password: amazonskr05
+  port: 443
+  server: 43.203.202.53
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
   name: 12|🇰🇷 KR, Incheon
   password: amazonskr05
   port: 443
@@ -380,7 +388,7 @@ proxies:
   country: 🇷 KR
   h2-opts: {}
   http-opts: {}
-  name: 15|🇷 KR_603
+  name: 15|🇷 KR_585
   network: ws
   port: 30002
   server: 220.123.48.124
@@ -392,15 +400,69 @@ proxies:
   ws-headers:
     HOST: obdii.cfd
   ws-path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '34|🇰🇷 13|韩国3|@ripaojiedian #1'
-  network: tcp
-  port: '45075'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 1e4b5958-8f5b-4a7e-9045-66120ce7614e
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇰🇷 0|🇰🇷韩国 01 | 1x KR
+  password: 0748ee69-165a-4d36-a1b3-9f3612914b28
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇰🇷 0|🇰🇷韩国 02 | 1x KR
+  password: 0748ee69-165a-4d36-a1b3-9f3612914b28
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 27|🇰🇷 11|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.250.244.203
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇰🇷 14|🇰🇷 韩国 01 | 1x KR
+  password: f2a428bc-890d-4af8-b368-b7c13ac53830
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇰🇷 14|🇰🇷 韩国 02 | 1x KR
+  password: f2a428bc-890d-4af8-b368-b7c13ac53830
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: '34|2|🇰🇷3 |  1.2MB/s #1'
+  password: amclubs
+  port: 2083
+  server: 104.16.134.27
+  skip-cert-verify: false
+  sni: tran.amclubs.rr.nu
+  type: trojan
+- name: 34|🇰🇷 _韩国
+  password: Aimer
+  port: 50000
+  server: 119.202.249.46
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: '34|🇰🇷 _韩国 #1'
+  password: Aimer
+  port: 32400
+  server: 119.195.104.2
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: '34|🇰🇷 _韩国 #2'
+  password: Aimer
+  port: 18020
+  server: 183.98.186.160
+  skip-cert-verify: false
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
 - name: 35|韩国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
@@ -408,39 +470,31 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 37|0| 01 | 1x KR
-  password: 0748ee69-165a-4d36-a1b3-9f3612914b28
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|0|🇷韩国 02 | 1x KR
-  password: 0748ee69-165a-4d36-a1b3-9f3612914b28
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '37,38|🇰🇷 韩国特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 54.250.244.203
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 37|14|🇷 韩国 01 | 1x KR
-  password: f2a428bc-890d-4af8-b368-b7c13ac53830
+  name: 37|0|  01 | 1x KR
+  password: 4e9f474e-2d4a-426c-acba-c51844a5f86e
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|14|🇰🇷 韩国 02 | 1x KR
-  password: f2a428bc-890d-4af8-b368-b7c13ac53830
+  name: 37|0|🇷 韩国 02 | 1x KR
+  password: 4e9f474e-2d4a-426c-acba-c51844a5f86e
   port: 36313
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|1|🇷韩国 01 | 1x KR
+  password: d83f231d-fe37-4cdb-bb70-88149f8ca57f
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|1|🇰🇷韩国 02 | 1x KR
+  password: d83f231d-fe37-4cdb-bb70-88149f8ca57f
+  port: 31313
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -449,13 +503,5 @@ proxies:
   password: VMhGp5wEIyCDf90T
   port: 13483
   server: agaungzhou01.bumbleshrimp.com
-  tls: false
-  type: ss
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 41|0%2c11|🇰🇷+韩国特殊|%40ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 13.212.117.64
   tls: false
   type: ss

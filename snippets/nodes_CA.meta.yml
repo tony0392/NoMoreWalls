@@ -86,11 +86,39 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 15|🇦CA_125
+  name: 15|🇦CA_119
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 25|[VMess] 🇨🇦 _CA_加拿大
+  network: ws
+  port: 80
+  server: 108.181.10.17
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 474e8680-701f-11ee-b436-205c6d5f5d78
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇨🇦 0|🇨🇦加拿大 01 | 1x CA
+  password: 0748ee69-165a-4d36-a1b3-9f3612914b28
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇨🇦 14|🇨🇦 加拿大 01 | 1x CA
+  password: f2a428bc-890d-4af8-b368-b7c13ac53830
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   delay: 1166
@@ -166,43 +194,17 @@ proxies:
     headers:
       Host: 51.79.102.253
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: '34|🇨🇦 _加拿大 #5'
-  network: ws
-  port: '80'
-  server: 51.79.103.76
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '34|🇨🇦 _加拿大 #4'
-  network: ws
-  port: '80'
-  server: 51.79.102.253
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 37|0|🇦加大 01 | 1x CA
-  password: 0748ee69-165a-4d36-a1b3-9f3612914b28
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 37|0|🇦 加大 01 | 1x CA
+  password: 4e9f474e-2d4a-426c-acba-c51844a5f86e
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|14|🇦 加拿大 01 | 1x CA
-  password: f2a428bc-890d-4af8-b368-b7c13ac53830
-  port: 36441
-  server: free.2weradf.xyz
+  name: 37|1|🇦加拿大 01 | 1x CA
+  password: d83f231d-fe37-4cdb-bb70-88149f8ca57f
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true

@@ -1,4 +1,40 @@
 proxies:
+- ip-version: dual
+  name: '0,1,30,34|1|🇳🇱11 |  1.3MB/s #1'
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: 85.234.65.227
+  skip-cert-verify: true
+  sni: blessed-opossum.dolphin109.quest
+  type: trojan
+  udp: true
+- ip-version: dual
+  name: 0,1,11,30,34,37,40,42|GB_speednode_0061
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: mutual-gannet.dolphin109.quest
+  skip-cert-verify: true
+  sni: mutual-gannet.dolphin109.quest
+  type: trojan
+  udp: true
+- ip-version: dual
+  name: 0,1,34,37,40,42|GB_speednode_0060
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: handy-sparrow.dolphin109.quest
+  skip-cert-verify: true
+  sni: handy-sparrow.dolphin109.quest
+  type: trojan
+  udp: true
+- ip-version: dual
+  name: '0,1,34|1|🇳🇱6 |  1.2MB/s #1'
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: blessed-opossum.dolphin109.quest
+  skip-cert-verify: true
+  sni: blessed-opossum.dolphin109.quest
+  type: trojan
+  udp: true
 - name: 2|🇬🇧 英国
   password: 64f4f8e7-cf41-4e53-b123-5e8e9f27defa
   port: 59358
@@ -33,24 +69,24 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - alterId: 0
   cipher: auto
-  name: 7|英国1
-  port: 45066
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8dfd4161-33f2-4c9e-a1df-eabe4d44d917
-- alterId: 0
-  cipher: auto
-  name: 7|英国2
+  name: 7,8|英国2-1A
   port: 45067
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 8dfd4161-33f2-4c9e-a1df-eabe4d44d917
+  uuid: 24081f1c-a034-4345-9cbb-e416c73be780
+- alterId: 0
+  cipher: auto
+  name: 7,8|英国1-1A
+  port: 45066
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 24081f1c-a034-4345-9cbb-e416c73be780
 - alterId: 0
   cipher: auto
   name: 8|英国1-1B
@@ -60,13 +96,49 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 11f1a333-d31b-4430-a41f-235c0e83290a
-- cipher: chacha20-ietf-poly1305
-  name: 11|🇬🇧1 |  4.3MB/s
-  password: 69MUii7VDwMqh7Hz
+  uuid: bad9ee82-4352-485e-8187-9217962f3e20
+- alterId: 0
+  cipher: auto
+  name: 11|🇬🇧3 |  3.8MB/s
+  network: ws
+  port: 10805
+  raw:
+    add: kajpa.kia-ai.com
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: kajpa.kia-ai.com
+    id: 65017397-25df-4c56-bad3-7aba344c87c3
+    net: ws
+    path: /
+    port: 10805
+    ps: V2CROSS.COM
+    scy: ''
+    sni: ''
+    tls: tls
+    type: ''
+    v: '2'
+  server: kajpa.kia-ai.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 65017397-25df-4c56-bad3-7aba344c87c3
+  ws-opts:
+    headers:
+      Host: kajpa.kia-ai.com
+    path: /
+- name: 11,24,37|2|🇧3 |  5.9MB/s
+  network: ws
+  password: 2faaf996-d2b0-440d-8258-81f2b05dd0e4
   port: 443
-  server: 4.158.72.200
-  type: ss
+  server: ip.sb
+  skip-cert-verify: true
+  sni: architects-optimize-rest-dow.trycloudflare.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: architects-optimize-rest-dow.trycloudflare.com
+    path: /trojan-argo?ed=2560
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇬🇧 英国|COV2
@@ -77,88 +149,48 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 15| GB_154
-  password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
-  port: 55988
-  server: mx2.drawnrisha.one
+  name: 15| GB_155
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.255.22
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 15|🇧 GB_156
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.250
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 15|🇧 GB_155
-  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15|🇬🇧 GB_156
-  password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15|🇧 GB_157
-  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15|🇬🇧 GB_158
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15|🇬🇧 GB_159
-  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 15|🇬🇧 GB_160
+  name: 15|🇬🇧 GB_157
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.253.227
   type: ss
 - cipher: aes-128-gcm
   country: 🇧GB
-  name: 15|🇧GB_161
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇧GB
-  name: 15|🇧GB_162
+  name: 15|🇬🇧GB_158
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
 - country: 🇧GB
-  name: 15|🇬🇧GB_163
+  name: 15|🇧GB_159
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇬🇧 0|🇬🇧英国家宽 01 | 1x UK
-  password: 0748ee69-165a-4d36-a1b3-9f3612914b28
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇬🇧 14|🇬🇧 英国住宅IP 01 | 1x UK
-  password: f2a428bc-890d-4af8-b368-b7c13ac53830
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
+- name: 19,25,30,34,37|2|🇳🇱7 |  1.1MB/s
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: 85.234.65.100
+  skip-cert-verify: true
+  sni: handy-sparrow.dolphin109.quest
+  tfo: false
+  type: trojan
   udp: true
 - alterId: 0
   cipher: auto
@@ -185,7 +217,44 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
+- name: 34|🇬🇧 英国 V2CROSS.COM
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: workable-puma.dolphin109.quest
+  skip-cert-verify: false
+  sni: workable-puma.dolphin109.quest
+  type: trojan
+- name: '34|1|🇬🇧6 |  5.8MB/s #1'
+  password: 2faaf996-d2b0-440d-8258-81f2b05dd0e4
+  port: 443
+  server: ip.sb
+  skip-cert-verify: true
+  sni: architects-optimize-rest-dow.trycloudflare.com
+  type: trojan
+- name: 34,37,40,42|GB_speednode_0058
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: sharp-bear.dolphin109.quest
+  skip-cert-verify: true
+  sni: sharp-bear.dolphin109.quest
+  type: trojan
+  udp: true
+- name: 34,37,40,42|GB_speednode_0062
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: 85.234.83.28
+  skip-cert-verify: true
+  sni: workable-puma.dolphin109.quest
+  type: trojan
+  udp: true
 - name: 34|🇬🇧 _英国
+  password: Aimer
+  port: 2053
+  server: 5.144.181.144
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: '34|🇬🇧 _英国 #1'
   password: Aimer
   port: 2053
   server: 5.144.181.144
@@ -193,16 +262,16 @@ proxies:
   sni: epccd.ambercc.filegear-sg.me
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 37|0| 国住宅IP 01 | 1x UK
-  password: 4e9f474e-2d4a-426c-acba-c51844a5f86e
-  port: 36271
-  server: free.2weradf.xyz
+  name: 37|0|国家宽 01 | 1x UK
+  password: cc8a7194-efc4-45ba-9ceb-5d3be3c4dbf8
+  port: 31271
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|1|🇧英国家宽 01 | 1x UK
-  password: d83f231d-fe37-4cdb-bb70-88149f8ca57f
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: 37|1|🇧 英国住宅IP 01 | 1x UK
+  password: 69bef94d-76a2-4a63-a2ff-ba4a2f1ec6e2
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true

@@ -1,43 +1,32 @@
 proxies:
-- alterId: 2
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  ip-version: dual
+  name: 0,1,11,24,25,37|0|7 |  4.0MB/s
+  password: RJmLkze1
+  port: 5075
+  server: 109.107.159.202
+  tfo: true
+  type: ss
+  udp: true
+- alterId: 0
   cipher: auto
   ip-version: dual
-  name: '0,1,30,31|🇨🇳_CN_中国->🇺🇸_US_美国_1 #3'
-  network: ws
-  port: 30830
-  server: v30.heduian.link
-  skip-cert-verify: true
-  sni: ''
+  name: 0,1,11,24,34,37|0|🇺🇸32 |  5.7MB/s
+  network: tcp
+  port: 5228
+  server: 89936472-svdwg0-t28b6o-ef48.cu.plebai.net
+  tls: false
   type: vmess
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
+  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: '0,1,30,31|🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
+  name: 0,1,30|🇳_CN_中国->🇺🇸_US_美国_2
   network: ws
-  port: 30829
-  server: v29.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v29.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  ip-version: dual
-  name: '0,1,30,31|🇨🇳_CN_中国->🇬🇧_GB_英国 #2'
-  network: ws
-  port: 30836
-  server: v36.heduian.link
+  port: 30825
+  server: v25.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
@@ -47,6 +36,56 @@ proxies:
     headers:
       host: baidu.com
     path: /oooo
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: 0,1,30|🇨🇳_CN_中国->🇺🇸_US_美国_4
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  sni: ocbc.com
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: 0,1,30|🇨🇳_CN_中国->🇸_US_美国_5
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 0,1,30,37|0|3 |  2.1MB/s
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.188
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇹 LT
+  ip-version: dual
+  name: 0,1,15,25,30|🇩🇪_DE_德国->🇨_CN_中国
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.154
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 2
   cipher: auto
   ip-version: dual
@@ -63,59 +102,38 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
-- alpn:
-  - http/1.1
-  ip-version: dual
-  name: '0,1,31|🇺🇸_US_美国->🇮🇳_IN_印度 #2'
+- ip-version: dual
+  name: 0,1,30|🇺🇸_US_美国->_LT_
   network: tcp
-  password: telegram-id-vlessconfig
-  port: 22222
-  server: 3.66.134.189
-  sni: trojan.burgerip.co.uk
+  password: ypDt8RkT7J
+  port: 43118
+  server: 89.187.181.179
+  skip-cert-verify: true
+  sni: 89.187.181.179
   type: trojan
   udp: true
-- alterId: 2
+- alterId: 0
   cipher: auto
   ip-version: dual
-  name: '0,1,30,31|🇨🇳_CN_中国->🇺🇸_US_美国_3 #3'
-  network: ws
-  port: 30832
-  server: v32.heduian.link
+  name: 0,1,11,24,30,37|0|🇺🇸25 |  5.2MB/s
+  network: tcp
+  port: 5228
+  server: 87b134e3-svc1s0-t28b6o-ef48.cu.plebai.net
   skip-cert-verify: true
-  sni: ''
+  tls: false
   type: vmess
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo
-- ip-version: dual
-  name: '0,1,31|🇳🇱_NL_荷兰->🇺🇸_US_美国 #2'
-  password: 038f067a-213a-4c7d-89d7-e8fdeebcfe71
-  port: 27301
-  server: 45.146.232.173
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- ip-version: dual
-  name: '0,1,31|🇬🇧_GB_英国->🇩🇪_DE_德国 #2'
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: 85.234.65.100
-  skip-cert-verify: true
-  sni: handy-sparrow.dolphin109.quest
-  type: trojan
-  udp: true
-- ip-version: dual
-  name: '0,1,31|🇷🇴_RO_罗马尼亚->🇦🇱_AL_阿尔巴尼亚 #2'
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: 93.174.164.49
-  skip-cert-verify: true
-  sni: concrete-lion.dolphin109.quest
-  type: trojan
+  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+  ws-headers:
+    Host: 87b134e3-svc1s0-t28b6o-ef48.cu.plebai.net
+  ws-path: /
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: 0,1,24,27,37|0|🇸20 |  5.1MB/s
+  password: amazonskr05
+  port: 80
+  server: 54.218.9.15
+  type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 3|🇸🇬 新加坡中转 02
@@ -3879,79 +3897,131 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 30|_CN_->_US_国
+  ip-version: dual
+  name: '30,31|🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
   network: ws
-  port: 30828
-  server: v28.heduian.link
+  port: 30829
+  server: v29.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v29.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 30|🇺_RU_俄罗斯->🇺🇸_US_美国
+  network: ws
+  port: 22025
+  server: 195.58.49.84
+  sni: ''
+  type: vmess
+  uuid: d47ec603-eca8-498a-b5cf-5ca03cc1f776
+  ws-opts:
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 30|🇨🇳_CN_中国->_CA_
+  network: ws
+  port: 30835
+  server: v35.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: '30,31|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
+  network: ws
+  port: 30830
+  server: v30.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       host: ocbc.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: '30|🇨🇳_CN_中国->🇺🇸_US_美国_3 #2'
-  network: ws
-  port: 30840
-  server: v40.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: api100-core-quic-lf.amemv.com
-    path: /index
 - alterId: 2
   cipher: auto
-  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国_5
+  ip-version: dual
+  name: 31|🇨🇳_CN_中国->🇬🇧_GB_英国
   network: ws
-  port: 30824
-  server: v24.heduian.link
+  port: 30836
+  server: v36.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       host: baidu.com
     path: /oooo
+- alpn:
+  - http/1.1
+  ip-version: dual
+  name: 31|🇺🇸_US_美国->🇮🇳_IN_印度
+  network: tcp
+  password: telegram-id-vlessconfig
+  port: 22222
+  server: 3.66.134.189
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
-  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国_7
+  ip-version: dual
+  name: '31|🇨🇳_CN_中国->🇺🇸_US_美国_3 #3'
   network: ws
-  port: 30825
-  server: v25.heduian.link
+  port: 30832
+  server: v32.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       host: baidu.com
     path: /oooo
-- name: '30,34|🇳🇱 _荷兰 #2'
-  password: 2b961336-1eae-431a-b766-50576ccff88c
-  port: 33506
-  server: 45.146.232.171
+- ip-version: dual
+  name: 31|🇳🇱_NL_荷兰->🇺🇸_US_美国
+  password: 038f067a-213a-4c7d-89d7-e8fdeebcfe71
+  port: 27301
+  server: 45.146.232.173
   skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '30,34|🇷🇺 _俄罗斯 #8'
-  network: ws
-  port: '22023'
-  server: 195.58.49.84
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: ad1acd0f-db53-4fb3-aa6a-501027386119
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  udp: true
+- ip-version: dual
+  name: 31|🇬🇧_GB_英国->🇩🇪_DE_德国
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: 85.234.65.100
+  skip-cert-verify: true
+  sni: handy-sparrow.dolphin109.quest
+  type: trojan
+  udp: true
+- ip-version: dual
+  name: 31|🇷🇴_RO_罗马尼亚->🇦🇱_AL_阿尔巴尼亚
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: 93.174.164.49
+  skip-cert-verify: true
+  sni: concrete-lion.dolphin109.quest
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 33|1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿...

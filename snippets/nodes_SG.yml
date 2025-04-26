@@ -170,7 +170,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 04321ef8-a1f6-4d4f-8fb2-4bd535a7993d
+  uuid: b25287a3-09ae-4810-bbae-8c8cffdeb446
 - alterId: 0
   cipher: auto
   name: 7,8|新加坡NO.2-1A
@@ -180,7 +180,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 04321ef8-a1f6-4d4f-8fb2-4bd535a7993d
+  uuid: b25287a3-09ae-4810-bbae-8c8cffdeb446
 - alterId: 0
   cipher: auto
   name: 8|新加坡NO.1-1B
@@ -190,7 +190,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 6a1e670b-73c4-47f7-9105-9bab9d4ecfdf
+  uuid: 3f5122df-7761-473e-98ae-33b3427d449f
 - alterId: 0
   cipher: auto
   name: 10|SG | 新加坡 LB-1A
@@ -703,12 +703,13 @@ proxies:
     headers:
       Host: d16henb377mok4.cloudfront.net
     path: /stream
-- cipher: aes-256-cfb
-  name: 11,24,37|2|🇬4 |  6.3MB/s
-  password: amazonskr05
+- cipher: aes-256-gcm
+  name: 11,27,37|0|🇬4 |  4.7MB/s
+  password: amazongreatvpn
   port: 443
-  server: 54.251.144.227
+  server: 18.141.233.166
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 12|🇸🇬 SG, Singapore
   password: amazonskr05
@@ -787,137 +788,147 @@ proxies:
   server: z7gfq8utflizatg56x6ghg8pzrr0fio4.08.09.sg.6l6.site
   tfo: false
   type: ss
-- country: 🇬SG
-  name: 15|SG_263
-  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
+- cipher: chacha20-ietf-poly1305
+  country: 🇬 SG
+  name: 15| SG_254
+  password: hSZhPAs1FBGORHKMF2GlPp
+  port: 1489
+  server: 206.189.93.2
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 15|🇸 SG_255
+  network: ws
   port: 443
-  server: sg-full.privateip.net
+  server: 8.219.206.22
+  servername: beyonddsz.cfd
   skip-cert-verify: true
-  type: trojan
-  udp: true
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-headers:
+    HOST: beyonddsz.cfd
+  ws-path: /linkws
 - country: 🇬SG
-  name: 15|🇬SG_264
+  name: 15|🇬SG_256
   password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
   port: 443
   server: sg2-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 24|🟡_🇸🇬_💻_github.com/Ruk1ng001_62...
-  password: amazonskr05
+- country: 🇬SG
+  name: 15|🇬SG_257
+  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
   port: 443
-  server: 54.151.174.99
-  type: ss
+  server: sg-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: aes-256-gcm
-  name: 24|🟡_🇸🇬_💻_github.com/Ruk1ng001_64...
+  name: 24|🟡_🇸🇬_💻_github.com/Ruk1ng001_37...
   password: amazonskr05
   port: 80
-  server: 54.151.141.90
+  server: 54.169.216.181
   type: ss
-- cipher: aes-256-cfb
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 24,27|2|🇸🇬10 |  1.1MB/s
+  password: 67eOyIrV
+  port: 11503
+  server: 103.106.229.195
+  tfo: true
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
   name: 24|🟡_🇸🇬_💻_github.com/Ruk1ng001_32...
   password: amazonskr05
-  port: 443
-  server: 46.137.234.250
+  port: 80
+  server: 13.229.201.9
   type: ss
 - cipher: aes-256-gcm
-  name: 24,25,37|2|🇸🇬8 |  3.5MB/s
-  password: amazonskr05
-  port: 80
-  server: 3.0.139.112
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '24|🟡_🇸🇬_💻_github.com/Ruk1ng001_32... #1'
-  password: amazonskr05
-  port: 443
-  server: 13.229.211.70
-  type: ss
-- cipher: aes-256-gcm
-  name: 24,37|2|🇸🇬5 |  3.9MB/s
-  password: amazonskr05
-  port: 80
-  server: 52.77.243.195
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25|[SS] 🇸🇬 新加坡 DigitalOcean数据中心
-  password: hSZhPAs1FBGORHKMF2GlPp
-  port: 1489
-  server: 206.189.93.2
-  tfo: false
+  client-fingerprint: chrome
+  name: 24|🟠_🇸🇬_💻_github.com/Ruk1ng001_65...
+  password: 4ftLAban
+  port: 11092
+  server: 103.106.229.111
+  tfo: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 0|🇸🇬 新加坡 01 | 1x SG
-  password: 5adb284a-5064-4e16-a577-d254ccc5e7df
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 0|🇸🇬 新加坡 02 | 1x SG
-  password: 5adb284a-5064-4e16-a577-d254ccc5e7df
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 0|🇸🇬 新加坡 03 | 1x SG
-  password: 5adb284a-5064-4e16-a577-d254ccc5e7df
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 1|🇸🇬新加坡 01 | 1x SG
-  password: a233bbe8-92a6-42f3-a94a-ea2911d4f4bb
+  name: 27|🇸🇬 0|🇸🇬新加坡 01 | 1x SG
+  password: 35ef2504-fcd8-45bf-b6f4-555b74324c29
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 1|🇸🇬新加坡 02 | 1x SG
-  password: a233bbe8-92a6-42f3-a94a-ea2911d4f4bb
+  name: 27|🇸🇬 0|🇸🇬新加坡 02 | 1x SG
+  password: 35ef2504-fcd8-45bf-b6f4-555b74324c29
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 1|🇸🇬新加坡 03 | 1x SG
-  password: a233bbe8-92a6-42f3-a94a-ea2911d4f4bb
+  name: 27|🇸🇬 0|🇸🇬新加坡 03 | 1x SG
+  password: 35ef2504-fcd8-45bf-b6f4-555b74324c29
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 27|🇸🇬 12,13|新加坡2|@ripaojiedian
-  password: 64abf593-eeb7-4785-9323-d6f40e9a79d4
-  port: 27401
-  server: 183.2.150.64
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇸🇬 1|🇸🇬 新加坡 01 | 1x SG
+  password: bc219fb3-90cb-4e5e-b637-4cbe6c6fbdda
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇸🇬 1|🇸🇬 新加坡 02 | 1x SG
+  password: bc219fb3-90cb-4e5e-b637-4cbe6c6fbdda
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇸🇬 1|🇸🇬 新加坡 03 | 1x SG
+  password: bc219fb3-90cb-4e5e-b637-4cbe6c6fbdda
+  port: 36175
+  server: free.2weradf.xyz
+  type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '27,37,38|🇸🇬 新加坡3|@ripaojiedian #1'
+  name: 27|2|🇸🇬8 |  2.1MB/s
   port: 17231
   server: c9061f82-svc1s0-sy94f1-1nc6m.cm5.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 85d450b2-1c2b-11f0-8a7b-f23c913c8d2b
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '27,37,38|🇸🇬 新加坡2|@ripaojiedian #1'
+  port: 3030
+  server: 47.237.84.79
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
   udp: true
-  uuid: 85d450b2-1c2b-11f0-8a7b-f23c913c8d2b
+  uuid: de49138c-df11-4b6c-ed94-09e36b8fb890
 - cipher: aes-256-cfb
-  ip-version: dual
-  name: 27,41|2%2c12|🇸🇬+狮城特殊|%40ripaojiedian
+  client-fingerprint: chrome
+  name: '27,37,38|🇸🇬 狮城特殊|@ripaojiedian #1'
   password: amazonskr05
   port: 443
-  server: 43.207.139.84
-  tls: false
+  server: 54.249.95.208
+  tfo: false
   type: ss
   udp: true
 - alterId: 0
@@ -931,59 +942,71 @@ proxies:
   uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '34,37,38|🇸🇬 新加坡2|@ripaojiedian #1'
-  network: ws
-  port: 16618
-  server: t.cnmjcn.cyou
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: f197ce3e-1819-4383-9fd3-538f67f468f9
-  ws-opts:
-    headers:
-      Host: 29e93b27f148c30de05ffa9b65b7201c.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: 34,37,41|2,12|🇸🇬 新加坡3|@ripaojiedian
+  name: '34|1|🇸🇬2 |  6.1MB/s #1'
   network: tcp
-  port: 17231
+  port: '17231'
   server: c9061f82-svc1s0-sy94f1-1nc6m.cm5.p5pv.com
-  servername: ''
   tls: false
   type: vmess
   uuid: 85d450b2-1c2b-11f0-8a7b-f23c913c8d2b
 - alterId: 0
   cipher: auto
-  name: 34,37|13|新加坡4|@ripaojiedian
+  name: 34,37|13|加坡2|@ripaojiedian
   network: tcp
-  port: '4135'
-  server: 180e94b7-sv59c0-t6vkd1-6tmd.d.volczijie.com
+  port: '3030'
+  server: 47.237.84.79
   servername: ''
   tls: false
   type: vmess
-  uuid: d385d6b2-cc15-11ee-89bc-f23c93141fad
+  uuid: de49138c-df11-4b6c-ed94-09e36b8fb890
 - name: 35|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '37,38|🇸🇬 新加坡4|@ripaojiedian #1'
-  port: 4135
-  server: 180e94b7-sv59c0-t6vkd1-6tmd.d.volczijie.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: d385d6b2-cc15-11ee-89bc-f23c93141fad
+- cipher: chacha20-ietf-poly1305
+  name: 37|1|🇬  01 | 1x SG
+  password: e8dabc76-349b-4a96-a7f6-14dcf04259dd
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|1|🇬 新加坡 02 | 1x SG
+  password: e8dabc76-349b-4a96-a7f6-14dcf04259dd
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|1|🇬 新加坡 03 | 1x SG
+  password: e8dabc76-349b-4a96-a7f6-14dcf04259dd
+  port: 36175
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|2|🇬新加坡 01 | 1x SG
+  password: 74eb1c97-3ed9-4786-9b9b-6b09f72c8951
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|2|🇸🇬新加坡 02 | 1x SG
+  password: 74eb1c97-3ed9-4786-9b9b-6b09f72c8951
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|2|🇬新加坡 03 | 1x SG
+  password: 74eb1c97-3ed9-4786-9b9b-6b09f72c8951
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 2
   cipher: auto
   ip-version: dual
@@ -994,12 +1017,3 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- ip-version: dual
-  name: 41|14|SG_speednode_0051
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: stable-labrador.dolphin109.quest
-  skip-cert-verify: true
-  sni: stable-labrador.dolphin109.quest
-  tls: true
-  type: trojan

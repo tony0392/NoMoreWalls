@@ -2,11 +2,12 @@ proxies:
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   ip-version: dual
-  name: 0,1,24,25|[SS] 🇬🇧 英国 V2CROSS.COM
+  name: 0,1,24,25,27,31,41|1|🇳🇱4+|++5.0MB%2fs
   password: XaAIkJjp
   port: 11359
   server: 85.234.65.100
   tfo: false
+  tls: false
   type: ss
   udp: true
 - name: 2|🇬🇧 英国
@@ -43,16 +44,6 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - alterId: 0
   cipher: auto
-  name: 7|英国1
-  port: 45066
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b25287a3-09ae-4810-bbae-8c8cffdeb446
-- alterId: 0
-  cipher: auto
   name: 7,8|英国2-1A
   port: 45067
   server: xdd.dashuai.cyou
@@ -60,17 +51,34 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: b25287a3-09ae-4810-bbae-8c8cffdeb446
+  uuid: e632027e-7167-43cd-8246-2919e6cc5c23
 - alterId: 0
   cipher: auto
-  name: 8|英国1-1B
+  name: 7|英国1
   port: 45066
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 3f5122df-7761-473e-98ae-33b3427d449f
+  uuid: e632027e-7167-43cd-8246-2919e6cc5c23
+- alterId: 0
+  cipher: auto
+  name: 8|英国2-1B
+  port: 45067
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 98341419-4a04-44b5-bfaf-532b1864101b
+- cipher: aes-256-cfb
+  delay: 586
+  name: 11,30|_GB_国->🏳️_unKnow_未知
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 62.100.205.48
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇬🇧 英国|COV2
@@ -81,31 +89,38 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 15| GB_149
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.239.250
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 15|🇧 GB_150
+  name: 15| GB_154
   password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
   port: 55988
   server: mx2.drawnrisha.one
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 15|🇧 GB_151
+  name: 15|🇧 GB_155
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 15|🇧 GB_156
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.255.22
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 15|🇬🇧 GB_157
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.250
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇧 GB
   h2-opts: {}
   http-opts: {}
-  name: 15|🇬🇧 GB_152
+  name: 15|🇬🇧 GB_158
   network: ws
   port: 443
   server: 158.180.228.226
@@ -117,54 +132,28 @@ proxies:
   ws-headers:
     HOST: beyonddsz.cfd
   ws-path: /linkws
-- alterId: 0
-  cipher: auto
-  country: 🇧 GB
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇧 GB_153
-  network: ws
-  port: 443
-  server: 144.24.200.164
-  servername: beyonddsz.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-headers:
-    HOST: beyonddsz.cfd
-  ws-path: /linkws
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 15|🇧GB_154
+  name: 15|🇧GB_159
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
   country: 🇧GB
-  name: 15|🇧GB_155
+  name: 15|🇧GB_160
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
 - country: 🇧GB
-  name: 15|🇬🇧GB_156
+  name: 15|🇬🇧GB_161
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- alpn:
-  - http/1.1
-  name: 19|英国+社会保险安全部
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.21.214.138
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - name: 22|FUK_1
   network: ws
   password: Aimer
@@ -204,64 +193,20 @@ proxies:
     headers:
       host: epccd.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 22|FUK_4
-  network: ws
-  password: Aimer
-  port: 18020
-  server: 183.98.186.160
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 24|🟡_🇬🇧_💻_github.com/Ruk1ng001_66...
-  password: idd8ND5E
-  port: 31321
-  server: 13.41.208.251
-  tfo: true
-  type: ss
-  udp: true
-- name: 25|[Trojan] 🇬🇧 英国 社会保险安全部
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.21.214.138
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tfo: false
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇬🇧 0|🇬🇧英国家宽 01 | 1x UK
-  password: 35ef2504-fcd8-45bf-b6f4-555b74324c29
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 27|🇬🇧 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: bc219fb3-90cb-4e5e-b637-4cbe6c6fbdda
+  password: ecdc09a3-3878-4873-9436-00e09740dfaf
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 27|2|🇬🇧4 |  2.3MB/s
-  network: ws
-  port: 54486
-  server: 185.217.110.96
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇬🇧 2|🇬🇧英国家宽 01 | 1x UK
+  password: b2677da4-f456-4bb4-a06a-7730c5c82d6d
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  uuid: 5369a60b-42ac-4f73-ddcb-efda466a4441
-  ws-opts:
-    path: /5369a60b
 - alterId: 0
   cipher: auto
   name: 28|英国 002
@@ -276,48 +221,17 @@ proxies:
     headers:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 30,31|🇬🇧_GB_英国_2
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 62.100.205.48
-  type: ss
-  udp: true
-- ip-version: dual
-  name: 31|🇬🇧_GB_英国_1
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: handy-sparrow.dolphin109.quest
-  skip-cert-verify: true
-  sni: handy-sparrow.dolphin109.quest
-  type: trojan
-  udp: true
-- name: 34|🇬🇧 英国 伦敦Amazon数据中心
-  password: telegram-id-vlessconfig
-  port: 22222
-  server: 35.178.55.247
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 34|🇬🇧 _英国
-  password: Aimer
-  port: 2053
-  server: 5.144.181.144
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 37|1|🇧 国住宅IP 01 | 1x UK
-  password: e8dabc76-349b-4a96-a7f6-14dcf04259dd
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|2|🇧英国家宽 01 | 1x UK
-  password: 74eb1c97-3ed9-4786-9b9b-6b09f72c8951
+  name: 37|0|国家宽 01 | 1x UK
+  password: e7fcc401-28c2-497d-a326-286d7421ceb0
   port: 31271
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|14|🇧 英国住宅IP 01 | 1x UK
+  password: 4fc2003b-d64a-4e84-bea3-dfc2a4ac5d6b
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true

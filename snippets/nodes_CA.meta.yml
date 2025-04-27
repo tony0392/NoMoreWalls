@@ -42,16 +42,6 @@ proxies:
     path: /xyz
 - alterId: 0
   cipher: auto
-  name: 7,8|加拿大1-1A
-  port: 45064
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b25287a3-09ae-4810-bbae-8c8cffdeb446
-- alterId: 0
-  cipher: auto
   name: 7,8|加拿大2-1A
   port: 45065
   server: xdd.dashuai.cyou
@@ -59,17 +49,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: b25287a3-09ae-4810-bbae-8c8cffdeb446
+  uuid: e632027e-7167-43cd-8246-2919e6cc5c23
 - alterId: 0
   cipher: auto
-  name: 8|加拿大1-1B
+  name: 7|加拿大1
   port: 45064
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 3f5122df-7761-473e-98ae-33b3427d449f
+  uuid: e632027e-7167-43cd-8246-2919e6cc5c23
 - alterId: 0
   cipher: auto
   name: 8|加拿大2-1B
@@ -79,7 +69,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 3f5122df-7761-473e-98ae-33b3427d449f
+  uuid: 98341419-4a04-44b5-bfaf-532b1864101b
 - cipher: aes-256-cfb
   name: 12|🇨🇦 CA, Vancouver
   password: amazonskr05
@@ -96,22 +86,11 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 15|🇦CA_116
+  name: 15|🇦CA_119
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
-- name: 19|加拿大+V2CROSS.COM
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 130.250.137.63
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epcca.ambercc.filegear-sg.me
-    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
 - alterId: 0
   cipher: auto
   name: 25|[VMess] 🇨🇦 _CA_加拿大
@@ -126,37 +105,9 @@ proxies:
   uuid: 474e8680-701f-11ee-b436-205c6d5f5d78
   ws-opts:
     path: /
-- name: 25|[Trojan] 🇨🇦 加拿大 V2CROSS.COM
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 130.250.137.63
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  tfo: false
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇨🇦 0|🇨🇦加拿大 01 | 1x CA
-  password: 35ef2504-fcd8-45bf-b6f4-555b74324c29
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇨🇦 1|🇨🇦 加拿大 01 | 1x CA
-  password: bc219fb3-90cb-4e5e-b637-4cbe6c6fbdda
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - alterId: 2
   cipher: auto
-  name: 27|2|🇨🇦2 |  5.0MB/s
+  name: 27|0|🇨🇦1 |  1.0MB/s
   network: ws
   port: 30825
   server: v25.heduian.link
@@ -169,26 +120,40 @@ proxies:
     headers:
       Host: v25.heduian.link
     path: /oooo
-- alterId: 0
+- alterId: 2
   cipher: auto
-  delay: 1166
-  name: 28|加拿大 001
+  name: 27|0|🇨🇦2 |  2.3MB/s
   network: ws
-  port: 2052
-  server: s1.db-link01.top
-  servername: 100-151-164-47.s1.db-link01.top
-  skip-cert-verify: true
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: 100-151-164-47.s1.db-link01.top
-    path: /dabai.in172.67.2.142
+      Host: baidu.com
+    path: /oooo
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇨🇦 1|🇨🇦 加拿大 01 | 1x CA
+  password: ecdc09a3-3878-4873-9436-00e09740dfaf
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇨🇦 2|🇨🇦加拿大 01 | 1x CA
+  password: b2677da4-f456-4bb4-a06a-7730c5c82d6d
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '28,34|🇺🇸 美国 CloudFlare节点 #5'
+  name: 28|加拿大 002
   network: ws
-  port: '8880'
+  port: 8880
   server: s4.db-link02.top
   skip-cert-verify: true
   tfo: false
@@ -232,6 +197,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 28|加拿大 006
+  network: ws
+  port: 2082
+  server: s1.cn-db.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-150-51-99.s1.cn-db.top
+    path: /dabai.in172.64.27.73
+- alterId: 0
+  cipher: auto
   name: 34|VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
   network: ws
   port: 80
@@ -244,17 +222,24 @@ proxies:
     headers:
       Host: 51.79.102.253
     path: /IOebhLMhl1CTbFHbL95myfRX2
+- name: 34|🇨🇦 加拿大 V2CROSS.COM
+  password: Aimer
+  port: 2083
+  server: 130.250.137.63
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 37|1|🇦 加大 01 | 1x CA
-  password: e8dabc76-349b-4a96-a7f6-14dcf04259dd
-  port: 36441
-  server: free.2weradf.xyz
+  name: 37|0|🇦加大 01 | 1x CA
+  password: e7fcc401-28c2-497d-a326-286d7421ceb0
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|2|🇦加拿大 01 | 1x CA
-  password: 74eb1c97-3ed9-4786-9b9b-6b09f72c8951
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 37|14|🇦 加拿大 01 | 1x CA
+  password: 4fc2003b-d64a-4e84-bea3-dfc2a4ac5d6b
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true

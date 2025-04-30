@@ -179,56 +179,59 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 7,8|韩国 专线NO2-1A
-  port: 45075
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3b46fb6f-2029-4cc1-ade6-6a5df5247717
-- alterId: 0
-  cipher: auto
-  name: 7|韩国 专线NO1
+  name: 7,8|韩国 专线NO1-1A
   port: 45076
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 3b46fb6f-2029-4cc1-ade6-6a5df5247717
+  uuid: 4fed7a6c-0188-4186-8c8c-3d40f4039de6
 - alterId: 0
   cipher: auto
-  name: 8|韩国 专线NO2-1B
+  name: 7|韩国 专线NO2
   port: 45075
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 5fbf961e-041c-4b09-ade4-d489cb939f77
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 11,24,37|1|🇷6 |  3.0MB/s
-  password: qwerREWQ@@
-  port: 60125
-  server: p225.panda004.net
-  tfo: true
-  type: ss
+  uuid: 4fed7a6c-0188-4186-8c8c-3d40f4039de6
+- name: 7|韩国-三网优化2
+  password: 0a13df39-503a-485a-9c84-5631974fbcea
+  port: 44732
+  server: kr-qingyun.dwyun.me
+  skip-cert-verify: true
+  sni: kr-qingyun.dwyun.me
+  type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 8|韩国 专线NO1-1B
+  port: 45076
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 615c731a-0ae3-4985-abc3-f2a6eb553a03
 - cipher: aes-256-cfb
-  name: 11|🇰🇷3 |  5.6MB/s
-  password: qwerREWQ@@
-  port: 30454
-  server: 125.141.26.14
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 11,24|github.com/Ruk1ng001_656632393...
+  name: 11|🇰🇷1 |  4.8MB/s
   password: qwerREWQ@@
   port: 34669
-  server: p221.panda001.net
-  tfo: true
+  server: 125.141.31.103
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|🇰🇷2 |  5.9MB/s
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
+  type: ss
+- cipher: aes-256-cfb
+  name: 11,27|2|🇰🇷1 |  5.8MB/s
+  password: qwerREWQ@@
+  port: 63648
+  server: 125.141.26.15
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -237,23 +240,6 @@ proxies:
   port: 443
   server: 52.221.255.53
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇷 KR
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇷 KR_163
-  network: ws
-  port: 30002
-  server: 220.123.48.124
-  servername: obdii.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-headers:
-    HOST: obdii.cfd
-  ws-path: /linkws
 - cipher: aes-256-cfb
   ip-version: dual
   name: 22|1|🇰🇷5+|++6.1MB%2fs
@@ -270,102 +256,71 @@ proxies:
   server: 54.213.242.191
   tls: false
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 24,25|[SS] 🇰🇷 韩国 首尔Amazon数据中心
-  password: gJg1TyUQ
-  port: 30976
-  server: 13.125.168.176
-  tfo: false
+- cipher: aes-256-cfb
+  delay: 772
+  name: 24,27,37|2|🇷4 |  5.7MB/s
+  password: qwerREWQ@@
+  port: 4857
+  server: 125.141.26.12
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 24|🟡_🇰🇷_📶_github.com/Ruk1ng001_38...
+  password: qwerREWQ@@
+  port: 11389
+  server: 221.150.109.89
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇰🇷 0|🇰🇷 韩国 01 | 1x KR
+  password: bb0a7803-b5ed-4d1e-abcd-326a2e093537
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇰🇷 0|🇰🇷 韩国 02 | 1x KR
+  password: bb0a7803-b5ed-4d1e-abcd-326a2e093537
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇰🇷 1|🇰🇷韩国 01 | 1x KR
+  password: 58142858-d970-42f6-95e3-6f469bda8823
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇰🇷 1|🇰🇷韩国 02 | 1x KR
+  password: 58142858-d970-42f6-95e3-6f469bda8823
+  port: 31313
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '34,37,38|🇰🇷 韩国|@ripaojiedian #1'
+  name: 27|🇰🇷 12,13|韩国|@ripaojiedian
   network: ws
   port: 443
   server: cg1c16.waimaoglobaldirect.cc
   servername: cg1c16.waimaoglobaldirect.cc
   skip-cert-verify: false
-  tfo: false
   tls: true
   type: vmess
+  udp: true
   uuid: 3493e94c-1769-43d8-8308-f87b460adc65
   ws-opts:
     headers:
       Host: cg1c16.waimaoglobaldirect.cc
     path: /api/v1/graphql
-- name: 34|🇰🇷 _韩国
-  password: Aimer
-  port: 12266
-  server: 220.80.75.163
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '34|🇰🇷 _韩国 #1'
-  password: Aimer
-  port: 18020
-  server: 183.98.186.160
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '34|🇰🇷 _韩国 #2'
-  password: Aimer
-  port: 12434
-  server: 222.107.236.137
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '34|🇰🇷 _韩国 #3'
-  password: Aimer
-  port: 15082
-  server: 59.13.75.15
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '34|🇰🇷 _韩国 #4'
-  password: Aimer
-  port: 18108
-  server: 220.123.48.124
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '34|🇰🇷 _韩国 #5'
-  password: Aimer
-  port: 12336
-  server: 218.158.109.102
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '34|🇰🇷 _韩国 #6'
-  password: Aimer
-  port: 30022
-  server: 14.39.43.121
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '34|🇰🇷 _韩国 #7'
-  password: Aimer
-  port: 12482
-  server: 59.22.76.222
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '34|🇰🇷 _韩国 #8'
-  password: Aimer
-  port: 12315
-  server: 121.149.228.125
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '34|🇰🇷 _韩国 #9'
-  password: Aimer
-  port: 18048
-  server: 121.145.126.10
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
+- cipher: aes-256-cfb
+  name: 27|🇰🇷 12|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.95.213.25
+  type: ss
+  udp: true
 - name: 35|韩国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
@@ -374,60 +329,38 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 37|0|  01 | 1x KR
-  password: 0a930a22-93bf-40d2-b982-51b3ac4702df
+  password: e7cc6a65-f0d3-4078-a22d-f0ae271c7b37
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 37|0|🇷 韩国 02 | 1x KR
-  password: 0a930a22-93bf-40d2-b982-51b3ac4702df
+  password: e7cc6a65-f0d3-4078-a22d-f0ae271c7b37
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 37|1|🇰🇷4 |  2.4MB/s
-  password: qwerREWQ@@
-  port: 30454
-  server: p229.panda004.net
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 37|1|🇰🇷5 |  5.1MB/s
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 37|2|🇷韩国 01 | 1x KR
-  password: bf0a50e0-5889-4262-b5a9-6b91071148e3
+  name: 37|1|🇷韩国 01 | 1x KR
+  password: 4fab7ba2-ea09-4e2d-b9ca-921519e3f5a1
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|2|🇰🇷韩国 02 | 1x KR
-  password: bf0a50e0-5889-4262-b5a9-6b91071148e3
+  name: 37|1|🇰🇷韩国 02 | 1x KR
+  password: 4fab7ba2-ea09-4e2d-b9ca-921519e3f5a1
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '37,38|🇰🇷 韩国2|@ripaojiedian #1'
-  password: qwerREWQ@@
-  port: 4857
-  server: 125.141.26.12
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
   name: '37,38|🇰🇷 韩国特殊|@ripaojiedian #1'
   password: amazonskr05
   port: 443
-  server: 54.95.213.25
+  server: 13.113.222.121
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -446,3 +379,17 @@ proxies:
   server: '@@p222.panda001.net'
   tls: false
   type: ss
+- cipher: aes-256-cfb
+  name: 42|KR_speednode_0031
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 42|KR_speednode_0033
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+  udp: true

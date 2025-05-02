@@ -1,92 +1,49 @@
 proxies:
-- ip-version: dual
-  name: '0,1,31|🇳🇱_NL_荷兰->🇨🇳_CN_中国_1 #2'
-  password: aa34901b-0877-4143-8e50-67de188e178a
-  port: 46926
-  server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: '0,1,31|🇨🇳_CN_中国->🇺🇸_US_美国_1 #4'
-  password: 1gtrkd6uCAeS
-  port: 443
-  server: 62.60.233.83
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  ip-version: dual
-  name: '0,1,20,31|🇨🇳_CN_中国->🇺🇸_US_美国_2 #3'
-  network: ws
-  port: 30805
-  server: v5.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- ip-version: dual
-  name: '0,1,31|🇳🇱_NL_荷兰->🇦🇺_AU_澳大利亚 #2'
-  password: 07381e41-41fb-484d-9dc7-37d5a4b566bd
-  port: 34017
-  server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  ip-version: dual
-  name: '0,1,20,30,31|🇨🇳_CN_中国->🇺🇸_US_美国_3 #3'
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  sni: ocbc.com
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  ip-version: dual
-  name: '0,1,31|🇨🇳_CN_中国->🇺🇸_US_美国_4 #3'
-  network: ws
-  port: 30836
-  server: v36.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: 0,1,11,24,30,31,34,37|2|🇸86 |  2.6MB/s
+  name: '0,1,31|🇨🇳_CN_中国->🇺🇸_US_美国_1 #3'
+  network: ws
+  port: 30840
+  server: v40.heduian.link
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: api100-core-quic-lf.amemv.com
+    path: /index
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: '0,1,11,31,34,37|3|🇺🇸101 |  3.0MB/s #2'
   network: tcp
-  port: 5228
-  server: 6a483e32-svfr40-t28b6o-ef48.cu.plebai.net
+  port: 5229
+  server: 3bb8aaa7-suk9s0-swtza9-1q91p.cu.plebai.net
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+  uuid: c11ff50c-f582-11ee-94df-f23c9164ca5d
   ws-headers:
-    Host: 6a483e32-svfr40-t28b6o-ef48.cu.plebai.net
+    Host: 3bb8aaa7-suk9s0-swtza9-1q91p.cu.plebai.net
   ws-path: /
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   ip-version: dual
-  name: 0,1,11,24,30,31,34,37|2|🇺🇸58 |  2.3MB/s
+  name: '0,1,11,19,24,31,34,37|3|🇺🇸79 |  2.2MB/s #2'
+  network: tcp
+  port: 5228
+  server: 716545eb-sux8g0-t5oe1a-1ejod.cu.plebai.net
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6ada1622-e018-11ec-bb74-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: '0,1,11,24,30,31,34,37|3|🇺🇸7 |  3.3MB/s #2'
   network: tcp
   port: 5228
   server: 89936472-svdwg0-t28b6o-ef48.cu.plebai.net
@@ -98,21 +55,112 @@ proxies:
   ws-headers:
     Host: 89936472-svdwg0-t28b6o-ef48.cu.plebai.net
   ws-path: /
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: '0,1,11,30,31,34,37|3|🇺🇸30 |  3.6MB/s #2'
+  network: tcp
+  port: 5228
+  server: 67149d44-sum4g0-t46yf9-e13q.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8d888b92-eec8-11ef-bca1-f23c91cfbbc9
+  ws-headers:
+    Host: 67149d44-sum4g0-t46yf9-e13q.cu.plebai.net
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  ip-version: dual
+  name: '0,1,11,24,31,34,37|3|🇺🇸63 |  4.9MB/s #2'
+  network: tcp
+  port: '5229'
+  server: e890417c-svc1s0-t1bnjq-1krtb.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  ws-headers:
+    Host: e890417c-svc1s0-t1bnjq-1krtb.cu.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 0,1,11,24,31,34,37|3|🇸31 |  5.3MB/s
+  network: tcp
+  port: 5229
+  server: b3e1a577-svjgg0-t1bnjq-1krtb.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  ws-headers:
+    Host: b3e1a577-svjgg0-t1bnjq-1krtb.cu.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: '0,1,11,19,30,31,34,37|3|🇺🇸73 |  2.7MB/s #2'
+  network: tcp
+  port: 5229
+  server: 05f88d3f-suk9s0-sxv16d-1k09w.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8de795d2-a06f-11ed-8edf-f23c913c8d2b
+  ws-headers:
+    Host: 05f88d3f-suk9s0-sxv16d-1k09w.cu.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: '0,1,11,24,31,34,37|3|🇺🇸114 |  1.2MB/s #2'
+  network: tcp
+  port: 5228
+  server: 60077de0-svlb40-t28b6o-ef48.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+  ws-headers:
+    Host: 60077de0-svlb40-t28b6o-ef48.cu.plebai.net
+  ws-path: /
 - ip-version: dual
-  name: '0,1,31|🇳🇱_NL_荷兰->🇨🇳_CN_中国_2 #2'
-  password: aa34901b-0877-4143-8e50-67de188e178a
-  port: 46926
-  server: 45.146.232.172
-  sni: q08m.vgraxiw73s.hasyaf.cn
+  name: '0,1,31|🇺🇸_US_美国->🇩🇪_DE_德国 #2'
+  network: ws
+  password: tXsBdKfoe9
+  port: 2083
+  server: 104.25.145.188
+  skip-cert-verify: false
+  sni: cpuhot.boshrachoice.ir.
   type: trojan
   udp: true
-- ip-version: dual
-  name: '0,1,19,25,30,31|🇳🇱_NL_荷兰->🇺🇸_US_美国 #2'
+  ws-opts:
+    headers:
+      host: cpuhot.boshrachoice.ir.
+    path: /VPNTV20@_TOP.COM.VPNTV20@_TOP.COM.VPNTV20@_TOP.COM?ed=2048
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: '0,1,30,31,34|3|🇺🇸94 |  4.1MB/s #1'
   network: tcp
-  password: 51a668c6-d1bb-4e7e-aca3-125349f779fd
-  port: 43592
+  port: '5228'
+  server: b514723d-suz340-sw0fy8-4c42.cu.plebai.net
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1758c288-c39d-3d20-f34f-f4c62bc1d8d4
+- ip-version: dual
+  name: '0,1,19,25,30,31|🇳🇱_NL_荷兰->🇷🇴_RO_罗马尼亚 #2'
+  password: ccae43f0-5daa-4fd1-94fc-406b38ad6f04
+  port: 43499
   server: 45.146.232.171
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
   tfo: false
   type: trojan
@@ -120,25 +168,100 @@ proxies:
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: 0,1,19,20,24,30,31,34,37|2|🇺🇸93 |  2.1MB/s
+  name: '0,1,11,24,30,31,34,37|3|🇺🇸37 |  1.6MB/s #2'
+  network: tcp
+  port: 5229
+  server: fb79be22-svfr40-t1bnjq-1krtb.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  ws-headers:
+    Host: fb79be22-svfr40-t1bnjq-1krtb.cu.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: '0,1,31,34|3|🇺🇸69 |  3.4MB/s #1'
+  network: tcp
+  port: '5229'
+  server: 5d38531f-sum4g0-svq8ok-ebxr.cu.plebai.net
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5cfde7fa-ed1b-11ef-b5d9-f23c9164ca5d
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: '0,1,11,20,31,37|3|🌀4-CY |  3.1MB/s #2'
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  sni: ocbc.com
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v37.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 0,1,11,24,31,34,37|3|🇸55 |  2.9MB/s
+  network: tcp
+  port: 5229
+  server: 0fad9e0f-svlb40-t1bnjq-1krtb.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  ws-headers:
+    Host: 0fad9e0f-svlb40-t1bnjq-1krtb.cu.plebai.net
+  ws-path: /
+- ip-version: dual
+  name: '0,1,31|🇳🇱_NL_荷兰->🇺🇸_US_美国 #2'
+  password: 51a668c6-d1bb-4e7e-aca3-125349f779fd
+  port: 43592
+  server: 45.146.232.171
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: '0,1,11,19,30,31,34,37|3|🇺🇸110 |  3.4MB/s #2'
   network: tcp
   port: 5228
-  server: 87b134e3-svc1s0-t28b6o-ef48.cu.plebai.net
+  server: cd04809b-sux8g0-t3f7qr-141tv.cu.plebai.net
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: '0,1,11,24,30,31,34,37|3|🇺🇸81 |  2.6MB/s #2'
+  network: tcp
+  port: 5228
+  server: c6147365-svjgg0-t28b6o-ef48.cu.plebai.net
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
   ws-headers:
-    Host: 87b134e3-svc1s0-t28b6o-ef48.cu.plebai.net
+    Host: c6147365-svjgg0-t28b6o-ef48.cu.plebai.net
   ws-path: /
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: '0,1,20,30,31|🇨🇳_CN_中国->🇺🇸_US_美国_7 #2'
+  name: '0,1,20,30,31|🇨🇳_CN_中国->🇺🇸_US_美国_15 #3'
   network: ws
-  port: 30808
-  server: v8.heduian.link
+  port: 30805
+  server: v5.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
@@ -146,8 +269,19 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: baidu.com
+      host: v5.heduian.link
     path: /oooo
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: '0,1,11,24,30,31,34,37|3|🇺🇸106 |  4.1MB/s #2'
+  network: tcp
+  port: 5229
+  server: 3009e36d-svn5s0-t1bnjq-1krtb.cu.plebai.net
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
 - cipher: chacha20-ietf-poly1305
   name: 3|🇸🇬 新加坡中转 02
   password: b103d104-bff0-4cee-b42a-85dad07e2036
@@ -3768,6 +3902,27 @@ proxies:
   port: 32049
   server: 77.73.66.95
   type: ss
+- cipher: aes-256-cfb
+  name: 20,40,42|GB_speednode_0007
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 62.100.205.48
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 20|🇨🇳_CN_中国->🇷_FR_国
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
 - cipher: chacha20-ietf-poly1305
   name: 20|🇪🇸_ES_西班牙->🏳️_unKnow_未知
   password: gpW0ffUApVv0u5q1NwGHAX
@@ -3789,7 +3944,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 20,30|🇨🇳_CN_中国->_US_国
+  name: '20|🇨🇳_CN_中国->🇺🇸_US_美国_3 #2'
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -3803,7 +3958,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 20,30|🇨🇳_CN_中国->🇧_GB_英国
+  name: 20,30|🇳_CN_中国->_JP_
   network: ws
   port: 30825
   server: v25.heduian.link
@@ -3813,7 +3968,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: baidu.com
+      host: v25.heduian.link
     path: /oooo
 - name: 20|🇨🇳_CN_中国->🇺_UA_
   password: 42434d18-6220-4bbb-855d-0b1de05ee590
@@ -3980,63 +4135,44 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
-- alterId: '0'
-  cipher: auto
-  name: 30,34,37|2|🇺🇸112 |  3.4MB/s
-  network: tcp
-  port: '5228'
-  server: 104a1dcf-sutj40-svgpxu-y2gs.cu.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-  ws-headers:
-    Host: 104a1dcf-sutj40-svgpxu-y2gs.cu.plebai.net
-  ws-path: /
-- cipher: aes-256-gcm
-  name: 30|🇨🇳_CN_中国->_SG_
-  password: 5C9QXFPJLYCCQSMZ
-  port: 17003
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  type: ss
 - alterId: 2
   cipher: auto
-  name: 30|🇨🇳_CN_中国->🇸_US_美国_3
+  name: '30|🇨🇳_CN_中国->🇺🇸_US_美国_4 #2'
   network: ws
-  port: 30824
-  server: v24.heduian.link
+  port: 30828
+  server: v28.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: baidu.com
+      host: ocbc.com
     path: /oooo
-- name: 30|_NL_->_RO_
+- alterId: 0
+  cipher: auto
+  name: '30,34|🇨🇳 广东省 联通 #2'
+  network: tcp
+  port: '5228'
+  server: 8d3d7f83-suk9s0-sv6oiy-1p1b.cu.plebai.net
+  tls: false
+  type: vmess
+  uuid: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
+- name: 30|🇳🇱_NL_荷兰->🇷🇴_RO_罗马尼亚_1
   password: 684dd432-74bc-4c40-8d20-5c26a84725f8
   port: 42882
   server: 45.146.232.172
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- cipher: aes-256-cfb
-  name: 30,37|2|🌀9-T1 |  1.7MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.23.63
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 30|🇳_CN_中国->🇺🇸_US_美国_13
-  network: ws
-  port: 30840
-  server: v40.heduian.link
+  name: '30,34|3|🇺🇸47 |  4.8MB/s #1'
+  network: tcp
+  port: '5228'
+  server: 00c4bfe4-sunz40-t1tfcf-1o3sh.cu.plebai.net
+  tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: api100-core-quic-lf.amemv.com
-    path: /index
+  uuid: 96b3f2ee-5f66-11ee-804b-f23c9164ca5d
 - alterId: 0
   cipher: auto
   name: 33|1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿...

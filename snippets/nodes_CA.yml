@@ -42,16 +42,6 @@ proxies:
     path: /xyz
 - alterId: 0
   cipher: auto
-  name: 7,8|加拿大1-1A
-  port: 45064
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a69a7674-ac21-4978-a080-e3c4b7aa8444
-- alterId: 0
-  cipher: auto
   name: 7|加拿大2
   port: 45065
   server: xdd.dashuai.cyou
@@ -59,17 +49,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a69a7674-ac21-4978-a080-e3c4b7aa8444
+  uuid: e298af75-837c-499c-ab13-210396946fab
 - alterId: 0
   cipher: auto
-  name: 8|加拿大1-1B
+  name: 7|加拿大1
   port: 45064
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 2f4445b7-6e14-495b-8b26-7930d6f531f1
+  uuid: e298af75-837c-499c-ab13-210396946fab
 - cipher: aes-256-cfb
   name: 12|🇨🇦 CA, Vancouver
   password: amazonskr05
@@ -84,20 +74,6 @@ proxies:
   server: 70luslivsskpwm855plfjwgt5h2atwvf.08.01.ca.6l6.site
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇦CA
-  name: 15|🇦CA_118
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: ca225.vpnbook.com
-  type: ss
-- name: 21|CA加拿大(mibei77.com 米贝节点分享)
-  password: Aimer
-  port: 8443
-  server: 92.243.74.180
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 25|[VMess] 🇨🇦 _CA_加拿大
@@ -112,6 +88,53 @@ proxies:
   uuid: 474e8680-701f-11ee-b436-205c6d5f5d78
   ws-opts:
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇨🇦 0|🇨🇦加拿大 01 | 1x CA
+  password: 2045ad00-5f17-431a-9ccc-1c6ce2fbaeb8
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: 27,34,37|3|🇦1 |  4.1MB/s|29%|Youtube|Op...
+  network: ws
+  port: 443
+  server: cloudgetservice.mcloudservice.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 81380a5e-613c-4863-8b3a-5588f32690c3
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: MaXnEtVipAp-ca1.MaxnetserVicEs.ONliNe
+    max-early-data: 2560
+    path: /linkws
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: '27,34|2|🇨🇦3 |  5.7MB/s|29%|Openai #2'
+  network: ws
+  port: '443'
+  server: cloudgetservice.mcloudservice.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 2c329585-67a8-498b-8d38-176dac806bc7
+  ws-opts:
+    headers:
+      Host: MAxnETVipAP-ca2.MaxNetseRVIcES.OnLINE
+    path: /linkws
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇨🇦 15|🇨🇦 加拿大 01 | 1x CA
+  password: 5ad9d9bb-214d-444d-ab1a-0812737dc1d7
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 28|加拿大 002
@@ -172,14 +195,14 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - cipher: chacha20-ietf-poly1305
   name: 37|0|🇦 加大 01 | 1x CA
-  password: 91847820-7555-4647-95a5-197a91783248
+  password: ccceaf12-fe7c-4044-93e1-e0234867801f
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 37|1|🇦加拿大 01 | 1x CA
-  password: 7e9cfa69-6588-4c2a-afdc-c816e69f0b3b
+  password: 54d4f688-0262-4792-a663-c491fd20f9c4
   port: 31441
   server: free.2apzhfa.xyz
   type: ss

@@ -163,6 +163,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 7|新加坡NO.2
+  port: 45055
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d64206df-2052-47e7-8868-13c58c792c07
+- alterId: 0
+  cipher: auto
   name: 7,8|新加坡NO.1-1A
   port: 45054
   server: haa.dashuai.cyou
@@ -170,27 +180,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 213a25dc-e96d-4445-8a40-a9af572c4a44
-- alterId: 0
-  cipher: auto
-  name: 7,8|新加坡NO.2-1A
-  port: 45055
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 213a25dc-e96d-4445-8a40-a9af572c4a44
-- alterId: 0
-  cipher: auto
-  name: 8|新加坡NO.1-1B
-  port: 45054
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 68a5bfb4-a444-42c7-812f-03322733c85b
+  uuid: d64206df-2052-47e7-8868-13c58c792c07
 - alterId: 0
   cipher: auto
   name: 8|新加坡NO.2-1B
@@ -200,7 +190,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 68a5bfb4-a444-42c7-812f-03322733c85b
+  uuid: 1ff1da9a-87ca-4246-8a94-f0f3b7c5e16c
 - alterId: 0
   cipher: auto
   name: 10|SG | 新加坡 LB-1A
@@ -713,18 +703,23 @@ proxies:
     headers:
       Host: d16henb377mok4.cloudfront.net
     path: /stream
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 11,24,40,42|CN_speednode_0005
-  obfs: tls1.2_ticket_auth
-  obfs-param: sg2-cdn-route.couldflare-cdn.com
-  password: uiACqrIr
-  port: 56138
-  protocol: origin
-  protocol-param: ''
-  server: cm2.xcone.xyz
-  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 11|🇸🇬3 |  4.9MB/s|23%|Disney|Yout...
+  network: ws
+  port: 43050
+  server: 152.69.220.94
+  servername: a.ziqiu1060.ggff.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
   udp: true
+  uuid: 28ca0567-754e-46fc-e774-b19c787975f7
+  ws-opts:
+    headers:
+      Host: a.ziqiu1060.ggff.net
+    path: /dsfsdf
+  xudp: true
 - cipher: aes-256-cfb
   name: 12|🇸🇬 SG, Singapore
   password: amazonskr05
@@ -813,7 +808,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 533d2015-922f-4c6c-8629-9e43dc2294fe
+  uuid: 0bbbe51a-cbf3-4460-82e7-7ca015ace6e3
   ws-opts:
     headers:
       Host: mgsg2.zhousi.link
@@ -828,35 +823,34 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 0bbbe51a-cbf3-4460-82e7-7ca015ace6e3
+  uuid: b1499eeb-7367-4da1-a15a-1d905a30a414
   ws-opts:
     headers:
       Host: mgsg2.zhousi.link
     path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 14,25|[SS] 🇨🇳 江苏省 移动
-  password: 887f01da-5b52-4dff-a80f-efe3380ac35f
-  port: 13127
-  server: chiyu.myfczy169.top
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 14|🇸🇬 新加坡 | SGP 4
+  name: 14|🇸🇬 新加坡 | SGP 3
   network: ws
   port: 80
   server: time.is
   tls: false
   type: vmess
   udp: true
-  uuid: b1499eeb-7367-4da1-a15a-1d905a30a414
+  uuid: 7fbc4516-cbef-46a0-b39a-c809d3073de6
   ws-opts:
     headers:
       Host: mgsg2.zhousi.link
     path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 14|🇸🇬 新加坡 | SGP 4
+  password: 887f01da-5b52-4dff-a80f-efe3380ac35f
+  port: 13127
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -867,11 +861,60 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 8495085d-ccf3-43e4-a657-c4a361fd7c0a
+  uuid: a2078fab-7b19-45a7-9057-89c291c0d549
   ws-opts:
     headers:
       Host: mgsg2.zhousi.link
     path: /
+- cipher: aes-256-gcm
+  name: 18|TG频道@stymei1丨新加坡01 | IEPL专线
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: 11508
+  server: cdn-p1-sg.weibo-dns.com
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 18|TG频道@stymei1丨新加坡02 | IEPL专线
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: 11509
+  server: cdn-p1-sg.weibo-dns.com
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 18|TG频道@stymei1丨新加坡03 | IEPL专线
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: 11510
+  server: cdn-p1-sg.weibo-dns.com
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 18|TG频道@stymei1丨新加坡04 | IEPL专线
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: 11529
+  server: cdn-p1-sg.weibo-dns.com
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 18|TG频道@stymei1丨新加坡05 | IEPL专线
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: 11530
+  server: cdn-p1-sg.weibo-dns.com
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 18|TG频道@stymei1丨新加坡07 | IEPL专线
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: 11535
+  server: ieplqz.youku-dns.com
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 18|TG频道@stymei1丨新加坡08 | IEPL专线
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: 11536
+  server: ieplqz.youku-dns.com
+  type: ss
+  udp: true
 - name: 21|SG新加坡(mibei77.com 米贝节点分享)
   password: Aimer
   port: 2083
@@ -879,117 +922,48 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 0|🇸🇬新加坡 01 | 1x SG
-  password: 81d50bff-feca-4cd9-a214-46c92952ec56
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 0|🇸🇬新加坡 02 | 1x SG
-  password: 81d50bff-feca-4cd9-a214-46c92952ec56
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 0|🇸🇬新加坡 03 | 1x SG
-  password: 81d50bff-feca-4cd9-a214-46c92952ec56
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: '27,34,37,38|🇸🇬 新加坡|@ripaojiedian #1'
-  network: ws
-  port: 30812
-  server: v12.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- cipher: aes-256-cfb
-  name: 27|🇸🇬 12|🇸🇬 狮城特殊|@ripaojiedian
-  password: awsps0501
-  port: 443
-  server: 52.27.142.2
-  type: ss
-  udp: true
-- name: 27|🇸🇬 13|新加坡2|@ripaojiedian
-  password: ce44b416-2d7e-49af-aa40-5a61d45f6fcc
-  port: 27401
-  server: 58.254.186.222
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 27|🇸🇬 13|新加坡3|@ripaojiedian
+  name: 24|🟠_🇸🇬_💻_github.com/Ruk1ng001_37...
+  port: 10002
+  server: 192.53.113.156
+  tls: false
+  type: vmess
+  uuid: 036a28c3-5c8d-4df3-a79b-9da622640f2b
+- alterId: 0
+  cipher: auto
+  name: 24|🟡_🇸🇬_💼_github.com/Ruk1ng001_36...
   network: ws
-  port: 35146
-  server: sg6.vip2.g2.moonbase.life
-  servername: web.xcjs.info
-  skip-cert-verify: false
+  port: 43050
+  server: 152.69.220.94
+  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
-  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+  uuid: 28ca0567-754e-46fc-e774-b19c787975f7
   ws-opts:
     headers:
-      Host: web.xcjs.info
-    path: /home
-- name: 27,37,40,42|SG_speednode_0024
-  network: ws
+      host: a.ziqiu1060.ggff.net
+    path: /dsfsdf
+- name: '34|15|SG_speednode_0024 #1'
   password: Aimer
   port: 8443
   server: 92.243.74.180
   skip-cert-verify: false
   sni: tyep.esslh.filegear-sg.me
   type: trojan
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 34|🇸🇬 每天更新，请加电报群防止失联
+  network: ws
+  port: '20027'
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  uuid: 9b5d72fd-3e66-4909-a3a5-0f259a9ad68f
   ws-opts:
     headers:
-      Host: tyep.esslh.filegear-sg.me
+      Host: ''
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 15|🇸🇬 新加坡 01 | 1x SG
-  password: 52526c2f-6548-4cdc-87bc-72735896f023
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 15|🇸🇬 新加坡 02 | 1x SG
-  password: 52526c2f-6548-4cdc-87bc-72735896f023
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: '34|2|🇸🇬6 |  5.2MB/s|63%|Netflix|D... #1'
-  password: slch2024
-  port: 8443
-  server: myanmar.visa.com
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-- name: 34|🇸🇬 每天更新，请加电报群防止失联
-  password: Aimer
-  port: 50000
-  server: 211.251.7.76
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
 - name: 35|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
@@ -998,35 +972,35 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 37|0| 01 | 1x SG
-  password: c93236ba-acc4-4ca5-8ea4-c65c09137f41
+  password: e920bee2-522b-449a-aa88-d880de9b5502
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 37|0|🇬新加坡 02 | 1x SG
-  password: c93236ba-acc4-4ca5-8ea4-c65c09137f41
+  password: e920bee2-522b-449a-aa88-d880de9b5502
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 37|0|🇬新加坡 03 | 1x SG
-  password: c93236ba-acc4-4ca5-8ea4-c65c09137f41
+  password: e920bee2-522b-449a-aa88-d880de9b5502
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 37|1|🇬 新加坡 01 | 1x SG
-  password: 23103682-0658-497b-8671-3afcaff32c47
+  password: 5558e16d-7e9d-4f33-80f7-b3a2d3e37c5b
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 37|1|🇸🇬 新加坡 02 | 1x SG
-  password: 23103682-0658-497b-8671-3afcaff32c47
+  password: 5558e16d-7e9d-4f33-80f7-b3a2d3e37c5b
   port: 36173
   server: free.2weradf.xyz
   type: ss

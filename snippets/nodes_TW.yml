@@ -87,16 +87,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 7|台湾2
-  port: 45077
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d64206df-2052-47e7-8868-13c58c792c07
-- alterId: 0
-  cipher: auto
   name: 7,8|台湾1-1A-GPT
   port: 45078
   server: haa.dashuai.cyou
@@ -104,7 +94,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: d64206df-2052-47e7-8868-13c58c792c07
+  uuid: dfe02f24-89b5-49e2-865d-32606b8214f4
+- alterId: 0
+  cipher: auto
+  name: 7|台湾2
+  port: 45077
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: dfe02f24-89b5-49e2-865d-32606b8214f4
 - alterId: 0
   cipher: auto
   name: 8|台湾1-1B-GPT
@@ -114,71 +114,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 1ff1da9a-87ca-4246-8a94-f0f3b7c5e16c
-- alpn:
-  - h3
-  client-fingerprint: randomized
-  name: 11|🇹🇼3 |  1.3MB/s|0%|Netflix|Disn...
-  network: ws
-  password: Aimer
-  port: '2087'
-  server: 5.182.84.9
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alpn:
-  - h3
-  client-fingerprint: randomized
-  name: 11|🇹🇼4 |  5.4MB/s|0%|Disney|Opena...
-  network: ws
-  password: Aimer
-  port: '2087'
-  server: 162.120.94.23
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J111M Build/LMY47V) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alpn:
-  - h3
-  client-fingerprint: randomized
-  name: 11|🇹🇼5 |  5.2MB/s|0%|Disney
-  network: ws
-  password: Aimer
-  port: '2096'
-  server: 167.68.4.10
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.139 Safari/537.36
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 11,37,40,42|KR_speednode_0046
-  network: ws
-  password: Aimer
-  port: 50000
-  server: 211.251.7.76
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epccj.ambercc.filegear-sg.me
-    path: /?ed=2560
+  uuid: 95c965a0-6a4a-46e4-b87d-8db3de3c8ad2
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇹🇼 台湾|TW01
@@ -195,55 +131,41 @@ proxies:
   server: 1w91dj53mb3tjunfqy7q3bdu1fo0sged.08.02.tw.6l6.site
   tfo: false
   type: ss
+- cipher: aes-128-gcm
+  country: 🇹 TW
+  name: 15| TW_323
+  password: 79739832-b888-415a-a454-8b53911c944a
+  port: 30332
+  server: vps.200566.xyz
+  type: ss
 - cipher: aes-256-gcm
-  name: 18|TG频道@stymei1丨台湾 | IEPL专线
+  name: 18,24,25|[SS] 🇨🇳 广东省广州市 移动 2
   password: 423cf642-6528-410c-b542-2aae04113d33
   port: 11541
   server: cdn-p1-tw.youku-dns.com
+  tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|0| 01 | 1x TW
-  password: e920bee2-522b-449a-aa88-d880de9b5502
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|0|🇼台湾 02 | 1x TW
-  password: e920bee2-522b-449a-aa88-d880de9b5502
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|0|🇼台湾 03 | 1x TW
-  password: e920bee2-522b-449a-aa88-d880de9b5502
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|1|🇼 台湾 01 | 1x TW
-  password: 5558e16d-7e9d-4f33-80f7-b3a2d3e37c5b
-  port: 36241
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|1|🇹🇼 台湾 02 | 1x TW
-  password: 5558e16d-7e9d-4f33-80f7-b3a2d3e37c5b
-  port: 36243
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|1|🇼 台湾 03 | 1x TW
-  password: 5558e16d-7e9d-4f33-80f7-b3a2d3e37c5b
-  port: 36245
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+- name: '34|🇨🇳 13,14|台湾3|@ripaojiedian #1'
+  password: bpb-trojan
+  port: 443
+  server: 35.201.203.106
+  skip-cert-verify: false
+  sni: skwygx.top
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '34|3|🇹🇼1 |  6.2MB/s|0%|Netflix|Di... #1'
+  network: ws
+  port: '80'
+  server: 85ef02dd-b03e-94d5-61f4-bb5a8d5f491f.castlepeakhospital.moe
+  tls: false
+  type: vmess
+  uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
 - alpn:
   - h3
   client-fingerprint: chrome
@@ -255,7 +177,7 @@ proxies:
   skip-cert-verify: false
   sni: skwygx.top
   type: trojan
-- name: 37,40,42|TW_speednode_0074
+- name: 37,40,42|TW_speednode_0038
   network: ws
   password: bpb-trojan
   port: 443
@@ -268,3 +190,24 @@ proxies:
     headers:
       Host: skwygx.top
     path: /tr?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 37|15|台湾 01 | 1x TW
+  password: bef8120c-6a5d-42e4-b28e-6490507f7be4
+  port: 31241
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|15|🇼台湾 02 | 1x TW
+  password: bef8120c-6a5d-42e4-b28e-6490507f7be4
+  port: 31243
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|15|🇼台湾 03 | 1x TW
+  password: bef8120c-6a5d-42e4-b28e-6490507f7be4
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true

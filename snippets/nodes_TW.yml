@@ -87,6 +87,16 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
+  name: 7,8|台湾2-1A-GPT
+  port: 45077
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8276dc5d-9895-4731-9f15-ad0e0c5fe9cf
+- alterId: 0
+  cipher: auto
   name: 7,8|台湾1-1A-GPT
   port: 45078
   server: haa.dashuai.cyou
@@ -94,17 +104,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: dfe02f24-89b5-49e2-865d-32606b8214f4
+  uuid: 8276dc5d-9895-4731-9f15-ad0e0c5fe9cf
 - alterId: 0
   cipher: auto
-  name: 7|台湾2
+  name: 8|台湾2-1B-GPT
   port: 45077
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: dfe02f24-89b5-49e2-865d-32606b8214f4
+  uuid: 273c13b2-9057-4c26-8a13-61c1dd300c09
 - alterId: 0
   cipher: auto
   name: 8|台湾1-1B-GPT
@@ -114,7 +124,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 95c965a0-6a4a-46e4-b87d-8db3de3c8ad2
+  uuid: 273c13b2-9057-4c26-8a13-61c1dd300c09
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇹🇼 台湾|TW01
@@ -131,83 +141,59 @@ proxies:
   server: 1w91dj53mb3tjunfqy7q3bdu1fo0sged.08.02.tw.6l6.site
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇼 TW
+  name: 15| TW_271
+  password: 9bec9933-a5cf-4ddf-94fd-37778a9baa0b
+  port: 26900
+  server: hinetiw0k.yooddns.stream
+  type: ss
 - cipher: aes-128-gcm
   country: 🇹 TW
-  name: 15| TW_323
+  name: 15|🇼 TW_272
   password: 79739832-b888-415a-a454-8b53911c944a
   port: 30332
   server: vps.200566.xyz
   type: ss
-- cipher: aes-256-gcm
-  name: 18,24,25|[SS] 🇨🇳 广东省广州市 移动 2
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11541
-  server: cdn-p1-tw.youku-dns.com
-  tfo: false
-  type: ss
-  udp: true
-- name: '34|🇨🇳 13,14|台湾3|@ripaojiedian #1'
-  password: bpb-trojan
-  port: 443
-  server: 35.201.203.106
-  skip-cert-verify: false
-  sni: skwygx.top
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '34|3|🇹🇼1 |  6.2MB/s|0%|Netflix|Di... #1'
-  network: ws
-  port: '80'
-  server: 85ef02dd-b03e-94d5-61f4-bb5a8d5f491f.castlepeakhospital.moe
-  tls: false
-  type: vmess
-  uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alpn:
-  - h3
-  client-fingerprint: chrome
-  name: 37,38|🇹🇼 台湾3|@ripaojiedian
-  network: tcp
-  password: bpb-trojan
-  port: 443
-  server: 35.201.203.106
-  skip-cert-verify: false
-  sni: skwygx.top
-  type: trojan
-- name: 37,40,42|TW_speednode_0038
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 35.201.203.106
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 37|15|台湾 01 | 1x TW
-  password: bef8120c-6a5d-42e4-b28e-6490507f7be4
+  name: 37|0| 01 | 1x TW
+  password: 3e12b66b-b0bd-492b-92ec-41da3db9b137
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|15|🇼台湾 02 | 1x TW
-  password: bef8120c-6a5d-42e4-b28e-6490507f7be4
+  name: 37|0|🇼台湾 02 | 1x TW
+  password: 3e12b66b-b0bd-492b-92ec-41da3db9b137
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|15|🇼台湾 03 | 1x TW
-  password: bef8120c-6a5d-42e4-b28e-6490507f7be4
+  name: 37|0|🇼台湾 03 | 1x TW
+  password: 3e12b66b-b0bd-492b-92ec-41da3db9b137
   port: 31245
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|15| 台湾 01 | 1x TW
+  password: 30e78d61-2763-4b43-9828-6825e949ecb6
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|15|🇼 台湾 02 | 1x TW
+  password: 30e78d61-2763-4b43-9828-6825e949ecb6
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|15|🇼 台湾 03 | 1x TW
+  password: 30e78d61-2763-4b43-9828-6825e949ecb6
+  port: 36245
+  server: free.2weradf.xyz
   type: ss
   udp: true

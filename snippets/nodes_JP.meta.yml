@@ -1,36 +1,4 @@
 proxies:
-- name: 2|🇯🇵 日本家宽
-  password: 64f4f8e7-cf41-4e53-b123-5e8e9f27defa
-  port: 29596
-  server: ieplfcdnhwcvix.kaiqsz.com
-  skip-cert-verify: true
-  sni: mmbiz1.redapricotcloud.com
-  type: trojan
-  udp: true
-- name: 2|🇯🇵 日本2
-  password: 64f4f8e7-cf41-4e53-b123-5e8e9f27defa
-  port: 28713
-  server: nbae7a7.kaiqsz.com
-  skip-cert-verify: true
-  sni: mmbiz1.redapricotcloud.com
-  type: trojan
-  udp: true
-- name: 2|🇯🇵 尼日利亚
-  password: 64f4f8e7-cf41-4e53-b123-5e8e9f27defa
-  port: 34183
-  server: lm.kaiqsz.com
-  skip-cert-verify: true
-  sni: mmbiz16.redapricotcloud.com
-  type: trojan
-  udp: true
-- name: 2|🇯🇵 日本 IPV6
-  password: 64f4f8e7-cf41-4e53-b123-5e8e9f27defa
-  port: 28713
-  server: ipv6.hongxingdl.vip
-  skip-cert-verify: true
-  sni: mmbiz1.redapricotcloud.com
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 3|🇯🇵 CM 隧道 日本 NO1
@@ -500,16 +468,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 7,8|日本NO.1-1A
-  port: 45056
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: dfe02f24-89b5-49e2-865d-32606b8214f4
-- alterId: 0
-  cipher: auto
   name: 7,8|日本NO.2-1A
   port: 45057
   server: xdd.dashuai.cyou
@@ -517,7 +475,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: dfe02f24-89b5-49e2-865d-32606b8214f4
+  uuid: 8276dc5d-9895-4731-9f15-ad0e0c5fe9cf
+- alterId: 0
+  cipher: auto
+  name: 7,8|日本NO.1-1A
+  port: 45056
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8276dc5d-9895-4731-9f15-ad0e0c5fe9cf
 - alterId: 0
   cipher: auto
   name: 8|日本NO.2-1B
@@ -527,7 +495,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 95c965a0-6a4a-46e4-b87d-8db3de3c8ad2
+  uuid: 273c13b2-9057-4c26-8a13-61c1dd300c09
 - alterId: 0
   cipher: auto
   name: 10|JP | 日本 LB-1T
@@ -1040,35 +1008,12 @@ proxies:
     headers:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
-- delay: 653
-  name: 11,19,25,37|2|1 |  2.4MB/s|51%|Youtube|Ope...
-  password: RlzoEILU
-  port: 49893
-  server: 36.151.251.57
-  skip-cert-verify: true
-  tfo: false
-  type: trojan
-  udp: true
-- alterId: 0
+- alterId: '0'
   cipher: auto
   client-fingerprint: chrome
-  delay: 1856
-  h2-opts: {}
-  http-opts: {}
-  name: 11,34,37|2|🇯🇵3 |  3.7MB/s|10%|Disney|Yo...
+  name: 11,34,37|2|🇵1 |  6.2MB/s|11%|Disney|You...
   network: tcp
-  port: 17233
-  server: 2bbb71ac-svdwg0-sw0nbj-1anhm.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3f58d3fe-f4ea-11eb-8673-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 11,34,37|2|🇵2 |  5.8MB/s|10%|Disney|You...
-  network: tcp
-  port: 17233
+  port: '17233'
   server: 8faa5046-svc1s0-sw0nbj-1anhm.cm5.p5pv.com
   servername: 8faa5046-svc1s0-sw0nbj-1anhm.cm5.p5pv.com
   skip-cert-verify: false
@@ -1077,14 +1022,20 @@ proxies:
   udp: true
   uuid: 3f58d3fe-f4ea-11eb-8673-f23c9164ca5d
   xudp: true
-- cipher: aes-256-gcm
-  name: 11,18,25,37|2|🇯🇵4 |  2.0MB/s|64%|Netflix|D...
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11505
-  server: cdn-p1-jp.weibo-dns.com
-  tfo: false
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  delay: 1856
+  h2-opts: {}
+  http-opts: {}
+  name: '11,34|1|🇯🇵4 |  2.1MB/s|11%|Youtube|O... #1'
+  network: tcp
+  port: '17233'
+  server: 2bbb71ac-svdwg0-sw0nbj-1anhm.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3f58d3fe-f4ea-11eb-8673-f23c9164ca5d
 - cipher: aes-128-gcm
   name: 12|🇯🇵
   password: shadowsocks
@@ -1189,256 +1140,15 @@ proxies:
   server: 05w3bfqa176u15igufwgvhebwck0w0l3.08.01.ng.6l6.site
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 3
-  password: ba566f27-14c3-48ff-8200-aadbc0cd0bc4
-  port: 45679
-  server: 1c4.bulldognet-dstat.uk
-  type: ss
-  udp: true
 - alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 4
-  network: ws
-  port: 443
-  server: bookmyshow.com
-  servername: jpv.xiaoqi555.xyz
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 3281307c-6881-47e3-9ac7-5fc4cd050da8
-  ws-opts:
-    headers:
-      Host: jpv.xiaoqi555.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 5
-  network: ws
-  port: 443
-  server: www.visa.com
-  servername: jpv.xiaoqi555.xyz
+  name: 24|❓_🇯🇵_💻_github.com/Ruk1ng001_39...
+  password: FaCEZEZq36XlIBaRly2O53S8zwaxeeKDNRxnDYlRexDOS3904YOFRz830xZ439N2TSCyj
+  port: 28331
+  server: 52.69.249.182
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 3281307c-6881-47e3-9ac7-5fc4cd050da8
-  ws-opts:
-    headers:
-      Host: jpv.xiaoqi555.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 8
-  network: ws
-  port: 443
-  server: bookmyshow.com
-  servername: jpv.xiaoqi555.xyz
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a082ade2-be61-4710-8ba8-97c1469340e7
-  ws-opts:
-    headers:
-      Host: jpv.xiaoqi555.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 9
-  network: ws
-  port: 443
-  server: www.visa.com
-  servername: jpv.xiaoqi555.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a082ade2-be61-4710-8ba8-97c1469340e7
-  ws-opts:
-    headers:
-      Host: jpv.xiaoqi555.xyz
-    path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 10
-  password: 7fbc4516-cbef-46a0-b39a-c809d3073de6
-  port: 45679
-  server: 1c4.bulldognet-dstat.uk
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 11
-  network: ws
-  port: 443
-  server: bookmyshow.com
-  servername: jpv.xiaoqi555.xyz
-  tls: true
-  type: vmess
-  udp: true
-  uuid: b38dc35e-5a87-4cb6-bda0-dbcdd4a51f33
-  ws-opts:
-    headers:
-      Host: jpv.xiaoqi555.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 12
-  network: ws
-  port: 443
-  server: bookmyshow.com
-  servername: jpv.xiaoqi555.xyz
-  tls: true
-  type: vmess
-  udp: true
-  uuid: ba566f27-14c3-48ff-8200-aadbc0cd0bc4
-  ws-opts:
-    headers:
-      Host: jpv.xiaoqi555.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 13
-  network: ws
-  port: 443
-  server: www.visa.com
-  servername: jpv.xiaoqi555.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: b38dc35e-5a87-4cb6-bda0-dbcdd4a51f33
-  ws-opts:
-    headers:
-      Host: jpv.xiaoqi555.xyz
-    path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 14
-  password: a082ade2-be61-4710-8ba8-97c1469340e7
-  port: 45679
-  server: 1c4.bulldognet-dstat.uk
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 15
-  network: ws
-  port: 443
-  server: www.visa.com
-  servername: jpv.xiaoqi555.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7fbc4516-cbef-46a0-b39a-c809d3073de6
-  ws-opts:
-    headers:
-      Host: jpv.xiaoqi555.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 16
-  network: ws
-  port: 443
-  server: bookmyshow.com
-  servername: jpv.xiaoqi555.xyz
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7fbc4516-cbef-46a0-b39a-c809d3073de6
-  ws-opts:
-    headers:
-      Host: jpv.xiaoqi555.xyz
-    path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 17
-  password: b38dc35e-5a87-4cb6-bda0-dbcdd4a51f33
-  port: 45679
-  server: 1c4.bulldognet-dstat.uk
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 18
-  password: 887f01da-5b52-4dff-a80f-efe3380ac35f
-  port: 25578
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 21
-  network: ws
-  port: 443
-  server: www.visa.com
-  servername: jpv.xiaoqi555.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: ba566f27-14c3-48ff-8200-aadbc0cd0bc4
-  ws-opts:
-    headers:
-      Host: jpv.xiaoqi555.xyz
-    path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本 | JPN 23
-  password: 3281307c-6881-47e3-9ac7-5fc4cd050da8
-  port: 45679
-  server: 1c4.bulldognet-dstat.uk
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 18|TG频道@stymei1丨日本01 | IEPL专线
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11504
-  server: cdn-p1-jp.weibo-dns.com
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 18,25|[SS] 🇨🇳 广东省广州市 电信
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11506
-  server: cdn-p1-jp.weibo-dns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 18|TG频道@stymei1丨日本04 | IEPL专线
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11528
-  server: cdn-p1-jp.weibo-dns.com
-  type: ss
-  udp: true
-- name: 18,34|🇯🇵 日本北海道跨境专线
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 6668
-  server: 13.231.133.234
-  servername: baidu.com
-  skip-cert-verify: true
-  sni: baidu.com
   tls: true
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 18|🇯🇵日本东京IPLC专线
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 6666
-  server: 13.231.133.234
-  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 28|日本 001
@@ -1454,32 +1164,23 @@ proxies:
     headers:
       Host: tls.05.node-for-bigairport.win
     path: /
-- name: 34|🇯🇵 日本 东京都Amazon数据中心
-  password: ouo
-  port: 443
-  server: 18.183.158.211
-  skip-cert-verify: false
-  sni: tr.koxok.us.kg
-  type: trojan
-- client-fingerprint: chrome
-  name: '34,37,38|🇯🇵 日本4|@ripaojiedian #1'
-  network: tcp
-  password: 8e3DxOzEI3YXc3aZRAzRg3lRlcZYS7Kp93juOwOnR8qaxSByD0OyaFep8F0p3864SCyAC
-  port: 443
-  server: 43.207.112.226
-  skip-cert-verify: false
-  sni: terture.meijireform.com
-  type: trojan
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 34,37|13|日本3|@ripaojiedian
-  network: tcp
-  port: '55002'
-  server: 183.237.84.53
+  client-fingerprint: chrome
+  name: '34,37,38|🇯🇵 日本4|@ripaojiedian #1'
+  network: ws
+  port: 8004
+  server: 59.42.247.189
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 248802b7-69c9-4a81-bfbc-181fcb62ef97
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: /nmkj
 - alterId: 0
   cipher: auto
   name: 34,37|13|日本5|@ripaojiedian
@@ -1490,56 +1191,96 @@ proxies:
   tls: false
   type: vmess
   uuid: 07287360-e12f-4f94-9c7a-54386c100d8a
+- name: 34|日期：05-13
+  password: Aimer
+  port: 24082
+  server: 119.195.231.68
+  skip-cert-verify: false
+  sni: epccc.ambercc.filegear-sg.me
+  type: trojan
 - name: 34|🇯🇵 _日本
   password: Aimer
-  port: 2096
-  server: 103.116.7.220
+  port: 2083
+  server: 103.116.7.103
   skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
+  sni: epccc.ambercc.filegear-sg.me
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 37|0| 01 | 1x JP
+  password: 3e12b66b-b0bd-492b-92ec-41da3db9b137
+  port: 31111
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|0|🇵日本 02 | 1x JP
+  password: 3e12b66b-b0bd-492b-92ec-41da3db9b137
+  port: 31113
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|0|🇵日本 03 | 1x JP
+  password: 3e12b66b-b0bd-492b-92ec-41da3db9b137
+  port: 31115
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 37,38|🇯🇵 日本|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202505121278853-EprnOgosvY.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 37,38|🇯🇵 日本2|@ripaojiedian
-  password: e03b35b40a25
+  password: 2724722447ea
   plugin: v2ray-plugin
   plugin-opts:
     host: jp06v1.3ci.xyz
     mode: websocket
-    mux: false
-    path: /ymfvpytvkdp
+    mux: true
+    path: /nreuudyxqo
     skip-cert-verify: false
     tls: true
-  port: 20621
+  port: 57626
   server: 103.140.136.242
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: '37,38|🇯🇵 日本特殊|@ripaojiedian #1'
-  password: awsps0501
+  password: yijian0503
   port: 443
-  server: 43.203.199.63
+  server: 43.202.68.234
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 37|15|🇵日本 01 | 1x JP
-  password: bef8120c-6a5d-42e4-b28e-6490507f7be4
-  port: 31111
-  server: free.2apzhfa.xyz
+  name: 37|15|🇵 日本 01 | 1x JP
+  password: 30e78d61-2763-4b43-9828-6825e949ecb6
+  port: 36111
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|15|🇵日本 02 | 1x JP
-  password: bef8120c-6a5d-42e4-b28e-6490507f7be4
-  port: 31113
-  server: free.2apzhfa.xyz
+  name: 37|15|🇵 日本 02 | 1x JP
+  password: 30e78d61-2763-4b43-9828-6825e949ecb6
+  port: 36113
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|15|🇵日本 03 | 1x JP
-  password: bef8120c-6a5d-42e4-b28e-6490507f7be4
-  port: 31115
-  server: free.2apzhfa.xyz
+  name: 37|15|🇵 日本 03 | 1x JP
+  password: 30e78d61-2763-4b43-9828-6825e949ecb6
+  port: 36115
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - name: 39|JP-HTTP-1
@@ -1551,3 +1292,18 @@ proxies:
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
+- alterId: 0
+  cipher: auto
+  name: 40,42|JP_speednode_0161
+  network: ws
+  port: 2346
+  server: 212.50.251.250
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 164a6ad0-476a-4bae-b78f-a3d37cf0f414
+  ws-opts:
+    headers:
+      Host: th.lzj520hxw.dpdns.org
+    path: /lzjjj

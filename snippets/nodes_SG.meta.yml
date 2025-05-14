@@ -146,17 +146,27 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 8276dc5d-9895-4731-9f15-ad0e0c5fe9cf
+  uuid: 1a31be94-18b3-4c50-8bad-25b88798fa8a
 - alterId: 0
   cipher: auto
-  name: 7|新加坡NO.1
+  name: 7,8|新加坡NO.1-1A
   port: 45054
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 8276dc5d-9895-4731-9f15-ad0e0c5fe9cf
+  uuid: 1a31be94-18b3-4c50-8bad-25b88798fa8a
+- alterId: 0
+  cipher: auto
+  name: 8|新加坡NO.1-1B
+  port: 45054
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4352cfc7-2b53-42ae-8d5c-0e5eafcade35
 - alterId: 0
   cipher: auto
   name: 10|SG | 新加坡 LB-1A
@@ -669,15 +679,22 @@ proxies:
     headers:
       Host: d16henb377mok4.cloudfront.net
     path: /stream
-- client-fingerprint: chrome
-  name: 11,24,37,40,42|CN_speednode_0074
-  password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
-  port: 35000
-  server: gzyd.cg.xxality.cn
-  skip-cert-verify: true
-  sni: cgsg2.hysality.com
-  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '11,27,34,37,38|🇸🇬 新加坡2|@ripaojiedian #1'
+  network: ws
+  port: 46019
+  server: 112.29.213.228
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534
+  ws-opts:
+    path: /zh-cn
 - cipher: aes-256-cfb
   name: 12|🇸🇬 SG, Singapore
   password: amazonskr05
@@ -756,44 +773,116 @@ proxies:
   server: z7gfq8utflizatg56x6ghg8pzrr0fio4.08.09.sg.6l6.site
   tfo: false
   type: ss
-- country: 🇬SG
-  name: 15|SG_268
-  password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
-  port: 443
-  server: sg2-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇸🇬 新加坡 | SGP
+  network: ws
+  port: 80
+  server: time.is
+  tls: false
+  type: vmess
   udp: true
-- country: 🇸🇬SG
-  name: 15|🇬SG_269
-  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
-  port: 443
-  server: sg-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
+  uuid: ea2b1f43-c1f4-45fa-b9a9-0ef830c1979a
+  ws-opts:
+    headers:
+      Host: mgsg2.zhousi.link
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇸🇬 新加坡 | SGP 2
+  network: ws
+  port: 80
+  server: time.is
+  tls: false
+  type: vmess
   udp: true
-- name: 19,25|[Trojan] 🇸🇬 新加坡 Microsoft数据中心
-  password: dQUWbcwECl
+  uuid: f4d05271-c32e-4357-af1e-376486b37c46
+  ws-opts:
+    headers:
+      Host: mgsg2.zhousi.link
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇸🇬 新加坡 | SGP 3
+  network: ws
+  port: 80
+  server: time.is
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 73c0d4d5-e32a-4bf7-aa19-f4d9ff00d4a2
+  ws-opts:
+    headers:
+      Host: mgsg2.zhousi.link
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇸🇬 新加坡 | SGP 4
+  network: ws
+  port: 80
+  server: time.is
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aa1921b2-76a5-46ab-bab1-525253bf8a57
+  ws-opts:
+    headers:
+      Host: mgsg2.zhousi.link
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇸🇬 0|🇸🇬新加坡 01 | 1x SG
+  password: f2e3ed9f-ba50-4596-af64-b1544c3d1f82
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇸🇬 0|🇸🇬新加坡 02 | 1x SG
+  password: f2e3ed9f-ba50-4596-af64-b1544c3d1f82
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇸🇬 0|🇸🇬新加坡 03 | 1x SG
+  password: f2e3ed9f-ba50-4596-af64-b1544c3d1f82
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '27,37,38|🇸🇬 狮城特殊|@ripaojiedian #1'
+  password: yijian0503
   port: 443
-  server: 20.191.138.47
-  skip-cert-verify: true
-  sni: automq4-proxy.automq-sg.com
+  server: 47.128.78.62
   tfo: false
-  type: trojan
+  type: ss
   udp: true
-- name: 21|SG新加坡(mibei77.com 米贝节点分享)
-  password: Aimer
-  port: 2083
-  server: 27.50.48.126
-  skip-cert-verify: true
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇸🇬 15|🇸🇬 新加坡 01 | 1x SG
+  password: 2babb856-4375-4930-b6c3-4cc955ebcf71
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇸🇬 15|🇸🇬 新加坡 02 | 1x SG
+  password: 2babb856-4375-4930-b6c3-4cc955ebcf71
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
   udp: true
 - name: 34|🇸🇬 每天更新，请加电报群防止失联
   password: Aimer
-  port: 12177
-  server: 14.44.18.95
+  port: 587
+  server: 116.206.92.39
   skip-cert-verify: false
-  sni: epccc.ambercc.filegear-sg.me
+  sni: epccx.ambercc.filegear-sg.me
   type: trojan
 - name: 35|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
@@ -803,36 +892,75 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 37|0| 01 | 1x SG
-  password: 3e12b66b-b0bd-492b-92ec-41da3db9b137
+  password: 7929af2e-785a-42e8-bde5-84b09fa6c826
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 37|0|🇬新加坡 02 | 1x SG
-  password: 3e12b66b-b0bd-492b-92ec-41da3db9b137
+  password: 7929af2e-785a-42e8-bde5-84b09fa6c826
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 37|0|🇬新加坡 03 | 1x SG
-  password: 3e12b66b-b0bd-492b-92ec-41da3db9b137
+  password: 7929af2e-785a-42e8-bde5-84b09fa6c826
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 37|15|🇬 新加坡 01 | 1x SG
-  password: 30e78d61-2763-4b43-9828-6825e949ecb6
+  password: 5292fecb-9058-4934-85cc-3271d3cdb2d2
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|15|🇬 新加坡 02 | 1x SG
-  password: 30e78d61-2763-4b43-9828-6825e949ecb6
+  name: 37|15|🇸🇬 新加坡 02 | 1x SG
+  password: 5292fecb-9058-4934-85cc-3271d3cdb2d2
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
+- name: 42|SG_speednode_0079
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 57621
+  server: 129.150.58.86
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=129.150.58.86:57621&proxyIP=null
+- name: 42|SG_speednode_0080
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 6666
+  server: 150.109.24.233
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=150.109.24.233:6666&proxyIP=null
+- name: 42|SG_speednode_0081
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 138.2.107.107
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=138.2.107.107:443&proxyIP=null

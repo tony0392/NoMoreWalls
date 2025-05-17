@@ -35,7 +35,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 1b49044d-6e40-4825-a562-04d3ee18750c
+  uuid: b9c0f44e-fbaf-479a-8a97-985c1d9929a4
 - alterId: 0
   cipher: auto
   name: 7,8|法国2-1A
@@ -45,7 +45,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 1b49044d-6e40-4825-a562-04d3ee18750c
+  uuid: b9c0f44e-fbaf-479a-8a97-985c1d9929a4
+- alterId: 0
+  cipher: auto
+  name: 8|法国1-1B
+  port: 45072
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3b534363-390e-44ff-b57b-070d9079096a
 - alterId: 0
   cipher: auto
   name: 8|法国2-1B
@@ -55,31 +65,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7c6f9e26-599e-4323-98ae-6bd8c7e0235b
-- name: 11|🇫🇷5 |  1.1MB/s|11%|Netflix|You...
-  password: 905edb54-b4ce-47ad-ac94-51d58161a59a
-  port: 43498
-  server: 120.232.220.45
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '11,19,25,34|🇺🇸 美国 CloudFlare节点 #1'
-  network: ws
-  port: '443'
-  server: auth0.openai.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: admin.kasrax.ir
-    path: /irvideo.cfd/linkws
+  uuid: 3b534363-390e-44ff-b57b-070d9079096a
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇫🇷 法国|PAR1
@@ -90,7 +76,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇷 FR
-  name: 15| FR_115
+  name: 15| FR_110
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
@@ -100,29 +86,25 @@ proxies:
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 15|🇷 FR_116
+  name: 15|🇷 FR_111
   network: ws
   port: 443
-  server: az05.beyondy.cfd
-  servername: az05.beyondy.cfd
+  server: 163.5.159.231
+  servername: irvideo.cfd
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   ws-headers:
-    HOST: az05.beyondy.cfd
-  ws-path: /link
-- country: 🇫🇷FR
-  name: '24,25,34|2|🇫🇷4 |  1.7MB/s|30%|Youtube|O... #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.37.147.179
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  tfo: false
-  type: trojan
-  udp: true
+    HOST: irvideo.cfd
+  ws-path: /linkws
+- cipher: aes-256-cfb
+  country: 🇷FR
+  name: 15|🇷FR_112
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.185.174
+  type: ss
 - cipher: aes-256-cfb
   name: 25|[SS] 🇫🇷 _FR_法国
   password: asdKkaskJKfnsa
@@ -131,12 +113,12 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- name: '34|15|FR_speednode_0026 #1'
-  password: '!!str 74260665780162200'
-  port: 443
-  server: noble-minnow.shiner427.skin
+- name: '34|1|🇫🇷5 |  4.2MB/s|30%|Youtube|O... #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.236.33.140
   skip-cert-verify: false
-  sni: noble-minnow.shiner427.skin
+  sni: trojan.burgerip.co.uk
   type: trojan
 - name: 35|法国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f

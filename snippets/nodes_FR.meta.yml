@@ -28,16 +28,6 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: 7|法国1
-  port: 45072
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b35c67d4-2960-483a-b1bc-64313f6256a7
-- alterId: 0
-  cipher: auto
   name: 7,8|法国2-1A
   port: 45071
   server: xdd.dashuai.cyou
@@ -45,7 +35,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: b35c67d4-2960-483a-b1bc-64313f6256a7
+  uuid: aad4d991-92fc-4135-96e3-4ddc873e7f5f
+- alterId: 0
+  cipher: auto
+  name: 7|法国1
+  port: 45072
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aad4d991-92fc-4135-96e3-4ddc873e7f5f
 - alterId: 0
   cipher: auto
   name: 8|法国2-1B
@@ -55,7 +55,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: b5b85352-252f-4813-8172-115049a5bc08
+  uuid: 0d315e55-4af0-402f-bc58-3ca43d1d8db5
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇫🇷 法国|PAR1
@@ -64,6 +64,47 @@ proxies:
   server: ojrandvej2ruev8ejki2unopb5etrur3.08.01.fr.6l6.site
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷 FR
+  name: 15| FR_143
+  password: qXvO7zYU7KeaB0Md7DQLow
+  port: 1080
+  server: 51.195.119.47
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 15|🇷 FR_144
+  network: ws
+  port: 443
+  server: 163.5.159.231
+  servername: irvideo.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-headers:
+    HOST: irvideo.cfd
+  ws-path: /linkws
+- cipher: aes-256-cfb
+  country: 🇫🇷FR
+  name: 15|🇷FR_145
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.185.174
+  type: ss
+- country: 🇫🇷FR
+  name: 24,34|🇺🇸 美国 Amazon数据中心
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.38.145.138
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 25|[SS] 🇫🇷 _FR_法国
   password: asdKkaskJKfnsa
@@ -72,38 +113,7 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '27,34|2|🇫🇷4 |  2.7MB/s|100%|Openai #2'
-  network: ws
-  port: '2095'
-  server: 185.174.138.209
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link?/TM
-- alterId: 0
-  cipher: auto
-  name: '27,34|2|🇫🇷10 |  4.4MB/s|0%|Openai #2'
-  network: ws
-  port: '2095'
-  server: 185.174.138.209
-  servername: yellow-paper-029c.yvonna.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: ''
-    path: /az05.beyondy.cfd/link?/TM
-- name: 27,34,37,40,42|FR_speednode_0041
+- name: 27|15|FR_speednode_0041
   password: telegram-id-directvpn
   port: 22223
   server: 15.188.156.39
@@ -124,38 +134,9 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=185.16.110.113:443
-- alpn:
-  - http/1.1
-  name: 30|🇷_FR_国
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.188.156.39
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '34|15|FR_speednode_0044 #2'
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 185.16.110.113
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
 - name: 35|法国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: 37,40,42|FR_speednode_0044
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 185.16.110.113
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=185.16.110.113:443&proxyIP=null

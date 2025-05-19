@@ -146,7 +146,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: b35c67d4-2960-483a-b1bc-64313f6256a7
+  uuid: aad4d991-92fc-4135-96e3-4ddc873e7f5f
 - alterId: 0
   cipher: auto
   name: 7|新加坡NO.1
@@ -156,7 +156,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: b35c67d4-2960-483a-b1bc-64313f6256a7
+  uuid: aad4d991-92fc-4135-96e3-4ddc873e7f5f
 - alterId: 0
   cipher: auto
   name: 8|新加坡NO.2-1B
@@ -166,7 +166,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: b5b85352-252f-4813-8172-115049a5bc08
+  uuid: 0d315e55-4af0-402f-bc58-3ca43d1d8db5
 - alterId: 0
   cipher: auto
   name: 10|SG | 新加坡 LB-1A
@@ -681,10 +681,11 @@ proxies:
     path: /stream
 - alterId: 64
   cipher: auto
-  name: 11,40,42|CN_speednode_0018
+  name: 11,24,27,37|1|1 |  1.0MB/s|0%|Netflix|Disn...
   port: 49291
   server: 183.236.51.38
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -777,7 +778,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 60f97acf-0bbe-405c-baf4-debbc25ad747
+  uuid: e569d9a7-04f2-410d-a222-9c69fc126933
   ws-opts:
     headers:
       Host: mgsg2.zhousi.link
@@ -792,35 +793,50 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 76af566b-738d-43f3-a380-a57cba3c0efe
+  uuid: 4eb08e2d-1f97-4975-ae46-b1d4ac585e81
   ws-opts:
     headers:
       Host: mgsg2.zhousi.link
     path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇸🇬 新加坡 | SGP 3
-  network: ws
-  port: 80
-  server: time.is
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇸🇬 0|🇸🇬 新加坡 01 | 1x SG
+  password: 0aa06723-48d2-4567-9b59-ea0b8b376274
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  uuid: e9e9562a-a818-407e-a62f-a4e243835b3e
-  ws-opts:
-    headers:
-      Host: mgsg2.zhousi.link
-    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇸🇬 0|🇸🇬 新加坡 02 | 1x SG
+  password: 0aa06723-48d2-4567-9b59-ea0b8b376274
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '27,37,38|🇸🇬 新加坡2|@ripaojiedian #1'
+  name: 27|🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
   password: O363WP68J33COIEX
   port: 16009
   server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
   type: ss
   udp: true
+- alterId: 64
+  cipher: auto
+  name: '34|2|🇸🇬1 |  1.0MB/s|0%|Netflix|Di... #1'
+  network: tcp
+  port: '49291'
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: chrome
+  name: '34,37,38|🇸🇬 新加坡3|@ripaojiedian #1'
+  network: tcp
+  password: ffea316f-7e81-4f8c-b122-1673abe353ed
+  port: 42881
+  server: 120.232.220.45
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -839,16 +855,23 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 37|1|  01 | 1x SG
-  password: aafbd8bc-a6b7-4d76-8f99-9c5d527f60d2
-  port: 36171
-  server: free.2weradf.xyz
+  name: 37|15|🇬新加坡 01 | 1x SG
+  password: 2b785d21-2b2d-41cc-ae2f-4bec228a01e7
+  port: 31171
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|1|🇬 新加坡 02 | 1x SG
-  password: aafbd8bc-a6b7-4d76-8f99-9c5d527f60d2
-  port: 36173
-  server: free.2weradf.xyz
+  name: 37|15|🇬新加坡 02 | 1x SG
+  password: 2b785d21-2b2d-41cc-ae2f-4bec228a01e7
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|15|🇬新加坡 03 | 1x SG
+  password: 2b785d21-2b2d-41cc-ae2f-4bec228a01e7
+  port: 31175
+  server: free.2apzhfa.xyz
   type: ss
   udp: true

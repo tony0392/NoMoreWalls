@@ -1,4 +1,12 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 0,1,30|🇪_DE_国
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.166
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 3|🇩🇪 IEPL专线 德国 NO1
@@ -10,10 +18,55 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - alterId: 0
   cipher: auto
+  name: 6|No.941_DE_x0.50_natseek@我为*人_联...
+  network: ws
+  port: 17511
+  server: 5.180.253.31
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+  ws-opts:
+    headers:
+      Host: download.windowsupdate.com
+    path: /download
+- alterId: 1
+  cipher: auto
+  name: 6|🇩🇪 No.260_DE_x0.50_Oracle_德国@l...
+  network: ws
+  port: 8080
+  server: 130.61.253.111
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+  ws-opts:
+    headers:
+      Host: download.windowsupdate.com
+    path: /download
+- alterId: 0
+  cipher: auto
+  name: 6|No.392_DE_x0.50_Unesty_DE@5431...
+  network: ws
+  port: 8080
+  server: 181.214.99.228
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+  ws-opts:
+    headers:
+      Host: download.windowsupdate.com
+    path: /download
+- alterId: 0
+  cipher: auto
   flow: ''
   grpc-opts:
     grpc-service-name: vmess-grpc
-  name: 11,18,27,34,37|3|🇪5 |  1.4MB/s|0%|Youtube|Ope...
+  name: 11,18,27,34,37|1|5 |  1.4MB/s|0%|Youtube|Open...
   network: grpc
   port: 443
   server: de.vmess.comnpmjs.com
@@ -26,72 +79,83 @@ proxies:
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
 - cipher: chacha20-ietf-poly1305
   country: 🇪 DE
-  name: 15|🇪 DE_127
-  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
-  port: 54075
-  server: beta.mattenadene.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 15|🇪 DE_128
-  password: PBrts5Au4GM9ar7bTNyZEu
-  port: 63861
-  server: 85.208.139.69
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 15|🇩🇪 DE_129
+  name: 15|🇪 DE_129
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 92.118.205.228
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   country: 🇪 DE
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇪 DE_130
-  network: ws
-  port: 443
-  server: 132.145.232.171
-  servername: beyonddsz.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-headers:
-    HOST: beyonddsz.cfd
-  ws-path: /linkws
+  name: 15|🇩🇪 DE_130
+  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
+  port: 54075
+  server: beta.mattenadene.org
+  type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
   name: 15|🇪DE_131
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇪DE_132
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_133
   password: FAdUvMJUq5vDgKEq
   port: 9006
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 15|🇩🇪DE_132
+  name: 15|🇩🇪DE_134
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_135
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_136
   password: cp8pRSUAyLhTfVWH
   port: 9064
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 15|🇩🇪DE_133
-  password: NvS8N4Vf8qAGPSCL
-  port: 9046
+  name: 15|🇩🇪DE_137
+  password: XPtzA9sCug3SPR4c
+  port: 9025
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 15|🇩🇪DE_134
-  password: ZpNDDKRu9MagNvaf
-  port: 9015
+  name: 15|🇩🇪DE_138
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 15|🇩🇪DE_139
+  password: NvS8N4Vf8qAGPSCL
+  port: 9046
   server: 80.92.204.106
   type: ss
 - country: 🇩🇪DE
-  name: 15|🇩🇪DE_135
+  name: 15|🇩🇪DE_140
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -101,14 +165,14 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 27|🇩🇪 0|🇩🇪德国 01 | 1x DE
-  password: bbf72309-e6ca-4f15-86ea-e0724b1afcaf
+  password: d1c3d439-c1c0-40b0-aa7b-5063459ca271
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 27|🇩🇪 1|🇩🇪 德国 01 | 1x DE
-  password: 8fffb862-9737-4dfc-838a-57c8e0f8520f
+  password: 23813d44-885d-47cb-97ed-bd5dc173554b
   port: 36471
   server: free.2weradf.xyz
   type: ss
@@ -125,16 +189,9 @@ proxies:
       Host: icecream.955850.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 37|0|国 01 | 1x DE
-  password: 12ac8a2c-e38d-4a26-a129-493a2d13a725
+  name: 37|15|🇪国 01 | 1x DE
+  password: 0cb026d1-9567-48d9-86cf-c10516f4cdee
   port: 31471
   server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|1|🇪 德国 01 | 1x DE
-  password: 4cc45e4d-7876-4a1b-a541-274696bca7f7
-  port: 36471
-  server: free.2weradf.xyz
   type: ss
   udp: true

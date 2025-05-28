@@ -16,7 +16,7 @@ proxies:
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: '0,1,31|🇨🇳_CN_中国->🇺🇸_US_美国_1 #3'
+  name: '0,1,31|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
   network: ws
   port: 30805
   server: v5.heduian.link
@@ -30,10 +30,11 @@ proxies:
       host: v5.heduian.link
     path: /oooo
 - ip-version: dual
-  name: '0,1,30,31|🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
+  name: '0,1,21,31|🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
   password: b55123f4-0ba2-11f0-a2ef-f23c91cfbbc9
   port: 15229
   server: d700ff89-swvls0-t5w83q-1slpx.cu.plebai.net
+  skip-cert-verify: true
   sni: d700ff89-swvls0-t5w83q-1slpx.cu.plebai.net
   type: trojan
   udp: true
@@ -3813,13 +3814,10 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 30|_NL_->🇺🇸_US_美国
-  network: ws
-  port: 23088
-  server: 45.147.201.231
-  type: vmess
-  uuid: 2e25f44d-57e4-4cf4-9675-e0b42a422635
-  ws-opts:
-    path: /
+- name: 30|_BG_->_US_
+  password: '!!str 74260653385993900'
+  port: 443
+  server: 87.121.33.202
+  skip-cert-verify: false
+  sni: safe-flounder.shiner427.skin
+  type: trojan

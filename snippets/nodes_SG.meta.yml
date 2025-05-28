@@ -139,6 +139,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 7|新加坡NO.2
+  port: 45055
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3f263555-1ad4-4676-9286-21d07aa03ad5
+- alterId: 0
+  cipher: auto
   name: 7|新加坡NO.1
   port: 45054
   server: haa.dashuai.cyou
@@ -146,37 +156,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 293b1f2a-d4a4-4421-8bab-d3f7a6beca1f
-- alterId: 0
-  cipher: auto
-  name: 7,8|新加坡NO.2-1A
-  port: 45055
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 293b1f2a-d4a4-4421-8bab-d3f7a6beca1f
-- alterId: 0
-  cipher: auto
-  name: 8|新加坡NO.1-1B
-  port: 45054
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6cc6b2f5-85a8-4557-a636-3998d6b5c8e2
-- alterId: 0
-  cipher: auto
-  name: 8|新加坡NO.2-1B
-  port: 45055
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6cc6b2f5-85a8-4557-a636-3998d6b5c8e2
+  uuid: 3f263555-1ad4-4676-9286-21d07aa03ad5
 - alterId: 0
   cipher: auto
   name: 10|SG | 新加坡 LB-1A
@@ -691,7 +671,7 @@ proxies:
     path: /stream
 - alterId: 64
   cipher: auto
-  name: 11,21,24,27,37|3|🇬1 |  1.0MB/s|0%|Netflix|Dis...
+  name: 11,21,24,25,27,37|2|🇬1 |  1.0MB/s|0%|Netflix|Dis...
   port: 49291
   server: 183.236.51.38
   skip-cert-verify: false
@@ -778,33 +758,75 @@ proxies:
   server: z7gfq8utflizatg56x6ghg8pzrr0fio4.08.09.sg.6l6.site
   tfo: false
   type: ss
+- country: 🇬 SG
+  name: 15| SG_224
+  password: 21246bde-fab7-424c-9723-d311acce3f34
+  port: 443
+  server: 206.189.34.134
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇬SG
+  name: 15|🇬SG_225
+  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
+  port: 443
+  server: sg-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇸🇬SG
+  name: 15|🇸🇬SG_226
+  password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
+  port: 443
+  server: sg2-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 21|SG新加坡(mibei77.com 米贝节点分享)
+  password: Aimer
+  port: 443
+  server: 27.50.49.207
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 21|SG新加坡(mibei77.com 米贝节点分享) 2
+  password: Aimer
+  port: 8443
+  server: 27.50.48.239
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: aes-256-gcm
-  name: 27|🇸🇬 13|🇸🇬 新加坡3|@ripaojiedian
+  client-fingerprint: chrome
+  name: 22|🇬 新加坡3
   password: 0JR5J197C0KDI6O5
   port: 16002
   server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 13|🇸🇬 新加坡4|@ripaojiedian
+  client-fingerprint: chrome
+  name: 22|🇬 新加坡4
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 9898
   server: 18.140.199.169
+  tfo: false
   type: ss
-  udp: true
 - cipher: aes-256-gcm
-  name: 27|🇸🇬 13|🇸🇬 新加坡5|@ripaojiedian
+  client-fingerprint: chrome
+  name: 22|🇸🇬 新加坡5
   password: FXLEJQN4Y4G6ZUHJ
   port: 16014
   server: 8tv68qhq.slashdevslashnetslashtun.net
+  tfo: false
   type: ss
-  udp: true
 - alterId: 64
   cipher: auto
-  name: '34|3|🇸🇬1 |  1.0MB/s|0%|Netflix|Di... #2'
+  name: 34,37|13|新加坡2|@ripaojiedian
   network: tcp
-  port: '49291'
+  port: '49121'
   server: 183.236.51.38
+  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -822,30 +844,30 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 37|0|15🇸🇬新加坡|官网：a5b3cloud.pro
-  password: 40093c85-dbeb-4f07-b827-7686a3c2dccd
-  port: 36173
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|1|13🇸🇬新加坡|官网：米卡莎.xyz
-  password: f8830198-0633-42b1-9cd4-5a734799956f
-  port: 31171
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 37|1|14🇸🇬新加坡|官网：mikasacloud.site
-  password: f8830198-0633-42b1-9cd4-5a734799956f
+  name: 37|0|16🇸🇬新加坡|官网：mikasacloud.site
+  password: 0f2a0cbf-e0b8-4c8e-8420-632d11bfe6c5
   port: 31173
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|1|15🇸🇬新加坡|官网：米卡莎.xyz
-  password: f8830198-0633-42b1-9cd4-5a734799956f
+  name: 37|0|17🇸🇬新加坡|官网：m5c3cloud.pro
+  password: 0f2a0cbf-e0b8-4c8e-8420-632d11bfe6c5
   port: 31175
   server: freem.vidalith.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|15|14🇸🇬新加坡|官网：蓝色海洋.xyz
+  password: 98d10f50-0842-434c-a42c-8a585d2ca3c0
+  port: 36171
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 37|15|15🇸🇬新加坡|官网：abluecloud.xyz
+  password: 98d10f50-0842-434c-a42c-8a585d2ca3c0
+  port: 36173
+  server: freea.glyphara.com
   type: ss
   udp: true

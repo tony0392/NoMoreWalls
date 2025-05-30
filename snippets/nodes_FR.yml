@@ -1,4 +1,12 @@
 proxies:
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: '0,1,21,31|🇫🇷_FR_法国 #2'
+  password: dongtaiwang.com
+  port: 13355
+  server: 195.154.54.171
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 3|🇫🇷 法国1
@@ -64,17 +72,9 @@ proxies:
   server: ojrandvej2ruev8ejki2unopb5etrur3.08.01.fr.6l6.site
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  country: 🇷 FR
-  name: 15,21,24,30|_FR_国
-  password: dongtaiwang.com
-  port: 13355
-  server: 195.154.54.171
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇷 FR
-  name: 15|🇫🇷 FR_165
+  name: 15| FR_145
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
@@ -84,7 +84,24 @@ proxies:
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 15|🇷 FR_166
+  name: 15|🇷 FR_146
+  network: ws
+  port: 443
+  server: 163.5.159.231
+  servername: irvideo.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-headers:
+    HOST: irvideo.cfd
+  ws-path: /linkws
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 15|🇷 FR_147
   network: ws
   port: 443
   server: az05.beyondy.cfd
@@ -101,7 +118,7 @@ proxies:
   country: 🇫🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 15|🇷 FR_167
+  name: 15|🇫🇷 FR_148
   network: ws
   port: 443
   server: 146.19.168.161
@@ -113,32 +130,23 @@ proxies:
   ws-headers:
     HOST: az05.beyondy.cfd
   ws-path: /link
-- alterId: 0
-  cipher: auto
-  country: 🇫🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇷 FR_168
-  network: ws
-  port: 443
-  server: 163.5.159.231
-  servername: irvideo.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-headers:
-    HOST: irvideo.cfd
-  ws-path: /linkws
 - cipher: aes-256-cfb
   country: 🇫🇷FR
-  name: 15|🇫🇷FR_169
+  name: 15|🇷FR_149
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
 - country: 🇷FR
-  name: 15|🇫🇷FR_170
+  name: 15|🇫🇷FR_150
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
+  port: 443
+  server: de-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇷FR
+  name: 15|🇷FR_151
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -146,19 +154,29 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 15|🇷FR_171
+  name: 15|🇫🇷FR_152
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: 🇫🇷FR
-  name: 15|🇫🇷FR_172
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
-  port: 443
-  server: de-full.privateip.net
+- name: 19,25|[Trojan] 🇫🇷 法国 巴黎Amazon数据中心
+  password: telegram-id-directvpn
+  port: 22223
+  server: 15.188.255.203
   skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tfo: false
+  type: trojan
+  udp: true
+- name: 19,25|[Trojan] 🇫🇷 法国 巴黎Amazon数据中心 2
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.188.255.203
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tfo: false
   type: trojan
   udp: true
 - cipher: aes-256-cfb
@@ -169,6 +187,33 @@ proxies:
   tfo: false
   type: ss
   udp: true
+- name: 27,28,37,40|FR_d4690_0023
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  skip-cert-verify: false
+  sni: epmw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epmw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: '34|15|FR_speednode_0023 #2'
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  skip-cert-verify: false
+  sni: epmw.ambercc.filegear-sg.me
+  type: trojan
+- name: 34|🇫🇷 _法国
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
 - name: 35|法国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

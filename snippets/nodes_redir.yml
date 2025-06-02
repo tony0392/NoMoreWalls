@@ -1,35 +1,44 @@
 proxies:
 - ip-version: dual
-  name: '0,1,20,24,30,31|🇨🇳_CN_中国->🇩🇪_DE_德国 #2'
+  name: '0,1,19,20,24,25,30,31,34|_中国 #17'
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   port: 21102
   server: 120.233.44.201
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: 120.233.44.201
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: '0,1|🇳🇱_NL_荷兰->🇺🇸_US_美国 #1'
-  network: ws
-  port: 23091
-  server: 45.147.201.231
-  type: vmess
-  udp: true
-  uuid: 718b428b-142b-475d-9b11-5f8e972ca4c5
-  ws-opts:
-    path: /
-- ip-version: dual
-  name: '0,1|🇺🇸_US_美国->🇩🇪_DE_德国_1 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.73.241.125
-  sni: trojan.burgerip.co.uk
+  tfo: false
   type: trojan
   udp: true
 - ip-version: dual
-  name: 0,1,20,30,31|🇺🇸_US_美国->🇫🇷_FR_法国_3
+  name: '0,1,30,31,34|_中国 #18'
+  password: RlzoEILU
+  port: 33097
+  server: 36.151.251.61
+  skip-cert-verify: false
+  sni: 36.151.251.61
+  type: trojan
+  udp: true
+- ip-version: dual
+  name: '0,1,24,30,31,34|_中国 #19'
+  password: RlzoEILU
+  port: 3330
+  server: 36.151.251.62
+  skip-cert-verify: false
+  sni: cdn.egvra.cn
+  type: trojan
+  udp: true
+- ip-version: dual
+  name: '0,1,19,20,24,25,30,31,34|_中国 #20'
+  password: RlzoEILU
+  port: 13542
+  server: 36.151.251.62
+  skip-cert-verify: false
+  sni: cdn.egvra.cn
+  tfo: false
+  type: trojan
+  udp: true
+- ip-version: dual
+  name: '0,1,20,31|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
   network: ws
   password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
   port: 443
@@ -47,6 +56,8 @@ proxies:
   network: ws
   port: 30808
   server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -54,63 +65,6 @@ proxies:
     headers:
       host: v8.heduian.link
     path: /oooo
-- ip-version: dual
-  name: '0,1,20,24,30,31,34|_中国 #16'
-  password: RlzoEILU
-  port: 13542
-  server: 36.151.251.62
-  skip-cert-verify: false
-  sni: cdn.egvra.cn
-  type: trojan
-  udp: true
-- ip-version: dual
-  name: '0,1,30,31|🇨🇳_CN_中国->🇺🇸_US_美国_1 #3'
-  password: RlzoEILU
-  port: 33097
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: 36.151.251.61
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  ip-version: dual
-  name: '0,1,27,37,38|🇺🇸 美国4|@ripaojiedian #1'
-  password: 26270a5c-cc66-4bb5-b058-c75d09d615e5
-  port: 54322
-  server: cm55-zz.moonwang.xyz
-  tfo: false
-  type: ss
-  udp: true
-- ip-version: dual
-  name: '0,1|🇺🇸_US_美国->🇩🇪_DE_德国_2 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.178.168.205
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- ip-version: dual
-  name: '0,1,24,30,31,34|_中国 #14'
-  password: RlzoEILU
-  port: 3330
-  server: 36.151.251.62
-  skip-cert-verify: false
-  sni: cdn.egvra.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  ip-version: dual
-  name: '0,1,24,34|_中国 #22'
-  network: tcp
-  password: 3e6ae2e4-a8a5-11ef-8578-f23c913c8d2b
-  port: 15229
-  server: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
-  skip-cert-verify: false
-  sni: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
-  tls: true
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 3|🇸🇬 新加坡中转 02
   password: b103d104-bff0-4cee-b42a-85dad07e2036
@@ -3878,66 +3832,71 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
-- name: '30|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
-  password: fe506496-24eb-11ef-abd3-f23c91cfbbc9
-  port: 15229
-  server: 5f9d335d-swexs0-t5juhn-4tue.cu.plebai.net
-  skip-cert-verify: true
-  sni: 5f9d335d-swexs0-t5juhn-4tue.cu.plebai.net
-  type: trojan
-- name: '30,34|_中国 #15'
-  password: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
-  port: 15229
-  server: f5ada702-swb8g0-t5fh9u-1uni.cu.plebai.net
-  skip-cert-verify: false
-  type: trojan
-- name: '30|🇨🇳_CN_中国->🇺🇸_US_美国_4 #2'
-  password: be8ba532-0dcf-11f0-9a65-f23c9164ca5d
-  port: 15229
-  server: 7d09e919-swq1s0-tcvn0z-1tlyg.cu.plebai.net
-  skip-cert-verify: false
-  sni: 7d09e919-swq1s0-tcvn0z-1tlyg.cu.plebai.net
-  type: trojan
-- cipher: aes-256-gcm
-  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国_7
-  password: ZC3MD9RI5P36IHID
-  port: 17004
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  type: ss
-- ip-version: dual
-  name: '31|🇺🇸_US_美国->🇩🇪_DE_德国_1 #2'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.65.213.56
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- ip-version: dual
-  name: 31|🇺🇸_US_美国->🇫🇷_FR_法国_1
+- alterId: 2
+  cipher: auto
+  name: '30|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
   network: ws
-  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
-  port: 443
-  server: 172.67.204.120
-  sni: ddcDe.890603.XYz
-  type: trojan
-  udp: true
+  port: 30829
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: ddcde.890603.xyz
-    path: /COp52Dbu3dvwvDWUxOqxq
+      host: ocbc.com
+    path: /oooo
+- name: 30|_GB_国->🇺🇸_US_美国
+  network: tcp
+  password: 255a0a50-3f10-11f0-b0d6-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  sni: uk1.test3.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 30|_NL_->🇺🇸_US_美国
+  network: ws
+  port: 23091
+  server: 45.147.201.231
+  type: vmess
+  uuid: 595a346d-078c-4bb3-b426-f9a8b350eab8
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 31|🇳🇱_NL_荷兰->🇺🇸_US_美国
+  network: ws
+  port: 23091
+  server: 45.147.201.231
+  type: vmess
+  udp: true
+  uuid: 718b428b-142b-475d-9b11-5f8e972ca4c5
+  ws-opts:
+    path: /
 - ip-version: dual
-  name: 31|🇺🇸_US_美国->🇫🇷_FR_法国_2
+  name: 31|🇺🇸_US_美国->🇩🇪_DE_德国_1
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.38.150.199
+  server: 3.73.241.125
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
 - ip-version: dual
-  name: '31|🇺🇸_US_美国->🇩🇪_DE_德国_2 #2'
+  name: 31|🇺🇸_US_美国->🇩🇪_DE_德国_2
   password: telegram-id-privatevpns
   port: 22222
-  server: 63.176.41.214
+  server: 63.178.168.205
   sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- ip-version: dual
+  name: 31|🇨🇳_CN_中国->🇺🇸_US_美国_5
+  network: tcp
+  password: 3e6ae2e4-a8a5-11ef-8578-f23c913c8d2b
+  port: 15229
+  server: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
+  skip-cert-verify: true
+  sni: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
   type: trojan
   udp: true

@@ -1,12 +1,63 @@
 proxies:
-- ip-version: dual
-  name: '0,1,19,20,24,25,30,31,34|_中国 #5'
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  ip-version: dual
+  name: 0,1,15,30|🇪_DE_德国->🇳_CN_中国
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.166
+  type: ss
+  udp: true
+- alterId: 0
+  ip-version: dual
+  name: 0,1,19,20,24,25,30,31,34|🇨🇳 广东省 移动
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   port: 21102
   server: 120.233.44.201
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: 120.233.44.201
   tfo: false
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  ip-version: dual
+  name: '0,1,21,24,30,34|_中国 #34'
+  password: ba7a37e3-033a-e1ab-06f6-9027aa4630f5
+  port: 15229
+  server: e0fc3fd6-sxc9s0-t5cryd-4w8.cu.plebai.net
+  skip-cert-verify: false
+  sni: e0fc3fd6-sxc9s0-t5cryd-4w8.cu.plebai.net
+  tls: true
+  type: trojan
+  udp: true
+- cipher: rc4-md5
+  ip-version: dual
+  name: 0,1,15,30|🇪_DE_国->🇺_RU_
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+  udp: true
+- ip-version: dual
+  name: '0,1,21,30,34|_中国 #35'
+  password: 96c5f18c-9390-11eb-86a4-f23c913c8d2b
+  port: 15229
+  server: 68e85139-sxc9s0-t1jkae-18y1l.cu.plebai.net
+  skip-cert-verify: false
+  sni: 68e85139-sxc9s0-t1jkae-18y1l.cu.plebai.net
+  type: trojan
+  udp: true
+- alterId: 0
+  ip-version: dual
+  name: 0,1,20,21,24,30,31,34|免费VPN：https://tt.vg/gwaAy
+  password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
+  port: 15229
+  server: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
+  skip-cert-verify: false
+  sni: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
+  tfo: false
+  tls: true
   type: trojan
   udp: true
 - cipher: aes-256-cfb
@@ -17,113 +68,34 @@ proxies:
   server: 125.141.31.72
   type: ss
   udp: true
-- ip-version: dual
-  name: '0,1,20,31|🇺🇸_US_美国->🇫🇷_FR_法国_1 #2'
-  network: ws
-  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
-  port: 443
-  server: 172.67.133.248
-  sni: DDd.890604.FIlEGear-sG.Me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: ddd.890604.filegear-sg.me
-    path: /mZr1mA5hub7QHHkQBzYO
-- ip-version: dual
-  name: '0,1,31|🇺🇸_US_美国->🇫🇷_FR_法国_2 #3'
-  network: ws
-  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
-  port: 443
-  server: 172.67.204.120
-  sni: ddcDe.890603.XYz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: ddcde.890603.xyz
-    path: /COp52Dbu3dvwvDWUxOqxq
-- ip-version: dual
-  name: '0,1,20,31|🇺🇸_US_美国->🇫🇷_FR_法国_3 #2'
-  network: ws
-  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
-  port: 443
-  server: 104.21.83.113
-  sni: SxcDe3.859886.XYz
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /COp52Dbu3dvwvDWUxOqxq
-- ip-version: dual
-  name: '0,1,20,31|🇨🇳_CN_中国->🇺🇸_US_美国_1 #4'
-  password: RlzoEILU
-  port: 13542
-  server: 36.151.251.62
-  skip-cert-verify: true
-  sni: cdn.egvra.cn
-  type: trojan
-  udp: true
-- ip-version: dual
-  name: '0,1,20,31|🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
-  password: RlzoEILU
-  port: 3330
-  server: 36.151.251.62
-  skip-cert-verify: true
-  sni: cdn.egvra.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: 0,1,30,31,34|🇨🇳 广东省汕头市 移动
-  network: tcp
-  port: '17232'
-  server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
 - alterId: 0
   cipher: auto
   fingerprint: ''
   ip-version: dual
-  name: '0,1,31|🇷🇴_RO_罗马尼亚->🇺🇸_US_美国 #2'
-  network: tcp
-  port: 2010
-  server: 188.213.128.64
+  name: 0,1,30,31|🇸🇪_SE_瑞典
+  network: ws
+  port: 80
+  server: 185.146.173.25
   sni: ''
   type: vmess
   udp: true
-  uuid: b117bd27-0e16-4342-852a-59f0c0aa61f4
-- ip-version: dual
-  name: '0,1,20,31|🇨🇳_CN_中国->🇺🇸_US_美国_3 #2'
-  password: RlzoEILU
-  port: 33097
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: 36.151.251.61
-  type: trojan
-  udp: true
-- ip-version: dual
-  name: '0,1,20,31|🇺🇸_US_美国->🇫🇷_FR_法国_4 #2'
-  network: ws
-  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
-  port: 443
-  server: 104.21.25.95
-  skip-cert-verify: true
-  sni: DDd.890604.FIlEGear-sG.Me
-  type: trojan
-  udp: true
+  uuid: 46181c32-8c82-413a-b836-8375e5e513eb
   ws-opts:
-    path: /mZr1mA5hub7QHHkQBzYO
-- cipher: aes-256-cfb
+    headers:
+      host: google.whatsapp.snapp.torob.basalam.sarzamiiinahang.ir.
+    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
+- alterId: 0
+  cipher: auto
   ip-version: dual
-  name: '0,1,31|🇺🇸_US_美国->🇷🇴_RO_罗马尼亚 #2'
-  password: awsps0501
-  port: 443
-  server: 35.91.246.41
-  type: ss
+  name: '0,1|🇳🇱_NL_荷兰->🇺🇸_US_美国 #1'
+  network: ws
+  port: 20055
+  server: 45.147.201.231
+  type: vmess
   udp: true
+  uuid: 3a9a3f3f-4480-41b1-a21d-57a6fa958f7b
+  ws-opts:
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 3|🇸🇬 新加坡中转 02
   password: b103d104-bff0-4cee-b42a-85dad07e2036
@@ -3732,36 +3704,80 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
+- ip-version: dual
+  name: 20,31|🇺🇸_US_美国->🇫🇷_FR_法国_1
+  network: ws
+  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
+  port: 443
+  server: 172.67.133.248
+  sni: DDd.890604.FIlEGear-sG.Me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: ddd.890604.filegear-sg.me
+    path: /mZr1mA5hub7QHHkQBzYO
 - cipher: aes-256-cfb
-  name: 20,30|_KR_国->_unKnow_
-  password: qwerREWQ@@
-  port: 11389
-  server: p231.panda004.net
-  type: ss
-- cipher: aes-256-cfb
-  name: 20|🇰🇷_KR_韩国->🇺🇸_US_美国_1
+  name: '20,30|🇰🇷_KR_韩国->🇺🇸_US_美国 #2'
   password: qwerREWQ@@
   port: 4857
   server: 125.141.26.12
   type: ss
-- cipher: aes-256-cfb
-  name: 20|🇰🇷_KR_韩国->🇺🇸_US_美国_2
-  password: qwerREWQ@@
-  port: 11389
-  server: 221.150.109.89
-  type: ss
+- ip-version: dual
+  name: '20,31|🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
+  password: RlzoEILU
+  port: 3330
+  server: 36.151.251.62
+  skip-cert-verify: true
+  sni: cdn.egvra.cn
+  type: trojan
+  udp: true
+- ip-version: dual
+  name: 20,31|🇺🇸_US_美国->🇫🇷_FR_法国_4
+  network: ws
+  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
+  port: 443
+  server: 104.21.25.95
+  skip-cert-verify: true
+  sni: DDd.890604.FIlEGear-sG.Me
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /mZr1mA5hub7QHHkQBzYO
+- ip-version: dual
+  name: '20,31|🇨🇳_CN_中国->🇺🇸_US_美国_1 #4'
+  password: RlzoEILU
+  port: 13542
+  server: 36.151.251.62
+  skip-cert-verify: true
+  sni: cdn.egvra.cn
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
-  name: 20,30|🇳_CN_中国_1
+  name: 20,30|🇨🇳_CN_中国->🇨_CA_
   network: ws
   port: 30808
   server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       host: v8.heduian.link
     path: /oooo
+- ip-version: dual
+  name: 20,31|🇺🇸_US_美国->🇫🇷_FR_法国_3
+  network: ws
+  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
+  port: 443
+  server: 104.21.83.113
+  sni: SxcDe3.859886.XYz
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /COp52Dbu3dvwvDWUxOqxq
 - alterId: 0
   cipher: auto
   name: 25|[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国
@@ -3916,10 +3932,89 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '30,34|🇺🇸 _美国 #16'
+  name: 30|_US_->_GB_国
+  network: ws
+  port: 80
+  server: tci2.tiamoci.us.kg
+  type: vmess
+  uuid: 749c4694-c824-4d51-b210-cc54d5925444
+  ws-opts:
+    headers:
+      host: tci2.tiamoci.us.kg
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 30|🇳_CN_中国->🇸_US_美国
+  network: ws
+  port: 30807
+  server: v7.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 30|_NL_->🇺🇸_US_美国
+  network: ws
+  port: 23093
+  server: 45.147.201.231
+  type: vmess
+  uuid: 78546323-3c10-4c50-813a-66bf2e6d93f9
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '30,34|🇺🇸 _美国 #1'
   network: tcp
   port: '15002'
   server: 15002.kuaiyin02.top
   tls: false
   type: vmess
   uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+- ip-version: dual
+  name: '30,31|🇺🇸_US_美国->🇫🇷_FR_法国_2 #1'
+  network: ws
+  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
+  port: 443
+  server: 172.67.204.120
+  sni: ddcDe.890603.XYz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: ddcde.890603.xyz
+    path: /COp52Dbu3dvwvDWUxOqxq
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 31|🇨🇳_CN_中国->🇯🇵_JP_日本
+  network: tcp
+  port: 17232
+  server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
+  type: vmess
+  udp: true
+  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  ip-version: dual
+  name: 31|🇷🇴_RO_罗马尼亚->🇺🇸_US_美国
+  network: tcp
+  port: 2010
+  server: 188.213.128.64
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: b117bd27-0e16-4342-852a-59f0c0aa61f4
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 31|🇺🇸_US_美国->🇷🇴_RO_罗马尼亚
+  password: awsps0501
+  port: 443
+  server: 35.91.246.41
+  type: ss
+  udp: true

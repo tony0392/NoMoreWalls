@@ -87,46 +87,26 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 7,8|台湾2-1A-GPT
-  port: 45077
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 288143fb-3866-4121-9816-6e0bd3691e43
-- alterId: 0
-  cipher: auto
-  name: 7,8|台湾1-1A-GPT
+  name: 7|台湾1
   port: 45078
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 288143fb-3866-4121-9816-6e0bd3691e43
+  uuid: e12bbe8e-43ed-4dc5-850b-595a4a93f4fa
 - alterId: 0
   cipher: auto
-  name: 8|台湾1-1B-GPT
-  port: 45078
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3c32f24c-950e-4a2e-885f-f206e3249b8e
-- alterId: 0
-  cipher: auto
-  name: 8|台湾2-1B-GPT
+  name: 7|台湾2
   port: 45077
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 3c32f24c-950e-4a2e-885f-f206e3249b8e
+  uuid: e12bbe8e-43ed-4dc5-850b-595a4a93f4fa
 - client-fingerprint: chrome
-  name: 11,24,39,40,42|TW_speednode_0062
+  name: 11,18,24,39,40,42|TW_speednode_0062
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 1443
   server: twmoon1-cdn-route.couldflare-cdn.com
@@ -136,6 +116,22 @@ proxies:
   type: http
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
+- client-fingerprint: chrome
+  name: 13|🇹🇼 台湾|TW01|T
+  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
+  port: 45615
+  server: u43jymjhccmf8ahbux6gnmtscnctt3gc.08.01.tw.6l6.site
+  skip-cert-verify: false
+  sni: cgj9701.tw.cn.sub-vip.site
+  type: trojan
+- client-fingerprint: chrome
+  name: 13|🇹🇼 台湾|TW02|T
+  password: d9619e80-9c6f-4b9b-9af1-0c2eff2de795
+  port: 35806
+  server: 1w91dj53mb3tjunfqy7q3bdu1fo0sged.08.02.tw.6l6.site
+  skip-cert-verify: false
+  sni: lsy2h2.tw.cn.sub-vip.site
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 13|🇹🇼 台湾|TW01
@@ -153,12 +149,20 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-128-gcm
-  country: 🇹 TW
-  name: 15| TW_255
+  country: 🇼 TW
+  name: 15| TW_232
   password: 79739832-b888-415a-a454-8b53911c944a
   port: 30332
   server: vps.200566.xyz
   type: ss
+- country: 🇼 TW
+  name: 15|🇼 TW_233
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 443
+  server: taifo03a.kbservice.club
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: 21|TW台湾(mibei77.com 米贝节点分享)
   password: Aimer
   port: 81
@@ -167,36 +171,36 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|0|8🇹🇼台湾|官网：m5c3cloud.pro
-  password: 80660dc1-b962-4144-80ad-30fab2724324
+  name: 37|0|8🇹🇼台湾|官网：米卡莎.xyz
+  password: 4f77c475-b192-49ea-9abb-b02954ac5b64
   port: 31243
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|0|9🇹🇼台湾|官网：m5c3cloud.pro
-  password: 80660dc1-b962-4144-80ad-30fab2724324
+  name: 37|0|9🇹🇼台湾|官网：mikasacloud.site
+  password: 4f77c475-b192-49ea-9abb-b02954ac5b64
   port: 31245
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 37|1|8🇹🇼台湾|官网：abluecloud.xyz
-  password: ab3b50eb-0588-4f36-9c65-150e70602eba
+  password: 4c5ecb33-6e1f-4a34-a185-7a94dc6464c0
   port: 36241
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37|1|9🇹🇼台湾|官网：蓝色海洋.xyz
-  password: ab3b50eb-0588-4f36-9c65-150e70602eba
+  name: 37|1|9🇹🇼台湾|官网：a5b3cloud.pro
+  password: 4c5ecb33-6e1f-4a34-a185-7a94dc6464c0
   port: 36243
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 37|1|10🇼台湾|官网：蓝色海洋.xyz
-  password: ab3b50eb-0588-4f36-9c65-150e70602eba
+  password: 4c5ecb33-6e1f-4a34-a185-7a94dc6464c0
   port: 36245
   server: freea.glyphara.com
   type: ss

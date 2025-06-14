@@ -1,6 +1,6 @@
 proxies:
 - ip-version: dual
-  name: 0,1,20,30,31,34|日期：06-13
+  name: 0,1,20,30,31,34|🇨🇳 广东省 移动
   network: tcp
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   port: 21102
@@ -10,9 +10,8 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  delay: 772
   ip-version: dual
-  name: '0,1,20,24,30,31|🇰🇷_KR_韩国->🇺🇸_US_美国 #2'
+  name: '0,1,20,30,31|🇰🇷_KR_韩国->🇺🇸_US_美国 #2'
   password: qwerREWQ@@
   port: 4857
   server: 125.141.26.12
@@ -20,13 +19,13 @@ proxies:
   udp: true
 - alterId: 0
   ip-version: dual
-  name: 0,1,19,24,25,27,30,31,34,37,40,42|CN_speednode_0001
+  name: 0,1,18,24,30,31,34|TG频道@stymei1丨9
   password: 1b4c16925f934c57b954a9f0f23dea33
   port: 8842
   server: 42.240.152.238
+  servername: brwx.spvpv.com
   skip-cert-verify: true
   sni: brwx.spvpv.com
-  tfo: false
   tls: true
   type: trojan
   udp: true
@@ -49,7 +48,7 @@ proxies:
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: '0,1,30,31|🇳🇱_NL_荷兰->🇺🇸_US_美国 #2'
+  name: '0,1,31|🇳🇱_NL_荷兰->🇺🇸_US_美国 #2'
   network: ws
   port: 20057
   server: 45.147.201.231
@@ -73,20 +72,19 @@ proxies:
     headers:
       host: baidu.com
     path: /oooo
-- alterId: 0
-  ip-version: dual
-  name: 0,1,24,27,30,31,34|🇨🇳 广东省 移动
+- ip-version: dual
+  name: 0,1,18,30,31,34|_中国
   network: tcp
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   port: 21179
   server: 120.233.44.201
+  servername: k30.tudou211.com
   skip-cert-verify: false
   sni: k30.tudou211.com
-  tls: true
   type: trojan
   udp: true
 - ip-version: dual
-  name: '0,1,20,31|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
+  name: '0,1,20,30,31|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
   network: ws
   password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
   port: 443
@@ -3708,7 +3706,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 20,30|🇨🇳_CN_中国->🇺🇸_US_美国_4
+  name: 20|🇨🇳_CN_中国->🇸_US_美国
   network: ws
   port: 30824
   server: v24.heduian.link
@@ -3720,11 +3718,10 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: '20,34|🇺🇸 _美国 #2'
+  name: 20|🇨🇳_CN_中国->🇨_CH_
   network: tcp
-  port: '15002'
+  port: 15002
   server: 15002.kuaiyin02.top
-  tls: false
   type: vmess
   uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 0
@@ -3750,7 +3747,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 20,30|🇨🇳_CN_中国->🇺🇸_US_美国_5
+  name: '20|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
   network: ws
   port: 30807
   server: v7.heduian.link
@@ -3922,6 +3919,22 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 30|_US_->🇷_KR_国
+  password: piv97XS1Cval86vfwHPD5j
+  port: 443
+  server: 194.87.216.121
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 30|_NL_->🇸_US_美国
+  network: ws
+  port: 20058
+  server: 45.147.201.231
+  type: vmess
+  uuid: 4dadb82a-2395-45f2-a681-f9c9cfc7f600
+  ws-opts:
+    path: /
 - alterId: 2
   cipher: auto
   name: '30|🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
@@ -3934,15 +3947,12 @@ proxies:
     headers:
       host: v25.heduian.link
     path: /oooo
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: '30|🇨🇳_CN_中国->🇺🇸_US_美国_3 #2'
-  network: ws
-  port: 30829
-  server: v29.heduian.link
+  name: 30,34|🇳🇱 _荷兰
+  network: tcp
+  port: '58819'
+  server: 194.5.193.95
+  tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
+  uuid: b0bf81e1-0b18-4253-a278-d516f580240a

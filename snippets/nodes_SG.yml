@@ -146,7 +146,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: c25cb84f-18ee-4885-86f8-9226e30024d9
+  uuid: d8391b7a-029f-4241-85af-a1917a99c2cd
 - alterId: 0
   cipher: auto
   name: 7|新加坡NO.1
@@ -156,17 +156,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: c25cb84f-18ee-4885-86f8-9226e30024d9
-- alterId: 0
-  cipher: auto
-  name: 8|新加坡NO.2-1B
-  port: 45055
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 38bd551c-3588-412f-85c4-8f74a0363e82
+  uuid: d8391b7a-029f-4241-85af-a1917a99c2cd
 - alterId: 0
   cipher: auto
   name: 10|SG | 新加坡 LB-1A
@@ -839,61 +829,38 @@ proxies:
   server: z7gfq8utflizatg56x6ghg8pzrr0fio4.08.09.sg.6l6.site
   tfo: false
   type: ss
-- country: 🇬SG
-  name: 15|SG_203
-  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
-  port: 443
-  server: sg-full.privateip.net
+- name: 24,25|[Trojan] 🇷🇺 俄罗斯 V2CROSS.COM
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2083
+  server: 194.53.53.249
   skip-cert-verify: true
+  sni: vle.amclubsvip.dpdns.org
+  tfo: false
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 0|🇸🇬 新加坡 101 | 1x SG
-  password: 504afb1c-dfdb-482f-91d5-e4d0208564f9
-  port: 36171
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 0|🇸🇬 新加坡 102 | 1x SG
-  password: 504afb1c-dfdb-482f-91d5-e4d0208564f9
-  port: 36173
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 3|🇸🇬新加坡 101 | 1x SG
-  password: c1e4c6ed-7823-446b-bb02-fd8fcff539fd
-  port: 31171
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 3|🇸🇬新加坡 102 | 1x SG
-  password: c1e4c6ed-7823-446b-bb02-fd8fcff539fd
-  port: 31173
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 3|🇸🇬新加坡 103 | 1x SG
-  password: c1e4c6ed-7823-446b-bb02-fd8fcff539fd
-  port: 31175
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- alterId: 64
+  ws-opts:
+    headers:
+      Host: vle.amclubsvip.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 27,37,38,41|🇸🇬 新加坡3|@stairnode
-  port: 31209
-  server: 120.232.153.40
+  name: 27,34,37,38,41|🇸🇬 新加坡2|@stairnode
+  network: ws
+  port: 8443
+  server: 172.64.157.100
+  servername: transcripts-guys-singapore-fotos.trycloudflare.com
   skip-cert-verify: false
   tfo: false
-  tls: false
+  tls: true
   type: vmess
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 3da5d27f-08d0-4078-f890-cf950ecb1708
+  ws-opts:
+    headers:
+      Host: transcripts-guys-singapore-fotos.trycloudflare.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 28|新加坡 002
@@ -909,28 +876,32 @@ proxies:
     headers:
       Host: tls.05.node-for-bigairport.win
     path: /
+- name: '34|15|SG_speednode_0289 #1'
+  password: ttfang
+  port: 1111
+  server: 138.2.95.61
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+- name: '34|15|SG_speednode_0292 #1'
+  password: ttfang
+  port: 443
+  server: 139.180.154.158
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
 - alterId: 64
   cipher: auto
-  name: '34|2|🇸🇬1 |  1.0MB/s|0%|Netflix|Di... #2'
+  name: '34|3|🇸🇬1 |  1.0MB/s|0%|Netflix|Di... #2'
   network: tcp
   port: '49291'
   server: 183.236.51.38
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 34,37|14|加坡3|@ripaojiedian
-  network: tcp
-  port: '31209'
-  server: 120.232.153.40
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 34,37|14|加坡|@ripaojiedian
+  name: 34,37|13|加坡|@ripaojiedian
   network: kcp
   port: '51713'
   server: 8.219.72.131
@@ -938,18 +909,108 @@ proxies:
   tls: false
   type: vmess
   uuid: 5ddb4459-ce08-462b-b920-efc464f7e94e
-- alterId: 64
-  cipher: auto
-  name: 34|🇸🇬 每天更新，请加电报群防止失联
-  network: tcp
-  port: '44883'
-  server: 198.2.218.216
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '34|15|SG_speednode_0282 #1'
+  password: ttfang
+  port: 5027
+  server: 8.219.77.72
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+- name: '34|15|SG_speednode_0291 #1'
+  password: ttfang
+  port: 53076
+  server: 152.69.220.136
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+- name: '34|15|SG_speednode_0293 #1'
+  password: ttfang
+  port: 443
+  server: 128.199.237.143
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
 - name: 35|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
+- name: 37,40,42|SG_speednode_0282
+  network: ws
+  password: ttfang
+  port: 5027
+  server: 8.219.77.72
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 37,40,42|SG_speednode_0289
+  network: ws
+  password: ttfang
+  port: 1111
+  server: 138.2.95.61
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 37,40,42|SG_speednode_0291
+  network: ws
+  password: ttfang
+  port: 53076
+  server: 152.69.220.136
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 37,40,42|SG_speednode_0292
+  network: ws
+  password: ttfang
+  port: 443
+  server: 139.180.154.158
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 37,40,42|SG_speednode_0293
+  network: ws
+  password: ttfang
+  port: 443
+  server: 128.199.237.143
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 37,40,42|SG_speednode_0294
+  network: ws
+  password: ttfang
+  port: 443
+  server: 160.22.79.191
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /

@@ -468,16 +468,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 7|日本NO.1
-  port: 45056
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: af0af701-87f2-4cde-a166-f5f3cfa5347b
-- alterId: 0
-  cipher: auto
   name: 7,8|日本NO.2-1A
   port: 45057
   server: xdd.dashuai.cyou
@@ -485,7 +475,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: af0af701-87f2-4cde-a166-f5f3cfa5347b
+  uuid: 32351e35-3e20-4eb1-a05f-f98bb3f534a1
+- alterId: 0
+  cipher: auto
+  name: 7|日本NO.1
+  port: 45056
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 32351e35-3e20-4eb1-a05f-f98bb3f534a1
 - alterId: 0
   cipher: auto
   name: 8|日本NO.2-1B
@@ -495,7 +495,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: e54f5e58-3323-45e2-9c01-8419faef483e
+  uuid: 83f35b96-c0b0-43d4-92f1-6b9e63618d3f
 - alterId: 0
   cipher: auto
   name: 10|JP | 日本 LB-1T
@@ -1010,7 +1010,7 @@ proxies:
     path: /stream
 - alterId: 64
   cipher: auto
-  name: 11,27,34,37|2|1 |  1.8MB/s|54%|Youtube|Ope...
+  name: 11,27,34,37|3|1 |  1.8MB/s|54%|Youtube|Ope...
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -1200,9 +1200,15 @@ proxies:
   server: 05w3bfqa176u15igufwgvhebwck0w0l3.08.01.ng.6l6.site
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 21|JP日本(mibei77.com 米贝节点分享)
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 24,27,37,38,40,41,42|NN_speednode_0066
+  name: 24,40,42|NN_speednode_0109
   password: b44864e5b56d
   plugin: v2ray-plugin
   plugin-opts:
@@ -1225,9 +1231,38 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   name: 27|🇯🇵 13|🇯🇵 日本2|@ripaojiedian
-  password: b44864e5b56d
-  port: 443
-  server: 163.61.206.64
+  password: 264727317ef6
+  port: 34808
+  server: kr9v1.3ci.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 27,37,38,41|🇯🇵 日本4|@stairnode
+  port: 10331
+  server: 45.159.50.131
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0a75ed35-1138-4991-88a0-9b2a59702fce
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 27,37,38,41|🇯🇵 日本2|@stairnode
+  password: 264727317ef6
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: kr9v1.3ci.xyz
+    mode: websocket
+    mux: true
+    path: /ylikhqxcjfeb
+    skip-cert-verify: false
+    tls: true
+  port: 34808
+  server: kr9v1.3ci.xyz
+  tfo: false
   type: ss
   udp: true
 - cipher: rc4-md5
@@ -1236,7 +1271,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202506131022370-2YdmYEMC2J.download.microsoft.com
+    host: 202506131022370-aYizjb0Fb6.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -1258,12 +1293,12 @@ proxies:
   cipher: auto
   name: 34,37|14|日本4|@ripaojiedian
   network: tcp
-  port: '41302'
-  server: 183.236.51.38
+  port: '10331'
+  server: 45.159.50.131
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 0a75ed35-1138-4991-88a0-9b2a59702fce
 - alterId: 0
   cipher: auto
   name: 34,37|14|日本v2|@ripaojiedian

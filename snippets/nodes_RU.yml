@@ -1,4 +1,12 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 0,1,30|🇺_RU_
+  password: WTW3IKzimgbaBa0jELvP7R
+  port: 34218
+  server: 62.133.60.217
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 3|🇷🇺 莫斯科专线
@@ -23,71 +31,65 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-gcm
   country: 🇺 RU
-  name: 15| RU_199
-  password: pV5BAzqLZosOfuIrkyoadT
-  port: 18660
-  server: 5.181.21.194
+  name: 15| RU_200
+  password: 4194ce5b1f36f660
+  port: 50120
+  server: 176.32.35.68
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 15|🇺 RU_200
-  password: uQS5ntVqC00sSKkeNzUiD3
-  port: 42090
-  server: 89.23.103.125
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 15|🇷🇺 RU_201
-  password: 360e21d21977dc11
-  port: 57456
-  server: 45.139.24.24
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 15|🇺 RU_202
-  password: RiPuKJJl18ZgvLpTjWxBwSfKiPkt9gzFKyxGCY8eHtOcDb2X
-  port: 31348
-  server: 5.189.201.250
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 15|🇷🇺 RU_203
+  name: 15|🇺 RU_201
   password: 0zyDRZ1XmNXaaCAN7KEA8a
   port: 28825
   server: 45.151.62.54
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺 RU
-  name: 15,24,30|🇷🇺_RU_俄罗斯_1
+  name: 15|🇺 RU_203
+  password: uQS5ntVqC00sSKkeNzUiD3
+  port: 42090
+  server: 89.23.103.125
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 15|🇺 RU_204
+  password: qscavF5UviIL-8V-E4raBA
+  port: 2222
+  server: 194.87.71.228
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 15|🇷🇺 RU_205
   password: c40641c1f89e7acb
   port: 57456
   server: tr.vpnsparta.pro
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 15|🇺 RU_206
-  password: qscavF5UviIL-8V-E4raBA
-  port: 2222
-  server: 194.87.71.228
+  name: 15|🇷🇺 RU_206
+  password: 360e21d21977dc11
+  port: 57456
+  server: 45.139.24.24
   type: ss
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   country: 🇷🇺 RU
   name: 15|🇺 RU_207
-  password: 4194ce5b1f36f660
-  port: 50120
-  server: 176.32.35.68
+  password: pV5BAzqLZosOfuIrkyoadT
+  port: 18660
+  server: 5.181.21.194
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 15|🇺 RU_208
+  name: 15|🇷🇺 RU_208
   network: tcp
-  port: 45215
-  server: fa.fxlcn.com
+  port: 45245
+  server: ye.fxlcn.com
+  servername: ye.fxlcn.com
   skip-cert-verify: true
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
@@ -97,11 +99,10 @@ proxies:
   country: 🇷🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 15|🇷🇺 RU_209
+  name: 15|🇺 RU_209
   network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ye.fxlcn.com
+  port: 45215
+  server: fa.fxlcn.com
   skip-cert-verify: true
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
@@ -129,9 +130,80 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- cipher: chacha20-ietf-poly1305
-  name: 30|🇺_RU_
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 62.133.63.212
-  type: ss
+- name: 34|🇷🇺 _俄罗斯
+  password: Aimer
+  port: 2087
+  server: 5.182.84.9
+  skip-cert-verify: false
+  sni: epmo.ambercc.filegear-sg.me
+  type: trojan
+- name: '34|🇷🇺 _俄罗斯 #1'
+  password: Aimer
+  port: 2053
+  server: 176.124.223.40
+  skip-cert-verify: false
+  sni: epmo.ambercc.filegear-sg.me
+  type: trojan
+- name: '34|🇷🇺 _俄罗斯 #2'
+  password: Aimer
+  port: 2096
+  server: 5.182.85.255
+  skip-cert-verify: false
+  sni: epmo.ambercc.filegear-sg.me
+  type: trojan
+- name: '34|🇷🇺 _俄罗斯 #3'
+  password: Aimer
+  port: 2096
+  server: 5.182.84.22
+  skip-cert-verify: false
+  sni: epmo.ambercc.filegear-sg.me
+  type: trojan
+- name: '34|🇷🇺 _俄罗斯 #4'
+  password: Aimer
+  port: 2053
+  server: 213.241.198.189
+  skip-cert-verify: false
+  sni: epmo.ambercc.filegear-sg.me
+  type: trojan
+- name: '34|🇷🇺 _俄罗斯 #5'
+  password: Aimer
+  port: 2083
+  server: 213.241.198.56
+  skip-cert-verify: false
+  sni: epmo.ambercc.filegear-sg.me
+  type: trojan
+- name: '34|🇷🇺 _俄罗斯 #6'
+  password: Aimer
+  port: 443
+  server: 46.254.92.191
+  skip-cert-verify: false
+  sni: epmo.ambercc.filegear-sg.me
+  type: trojan
+- name: '34|🇷🇺 _俄罗斯 #7'
+  password: Aimer
+  port: 443
+  server: 89.248.207.37
+  skip-cert-verify: false
+  sni: epmo.ambercc.filegear-sg.me
+  type: trojan
+- name: '34|🇷🇺 _俄罗斯 #8'
+  password: Aimer
+  port: 2083
+  server: 46.254.93.175
+  skip-cert-verify: false
+  sni: epmo.ambercc.filegear-sg.me
+  type: trojan
+- name: '34|🇷🇺 _俄罗斯 #9'
+  password: Aimer
+  port: 2096
+  server: 176.124.223.133
+  skip-cert-verify: false
+  sni: epmo.ambercc.filegear-sg.me
+  type: trojan
+- name: '34|🇷🇺 _俄罗斯 #10'
+  password: Aimer
+  port: 8443
+  server: 91.197.3.168
+  skip-cert-verify: false
+  sni: epmo.ambercc.filegear-sg.me
+  type: trojan

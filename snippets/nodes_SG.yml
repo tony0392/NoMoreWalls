@@ -139,16 +139,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 7|新加坡NO.1
-  port: 45054
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cd7d2571-b255-4fd7-9eff-270d7057f5b0
-- alterId: 0
-  cipher: auto
   name: 7|新加坡NO.2
   port: 45055
   server: xdd.dashuai.cyou
@@ -156,17 +146,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: cd7d2571-b255-4fd7-9eff-270d7057f5b0
+  uuid: 826703db-0206-4eaa-a099-a79dad0a58c5
 - alterId: 0
   cipher: auto
-  name: 8|新加坡NO.2-1B
-  port: 45055
-  server: xdd.dashuai.cyou
+  name: 7|新加坡NO.1
+  port: 45054
+  server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 339debea-a57f-46ef-a76a-3e4122f5336f
+  uuid: 826703db-0206-4eaa-a099-a79dad0a58c5
 - alterId: 0
   cipher: auto
   name: 10|SG | 新加坡 LB-1A
@@ -681,7 +671,7 @@ proxies:
     path: /stream
 - alterId: 64
   cipher: auto
-  name: 11,27,37|1 |  1.0MB/s|0%|Netflix|Disn.....
+  name: 11,27|1 |  1.0MB/s|0%|Netflix|Disn.....
   port: 49291
   server: 183.236.51.38
   skip-cert-verify: false
@@ -884,7 +874,7 @@ proxies:
   type: ss
   udp: true
 - country: 🇬SG
-  name: 15|SG_212
+  name: 15|SG_211
   password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
   port: 443
   server: sg-full.privateip.net
@@ -906,42 +896,13 @@ proxies:
     headers:
       Host: tls.05.node-for-bigairport.win
     path: /
-- alterId: 64
-  cipher: auto
-  name: '34|2|🇸🇬1 |  1.0MB/s|0%|Netflix|Di... #2'
-  network: tcp
-  port: '49291'
-  server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 34,37,38,41|🇸🇬 新加坡2|@stairnode
-  network: ws
-  port: 8080
-  server: 172.64.229.5
-  servername: ''
+- name: 34|🇸🇬 _新加坡
+  password: Aimer
+  port: 2053
+  server: 3.1.116.161
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 697343bc-9c91-47bb-a277-181ea7586313
-  ws-opts:
-    headers:
-      Host: xjp.yilex.icu
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 34,37|新加坡|@ripaojiedian
-  network: kcp
-  port: '51713'
-  server: 8.219.72.131
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5ddb4459-ce08-462b-b920-efc464f7e94e
+  sni: epmo.ambercc.filegear-sg.me
+  type: trojan
 - name: 35|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

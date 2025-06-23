@@ -34,16 +34,6 @@ proxies:
     path: /xyz
 - alterId: 0
   cipher: auto
-  name: 7|加拿大1
-  port: 45064
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 826703db-0206-4eaa-a099-a79dad0a58c5
-- alterId: 0
-  cipher: auto
   name: 7,8|加拿大2-1A
   port: 45065
   server: xdd.dashuai.cyou
@@ -51,7 +41,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 826703db-0206-4eaa-a099-a79dad0a58c5
+  uuid: ba89843b-32c8-4bdc-a337-97740d65bc60
+- alterId: 0
+  cipher: auto
+  name: 7|加拿大1
+  port: 45064
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ba89843b-32c8-4bdc-a337-97740d65bc60
 - alterId: 0
   cipher: auto
   name: 8|加拿大2-1B
@@ -61,7 +61,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2e876886-e1e1-4847-aeba-42c18cfc57b7
+  uuid: bac70090-dfbe-442e-ab00-c091f495f102
 - cipher: aes-256-cfb
   name: 12|🇨🇦 CA, Vancouver
   password: amazonskr05
@@ -104,13 +104,34 @@ proxies:
   type: vmess
   udp: true
   uuid: 1ab84625-b236-4813-85b5-029972bc730f
-- cipher: chacha20-ietf-poly1305
-  country: 🇦CA
-  name: 15|🇦CA_85
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: ca225.vpnbook.com
-  type: ss
+- alterId: 2
+  cipher: auto
+  name: 21|CA加拿大(mibei77.com 米贝节点分享)
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: v8.heduian.link
+  ws-path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 21|CA加拿大(mibei77.com 米贝节点分享) 2
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: v25.heduian.link
+  ws-path: /oooo
 - alterId: 0
   cipher: auto
   name: 25|[VMess] 🇨🇦 _CA_加拿大

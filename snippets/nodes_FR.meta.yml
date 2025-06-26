@@ -28,19 +28,29 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: 7,8|法国2-1A
+  name: 7|法国2
   port: 45071
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: df29ed6a-3f81-4824-8319-001c10844494
+  uuid: b4adc0f0-b69b-4483-b297-2ad93671fe46
 - alterId: 0
   cipher: auto
   name: 7|法国1
   port: 45072
   server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b4adc0f0-b69b-4483-b297-2ad93671fe46
+- alterId: 0
+  cipher: auto
+  name: 8|法国2-1A
+  port: 45071
+  server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -64,26 +74,36 @@ proxies:
   server: ojrandvej2ruev8ejki2unopb5etrur3.08.01.fr.6l6.site
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇫🇷 法国 | FRA
-  port: 45071
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  country: 🇷 FR
+  name: 15| FR_66
+  password: qXvO7zYU7KeaB0Md7DQLow
+  port: 1080
+  server: 51.195.119.47
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷FR
+  name: 15|🇷FR_67
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.185.174
+  type: ss
+- country: 🇷FR
+  name: 15|🇷FR_68
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: uk-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
   udp: true
-  uuid: 1ab84625-b236-4813-85b5-029972bc730f
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇫🇷 法国 | FRA 2
-  port: 45072
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
+- country: 🇫🇷FR
+  name: 15|🇷FR_69
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
+  port: 443
+  server: de-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
   udp: true
-  uuid: 1ab84625-b236-4813-85b5-029972bc730f
 - cipher: aes-256-cfb
   name: 25|[SS] 🇫🇷 _FR_法国
   password: asdKkaskJKfnsa
@@ -106,23 +126,16 @@ proxies:
     headers:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
-- name: 34|🇫🇷 _法国
-  password: Aimer
-  port: 443
-  server: 141.11.203.168
-  skip-cert-verify: false
-  sni: epmf.ambercc.filegear-sg.me
-  type: trojan
-- name: '34|🇫🇷 _法国 #1'
-  password: Aimer
-  port: 8443
-  server: 141.11.203.191
-  skip-cert-verify: false
-  sni: epmf.ambercc.filegear-sg.me
-  type: trojan
 - name: 35|法国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
+- cipher: aes-256-cfb
+  name: 40,42|FR_speednode_0069
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.17.169
+  type: ss
+  udp: true

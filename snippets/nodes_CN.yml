@@ -1,122 +1,39 @@
 proxies:
+- ip-version: dual
+  name: '0,1,24,30,31|🇨🇳_CN_中国_1 #3'
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21332
+  server: 36.156.184.33
+  skip-cert-verify: true
+  sni: k65.tudou211.com
+  type: trojan
+  udp: true
+- ip-version: dual
+  name: '0,1,24,30,31|🇨🇳_CN_中国_2 #3'
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21332
+  server: xd-js.timiwc.com
+  skip-cert-verify: true
+  sni: k65.tudou211.com
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: '0,1,30,31|🇨🇳_CN_中国_1 #3'
+  name: '0,1,24,30,31|🇨🇳_CN_中国_3 #3'
   network: ws
-  port: 30829
-  server: v29.heduian.link
+  port: 30825
+  server: 111.26.109.79
+  skip-cert-verify: true
+  sni: ''
+  tls: false
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    headers:
-      host: ocbc.com
     path: /oooo
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: '0,1,31|🇨🇳_CN_中国_2 #2'
-  password: e22b89ae-6996-4824-ac31-610ac7349e6a
-  port: 30524
-  server: zf2.10101251.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  country: 🇳 CN
-  h2-opts: {}
-  http-opts: {}
-  ip-version: dual
-  name: 15,17,24,34|免费VPN：https://tt.vg/gwaAy
-  network: tcp
-  port: '50002'
-  server: 112.132.215.12
-  servername: ury-unit-c030ehei8.poget71138.workers.dev
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /ivideos.sbs/linkws
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳 CN
-  h2-opts: {}
-  http-opts: {}
-  name: '15,17,30,34|_中国 #5'
-  network: tcp
-  port: '50002'
-  server: 120.26.55.225
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  country: 🇨🇳 CN
-  h2-opts: {}
-  http-opts: {}
-  name: '15,17|Github搜索TrojanLinks #8'
-  network: tcp
-  port: '50002'
-  server: 47.104.186.133
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /afrhms16v.bestxray.buzz/linkws
-- alterId: 64
-  cipher: auto
-  country: 🇳 CN
-  h2-opts: {}
-  http-opts: {}
-  name: '15,17|Github搜索TrojanLinks #33'
-  network: tcp
-  port: '50002'
-  server: 47.92.152.169
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  country: 🇨🇳 CN
-  h2-opts: {}
-  http-opts: {}
-  name: '15,17|Github搜索TrojanLinks #15'
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  country: 🇨🇳 CN
-  h2-opts: {}
-  http-opts: {}
-  name: '15,17|Github搜索TrojanLinks #9'
-  network: tcp
-  port: '50007'
-  server: 112.132.215.34
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
-- country: 🇨 CN
-  name: 15|🇨🇳 CN_56
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 3462
-  server: a03.taipeicitygovernment.cn.ua
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 19,24,25,34|🇨🇳 广东省 移动
+- name: 19,25,34|🇨🇳 广东省 移动
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   port: 21003
   server: 120.233.44.201
@@ -127,7 +44,8 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 19,25,34|🇨🇳 广东省梅州市 移动
+  client-fingerprint: chrome
+  name: 19,24,25,34|🇨🇳 广东省梅州市 移动
   network: ws
   port: '30828'
   server: v28.heduian.link
@@ -159,161 +77,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 24|❓_🇨🇳_📶_github.com/Ruk1ng001_64...
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21017
-  server: 120.233.44.201
-  skip-cert-verify: true
-  sni: k16.tudou211.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '24|❓_🇨🇳_📶_github.com/Ruk1ng001_64... #1'
-  network: tcp
-  port: 37805
-  server: 120.232.153.63
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.232.153.63
-  ws-path: /
-- alterId: 0
-  name: 24|❓_🇨🇳_📶_github.com/Ruk1ng001_36...
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21181
-  server: 120.233.44.201
-  skip-cert-verify: true
-  sni: k31.tudou211.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 24|❓_🇨🇳_📶_github.com/Ruk1ng001_31...
-  port: 46921
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: '24,34|_中国 #6'
-  network: tcp
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: 183.232.235.2
-  skip-cert-verify: false
-  sni: hk-13-568.flztjc.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24,27,38,41|🇭🇰 香港5|@stairnode
-  port: 41174
-  server: 120.234.102.229
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 24|🟡_🇨🇳_📶_github.com/Ruk1ng001_37...
-  network: tcp
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 203.156.253.11
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 64
   cipher: auto
   name: 24|❓_🇨🇳_📶_github.com/Ruk1ng001_33...
   port: 50002
   server: 120.210.205.59
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: '24|❓_🇨🇳_📶_github.com/Ruk1ng001_64... #3'
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21031
-  server: 120.233.44.201
-  skip-cert-verify: true
-  sni: k54.tudou211.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 24,25,40,42|CN_speednode_0030
-  port: 31209
-  server: 120.232.153.40
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '24|❓_🇨🇳_📶_github.com/Ruk1ng001_35... #1'
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21079
-  server: 120.233.44.201
-  skip-cert-verify: true
-  sni: k32.tudou211.com
-  type: trojan
-- alterId: 0
-  name: 24|🟡_🇨🇳_📶_github.com/Ruk1ng001_61...
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 203.156.253.12
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 24|🟡_🇨🇳_📶_github.com/Ruk1ng001_35...
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 116.31.75.150
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24,27,38,41|🇭🇰 香港6|@stairnode
-  port: 49154
-  server: 183.236.51.38
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '24|❓_🇨🇳_📶_github.com/Ruk1ng001_35... #2'
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21056
-  server: 120.233.44.201
-  skip-cert-verify: true
-  sni: k14.tudou211.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 24|🟡_🇨🇳_💼_github.com/Ruk1ng001_65...
-  port: 50002
-  server: 47.92.152.169
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -335,50 +103,32 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- name: 24|❓_🇨🇳_📶_github.com/Ruk1ng001_66...
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21118
-  server: 120.233.44.201
-  skip-cert-verify: true
-  sni: k17.tudou211.com
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '24|❓_🇨🇳_📶_github.com/Ruk1ng001_64... #5'
+  name: 24|❓_🇨🇳_📶_github.com/Ruk1ng001_64...
   port: 59003
   server: 183.236.51.36
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  client-fingerprint: chrome
-  name: 24,27,34,38,41|🇰🇷 韩国2|@stairnode
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21017
-  server: 120.233.44.201
-  skip-cert-verify: true
-  sni: 120.233.44.201
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 2
   cipher: auto
-  name: '24|🟡_🇨🇳_📶_github.com/Ruk1ng001_61... #1'
+  ip-version: dual
+  name: 24,30|🇨🇳_CN_中国->🇦_CA_加拿大_1
   network: ws
-  port: 30807
+  port: 30835
   server: 111.26.109.79
-  tls: false
+  skip-cert-verify: true
+  sni: ''
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    headers:
-      Host: ocbc.com
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: 24,40,42|CN_speednode_0029
+  name: 24|❓_🇨🇳_📶_github.com/Ruk1ng001_39...
   port: 43292
   server: 120.232.153.40
   skip-cert-verify: true
@@ -387,24 +137,33 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  name: 24,30|🇨🇳_CN_中国->🇸_US_美国_4
-  network: ws
-  port: 30829
-  server: 111.26.109.79
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    path: /oooo
+- alterId: 0
+  name: 24|🟡_🇨🇳_📶_github.com/Ruk1ng001_37...
+  network: tcp
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 203.156.253.11
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  tls: true
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 24,27,38,41|🇹🇼 台湾|@stairnode
+  password: dwz1GtF7
+  port: 30015
+  server: 120.233.128.98
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 64
   cipher: auto
-  name: 24,40,42|CN_speednode_0025
-  port: 40175
-  server: 120.198.71.214
-  skip-cert-verify: false
+  name: 24,25|[VMess] 🇨🇳 广东省广州市 移动
+  port: 31209
+  server: 120.232.153.40
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -419,91 +178,51 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 25|[SS] 🇨🇳 广东省广州市 电信
-  password: 7905a32b-012c-4711-89e2-73b6713eca75
-  port: 40030
-  server: pr.fastsoonlink.com
-  tfo: false
-  type: ss
-  udp: true
-- name: '27,34,40,42|CN_speednode_0033 #3'
-  password: e2d4ffbd-d0fa-4074-b844-9e8b4e34cd4c
-  port: 38027
-  server: relay001.xiaoniuyun.cc
-  skip-cert-verify: false
-  sni: ua001.xiaoniuyun.cc
-  type: trojan
-  udp: true
-- name: '27,34,40,42|CN_speednode_0038 #3'
-  password: xHiFGGTy
-  port: 23770
-  server: 36.151.251.62
+- alterId: 0
+  cipher: auto
+  name: 24|🟡_🇨🇳_💼_github.com/Ruk1ng001_65...
+  port: 50002
+  server: 47.92.152.169
   skip-cert-verify: true
-  sni: TG.WangCai2
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 30|🇨🇳_CN_中国_3
-  network: ws
-  port: 30825
-  server: 111.26.109.79
+  tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v25.heduian.link
-    path: /oooo
-- name: 34|_中国
-  password: Aimer
-  port: 2096
-  server: 27.50.49.188
-  skip-cert-verify: false
-  sni: epmg.ambercc.filegear-sg.me
-  type: trojan
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
-  name: '34|_中国 #12'
+  name: '24,34|_中国 #5'
   network: ws
-  port: '30835'
+  port: '30807'
   server: 111.26.109.79
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v35.heduian.link
+      Host: ocbc.com
     path: /oooo
-- cipher: aes-256-gcm
-  name: 40,42|CN_speednode_0026
-  password: teLxg65m4v0zQPpSOM
-  port: 20659
-  server: iepl.pro.7353.0tk8a3a1q4t94dler.com
-  type: ss
+- client-fingerprint: chrome
+  name: 24,34,38,41|🇰🇷 韩国|@stairnode
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 203.156.253.12
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
+- name: '30,34|_中国 #2'
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 59599
+  server: xd-js.timiwc.com
+  skip-cert-verify: false
+  sni: k62.tudou211.com
+  type: trojan
+- alterId: 64
+  cipher: auto
+  name: 40,42|CN_speednode_0014
+  port: 52152
+  server: 120.232.153.40
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: aes-256-gcm
-  name: 40,42|CN_speednode_0027
-  password: teLxg65m4v0zQPpSOM
-  port: 20659
-  server: iepl.pro.8775.0tk8a3a1q4t94dler.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 40,42|CN_speednode_0031
-  password: VXPipi29nxMO
-  plugin: obfs
-  plugin-opts:
-    host: 0445dfbd1887ef01316815802200b51e70987.taobao.com
-    mode: http
-  port: 6052
-  server: hk-pop-1.ac.0tk8a3a1q4t94dler.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 40,42|CN_speednode_0032
-  password: e2d4ffbd-d0fa-4074-b844-9e8b4e34cd4c
-  port: 44001
-  server: relay001.xiaoniuyun.cc
-  type: ss
-  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24

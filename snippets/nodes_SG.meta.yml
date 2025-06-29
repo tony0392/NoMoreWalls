@@ -139,16 +139,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 7|新加坡NO.2
-  port: 45055
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fb30e332-a480-4bae-a1f1-b07cefd75c01
-- alterId: 0
-  cipher: auto
   name: 7|新加坡NO.1
   port: 45054
   server: haa.dashuai.cyou
@@ -156,17 +146,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: fb30e332-a480-4bae-a1f1-b07cefd75c01
+  uuid: deb0b24d-8a68-4326-8810-6dcf65448014
 - alterId: 0
   cipher: auto
-  name: 8|新加坡NO.2-1A
+  name: 7|新加坡NO.2
   port: 45055
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 525ee141-393e-4915-b4ca-5c3a680b4ad9
+  uuid: deb0b24d-8a68-4326-8810-6dcf65448014
 - alterId: 0
   cipher: auto
   name: 10|SG | 新加坡 LB-1A
@@ -884,47 +874,44 @@ proxies:
   type: ss
   udp: true
 - country: 🇬SG
-  name: 15|SG_174
-  password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
-  port: 443
-  server: sg2-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬SG
-  name: 15|🇬SG_175
+  name: 15|SG_165
   password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
   port: 443
   server: sg-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 24|❓_🇸🇬_💻_github.com/Ruk1ng001_37...
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @WangCai2)2ddd5ae:83350
-    mode: tls
-  port: 2377
-  server: 54.169.51.68
-  type: ss
+- country: 🇬SG
+  name: 15|🇬SG_166
+  password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
+  port: 443
+  server: sg2-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 24|🟡_🇸🇬_💻_github.com/Ruk1ng001_39...
+  network: tcp
+  password: G9CHhXltVx
+  port: 12646
+  server: 96.9.213.108
+  skip-cert-verify: true
+  sni: 96.9.213.108
+  tls: true
+  type: trojan
+  udp: true
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 27,38,41|🇸🇬 新加坡|@stairnode
+  name: 27|🇸🇬 新加坡|@ripaojiedian
   password: PTOLSTKKE7DWRV1I
   port: 16002
   server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 27,38,41|🇸🇬 新加坡2|@stairnode
+  name: 27|🇸🇬 新加坡2|@ripaojiedian
   password: LHYN1FM2G207U465
   port: 16013
   server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
   type: ss
   udp: true
 - name: '27,40,42|SG_speednode_0155 #3'
@@ -955,9 +942,32 @@ proxies:
     headers:
       Host: tls.05.node-for-bigairport.win
     path: /
+- name: '34|SG_speednode_0155 #2'
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
 - name: 35|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 38,41|🇸🇬 新加坡|@stairnode
+  password: 983UF5QK58NAQNHZ
+  port: 16011
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 38,41|🇸🇬 新加坡2|@stairnode
+  password: RJ7MXLK2KHIN2B4U
+  port: 16009
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss

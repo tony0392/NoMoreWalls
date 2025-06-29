@@ -199,26 +199,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 7,8|香港-1B
-  port: 19901
-  server: xg.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fb30e332-a480-4bae-a1f1-b07cefd75c01
-- alterId: 0
-  cipher: auto
-  name: 7,8|香港NO.2-1B-GPT
-  port: 45051
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fb30e332-a480-4bae-a1f1-b07cefd75c01
-- alterId: 0
-  cipher: auto
   name: 7|香港NO.1
   port: 45050
   server: haa.dashuai.cyou
@@ -226,47 +206,47 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: fb30e332-a480-4bae-a1f1-b07cefd75c01
+  uuid: deb0b24d-8a68-4326-8810-6dcf65448014
 - alterId: 0
   cipher: auto
-  name: 8|香港-1C
+  name: 7,8|香港-1A
   port: 19901
   server: xg.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: d513d046-b943-4801-844f-cccc5cfd4afd
+  uuid: deb0b24d-8a68-4326-8810-6dcf65448014
 - alterId: 0
   cipher: auto
-  name: 8|香港-1A
+  name: 7|香港NO.2
+  port: 45051
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: deb0b24d-8a68-4326-8810-6dcf65448014
+- alterId: 0
+  cipher: auto
+  name: 8|香港-1B
   port: 19901
   server: xg.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 525ee141-393e-4915-b4ca-5c3a680b4ad9
+  uuid: c2eca09d-1e79-4344-84d2-dc51e21e660f
 - alterId: 0
   cipher: auto
-  name: 8|香港NO.2-1C-GPT
+  name: 8|香港NO.2-1B-GPT
   port: 45051
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: d513d046-b943-4801-844f-cccc5cfd4afd
-- alterId: 0
-  cipher: auto
-  name: 8|香港NO.2-1A-GPT
-  port: 45051
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 525ee141-393e-4915-b4ca-5c3a680b4ad9
+  uuid: c2eca09d-1e79-4344-84d2-dc51e21e660f
 - alterId: 0
   cipher: auto
   name: 10|HK | 香港 LB-1V
@@ -920,78 +900,46 @@ proxies:
   type: vmess
   udp: true
   uuid: 1ab84625-b236-4813-85b5-029972bc730f
-- cipher: aes-128-gcm
+- cipher: chacha20-ietf-poly1305
   country: 🇰 HK
-  name: 15| HK_87
-  password: rGDbiF7gtx5TWt4r4VjneQ==
-  port: 552
-  server: 156.225.22.213
+  name: 15| HK_80
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
   type: ss
 - cipher: aes-256-cfb
   country: 🇰 HK
-  name: 15|🇰 HK_88
+  name: 15|🇰 HK_81
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰 HK
+  name: 15|🇰 HK_82
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.21.221
   type: ss
 - cipher: aes-256-cfb
   country: 🇰 HK
-  name: 15|🇰 HK_89
+  name: 15|🇭🇰 HK_83
   password: qwerREWQ@@
   port: 64759
   server: 185.189.160.98
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 15|🇭🇰 HK_90
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- cipher: aes-256-cfb
+- cipher: aes-128-gcm
   country: 🇭🇰 HK
-  name: 15|🇰 HK_91
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
+  name: 15|🇰 HK_84
+  password: rGDbiF7gtx5TWt4r4VjneQ==
+  port: 552
+  server: 156.225.22.213
   type: ss
-- alterId: 2
+- alterId: 64
   cipher: auto
-  country: 🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇭🇰 HK_92
-  network: ws
-  port: 80
-  server: cc3bbb47-sv0xs0-svc6zc-tf26.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: baefe2f4-b41a-11ee-91e9-f23c913c8d2b
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇭🇰 HK_93
-  network: ws
-  port: 80
-  server: 63a845ef-sv4n40-svc6zc-tf26.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: baefe2f4-b41a-11ee-91e9-f23c913c8d2b
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 21|US美国(mibei77.com 米贝节点分享) 15
-  port: 41024
-  server: 183.236.51.38
+  name: 21|US美国(mibei77.com 米贝节点分享) 18
+  port: 49597
+  server: 120.232.153.41
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -999,14 +947,62 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 21|US美国(mibei77.com 米贝节点分享) 29
-  port: 49355
-  server: 120.198.71.219
+  name: 21|HK香港(mibei77.com 米贝节点分享) 2
+  port: 27013
+  server: a.lemonyun.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
+  uuid: 3e7d92de-76b0-3975-bb10-c0d35ce6f6ab
+- alterId: 0
+  cipher: auto
+  name: 21|HK香港(mibei77.com 米贝节点分享) 3
+  port: 27010
+  server: b.lemonyun.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3e7d92de-76b0-3975-bb10-c0d35ce6f6ab
+- alterId: 0
+  cipher: auto
+  name: 21|HK香港(mibei77.com 米贝节点分享) 4
+  port: 27001
+  server: a.lemonyun.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3e7d92de-76b0-3975-bb10-c0d35ce6f6ab
+- alterId: 64
+  cipher: auto
+  name: 21,24,40,42|CN_speednode_0023
+  port: 52152
+  server: 120.232.153.40
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 21|HK香港(mibei77.com 米贝节点分享) 6
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21332
+  server: xd-js.timiwc.com
+  skip-cert-verify: true
+  sni: xd-js.timiwc.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 21|HK香港(mibei77.com 米贝节点分享) 7
+  port: 27011
+  server: c.lemonyun.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3e7d92de-76b0-3975-bb10-c0d35ce6f6ab
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -1032,23 +1028,19 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 27,38,41|🇭🇰 香港3|@stairnode
+  name: 27|🇭🇰 香港3|@ripaojiedian
   password: DWRHI0W4F0RELXHP
   port: 15012
   server: 8tv68qhq.slashdevslashnetslashtun.net
-  tfo: false
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 27,34,38,41|🇭🇰 香港4|@stairnode
+  name: 27|🇭🇰 香港4|@ripaojiedian
   network: ws
   port: 8080
   server: 977fb705-symkg0-t02swp-fa3p.hgc1.tcpbbr.net
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -1058,12 +1050,25 @@ proxies:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 27,38,40,41,42|CN_speednode_0026
+  name: 27,40,42|CN_speednode_0026
   password: 1FE8UX5KHGYBLYMU
   port: 15015
   server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 27|🇭🇰 香港2|@ripaojiedian 2
+  password: f917888c6f39
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hkxwv1-5.dsjsapi.com
+    mode: websocket
+    mux: true
+    path: /rxoasyex
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 121.127.231.200
   type: ss
   udp: true
 - alterId: 0
@@ -1087,3 +1092,11 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 38,41|🇭🇰 香港3|@stairnode
+  password: PJ3O8HS49CM9VVGN
+  port: 15004
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss

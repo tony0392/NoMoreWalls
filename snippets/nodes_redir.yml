@@ -1,16 +1,24 @@
 proxies:
-- ip-version: dual
-  name: '0,1,31|🇨🇳_CN_中国->🇨🇦_CA_加拿大_1 #2'
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21603
-  server: xd-js.timiwc.com
-  sni: k61.tudou211.com
-  type: trojan
-  udp: true
 - alterId: 2
   cipher: auto
   ip-version: dual
   name: '0,1,20,30,31|🇨🇳_CN_中国->🇺🇸_US_美国_1 #3'
+  network: ws
+  port: 30807
+  server: v7.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v7.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: '0,1,20,30,31|🇨🇳_CN_中国->🇺🇸_US_美国_2 #3'
   network: ws
   port: 30807
   server: 111.26.109.79
@@ -22,38 +30,54 @@ proxies:
       host: ocbc.com
     path: /oooo
 - ip-version: dual
-  name: '0,1,20,31|🇨🇳_CN_中国->🇨🇦_CA_加拿大_2 #2'
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21603
-  server: 36.156.184.33
-  skip-cert-verify: false
-  sni: k61.tudou211.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  ip-version: dual
-  name: '0,1,20,24,31|🇨🇳_CN_中国->🇨🇦_CA_加拿大_3 #2'
-  network: ws
-  port: 30835
-  server: v35.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v35.heduian.link
-    path: /oooo
-- ip-version: dual
-  name: '0,1,20,31|🇨🇳_CN_中国->🇺🇸_US_美国_2 #3'
+  name: '0,1,20,31|🇨🇳_CN_中国->🇺🇸_US_美国_3 #4'
   network: tcp
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   port: 21332
   server: xd-js.timiwc.com
   sni: k65.tudou211.com
   type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: 0,1,20,30,31,34|_中国
+  network: ws
+  port: '30829'
+  server: 111.26.109.79
+  skip-cert-verify: true
+  sni: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ''
+    path: /oooo
+- ip-version: dual
+  name: '0,1,20,31|🇨🇳_CN_中国->🇺🇸_US_美国_5 #3'
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21332
+  server: 36.156.184.33
+  sni: k65.tudou211.com
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: '0,1,24,30,31|🇳🇱_NL_荷兰->🇺🇸_US_美国 #2'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 45.153.124.90
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: '0,1,30,31|🇨🇳_CN_中国->🇺🇸_US_美国_6 #2'
+  password: 9214b8e1-5eed-4b36-9ef5-42c2f915bd0e
+  port: 15028
+  server: a.moeya.cc
+  type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 3|🇸🇬 新加坡中转 02
@@ -3663,20 +3687,6 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 20,30|🇳_CN_中国->🇺🇸_US_美国_1
-  network: ws
-  port: 30807
-  server: v7.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v7.heduian.link
-    path: /oooo
 - cipher: aes-256-cfb
   name: 20|_KR_国->🇳_CN_中国
   password: qwerREWQ@@
@@ -3685,27 +3695,19 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: '20|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
+  ip-version: dual
+  name: 20,24|github.com/Ruk1ng001_326432323...
   network: ws
-  port: 30829
-  server: v29.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 20,30|🇨🇳_CN_中国->_unKnow_
-  network: ws
-  port: 30829
-  server: 111.26.109.79
+  port: 30835
+  server: v35.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
+    headers:
+      host: baidu.com
     path: /oooo
 - alterId: 2
   cipher: auto
@@ -3725,7 +3727,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 20|🇨🇳_CN_中国->🇺🇸_US_美国_3
+  name: '20|🇨🇳_CN_中国->🇺🇸_US_美国_3 #2'
   network: ws
   port: 30825
   server: 111.26.109.79
@@ -3735,7 +3737,7 @@ proxies:
     headers:
       host: v25.heduian.link
     path: /oooo
-- name: 20|🇨🇳_CN_中国->🇺🇸_US_美国_4
+- name: '20|🇨🇳_CN_中国->🇺🇸_US_美国_4 #2'
   password: 1b4c16925f934c57b954a9f0f23dea33
   port: 8842
   server: 42.240.152.238
@@ -3743,7 +3745,7 @@ proxies:
   sni: brwx.spvpv.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳_CN_中国->🇺🇸_US_美国_5
+  name: '20|🇨🇳_CN_中国->🇺🇸_US_美国_5 #2'
   password: 7905a32b-012c-4711-89e2-73b6713eca75
   port: 40030
   server: pr.fastsoonlink.com
@@ -3900,40 +3902,9 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 30|_SE_->_CN_
-  network: tcp
-  port: 62002
-  server: 213.66.68.73
-  sni: ''
-  type: vmess
-  uuid: 5b9b682a-7811-4050-b287-254320f3ac9e
-- name: 30|🇨🇳_CN_中国->_FR_国
-  password: 202c296a-f34a-11ef-80e5-f23c9164ca5d
-  port: 27235
-  server: fc111582-syof40-t39hdu-1tf4x.cm5.cnkuaishou.com
-  skip-cert-verify: false
+- name: 30|🇸_US_美国->_FR_国
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.38.152.226
+  sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: chacha20-ietf
-  name: 30,40,42|CN_speednode_0021
-  obfs: http_simple
-  obfs-param: dfde699935.microsoft.com
-  password: ygUo3W
-  port: 9031
-  protocol: auth_aes128_md5
-  protocol-param: 99935:vb3TTF
-  server: cnamelm-dwzksl7kzye3rdby.bestbrocciu.com
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 30,40,42|CN_speednode_0027
-  obfs: http_simple
-  obfs-param: dfde699935.microsoft.com
-  password: ygUo3W
-  port: 9080
-  protocol: auth_aes128_md5
-  protocol-param: 99935:vb3TTF
-  server: cnamelm-dwzksl7kzye3rdby.bestbrocciu.com
-  type: ssr
-  udp: true

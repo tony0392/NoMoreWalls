@@ -27,19 +27,16 @@ proxies:
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: '0,1,20,30,31,34|🇨🇳 吉林省 移动(全省通用) #1'
+  name: '0,1,20,31|🇨🇳_CN_中国->🇺🇸_US_美国_2 #3'
   network: ws
-  port: '30829'
+  port: 30829
   server: 111.26.109.79
   skip-cert-verify: true
   sni: ''
-  tls: false
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    headers:
-      Host: ''
     path: /oooo
 - ip-version: dual
   name: '0,1,31|🇨🇳_CN_中国->🇺🇸_US_美国_3 #3'
@@ -65,8 +62,9 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
+  country: 🇷 RU
   ip-version: dual
-  name: '0,1,31|🇲🇩_MD_摩尔多瓦->🇯🇵_JP_日本 #2'
+  name: '0,1,15,31|🇲🇩_MD_摩尔多瓦->🇯🇵_JP_日本 #2'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
@@ -3767,15 +3765,15 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 20,24|🟡_🇨🇳_📶_github.com/Ruk1ng001_31...
+  name: '20|🇨🇳_CN_中国->🇺🇸_US_美国_3 #2'
   network: ws
   port: 30825
   server: 111.26.109.79
-  skip-cert-verify: false
-  tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
+    headers:
+      host: v25.heduian.link
     path: /oooo
 - name: 20|🇨🇳_CN_中国->🇺🇸_US_美国_4
   password: 1b4c16925f934c57b954a9f0f23dea33
@@ -3784,12 +3782,6 @@ proxies:
   skip-cert-verify: true
   sni: brwx.spvpv.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳_CN_中国->🇺🇸_US_美国_5
-  password: 7905a32b-012c-4711-89e2-73b6713eca75
-  port: 40030
-  server: pr.fastsoonlink.com
-  type: ss
 - alterId: 0
   cipher: auto
   name: 25|[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国

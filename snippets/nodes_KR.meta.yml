@@ -1,12 +1,4 @@
 proxies:
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '0,1,11,27,31|🇰🇷_KR_韩国 #2'
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  type: ss
-  udp: true
 - name: 3|🇰🇷 韩国-三网优化2-1C
   password: b262e991-a233-4dfd-87e2-9c5898ecd4c2
   port: 44732
@@ -169,8 +161,36 @@ proxies:
     headers:
       Host: i1.hdslb.com
     path: /download
-- name: 7|韩国-三网优化2
-  password: a26d6bf1-ad1f-4c0d-88e9-e38619886fc2
+- alterId: 0
+  cipher: auto
+  name: 7|韩国 专线NO2
+  port: 45075
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a6792237-5d19-4590-a3b5-39f975f951c8
+- alterId: 0
+  cipher: auto
+  name: 7|韩国 专线NO1
+  port: 45076
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a6792237-5d19-4590-a3b5-39f975f951c8
+- name: 7|韩国-三网优化2-1A
+  password: de26ead1-09a4-4b17-aa30-70912f3a4d11
+  port: 44732
+  server: kr-qingyun.dwyun.me
+  skip-cert-verify: true
+  sni: kr-qingyun.dwyun.me
+  type: trojan
+  udp: true
+- name: 7|韩国-三网优化2-1B
+  password: 7de81de6-5f3e-4c7a-aa66-c281bc607b49
   port: 44732
   server: kr-qingyun.dwyun.me
   skip-cert-verify: true
@@ -179,24 +199,14 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 7,8|韩国 专线NO2-1A
+  name: 8|韩国 专线NO2-1B
   port: 45075
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 5a865716-6bd0-43f6-b7e6-a51a1d2a1762
-- alterId: 0
-  cipher: auto
-  name: 7,8|韩国 专线NO1-1A
-  port: 45076
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5a865716-6bd0-43f6-b7e6-a51a1d2a1762
+  uuid: 147c85f2-dc63-4c1a-8c36-c460068cd5ca
 - alterId: 0
   cipher: auto
   name: 8|韩国 专线NO1-1B
@@ -206,7 +216,14 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 04d9baea-7832-477c-97f6-86cdbbfa6df9
+  uuid: 147c85f2-dc63-4c1a-8c36-c460068cd5ca
+- cipher: aes-256-cfb
+  name: 11,27|2 |  1.5MB/s|44%|Openai
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 12|🇰🇷 KR, Incheon
   password: amazonskr05
@@ -249,33 +266,6 @@ proxies:
   server: gz.pddwdf.store
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: 🇷 KR
-  name: 15,24|github.com/Ruk1ng001_383135343...
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇷 KR
-  name: 15|🇷 KR_233
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: 🇰🇷 KR
-  name: 15,27,38,41|🇰🇷 韩国|@stairnode
-  password: qwerREWQ@@
-  port: 15098
-  server: p222.panda001.net
-  tfo: false
-  type: ss
-  udp: true
 - name: 21|KR韩国(mibei77.com 米贝节点分享)
   password: Aimer
   port: 50001
@@ -283,55 +273,36 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 27|🇰🇷 韩国2|@ripaojiedian
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 6668
-  server: 15.165.19.79
-  skip-cert-verify: false
-  sni: baidu.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 27,38,41|🇰🇷 韩国2|@stairnode
+  password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
+  port: 19852
+  server: h.cm2.xiaomi-api.xyz
+  tfo: false
+  type: ss
   udp: true
-- name: 27|🇰🇷 韩国4|@ripaojiedian
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 20615
-  server: 36.151.192.61
-  skip-cert-verify: false
-  sni: www.baidu.com
-  type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 27,38,41|🇰🇷 韩国|@stairnode
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  tfo: false
+  type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 34,38,41|🇰🇷 韩国4|@stairnode
+  name: 27,34,38,41|🇰🇷 韩国4|@stairnode
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 45203
   server: 36.151.251.61
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 34|🇰🇷 _韩国
-  password: Aimer
-  port: 50000
-  server: 121.167.230.98
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: '34|🇰🇷 _韩国 #1'
-  password: Aimer
-  port: 50000
-  server: 121.167.230.98
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
+  udp: true
 - name: 35|韩国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
   skip-cert-verify: false
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 38,41|🇰🇷 韩国2|@stairnode
-  password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
-  port: 19852
-  server: h.cm2.xiaomi-api.xyz
-  tfo: false
-  type: ss

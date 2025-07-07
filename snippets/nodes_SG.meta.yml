@@ -1,10 +1,4 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 0,1,31|_SG_加
-  password: amazonskr05
-  port: 443
-  server: 18.143.107.4
-  type: ss
 - alterId: 0
   cipher: auto
   name: 3|🇸🇬 新加坡NO.1
@@ -145,6 +139,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 7,8|新加坡NO.1-1A
+  port: 45054
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 81afb08d-503c-46a3-ad54-9357a59caf4a
+- alterId: 0
+  cipher: auto
   name: 7|新加坡NO.2
   port: 45055
   server: xdd.dashuai.cyou
@@ -152,17 +156,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a6792237-5d19-4590-a3b5-39f975f951c8
-- alterId: 0
-  cipher: auto
-  name: 7|新加坡NO.1
-  port: 45054
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a6792237-5d19-4590-a3b5-39f975f951c8
+  uuid: 81afb08d-503c-46a3-ad54-9357a59caf4a
 - alterId: 0
   cipher: auto
   name: 8|新加坡NO.1-1B
@@ -172,17 +166,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 147c85f2-dc63-4c1a-8c36-c460068cd5ca
-- alterId: 0
-  cipher: auto
-  name: 8|新加坡NO.2-1B
-  port: 45055
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 147c85f2-dc63-4c1a-8c36-c460068cd5ca
+  uuid: da95d21b-d999-4dcb-bda5-86967f16fa24
 - alterId: 0
   cipher: auto
   name: 10|SG | 新加坡 LB-1A
@@ -827,6 +811,23 @@ proxies:
   server: gz.pddwdf.store
   type: ss
   udp: true
+- name: 24,27|🇸🇬 新加坡4|@ripaojiedian
+  network: tcp
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6668
+  server: 13.215.50.90
+  skip-cert-verify: false
+  sni: baidu.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 25|[SS] 🇸🇬 新加坡 DigitalOcean数据中心
+  password: Dfm20PJVnAjfzFoyAKTRcG
+  port: 49580
+  server: 178.128.63.62
+  tfo: false
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   name: 27,34,38,41|🇸🇬 新加坡2|@stairnode
   password: d0d08cddacc3190ea81b1b792e1b5fde
@@ -836,13 +837,13 @@ proxies:
   sni: www.baidu.com
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: '34,38|🇸🇬 新加坡5|@ripaojiedian #1'
+- name: 27|🇸🇬 新加坡5|@ripaojiedian
   password: a0f7a422-7867-469c-946b-190d8fbc2a5d
   port: 1531
   server: 103.248.229.29
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
+  udp: true
 - name: 35|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

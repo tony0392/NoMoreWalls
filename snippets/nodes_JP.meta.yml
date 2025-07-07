@@ -475,7 +475,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a6792237-5d19-4590-a3b5-39f975f951c8
+  uuid: 81afb08d-503c-46a3-ad54-9357a59caf4a
 - alterId: 0
   cipher: auto
   name: 7|日本NO.1
@@ -485,17 +485,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a6792237-5d19-4590-a3b5-39f975f951c8
-- alterId: 0
-  cipher: auto
-  name: 8|日本NO.1-1B
-  port: 45056
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 147c85f2-dc63-4c1a-8c36-c460068cd5ca
+  uuid: 81afb08d-503c-46a3-ad54-9357a59caf4a
 - alterId: 0
   cipher: auto
   name: 8|日本NO.2-1B
@@ -505,7 +495,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 147c85f2-dc63-4c1a-8c36-c460068cd5ca
+  uuid: da95d21b-d999-4dcb-bda5-86967f16fa24
+- alterId: 0
+  cipher: auto
+  name: 8|日本NO.1-1B
+  port: 45056
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: da95d21b-d999-4dcb-bda5-86967f16fa24
 - alterId: 0
   cipher: auto
   name: 10|JP | 日本 LB-1T
@@ -1182,6 +1182,15 @@ proxies:
   type: vmess
   udp: true
   uuid: 1ab84625-b236-4813-85b5-029972bc730f
+- name: 19,25,34|🇯🇵 日本 V2CROSS.COM
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6668
+  server: 43.203.122.115
+  skip-cert-verify: false
+  sni: baidu.com
+  tfo: false
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   name: 21|JP日本(mibei77.com 米贝节点分享)
@@ -1210,13 +1219,6 @@ proxies:
   ws-headers:
     Host: ocbc.com
   ws-path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: 21|JP日本(mibei77.com 米贝节点分享) 3
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
   name: 24|🟡_🇯🇵_💻_github.com/Ruk1ng001_38...
   password: 70a0b8103356
@@ -1296,12 +1298,10 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 27,38,41|🇯🇵 日本5|@stairnode
+  name: 27|🇯🇵 日本5|@ripaojiedian
   password: CFH2Q2LTQ1LC9CRD
   port: 18011
   server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
   type: ss
   udp: true
 - alterId: 0
@@ -1322,8 +1322,7 @@ proxies:
       Host: file.dingtalk.com
     path: /market?ed=512
 - cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 27,41|🇯🇵 日本|@stairnode
+  name: 27|🇯🇵 日本|@ripaojiedian 2
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -1331,18 +1330,34 @@ proxies:
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
-  tfo: false
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: '34|🇯🇵 日本v2|@ripaojiedian #2'
+  network: kcp
+  port: '7965'
+  server: 47.91.19.216
+  tls: false
+  type: vmess
+  uuid: 9a2e59c2-e8a1-4684-8df7-5a5ca5ae174a
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: '38|🇯🇵 日本|@ripaojiedian #3'
+  name: 38,41|🇯🇵 日本|@stairnode
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507031938065-kCgyohOaHg.download.microsoft.com
+    host: 202507031938065-JVU2imwfVB.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 38,41|🇯🇵 日本5|@stairnode
+  password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
+  port: 19832
+  server: h.cm2.xiaomi-api.xyz
   tfo: false
   type: ss

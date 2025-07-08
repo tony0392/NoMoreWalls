@@ -1182,15 +1182,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 1ab84625-b236-4813-85b5-029972bc730f
-- name: 19,25,34|🇯🇵 日本 V2CROSS.COM
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 6668
-  server: 43.203.122.115
-  skip-cert-verify: false
-  sni: baidu.com
-  tfo: false
-  type: trojan
-  udp: true
 - alterId: 2
   cipher: auto
   name: 21|JP日本(mibei77.com 米贝节点分享)
@@ -1298,38 +1289,34 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  name: 27|🇯🇵 日本5|@ripaojiedian
-  password: CFH2Q2LTQ1LC9CRD
-  port: 18011
-  server: ti3hyra4.slashdevslashnetslashtun.net
+  client-fingerprint: chrome
+  name: 27,38,41|🇯🇵 日本5|@stairnode
+  password: 0V80159CYIW98X9N
+  port: 18013
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  tfo: false
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 27,34,38,41|🇯🇵 日本6|@stairnode
-  network: ws
-  port: 443
-  server: nmtow.hjdfghfc.asia
-  skip-cert-verify: false
+  name: 27,38,41|🇯🇵 日本6|@stairnode
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 9898
+  server: 52.192.64.50
   tfo: false
-  tls: false
-  type: vmess
+  type: ss
   udp: true
-  uuid: 16f000d7-7805-459d-9130-200d00180b7c
-  ws-opts:
-    headers:
-      Host: file.dingtalk.com
-    path: /market?ed=512
 - cipher: rc4-md5
-  name: 27|🇯🇵 日本|@ripaojiedian 2
+  client-fingerprint: chrome
+  name: 27,38,41|🇯🇵 日本|@stairnode
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507031938065-UXanxWSRH3.download.microsoft.com
+    host: 202507031938065-yZ3kjukUbq.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
+  tfo: false
   type: ss
   udp: true
 - alterId: 0
@@ -1341,23 +1328,38 @@ proxies:
   tls: false
   type: vmess
   uuid: 9a2e59c2-e8a1-4684-8df7-5a5ca5ae174a
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 38,41|🇯🇵 日本|@stairnode
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202507031938065-JVU2imwfVB.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 38,41|🇯🇵 日本5|@stairnode
-  password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
-  port: 19832
-  server: h.cm2.xiaomi-api.xyz
-  tfo: false
-  type: ss
+- name: 34|日期：07-08
+  password: 512d9674-db12-44ca-a1b5-654244549b65
+  port: 443
+  server: cccvffgty.444752.xyz
+  skip-cert-verify: false
+  sni: cccvffgty.444752.xyz
+  type: trojan
+- name: 34|🇯🇵 _日本
+  password: Aimer
+  port: 2083
+  server: 103.116.7.103
+  skip-cert-verify: false
+  sni: epmx.ambercc.filegear-sg.me
+  type: trojan
+- name: '34|🇯🇵 _日本 #1'
+  password: Aimer
+  port: 2096
+  server: 103.116.7.220
+  skip-cert-verify: false
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+- name: '34|🇯🇵 _日本 #2'
+  password: Aimer
+  port: 2087
+  server: 103.116.7.100
+  skip-cert-verify: false
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+- name: '34|🇯🇵 _日本 #3'
+  password: Aimer
+  port: 2083
+  server: 103.116.7.133
+  skip-cert-verify: false
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan

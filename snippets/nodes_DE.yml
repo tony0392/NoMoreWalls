@@ -1,4 +1,12 @@
 proxies:
+- cipher: rc4-md5
+  ip-version: dual
+  name: '0,1,15,30,31|🇩🇪_DE_德国 #3'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 3|🇩🇪 IEPL专线 德国 NO1
@@ -76,14 +84,25 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20|_DE_
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.58
+  country: 🇪 DE
+  name: 15|🇪 DE_61
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 92.118.205.228
   type: ss
-- cipher: rc4-md5
-  name: 30|_DE_国
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
+- cipher: chacha20-ietf-poly1305
+  country: 🇪 DE
+  name: 15|🇪 DE_62
+  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
+  port: 54075
+  server: beta.mattenadene.org
   type: ss
+- country: 🇩🇪DE
+  name: 15|🇪DE_63
+  password: 665c944d-047d-4659-80d5-3eaac70241a9
+  port: 443
+  server: 139.162.158.172
+  skip-cert-verify: true
+  sni: de2-full.privateip.net
+  type: trojan
+  udp: true

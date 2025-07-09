@@ -1,17 +1,33 @@
 proxies:
-- ip-version: dual
-  name: 0,1,30,31,34|🇩🇪 _德国
-  password: 6gZh2JbfhQ
-  port: 1935
-  server: 104.248.18.1
-  skip-cert-verify: false
-  sni: x1-germany-digitalocean-v2.devefun.org
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: '0,1|🇳🇱_NL_荷兰->🇲🇩_MD_摩尔多瓦 #1'
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.158.171.141
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  ip-version: dual
+  name: 0,1,15,30|_GB_->_US_国
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: 85.210.120.237
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: '0,1|🇳🇱_NL_荷兰->🇺🇸_US_美国 #1'
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.158.171.146
+  type: ss
   udp: true
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: '0,1,31|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
+  name: '0,1,31|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -22,8 +38,23 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: 0,1,24,30,31|🇨🇳_CN_中国_1
+  network: ws
+  port: 30829
+  server: 111.26.109.79
+  skip-cert-verify: true
+  sni: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    path: /oooo
 - ip-version: dual
-  name: '0,1,30,31|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
+  name: '0,1,31|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
   network: ws
   password: fa050497-fc2a-45ee-89c0-96670c4ecb65
   port: 443
@@ -35,26 +66,6 @@ proxies:
     headers:
       host: rrr4.8906004.xyz
     path: /DZxb5QZyWgQPuXTwt
-- ip-version: dual
-  name: '0,1,30,31|🇨🇳_CN_中国->🇫🇷_FR_法国 #2'
-  password: e668cd78-6892-11eb-a8bf-f23c91cfbbc9
-  port: 31263
-  server: 183.240.179.89
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: '0,1,30,31|🇷🇺_RU_俄罗斯->🇺🇸_US_美国 #3'
-  network: ws
-  port: 23117
-  server: 185.143.221.140
-  type: vmess
-  udp: true
-  uuid: c850f3fc-d494-441c-bd38-83359240bda7
-  ws-opts:
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 3|🇸🇬 新加坡中转 02
   password: b103d104-bff0-4cee-b42a-85dad07e2036
@@ -3817,13 +3828,55 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 30|_CN_国->🇺🇸_US_美国
+  ip-version: dual
+  name: 30,31|🇨🇳_CN_中国_2
   network: ws
-  port: 30807
-  server: v7.heduian.link
+  port: 30835
+  server: 111.26.109.79
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国
+  network: ws
+  port: 30825
+  server: v25.heduian.link
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v7.heduian.link
+      host: v25.heduian.link
     path: /oooo
+- ip-version: dual
+  name: 31|🇩🇪_DE_德国->🇺🇸_US_美国
+  password: 6gZh2JbfhQ
+  port: 1935
+  server: 104.248.18.1
+  sni: x1-germany-digitalocean-v2.devefun.org
+  type: trojan
+  udp: true
+- ip-version: dual
+  name: 31|🇨🇳_CN_中国->🇫🇷_FR_法国
+  password: e668cd78-6892-11eb-a8bf-f23c91cfbbc9
+  port: 31263
+  server: 183.240.179.89
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 31|🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+  network: ws
+  port: 23117
+  server: 185.143.221.140
+  type: vmess
+  udp: true
+  uuid: c850f3fc-d494-441c-bd38-83359240bda7
+  ws-opts:
+    path: /

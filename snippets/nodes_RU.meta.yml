@@ -41,45 +41,69 @@ proxies:
   version: 5
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 15| RU_157
+  name: 15| RU_148
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
   type: ss
-- cipher: aes-256-cfb
-  country: 🇺 RU
-  name: 15|🇺 RU_158
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺 RU
-  name: 15|🇺 RU_159
+  name: 15|🇺 RU_149
   password: Y1hjiUmSgucgzYYJ0WtqwW
   port: 60117
   server: 77.246.102.112
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 15|🇺 RU_160
+  name: 15|🇺 RU_150
+  password: uQS5ntVqC00sSKkeNzUiD3
+  port: 42090
+  server: 89.23.103.125
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 15|🇺 RU_151
+  password: c40641c1f89e7acb
+  port: 57456
+  server: tr.vpnsparta.pro
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺 RU
+  name: 15|🇷🇺 RU_152
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 15|🇺 RU_153
   password: 0zyDRZ1XmNXaaCAN7KEA8a
   port: 28825
   server: 45.151.62.54
   type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 15,24|🟠_🇫🇷_💻_github.com/Ruk1ng001_34...
+  password: oVfvPkqJFCjOEbBsbmOtIiAuqgmEFOEf332F26C8lwEwQng9
+  port: 31348
+  server: 213.156.138.138
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺 RU
-  name: 15|🇺 RU_161
-  password: uQS5ntVqC00sSKkeNzUiD3
-  port: 42090
-  server: 89.23.103.125
+  name: 15|🇷🇺 RU_155
+  password: qscavF5UviIL-8V-E4raBA
+  port: 2222
+  server: 2.59.163.104
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 15|🇺 RU_162
+  name: 15|🇺 RU_156
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -93,7 +117,7 @@ proxies:
   country: 🇷🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 15|🇺 RU_163
+  name: 15|🇺 RU_157
   network: tcp
   port: 45215
   server: fa.fxlcn.com
@@ -102,13 +126,39 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
 - country: 🇺 RU
-  name: 15|🇷🇺 RU_164
+  name: 15|🇷🇺 RU_158
   password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
   port: 1066
   server: 194.104.147.74
   skip-cert-verify: true
   type: trojan
   udp: true
+- name: 19|俄罗斯+V2CROSS.COM
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2083
+  server: 194.53.53.249
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: '%2F%3Fed%3D2560%26PROT_TYPE%3Dtrojan'
+- name: 25|[Trojan] 🇷🇺 俄罗斯 V2CROSS.COM
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2083
+  server: 194.53.53.249
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  tfo: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan
 - alterId: 0
   cipher: auto
   name: 28|俄罗斯 002
@@ -147,31 +197,31 @@ proxies:
     headers:
       Host: epml.ambercc.filegear-sg.me
     path: /
-- name: 34|🇷🇺 _俄罗斯
-  password: Aimer
-  port: 443
-  server: 5.182.84.244
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
+- name: 34|🇷🇺 俄罗斯 V2CROSS.COM
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2083
+  server: 194.53.53.249
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
   type: trojan
-- name: '34|🇷🇺 _俄罗斯 #1'
+- name: '34|🇷🇺 _俄罗斯 #5'
   password: Aimer
   port: 8443
-  server: 46.254.93.243
+  server: 176.124.223.50
   skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
+  sni: epmx.ambercc.filegear-sg.me
   type: trojan
-- name: '34|🇷🇺 _俄罗斯 #2'
+- name: '34|🇷🇺 _俄罗斯 #4'
   password: Aimer
-  port: 2096
-  server: 5.182.85.255
+  port: 2083
+  server: 5.182.84.52
   skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
+  sni: epmx.ambercc.filegear-sg.me
   type: trojan
 - name: '34|🇷🇺 _俄罗斯 #3'
   password: Aimer
-  port: 2087
-  server: 46.254.92.142
+  port: 2083
+  server: 213.241.198.56
   skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
+  sni: epmx.ambercc.filegear-sg.me
   type: trojan

@@ -1,52 +1,67 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: '0,1,31|🇬🇧_GB_英国->🇺🇸_US_美国 #2'
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: 85.210.120.237
-  type: ss
-  udp: true
-- ip-version: dual
-  name: '0,1,31|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 4447
-  server: 36.151.192.27
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- alterId: 2
+- alterId: 0
   cipher: auto
-  ip-version: dual
-  name: '0,1,31|🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
+  name: 0,1,31|🇺🇸_US_美国->_CA__1
   network: ws
-  port: 30825
-  server: v25.heduian.link
+  port: 2086
+  server: 104.19.47.22
+  sni: ip2.1457230.xyz
   type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v25.heduian.link
-    path: /oooo
-- ip-version: dual
-  name: '0,1,31|🇨🇳_CN_中国->🇺🇸_US_美国_3 #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 8657
-  server: 36.156.102.123
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '0,1,11,27,31|🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知 #2'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 156.146.40.194
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- alterId: 0
+  cipher: auto
+  name: 0,1,31|🇺🇸_US_美国->🇨_CN_国_1
+  network: ws
+  port: 8080
+  server: 172.67.185.79
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+- alterId: 0
+  cipher: auto
+  name: 0,1,31|🇺🇸_US_美国->🇨_CN_中国_2
+  network: ws
+  port: 8080
+  server: 104.19.47.36
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+- cipher: chacha20-ietf-poly1305
+  name: 0,1,31|🇨🇳_CN_中国->🇸_US_美国
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20014
+  server: jp2.mhw7e2.online
   type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 0,1,31|🇺🇸_US_美国->🇨🇳_CN_中国_3
+  network: ws
+  port: 8080
+  server: 172.67.199.221
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+- cipher: chacha20-ietf-poly1305
+  name: 0,1,31|🇺🇸_US_美国->🇨🇳_CN_中国_4
+  password: 34a84ebb-d7fe-4356-8c9f-8f729e57efa2
+  port: 8080
+  server: 91.217.139.165
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 0,1,31|🇸_US_美国->🇨🇳_CN_中国_5
+  network: ws
+  port: 8080
+  server: 172.67.172.96
+  sni: ''
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+- alterId: 0
+  cipher: auto
+  name: 0,1,31|🇺🇸_US_美国->🇨🇦_CA_加拿大_2
+  network: ws
+  port: 2052
+  server: 104.19.42.49
+  sni: ''
+  type: vmess
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
 - cipher: chacha20-ietf-poly1305
   name: 3|🇸🇬 新加坡中转 02
   password: b103d104-bff0-4cee-b42a-85dad07e2036
@@ -3655,6 +3670,24 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 20,30|🇨🇳_CN_中国->_US_国
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- cipher: aes-256-cfb
+  name: 20,30|🇰🇷_KR_韩国->🇩_MD_摩尔多瓦
+  password: qwerREWQ@@
+  port: 15098
+  server: p222.panda001.net
+  type: ss
 - alterId: 0
   cipher: auto
   name: 25|[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国
@@ -3809,10 +3842,10 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 30|_CN_国->🇺🇸_US_美国
+  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国_1
   network: ws
-  port: 30829
-  server: v29.heduian.link
+  port: 30807
+  server: v7.heduian.link
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:

@@ -1,45 +1,20 @@
 proxies:
-- alterId: 0
+- alterId: 2
   cipher: auto
-  country: 🇨🇳 CN
-  h2-opts: {}
-  http-opts: {}
   ip-version: dual
-  name: '0,1,15,17,30,31|🇨🇳_CN_中国->🇺🇸_US_美国_1 #3'
-  network: tcp
-  port: 50002
-  server: 120.26.55.225
+  name: 0,1,31|🇨🇳_CN_中国
+  network: ws
+  port: 30807
+  server: v7.heduian.link
   skip-cert-verify: true
-  tls: false
+  sni: ''
   type: vmess
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
-- ip-version: dual
-  name: '0,1,30,31|🇬🇧_GB_英国->🇺🇸_US_美国 #2'
-  password: 84587c21-9938-42fc-a4b0-4f72dd72b7aa
-  port: 443
-  server: it.mjt000.com
-  sni: it.mjt000.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇱 PL
-  ip-version: dual
-  name: '0,1,15,24,30,31|🇨🇳_CN_中国->🇺🇸_US_美国_2 #3'
-  password: 7905a32b-012c-4711-89e2-73b6713eca75
-  port: 40030
-  server: pr.fastsoonlink.com
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: '0,1,30,31|🇺🇸_US_美国->🇷🇺_RU_俄罗斯 #2'
-  password: iUB0923RBA
-  port: 30067
-  server: 154.3.8.151
-  type: ss
-  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
 - alterId: 2
   cipher: auto
   ip-version: dual
@@ -54,6 +29,87 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: 0,1,30|🇨🇳_CN_中国->_DE_国
+  network: ws
+  port: 30833
+  server: v33.heduian.link
+  skip-cert-verify: false
+  sni: v33.heduian.link
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v33.heduian.link
+    path: /oooo
+- cipher: chacha20-ietf-poly1305
+  country: 🇱 PL
+  ip-version: dual
+  name: '0,1,15,31|🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
+  password: 7905a32b-012c-4711-89e2-73b6713eca75
+  port: 40030
+  server: pr.fastsoonlink.com
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: 0,1,30|🇳_CN_中国->🇨_CA_
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: false
+  sni: baidu.com
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v8.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 0,1,30|_US_->_CN_国
+  network: ws
+  port: 80
+  server: 162.159.137.178
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: 88a25bf3-18af-486f-b194-d87e976c230b
+  ws-opts:
+    headers:
+      host: 165067316419432025062817003642514.s15.chibaba.filegear-sg.me
+    path: /s15.html
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: '0,1|🇨🇳_CN_中国->🇺🇸_US_美国_3 #1'
+  network: ws
+  port: 30805
+  server: v5.heduian.link
+  skip-cert-verify: false
+  sni: ocbc.com
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v5.heduian.link
+    path: /oooo
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: '0,1|🇮🇪_IE_爱尔兰->🇵🇹_PT_葡萄牙 #1'
+  password: LXnnefYwEZM78mPUvl9wfz
+  port: 23456
+  server: 3.255.250.127
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 3|🇸🇬 新加坡中转 02
   password: b103d104-bff0-4cee-b42a-85dad07e2036
@@ -3662,6 +3718,16 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  ip-version: dual
+  name: 20,24,31|🇰🇷_KR_韩国
+  password: qwerREWQ@@
+  port: 15098
+  server: p222.panda001.net
+  tfo: true
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 25|[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国
@@ -3814,13 +3880,33 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
-- grpc-opts:
-    grpc-service-name: qwrqwtuotoiadsfhgjkzxnbcmakgkajhged=2048
-  name: 30|🇺🇸_US_美国->🇳_CN_中国
-  network: grpc
-  password: 94cf288d-f764-4ce9-a547-a7228144f056
-  port: 2053
-  server: gerxyz.bm04.xyz
-  sni: gerxyz.bm04.xyz
+- alterId: 2
+  cipher: auto
+  name: 30|🇳_CN_中国->🇸_US_美国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: false
+  sni: ocbc.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v37.heduian.link
+    path: /oooo
+- ip-version: dual
+  name: 31|🇬🇧_GB_英国->🇺🇸_US_美国
+  password: 84587c21-9938-42fc-a4b0-4f72dd72b7aa
+  port: 443
+  server: it.mjt000.com
+  sni: it.mjt000.com
   type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: 31|🇺🇸_US_美国->🇷🇺_RU_俄罗斯
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
+  type: ss
   udp: true

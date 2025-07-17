@@ -132,16 +132,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 7|美国NO.2
-  port: 45053
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fbc3bd6d-c221-4e32-bdd1-7adf997a94df
-- alterId: 0
-  cipher: auto
   name: 7|美国NO.1
   port: 45052
   server: haa.dashuai.cyou
@@ -149,7 +139,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: fbc3bd6d-c221-4e32-bdd1-7adf997a94df
+  uuid: bc2f0b67-88db-4bde-9369-d1d38f65c551
+- alterId: 0
+  cipher: auto
+  name: 7,8|美国NO.2-1A-GPT
+  port: 45053
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bc2f0b67-88db-4bde-9369-d1d38f65c551
 - alterId: 0
   cipher: auto
   name: 8|美国NO.2-1B-GPT
@@ -159,7 +159,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 11609a86-c2b5-4c2d-98bf-6ae4859fecd1
+  uuid: 8c804907-885a-4915-9fa7-58d70a7a69ca
 - name: 11|🇺🇸3 |  1.3MB/s|46%|Openai
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 443
@@ -292,7 +292,8 @@ proxies:
   username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
 - alterId: 2
   cipher: auto
-  name: '11,24,27,34|62 |  3.3MB/s|Openai|Gemini #2'
+  flow: ''
+  name: '11,18,27,34|62 |  3.3MB/s|Openai|Gemini #2'
   network: ws
   port: '30829'
   server: v29.heduian.link
@@ -647,14 +648,34 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 14|🇺🇸 美国 | USA 3
+  name: 14|🇦🇺 澳大利亚 | AUS
+  port: 45062
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 061c7ec6-87b7-42a8-9baf-fe2ccf79e554
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇦🇺 澳大利亚 | AUS 2
+  port: 45063
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 061c7ec6-87b7-42a8-9baf-fe2ccf79e554
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇺🇸 美国 | USA
   network: ws
-  port: 22077
+  port: 25009
   server: 45.135.135.229
   tls: false
   type: vmess
   udp: true
-  uuid: 525f7919-19b8-46a1-9828-5ea485c6a762
+  uuid: 97702a06-8205-402d-8382-c9321edb40a2
   ws-opts:
     path: /
 - alterId: 0
@@ -662,38 +683,48 @@ proxies:
   client-fingerprint: chrome
   name: 14|🇺🇸 美国 | USA 4
   network: ws
+  port: 25009
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 33b2598d-03a8-4d55-a057-0207f0c38adf
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇺🇸 美国 | USA 5
+  network: ws
   port: 22077
   server: 45.135.135.229
   tls: false
   type: vmess
   udp: true
-  uuid: 5c7d54b1-58ce-4c8b-94f0-cf7f789202af
+  uuid: 17797c71-d410-4f44-ab3a-9b117d0d8575
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 14|🇺🇸 美国 | USA 9
+  name: 14|🇺🇸 美国 | USA 7
+  port: 45053
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 061c7ec6-87b7-42a8-9baf-fe2ccf79e554
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇺🇸 美国 | USA 8
   network: ws
   port: 25009
   server: 45.135.135.229
   tls: false
   type: vmess
   udp: true
-  uuid: 525f7919-19b8-46a1-9828-5ea485c6a762
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇺🇸 美国 | USA 11
-  network: ws
-  port: 25009
-  server: 45.135.135.229
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a8bd7e1-99a1-479a-a714-4c177f7ebdb7
+  uuid: 17797c71-d410-4f44-ab3a-9b117d0d8575
   ws-opts:
     path: /
 - alterId: 0
@@ -706,7 +737,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 5c7d54b1-58ce-4c8b-94f0-cf7f789202af
+  uuid: 7606e7f6-6ff3-455a-8a18-55f43e017d9b
   ws-opts:
     path: /
 - alterId: 0
@@ -714,445 +745,180 @@ proxies:
   client-fingerprint: chrome
   name: 14|🇺🇸 美国 | USA 14
   network: ws
+  port: 25009
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 744bab57-1b7f-4f38-aef4-53987f3814d9
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇺🇸 美国 | USA 17
+  network: ws
   port: 22077
   server: 45.135.135.229
   tls: false
   type: vmess
   udp: true
-  uuid: 7a8bd7e1-99a1-479a-a714-4c177f7ebdb7
+  uuid: 97702a06-8205-402d-8382-c9321edb40a2
   ws-opts:
     path: /
-- cipher: aes-256-cfb
-  country: 🇺 US
-  name: 15| US_169
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
-  name: 15|🇸 US_170
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 154.205.159.100
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸 US
-  name: 15|🇸 US_171
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 15|🇺🇸 US_172
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.161
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸 US
-  name: 15|🇸 US_173
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.165.233.93
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 15|🇺🇸 US_174
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.163
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 15|🇺🇸 US_175
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.162
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 15|🇺🇸 US_176
-  password: shadowsocks
-  port: 443
-  server: 212.102.47.130
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇸 US
-  name: 15|🇺🇸 US_177
-  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
-  port: 54075
-  server: 94.131.21.174
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 15|🇸 US_178
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.167
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇺🇸 US
-  name: 15|🇺🇸 US_179
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 15|🇸 US_180
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.164
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇸 US
-  name: 15|🇺🇸 US_182
-  password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
-  port: 42029
-  server: 208.67.105.196
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
-  name: 15|🇺🇸 US_183
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 64.74.163.130
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
-  name: 15|🇸 US_184
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 38.54.45.129
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 15|🇺🇸 US_185
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.170
-  type: ss
 - alterId: 0
   cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇺🇸 US_186
-  network: tcp
-  port: 45271
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇸 US_187
+  client-fingerprint: chrome
+  name: 14|🇺🇸 美国 | USA 19
   network: ws
-  port: 443
-  server: 15.235.50.172
-  servername: baradiha.com
-  skip-cert-verify: true
-  tls: true
+  port: 25009
+  server: 45.135.135.229
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: baradiha.com
-  ws-path: /linkvws
+  udp: true
+  uuid: 2f7fa25f-602c-4334-8e4c-7c0fce1e60ea
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇸 US_188
-  network: tcp
-  port: 45247
-  server: fa.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇺🇸 US_189
-  network: tcp
-  port: 45287
-  server: lt.fxlcn.com
-  servername: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇺🇸 US_190
-  network: tcp
-  port: 45417
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇺🇸 US_191
+  client-fingerprint: chrome
+  name: 14|🇺🇸 美国 | USA 21
   network: ws
-  port: 443
-  server: 15.235.83.228
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
+  port: 22077
+  server: 45.135.135.229
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  ws-path: /linkvws
+  udp: true
+  uuid: 744bab57-1b7f-4f38-aef4-53987f3814d9
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇸 US_192
-  network: tcp
-  port: 45288
-  server: lt.fxlcn.com
-  servername: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇺🇸 US_193
-  network: tcp
-  port: 45237
-  server: fa.fxlcn.com
-  servername: fa.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇺🇸 US_194
-  network: tcp
-  port: 45258
-  server: lt.fxlcn.com
-  servername: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇺🇸 US_195
-  network: tcp
-  port: 30002
-  server: 38.12.83.217
-  servername: loosely.freetrade.link
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇺🇸 US_196
+  client-fingerprint: chrome
+  name: 14|🇺🇸 美国 | USA 23
   network: ws
-  port: 443
-  server: 23.158.56.241
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
+  port: 25009
+  server: 45.135.135.229
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  ws-path: /linkvws
+  udp: true
+  uuid: 1f5e3a0a-c1bc-4c7e-9f0f-891c40eab64a
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇺🇸 US_197
-  network: tcp
-  port: 45294
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇺🇸 US_198
-  network: tcp
-  port: 45276
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇺🇸 US_199
+  client-fingerprint: chrome
+  name: 14|🇺🇸 美国 | USA 27
   network: ws
-  port: 443
-  server: 15.235.83.227
-  servername: mankadmu.com
-  skip-cert-verify: true
-  tls: true
+  port: 22077
+  server: 45.135.135.229
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: mankadmu.com
-  ws-path: /linkvws
+  udp: true
+  uuid: 84459983-32f2-4618-aa17-08510daa12ea
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇸 US_200
-  network: tcp
-  port: 45235
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇸 US_201
+  client-fingerprint: chrome
+  name: 14|🇺🇸 美国 | USA 28
   network: ws
-  port: 443
-  server: www.vpslook.com
-  servername: wapkp01.5201314.cfd
-  skip-cert-verify: true
-  tls: true
+  port: 22077
+  server: 45.135.135.229
+  tls: false
   type: vmess
-  uuid: 4993f14e-5f9b-4249-dc43-99f4fdea84be
-  ws-headers:
-    HOST: wapkp01.5201314.cfd
-  ws-path: /4993f14e
+  udp: true
+  uuid: 1f5e3a0a-c1bc-4c7e-9f0f-891c40eab64a
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 15|🇺🇸 US_202
+  client-fingerprint: chrome
+  name: 14|🇺🇸 美国 | USA 30
   network: ws
-  port: 443
-  server: 38.99.82.193
-  servername: tilebani.com
-  skip-cert-verify: true
-  tls: true
+  port: 22077
+  server: 45.135.135.229
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: tilebani.com
-  ws-path: /linkvws
-- country: 🇸 US
-  name: 15|🇺🇸 US_203
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: cache-giver-wife.stark-industries.solutions
-  skip-cert-verify: true
-  type: trojan
   udp: true
-- country: 🇺🇸 US
-  name: 15|🇸 US_204
-  password: ea17601d-8ebf-4431-b815-4d644821ca7e
-  port: 443
-  server: kz.mjt000.com
-  skip-cert-verify: true
-  type: trojan
+  uuid: 2f7fa25f-602c-4334-8e4c-7c0fce1e60ea
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇺🇸 美国 | USA 33
+  network: ws
+  port: 25009
+  server: 45.135.135.229
+  tls: false
+  type: vmess
   udp: true
-- country: 🇺🇸 US
-  name: 15|🇺🇸 US_205
-  password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
-  port: 443
-  server: usla.mjt000.com
-  skip-cert-verify: true
-  type: trojan
+  uuid: 4bbdce30-1c11-4c19-925d-9621561dae2e
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇺🇸 美国 | USA 34
+  network: ws
+  port: 25009
+  server: 45.135.135.229
+  tls: false
+  type: vmess
   udp: true
-- country: 🇺🇸 US
-  name: 15|🇺🇸 US_206
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: guy-trace-lyric.stark-industries.solutions
-  skip-cert-verify: true
-  type: trojan
+  uuid: 84459983-32f2-4618-aa17-08510daa12ea
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇺🇸 美国 | USA 36
+  port: 45052
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
   udp: true
-- country: 🇺🇸 US
-  name: 15|🇸 US_207
-  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
-  port: 443
-  server: hinet.mjt000.com
-  skip-cert-verify: true
-  type: trojan
+  uuid: 061c7ec6-87b7-42a8-9baf-fe2ccf79e554
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇺🇸 美国 | USA 37
+  network: ws
+  port: 22077
+  server: 45.135.135.229
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇸US
-  name: 15|🇺🇸US_208
-  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
-  port: 52952
-  server: exchange.gameaurela.click
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸US
-  name: 15|🇸US_209
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.66
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸US
-  name: 15|🇸US_210
-  password: Yc2CtrIz8L
-  port: 16899
-  server: 2.58.87.221
-  type: ss
-- country: 🇸US
-  name: 15|🇸US_211
-  password: 0280b529-2747-4b7a-ab11-bad6453150b9
-  port: 443
-  server: fr2-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
+  uuid: 4bbdce30-1c11-4c19-925d-9621561dae2e
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇺🇸 美国 | USA 42
+  network: ws
+  port: 22077
+  server: 45.135.135.229
+  tls: false
+  type: vmess
   udp: true
+  uuid: 7606e7f6-6ff3-455a-8a18-55f43e017d9b
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇺🇸 美国 | USA 45
+  network: ws
+  port: 22077
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 33b2598d-03a8-4d55-a057-0207f0c38adf
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 19,24,25,34|🇺🇸 美国 CloudFlare节点
@@ -1516,42 +1282,6 @@ proxies:
   ws-headers:
     Host: usshs.atlen.dpdns.org
   ws-path: /c9ddb489-7b5e-49ed-8b21-749f4a0ed56d-vmess
-- name: 24|🟠_🇺🇸_💻_github.com/Ruk1ng001_32...
-  network: ws
-  password: ffcf7ec1-3e09-4821-b3d9-b426a107b73b
-  port: 443
-  server: 172.67.220.32
-  skip-cert-verify: false
-  sni: eEEfGty6.999836.XYz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: eEEfGty6.999836.XYz
-    path: /XmTzATQPJv9RO3xr1D40NK
-- alterId: 0
-  name: 24|🟡_🇺🇸_💻_github.com/Ruk1ng001_37...
-  password: c4njgwUZU5
-  port: 42538
-  server: 38.59.241.141
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alpn:
-  - http/1.1
-  name: 24|🟠_🇺🇸_💻_github.com/Ruk1ng001_38...
-  network: ws
-  password: 07a3df8f-2a2c-42f8-ad92-65889d90f3bf
-  port: 443
-  server: 172.67.135.37
-  skip-cert-verify: false
-  sni: rrrRrRRrT.459.pp.ua
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: rrrRrRRrT.459.pp.ua
-    path: /znQImc22ijDwVOkZfoq
 - name: 24|🟠_🇺🇸_💻_github.com/Ruk1ng001_63...
   network: ws
   password: fa050497-fc2a-45ee-89c0-96670c4ecb65
@@ -1564,19 +1294,20 @@ proxies:
     headers:
       Host: Rrr4.8906004.xYZ
     path: /DZxb5QZyWgQPuXTwt
-- name: 24|🟠_🇺🇸_💻_github.com/Ruk1ng001_34...
+- alterId: 0
+  cipher: auto
+  name: 24|🟠_🇺🇸_💻_github.com/Ruk1ng001_33...
   network: ws
-  password: f108e0e2-5f12-42b6-9e67-1b2f073ffb2b
-  port: 443
-  server: 172.67.219.196
-  skip-cert-verify: false
-  sni: CCcvfgt6.852224.dpdns.org
-  type: trojan
+  port: 80
+  server: 162.159.137.178
+  tls: false
+  type: vmess
   udp: true
+  uuid: 88a25bf3-18af-486f-b194-d87e976c230b
   ws-opts:
     headers:
-      Host: CCcvfgt6.852224.dpdns.org
-    path: /CA5bMmr2JMum8sDKRwvFCJq
+      Host: 165067316419432025062817003642514.s15.chibaba.filegear-sg.me
+    path: /s15.html
 - alpn:
   - http/1.1
   name: 24|🟡_🇺🇸_💻_github.com/Ruk1ng001_63...
@@ -1706,7 +1437,7 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 27,34,38,41|🇺🇸 美国4|@stairnode
+  name: 27,34,38,41,42|CN_speednode_0016
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 13855
   server: 36.151.251.48
@@ -1714,22 +1445,8 @@ proxies:
   sni: www.baidu.com
   type: trojan
   udp: true
-- name: '27,40,42|US_speednode_0206 #3'
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 198.62.62.67
-  skip-cert-verify: true
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
 - cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 27,38,41|🇺🇸 美国2|@stairnode
+  name: 27|🇺🇸 美国2|@ripaojiedian 2
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -1737,7 +1454,6 @@ proxies:
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
-  tfo: false
   type: ss
   udp: true
 - alterId: 0
@@ -2332,236 +2048,19 @@ proxies:
     headers:
       Host: sSsdCVfBGNjkI.931.PP.Ua
     path: /14Fziqw1hYgCXNutkS5H
-- name: '34|US_speednode_0206 #2'
-  password: tg-fq521free
-  port: 443
-  server: 198.62.62.67
-  skip-cert-verify: true
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-- name: 34|🇺🇸 _美国
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 104.17.68.85
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #1'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: nikon.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #2'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: ip.sb
-  skip-cert-verify: false
-  sni: ss.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #3'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 104.17.71.31
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #4'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: shopify.com
-  skip-cert-verify: false
-  sni: ss.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #5'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: wilson.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #6'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: shopify.com
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #7'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: nikon.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: ss.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #8'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: sullivan.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #9'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: otto.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #10'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: icook.tw
-  skip-cert-verify: false
-  sni: ss.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #11'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: wilson.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: ss.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #12'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 172.67.110.232
-  skip-cert-verify: false
-  sni: ss.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #13'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 8443
-  server: 162.159.129.67
-  skip-cert-verify: false
-  sni: ss.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #14'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 162.159.36.104
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #15'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: ip.sb
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #16'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 172.67.110.232
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #17'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: otto.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: ss.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #18'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: bowen.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #19'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 8443
-  server: 162.159.129.67
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #20'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: whatismyipaddress.com
-  skip-cert-verify: false
-  sni: ss.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #21'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: www.ddwhm.com
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #22'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 2096
-  server: 104.17.128.1
-  skip-cert-verify: false
-  sni: ss.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #23'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: bowen.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: ss.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #24'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: www.ddwhm.com
-  skip-cert-verify: false
-  sni: ss.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #25'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 162.159.36.104
-  skip-cert-verify: false
-  sni: ss.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #26'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: sullivan.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: ss.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #27'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: whatismyipaddress.com
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #28'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: icook.tw
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
-- name: '34|🇺🇸 _美国 #29'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 172.67.243.218
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '34|🇺🇸 _美国 #30'
+  name: 28|美国 062
   network: ws
-  port: '443'
-  server: 47.129.121.211
+  port: 443
+  server: JJJjjjjjmMMmM.4444926.XYZ
   tls: true
   type: vmess
-  uuid: 68211580-b263-4e1f-9861-8123a577dd94
+  uuid: dc50eb1d-244d-4711-b168-a101a5e6fb1b
   ws-opts:
     headers:
-      Host: gov.lsyx.asia
-    path: /cache
+      Host: jjjjjjjjmmmmm.4444926.xyz
+    path: /awmqq79B17rfnpXiNaWb
 - name: 35|美国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 658
@@ -2574,3 +2073,48 @@ proxies:
   server: 45.83.140.22
   skip-cert-verify: true
   type: trojan
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 38,41|🇺🇸 美国2|@stairnode
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202507121073737-knyhjj43dT.download.microsoft.com
+    mode: http
+  port: 8774
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - zula.ir
+    method: GET
+    path:
+    - /
+  name: 42|US_speednode_0105
+  network: http
+  port: 10410
+  server: 62.60.176.240
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f107a60e-af79-44c9-bc7e-b5707f3208e1
+- alterId: 0
+  cipher: auto
+  name: 42|US_speednode_0119
+  network: ws
+  port: 443
+  server: codepen.io
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  ws-opts:
+    headers:
+      Host: farid.1.berozha.ir
+    path: /us.kkp.me.eu.org/aa

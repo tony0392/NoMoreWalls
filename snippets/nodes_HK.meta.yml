@@ -199,6 +199,16 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
+  name: 7,8|香港NO.2-1A-GPT
+  port: 45051
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bc2f0b67-88db-4bde-9369-d1d38f65c551
+- alterId: 0
+  cipher: auto
   name: 7|香港
   port: 19901
   server: xg.dashuai.cyou
@@ -206,37 +216,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: fbc3bd6d-c221-4e32-bdd1-7adf997a94df
+  uuid: bc2f0b67-88db-4bde-9369-d1d38f65c551
 - alterId: 0
   cipher: auto
-  name: 7|香港NO.2
-  port: 45051
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fbc3bd6d-c221-4e32-bdd1-7adf997a94df
-- alterId: 0
-  cipher: auto
-  name: 7|香港NO.1
+  name: 7,8|香港NO.1-1A-GPT
   port: 45050
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: fbc3bd6d-c221-4e32-bdd1-7adf997a94df
-- alterId: 0
-  cipher: auto
-  name: 8|香港NO.2-1B
-  port: 45051
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 11609a86-c2b5-4c2d-98bf-6ae4859fecd1
+  uuid: bc2f0b67-88db-4bde-9369-d1d38f65c551
 - alterId: 0
   cipher: auto
   name: 8|香港NO.1-1B-GPT
@@ -246,7 +236,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 11609a86-c2b5-4c2d-98bf-6ae4859fecd1
+  uuid: 8c804907-885a-4915-9fa7-58d70a7a69ca
+- alterId: 0
+  cipher: auto
+  name: 8|香港NO.2-1B-GPT
+  port: 45051
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8c804907-885a-4915-9fa7-58d70a7a69ca
 - alterId: 0
   cipher: auto
   name: 10|HK | 香港 LB-1V
@@ -792,48 +792,26 @@ proxies:
   port: 443
   server: 44.244.21.125
   type: ss
-- cipher: chacha20-ietf
-  country: 🇰 HK
-  name: 15| HK_77
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- cipher: chacha20-ietf
-  country: 🇰 HK
-  name: 15|🇰 HK_78
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇭🇰 HK
-  name: 15|🇭🇰 HK_79
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 15|🇰 HK_80
-  password: qwerREWQ@@
-  port: 64759
-  server: 185.189.160.98
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇭🇰 HK
-  name: 15|🇰 HK_81
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.21.221
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇭🇰 HK
-  name: 15|🇭🇰 HK_82
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇭🇰 香港 | HKG
+  port: 45051
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 061c7ec6-87b7-42a8-9baf-fe2ccf79e554
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇭🇰 香港 | HKG 2
+  port: 19901
+  server: xg.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 061c7ec6-87b7-42a8-9baf-fe2ccf79e554
 - name: 21|HK香港(mibei77.com 米贝节点分享)
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
@@ -867,16 +845,14 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 27,38,41|🇭🇰 香港3|@stairnode
+  name: 27|🇭🇰 香港3|@ripaojiedian
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 22356
   server: ss.029.node-for-bigairport.win
-  tfo: false
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 27,34,38,41|🇭🇰 香港4|@stairnode
+  name: 27,34,38,41,42|CN_speednode_0015
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 1122
   server: 36.151.192.13
@@ -885,7 +861,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 27,34,38,41|🇭🇰 香港5|@stairnode
+  name: 27,34,38,41,42|CN_speednode_0014
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 9141
   server: 36.151.192.13
@@ -893,8 +869,7 @@ proxies:
   sni: www.baidu.com
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 27,34,38,41|🇭🇰 香港7|@stairnode
+- name: 27|🇭🇰 香港7|@ripaojiedian
   password: KFpSHZWq
   port: 16322
   server: 36.150.215.141
@@ -904,24 +879,13 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 27,38,41|🇭🇰 香港8|@stairnode
+  name: 27|🇭🇰 香港8|@ripaojiedian 2
   port: 45461
   server: 103.224.80.95
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   udp: true
-  uuid: b4ab63b7-d208-4be6-aa3b-f0f8c51c286d
-- alterId: 0
-  cipher: auto
-  name: '34|🇭🇰 香港8|@ripaojiedian #5'
-  network: tcp
-  port: '45461'
-  server: 103.224.80.95
-  tls: false
-  type: vmess
   uuid: b4ab63b7-d208-4be6-aa3b-f0f8c51c286d
 - alterId: 0
   cipher: auto
@@ -944,3 +908,18 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
+- alterId: 2
+  cipher: auto
+  name: 42|HK_speednode_0048
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /

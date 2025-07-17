@@ -146,17 +146,27 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: fbc3bd6d-c221-4e32-bdd1-7adf997a94df
+  uuid: bc2f0b67-88db-4bde-9369-d1d38f65c551
 - alterId: 0
   cipher: auto
-  name: 7|新加坡NO.2
+  name: 7,8|新加坡NO.2-1A
   port: 45055
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: fbc3bd6d-c221-4e32-bdd1-7adf997a94df
+  uuid: bc2f0b67-88db-4bde-9369-d1d38f65c551
+- alterId: 0
+  cipher: auto
+  name: 8|新加坡NO.2-1B
+  port: 45055
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8c804907-885a-4915-9fa7-58d70a7a69ca
 - alterId: 0
   cipher: auto
   name: 10|SG | 新加坡 LB-1A
@@ -685,24 +695,47 @@ proxies:
   port: 443
   server: 13.113.17.246
   type: ss
-- country: 🇬SG
-  name: 15|SG_164
-  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
-  port: 443
-  server: sg-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇸🇬 新加坡 | SGP
+  port: 45054
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
   udp: true
-- country: 🇬SG
-  name: 15|🇬SG_165
-  password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
-  port: 443
-  server: sg2-full.privateip.net
+  uuid: 061c7ec6-87b7-42a8-9baf-fe2ccf79e554
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 14|🇸🇬 新加坡 | SGP 2
+  port: 45055
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 061c7ec6-87b7-42a8-9baf-fe2ccf79e554
+- cipher: chacha20-ietf-poly1305
+  name: 24|🟡_🇸🇬_💻_github.com/Ruk1ng001_33...
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)32cf132:178330
+    mode: tls
+  port: 2377
+  server: 172.236.144.61
+  type: ss
+- client-fingerprint: chrome
+  name: 27,34,38,41,42|CN_speednode_0017
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 44123
+  server: 36.151.251.48
   skip-cert-verify: true
+  sni: www.baidu.com
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 27,34,38,41|🇸🇬 新加坡2|@stairnode
+  name: 27,34,38,41,42|CN_speednode_0013
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 32765
   server: 36.151.251.48
@@ -710,13 +743,13 @@ proxies:
   sni: www.baidu.com
   type: trojan
   udp: true
-- name: 34|🇸🇬 每天更新，请加电报群防止失联
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 2096
-  server: 104.17.128.1
-  skip-cert-verify: false
-  sni: cc.ylka.dpdns.org
-  type: trojan
+- cipher: aes-128-gcm
+  name: 27|🇸🇬 新加坡3|@ripaojiedian
+  password: /6Go+gsioWhN1fM4MiOLwS4oWVF+r3UGv2SjSApfS0A=
+  port: 39856
+  server: 165.154.236.149
+  type: ss
+  udp: true
 - name: 35|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

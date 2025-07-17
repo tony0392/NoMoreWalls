@@ -94,17 +94,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: fbc3bd6d-c221-4e32-bdd1-7adf997a94df
+  uuid: bc2f0b67-88db-4bde-9369-d1d38f65c551
 - alterId: 0
   cipher: auto
-  name: 7|台湾2
+  name: 7,8|台湾2-1A-GPT
   port: 45077
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: fbc3bd6d-c221-4e32-bdd1-7adf997a94df
+  uuid: bc2f0b67-88db-4bde-9369-d1d38f65c551
 - alterId: 0
   cipher: auto
   name: 8|台湾2-1B-GPT
@@ -114,7 +114,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 11609a86-c2b5-4c2d-98bf-6ae4859fecd1
+  uuid: 8c804907-885a-4915-9fa7-58d70a7a69ca
 - client-fingerprint: chrome
   name: 11,24,39|TW Moon
   password: exaxgqkKkd0TAMrCxeonWg==
@@ -125,11 +125,16 @@ proxies:
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- country: 🇼 TW
-  name: 15| TW_167
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 443
-  server: taifo03a.kbservice.club
+- name: 42|TW_speednode_0079
+  network: ws
+  password: ttfang
+  port: 81
+  server: 103.106.230.186
   skip-cert-verify: true
+  sni: ttfang.fange.me
   type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /

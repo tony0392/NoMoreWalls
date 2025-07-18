@@ -488,14 +488,14 @@ proxies:
   uuid: ce5a62a2-77b1-4da5-8cb1-d8b5d64418bb
 - alterId: 0
   cipher: auto
-  name: 7|日本NO.1-1A
-  port: 45056
-  server: haa.dashuai.cyou
+  name: 7|日本NO.2-1B
+  port: 45057
+  server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: bc2f0b67-88db-4bde-9369-d1d38f65c551
+  uuid: 39984e0a-b49d-4ea1-bcd2-a3c4b7d18f7f
 - alterId: 0
   cipher: auto
   name: 7|日本NO.1-1B
@@ -505,27 +505,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 8c804907-885a-4915-9fa7-58d70a7a69ca
-- alterId: 0
-  cipher: auto
-  name: 7|日本NO.2-1B
-  port: 45057
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8c804907-885a-4915-9fa7-58d70a7a69ca
-- alterId: 0
-  cipher: auto
-  name: 7|日本NO.2-1A
-  port: 45057
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bc2f0b67-88db-4bde-9369-d1d38f65c551
+  uuid: 39984e0a-b49d-4ea1-bcd2-a3c4b7d18f7f
 - alterId: 0
   cipher: auto
   name: 9|JP | 日本 LB-1T
@@ -1093,23 +1073,24 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: rc4-md5
-  name: 26|🇯🇵 日本|@ripaojiedian
-  password: efanccyun
-  port: 8766
-  server: cn01.efan8867801.xyz
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
-  name: 26|🇯🇵 日本2|@ripaojiedian
+  name: 23|🟡_🇯🇵_💻_github.com/Ruk1ng001_37...
   password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
   port: 636
-  server: 137.220.191.40
+  server: 137.220.191.38
+  tfo: false
   type: ss
-  udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 26,37,40|🇯🇵 日本2|@stairnode
+  name: 23,26,37,40|🇯🇵 日本2|@stairnode
   password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
@@ -1124,13 +1105,34 @@ proxies:
   tfo: false
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: 23|❓_🇯🇵_💻_github.com/Ruk1ng001_61...
+  password: awsps0501
+  port: 443
+  server: 3.113.25.232
+  tfo: false
+  type: ss
+- cipher: rc4-md5
+  name: 26|🇯🇵 日本|@ripaojiedian
+  password: efanccyun
+  port: 8766
+  server: cn01.efan8867801.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 26|🇯🇵 日本2|@ripaojiedian
+  password: 823e135ed103
+  port: 636
+  server: 137.220.191.40
+  type: ss
+  udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 26,37,40|🇯🇵 日本|@stairnode
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507121073737-knyhjj43dT.download.microsoft.com
+    host: 202507121073737-O8zUIKjU25.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz

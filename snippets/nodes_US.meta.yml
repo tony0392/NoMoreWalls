@@ -1,4 +1,11 @@
 proxies:
+- cipher: aes-256-cfb
+  country: 🇺🇸 US
+  name: '0,1,14,29,30|🇺🇸_US_美国 #2'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.54.57.90
+  type: ss
 - alterId: 0
   cipher: auto
   name: 2|🇺🇸 IEPL专线 美国 NO1
@@ -152,16 +159,6 @@ proxies:
   uuid: ce5a62a2-77b1-4da5-8cb1-d8b5d64418bb
 - alterId: 0
   cipher: auto
-  name: 7|美国NO.2-1A-GPT
-  port: 45053
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bc2f0b67-88db-4bde-9369-d1d38f65c551
-- alterId: 0
-  cipher: auto
   name: 7|美国NO.2-1B-GPT
   port: 45053
   server: xdd.dashuai.cyou
@@ -169,7 +166,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 8c804907-885a-4915-9fa7-58d70a7a69ca
+  uuid: 39984e0a-b49d-4ea1-bcd2-a3c4b7d18f7f
 - name: 10|🇺🇸3 |  1.3MB/s|46%|Openai
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 443
@@ -302,11 +299,11 @@ proxies:
   username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
 - alterId: 2
   cipher: auto
-  flow: ''
-  name: '10,17,26,33|62 |  3.3MB/s|Openai|Gemini #2'
+  name: '10,23,26,33|🇨🇳_CN_中国 #4'
   network: ws
-  port: '30829'
+  port: 30829
   server: v29.heduian.link
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -658,40 +655,66 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇺🇸 美国 | USA 5
+  name: 13|🇺🇸 美国 | USA 2
   network: ws
   port: 25009
   server: 45.135.135.229
   tls: false
   type: vmess
   udp: true
-  uuid: 1f5e3a0a-c1bc-4c7e-9f0f-891c40eab64a
+  uuid: 5cfe3a2b-ccb4-49ad-9dd4-d414cf729fa2
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇺🇸 美国 | USA 6
+  name: 13|🇺🇸 美国 | USA 7
   network: ws
   port: 22077
   server: 45.135.135.229
   tls: false
   type: vmess
   udp: true
-  uuid: 97702a06-8205-402d-8382-c9321edb40a2
+  uuid: 744bab57-1b7f-4f38-aef4-53987f3814d9
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇺🇸 美国 | USA 12
+  name: 13|🇺🇸 美国 | USA 8
   network: ws
-  port: 25009
+  port: 22077
   server: 45.135.135.229
   tls: false
   type: vmess
   udp: true
-  uuid: 33b2598d-03a8-4d55-a057-0207f0c38adf
+  uuid: 5cfe3a2b-ccb4-49ad-9dd4-d414cf729fa2
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国 | USA 10
+  network: ws
+  port: 22077
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 20ad5340-5b6e-452d-9a37-b1f80217a387
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国 | USA 13
+  network: ws
+  port: 22077
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2f7fa25f-602c-4334-8e4c-7c0fce1e60ea
   ws-opts:
     path: /
 - alterId: 0
@@ -704,7 +727,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 33b2598d-03a8-4d55-a057-0207f0c38adf
+  uuid: 17797c71-d410-4f44-ab3a-9b117d0d8575
   ws-opts:
     path: /
 - alterId: 0
@@ -717,7 +740,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 17797c71-d410-4f44-ab3a-9b117d0d8575
+  uuid: 009ba594-257e-410a-8586-3875bcef7363
   ws-opts:
     path: /
 - alterId: 0
@@ -725,12 +748,12 @@ proxies:
   client-fingerprint: chrome
   name: 13|🇺🇸 美国 | USA 18
   network: ws
-  port: 22077
+  port: 25009
   server: 45.135.135.229
   tls: false
   type: vmess
   udp: true
-  uuid: 84459983-32f2-4618-aa17-08510daa12ea
+  uuid: 744bab57-1b7f-4f38-aef4-53987f3814d9
   ws-opts:
     path: /
 - alterId: 0
@@ -743,46 +766,20 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 744bab57-1b7f-4f38-aef4-53987f3814d9
+  uuid: 20ad5340-5b6e-452d-9a37-b1f80217a387
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇺🇸 美国 | USA 22
-  network: ws
-  port: 25009
-  server: 45.135.135.229
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 97702a06-8205-402d-8382-c9321edb40a2
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13|🇺🇸 美国 | USA 23
-  network: ws
-  port: 25009
-  server: 45.135.135.229
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 84459983-32f2-4618-aa17-08510daa12ea
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13|🇺🇸 美国 | USA 26
+  name: 13|🇺🇸 美国 | USA 24
   network: ws
   port: 22077
   server: 45.135.135.229
   tls: false
   type: vmess
   udp: true
-  uuid: 1f5e3a0a-c1bc-4c7e-9f0f-891c40eab64a
+  uuid: c50c88e4-4ddb-4276-bf1a-b410d9ebd4a3
   ws-opts:
     path: /
 - alterId: 0
@@ -795,20 +792,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2f7fa25f-602c-4334-8e4c-7c0fce1e60ea
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13|🇺🇸 美国 | USA 28
-  network: ws
-  port: 25009
-  server: 45.135.135.229
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4bbdce30-1c11-4c19-925d-9621561dae2e
+  uuid: c50c88e4-4ddb-4276-bf1a-b410d9ebd4a3
   ws-opts:
     path: /
 - alterId: 0
@@ -821,13 +805,65 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7606e7f6-6ff3-455a-8a18-55f43e017d9b
+  uuid: 72ef8cb0-9804-473f-b921-451a05976d77
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇺🇸 美国 | USA 32
+  name: 13|🇺🇸 美国 | USA 30
+  network: ws
+  port: 22077
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 97702a06-8205-402d-8382-c9321edb40a2
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国 | USA 31
+  network: ws
+  port: 25009
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 97702a06-8205-402d-8382-c9321edb40a2
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国 | USA 33
+  network: ws
+  port: 25009
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 009ba594-257e-410a-8586-3875bcef7363
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国 | USA 39
+  network: ws
+  port: 25009
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2f7fa25f-602c-4334-8e4c-7c0fce1e60ea
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇺🇸 美国 | USA 42
   network: ws
   port: 25009
   server: 45.135.135.229
@@ -840,160 +876,161 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇺🇸 美国 | USA 33
+  name: 13|🇺🇸 美国 | USA 43
   network: ws
   port: 22077
   server: 45.135.135.229
   tls: false
   type: vmess
   udp: true
-  uuid: 2f7fa25f-602c-4334-8e4c-7c0fce1e60ea
+  uuid: aa6ba091-c1c9-4975-9414-174f779cbc0c
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇺🇸 美国 | USA 34
+  name: 13|🇺🇸 美国 | USA 44
   network: ws
   port: 22077
   server: 45.135.135.229
   tls: false
   type: vmess
   udp: true
-  uuid: 4bbdce30-1c11-4c19-925d-9621561dae2e
+  uuid: 72ef8cb0-9804-473f-b921-451a05976d77
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13|🇺🇸 美国 | USA 37
+  name: 13|🇺🇸 美国 | USA 48
   network: ws
-  port: 22077
+  port: 25009
   server: 45.135.135.229
   tls: false
   type: vmess
   udp: true
-  uuid: 7606e7f6-6ff3-455a-8a18-55f43e017d9b
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13|🇺🇸 美国 | USA 42
-  network: ws
-  port: 22077
-  server: 45.135.135.229
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 744bab57-1b7f-4f38-aef4-53987f3814d9
+  uuid: aa6ba091-c1c9-4975-9414-174f779cbc0c
   ws-opts:
     path: /
 - cipher: aes-128-gcm
   country: 🇸 US
-  name: 14| US_170
+  name: 14| US_172
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 14|🇸 US_173
   password: shadowsocks
   port: 443
   server: 156.146.62.161
   type: ss
 - cipher: aes-128-gcm
   country: 🇸 US
-  name: 14|🇸 US_171
+  name: 14|🇺🇸 US_174
   password: shadowsocks
   port: 443
-  server: 156.146.62.162
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇸 US
-  name: 14|🇺🇸 US_172
-  password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
-  port: 42029
-  server: 208.67.105.196
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸 US
-  name: 14,41|KR_speednode_0055
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇺 US
-  name: 14|🇸 US_174
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
+  server: 156.146.38.167
   type: ss
 - cipher: aes-128-gcm
   country: 🇸 US
   name: 14|🇺🇸 US_175
   password: shadowsocks
   port: 443
-  server: 156.146.62.163
+  server: 156.146.62.162
   type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸 US
   name: 14|🇺🇸 US_176
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.164
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸 US
-  name: 14|🇺🇸 US_177
   password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
+  port: 990
+  server: 154.205.159.100
   type: ss
-- cipher: aes-128-gcm
+- cipher: chacha20-ietf-poly1305
   country: 🇸 US
-  name: 14|🇺🇸 US_178
-  password: shadowsocks
-  port: 443
-  server: 212.102.47.130
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 14|🇺🇸 US_179
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.170
+  name: 14|🇸 US_177
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 38.54.45.129
   type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸 US
-  name: 14|🇺🇸 US_180
+  name: 14|🇺🇸 US_178
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.165.233.93
   type: ss
 - cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 14|🇺🇸 US_181
+  country: 🇸 US
+  name: 14|🇸 US_179
   password: shadowsocks
   port: 443
-  server: 156.146.38.167
+  server: 212.102.47.130
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸 US
+  name: 14|🇺🇸 US_180
+  password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
+  port: 42029
+  server: 208.67.105.196
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇸 US
-  name: 14|🇺🇸 US_182
+  name: 14|🇺🇸 US_181
   password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
   port: 54075
   server: 94.131.21.174
   type: ss
 - cipher: chacha20-ietf-poly1305
+  country: 🇺🇸 US
+  name: 14|🇸 US_182
+  password: nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf
+  port: 42501
+  server: 208.67.105.87
+  type: ss
+- cipher: aes-128-gcm
   country: 🇸 US
   name: 14|🇸 US_183
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.164
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇺🇸 US
+  name: 14|🇺🇸 US_184
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.163
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇸 US
+  name: 14|🇺🇸 US_185
   password: f8f7aCzcPKbsF8p3
   port: 990
-  server: 38.54.45.129
+  server: 38.165.233.18
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸 US
+  name: 14,39,41|KR_speednode_0055
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇺🇸 US
+  name: 14|🇺🇸 US_187
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇸 US_184
+  name: 14|🇺🇸 US_190
   network: ws
   port: 8443
   server: us01.sh-cloudflare.sbs
@@ -1001,58 +1038,7 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: bcbc9693-e772-4956-9179-ba1633a56d31
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_185
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 075ac0dd-df89-407a-aa82-3c8d20320c70
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_186
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 167395f5-b3b5-4327-844f-4c23f5aac9da
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_187
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2703867d-dd8f-4f7f-93f4-ac6e4f56c7e8
+  uuid: 6121bf03-1ed9-4b57-9b79-d1af73058054
   ws-headers:
     HOST: us01.sh-cloudflare.sbs
   ws-path: /
@@ -1061,212 +1047,23 @@ proxies:
   country: 🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺🇸 US_188
-  network: tcp
-  port: 45235
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_189
-  network: tcp
-  port: 45276
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_190
-  network: tcp
-  port: 45294
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_191
+  name: 14|🇸 US_191
   network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
+  port: 52511
+  server: aflzzul.meiquankongjian.com
+  servername: aflzzul.meiquankongjian.com
   skip-cert-verify: true
-  tls: true
   type: vmess
-  uuid: 080a01a7-778a-4c55-8741-ba1571ef022f
+  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
   ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
+    HOST: aflzzul.meiquankongjian.com
+  ws-path: /564dfa20/
 - alterId: 0
   cipher: auto
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺🇸 US_192
-  network: tcp
-  port: 45271
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_193
-  network: tcp
-  port: 45291
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_194
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 02862da5-e857-48b3-adc7-5f74c1918dee
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_195
-  network: tcp
-  port: 45247
-  server: fa.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_196
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8924fc2b-da1a-4506-b197-8852a2329a9f
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_197
-  network: tcp
-  port: 45237
-  server: fa.fxlcn.com
-  servername: fa.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_198
-  network: tcp
-  port: 45287
-  server: lt.fxlcn.com
-  servername: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_199
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2971d0cb-34c9-4b58-be3b-d9a330be19ad
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_200
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c76d3091-7065-440b-b83e-14ce4fd8933d
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_201
-  network: tcp
-  port: 30002
-  server: 38.12.83.217
-  servername: loosely.freetrade.link
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_202
+  name: 14|🇸 US_192
   network: ws
   port: 8443
   server: us01.sh-cloudflare.sbs
@@ -1283,7 +1080,7 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺🇸 US_203
+  name: 14|🇺🇸 US_193
   network: ws
   port: 443
   server: 15.235.83.228
@@ -1297,271 +1094,10 @@ proxies:
   ws-path: /linkvws
 - alterId: 0
   cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_204
-  network: ws
-  port: 443
-  server: www.vpslook.com
-  servername: wapkp01.5201314.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 4993f14e-5f9b-4249-dc43-99f4fdea84be
-  ws-headers:
-    HOST: wapkp01.5201314.cfd
-  ws-path: /4993f14e
-- alterId: 0
-  cipher: auto
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺🇸 US_205
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: be26173c-5573-461a-b302-655fd5080fdc
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_206
-  network: tcp
-  port: 45258
-  server: lt.fxlcn.com
-  servername: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_207
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ed573080-0369-4cd3-9a88-e99ab171a8b1
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_208
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 10749b58-d2ce-48db-997a-986d7c2dec35
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_209
-  network: tcp
-  port: 45288
-  server: lt.fxlcn.com
-  servername: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_210
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6121bf03-1ed9-4b57-9b79-d1af73058054
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_211
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f10598e2-c606-4945-bfde-e5730756a2dd
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_212
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5d1cde6c-b4c2-47da-b496-ece406eba703
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_213
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: d8e2368a-2546-4f85-b9ce-83b81a03fe3e
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_214
-  network: tcp
-  port: 45417
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_215
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9d3a7409-c154-41ef-aac6-344484fca891
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_216
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2bd0c9d7-f239-437e-a1e1-6cf830af2a1a
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_217
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: dabd02ee-f986-4eae-a315-a811b51c4472
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_218
-  network: ws
-  port: 52512
-  server: aflzzul.meiquankongjian.com
-  servername: aflzzul.meiquankongjian.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
-  ws-headers:
-    HOST: aflzzul.meiquankongjian.com
-  ws-path: /564dfa20/
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_219
-  network: ws
-  port: 443
-  server: 15.235.50.172
-  servername: baradiha.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: baradiha.com
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_220
+  name: 14|🇺🇸 US_194
   network: ws
   port: 443
   server: 23.158.56.241
@@ -1578,7 +1114,7 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺🇸 US_221
+  name: 14|🇺🇸 US_195
   network: ws
   port: 8443
   server: us01.sh-cloudflare.sbs
@@ -1586,41 +1122,7 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 337edede-50e3-4a26-97e7-7a1013e2f1d5
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_222
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ed924eac-e439-4eee-916c-b76f3ec7db07
-  ws-headers:
-    HOST: us01.sh-cloudflare.sbs
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_223
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3988dfba-e9ee-40ba-a87e-553aee1c5993
+  uuid: c76d3091-7065-440b-b83e-14ce4fd8933d
   ws-headers:
     HOST: us01.sh-cloudflare.sbs
   ws-path: /
@@ -1629,7 +1131,94 @@ proxies:
   country: 🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺🇸 US_224
+  name: 14|🇺🇸 US_196
+  network: tcp
+  port: 45235
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇸 US_197
+  network: tcp
+  port: 45276
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇸 US_198
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: bcbc9693-e772-4956-9179-ba1633a56d31
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_199
+  network: tcp
+  port: 30002
+  server: 38.12.83.217
+  servername: loosely.freetrade.link
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇸 US_200
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8924fc2b-da1a-4506-b197-8852a2329a9f
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_201
+  network: tcp
+  port: 45271
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_202
   network: ws
   port: 443
   server: 38.99.82.193
@@ -1646,7 +1235,492 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
+  name: 14|🇺🇸 US_203
+  network: tcp
+  port: 45291
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_204
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ec06b542-fab9-442e-8f89-0204db3e08fb
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_205
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 408a7837-f6d1-4f0f-904f-81d367f534b4
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_206
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2703867d-dd8f-4f7f-93f4-ac6e4f56c7e8
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_207
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 167395f5-b3b5-4327-844f-4c23f5aac9da
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_208
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ed573080-0369-4cd3-9a88-e99ab171a8b1
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_209
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 080a01a7-778a-4c55-8741-ba1571ef022f
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_210
+  network: tcp
+  port: 45237
+  server: fa.fxlcn.com
+  servername: fa.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_211
+  network: tcp
+  port: 45287
+  server: lt.fxlcn.com
+  servername: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_212
+  network: tcp
+  port: 45247
+  server: fa.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_213
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2971d0cb-34c9-4b58-be3b-d9a330be19ad
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_214
+  network: ws
+  port: 52513
+  server: aflzzul.meiquankongjian.com
+  servername: aflzzul.meiquankongjian.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
+  ws-headers:
+    HOST: aflzzul.meiquankongjian.com
+  ws-path: /564dfa20/
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_215
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: be26173c-5573-461a-b302-655fd5080fdc
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_216
+  network: ws
+  port: 443
+  server: www.vpslook.com
+  servername: wapkp01.5201314.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4993f14e-5f9b-4249-dc43-99f4fdea84be
+  ws-headers:
+    HOST: wapkp01.5201314.cfd
+  ws-path: /4993f14e
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_217
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 075ac0dd-df89-407a-aa82-3c8d20320c70
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_218
+  network: tcp
+  port: 45258
+  server: lt.fxlcn.com
+  servername: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_219
+  network: tcp
+  port: 45288
+  server: lt.fxlcn.com
+  servername: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_220
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 10749b58-d2ce-48db-997a-986d7c2dec35
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_221
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2bd0c9d7-f239-437e-a1e1-6cf830af2a1a
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_222
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f10598e2-c606-4945-bfde-e5730756a2dd
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_223
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5d1cde6c-b4c2-47da-b496-ece406eba703
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_224
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d8e2368a-2546-4f85-b9ce-83b81a03fe3e
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
   name: 14|🇺🇸 US_225
+  network: tcp
+  port: 45417
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_226
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9d3a7409-c154-41ef-aac6-344484fca891
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_227
+  network: ws
+  port: 443
+  server: 15.235.83.227
+  servername: mankadmu.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: mankadmu.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_228
+  network: ws
+  port: 443
+  server: 15.235.50.172
+  servername: baradiha.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: baradiha.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_229
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 337edede-50e3-4a26-97e7-7a1013e2f1d5
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_230
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ed924eac-e439-4eee-916c-b76f3ec7db07
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_231
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3988dfba-e9ee-40ba-a87e-553aee1c5993
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_232
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 02862da5-e857-48b3-adc7-5f74c1918dee
+  ws-headers:
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_233
   network: ws
   port: 8443
   server: us01.sh-cloudflare.sbs
@@ -1663,24 +1737,24 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺🇸 US_226
+  name: 14|🇺🇸 US_234
   network: ws
-  port: 443
-  server: 15.235.83.227
-  servername: mankadmu.com
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: dabd02ee-f986-4eae-a315-a811b51c4472
   ws-headers:
-    HOST: mankadmu.com
-  ws-path: /linkvws
+    HOST: us01.sh-cloudflare.sbs
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺🇸 US_227
+  name: 14|🇺🇸 US_235
   network: ws
   port: 8443
   server: us01.sh-cloudflare.sbs
@@ -1697,7 +1771,7 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺🇸 US_228
+  name: 14|🇺🇸 US_236
   network: ws
   port: 8443
   server: us01.sh-cloudflare.sbs
@@ -1710,7 +1784,7 @@ proxies:
     HOST: us01.sh-cloudflare.sbs
   ws-path: /
 - country: 🇸 US
-  name: 14|🇺🇸 US_229
+  name: 14|🇺🇸 US_237
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
   server: hinet.mjt000.com
@@ -1718,15 +1792,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 14|🇸 US_230
-  password: ea17601d-8ebf-4431-b815-4d644821ca7e
-  port: 443
-  server: kz.mjt000.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇺🇸 US
-  name: 14|🇺🇸 US_231
+  name: 14|🇸 US_238
   password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
   port: 443
   server: guy-trace-lyric.stark-industries.solutions
@@ -1734,7 +1800,15 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 14|🇺🇸 US_232
+  name: 14|🇺🇸 US_239
+  password: ea17601d-8ebf-4431-b815-4d644821ca7e
+  port: 443
+  server: kz.mjt000.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇺🇸 US
+  name: 14|🇺🇸 US_240
   password: e6a2e741-0fce-440b-910c-b81325e2263a
   port: 443
   server: cache-giver-wife.stark-industries.solutions
@@ -1742,29 +1816,36 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 14|🇺🇸 US_233
+  name: 14|🇺🇸 US_241
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: aes-128-gcm
+  country: 🇺🇸US
+  name: 14|🇺🇸US_242
+  password: Yc2CtrIz8L
+  port: 16899
+  server: 2.58.87.221
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  name: 14|🇺🇸US_234
+  name: 14|🇺🇸US_243
   password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
   port: 52952
   server: exchange.gameaurela.click
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇺🇸US
-  name: 14|🇸US_235
+  country: 🇸US
+  name: 14|🇺🇸US_244
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.66
   type: ss
 - country: 🇸US
-  name: 14|🇸US_236
+  name: 14|🇸US_245
   password: 0280b529-2747-4b7a-ab11-bad6453150b9
   port: 443
   server: fr2-full.privateip.net
@@ -1805,7 +1886,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 18,24,33|🏁RELAY-104.21.20.162-0641
+  name: 18,24,33|🏁RELAY-104.21.20.162-0663
   network: ws
   port: 8443
   server: 104.21.20.162
@@ -2135,32 +2216,37 @@ proxies:
   ws-headers:
     Host: usshs.atlen.dpdns.org
   ws-path: /c9ddb489-7b5e-49ed-8b21-749f4a0ed56d-vmess
-- name: 23|🟠_🇺🇸_💻_github.com/Ruk1ng001_63...
-  network: ws
-  password: fa050497-fc2a-45ee-89c0-96670c4ecb65
-  port: 443
-  server: 104.21.63.135
-  skip-cert-verify: false
-  sni: Rrr4.8906004.xYZ
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Rrr4.8906004.xYZ
-    path: /DZxb5QZyWgQPuXTwt
 - alterId: 0
   cipher: auto
-  name: 23|🟠_🇺🇸_💻_github.com/Ruk1ng001_33...
-  network: ws
-  port: 80
-  server: 162.159.137.178
+  http-opts:
+    headers:
+      Host:
+      - zula.ir
+    method: GET
+    path:
+    - /
+  name: 23,39,41|US_speednode_0105
+  network: http
+  port: 10410
+  server: 62.60.176.240
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 88a25bf3-18af-486f-b194-d87e976c230b
+  uuid: f107a60e-af79-44c9-bc7e-b5707f3208e1
+- name: 23|🟠_🇺🇸_💻_github.com/Ruk1ng001_34...
+  network: ws
+  password: f108e0e2-5f12-42b6-9e67-1b2f073ffb2b
+  port: 443
+  server: 172.67.219.196
+  skip-cert-verify: false
+  sni: CCcvfgt6.852224.dpdns.org
+  type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: 165067316419432025062817003642514.s15.chibaba.filegear-sg.me
-    path: /s15.html
+      Host: CCcvfgt6.852224.dpdns.org
+    path: /CA5bMmr2JMum8sDKRwvFCJq
 - alpn:
   - http/1.1
   name: 23|🟡_🇺🇸_💻_github.com/Ruk1ng001_63...
@@ -2168,6 +2254,21 @@ proxies:
   password: 07a3df8f-2a2c-42f8-ad92-65889d90f3bf
   port: 443
   server: 104.21.26.17
+  skip-cert-verify: false
+  sni: rrrRrRRrT.459.pp.ua
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: rrrRrRRrT.459.pp.ua
+    path: /znQImc22ijDwVOkZfoq
+- alpn:
+  - http/1.1
+  name: 23|🟠_🇺🇸_💻_github.com/Ruk1ng001_38...
+  network: ws
+  password: 07a3df8f-2a2c-42f8-ad92-65889d90f3bf
+  port: 443
+  server: 172.67.135.37
   skip-cert-verify: false
   sni: rrrRrRRrT.459.pp.ua
   type: trojan
@@ -2252,7 +2353,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24,33|🏁RELAY-172.67.193.50-0643
+  name: 24,33|🏁RELAY-104.21.20.162-0665
   network: ws
   port: 8443
   server: orvps2.horsenma.net
@@ -2290,13 +2391,26 @@ proxies:
   server: cn01.efan8867801.xyz
   type: ss
   udp: true
+- name: '26,39,41|US_speednode_0122 #3'
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 198.62.62.67
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 26,37,40|🇺🇸 美国2|@stairnode
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507121073737-knyhjj43dT.download.microsoft.com
+    host: 202507121073737-O8zUIKjU25.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -2386,7 +2500,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2889
-  name: 27,33|🏁RELAY-104.18.149.76-0559
+  name: 27,33|🏁RELAY-104.18.149.76-0580
   network: ws
   port: 443
   server: 104.18.149.76
@@ -2635,7 +2749,7 @@ proxies:
     path: /cp100vp800kkkdsnx
 - alterId: 0
   cipher: auto
-  name: 27,33|🏁RELAY-104.21.32.1-0279
+  name: 27,33|🇨🇳CN-155.102.56.5-0310
   network: ws
   port: 8443
   server: us01.sh-cloudflare.sbs
@@ -2908,12 +3022,39 @@ proxies:
     headers:
       Host: jjjjjjjjmmmmm.4444926.xyz
     path: /awmqq79B17rfnpXiNaWb
-- name: 33|🇺🇸US-198.23.229.250-0340
+- alterId: 0
+  cipher: auto
+  name: 27|美国 063
+  network: ws
+  port: 80
+  server: wwwe3.11890604.xyz
+  tls: false
+  type: vmess
+  uuid: 512d9674-db12-44ca-a1b5-654244549b65
+  ws-opts:
+    headers:
+      Host: wwwe3.11890604.xyz
+    path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm
+- name: '33|US_speednode_0122 #2'
+  password: tg-fq521free
+  port: 443
+  server: 198.62.62.67
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+- name: 33|🇺🇸US-198.23.229.250-0333
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
   server: 198.23.229.250
   skip-cert-verify: true
   sni: rc6.freeguard.org
+  type: trojan
+- name: 33|🇺🇸US-192.3.107.252-0339
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 192.3.107.252
+  skip-cert-verify: true
+  sni: rc8.freeguard.org
   type: trojan
 - name: 34|美国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
@@ -2929,25 +3070,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - zula.ir
-    method: GET
-    path:
-    - /
-  name: 41|US_speednode_0105
-  network: http
-  port: 10410
-  server: 62.60.176.240
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f107a60e-af79-44c9-bc7e-b5707f3208e1
-- alterId: 0
-  cipher: auto
-  name: 41|US_speednode_0119
+  name: 39,41|US_speednode_0119
   network: ws
   port: 443
   server: codepen.io

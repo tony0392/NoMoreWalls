@@ -146,7 +146,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: acc01ecc-b414-4743-9a5a-0d7fadb527f1
+  uuid: 4b3916f4-4175-4366-b7eb-761ae13797d8
 - alterId: 0
   cipher: auto
   name: 6,7|新加坡NO.1-1A
@@ -156,17 +156,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: acc01ecc-b414-4743-9a5a-0d7fadb527f1
-- alterId: 0
-  cipher: auto
-  name: 7|新加坡NO.1-1B
-  port: 45054
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6b5a9172-cdd4-41cf-9f17-c55080dc12b2
+  uuid: 4b3916f4-4175-4366-b7eb-761ae13797d8
 - alterId: 0
   cipher: auto
   name: 7|新加坡NO.2-1B
@@ -176,7 +166,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 6b5a9172-cdd4-41cf-9f17-c55080dc12b2
+  uuid: 7ee294d7-4858-4cb2-8215-4a8e44d80f5e
+- alterId: 0
+  cipher: auto
+  name: 7|新加坡NO.1-1B
+  port: 45054
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7ee294d7-4858-4cb2-8215-4a8e44d80f5e
 - alterId: 0
   cipher: auto
   name: 9|SG | 新加坡 LB-1A
@@ -705,14 +705,6 @@ proxies:
   port: 443
   server: 13.113.17.246
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 22,34,37|🇸🇬 新加坡3|@stairnode
-  password: 24Wk2NSszrfHn22zem1lYV
-  port: 37708
-  server: 188.166.220.70
-  tfo: false
-  type: ss
 - client-fingerprint: chrome
   name: 30,33,34,37|🇸🇬 新加坡|@stairnode
   password: d0d08cddacc3190ea81b1b792e1b5fde
@@ -729,9 +721,30 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+- name: '30|SG_speednode_0256 #1'
+  password: Aimer
+  port: 8443
+  server: 92.243.74.180
+  skip-cert-verify: false
+  sni: tyep.esslh.filegear-sg.me
+  type: trojan
+- alterId: 64
+  cipher: auto
+  name: 30|🇸🇬SG-202.79.160.164-0943
+  network: ws
+  port: 443
+  server: 202.79.160.164
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.20850772.xyz
+    path: /path/191019072927
 - alterId: 0
   cipher: auto
-  name: 30|🇸🇬SG-180.215.130.123-0163
+  name: 30|🇸🇬SG-180.215.130.123-0214
   network: ws
   port: 11584
   server: 180.215.130.123
@@ -745,7 +758,7 @@ proxies:
     path: /
 - alterId: 4
   cipher: auto
-  name: 30|🇸🇬SG-103.253.26.20-0162
+  name: 30|🇸🇬SG-103.253.26.20-0213
   network: ws
   port: 443
   server: 103.253.26.20
@@ -759,7 +772,7 @@ proxies:
     path: /ws
 - alterId: 4
   cipher: auto
-  name: 30|🇸🇬SG-202.61.141.130-0161
+  name: 30|🇸🇬SG-202.61.141.130-0212
   network: ws
   port: 443
   server: 202.61.141.130
@@ -771,13 +784,55 @@ proxies:
     headers:
       Host: 202.61.141.130
     path: /ws
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG-8.214.33.158-0210
+  network: ws
+  port: 80
+  server: 8.214.33.158
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef
+  ws-opts:
+    headers:
+      Host: 8.214.33.158
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🇸🇬SG-180.215.130.123-0209
+  network: ws
+  port: 46452
+  server: 180.215.130.123
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c5414fe0-018b-473a-aa3b-f210f2ba42f5
+  ws-opts:
+    headers:
+      Host: 180.215.130.123
+    path: /
+- alterId: 4
+  cipher: auto
+  name: 30|🇸🇬SG-103.253.26.134-0208
+  network: ws
+  port: 443
+  server: 103.253.26.134
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: eeh7iewe.com
+    path: /ws
 - name: 31|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: '33,36,38|SG_speednode_0218 #1'
+- name: '33,36,38|SG_speednode_0256 #3'
   network: ws
   password: Aimer
   port: 8443
@@ -790,3 +845,11 @@ proxies:
     headers:
       Host: tyep.esslh.filegear-sg.me
     path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 34,37|🇸🇬 新加坡3|@stairnode
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 9898
+  server: 54.169.45.155
+  tfo: false
+  type: ss

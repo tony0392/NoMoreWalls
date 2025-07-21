@@ -475,17 +475,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 4b3916f4-4175-4366-b7eb-761ae13797d8
+  uuid: 592ee882-9fb7-4e74-8a6a-2eda274542b9
 - alterId: 0
   cipher: auto
-  name: 6,7|日本NO.1-1A
+  name: 6|日本NO.1
   port: 45056
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 4b3916f4-4175-4366-b7eb-761ae13797d8
+  uuid: 592ee882-9fb7-4e74-8a6a-2eda274542b9
 - alterId: 0
   cipher: auto
   name: 7|日本NO.2-1B
@@ -495,7 +495,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7ee294d7-4858-4cb2-8215-4a8e44d80f5e
+  uuid: f0560c5b-e9d2-4513-904f-e492274390cd
 - alterId: 0
   cipher: auto
   name: 7|日本NO.1-1B
@@ -505,7 +505,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7ee294d7-4858-4cb2-8215-4a8e44d80f5e
+  uuid: f0560c5b-e9d2-4513-904f-e492274390cd
 - alterId: 0
   cipher: auto
   name: 9|JP | 日本 LB-1T
@@ -1020,7 +1020,7 @@ proxies:
     path: /stream
 - alterId: 64
   cipher: auto
-  name: '10,30,33|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope... #1'
+  name: '10,33|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope... #1'
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -1059,7 +1059,8 @@ proxies:
   server: 54.199.83.184
   type: ss
 - cipher: aes-256-gcm
-  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_37...
+  client-fingerprint: chrome
+  name: 22,34,37|🇯🇵 日本2|@stairnode
   password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
@@ -1070,22 +1071,9 @@ proxies:
     skip-cert-verify: false
     tls: true
   port: 636
-  server: 137.220.191.38
+  server: 137.220.191.40
   tfo: false
   type: ss
-- name: 22|❓_🇯🇵_💻_github.com/Ruk1ng001_35...
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 156.238.18.112
-  skip-cert-verify: true
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan
 - cipher: aes-256-gcm
   name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_38...
   password: 70a0b8103356
@@ -1101,6 +1089,32 @@ proxies:
   server: 137.220.142.139
   tfo: false
   type: ss
+- name: 22|❓_🇯🇵_💻_github.com/Ruk1ng001_35...
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 156.238.18.112
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan
+- name: 22|❓_🇯🇵_💻_github.com/Ruk1ng001_38...
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2083
+  server: 156.238.18.196
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan
 - name: 26|日本 001
   network: ws
   password: trojan
@@ -1113,7 +1127,7 @@ proxies:
       Host: wahaha.yingyangkuaixian.dpdns.org
     path: /
 - client-fingerprint: chrome
-  name: 30,33,34,37|🇯🇵 日本3|@stairnode
+  name: '30,33,34,37|🇯🇵 日本3|@stairnode #1'
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 41225
   server: 36.151.192.239
@@ -1121,7 +1135,7 @@ proxies:
   sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
-  name: 30,33,34,37|🇯🇵 日本4|@stairnode
+  name: '30,33,34,37|🇯🇵 日本4|@stairnode #1'
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 39701
   server: 36.151.192.239
@@ -1138,46 +1152,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 2a37eb45-4cdd-4c2e-914e-ed2f972e4003
-- name: 30|日期：07-19
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 104.17.71.31
-  skip-cert-verify: false
-  sni: ns.ylka.dpdns.org
-  type: trojan
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 34,37|🇯🇵 日本|@stairnode
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507121073737-ygDWmYQSlm.download.microsoft.com
+    host: 202507121073737-90KK9REZBf.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 34,37|🇯🇵 日本2|@stairnode
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.191.40
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 34,37|🇯🇵 日本5|@stairnode
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 9898
-  server: 13.158.56.180
   tfo: false
   type: ss

@@ -1,19 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,1,27,28|🇺🇸_US_美国->🇨🇳_CN_中国_2
-  network: ws
-  port: 8880
-  server: 69.84.182.108
-  sni: ''
-  type: vmess
-  uuid: 922b45c8-1ec8-4a65-9b32-137716a0e55f
-  ws-opts:
-    headers:
-      host: cdn-node-oss-99.paofu.de
-    path: /profile/telegram@ssrsub
-- alterId: 0
-  cipher: auto
   name: 2|🇺🇸 IEPL专线 美国 NO1
   port: 54770
   server: i.needss.top
@@ -145,16 +132,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6|美国NO.1
-  port: 45052
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b3916f4-4175-4366-b7eb-761ae13797d8
-- alterId: 0
-  cipher: auto
   name: 6,7|美国NO.2-1A-GPT
   port: 45053
   server: xdd.dashuai.cyou
@@ -162,7 +139,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 4b3916f4-4175-4366-b7eb-761ae13797d8
+  uuid: 592ee882-9fb7-4e74-8a6a-2eda274542b9
+- alterId: 0
+  cipher: auto
+  name: 6,7|美国NO.1-1A-GPT
+  port: 45052
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 592ee882-9fb7-4e74-8a6a-2eda274542b9
 - alterId: 0
   cipher: auto
   name: 7|美国NO.2-1B-GPT
@@ -172,7 +159,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7ee294d7-4858-4cb2-8215-4a8e44d80f5e
+  uuid: f0560c5b-e9d2-4513-904f-e492274390cd
 - alterId: 0
   cipher: auto
   name: 7|美国NO.1-1B-GPT
@@ -182,8 +169,8 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7ee294d7-4858-4cb2-8215-4a8e44d80f5e
-- name: '10,30,33|🇺🇸45 |  2.5MB/s|46%|Openai|Gem... #1'
+  uuid: f0560c5b-e9d2-4513-904f-e492274390cd
+- name: '10,33|🇺🇸45 |  2.5MB/s|46%|Openai|Gem... #1'
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 15229
   server: 391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net
@@ -192,27 +179,29 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: '10,30,33|🇺🇸62 |  3.3MB/s|Openai|Gemini #1'
+  name: '10,18,22,23,30,33|🇺🇸62 |  3.3MB/s|Openai|Gemini #1'
   network: ws
   port: 30829
   server: v29.heduian.link
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       Host: ocbc.com
     path: /oooo
-- name: '10,30,33|🇺🇸63 |  2.1MB/s|46%|Openai|Gem... #1'
+- name: '10,33|🇺🇸63 |  2.1MB/s|46%|Openai|Gem... #1'
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
   server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
   skip-cert-verify: false
   sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
   type: trojan
-- name: '10,30,33|🇺🇸64 |  1.3MB/s|46%|Openai|Gem... #1'
+- name: '10,33|🇺🇸64 |  1.3MB/s|46%|Openai|Gem... #1'
   password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
   port: 15229
   server: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
@@ -240,22 +229,35 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 13|🇺🇸 美国 | USA 3
+  name: 13|🇺🇸 美国 | USA
   network: ws
-  port: 22078
+  port: 22079
   server: 45.135.135.229
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: a80eb15e-079d-496a-83b4-d8aaaa1e6d42
+  uuid: a1b0a941-e2bd-48f5-a45f-30592c505fef
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13|🇺🇸 美国 | USA 4
+  name: 13|🇺🇸 美国 | USA 3
   network: ws
-  port: 25010
+  port: 22079
+  server: 45.135.135.229
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b280e7d0-7e86-456e-ae68-c2ca9f1d5691
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13|🇺🇸 美国 | USA 5
+  network: ws
+  port: 25011
   server: 45.135.135.229
   skip-cert-verify: true
   tls: false
@@ -268,59 +270,33 @@ proxies:
   cipher: auto
   name: 13|🇺🇸 美国 | USA 7
   network: ws
-  port: 22078
+  port: 22079
   server: 45.135.135.229
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 3da0baab-4b55-4dae-a262-0f7622d79458
+  uuid: 37f65b08-83d7-4746-b998-cc2e93c877a5
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   name: 13|🇺🇸 美国 | USA 8
   network: ws
-  port: 22078
+  port: 25011
   server: 45.135.135.229
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: b280e7d0-7e86-456e-ae68-c2ca9f1d5691
+  uuid: 37f65b08-83d7-4746-b998-cc2e93c877a5
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13|🇺🇸 美国 | USA 11
+  name: 13|🇺🇸 美国 | USA 13
   network: ws
-  port: 22078
-  server: 45.135.135.229
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 044a8d6b-c91d-4567-9a37-c7c0f23c3532
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 13|🇺🇸 美国 | USA 12
-  network: ws
-  port: 22078
-  server: 45.135.135.229
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 946b8b16-80ee-4d52-a6c3-defbff7d92ee
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 13|🇺🇸 美国 | USA 16
-  network: ws
-  port: 25010
+  port: 22079
   server: 45.135.135.229
   skip-cert-verify: true
   tls: false
@@ -331,66 +307,68 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13|🇺🇸 美国 | USA 17
+  name: 13|🇺🇸 美国 | USA 14
   network: ws
-  port: 25010
+  port: 25011
   server: 45.135.135.229
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 044a8d6b-c91d-4567-9a37-c7c0f23c3532
+  uuid: a1b0a941-e2bd-48f5-a45f-30592c505fef
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13|🇺🇸 美国 | USA 21
+  name: 13|🇺🇸 美国 | USA 18
   network: ws
-  port: 25010
+  port: 25011
   server: 45.135.135.229
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 946b8b16-80ee-4d52-a6c3-defbff7d92ee
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 13|🇺🇸 美国 | USA 26
-  network: ws
-  port: 25010
-  server: 45.135.135.229
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a80eb15e-079d-496a-83b4-d8aaaa1e6d42
+  uuid: 3da0baab-4b55-4dae-a262-0f7622d79458
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   name: 18,23|[VMess] 🇺🇸 美国 CloudFlare节点
   network: ws
-  port: 8443
-  server: 172.67.193.50
+  port: 80
+  server: 527cb2.827a4c39.shop
   skip-cert-verify: true
   tfo: false
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
+  uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
   ws-opts:
     headers:
-      Host: orvps2.horsenma.net
-    path: /horsen
+      Host: sg02s.827a4c39.shop
+    path: /
 - alterId: 0
   cipher: auto
   name: 18,23|[VMess] 🇺🇸 美国 CloudFlare节点 2
   network: ws
   port: 443
+  server: www.vpslook.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4993f14e-5f9b-4249-dc43-99f4fdea84be
+  ws-opts:
+    headers:
+      Host: wapkp01.5201314.cfd
+    path: /4993f14e
+- alterId: 0
+  cipher: auto
+  name: 18,23|[VMess] 🇺🇸 美国 CloudFlare节点 3
+  network: ws
+  port: 443
   server: cf.fovi.tk
-  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: true
@@ -401,39 +379,6 @@ proxies:
     headers:
       Host: foxlux.fovi.tk
     path: /eisasqa
-- alterId: 0
-  cipher: auto
-  name: '18,23,30|🇺🇸 美国 CloudFlare节点 #3'
-  network: ws
-  port: '2083'
-  server: www.meter.net
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
-  ws-opts:
-    headers:
-      Host: blaze-ger-248.blazecloudmain.site
-    path: /linkwsrt?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 18,23,30|🏁RELAY-172.64.80.1-0707
-  network: ws
-  port: 2083
-  server: cc2dash.89060004.xyz
-  servername: ''
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
-  ws-opts:
-    headers:
-      Host: cc2d3.89060004.xyz
-    path: /
 - alterId: 0
   cipher: auto
   name: 20|US美国(mibei77.com 米贝节点分享)
@@ -616,36 +561,7 @@ proxies:
   ws-headers:
     Host: EeedcFvg.999824.xYZ
   ws-path: /9dZlJLjHHrL0VwSolbqFpg
-- alpn:
-  - http/1.1
-  name: 22|🟡_🇺🇸_💻_github.com/Ruk1ng001_63...
-  network: ws
-  password: 07a3df8f-2a2c-42f8-ad92-65889d90f3bf
-  port: 443
-  server: 104.21.26.17
-  skip-cert-verify: false
-  sni: rrrRrRRrT.459.pp.ua
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: rrrRrRRrT.459.pp.ua
-    path: /znQImc22ijDwVOkZfoq
-- alterId: 0
-  cipher: auto
-  name: 22,30|🇺🇸 美国 CloudFlare节点
-  network: ws
-  port: '8443'
-  server: 104.17.121.140
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 3da5d27f-08d0-4078-f890-cf950ecb1708
-  ws-opts:
-    headers:
-      Host: mg-innocent-adjust-shape.trycloudflare.com
-    path: /
-- name: '22|🟠_🇺🇸_💻_github.com/Ruk1ng001_34... #1'
+- name: 22|🟠_🇺🇸_💻_github.com/Ruk1ng001_34...
   network: ws
   password: f108e0e2-5f12-42b6-9e67-1b2f073ffb2b
   port: 443
@@ -658,6 +574,20 @@ proxies:
     headers:
       Host: CCcvfgt6.852224.dpdns.org
     path: /CA5bMmr2JMum8sDKRwvFCJq
+- alterId: 0
+  cipher: auto
+  name: 22|🟠_🇺🇸_💻_github.com/Ruk1ng001_33...
+  network: ws
+  port: 80
+  server: 162.159.137.178
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 88a25bf3-18af-486f-b194-d87e976c230b
+  ws-opts:
+    headers:
+      Host: 165067316419432025062817003642514.s15.chibaba.filegear-sg.me
+    path: /s15.html
 - name: 22|🟠_🇺🇸_💻_github.com/Ruk1ng001_63...
   network: ws
   password: fa050497-fc2a-45ee-89c0-96670c4ecb65
@@ -827,13 +757,13 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2889
-  name: 26,30|🏁RELAY-104.18.149.76-0620
+  name: 26|美国 030
   network: ws
   port: 443
   server: 104.18.149.76
-  servername: ''
+  servername: us.kkp.me.eu.org
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
   ws-opts:
@@ -1076,12 +1006,12 @@ proxies:
     path: /cp100vp800kkkdsnx
 - alterId: 0
   cipher: auto
-  name: 26,30|🇨🇳CN-155.102.56.1-0293
+  name: 26|美国 013
   network: ws
   port: 8443
   server: us01.sh-cloudflare.sbs
-  servername: ''
-  tls: false
+  servername: us01.sh-cloudflare.sbs
+  tls: true
   type: vmess
   udp: true
   uuid: 2bd0c9d7-f239-437e-a1e1-6cf830af2a1a
@@ -1377,11 +1307,10 @@ proxies:
     path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm
 - alterId: 0
   cipher: auto
-  name: 26,30|🏁RELAY-104.18.13.229-0665
+  name: 26|美国 064
   network: ws
   port: 8880
   server: www.visa.com.sg
-  servername: ''
   tls: false
   type: vmess
   uuid: 92e886f3-53c4-41a9-de97-a54f3abbdd9e
@@ -1391,10 +1320,25 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|🇺🇸_US_美国_1
+  name: 26|美国 065
+  network: ws
+  port: 8080
+  server: do2.naichachong.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7940b436-7d33-4568-9c5b-d17273629d44
+  ws-opts:
+    headers:
+      Host: do2.naichachong.top
+    path: /wwa
+- alterId: 0
+  cipher: auto
+  name: 28|🇺🇸_US_美国_2
   network: ws
   port: 8880
-  server: 69.84.182.18
+  server: 69.84.182.108
+  sni: ''
   type: vmess
   uuid: 922b45c8-1ec8-4a65-9b32-137716a0e55f
   ws-opts:
@@ -1403,300 +1347,46 @@ proxies:
     path: /profile/telegram@ssrsub
 - alterId: 0
   cipher: auto
-  fingerprint: ''
-  name: '28|🇺🇸_US_美国_2 #2'
-  network: tcp
-  port: 55084
-  server: 34.80.156.254
-  sni: ''
-  type: vmess
-  uuid: 5691fb8a-d890-4a33-9b0e-73017adae5b2
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 美国 CloudFlare节点 #2'
+  name: 30|🇺🇸 VMESS-未知>美国-NF解锁自制剧-ChatGPT...
   network: ws
-  port: '443'
-  server: www.vpslook.com
+  port: '8443'
+  server: orvps2.horsenma.net
   tls: true
   type: vmess
-  uuid: 4993f14e-5f9b-4249-dc43-99f4fdea84be
+  uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
   ws-opts:
     headers:
-      Host: wapkp01.5201314.cfd
-    path: /4993f14e
+      Host: orvps2.horsenma.net
+    path: /horsen
 - alterId: 0
   cipher: auto
-  name: '30|🇺🇸 美国 CloudFlare节点 #4'
+  name: 30|🇺🇸 美国 CloudFlare节点
   network: ws
-  port: '2086'
-  server: awetdfgn_cdn.hfhfb.homes
+  port: '80'
+  server: 2112e4.7d79233c.shop
   tls: false
   type: vmess
-  uuid: 1ae7b2ce-393d-4b22-ab55-a8d3e319f1a9
+  uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
   ws-opts:
     headers:
-      Host: mgcdn10.hfhfb.homes
-    path: /market?ed=1024
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 30,33,34,37|🇺🇸 美国|@stairnode
-  network: ws
-  port: 30804
-  server: v4.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- client-fingerprint: chrome
-  name: 30,33,34,37|🇺🇸 美国3|@stairnode
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 3596
-  server: 36.151.192.239
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 30,33,34,37|🇺🇸 美国4|@stairnode
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 32962
-  server: 36.151.192.239
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: 30|🇺🇸 _美国
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 104.17.68.85
-  skip-cert-verify: false
-  sni: ns.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #1'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 172.67.243.218
-  skip-cert-verify: false
-  sni: ns.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #2'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 104.17.68.85
-  skip-cert-verify: false
-  sni: nc.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #3'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: nikon.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: nc.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #4'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: ip.sb
-  skip-cert-verify: false
-  sni: ns.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #5'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 104.17.71.31
-  skip-cert-verify: false
-  sni: nc.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #6'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: shopify.com
-  skip-cert-verify: false
-  sni: ns.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #7'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: wilson.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: nc.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #8'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: shopify.com
-  skip-cert-verify: false
-  sni: nc.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #9'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: nikon.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: ns.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #10'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: sullivan.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: nc.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #11'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: otto.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: nc.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #12'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: icook.tw
-  skip-cert-verify: false
-  sni: ns.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #13'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: wilson.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: ns.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #14'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 172.67.110.232
-  skip-cert-verify: false
-  sni: ns.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #15'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 8443
-  server: 162.159.129.67
-  skip-cert-verify: false
-  sni: ns.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #16'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 162.159.36.104
-  skip-cert-verify: false
-  sni: nc.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #17'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: ip.sb
-  skip-cert-verify: false
-  sni: nc.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #18'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 172.67.110.232
-  skip-cert-verify: false
-  sni: nc.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #19'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: otto.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: ns.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #20'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: bowen.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: nc.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #21'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 8443
-  server: 162.159.129.67
-  skip-cert-verify: false
-  sni: nc.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #22'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: whatismyipaddress.com
-  skip-cert-verify: false
-  sni: ns.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #23'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 2096
-  server: 104.17.128.1
-  skip-cert-verify: false
-  sni: ns.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #24'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: bowen.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: ns.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #25'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 162.159.36.104
-  skip-cert-verify: false
-  sni: ns.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #26'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: sullivan.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: ns.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #27'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: whatismyipaddress.com
-  skip-cert-verify: false
-  sni: nc.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #28'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: icook.tw
-  skip-cert-verify: false
-  sni: nc.ylka.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 _美国 #29'
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 172.67.243.218
-  skip-cert-verify: false
-  sni: nc.ylka.dpdns.org
-  type: trojan
-- alterId: 32
-  cipher: auto
-  name: 30|🇺🇸US-77.83.141.171-5313
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
+      Host: hk01s.7d79233c.shop
+    path: /
 - alterId: 0
   cipher: auto
-  name: '30|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
+  name: '30|🇺🇸 美国 CloudFlare节点 #1'
+  network: ws
+  port: '2083'
+  server: rak1ding.89060004.xyz
+  tls: true
+  type: vmess
+  uuid: 75d96365-1229-4fc4-dbda-855717f876cf
+  ws-opts:
+    headers:
+      Host: rak1d3.988988.shop
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🇺🇸_US_美国
   network: ws
   port: 8880
   server: 69.84.182.108
@@ -1708,27 +1398,6 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- alterId: 0
-  cipher: auto
-  name: 30|🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 69.84.182.18
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 922b45c8-1ec8-4a65-9b32-137716a0e55f
-  ws-opts:
-    headers:
-      Host: cdn-node-oss-99.paofu.de
-    path: /profile/telegram@ssrsub
-- name: 30|🇺🇸US-138.197.5.103-0372
-  password: xxoo
-  port: 443
-  server: us.blazeppn.info
-  skip-cert-verify: true
-  sni: us.blazeppn.info
-  type: trojan
 - name: 31|美国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 658
@@ -1747,7 +1416,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507121073737-ygDWmYQSlm.download.microsoft.com
+    host: 202507121073737-90KK9REZBf.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz

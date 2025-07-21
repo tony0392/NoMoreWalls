@@ -25,16 +25,6 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - alterId: 0
   cipher: auto
-  name: 6,7|英国1-1A
-  port: 45066
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b3916f4-4175-4366-b7eb-761ae13797d8
-- alterId: 0
-  cipher: auto
   name: 6,7|英国2-1A
   port: 45067
   server: xdd.dashuai.cyou
@@ -42,17 +32,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 4b3916f4-4175-4366-b7eb-761ae13797d8
+  uuid: 592ee882-9fb7-4e74-8a6a-2eda274542b9
 - alterId: 0
   cipher: auto
-  name: 7|英国2-1B
-  port: 45067
-  server: xdd.dashuai.cyou
+  name: 6|英国1
+  port: 45066
+  server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 7ee294d7-4858-4cb2-8215-4a8e44d80f5e
+  uuid: 592ee882-9fb7-4e74-8a6a-2eda274542b9
 - alterId: 0
   cipher: auto
   name: 7|英国1-1B
@@ -62,18 +52,24 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7ee294d7-4858-4cb2-8215-4a8e44d80f5e
+  uuid: f0560c5b-e9d2-4513-904f-e492274390cd
 - alterId: 0
   cipher: auto
-  name: 30|VMESS-未知>英国-NF解锁波兰地区非自制剧-ChatG...
+  name: 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
   network: ws
-  port: 443
+  port: '443'
   server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
-  servername: ''
-  tls: false
+  tls: true
   type: vmess
   uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
   ws-opts:
     headers:
       Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
     path: /azumase.ren
+- name: '30,33,36,38|GB_speednode_0122 #1'
+  password: '!!str 74260628090146500'
+  port: 443
+  server: stirring-parakeet.shiner427.skin
+  skip-cert-verify: false
+  type: trojan
+  udp: true

@@ -206,7 +206,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 592ee882-9fb7-4e74-8a6a-2eda274542b9
+  uuid: dd0ca090-1924-45c1-b5ed-8f0cf589e147
 - alterId: 0
   cipher: auto
   name: 6,7|香港NO.2-1A-GPT
@@ -216,7 +216,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 592ee882-9fb7-4e74-8a6a-2eda274542b9
+  uuid: dd0ca090-1924-45c1-b5ed-8f0cf589e147
 - alterId: 0
   cipher: auto
   name: 6|香港NO.1
@@ -226,7 +226,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 592ee882-9fb7-4e74-8a6a-2eda274542b9
+  uuid: dd0ca090-1924-45c1-b5ed-8f0cf589e147
 - alterId: 0
   cipher: auto
   name: 7|香港NO.2-1B-GPT
@@ -236,17 +236,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: f0560c5b-e9d2-4513-904f-e492274390cd
-- alterId: 0
-  cipher: auto
-  name: 7|香港NO.1-1B-GPT
-  port: 45050
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f0560c5b-e9d2-4513-904f-e492274390cd
+  uuid: 81e92736-a035-46ae-b84d-e07030aa3d87
 - alterId: 0
   cipher: auto
   name: 9|HK | 香港 LB-1V
@@ -792,80 +782,63 @@ proxies:
   server: 44.244.21.125
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 17|🇭🇰👖TG频道stymei1丨28
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.235
-  skip-cert-verify: true
-  tfo: false
+  name: 13|🇭🇰 香港 | HKG
+  password: 9bf62ce9-a07f-404b-a539-1f6934964f53
+  port: 22800
+  server: 156.224.77.215
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: 17|🇭🇰👖TG频道stymei1丨29
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 27.50.48.126
-  servername: tyep.esslh.filegear-sg.me
-  skip-cert-verify: true
-  sni: tyep.esslh.filegear-sg.me
-  tfo: false
-  tls: true
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 13|🇭🇰 香港 | HKG 2
+  password: 62054723-5d82-4493-b16d-6eea9d743620
+  port: 22800
+  server: 156.224.77.215
+  type: ss
   udp: true
-  ws-opts:
-    headers: {}
-    path: /?ed=2560
-- aead: true
-  alterId: 0
-  cipher: auto
-  flow: ''
-  name: 17,30|TG频道stymei1丨36
-  network: ws
-  port: '8880'
-  server: csgo.com
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 922b45c8-1ec8-4a65-9b32-137716a0e55f
-  ws-opts:
-    headers:
-      Host: cdn-node-oss-99.paofu.de
-    path: /profile/telegram@ssrsub
-- alterId: 0
-  cipher: auto
-  name: 18,23,30|🇭🇰 香港 电讯盈科有限公司
-  network: ws
-  port: '80'
-  server: a600f817-szt5s0-t167d0-ggww.hkt.tcpbbr.net
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bcc58e88-e147-11ec-b286-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+- cipher: aes-256-cfb
+  country: 🇰 HK
+  name: 14| HK_75
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.21.221
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_76
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
+- cipher: chacha20-ietf
+  country: 🇭🇰 HK
+  name: 14|🇭🇰 HK_77
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_78
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
 - alterId: 2
   cipher: auto
-  name: 18,23|[VMess] 🇭🇰 香港 电讯盈科有限公司 2
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰 HK_79
   network: ws
   port: 30807
   server: v10.heduian.link
+  servername: baidu.com
   skip-cert-verify: true
-  tfo: false
-  tls: false
   type: vmess
-  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
+  ws-headers:
+    HOST: baidu.com
+  ws-path: /oooo
 - alterId: 0
   cipher: auto
   name: 20|HK香港(mibei77.com 米贝节点分享)
@@ -908,48 +881,31 @@ proxies:
   ws-headers:
     Host: v8.heduian.link
   ws-path: /oooo
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: '30,33,34,37|🇭🇰 香港|@stairnode #1'
-  network: ws
-  port: 80
-  server: 8f8ecfe2-szt5s0-t19fr1-1tbzx.hk.p5pv.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 6b43d15a-e7bf-11ef-9862-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 0
   cipher: auto
-  name: 30,33|香港3|@ripaojiedian
+  name: 30,33|香港|@ripaojiedian
   network: tcp
-  port: '59056'
-  server: 38.147.188.53
+  port: '39804'
+  server: 103.224.80.50
   servername: ''
   tls: false
   type: vmess
-  uuid: d028918e-b508-456f-8139-d5022f91a36c
+  uuid: 5ec8f9dc-5dad-4555-80a4-a5b1a75b71a3
 - client-fingerprint: chrome
   name: '30,33,34,37|🇭🇰 香港4|@stairnode #1'
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 14495
-  server: 36.151.192.62
+  port: 2078
+  server: 36.151.192.238
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
   name: '30,33,34,37|🇭🇰 香港5|@stairnode #1'
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 2078
-  server: 36.151.192.62
-  skip-cert-verify: true
-  sni: www.baidu.com
+  port: 443
+  server: 36.151.251.7
+  skip-cert-verify: false
+  sni: m.avhxc.cn
   type: trojan
 - alterId: 0
   cipher: auto
@@ -976,11 +932,11 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '34,37|🇭🇰 香港3|@stairnode #1'
-  port: 59056
-  server: 38.147.188.53
+  name: '34,37|🇭🇰 香港|@stairnode #1'
+  port: 39804
+  server: 103.224.80.50
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: d028918e-b508-456f-8139-d5022f91a36c
+  uuid: 5ec8f9dc-5dad-4555-80a4-a5b1a75b71a3

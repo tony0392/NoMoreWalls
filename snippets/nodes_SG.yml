@@ -139,16 +139,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|新加坡NO.1
-  port: 45054
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 592ee882-9fb7-4e74-8a6a-2eda274542b9
-- alterId: 0
-  cipher: auto
   name: 6|新加坡NO.2
   port: 45055
   server: xdd.dashuai.cyou
@@ -156,17 +146,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 592ee882-9fb7-4e74-8a6a-2eda274542b9
+  uuid: dd0ca090-1924-45c1-b5ed-8f0cf589e147
 - alterId: 0
   cipher: auto
-  name: 7|新加坡NO.1-1B
+  name: 6|新加坡NO.1
   port: 45054
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: f0560c5b-e9d2-4513-904f-e492274390cd
+  uuid: dd0ca090-1924-45c1-b5ed-8f0cf589e147
 - alterId: 0
   cipher: auto
   name: 9|SG | 新加坡 LB-1A
@@ -695,6 +685,14 @@ proxies:
   port: 443
   server: 13.113.17.246
   type: ss
+- client-fingerprint: chrome
+  name: '30,33,34,37|🇸🇬 新加坡2|@stairnode #1'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 44123
+  server: 36.151.251.7
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - name: 31|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
@@ -710,16 +708,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '33,36,38|SG_speednode_0256 #1'
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 92.243.74.180
-  skip-cert-verify: false
-  sni: tyep.esslh.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tyep.esslh.filegear-sg.me
-    path: /

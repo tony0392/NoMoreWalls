@@ -161,16 +161,30 @@ proxies:
     headers:
       Host: i1.hdslb.com
     path: /download
-- alterId: 0
-  cipher: auto
-  name: 6,7|韩国 专线NO2-1A
-  port: 45075
-  server: xdd.dashuai.cyou
+- name: 6|韩国-三网优化2-1D
+  password: aae8dde3-4a44-4518-8e0a-50b8641680ae
+  port: 44732
+  server: kr-qingyun.dwyun.me
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: kr-qingyun.dwyun.me
+  type: trojan
   udp: true
-  uuid: dd0ca090-1924-45c1-b5ed-8f0cf589e147
+- name: 6|韩国-三网优化2-1C
+  password: aa7ed1f7-1c21-4891-85d0-053f8b0f5751
+  port: 44732
+  server: kr-qingyun.dwyun.me
+  skip-cert-verify: true
+  sni: kr-qingyun.dwyun.me
+  type: trojan
+  udp: true
+- name: 6|韩国-三网优化2-1A
+  password: 61b9d1fa-6a7f-45df-b805-2a359f6f21cb
+  port: 44732
+  server: kr-qingyun.dwyun.me
+  skip-cert-verify: true
+  sni: kr-qingyun.dwyun.me
+  type: trojan
+  udp: true
 - name: 6|韩国-三网优化2-1B
   password: cb7a58bd-5715-41fb-9707-2b6360cc84b8
   port: 44732
@@ -179,34 +193,26 @@ proxies:
   sni: kr-qingyun.dwyun.me
   type: trojan
   udp: true
-- name: 6|韩国-三网优化2-1A
-  password: aa7ed1f7-1c21-4891-85d0-053f8b0f5751
-  port: 44732
-  server: kr-qingyun.dwyun.me
-  skip-cert-verify: true
-  sni: kr-qingyun.dwyun.me
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 6,7|韩国 专线NO1-1A
+  name: 7|韩国 专线NO2
+  port: 45075
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 59d32507-ff2d-4317-bce4-afd27565c03a
+- alterId: 0
+  cipher: auto
+  name: 7|韩国 专线NO1
   port: 45076
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: dd0ca090-1924-45c1-b5ed-8f0cf589e147
-- alterId: 0
-  cipher: auto
-  name: 7|韩国 专线NO1-1B
-  port: 45076
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 81e92736-a035-46ae-b84d-e07030aa3d87
+  uuid: 59d32507-ff2d-4317-bce4-afd27565c03a
 - cipher: aes-256-cfb
   name: 10|🇰🇷2 |  1.5MB/s|44%|Openai
   password: qwerREWQ@@
@@ -220,16 +226,11 @@ proxies:
   server: 52.221.255.53
   type: ss
 - cipher: aes-256-cfb
-  name: 27|_KR_国
+  country: 🇷 KR
+  name: 14| KR_89
   password: qwerREWQ@@
-  port: 15098
-  server: p222.panda001.net
-  type: ss
-- cipher: aes-256-gcm
-  name: 27|🇰🇷_KR_韩国_1
-  password: NiznLvoIuy
-  port: 19378
-  server: 220.124.31.130
+  port: 4652
+  server: p141.panda001.net
   type: ss
 - alterId: 0
   cipher: auto
@@ -254,25 +255,28 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 30|🇰🇷_KR_韩国
+  name: 30,33|韩国2|@ripaojiedian
   network: tcp
-  port: 21791
-  server: 125.139.134.133
+  port: '23562'
+  server: 45.141.136.99
   servername: ''
   tls: false
   type: vmess
-  uuid: bc29535d-dcbe-4663-cfc3-16cb14ba13da
+  uuid: b4d79a0a-2ddf-44f9-bc9a-e675ed4a3b01
 - name: 31|韩国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
   skip-cert-verify: false
   type: trojan
-- cipher: aes-256-cfb
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: '34,37|🇰🇷 韩国2|@stairnode #1'
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
+  port: 23562
+  server: 45.141.136.99
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: b4d79a0a-2ddf-44f9-bc9a-e675ed4a3b01

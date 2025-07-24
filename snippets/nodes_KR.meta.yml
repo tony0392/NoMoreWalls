@@ -1,4 +1,10 @@
 proxies:
+- cipher: aes-256-cfb
+  name: '0,1,28|🇰🇷_KR_韩国 #2'
+  password: qwerREWQ@@
+  port: 15098
+  server: p222.panda001.net
+  type: ss
 - name: 2|🇰🇷 韩国-三网优化2-1C
   password: b262e991-a233-4dfd-87e2-9c5898ecd4c2
   port: 44732
@@ -161,24 +167,8 @@ proxies:
     headers:
       Host: i1.hdslb.com
     path: /download
-- name: 6|韩国-三网优化2-1D
-  password: aae8dde3-4a44-4518-8e0a-50b8641680ae
-  port: 44732
-  server: kr-qingyun.dwyun.me
-  skip-cert-verify: true
-  sni: kr-qingyun.dwyun.me
-  type: trojan
-  udp: true
 - name: 6|韩国-三网优化2-1C
-  password: aa7ed1f7-1c21-4891-85d0-053f8b0f5751
-  port: 44732
-  server: kr-qingyun.dwyun.me
-  skip-cert-verify: true
-  sni: kr-qingyun.dwyun.me
-  type: trojan
-  udp: true
-- name: 6|韩国-三网优化2-1A
-  password: 61b9d1fa-6a7f-45df-b805-2a359f6f21cb
+  password: aae8dde3-4a44-4518-8e0a-50b8641680ae
   port: 44732
   server: kr-qingyun.dwyun.me
   skip-cert-verify: true
@@ -193,26 +183,78 @@ proxies:
   sni: kr-qingyun.dwyun.me
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 7|韩国 专线NO2
-  port: 45075
-  server: xdd.dashuai.cyou
+- name: 6|韩国-三网优化2-1F
+  password: 1a0da953-28e5-485b-b20d-db55a359cfc0
+  port: 44732
+  server: kr-qingyun.dwyun.me
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: kr-qingyun.dwyun.me
+  type: trojan
   udp: true
-  uuid: 59d32507-ff2d-4317-bce4-afd27565c03a
 - alterId: 0
   cipher: auto
-  name: 7|韩国 专线NO1
+  name: 6,7|韩国 专线NO1-1A
   port: 45076
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 59d32507-ff2d-4317-bce4-afd27565c03a
+  uuid: dec761a5-f2c3-48be-a29f-8172f92c925a
+- name: 6|韩国-三网优化2-1A
+  password: 61b9d1fa-6a7f-45df-b805-2a359f6f21cb
+  port: 44732
+  server: kr-qingyun.dwyun.me
+  skip-cert-verify: true
+  sni: kr-qingyun.dwyun.me
+  type: trojan
+  udp: true
+- name: 6|韩国-三网优化2-1E
+  password: 39c88176-974f-4bc8-b2a1-1654aefb7d01
+  port: 44732
+  server: kr-qingyun.dwyun.me
+  skip-cert-verify: true
+  sni: kr-qingyun.dwyun.me
+  type: trojan
+  udp: true
+- name: 6|韩国-三网优化2-1D
+  password: aa7ed1f7-1c21-4891-85d0-053f8b0f5751
+  port: 44732
+  server: kr-qingyun.dwyun.me
+  skip-cert-verify: true
+  sni: kr-qingyun.dwyun.me
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 6,7|韩国 专线NO2-1A
+  port: 45075
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: dec761a5-f2c3-48be-a29f-8172f92c925a
+- alterId: 0
+  cipher: auto
+  name: 7|韩国 专线NO2-1B
+  port: 45075
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3c0607e4-1f5e-45f8-afb6-4183b20a3fc4
+- alterId: 0
+  cipher: auto
+  name: 7|韩国 专线NO1-1B
+  port: 45076
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3c0607e4-1f5e-45f8-afb6-4183b20a3fc4
 - cipher: aes-256-cfb
   name: 10|🇰🇷2 |  1.5MB/s|44%|Openai
   password: qwerREWQ@@
@@ -227,7 +269,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇷 KR
-  name: 14| KR_89
+  name: 14| KR_87
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
@@ -245,14 +287,6 @@ proxies:
     headers:
       Host: time.is
     path: /
-- client-fingerprint: chrome
-  name: '30,33,34,37|🇰🇷 韩国|@stairnode #1'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 4448
-  server: 36.151.251.7
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 30,33|韩国2|@ripaojiedian
@@ -263,6 +297,23 @@ proxies:
   tls: false
   type: vmess
   uuid: b4d79a0a-2ddf-44f9-bc9a-e675ed4a3b01
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '30,33,34,37|🇰🇷 韩国3|@stairnode #1'
+  network: ws
+  port: 8080
+  server: www.wto.org
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 68a1a6dd-d06e-46fe-cdc2-6763acebd00d
+  ws-opts:
+    headers:
+      Host: h2.xuherp.ggff.net
+    path: /
 - name: 31|韩国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

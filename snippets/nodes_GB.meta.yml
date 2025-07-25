@@ -25,16 +25,6 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - alterId: 0
   cipher: auto
-  name: 6,7|英国1-1A
-  port: 45066
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: dec761a5-f2c3-48be-a29f-8172f92c925a
-- alterId: 0
-  cipher: auto
   name: 6,7|英国2-1A
   port: 45067
   server: xdd.dashuai.cyou
@@ -42,17 +32,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: dec761a5-f2c3-48be-a29f-8172f92c925a
+  uuid: b753a9b6-13a0-4ca1-b3aa-95eb60efc0c3
 - alterId: 0
   cipher: auto
-  name: 7|英国2-1B
-  port: 45067
-  server: xdd.dashuai.cyou
+  name: 6,7|英国1-1A
+  port: 45066
+  server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 3c0607e4-1f5e-45f8-afb6-4183b20a3fc4
+  uuid: b753a9b6-13a0-4ca1-b3aa-95eb60efc0c3
 - alterId: 0
   cipher: auto
   name: 7|英国1-1B
@@ -62,38 +52,41 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 3c0607e4-1f5e-45f8-afb6-4183b20a3fc4
+  uuid: e1d7b487-6ebd-45db-a534-16c71a4c8f4a
+- alterId: 0
+  cipher: auto
+  name: 7|英国2-1B
+  port: 45067
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e1d7b487-6ebd-45db-a534-16c71a4c8f4a
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14| GB_66
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.239.250
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇧 GB_67
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_68
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇧 GB_69
+  name: 14| GB_67
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.255.22
   type: ss
 - cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇧 GB_68
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.250
+  type: ss
+- cipher: aes-128-gcm
   country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_70
+  name: 14|🇬🇧 GB_69
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇧 GB_70
   password: Bog0ELmMM9DSxDdQ
   port: 443
   server: 85.210.120.237
@@ -107,7 +100,7 @@ proxies:
   protocol: origin
   server: 62.100.205.48
   type: ssr
-- country: 🇬🇧 GB
+- country: 🇧 GB
   name: 14|🇧 GB_72
   password: dd6dcb10-4683-11f0-ae79-1239d0255272
   port: 443
@@ -116,7 +109,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇬🇧 GB
-  name: 14|🇧 GB_73
+  name: 14|🇬🇧 GB_73
   password: 255a0a50-3f10-11f0-b0d6-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -124,18 +117,24 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  country: 🇧GB
+  country: 🇬🇧GB
   name: 14|🇬🇧GB_74
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
 - cipher: aes-128-gcm
-  country: 🇧GB
+  country: 🇬🇧GB
   name: 14|🇬🇧GB_75
   password: shadowsocks
   port: 443
   server: 212.102.53.195
+  type: ss
+- cipher: aes-256-cfb
+  name: 27|_GB_国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.17.169
   type: ss
 - alterId: 0
   cipher: auto

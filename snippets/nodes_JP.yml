@@ -475,7 +475,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 4de38435-b815-4f28-b364-8c4161cd3005
+  uuid: a33e2651-e1c8-4bcf-be12-060b640d2db9
 - alterId: 0
   cipher: auto
   name: 6,7|日本NO.2-1A
@@ -485,17 +485,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 4de38435-b815-4f28-b364-8c4161cd3005
-- alterId: 0
-  cipher: auto
-  name: 7|日本NO.1-1B
-  port: 45056
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ee99c59c-affd-4f75-83c4-76e53fff34c9
+  uuid: a33e2651-e1c8-4bcf-be12-060b640d2db9
 - alterId: 0
   cipher: auto
   name: 7|日本NO.2-1B
@@ -505,7 +495,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: ee99c59c-affd-4f75-83c4-76e53fff34c9
+  uuid: 09a1098b-41b3-4360-80b1-238d4accae1e
+- alterId: 0
+  cipher: auto
+  name: 7|日本NO.1-1B
+  port: 45056
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 09a1098b-41b3-4360-80b1-238d4accae1e
 - alterId: 0
   cipher: auto
   name: 9|JP | 日本 LB-1T
@@ -1058,21 +1058,47 @@ proxies:
   port: 443
   server: 54.199.83.184
   type: ss
+- name: 22|❓_🇯🇵_💻_github.com/Ruk1ng001_35...
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 156.238.18.112
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan
 - cipher: aes-256-gcm
-  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_37...
-  password: 823e135ed103
+  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_38...
+  password: 70a0b8103356
   plugin: v2ray-plugin
   plugin-opts:
-    host: jp7v1.lingjfjkm002.com
+    host: jp5v1.lingjfjkm002.com
     mode: websocket
     mux: true
-    path: /dchlbvrbbotc
+    path: /bezradrqccl
     skip-cert-verify: false
     tls: true
   port: 636
-  server: 137.220.191.38
+  server: 137.220.142.139
   tfo: false
   type: ss
+- name: 22|❓_🇯🇵_💻_github.com/Ruk1ng001_38...
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2083
+  server: 156.238.18.196
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 22,34,37|🇯🇵 日本2|@stairnode
@@ -1090,20 +1116,31 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-gcm
-  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_38...
-  password: 70a0b8103356
+  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_37...
+  password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
-    host: jp5v1.lingjfjkm002.com
+    host: jp7v1.lingjfjkm002.com
     mode: websocket
     mux: true
-    path: /bezradrqccl
+    path: /dchlbvrbbotc
     skip-cert-verify: false
     tls: true
   port: 636
-  server: 137.220.142.139
+  server: 137.220.191.38
   tfo: false
   type: ss
+- name: 26|日本 001
+  network: ws
+  password: trojan
+  port: 443
+  server: 91.193.58.0
+  sni: wahaha.yingyangkuaixian.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: wahaha.yingyangkuaixian.dpdns.org
+    path: /
 - client-fingerprint: chrome
   name: '30,33,34,37|🇯🇵 日本3|@stairnode #1'
   password: d0d08cddacc3190ea81b1b792e1b5fde
@@ -1112,6 +1149,29 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+- client-fingerprint: chrome
+  name: '30,33,34,37|🇯🇵 日本4|@stairnode #1'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 41225
+  server: 36.151.251.7
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '30,33,34,37|🇯🇵 日本5|@stairnode #1'
+  network: ws
+  port: 8080
+  server: 47.79.94.25
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: b36d992c-786b-4136-96d6-c37641207d47
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 30,33|日本v2|@ripaojiedian
@@ -1122,13 +1182,26 @@ proxies:
   tls: false
   type: vmess
   uuid: cb774883-1c2f-4b8a-8637-828f356e0c76
+- alterId: 0
+  cipher: auto
+  name: 30|🇯🇵 日本5|@stairnode
+  network: ws
+  port: '8080'
+  server: 47.79.94.25
+  tls: false
+  type: vmess
+  uuid: b36d992c-786b-4136-96d6-c37641207d47
+  ws-opts:
+    headers:
+      Host: 47.79.94.25
+    path: /
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 34,37|🇯🇵 日本|@stairnode
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507121073737-8Na8oPBuci.download.microsoft.com
+    host: 202507022251291-d01YttPsbj.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz

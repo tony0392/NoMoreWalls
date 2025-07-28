@@ -1,23 +1,59 @@
 proxies:
 - cipher: aes-256-cfb
-  name: '0,1,28|🇺🇸_US_美国_1 #2'
+  name: '0,1,28|🇺🇸 US_152 #2'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.165.233.93
   type: ss
 - alterId: 0
   cipher: auto
-  name: '0,1,27,28|🇺🇸_US_美国_2 #2'
+  name: 0,1,22,28,30|🇺🇸_US_美国
   network: ws
   port: 8880
   server: 108.165.216.241
-  sni: ''
+  servername: ''
+  skip-cert-verify: true
+  tfo: false
+  tls: false
   type: vmess
+  udp: true
   uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
   ws-opts:
     headers:
-      host: TG.WangCai2.s2.db-link02.top
+      Host: TG.WangCai2.s2.db-link02.top
     path: /dabai.in
+- client-fingerprint: chrome
+  name: '0,1,28,30,33,34,37|🇺🇸 美国4|@stairnode #1'
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 32962
+  server: 36.151.251.7
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- client-fingerprint: chrome
+  name: '0,1,28,30,33,34,37|🇺🇸 美国3|@stairnode #1'
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 3596
+  server: 36.151.251.7
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- cipher: aes-256-gcm
+  name: '0,1,20,28|🇺🇸_US_美国_2 #2'
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '0,1,10,28|🇺🇸 US_144 #2'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 2|🇺🇸 IEPL专线 美国 NO1
@@ -158,7 +194,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 4de38435-b815-4f28-b364-8c4161cd3005
+  uuid: a33e2651-e1c8-4bcf-be12-060b640d2db9
 - alterId: 0
   cipher: auto
   name: 6,7|美国NO.1-1A-GPT
@@ -168,17 +204,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 4de38435-b815-4f28-b364-8c4161cd3005
+  uuid: a33e2651-e1c8-4bcf-be12-060b640d2db9
 - alterId: 0
   cipher: auto
-  name: 7|美国NO.2-1B-GPT
-  port: 45053
-  server: xdd.dashuai.cyou
+  name: 7|美国NO.1-1B-GPT
+  port: 45052
+  server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: ee99c59c-affd-4f75-83c4-76e53fff34c9
+  uuid: 09a1098b-41b3-4360-80b1-238d4accae1e
 - name: '10,33|🇺🇸45 |  2.5MB/s|46%|Openai|Gem... #1'
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 15229
@@ -186,23 +222,6 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- alterId: 2
-  cipher: auto
-  name: '10,18,22,23,30,33|🇺🇸62 |  3.3MB/s|Openai|Gemini #1'
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  servername: ''
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - name: '10,33|🇺🇸63 |  2.1MB/s|46%|Openai|Gem... #1'
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
@@ -238,46 +257,46 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 13|🇺🇸 美国 | USA
+  name: 13|🇺🇸 美国 | USA 2
   network: ws
-  port: 25016
+  port: 22083
   server: 45.136.245.177
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 8ead7a9a-95c4-4667-a2e8-3130d4858b88
+  uuid: 5d05e118-6f86-433b-a0bb-9095b1108303
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13|🇺🇸 美国 | USA 2
+  name: 13|🇺🇸 美国 | USA 3
   network: ws
-  port: 25016
+  port: 22083
   server: 45.136.245.177
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: ca86a888-fec6-4a0b-ab90-f445e07ad3d3
+  uuid: bcca4fed-36fa-445f-80d7-a035086e40f5
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   name: 13|🇺🇸 美国 | USA 4
   network: ws
-  port: 22083
+  port: 25017
   server: 45.136.245.177
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 8ead7a9a-95c4-4667-a2e8-3130d4858b88
+  uuid: bcca4fed-36fa-445f-80d7-a035086e40f5
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13|🇺🇸 美国 | USA 11
+  name: 13|🇺🇸 美国 | USA 8
   network: ws
   port: 22083
   server: 45.136.245.177
@@ -285,51 +304,51 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: e1df145e-bbef-45c6-8aaa-abcee8a2f760
+  uuid: 2e5f6cbd-95d9-471a-9910-4c4b46be88c0
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   name: 13|🇺🇸 美国 | USA 12
   network: ws
-  port: 22083
+  port: 25017
   server: 45.136.245.177
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: ca86a888-fec6-4a0b-ab90-f445e07ad3d3
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 13|🇺🇸 美国 | USA 13
-  network: ws
-  port: 25016
-  server: 45.136.245.177
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e1df145e-bbef-45c6-8aaa-abcee8a2f760
+  uuid: 5d05e118-6f86-433b-a0bb-9095b1108303
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   name: 13|🇺🇸 美国 | USA 16
   network: ws
-  port: 25016
+  port: 25017
   server: 45.136.245.177
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 3e9a3e30-3b2f-43d2-98e4-1fed058bd6b2
+  uuid: 152a6e06-3e17-4696-a178-31e96af32f22
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13|🇺🇸 美国 | USA 20
+  name: 13|🇺🇸 美国 | USA 18
+  network: ws
+  port: 25017
+  server: 45.136.245.177
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2e5f6cbd-95d9-471a-9910-4c4b46be88c0
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13|🇺🇸 美国 | USA 19
   network: ws
   port: 22083
   server: 45.136.245.177
@@ -337,47 +356,31 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 3e9a3e30-3b2f-43d2-98e4-1fed058bd6b2
+  uuid: 152a6e06-3e17-4696-a178-31e96af32f22
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
   name: 18,23|[VMess] 🇺🇸 美国 CloudFlare节点
   network: ws
-  port: 443
-  server: cloudgetservice.mcloudservice.site
+  port: 80
+  server: 827f07.4c38f09e.shop
   skip-cert-verify: true
   tfo: false
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b
+  uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
   ws-opts:
     headers:
-      Host: Fra-Vp-123.BLaZECLOUD.Site
-    path: /linvkws
-- alterId: 0
-  cipher: auto
-  name: 18,23|[VMess] 🇺🇸 美国 CloudFlare节点 2
-  network: ws
-  port: 443
-  server: 1753328541.tencentapp.cn
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 9e513633-a12f-49e0-87fe-c3086ce4f840
-  ws-opts:
-    headers:
-      Host: de1.hoshinonetwork.pp.ua
+      Host: hk04s.4c38f09e.shop
     path: /
 - alterId: 0
   cipher: auto
-  name: 18,23|[VMess] 🇺🇸 美国 CloudFlare节点 3
+  name: 18,23|[VMess] 🇺🇸 美国 V2CROSS.COM
   network: ws
   port: 8880
-  server: 108.162.192.241
+  server: 104.31.16.241
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -390,24 +393,39 @@ proxies:
     path: /dabai.in
 - alterId: 0
   cipher: auto
-  name: 18,22,23,30|🇺🇸 美国 CloudFlare节点
+  name: 18,23|[VMess] 🇺🇸 美国 CloudFlare节点 2
   network: ws
-  port: '80'
-  server: 2112e4.7d79233c.shop
-  servername: ''
+  port: 8880
+  server: 108.162.196.241
   skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
   udp: true
-  uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
   ws-opts:
     headers:
-      Host: hk01s.7d79233c.shop
-    path: /
+      Host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
 - alterId: 0
   cipher: auto
-  name: 18,23|[VMess] 🇺🇸 美国 CloudFlare节点 5
+  name: 18,23|[VMess] 🇺🇸 美国 CloudFlare节点 3
+  network: ws
+  port: 8880
+  server: 108.162.194.241
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
+- alterId: 0
+  cipher: auto
+  name: 18,23|[VMess] 🇺🇸 美国 CloudFlare节点 4
   network: ws
   port: 2083
   server: www.meter.net
@@ -421,6 +439,22 @@ proxies:
     headers:
       Host: blaze-uk-48.pinkle7.site
     path: /wssss
+- alterId: 0
+  cipher: auto
+  name: 18,23|[VMess] 🇺🇸 美国 CloudFlare节点 5
+  network: ws
+  port: 2096
+  server: cc2dash.89060004.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
+  ws-opts:
+    headers:
+      Host: cc2d1.89060004.xyz
+    path: /
 - name: 20|US美国(mibei77.com 米贝节点分享)
   password: tg-fq521free
   port: 443
@@ -823,44 +857,22 @@ proxies:
   ws-headers:
     Host: TG.WangCai2.s2.db-link02.top
   ws-path: /dabai.in
-- name: 22|🟡_🇺🇸_💻_github.com/Ruk1ng001_32...
+- alterId: 0
+  cipher: auto
+  name: 22|🟠_🇺🇸_💻_github.com/Ruk1ng001_34...
   network: ws
-  password: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2
-  port: 443
-  server: 104.21.24.195
-  skip-cert-verify: false
-  sni: RFgTHYu7.999836.Xyz
-  type: trojan
+  port: 8880
+  server: 108.162.195.241
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
   ws-opts:
     headers:
-      Host: RFgTHYu7.999836.Xyz
-    path: /mFvK3LJyIAe8ydvnmRKWDa8
-- name: 22|🟠_🇺🇸_💻_github.com/Ruk1ng001_63...
-  network: ws
-  password: fa050497-fc2a-45ee-89c0-96670c4ecb65
-  port: 443
-  server: 104.21.63.135
-  skip-cert-verify: false
-  sni: Rrr4.8906004.xYZ
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Rrr4.8906004.xYZ
-    path: /DZxb5QZyWgQPuXTwt
-- name: 22|🟠_🇺🇸_💻_github.com/Ruk1ng001_34...
-  network: ws
-  password: f108e0e2-5f12-42b6-9e67-1b2f073ffb2b
-  port: 443
-  server: 172.67.219.196
-  skip-cert-verify: false
-  sni: CCcvfgt6.852224.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: CCcvfgt6.852224.dpdns.org
-    path: /CA5bMmr2JMum8sDKRwvFCJq
+      Host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
 - name: 22|🟠_🇺🇸_💻_github.com/Ruk1ng001_64...
   network: ws
   password: 13e26f64-2e0c-4461-92cd-d83294cc18f0
@@ -874,84 +886,14 @@ proxies:
     headers:
       Host: WwwDe.00890604.XyZ
     path: /TDUxZUop9k44oPiit2OdWk0KwirdY
-- alterId: 0
-  cipher: auto
-  name: 22|🟠_🇺🇸_💻_github.com/Ruk1ng001_33...
-  network: ws
-  port: 80
-  server: 162.159.137.178
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 88a25bf3-18af-486f-b194-d87e976c230b
-  ws-opts:
-    headers:
-      Host: 165067316419432025062817003642514.s15.chibaba.filegear-sg.me
-    path: /s15.html
-- alterId: 0
-  cipher: auto
-  name: 22,30|🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 108.165.216.241
-  servername: ''
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- alpn:
-  - http/1.1
-  name: 22|🟠_🇺🇸_💻_github.com/Ruk1ng001_38...
-  network: ws
-  password: 07a3df8f-2a2c-42f8-ad92-65889d90f3bf
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '22,34,37|6元高速机场：cczzuu.top #1'
+  password: amazonskr05
   port: 443
-  server: 172.67.135.37
-  skip-cert-verify: false
-  sni: rrrRrRRrT.459.pp.ua
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: rrrRrRRrT.459.pp.ua
-    path: /znQImc22ijDwVOkZfoq
-- alterId: 0
-  cipher: auto
-  name: '22,30|🇯🇵_JP_日本->🇺🇸_US_美国 #3'
-  network: ws
-  port: 8880
-  server: 103.116.7.241
-  servername: ''
-  skip-cert-verify: true
+  server: 35.86.81.76
   tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- alpn:
-  - http/1.1
-  name: 22|🟡_🇺🇸_💻_github.com/Ruk1ng001_63...
-  network: ws
-  password: 07a3df8f-2a2c-42f8-ad92-65889d90f3bf
-  port: 443
-  server: 104.21.26.17
-  skip-cert-verify: false
-  sni: rrrRrRRrT.459.pp.ua
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: rrrRrRRrT.459.pp.ua
-    path: /znQImc22ijDwVOkZfoq
+  type: ss
 - name: 22|🟠_🇺🇸_💻_github.com/Ruk1ng001_32...
   network: ws
   password: ffcf7ec1-3e09-4821-b3d9-b426a107b73b
@@ -964,6 +906,20 @@ proxies:
     headers:
       Host: eEEfGty6.999836.XYz
     path: /XmTzATQPJv9RO3xr1D40NK
+- alterId: 0
+  cipher: auto
+  name: '22|🟠_🇺🇸_💻_github.com/Ruk1ng001_34... #1'
+  network: ws
+  port: 8443
+  server: 104.17.121.140
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 3da5d27f-08d0-4078-f890-cf950ecb1708
+  ws-opts:
+    headers:
+      Host: mg-innocent-adjust-shape.trycloudflare.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 23|[VMess] 🇺🇸 _US_美国_1
@@ -1731,6 +1687,17 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
+- name: 26|美国 080
+  network: ws
+  password: fa050497-fc2a-45ee-89c0-96670c4ecb65
+  port: 443
+  server: 104.21.63.135
+  sni: Rrr4.8906004.xYZ
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Rrr4.8906004.xYZ
+    path: /DZxb5QZyWgQPuXTwt
 - alterId: 0
   cipher: auto
   name: 30|🇺🇸 VMESS-未知>美国-NF解锁自制剧-ChatGPT...
@@ -1744,19 +1711,6 @@ proxies:
     headers:
       Host: orvps2.horsenma.net
     path: /horsen
-- alterId: 0
-  cipher: auto
-  name: 30|🇺🇸 美国 V2CROSS.COM
-  network: ws
-  port: '8880'
-  server: 104.31.16.241
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
 - name: 31|美国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 658
@@ -1769,24 +1723,13 @@ proxies:
   server: 45.83.140.22
   skip-cert-verify: true
   type: trojan
-- name: 33|美国|@ripaojiedian
-  network: ws
-  password: trojan
-  port: 443
-  server: 91.193.58.0
-  sni: wahaha.yingyangkuaixian.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: wahaha.yingyangkuaixian.dpdns.org
-    path: '%2F'
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 34,37|🇺🇸 美国2|@stairnode
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507121073737-8Na8oPBuci.download.microsoft.com
+    host: 202507022251291-d01YttPsbj.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz

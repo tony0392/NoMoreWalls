@@ -1,10 +1,11 @@
 proxies:
 - cipher: aes-256-cfb
-  name: '0,1,28|🇷🇺_RU_俄罗斯 #2'
+  name: '0,1,22,27,28|🇷🇺 RU_138 #2'
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 185.231.233.112
+  server: 185.153.197.5
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 2|🇷🇺 莫斯科专线
@@ -29,34 +30,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
-- client-fingerprint: chrome
-  name: '18,23,26,33,34,37|🇺🇸 美国|@stairnode #1'
-  network: ws
-  password: trojan
-  port: 443
-  server: 91.193.58.0
-  skip-cert-verify: false
-  sni: wahaha.yingyangkuaixian.dpdns.org
-  tfo: false
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: wahaha.yingyangkuaixian.dpdns.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 22|🟡_🇷🇺_💻_github.com/Ruk1ng001_66...
-  network: ws
-  port: 22083
-  server: 45.136.245.177
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3891840f-eefe-4778-a989-2e39d6e6dac9
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: 26|俄罗斯 002
@@ -106,28 +79,3 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 27|_RU_
-  password: eUh4lSpi7nOYj0vSrqLUh0
-  port: 8506
-  server: 95.163.176.37
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇷🇺_RU_俄罗斯_1
-  password: c40641c1f89e7acb
-  port: 57456
-  server: tr.vpnsparta.pro
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇷🇺_RU_俄罗斯_2
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 62.133.63.212
-  type: ss
-- name: 30|🇺🇸 美国|@stairnode
-  password: trojan
-  port: 443
-  server: 91.193.58.0
-  skip-cert-verify: false
-  sni: wahaha.yingyangkuaixian.dpdns.org
-  type: trojan

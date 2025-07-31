@@ -468,16 +468,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6,7|日本NO.2-1A
-  port: 45057
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d55edc37-9e38-4701-828e-31039647dc5b
-- alterId: 0
-  cipher: auto
   name: 6,7|日本NO.1-1A
   port: 45056
   server: haa.dashuai.cyou
@@ -485,7 +475,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: d55edc37-9e38-4701-828e-31039647dc5b
+  uuid: 64c292d6-814c-45c0-9329-2f04c7a74527
+- alterId: 0
+  cipher: auto
+  name: 6|日本NO.2
+  port: 45057
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 64c292d6-814c-45c0-9329-2f04c7a74527
 - alterId: 0
   cipher: auto
   name: 7|日本NO.1-1B
@@ -495,17 +495,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 84958e8e-ff9e-4d09-b0ed-10e83a8c4ebc
-- alterId: 0
-  cipher: auto
-  name: 7|日本NO.2-1B
-  port: 45057
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 84958e8e-ff9e-4d09-b0ed-10e83a8c4ebc
+  uuid: 13ab8b54-37d9-4dca-b13e-4f56dc7b325b
 - alterId: 0
   cipher: auto
   name: 9|JP | 日本 LB-1T
@@ -1020,7 +1010,7 @@ proxies:
     path: /stream
 - alterId: 64
   cipher: auto
-  name: '10,33|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope... #1'
+  name: 10,33|🇯🇵日本1 | ⬇️ 1.8MB/s|54%|Youtube...
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -1057,36 +1047,6 @@ proxies:
   password: amazonskr05
   port: 443
   server: 54.199.83.184
-  type: ss
-- cipher: aes-256-gcm
-  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_38...
-  password: 70a0b8103356
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp5v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /bezradrqccl
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.142.139
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_37...
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.191.38
-  tfo: false
   type: ss
 - name: 22|❓_🇯🇵_💻_github.com/Ruk1ng001_35...
   network: ws
@@ -1130,6 +1090,36 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
+- cipher: aes-256-gcm
+  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_38...
+  password: 70a0b8103356
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp5v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /bezradrqccl
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.142.139
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_37...
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.38
+  tfo: false
+  type: ss
 - name: 26|日本 001
   network: ws
   password: trojan
@@ -1141,6 +1131,14 @@ proxies:
     headers:
       Host: wahaha.yingyangkuaixian.dpdns.org
     path: /
+- client-fingerprint: chrome
+  name: '30,33,34,37|🇯🇵 日本4|@stairnode #1'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 1466
+  server: 36.156.102.125
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 30,33|日本3|@ripaojiedian
@@ -1151,14 +1149,6 @@ proxies:
   tls: false
   type: vmess
   uuid: fea0400c-9dab-4709-a149-9f3144e5a346
-- client-fingerprint: chrome
-  name: '30,33,34,37|🇯🇵 日本4|@stairnode #1'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 46135
-  server: 36.151.192.243
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 30,33|日本v2|@ripaojiedian
@@ -1175,7 +1165,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-8jv54zz1ja.download.microsoft.com
+    host: 202507282137611-HEnrNCdMfp.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz

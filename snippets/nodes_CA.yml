@@ -34,6 +34,16 @@ proxies:
     path: /xyz
 - alterId: 0
   cipher: auto
+  name: 6|加拿大1
+  port: 45064
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b934d0c3-14fb-4fbf-b953-28dd88a9b10c
+- alterId: 0
+  cipher: auto
   name: 6|加拿大2
   port: 45065
   server: xdd.dashuai.cyou
@@ -41,17 +51,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 64c292d6-814c-45c0-9329-2f04c7a74527
-- alterId: 0
-  cipher: auto
-  name: 6,7|加拿大1-1A
-  port: 45064
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 64c292d6-814c-45c0-9329-2f04c7a74527
+  uuid: b934d0c3-14fb-4fbf-b953-28dd88a9b10c
 - alterId: 0
   cipher: auto
   name: 7|加拿大2-1B
@@ -61,12 +61,29 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 13ab8b54-37d9-4dca-b13e-4f56dc7b325b
+  uuid: fe34cf63-ea82-4c7f-8669-ad2881b03e8b
+- alterId: 0
+  cipher: auto
+  name: 7|加拿大1-1B
+  port: 45064
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fe34cf63-ea82-4c7f-8669-ad2881b03e8b
 - cipher: aes-256-cfb
   name: 11|🇨🇦 CA, Vancouver
   password: amazonskr05
   port: 443
   server: 54.200.54.11
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇦CA
+  name: 14|🇦CA_60
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: ca225.vpnbook.com
   type: ss
 - alterId: 0
   cipher: auto
@@ -95,3 +112,17 @@ proxies:
     headers:
       Host: ''
     path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  name: 30|🇨🇦_CA_加拿大->🇺🇸_US_美国
+  network: ws
+  port: 8880
+  server: 205.233.181.241
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in

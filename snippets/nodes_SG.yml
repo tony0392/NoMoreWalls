@@ -139,6 +139,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 6,7|新加坡NO.1-1A
+  port: 45054
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b934d0c3-14fb-4fbf-b953-28dd88a9b10c
+- alterId: 0
+  cipher: auto
   name: 6|新加坡NO.2
   port: 45055
   server: xdd.dashuai.cyou
@@ -146,17 +156,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 64c292d6-814c-45c0-9329-2f04c7a74527
+  uuid: b934d0c3-14fb-4fbf-b953-28dd88a9b10c
 - alterId: 0
   cipher: auto
-  name: 6|新加坡NO.1
-  port: 45054
-  server: haa.dashuai.cyou
+  name: 7|新加坡NO.2-1B
+  port: 45055
+  server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 64c292d6-814c-45c0-9329-2f04c7a74527
+  uuid: fe34cf63-ea82-4c7f-8669-ad2881b03e8b
 - alterId: 0
   cipher: auto
   name: 7|新加坡NO.1-1B
@@ -166,7 +176,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 13ab8b54-37d9-4dca-b13e-4f56dc7b325b
+  uuid: fe34cf63-ea82-4c7f-8669-ad2881b03e8b
 - alterId: 0
   cipher: auto
   name: 9|SG | 新加坡 LB-1A
@@ -695,22 +705,27 @@ proxies:
   port: 443
   server: 13.113.17.246
   type: ss
-- alterId: 0
-  client-fingerprint: chrome
-  name: '22,30,33,34,37|🇸🇬 新加坡2|@stairnode #1'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
+- country: 🇬SG
+  name: 14|SG_457
+  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
   port: 443
-  server: 178.128.17.109
+  server: sg-full.privateip.net
   skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
   type: trojan
   udp: true
 - client-fingerprint: chrome
   name: '30,33,34,37|🇸🇬 新加坡|@stairnode #1'
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 443
-  server: 178.128.114.123
+  server: 128.199.125.102
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- client-fingerprint: chrome
+  name: '30,33,34,37|🇸🇬 新加坡2|@stairnode #1'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 1256
+  server: 36.156.102.125
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -722,6 +737,23 @@ proxies:
   skip-cert-verify: false
   sni: sg.mjt000.com
   type: trojan
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: '30,33,34,37|🇸🇬 新加坡4|@stairnode #1'
+  network: ws
+  port: 30839
+  server: v39.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - name: 31|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

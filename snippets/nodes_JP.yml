@@ -468,6 +468,16 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
+  name: 6|IEPL专线 日本1
+  port: 22235
+  server: jzgz.tcity8.monster
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a96b1f71-7c50-4701-9c0c-74e0ec0c1449
+- alterId: 0
+  cipher: auto
   name: 6,7|IEPL专线 日本2-1A
   port: 35218
   server: dzgz.tcity8.monster
@@ -475,27 +485,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7743a900-d98d-4760-87f1-f4d1184c0693
-- alterId: 0
-  cipher: auto
-  name: 6,7|IEPL专线 日本1-1A
-  port: 22235
-  server: jzgz.tcity8.monster
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7743a900-d98d-4760-87f1-f4d1184c0693
-- alterId: 0
-  cipher: auto
-  name: 7|IEPL专线 日本1-1B
-  port: 22235
-  server: jzgz.tcity8.monster
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1a76e1cc-44da-4418-b4fe-55e801133e0a
+  uuid: a96b1f71-7c50-4701-9c0c-74e0ec0c1449
 - alterId: 0
   cipher: auto
   name: 7|日本NO.2
@@ -505,7 +495,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: cafc391b-08db-4fca-a336-914f43a96ca4
+  uuid: bf2c0cf2-8652-49ac-abc1-17d02cfef2da
 - alterId: 0
   cipher: auto
   name: 7|日本NO.1
@@ -515,7 +505,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: cafc391b-08db-4fca-a336-914f43a96ca4
+  uuid: bf2c0cf2-8652-49ac-abc1-17d02cfef2da
 - alterId: 0
   cipher: auto
   name: 7|IEPL专线 日本2-1B
@@ -525,7 +515,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 1a76e1cc-44da-4418-b4fe-55e801133e0a
+  uuid: aef4567a-1ac7-4afa-9105-7a67d0013b2d
+- alterId: 0
+  cipher: auto
+  name: 7|IEPL专线 日本1-1B
+  port: 22235
+  server: jzgz.tcity8.monster
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aef4567a-1ac7-4afa-9105-7a67d0013b2d
 - alterId: 0
   cipher: auto
   name: 9|JP | 日本 LB-1T
@@ -1040,11 +1040,11 @@ proxies:
     path: /stream
 - alterId: 64
   cipher: auto
-  name: 10,33|🇯🇵日本1 | ⬇️ 1.8MB/s|54%|Youtube...
+  name: 10,25,33|🇯🇵日本1 | ⬇️ 1.8MB/s|54%|Youtube...
   network: ws
   port: 1443
   server: sslvpn.51job.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   tfo: false
   tls: true
   type: vmess
@@ -1079,6 +1079,23 @@ proxies:
   server: 54.199.83.184
   type: ss
 - cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 22,25,34,37|🇯🇵 日本2|@stairnode
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
   name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_38...
   password: 70a0b8103356
   plugin: v2ray-plugin
@@ -1108,74 +1125,39 @@ proxies:
   server: 137.220.191.38
   tfo: false
   type: ss
+- cipher: rc4-md5
+  name: 25|🇯🇵 日本|@ripaojiedian
+  password: efanccyun
+  port: 8766
+  server: cn01.efan8867801.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 25|🇯🇵 日本2|@ripaojiedian
+  password: 823e135ed103
+  port: 636
+  server: 137.220.191.40
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: '30,33,34,37|🇯🇵 日本3|@stairnode #1'
+  name: '25,30,33,34,37|🇯🇵 日本3|@stairnode #1'
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 181
   server: 36.156.102.125
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+  udp: true
 - client-fingerprint: chrome
-  name: '30,33,34,37|🇯🇵 日本4|@stairnode #1'
+  name: '25,30,33,34,37|🇯🇵 日本4|@stairnode #1'
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 461
   server: 36.156.102.125
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 30,33|日本v2|@ripaojiedian
-  network: kcp
-  port: '37257'
-  server: 47.74.57.10
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cb774883-1c2f-4b8a-8637-828f356e0c76
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 34,37|🇯🇵 日本|@stairnode
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202507282137611-ZRPR5o9z3b.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 34,37|🇯🇵 日本2|@stairnode
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.191.40
-  tfo: false
-  type: ss
-- name: 36,38|JP_speednode_0035
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 103.116.7.103
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 36,38|JP_speednode_0036
+- name: 25,36,38|JP_speednode_0069
   network: ws
   password: Aimer
   port: 2087
@@ -1188,7 +1170,30 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560
-- name: 36,38|JP_speednode_0037
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 25,34,37|🇯🇵 日本|@stairnode
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202507282137611-Ykh074r9Rq.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 30,33|日本v2|@ripaojiedian
+  network: kcp
+  port: '37257'
+  server: 47.74.57.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cb774883-1c2f-4b8a-8637-828f356e0c76
+- name: 38|JP_speednode_0067
   network: ws
   password: Aimer
   port: 2096

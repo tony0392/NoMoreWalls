@@ -34,6 +34,26 @@ proxies:
     path: /xyz
 - alterId: 0
   cipher: auto
+  name: 6|IEPL专线 加拿大1
+  port: 22236
+  server: jzgz.tcity8.monster
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 04ebdb17-1d28-4f07-8d97-026c6db1cb52
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大1
+  port: 45064
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 80f6d50c-c0d9-46c8-a114-f23b90d06ca0
+- alterId: 0
+  cipher: auto
   name: 6,7|IEPL专线 加拿大2-1A
   port: 35216
   server: dzgz.tcity8.monster
@@ -41,47 +61,27 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a96b1f71-7c50-4701-9c0c-74e0ec0c1449
+  uuid: 04ebdb17-1d28-4f07-8d97-026c6db1cb52
 - alterId: 0
   cipher: auto
-  name: 6,7|IEPL专线 加拿大1-1A
-  port: 22236
-  server: jzgz.tcity8.monster
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a96b1f71-7c50-4701-9c0c-74e0ec0c1449
-- alterId: 0
-  cipher: auto
-  name: 7|加拿大2
+  name: 6|加拿大2
   port: 45065
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: bf2c0cf2-8652-49ac-abc1-17d02cfef2da
+  uuid: 80f6d50c-c0d9-46c8-a114-f23b90d06ca0
 - alterId: 0
   cipher: auto
-  name: 7|IEPL专线 加拿大2-1B
-  port: 35216
-  server: dzgz.tcity8.monster
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aef4567a-1ac7-4afa-9105-7a67d0013b2d
-- alterId: 0
-  cipher: auto
-  name: 7|加拿大1
+  name: 7|加拿大1-1B
   port: 45064
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: bf2c0cf2-8652-49ac-abc1-17d02cfef2da
+  uuid: 6174ec9a-5140-4a0e-a0b9-b4ebe817db76
 - alterId: 0
   cipher: auto
   name: 7|IEPL专线 加拿大1-1B
@@ -91,7 +91,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: aef4567a-1ac7-4afa-9105-7a67d0013b2d
+  uuid: 293b950e-3d05-4596-9aae-587045620348
 - cipher: aes-256-cfb
   name: 11|🇨🇦 CA, Vancouver
   password: amazonskr05
@@ -107,23 +107,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '18,23,30|🇨🇦_CA_加拿大->🇺🇸_US_美国 #4'
-  network: ws
-  port: 8880
-  server: 205.233.181.241
-  servername: ''
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- alterId: 0
-  cipher: auto
   name: 23|[VMess] 🇨🇦 _CA_加拿大
   network: ws
   port: 80
@@ -136,20 +119,20 @@ proxies:
   uuid: 474e8680-701f-11ee-b436-205c6d5f5d78
   ws-opts:
     path: /
-- name: '23,25,36,38|US_speednode_0168 #1'
+- alterId: 0
+  cipher: auto
+  name: '30|🇨🇦_CA_加拿大->🇺🇸_US_美国 #4'
   network: ws
-  password: Aimer
-  port: 2083
-  server: 130.250.137.63
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  tfo: false
-  type: trojan
-  udp: true
+  port: 8880
+  server: 205.233.181.241
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
   ws-opts:
     headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560
+      Host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
 - alterId: 0
   cipher: auto
   name: 30|🇨🇦 VMESS-加拿大-NF解锁加拿大地区非自制剧-Cha...

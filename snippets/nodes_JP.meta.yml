@@ -468,16 +468,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6,7|日本NO.2-1A
-  port: 45057
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 80f6d50c-c0d9-46c8-a114-f23b90d06ca0
-- alterId: 0
-  cipher: auto
   name: 6|IEPL专线 日本1
   port: 22235
   server: jzgz.tcity8.monster
@@ -485,47 +475,47 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 04ebdb17-1d28-4f07-8d97-026c6db1cb52
+  uuid: 2a26ded4-883e-4f00-8a24-5c976fabc86f
 - alterId: 0
   cipher: auto
-  name: 6|日本NO.1
+  name: 6,7|日本NO.1-1A
   port: 45056
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 80f6d50c-c0d9-46c8-a114-f23b90d06ca0
+  uuid: 7da26a5c-eb0f-4df5-9590-ce29b677a89c
 - alterId: 0
   cipher: auto
-  name: 6,7|IEPL专线 日本2-1A
+  name: 6|IEPL专线 日本2
   port: 35218
   server: dzgz.tcity8.monster
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 04ebdb17-1d28-4f07-8d97-026c6db1cb52
+  uuid: 2a26ded4-883e-4f00-8a24-5c976fabc86f
 - alterId: 0
   cipher: auto
-  name: 7|日本NO.2-1B
+  name: 6,7|日本NO.2-1A
   port: 45057
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 6174ec9a-5140-4a0e-a0b9-b4ebe817db76
+  uuid: 7da26a5c-eb0f-4df5-9590-ce29b677a89c
 - alterId: 0
   cipher: auto
-  name: 7|IEPL专线 日本2-1B
-  port: 35218
-  server: dzgz.tcity8.monster
+  name: 7|日本NO.1-1B
+  port: 45056
+  server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 293b950e-3d05-4596-9aae-587045620348
+  uuid: ce3bac7a-2a04-4b80-8cfd-0d9d5cc2bf39
 - alterId: 0
   cipher: auto
   name: 9|JP | 日本 LB-1T
@@ -1078,6 +1068,20 @@ proxies:
   port: 443
   server: 54.199.83.184
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|JP日本(mibei77.com 米贝节点分享)
+  network: ws
+  port: 8880
+  server: 156.238.19.9
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 70df7c1e-12c8-325f-a12a-34aa46949e60
+  ws-headers:
+    Host: TG.WangCai2.s4.cn-db.top
+  ws-path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - cipher: aes-256-gcm
   name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_38...
   password: 70a0b8103356
@@ -1091,21 +1095,6 @@ proxies:
     tls: true
   port: 636
   server: 137.220.142.139
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_37...
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.191.38
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -1125,6 +1114,21 @@ proxies:
   tfo: false
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_37...
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.38
+  tfo: false
+  type: ss
 - cipher: rc4-md5
   name: 25|🇯🇵 日本|@ripaojiedian
   password: efanccyun
@@ -1157,28 +1161,17 @@ proxies:
   sni: www.baidu.com
   type: trojan
   udp: true
-- name: 25,36,38|JP_speednode_0066
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 103.116.7.100
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560
 - cipher: rc4-md5
-  name: 25|🇯🇵 日本|@ripaojiedian 2
+  client-fingerprint: chrome
+  name: 25,34,37|🇯🇵 日本|@stairnode
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-Ykh074r9Rq.download.microsoft.com
+    host: 202507282137611-T3mfnF0MuU.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
+  tfo: false
   type: ss
   udp: true
 - alterId: 0
@@ -1191,15 +1184,3 @@ proxies:
   tls: false
   type: vmess
   uuid: cb774883-1c2f-4b8a-8637-828f356e0c76
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 34,37|🇯🇵 日本|@stairnode
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202507282137611-5Up7OUIi18.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss

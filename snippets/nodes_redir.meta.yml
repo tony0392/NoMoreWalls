@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,1,27,28|🇳🇱_NL_荷兰->🇺🇸_US_美国 #3'
+  name: '0,1,28|🇳🇱_NL_荷兰->🇺🇸_US_美国 #2'
   network: ws
   port: 8880
   server: 185.193.29.88
@@ -16,32 +16,28 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 0,1,14,28,30|US_400
+  name: '0,1,14,28|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
   network: tcp
-  port: '30002'
+  port: 30002
   server: 38.12.83.217
   servername: loosely.freetrade.link
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 0,1,28,30|🇺🇸 美国 V2CROSS.COM
+  name: '0,1,28|🇬🇧_GB_英国->🇺🇸_US_美国_1 #2'
   network: ws
-  port: '20086'
+  port: 20086
   server: 154.62.185.216
-  tls: false
   type: vmess
   uuid: 20ed1673-8f9e-485b-9956-147768fce851
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,1,22,28|🇬🇧_GB_英国->🇺🇸_US_美国_2 #2'
+  name: '0,1,28|🇬🇧_GB_英国->🇺🇸_US_美国_2 #2'
   network: ws
   port: 8880
   server: 185.162.228.88
@@ -66,32 +62,31 @@ proxies:
     path: /profile/telegram@ssrsub
 - alterId: 0
   cipher: auto
-  name: 0,1,27,28,30|🇷🇺 俄罗斯 V2CROSS.COM
+  name: '0,1,28|🇷🇺_RU_俄罗斯->🏳️_unKnow_未知 #2'
   network: ws
-  port: '20086'
+  port: 20086
   server: 77.221.143.225
-  tls: false
   type: vmess
   uuid: 149b4663-aece-486a-b92c-392c41727ac1
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - cipher: aes-128-gcm
-  name: '0,1,28|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
+  country: 🇨🇳 CN
+  name: '0,1,14,28|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
   password: 01721e43-5389-4f97-b21c-900abb2bda9e
   port: 12012
   server: awes35lesl.blhao0o.dpdns.org
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '0,1,28|🇳🇱_NL_荷兰->🇩🇪_DE_德国 #2'
+  country: 🇱🇹 LT
+  name: '0,1,14,28|🇳🇱_NL_荷兰->🇩🇪_DE_德国 #2'
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.158.171.146
   type: ss
 - alterId: 0
   cipher: auto
-  name: '0,1,27,28|🇩🇰_DK_丹麦->🇺🇸_US_美国_2 #2'
+  name: '0,1,28|🇩🇰_DK_丹麦->🇺🇸_US_美国_2 #2'
   network: ws
   port: 80
   server: fastcup.net
@@ -104,7 +99,7 @@ proxies:
     path: /profile/telegram@ssrsub
 - alterId: 0
   cipher: auto
-  name: '0,1,27,28|🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
+  name: '0,1,28|🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
   network: ws
   port: 8880
   server: 154.197.108.88
@@ -3802,10 +3797,11 @@ proxies:
     path: /dabai.in
 - alterId: 2
   cipher: auto
-  name: 19|🇨_CN_中国->🇺🇸_US_美国
+  name: 19,27|🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
   port: 30833
   server: v33.heduian.link
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
@@ -4031,65 +4027,39 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: '27|_CA_->_US_ #1'
-  network: ws
-  port: 20086
-  server: 142.171.224.111
-  type: vmess
-  uuid: 0908eadd-7337-49dd-8e9b-e325bca02910
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇳_IN_->🇷_FR_国
-  password: c0iCgBG1Jma4QGutmZC17k
-  port: 8443
-  server: 202.78.160.88
+- cipher: aes-256-gcm
+  name: 27|🇺🇸_US_美国->🇳_CN_中国
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
   type: ss
-- cipher: aes-128-gcm
-  name: 27|🇳_CN_中国->🇺🇸_US_美国
-  password: 01721e43-5389-4f97-b21c-900abb2bda9e
-  port: 12017
-  server: awes35lesl.blhao0o.dpdns.org
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 27|🇷_KR_国->🇺🇸_US_美国
-  network: ws
-  port: 20086
-  server: 154.223.19.231
-  type: vmess
-  uuid: bfb323d3-239e-4e1b-bfa8-13f68385931e
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '30|🇩🇰_DK_丹麦->🇺🇸_US_美国 #2'
-  network: ws
-  port: 80
-  server: fastcup.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 76414574-71e0-4706-89cc-c5b09c13445d
-  ws-opts:
-    headers:
-      Host: cdn-node-oss-99.paofu.de
-    path: /profile/telegram@ssrsub
 - alterId: 2
   cipher: auto
-  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国
+  name: 27|🇨🇳_CN_中国->_SG_
   network: ws
-  port: 30833
-  server: v33.heduian.link
-  servername: ''
-  tls: false
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: false
+  sni: baidu.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v33.heduian.link
+      host: v8.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 27|🇨🇳_CN_中国->_GB_国
+  network: ws
+  port: 30836
+  server: v36.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v36.heduian.link
     path: /oooo
 - alterId: 0
   cipher: auto
@@ -4133,3 +4103,73 @@ proxies:
     headers:
       Host: 154.223.19.231
     path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🇩🇰_DK_丹麦->🇺🇸_US_美国
+  network: ws
+  port: 80
+  server: fastcup.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 76414574-71e0-4706-89cc-c5b09c13445d
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: '30|🇳🇱_NL_荷兰->🇺🇸_US_美国 #3'
+  network: ws
+  port: 8880
+  server: 185.193.29.88
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cc0926df-54a8-3df7-934c-fd3ead64f6aa
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s2.cn-db.top
+    path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '30|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  network: ws
+  port: 8880
+  server: 154.197.108.88
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cc0926df-54a8-3df7-934c-fd3ead64f6aa
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s2.cn-db.top
+    path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 2
+  cipher: auto
+  name: 30|🇨🇳_CN_中国->🇸🇬_SG_新加坡
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v8.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 30|🇨🇳_CN_中国->🇬🇧_GB_英国
+  network: ws
+  port: 30836
+  server: v36.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v36.heduian.link
+    path: /oooo

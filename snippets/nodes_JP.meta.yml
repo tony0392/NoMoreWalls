@@ -1030,11 +1030,11 @@ proxies:
     path: /stream
 - alterId: 64
   cipher: auto
-  name: 10,33|🇯🇵日本1 | ⬇️ 1.8MB/s|54%|Youtube...
+  name: 10,25,33|🇯🇵日本1 | ⬇️ 1.8MB/s|54%|Youtube...
   network: ws
   port: 1443
   server: sslvpn.51job.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   tfo: false
   tls: true
   type: vmess
@@ -1083,6 +1083,23 @@ proxies:
     Host: TG.WangCai2.s4.cn-db.top
   ws-path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 22,25,34,37|🇯🇵 日本2|@stairnode
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
   name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_38...
   password: 70a0b8103356
   plugin: v2ray-plugin
@@ -1112,37 +1129,56 @@ proxies:
   server: 137.220.191.38
   tfo: false
   type: ss
+- cipher: rc4-md5
+  name: 25|🇯🇵 日本|@ripaojiedian
+  password: efanccyun
+  port: 8766
+  server: cn01.efan8867801.xyz
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 22,34,37|🇯🇵 日本2|@stairnode
+  name: 25|🇯🇵 日本2|@ripaojiedian
   password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
   port: 636
   server: 137.220.191.40
-  tfo: false
   type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: '30,33,34,37|🇯🇵 日本3|@stairnode #1'
+  name: '25,30,33,34,37|🇯🇵 日本3|@stairnode #1'
   password: 253bc477d4e43c209f2d427272968280
   port: 180
   server: 36.156.102.125
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+  udp: true
 - client-fingerprint: chrome
-  name: '30,33,34,37|🇯🇵 日本4|@stairnode #1'
+  name: '25,30,33,34,37|🇯🇵 日本4|@stairnode #1'
   password: 253bc477d4e43c209f2d427272968280
   port: 461
   server: 36.156.102.125
   skip-cert-verify: true
   sni: www.baidu.com
+  type: trojan
+  udp: true
+- cipher: rc4-md5
+  name: 25|🇯🇵 日本|@ripaojiedian 2
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202507282137611-G2zNAjxjDH.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: '30,33,34,37|🇯🇵 日本5|@stairnode #1'
+  password: f60cd513-7b83-4b64-936c-f7e88e95dacd
+  port: 8181
+  server: 120.240.118.186
+  skip-cert-verify: false
+  sni: www.microsoft365.com
   type: trojan
 - alterId: 0
   cipher: auto
@@ -1160,7 +1196,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-G2zNAjxjDH.download.microsoft.com
+    host: 202507282137611-ABbKq8VLBc.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz

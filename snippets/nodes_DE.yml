@@ -66,26 +66,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6|IEPL专线 德国1
-  port: 22230
-  server: jzgz.tcity8.monster
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2a26ded4-883e-4f00-8a24-5c976fabc86f
-- alterId: 0
-  cipher: auto
-  name: 6|IEPL专线 德国2
-  port: 35222
-  server: dzgz.tcity8.monster
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2a26ded4-883e-4f00-8a24-5c976fabc86f
-- alterId: 0
-  cipher: auto
   grpc-opts:
     grpc-service-name: vmess-grpc
   name: 10,33|🇩🇪德国5 | ⬇️ 1.4MB/s|0%|Youtube|...
@@ -98,28 +78,28 @@ proxies:
   type: vmess
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
 - cipher: chacha20-ietf-poly1305
+  name: 13|🇩🇪 德国 | DEU
+  password: 1b794282-37a1-400c-a12f-1e0b5395972b
+  port: 1569
+  server: 31.22.10.139
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 13|🇩🇪 德国 | DEU 2
+  password: 1b794282-37a1-400c-a12f-1e0b5395972b
+  port: 5968
+  server: 185.183.181.242
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   country: 🇪 DE
-  name: 14|🇪 DE_57
+  name: 14|🇪 DE_59
   password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
   port: 54075
   server: beta.mattenadene.org
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 14|🇪 DE_58
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 92.118.205.228
-  type: ss
 - cipher: aes-256-cfb
   country: 🇪DE
-  name: 14|🇪DE_59
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
   name: 14|🇪DE_60
   password: aLpQtfEZe445QyHk
   port: 9098
@@ -127,16 +107,16 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 14|🇩🇪DE_61
-  password: XPtzA9sCug3SPR4c
-  port: 9025
+  name: 14|🇪DE_61
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇩🇪DE
   name: 14|🇩🇪DE_62
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
@@ -146,13 +126,28 @@ proxies:
   port: 9064
   server: 80.92.204.106
   type: ss
-- country: 🇪DE
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
   name: 14|🇩🇪DE_64
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
+  server: 80.92.204.106
+  type: ss
+- country: 🇩🇪DE
+  name: 14|🇩🇪DE_65
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
   skip-cert-verify: true
   sni: de2-full.privateip.net
+  type: trojan
+  udp: true
+- name: 22|🟠_🇩🇪_💻_github.com/Ruk1ng001_37...
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 185.208.207.217
+  skip-cert-verify: true
+  sni: dus.freeguard.org
   type: trojan
   udp: true
 - alterId: 0

@@ -87,14 +87,14 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6,7|IEPL专线 台湾1-1A
-  port: 22240
-  server: jzgz.tcity8.monster
+  name: 6,7|台湾1-1A-GPT
+  port: 45078
+  server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 2a26ded4-883e-4f00-8a24-5c976fabc86f
+  uuid: 630abba5-27ab-4f0c-abaa-b50cf69c52e8
 - alterId: 0
   cipher: auto
   name: 6,7|台湾2-1A-GPT
@@ -104,27 +104,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7da26a5c-eb0f-4df5-9590-ce29b677a89c
-- alterId: 0
-  cipher: auto
-  name: 6|IEPL专线 台湾2
-  port: 35224
-  server: dzgz.tcity8.monster
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2a26ded4-883e-4f00-8a24-5c976fabc86f
-- alterId: 0
-  cipher: auto
-  name: 6,7|台湾1-1A-GPT
-  port: 45078
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7da26a5c-eb0f-4df5-9590-ce29b677a89c
+  uuid: 630abba5-27ab-4f0c-abaa-b50cf69c52e8
 - alterId: 0
   cipher: auto
   name: 7|台湾2-1B-GPT
@@ -134,7 +114,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: ce3bac7a-2a04-4b80-8cfd-0d9d5cc2bf39
+  uuid: a1d71113-b1aa-483a-98f8-db76ca995300
 - alterId: 0
   cipher: auto
   name: 7|台湾1-1B-GPT
@@ -144,27 +124,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: ce3bac7a-2a04-4b80-8cfd-0d9d5cc2bf39
-- alterId: 0
-  cipher: auto
-  name: 7|IEPL专线 台湾1-1B
-  port: 22240
-  server: jzgz.tcity8.monster
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e8d2d1c2-e366-463a-97f8-3887dcd4d68e
-- alterId: 0
-  cipher: auto
-  name: 7|IEPL专线 台湾2-1B
-  port: 35224
-  server: dzgz.tcity8.monster
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e8d2d1c2-e366-463a-97f8-3887dcd4d68e
+  uuid: a1d71113-b1aa-483a-98f8-db76ca995300
 - client-fingerprint: chrome
   name: 10,22,35|TW Moon
   password: exaxgqkKkd0TAMrCxeonWg==
@@ -175,14 +135,40 @@ proxies:
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
+- alterId: 0
+  cipher: auto
+  country: 🇼 TW
+  h2-opts: {}
+  http-opts: {}
+  name: 14| TW_182
+  network: ws
+  port: 20521
+  server: 103.61.139.137
+  skip-cert-verify: true
+  type: vmess
+  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
+  ws-path: /
 - country: 🇼 TW
-  name: 14| TW_186
+  name: 14|🇼 TW_183
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 443
   server: taifo03a.kbservice.club
   skip-cert-verify: true
   type: trojan
   udp: true
+- name: '33,36,38|TW_speednode_0132 #1'
+  network: ws
+  password: ttfang
+  port: 81
+  server: 103.106.230.186
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
 - name: 34,37|🇹🇼 台湾|@stairnode
   password: test.+
   port: 30443

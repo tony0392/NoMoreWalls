@@ -475,7 +475,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 630abba5-27ab-4f0c-abaa-b50cf69c52e8
+  uuid: b6674d30-b3bb-4b2b-bd3a-20b4e77e8118
 - alterId: 0
   cipher: auto
   name: 6,7|日本NO.2-1A
@@ -485,7 +485,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 630abba5-27ab-4f0c-abaa-b50cf69c52e8
+  uuid: b6674d30-b3bb-4b2b-bd3a-20b4e77e8118
 - alterId: 0
   cipher: auto
   name: 7|日本NO.2-1B
@@ -495,7 +495,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a1d71113-b1aa-483a-98f8-db76ca995300
+  uuid: 81cb6ded-2c7e-4eea-91f6-811841bfb23a
 - alterId: 0
   cipher: auto
   name: 7|日本NO.1-1B
@@ -505,7 +505,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a1d71113-b1aa-483a-98f8-db76ca995300
+  uuid: 81cb6ded-2c7e-4eea-91f6-811841bfb23a
 - alterId: 0
   cipher: auto
   name: 9|JP | 日本 LB-1T
@@ -1058,14 +1058,23 @@ proxies:
   port: 443
   server: 54.199.83.184
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇯🇵 日本 | JPN
-  password: 1b794282-37a1-400c-a12f-1e0b5395972b
-  port: 23472
-  server: 23.27.201.149
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
+  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_38...
+  password: 70a0b8103356
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp5v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /bezradrqccl
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.142.139
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
   name: 22,34,37|🇯🇵 日本2|@stairnode
   password: 823e135ed103
   plugin: v2ray-plugin
@@ -1095,29 +1104,16 @@ proxies:
   server: 137.220.191.38
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_38...
-  password: 70a0b8103356
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp5v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /bezradrqccl
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.142.139
-  tfo: false
-  type: ss
-- name: '30,33,34,37|🇯🇵 日本3|@stairnode #1'
+- client-fingerprint: chrome
+  name: '30,33,34,37|🇯🇵 日本3|@stairnode #1'
   password: 253bc477d4e43c209f2d427272968280
-  port: 193
+  port: 409
   server: 36.156.102.78
   skip-cert-verify: true
-  sni: www.baidu.com
+  sni: 1-dy.ixigua.com
   type: trojan
-- name: '30,33,34,37|🇯🇵 日本4|@stairnode #1'
+- client-fingerprint: chrome
+  name: '30,33,34,37|🇯🇵 日本4|@stairnode #1'
   password: 253bc477d4e43c209f2d427272968280
   port: 461
   server: 36.156.102.125
@@ -1126,7 +1122,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '30,33|日本v2|@ripaojiedian #1'
+  name: 30,33|日本v2|@ripaojiedian
   network: kcp
   port: '37257'
   server: 47.74.57.10
@@ -1134,33 +1130,41 @@ proxies:
   tls: false
   type: vmess
   uuid: cb774883-1c2f-4b8a-8637-828f356e0c76
-- alterId: 2
-  cipher: auto
-  name: '30,33,34,37|🇯🇵 日本5|@stairnode #1'
-  network: ws
-  port: 30806
-  server: v6.heduian.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - cipher: rc4-md5
+  client-fingerprint: chrome
   name: 34,37|🇯🇵 日本|@stairnode
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-8jPSOxErXG.download.microsoft.com
+    host: 202507282137611-oza3DJO8nv.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
+  tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '34,37|🇯🇵 日本6|@stairnode #1'
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 9898
-  server: 52.199.211.144
-  type: ss
+- name: 36,38|JP_speednode_0067
+  network: ws
+  password: Aimer
+  port: 8080
+  server: 34.85.77.183
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 36,38|JP_speednode_0069
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 103.116.7.67
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560

@@ -1,58 +1,4 @@
 proxies:
-- cipher: aes-256-gcm
-  name: '0,1,19,27,28|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
-  password: iUB0923RBA
-  port: 30067
-  server: 154.3.8.151
-  type: ss
-- alpn:
-  - http/1.1
-  name: '0,1,27,28|🇷🇺_RU_俄罗斯->🇺🇸_US_美国 #3'
-  network: tcp
-  password: tunnel-astrovpn_official-tr
-  port: 8441
-  server: tr-1.stunnel.cc
-  skip-cert-verify: true
-  sni: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.monster.JoinTelegram-------------AstroVPN_Official----------Join.ir
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: '0,1,19,27,28|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v37.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 0,1,27,28,30|🇩🇪_DE_德国->🇷🇴_RO_罗马尼亚
-  network: tcp
-  port: 100
-  server: cpanel.erade32.ir
-  servername: ''
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: 0888adea-086c-4783-9989-85df86819c1f
-- alterId: 2
-  cipher: auto
-  name: '0,1,27,28|🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
 - alterId: 2
   cipher: auto
   name: '0,1,19,27,28|🇨🇳_CN_中国->🇬🇧_GB_英国 #2'
@@ -69,34 +15,6 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  fingerprint: ''
-  name: '0,1,28|🇩🇪_DE_德国->🇷🇴_RO_罗马尼亚_2 #2'
-  network: ws
-  port: 100
-  server: cpanel.erade33.ir
-  sni: ''
-  type: vmess
-  uuid: 0888adea-086c-4783-9989-85df86819c1f
-  ws-opts:
-    headers:
-      host: uploadboy.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '0,1,28|🇨🇳_CN_中国->🇺🇸_US_美国_3 #2'
-  network: ws
-  port: 30824
-  server: v24.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v24.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
   name: '0,1,27,28|🇩🇰_DK_丹麦->🇺🇸_US_美国 #2'
   network: ws
   port: 80
@@ -107,6 +25,66 @@ proxies:
     headers:
       host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
+- alterId: 2
+  cipher: auto
+  name: '0,1,19,22,27,28|🇨🇳_CN_中国->🇺🇸_US_美国_1 #3'
+  network: ws
+  port: 30833
+  server: v33.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v33.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: '0,1,27,28|🇺🇸_US_美国->🇪🇸_ES_西班牙 #2'
+  network: ws
+  port: 80
+  server: test3.flha.ru
+  type: vmess
+  uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0
+  ws-opts:
+    headers:
+      host: test3.flha.ru
+    path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess
+- alterId: 2
+  cipher: auto
+  name: '0,1,27,28|🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- cipher: aes-256-cfb
+  name: '0,1,27,28|🇰🇷_KR_韩国->🇯🇵_JP_日本 #2'
+  password: qwerREWQ@@
+  port: 15098
+  server: p222.panda001.net
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: '0,1,19,27,28|🇨🇳_CN_中国->🇺🇸_US_美国_3 #2'
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v37.heduian.link
+    path: /oooo
 - cipher: chacha20-ietf-poly1305
   name: 2|🇸🇬 新加坡中转 02
   password: b103d104-bff0-4cee-b42a-85dad07e2036
@@ -3715,19 +3693,6 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 19,22|github.com/Ruk1ng001_353062616...
-  network: ws
-  port: 30833
-  server: v33.heduian.link
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo
 - alterId: 0
   cipher: auto
   fingerprint: ''
@@ -3738,6 +3703,12 @@ proxies:
   sni: ''
   type: vmess
   uuid: ca0c9937-58a6-44ea-9111-a6abac267d0f
+- cipher: aes-256-gcm
+  name: 19|🇺🇸_US_美国->🇳_CN_中国
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
+  type: ss
 - alterId: 2
   cipher: auto
   name: 19|🇨🇳_CN_中国->_SG_
@@ -3906,46 +3877,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: '@Ghostray_NG'
-  name: 27,30|🇩🇪_DE_德国->🇺🇸_US_美国
-  network: grpc
-  port: 8880
-  server: s1.ghostrkr.sbs
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 863b6395-3f7a-4e37-acb8-9da9cf57908d
-- alterId: 2
-  cipher: auto
-  name: '30|🇨🇳_CN_中国->🇬🇧_GB_英国 #3'
-  network: ws
-  port: 30836
-  server: v36.heduian.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v36.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 30|🇺🇸 _CN_中国->🇺🇸_US_美国
-  network: ws
-  port: '30824'
-  server: v24.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v24.heduian.link
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '30|🇩🇰_DK_丹麦->🇺🇸_US_美国 #3'
+  name: '30|🇩🇰_DK_丹麦->🇺🇸_US_美国 #4'
   network: ws
   port: 80
   server: csgo.com
@@ -3957,9 +3889,31 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: '@Ghostray_NG'
+  name: 30|🇩🇪_DE_德国->🇺🇸_US_美国
+  network: grpc
+  port: 8880
+  server: s1.ghostrkr.sbs
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 863b6395-3f7a-4e37-acb8-9da9cf57908d
+- alterId: 0
+  cipher: auto
+  name: 30|🇩🇪_DE_德国->🇷🇴_RO_罗马尼亚
+  network: tcp
+  port: 100
+  server: cpanel.erade32.ir
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0888adea-086c-4783-9989-85df86819c1f
 - alterId: 2
   cipher: auto
-  name: '30|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
+  name: '30|🇨🇳_CN_中国->🇺🇸_US_美国 #5'
   network: ws
   port: 30837
   server: v37.heduian.link
@@ -3970,4 +3924,25 @@ proxies:
   ws-opts:
     headers:
       Host: v37.heduian.link
+    path: /oooo
+- name: 30|🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+  password: tunnel-astrovpn_official-tr
+  port: 8441
+  server: tr-1.stunnel.cc
+  skip-cert-verify: true
+  sni: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.monster.JoinTelegram-------------AstroVPN_Official----------Join.ir
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: '30|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
+  network: ws
+  port: 30833
+  server: v33.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v33.heduian.link
     path: /oooo

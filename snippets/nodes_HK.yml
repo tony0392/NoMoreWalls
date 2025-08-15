@@ -199,16 +199,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6,7|香港NO.1-1A-GPT
-  port: 45050
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5a923407-9d2e-46cb-b0e5-ad8b354beb96
-- alterId: 0
-  cipher: auto
   name: 6,7|香港NO.2-1A-GPT
   port: 45051
   server: xdd.dashuai.cyou
@@ -216,17 +206,27 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 5a923407-9d2e-46cb-b0e5-ad8b354beb96
+  uuid: 1ce12cc5-51de-4c39-b611-eaef8137564f
 - alterId: 0
   cipher: auto
-  name: 7|香港NO.1-1B-GPT
+  name: 6,7|香港NO.1-1A-GPT
   port: 45050
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 358f63db-d155-4ece-9748-3a0a906f5528
+  uuid: 1ce12cc5-51de-4c39-b611-eaef8137564f
+- alterId: 0
+  cipher: auto
+  name: 7|香港NO.1-1B
+  port: 45050
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bcd6b560-5091-4d53-a6ae-9f1e40498f8a
 - alterId: 0
   cipher: auto
   name: 7|香港NO.2-1B-GPT
@@ -236,7 +236,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 358f63db-d155-4ece-9748-3a0a906f5528
+  uuid: bcd6b560-5091-4d53-a6ae-9f1e40498f8a
 - alterId: 0
   cipher: auto
   name: 9|HK | 香港 LB-1V
@@ -769,104 +769,196 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 13|🇭🇰 香港 | HKG
-  password: a8178c12-02bd-4de9-bd39-881d841e3ec4
-  port: 22800
-  server: 156.224.77.215
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇭🇰 香港 | HKG 2
   password: 8db6980c-1e32-41b0-9196-a63268e1600d
   port: 22800
   server: 156.224.77.215
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 13|🇭🇰 香港 | HKG 3
-  password: 094c35aa-be73-412f-9a10-a57477e1d652
-  port: 22800
-  server: 156.224.77.215
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇭🇰 香港 | HKG 4
-  password: 9f57b7c5-fcf8-4fd1-a0ee-c6180e2640f1
-  port: 22800
-  server: 156.224.77.215
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇭🇰 香港 | HKG 5
-  password: 64c57a13-fc22-45f8-bb31-01aa2a05d6cb
-  port: 22800
-  server: 156.224.77.215
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇭🇰 香港 | HKG 6
-  password: f6d9abf6-8e84-40e3-85f4-3e9945b6236d
-  port: 22800
-  server: 156.224.77.215
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇭🇰 香港 | HKG 7
-  password: 3da31723-9bca-48e0-aa3c-90a2a39476bf
-  port: 22800
-  server: 156.224.77.215
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇭🇰 香港 | HKG 8
-  password: 207cdd73-a343-4113-8d2e-fc11b23e9bc5
-  port: 22800
-  server: 156.224.77.215
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇭🇰 香港 | HKG 9
-  password: 5b42e54e-db7b-41bc-bf1f-f10556412343
-  port: 22800
-  server: 156.224.77.215
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇭🇰 香港 | HKG 10
+  name: 13|🇭🇰 香港 | HKG 2
   password: b61aa7c5-edde-425a-86e1-f1f08e733d89
   port: 22800
   server: 156.224.77.215
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 13|🇭🇰 香港 | HKG 11
+  name: 13|🇭🇰 香港 | HKG 3
+  password: 190ae798-0615-41bf-abce-d2f0e960dc5a
+  port: 22800
+  server: 156.224.77.215
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 13|🇭🇰 香港 | HKG 4
+  password: acaf4417-b211-4dc8-bac9-c613346381f9
+  port: 22800
+  server: 156.224.77.215
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 13|🇭🇰 香港 | HKG 5
+  password: 094c35aa-be73-412f-9a10-a57477e1d652
+  port: 22800
+  server: 156.224.77.215
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 13|🇭🇰 香港 | HKG 6
   password: c3a851c2-e070-4aff-95ee-366099f5c482
   port: 22800
   server: 156.224.77.215
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 13|🇭🇰 香港 | HKG 12
+  name: 13|🇭🇰 香港 | HKG 7
+  password: d03cbf54-7c0f-4c37-8420-58e39ed67de9
+  port: 22800
+  server: 156.224.77.215
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 13|🇭🇰 香港 | HKG 8
+  password: 3da31723-9bca-48e0-aa3c-90a2a39476bf
+  port: 22800
+  server: 156.224.77.215
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 13|🇭🇰 香港 | HKG 9
+  password: 9f57b7c5-fcf8-4fd1-a0ee-c6180e2640f1
+  port: 22800
+  server: 156.224.77.215
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 13|🇭🇰 香港 | HKG 10
+  password: 1c1ae195-7199-4163-a6cc-7581c78cb73d
+  port: 22800
+  server: 156.224.77.215
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 13|🇭🇰 香港 | HKG 11
   password: a3b2c2cd-1c0f-4ea8-9c77-1eb750cd998c
   port: 22800
   server: 156.224.77.215
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 13|🇭🇰 香港 | HKG 12
+  password: 64c57a13-fc22-45f8-bb31-01aa2a05d6cb
+  port: 22800
+  server: 156.224.77.215
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇰 HK
+  name: 14| HK_88
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- cipher: chacha20-ietf
+  country: 🇰 HK
+  name: 14|🇰 HK_89
+  password: asd123456
+  port: 8388
+  server: 103.149.183.61
+  type: ss
+- cipher: chacha20-ietf
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_91
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇭🇰 HK
+  name: 14|🇭🇰 HK_92
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 36888
+  server: ss.007.node-for-bigairport.win
+  type: ss
 - alterId: 2
   cipher: auto
-  name: 18,23,30|🇭🇰 香港 电讯盈科有限公司
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰 HK_93
   network: ws
-  port: '30807'
-  server: v10.heduian.link
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
-  tfo: false
-  tls: false
   type: vmess
-  udp: true
+  uuid: 7960b6cc-1c95-11ef-ac7f-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_94
+  network: ws
+  port: 80
+  server: 84e9c650-szecg0-t0uhms-1rk0x.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7960b6cc-1c95-11ef-ac7f-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_95
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  servername: baidu.com
+  skip-cert-verify: true
+  type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
+  ws-headers:
+    HOST: baidu.com
+  ws-path: /oooo
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_96
+  network: ws
+  port: 80
+  server: 5a2142ce-szi1s0-t0xtcx-1swry.hkt.tcpbbr.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 8a5d58a0-c50e-11ef-a46e-f23c913c8d2b
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_97
+  network: ws
+  port: 80
+  server: c2b04e68-sva740-svxckp-1swry.hk.p5pv.com
+  servername: c2b04e68-sva740-svxckp-1swry.hk.p5pv.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 8a5d58a0-c50e-11ef-a46e-f23c913c8d2b
+  ws-headers:
+    HOST: c2b04e68-sva740-svxckp-1swry.hk.p5pv.com
+  ws-path: /
 - name: 20|HK香港(mibei77.com 米贝节点分享)
   password: tg-fq521free
   port: 443
@@ -881,21 +973,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 25,33|🇭🇰香港1 | ⬇️ 1.8MB/s|15%|Disney|...
-  network: ws
-  port: 8080
-  server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -943,12 +1020,10 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: '25,34,37|🇭🇰 香港5|@stairnode #1'
+  name: 25|🇭🇰 香港5|@ripaojiedian
   password: 01721e43-5389-4f97-b21c-900abb2bda9e
   port: 12014
   server: awes35lesl.blhao0o.dpdns.org
-  tfo: false
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -986,6 +1061,19 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
+- alterId: 2
+  cipher: auto
+  name: 30|🇭🇰 香港 电讯盈科有限公司
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
 - alterId: 0
   cipher: auto
   name: 30,33|香港3|@ripaojiedian
@@ -996,6 +1084,23 @@ proxies:
   tls: false
   type: vmess
   uuid: f7adceb1-556b-44f4-a2c2-20f3e06e2001
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: '30,33,34,37|🇭🇰 香港5|@stairnode #1'
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 30,33|香港v2|@ripaojiedian
@@ -1013,6 +1118,33 @@ proxies:
   skip-cert-verify: false
   sni: epgb.aimercc.dpdns.org
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #1'
+  network: tcp
+  port: '60983'
+  server: jkcnrkke.xn--fiqs8sjz2bull.com
+  tls: false
+  type: vmess
+  uuid: 2a4ad47b-bae8-4020-8e87-9106f617bf9d
+- alterId: 0
+  cipher: auto
+  name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #2'
+  network: tcp
+  port: '25419'
+  server: jkcnrkke.xn--fiqs8sjz2bull.com
+  tls: false
+  type: vmess
+  uuid: 2a4ad47b-bae8-4020-8e87-9106f617bf9d
+- alterId: 0
+  cipher: auto
+  name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #3'
+  network: tcp
+  port: '25419'
+  server: jkcnrkke.xn--fiqs8sjz2bull.com
+  tls: false
+  type: vmess
+  uuid: bf31ad2a-6523-4520-9fee-1faaf789162e
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158

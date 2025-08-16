@@ -1,6 +1,15 @@
 proxies:
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '0,1,25,28,34,37|6元高速机场：cczzuu.top #2'
+  password: amazonskr05
+  port: 443
+  server: 18.184.59.16
+  tfo: false
+  type: ss
+  udp: true
 - cipher: rc4-md5
-  name: '0,1,27,28|🇩🇪_DE_德国 #2'
+  name: '0,1,27,28|🇩🇪_DE_德国_2 #2'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
@@ -59,85 +68,71 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 14|🇪 DE_59
-  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
-  port: 54075
-  server: beta.mattenadene.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 14|🇪 DE_60
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 92.118.205.228
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇪DE
-  name: 14|🇪DE_61
-  password: aLpQtfEZe445QyHk
-  port: 9098
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 14|🇪DE_62
-  password: FAdUvMJUq5vDgKEq
-  port: 9006
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 14|🇩🇪DE_63
-  password: XPtzA9sCug3SPR4c
-  port: 9025
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 14|🇩🇪DE_64
-  password: ZpNDDKRu9MagNvaf
-  port: 9015
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 14|🇩🇪DE_65
-  password: NvS8N4Vf8qAGPSCL
-  port: 9046
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 14|🇩🇪DE_66
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 14|🇩🇪DE_67
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 14|🇩🇪DE_68
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
-  server: 80.92.204.106
-  type: ss
-- country: 🇪DE
-  name: 14|🇩🇪DE_69
-  password: 665c944d-047d-4659-80d5-3eaac70241a9
-  port: 443
-  server: 139.162.158.172
+- client-fingerprint: chrome
+  name: 26|德国 001
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 5.10.214.216
   skip-cert-verify: true
-  sni: de2-full.privateip.net
+  sni: ttfang.fange.me
   type: trojan
-  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 26|德国 002
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 5.10.215.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 26|德国 003
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 5.175.141.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 26|德国 004
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 31.185.108.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 30|🇩🇪 DE德国(mibei77.com 米贝节点分享)
+  network: ws
+  port: '8880'
+  server: 5.10.214.15
+  tls: false
+  type: vmess
+  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s4.db-link02.top
+    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
   cipher: auto
   name: 30|🇩🇪 VMESS-未知>德国-NF解锁德国地区非自制剧-Ch...

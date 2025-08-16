@@ -1,10 +1,4 @@
 proxies:
-- cipher: aes-256-cfb
-  name: '0,1,28|🇬🇧_GB_英国 #2'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.17.169
-  type: ss
 - alterId: 0
   cipher: auto
   name: 2|🇬🇧 伦敦专线
@@ -31,16 +25,6 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - alterId: 0
   cipher: auto
-  name: 6,7|英国1-1A
-  port: 45066
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1ce12cc5-51de-4c39-b611-eaef8137564f
-- alterId: 0
-  cipher: auto
   name: 6|英国2
   port: 45067
   server: xdd.dashuai.cyou
@@ -48,108 +32,27 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 1ce12cc5-51de-4c39-b611-eaef8137564f
+  uuid: 528196d9-12ae-471b-a1f4-bfab61b6ba99
 - alterId: 0
   cipher: auto
-  name: 7|英国2-1B
-  port: 45067
-  server: xdd.dashuai.cyou
+  name: 6|英国1
+  port: 45066
+  server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: bcd6b560-5091-4d53-a6ae-9f1e40498f8a
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14| GB_78
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: 85.210.120.237
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇧 GB_79
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.237.38
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇧 GB
-  name: 14|🇧 GB_80
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇧 GB_81
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇧 GB
-  name: 14|🇬🇧 GB_82
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 62.100.205.48
-  type: ssr
-- country: 🇬🇧 GB
-  name: 14|🇧 GB_83
-  password: 255a0a50-3f10-11f0-b0d6-1239d0255272
-  port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_84
-  password: dd6dcb10-4683-11f0-ae79-1239d0255272
-  port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: aes-128-gcm
-  country: 🇧GB
-  name: 14|🇬🇧GB_85
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 14|🇬🇧GB_86
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.198
-  type: ss
-- country: 🇬🇧GB
-  name: 14|🇬🇧GB_87
-  password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
-  port: 443
-  server: uk2-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+  uuid: 528196d9-12ae-471b-a1f4-bfab61b6ba99
 - alterId: 0
   cipher: auto
-  name: 18,23,30|🇬🇧 英国 社会保险安全部
-  network: ws
-  port: '8443'
-  server: 51.222.158.243
+  name: 7|英国1-1B
+  port: 45066
+  server: haa.dashuai.cyou
   skip-cert-verify: true
-  tfo: false
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: 4b0df213-0e59-4c16-b391-e0d97686bfa9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess/
+  uuid: d158d164-3f09-4e11-95ba-17d92db2ac37
 - alterId: 0
   cipher: auto
   name: 20|GB英国(mibei77.com 米贝节点分享)
@@ -164,6 +67,167 @@ proxies:
   ws-headers:
     Host: cdn-node-oss-99.paofu.de
   ws-path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: 26|英国 001
+  network: ws
+  port: 16618
+  server: t.cnmjcn.cyou
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 42c37c6c-9ad9-42dc-99d6-afd3c100a563
+  ws-opts:
+    headers:
+      Host: e5406c2f4f42756d4a4089ffcd58947b.mobgslb.tbcache.com
+    path: /
+- client-fingerprint: chrome
+  name: 26|英国 002
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 25.25.25.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 26|英国 003
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 25.26.27.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 26|英国 004
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.8.211.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 26|英国 005
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.12.30.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 26|英国 006
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.12.31.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 26|英国 007
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.85.118.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 26|英国 008
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.85.119.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '30|🇲🇩_MD_摩尔多瓦->🇺🇸_US_美国 #3'
+  network: ws
+  port: 8880
+  server: 185.170.166.15
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s4.db-link02.top
+    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 30|🇬🇧_GB_英国->🇺🇸_US_美国
+  network: ws
+  port: 8880
+  server: 45.12.30.15
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s4.db-link02.top
+    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #2'
+  network: ws
+  port: '8880'
+  server: 80.93.202.15
+  tls: false
+  type: vmess
+  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s4.db-link02.top
+    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '30|🇱🇹_LT_立陶宛->🇺🇸_US_美国 #3'
+  network: ws
+  port: 8880
+  server: 88.216.69.15
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s4.db-link02.top
+    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
   cipher: auto
   name: 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...

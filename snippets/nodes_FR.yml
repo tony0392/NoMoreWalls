@@ -28,24 +28,24 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: 6|法国1
-  port: 45072
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 528196d9-12ae-471b-a1f4-bfab61b6ba99
-- alterId: 0
-  cipher: auto
-  name: 6|法国2
+  name: 6,7|法国2-1A
   port: 45071
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 528196d9-12ae-471b-a1f4-bfab61b6ba99
+  uuid: 59156391-e6f2-44e4-bf12-5f00f32de757
+- alterId: 0
+  cipher: auto
+  name: 6,7|法国1-1A
+  port: 45072
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 59156391-e6f2-44e4-bf12-5f00f32de757
 - alterId: 0
   cipher: auto
   name: 7|法国1-1B
@@ -55,7 +55,105 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: d158d164-3f09-4e11-95ba-17d92db2ac37
+  uuid: b02a9746-2873-48a4-afe7-9856b246e6bb
+- alterId: 0
+  cipher: auto
+  name: 7|法国2-1B
+  port: 45071
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b02a9746-2873-48a4-afe7-9856b246e6bb
+- cipher: chacha20-ietf-poly1305
+  country: 🇷 FR
+  name: 14| FR_57
+  password: qXvO7zYU7KeaB0Md7DQLow
+  port: 1080
+  server: 51.195.119.47
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷FR
+  name: 14|🇫🇷FR_58
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.185.174
+  type: ss
+- country: 🇷FR
+  name: 14|🇷FR_59
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
+  port: 443
+  server: de-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇫🇷FR
+  name: 14|🇷FR_60
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: uk-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇫🇷FR
+  name: 14|🇫🇷FR_61
+  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
+  port: 443
+  server: fr-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇷FR
+  name: 14|🇫🇷FR_62
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: 198.244.190.189
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 20|FR法国(mibei77.com 米贝节点分享)
+  network: ws
+  port: 8880
+  server: 185.238.228.15
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
+  ws-headers:
+    Host: TG.WangCai2.s4.db-link02.top
+  ws-path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 20|FR法国(mibei77.com 米贝节点分享) 2
+  network: ws
+  port: 8880
+  server: 45.80.111.15
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
+  ws-headers:
+    Host: TG.WangCai2.s4.db-link02.top
+  ws-path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 20|FR法国(mibei77.com 米贝节点分享) 3
+  network: ws
+  port: 8880
+  server: 185.251.80.15
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
+  ws-headers:
+    Host: TG.WangCai2.s4.db-link02.top
+  ws-path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - cipher: aes-256-cfb
   name: 23|[SS] 🇫🇷 _FR_法国
   password: asdKkaskJKfnsa
@@ -64,8 +162,21 @@ proxies:
   tfo: false
   type: ss
   udp: true
+- name: 25,26,36,38|FR_speednode_0051
+  network: ws
+  password: Aimer
+  port: 443
+  server: 141.11.203.168
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
 - client-fingerprint: chrome
-  name: 26|法国 001
+  name: 26|法国 002
   network: ws
   password: ttfang
   port: 2096
@@ -78,7 +189,7 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 26|法国 002
+  name: 26|法国 003
   network: ws
   password: ttfang
   port: 2096
@@ -91,7 +202,7 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 26|法国 003
+  name: 26|法国 004
   network: ws
   password: ttfang
   port: 2096
@@ -119,7 +230,7 @@ proxies:
     path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
   cipher: auto
-  name: '30|🇫🇷_FR_法国->🇺🇸_US_美国 #3'
+  name: '30|🇫🇷_FR_法国->🇺🇸_US_美国 #1'
   network: ws
   port: 8880
   server: 45.80.111.15
@@ -133,7 +244,7 @@ proxies:
     path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
   cipher: auto
-  name: '30|🇫🇷 FR法国(mibei77.com 米贝节点分享) #2'
+  name: '30|🇫🇷 FR法国(mibei77.com 米贝节点分享) #5'
   network: ws
   port: '8880'
   server: 185.238.228.15
@@ -157,6 +268,19 @@ proxies:
     headers:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
+- alterId: 0
+  cipher: auto
+  name: '30|🇫🇷 FR法国(mibei77.com 米贝节点分享) #4'
+  network: ws
+  port: '8880'
+  server: 45.80.108.16
+  tls: false
+  type: vmess
+  uuid: dc27b9ae-788a-329c-bee8-3c09c5a3b614
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s4.db-link02.top
+    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - name: 31|法国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

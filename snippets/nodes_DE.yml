@@ -1,19 +1,20 @@
 proxies:
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '0,1,25,28,34,37|6元高速机场：cczzuu.top #2'
-  password: amazonskr05
-  port: 443
-  server: 18.184.59.16
-  tfo: false
-  type: ss
-  udp: true
 - cipher: rc4-md5
-  name: '0,1,27,28|🇩🇪_DE_德国_2 #2'
+  name: '0,1,19,27,28|🇩🇪_DE_德国_2 #2'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
   type: ss
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: '0,1|🇩🇪_DE_德国_2 #1'
+  network: tcp
+  port: 77
+  server: 93.127.180.64
+  sni: ''
+  type: vmess
+  uuid: fb4bd735-49e1-45e8-8308-cdf05c4cc5c6
 - alterId: 0
   cipher: auto
   name: 2|🇩🇪 IEPL专线 德国 NO1
@@ -68,6 +69,57 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- cipher: chacha20-ietf-poly1305
+  country: 🇪 DE
+  name: 14|🇪 DE_52
+  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
+  port: 54075
+  server: beta.mattenadene.org
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇪 DE
+  name: 14|🇪 DE_53
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 92.118.205.228
+  type: ss
+- country: 🇩🇪DE
+  name: 14|🇪DE_54
+  password: 665c944d-047d-4659-80d5-3eaac70241a9
+  port: 443
+  server: 139.162.158.172
+  skip-cert-verify: true
+  sni: de2-full.privateip.net
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 20|DE德国(mibei77.com 米贝节点分享)
+  network: ws
+  port: 8880
+  server: 77.37.33.15
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
+  ws-headers:
+    Host: TG.WangCai2.s4.db-link02.top
+  ws-path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 20|DE德国(mibei77.com 米贝节点分享) 2
+  network: ws
+  port: 8880
+  server: 5.10.214.15
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
+  ws-headers:
+    Host: TG.WangCai2.s4.db-link02.top
+  ws-path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - client-fingerprint: chrome
   name: 26|德国 001
   network: ws
@@ -120,6 +172,12 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- cipher: aes-256-cfb
+  name: '28|🇩🇪_DE_德国_1 #2'
+  password: amazonskr05
+  port: 443
+  server: 18.184.59.16
+  type: ss
 - alterId: 0
   cipher: auto
   name: 30|🇩🇪 DE德国(mibei77.com 米贝节点分享)
@@ -172,3 +230,23 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 30|🇩🇪 德国 V2CROSS.COM
+  password: tg-fq521free
+  port: 443
+  server: 194.76.18.129
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '30|🇩🇪 DE德国(mibei77.com 米贝节点分享) #1'
+  network: ws
+  port: '8880'
+  server: 31.185.108.171
+  tls: false
+  type: vmess
+  uuid: bac7eb53-3470-3af0-a69f-b0561333cda1
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s4.db-link02.top
+    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560

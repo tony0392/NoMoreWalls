@@ -1,18 +1,20 @@
 proxies:
 - cipher: rc4-md5
-  name: '0,1,19,27,28|🇩🇪_DE_德国_2 #2'
+  name: '0,1,14,19,28|🇩🇪_DE_德国_1 #2'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   fingerprint: ''
-  name: '0,1|🇩🇪_DE_德国_2 #1'
+  name: 0,1,28,30|AE | 🔓 VMESS | @mowjproxy [4]
   network: tcp
-  port: 77
+  port: '77'
   server: 93.127.180.64
   sni: ''
+  tls: false
   type: vmess
   uuid: fb4bd735-49e1-45e8-8308-cdf05c4cc5c6
 - alterId: 0
@@ -71,20 +73,27 @@ proxies:
     path: /download
 - cipher: chacha20-ietf-poly1305
   country: 🇪 DE
-  name: 14|🇪 DE_52
-  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
-  port: 54075
-  server: beta.mattenadene.org
+  name: 14|🇪 DE_55
+  password: 5ZQh4pssSk4aK1JG1XhBRg
+  port: 1080
+  server: 84.200.91.228
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 14|🇪 DE_53
+  country: 🇩🇪 DE
+  name: 14|🇪 DE_56
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 92.118.205.228
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇪 DE
+  name: 14|🇪 DE_57
+  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
+  port: 54075
+  server: beta.mattenadene.org
+  type: ss
 - country: 🇩🇪DE
-  name: 14|🇪DE_54
+  name: 14|🇩🇪DE_58
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -172,21 +181,27 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: aes-256-cfb
-  name: '28|🇩🇪_DE_德国_1 #2'
-  password: amazonskr05
-  port: 443
-  server: 18.184.59.16
-  type: ss
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 27,30|🇩🇪_DE_德国
+  network: tcp
+  port: 80
+  server: 93.127.180.64
+  servername: ''
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: fb4bd735-49e1-45e8-8308-cdf05c4cc5c6
 - alterId: 0
   cipher: auto
   name: 30|🇩🇪 DE德国(mibei77.com 米贝节点分享)
   network: ws
   port: '8880'
-  server: 5.10.214.15
+  server: 31.185.108.171
   tls: false
   type: vmess
-  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
+  uuid: bac7eb53-3470-3af0-a69f-b0561333cda1
   ws-opts:
     headers:
       Host: TG.WangCai2.s4.db-link02.top
@@ -237,16 +252,3 @@ proxies:
   skip-cert-verify: false
   sni: torjan.xn--xhq44j.eu.org
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '30|🇩🇪 DE德国(mibei77.com 米贝节点分享) #1'
-  network: ws
-  port: '8880'
-  server: 31.185.108.171
-  tls: false
-  type: vmess
-  uuid: bac7eb53-3470-3af0-a69f-b0561333cda1
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560

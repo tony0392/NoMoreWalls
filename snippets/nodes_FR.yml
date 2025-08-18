@@ -28,60 +28,40 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: 6,7|法国2-1A
+  name: 6|法国2
   port: 45071
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 59156391-e6f2-44e4-bf12-5f00f32de757
+  uuid: 06de1cfe-0197-4792-9830-7b39769661fd
 - alterId: 0
   cipher: auto
-  name: 6,7|法国1-1A
+  name: 6|法国1
   port: 45072
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 59156391-e6f2-44e4-bf12-5f00f32de757
-- alterId: 0
-  cipher: auto
-  name: 7|法国1-1B
-  port: 45072
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b02a9746-2873-48a4-afe7-9856b246e6bb
-- alterId: 0
-  cipher: auto
-  name: 7|法国2-1B
-  port: 45071
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b02a9746-2873-48a4-afe7-9856b246e6bb
+  uuid: 06de1cfe-0197-4792-9830-7b39769661fd
 - cipher: chacha20-ietf-poly1305
   country: 🇷 FR
-  name: 14| FR_57
+  name: 14| FR_61
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
   type: ss
 - cipher: aes-256-cfb
   country: 🇷FR
-  name: 14|🇫🇷FR_58
+  name: 14|🇫🇷FR_62
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
 - country: 🇷FR
-  name: 14|🇷FR_59
+  name: 14|🇷FR_63
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -89,23 +69,15 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 14|🇷FR_60
+  name: 14|🇷FR_64
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: 🇫🇷FR
-  name: 14|🇫🇷FR_61
-  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
-  port: 443
-  server: fr-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - country: 🇷FR
-  name: 14|🇫🇷FR_62
+  name: 14|🇫🇷FR_65
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
@@ -162,13 +134,14 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- name: 25,26,36,38|FR_speednode_0051
+- name: '23,25,26,36,38|FR_speednode_0051 #1'
   network: ws
   password: Aimer
   port: 443
   server: 141.11.203.168
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
+  tfo: false
   type: trojan
   udp: true
   ws-opts:
@@ -216,47 +189,6 @@ proxies:
     path: Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 30|🇪🇸_ES_西班牙->🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 185.251.80.15
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: '30|🇫🇷_FR_法国->🇺🇸_US_美国 #1'
-  network: ws
-  port: 8880
-  server: 45.80.111.15
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: '30|🇫🇷 FR法国(mibei77.com 米贝节点分享) #5'
-  network: ws
-  port: '8880'
-  server: 185.238.228.15
-  tls: false
-  type: vmess
-  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
   name: 30|🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...
   network: ws
   port: '443'
@@ -268,19 +200,6 @@ proxies:
     headers:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
-- alterId: 0
-  cipher: auto
-  name: '30|🇫🇷 FR法国(mibei77.com 米贝节点分享) #4'
-  network: ws
-  port: '8880'
-  server: 45.80.108.16
-  tls: false
-  type: vmess
-  uuid: dc27b9ae-788a-329c-bee8-3c09c5a3b614
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - name: 31|法国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

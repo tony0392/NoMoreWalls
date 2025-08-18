@@ -87,26 +87,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6,7|台湾1-1A-GPT
-  port: 45078
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 59156391-e6f2-44e4-bf12-5f00f32de757
-- alterId: 0
-  cipher: auto
-  name: 6,7|3x备用专线台湾1-1A
-  port: 50050
-  server: xh.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 59156391-e6f2-44e4-bf12-5f00f32de757
-- alterId: 0
-  cipher: auto
   name: 6,7|台湾2-1A-GPT
   port: 45077
   server: xdd.dashuai.cyou
@@ -114,17 +94,27 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 59156391-e6f2-44e4-bf12-5f00f32de757
+  uuid: 06de1cfe-0197-4792-9830-7b39769661fd
 - alterId: 0
   cipher: auto
-  name: 7|3x备用专线台湾1-1B
+  name: 6|台湾1
+  port: 45078
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 06de1cfe-0197-4792-9830-7b39769661fd
+- alterId: 0
+  cipher: auto
+  name: 6|3x备用专线台湾1
   port: 50050
   server: xh.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: b02a9746-2873-48a4-afe7-9856b246e6bb
+  uuid: 06de1cfe-0197-4792-9830-7b39769661fd
 - alterId: 0
   cipher: auto
   name: 7|台湾2-1B-GPT
@@ -134,7 +124,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: b02a9746-2873-48a4-afe7-9856b246e6bb
+  uuid: 311a62d1-9f96-4032-a71b-2c959f8328dd
 - alterId: 0
   cipher: auto
   name: 7|台湾1-1B-GPT
@@ -144,13 +134,13 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: b02a9746-2873-48a4-afe7-9856b246e6bb
+  uuid: 311a62d1-9f96-4032-a71b-2c959f8328dd
 - alterId: 0
   cipher: auto
   country: 🇼 TW
   h2-opts: {}
   http-opts: {}
-  name: 14| TW_159
+  name: 14| TW_169
   network: ws
   port: 20521
   server: 103.61.139.137
@@ -159,10 +149,18 @@ proxies:
   uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
   ws-path: /
 - country: 🇼 TW
-  name: 14|🇼 TW_160
+  name: 14|🇼 TW_170
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 443
   server: taifo03a.kbservice.club
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 34,37|🇹🇼 台湾|@stairnode
+  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
+  port: 13876
+  server: twlite-20250815011717878c9d.tmdns-sing.top
+  tfo: false
+  type: ss

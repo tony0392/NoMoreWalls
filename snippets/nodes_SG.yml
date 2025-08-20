@@ -689,12 +689,6 @@ proxies:
     headers:
       Host: d16henb377mok4.cloudfront.net
     path: /stream
-- cipher: aes-256-cfb
-  name: 11|🇸🇬 SG, Singapore
-  password: amazonskr05
-  port: 443
-  server: 13.113.17.246
-  type: ss
 - alterId: 0
   cipher: auto
   name: 13|🇸🇬 新加坡 | SGP
@@ -722,6 +716,14 @@ proxies:
   server: ldu.izenny.com
   type: ss
   udp: true
+- country: 🇬SG
+  name: 14|SG_159
+  password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
+  port: 443
+  server: sg2-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   name: '25,30,33,34,37|🇸🇬 新加坡|@stairnode #1'
   password: 253bc477d4e43c209f2d427272968280
@@ -731,54 +733,22 @@ proxies:
   sni: www.baidu.com
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  name: '25,30,33,34,37|🇸🇬 新加坡2|@stairnode #1'
+  password: 253bc477d4e43c209f2d427272968280
+  port: 406
+  server: 36.156.102.125
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+  udp: true
 - cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: '25,34,37|🇸🇬 新加坡3|@stairnode #1'
+  name: 25|🇸🇬 新加坡3|@ripaojiedian
   password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
   port: 13886
   server: xinjiapo.tmdns-sing.top
-  tfo: false
   type: ss
   udp: true
-- name: 25,26|俄罗斯 009
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 25,26|俄罗斯 010
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 92.243.74.23
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 25,26|俄罗斯 011
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 92.243.74.3
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
 - name: 31|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

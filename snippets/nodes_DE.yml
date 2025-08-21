@@ -1,4 +1,22 @@
 proxies:
+- cipher: rc4-md5
+  name: '0,1,14,19,28|🇩🇪_DE_德国_1 #2'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 0,1,28,30|AE | 🔓 VMESS | @mowjproxy [4]
+  network: tcp
+  port: '77'
+  server: 93.127.180.64
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: fb4bd735-49e1-45e8-8308-cdf05c4cc5c6
 - alterId: 0
   cipher: auto
   name: 2|🇩🇪 IEPL专线 德国 NO1
@@ -62,12 +80,12 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇪 DE
-  name: 14|🇩🇪 DE_51
+  name: 14|🇪 DE_51
   password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
   port: 54075
   server: beta.mattenadene.org
   type: ss
-- country: 🇩🇪DE
+- country: 🇪DE
   name: 14|🇪DE_52
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
@@ -76,26 +94,6 @@ proxies:
   sni: de2-full.privateip.net
   type: trojan
   udp: true
-- name: '18,23,25,26,33,36,38|KZ_speednode_0081 #2'
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 194.76.18.129
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  tfo: false
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- cipher: rc4-md5
-  name: 19|_DE_国
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
 - alterId: 0
   cipher: auto
   name: 20|DE德国(mibei77.com 米贝节点分享)
@@ -202,6 +200,19 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 30|🇩🇪 DE德国(mibei77.com 米贝节点分享)
+  network: ws
+  port: '8880'
+  server: 31.185.108.171
+  tls: false
+  type: vmess
+  uuid: bac7eb53-3470-3af0-a69f-b0561333cda1
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s4.db-link02.top
+    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
   cipher: auto
   name: 30|🇩🇪 VMESS-未知>德国-NF解锁德国地区非自制剧-Ch...

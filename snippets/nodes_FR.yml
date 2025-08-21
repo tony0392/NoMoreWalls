@@ -28,16 +28,6 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: 6,7|法国-1A
-  port: 19901
-  server: fg.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4d5c0478-94f4-433c-a694-ace8690fa6fc
-- alterId: 0
-  cipher: auto
   name: 6|法国2
   port: 45071
   server: xdd.dashuai.cyou
@@ -45,7 +35,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 4d5c0478-94f4-433c-a694-ace8690fa6fc
+  uuid: 20f79568-7704-4b95-946e-1ae01f9511ec
+- alterId: 0
+  cipher: auto
+  name: 6|法国
+  port: 19901
+  server: fg.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 20f79568-7704-4b95-946e-1ae01f9511ec
 - alterId: 0
   cipher: auto
   name: 6|法国1
@@ -55,17 +55,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 4d5c0478-94f4-433c-a694-ace8690fa6fc
-- alterId: 0
-  cipher: auto
-  name: 7|法国-1B
-  port: 19901
-  server: fg.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdc7d5c4-e116-41af-b98e-0111fe7170b6
+  uuid: 20f79568-7704-4b95-946e-1ae01f9511ec
 - alterId: 0
   cipher: auto
   name: 13|🇫🇷 法国 | FRA
@@ -105,21 +95,13 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇷FR
-  name: 14|🇫🇷FR_56
+  name: 14|🇷FR_56
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
 - country: 🇷FR
-  name: 14|🇷FR_57
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
-  port: 443
-  server: de-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇷FR
-  name: 14|🇷FR_58
+  name: 14|🇫🇷FR_57
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
@@ -127,7 +109,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇷FR
-  name: 14|🇫🇷FR_59
+  name: 14|🇷FR_58
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -135,7 +117,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 14|🇫🇷FR_60
+  name: 14|🇫🇷FR_59
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
@@ -224,6 +206,19 @@ proxies:
   password: ttfang
   port: 2096
   server: 45.80.111.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 26|法国 004
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 94.140.0.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan

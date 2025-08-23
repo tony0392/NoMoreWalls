@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,1,27,28,30|🇺🇸 美国 327
+  name: 0,1,28,30|🇺🇸 美国 327
   network: ws
   port: '25032'
   server: 45.136.245.177
@@ -14,7 +14,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '0,1,28|🇨🇳_CN_中国->🇺🇸_US_美国_1 #3'
+  name: '0,1,28|🇨🇳_CN_中国->🇺🇸_US_美国_1 #4'
   network: ws
   port: 30824
   server: v24.heduian.link
@@ -42,18 +42,17 @@ proxies:
     path: /oooo
 - cipher: aes-256-cfb
   country: 🇺🇸 US
-  name: '0,1,14,27,28|🇸🇰_SK_斯洛伐克->🇺🇸_US_美国 #2'
+  name: '0,1,14,28|🇸🇰_SK_斯洛伐克->🇺🇸_US_美国 #2'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 156.146.40.194
   type: ss
 - alterId: 2
   cipher: auto
-  name: '0,1,19,22,27,28|🇨🇳_CN_中国->🇺🇸_US_美国_3 #2'
+  name: '0,1,22,27,28|🇨🇳_CN_中国->🇺🇸_US_美国_3 #2'
   network: ws
   port: 30833
   server: v33.heduian.link
-  skip-cert-verify: true
   sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -62,7 +61,7 @@ proxies:
       host: v33.heduian.link
     path: /oooo
 - cipher: aes-128-gcm
-  name: '0,1,25,28|🇨🇳_CN_中国->🇺🇸_US_美国_4 #2'
+  name: '0,1,25,27,28|🇨🇳_CN_中国->🇺🇸_US_美国_4 #2'
   password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
   port: 13892
   server: usa022.tmdns-sing.top
@@ -3676,56 +3675,13 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 19|_CN_->_GB_国
-  network: ws
-  port: 30836
-  server: v36.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v36.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 19|🇨🇳_CN_中国->🇸_US_美国
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v37.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 19|🇹_AT_->_FR_国
-  network: tcp
-  port: 59956
-  server: 46.29.34.205
-  type: vmess
-  uuid: ca0c9937-58a6-44ea-9111-a6abac267d0f
-- cipher: aes-256-gcm
-  name: 19|🇺🇸_US_美国->🇳_CN_中国
-  password: iUB0923RBA
-  port: 30067
-  server: 154.3.8.151
+- cipher: aes-128-gcm
+  name: 19,20|US美国(mibei77.com 米贝节点分享) 4
+  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
+  port: 13890
+  server: japan001.tmdns-sing.top
   type: ss
-- name: 19|🇩🇰_DK_丹麦->🇺🇸_US_美国
-  network: ws
-  password: a134e3de-b25a-4020-9998-05fa6b715f1a
-  port: 8443
-  server: pubg.ac
-  sni: cdn-node-oss-99.paofu.de
-  type: trojan
   udp: true
-  ws-opts:
-    path: /profile/telegram@ssrsub
 - alterId: 0
   cipher: auto
   name: 23|[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国
@@ -3878,15 +3834,15 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 27|_GB_国->🇪_DE_德国
-  password: qscavF5UviIL-8V-E4raBA
-  port: 2222
-  server: 91.84.104.133
+- cipher: aes-256-cfb
+  name: 27|_GB_->_CN_国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.17.169
   type: ss
 - alterId: 2
   cipher: auto
-  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国
+  name: '30|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
   network: ws
   port: 30833
   server: v33.heduian.link

@@ -206,22 +206,32 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a8685516-a3c7-4559-af66-ce04aef102d2
+  uuid: eb211c02-276e-48c2-9d3d-31b85d543137
 - alterId: 0
   cipher: auto
-  name: 6,7|3x备用专线香港1-1A
+  name: 6|香港NO.1
+  port: 45050
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: eb211c02-276e-48c2-9d3d-31b85d543137
+- alterId: 0
+  cipher: auto
+  name: 6|3x备用专线香港1
   port: 50051
   server: xh.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: a8685516-a3c7-4559-af66-ce04aef102d2
+  uuid: eb211c02-276e-48c2-9d3d-31b85d543137
 - alterId: 0
   cipher: auto
-  name: 6|香港NO.1
-  port: 45050
-  server: haa.dashuai.cyou
+  name: 7|3x备用专线香港1-1A
+  port: 50051
+  server: xh.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -878,59 +888,6 @@ proxies:
   server: 156.224.77.215
   type: ss
   udp: true
-- cipher: chacha20-ietf
-  country: 🇰 HK
-  name: 14| HK_75
-  password: asd123456
-  port: 8388
-  server: 154.197.26.237
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 14|🇰 HK_76
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
-  type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_77
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- alterId: 2
-  cipher: auto
-  country: 🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰 HK_78
-  network: ws
-  port: 30807
-  server: v10.heduian.link
-  servername: baidu.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    HOST: baidu.com
-  ws-path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 18,23|[VMess] 🇭🇰 香港 电讯盈科有限公司
-  network: ws
-  port: 80
-  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -943,62 +900,44 @@ proxies:
   tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       Host: baidu.com
     path: /oooo
 - cipher: aes-256-gcm
-  name: 25|🇭🇰 香港2|@ripaojiedian
+  name: 25|[SS] 🇭🇰 香港2|@ripaojiedian
   password: 9bfdde71b4c0
   port: 636
   server: 103.103.245.158
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 25|🇭🇰 香港3|@ripaojiedian 2
-  port: 21186
-  server: 43.247.134.190
+  client-fingerprint: chrome
+  name: '25,34,37|🇭🇰 香港3|@stairnode #1'
+  port: 30397
+  server: 43.247.135.17
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  udp: true
-  uuid: bc6f4625-0ce3-4dca-b441-22c34808e6f2
-- name: 25|🇭🇰 香港4|@ripaojiedian
+  uuid: 7364bf26-0eb6-40cc-b7e6-fb1a4b6bf69c
+- client-fingerprint: chrome
+  name: '25,30,33,34,37|🇭🇰 香港4|@stairnode #1'
   password: 253bc477d4e43c209f2d427272968280
-  port: 447
-  server: 36.156.102.125
-  skip-cert-verify: false
-  sni: www.baidu.com
+  port: 1346
+  server: 36.150.215.141
+  skip-cert-verify: true
+  sni: v1-dy.ixigua.com
   type: trojan
-  udp: true
-- cipher: aes-128-gcm
-  name: 25|🇭🇰 香港5|@ripaojiedian
-  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
-  port: 13872
-  server: hk1-20250813213806be3c17japantm01.tmdns-sing.top
-  type: ss
-  udp: true
-- name: 25|🇭🇰 香港6|@ripaojiedian
+- client-fingerprint: chrome
+  name: '25,30,33,34,37|🇭🇰 香港6|@stairnode #1'
   password: 253bc477d4e43c209f2d427272968280
-  port: 444
-  server: 36.156.102.125
-  skip-cert-verify: false
-  sni: www.ithome.com
+  port: 5439
+  server: 36.150.215.141
+  skip-cert-verify: true
+  sni: v1-dy.ixigua.com
   type: trojan
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: 25|🇭🇰 香港7|@ripaojiedian 2
-  port: 42272
-  server: 183.240.245.239
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 30,33|香港3|@ripaojiedian
@@ -1009,55 +948,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 7364bf26-0eb6-40cc-b7e6-fb1a4b6bf69c
-- client-fingerprint: chrome
-  name: '30,33,34,37|🇭🇰 香港4|@stairnode #1'
-  password: 253bc477d4e43c209f2d427272968280
-  port: 51281
-  server: 36.150.215.141
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
-  type: trojan
-- alterId: 64
-  cipher: auto
-  name: 30,33|香港5|@ripaojiedian
-  network: tcp
-  port: '48383'
-  server: 183.240.245.241
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: '30,33,34,37|🇭🇰 香港6|@stairnode #1'
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 43.199.31.125
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 30,33|香港v2|@ripaojiedian
   network: kcp
-  port: '3351'
-  server: 47.83.181.154
+  port: '28590'
+  server: 47.239.183.87
   servername: ''
   tls: false
   type: vmess
-  uuid: 0bfc8acf-ac40-45c1-8dde-7f3417621286
-- alterId: 0
-  cipher: auto
-  name: 30|🇭🇰 HK香港(mibei77.com 米贝节点分享)
-  network: ws
-  port: '8880'
-  server: 154.197.121.209
-  tls: false
-  type: vmess
-  uuid: 6f96494c-bdaf-3091-bf7b-29cfe92882b6
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+  uuid: d75481c7-b5c8-40a9-811a-02b709e74816
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158
@@ -1070,25 +970,3 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '34,37|🇭🇰 香港3|@stairnode #1'
-  port: 30397
-  server: 43.247.135.17
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 7364bf26-0eb6-40cc-b7e6-fb1a4b6bf69c
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: '34,37|🇭🇰 香港5|@stairnode #1'
-  port: 48383
-  server: 183.240.245.241
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24

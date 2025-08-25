@@ -23,70 +23,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
-- cipher: chacha20-ietf-poly1305
-  country: 🇷 RU
-  name: 14| RU_144
-  password: qscavF5UviIL-8V-E4raBA
-  port: 2222
-  server: 2.59.163.104
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14|🇺 RU_145
-  password: 360e21d21977dc11
-  port: 57456
-  server: 45.139.24.24
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14|🇺 RU_146
-  password: eUh4lSpi7nOYj0vSrqLUh0
-  port: 8506
-  server: 95.163.176.37
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14|🇺 RU_147
-  password: mSQiuT5jR17nyWgcXOPrTW
-  port: 8594
-  server: 77.105.166.12
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇺 RU
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇷🇺 RU_148
-  network: tcp
-  port: 45215
-  server: fa.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇷🇺 RU
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺 RU_149
-  network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ye.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- country: 🇺 RU
-  name: 14|🇺 RU_150
-  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
-  port: 1066
-  server: 194.104.147.74
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 25|RU_speednode_0175
+- name: '25,33,36,38|RU_speednode_0081 #1'
   network: ws
   password: tg-fq521free
   port: 443
@@ -216,10 +153,26 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- alpn:
+  - http/1.1
+  name: 27|🇺_RU_
+  network: tcp
+  password: tunnel-astrovpn_official-29
+  port: 8441
+  server: 193.124.46.134
+  skip-cert-verify: true
+  sni: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
+  type: trojan
+- cipher: aes-256-cfb
+  name: 27|🇷🇺_RU_俄罗斯_1
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
 - name: 30|🇷🇺 RU俄罗斯(mibei77.com 米贝节点分享)
   password: ttfang
   port: 2096
-  server: 45.159.216.216
+  server: 45.159.219.216
   skip-cert-verify: false
   sni: ttfang.fange.me
   type: trojan
@@ -230,10 +183,36 @@ proxies:
   skip-cert-verify: false
   sni: ttfang.fange.me
   type: trojan
-- name: '30|🇷🇺 RU俄罗斯(mibei77.com 米贝节点分享) #2'
-  password: ttfang
-  port: 2096
-  server: 45.159.219.216
-  skip-cert-verify: false
-  sni: ttfang.fange.me
+- alterId: 0
+  cipher: auto
+  name: '30|🇷🇺 RU俄罗斯(mibei77.com 米贝节点分享) #2'
+  network: ws
+  port: '8880'
+  server: 194.76.18.215
+  tls: false
+  type: vmess
+  uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s4.db-link02.top
+    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '30|🇷🇺 RU俄罗斯(mibei77.com 米贝节点分享) #3'
+  network: ws
+  port: '8880'
+  server: 77.232.140.215
+  tls: false
+  type: vmess
+  uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s4.db-link02.top
+    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- name: 30|🇷🇺_RU_俄罗斯
+  password: tunnel-astrovpn_official-29
+  port: 8441
+  server: 193.124.46.134
+  skip-cert-verify: true
+  sni: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
   type: trojan

@@ -683,7 +683,7 @@ proxies:
   type: ss
   udp: true
 - country: 🇬SG
-  name: 14|SG_156
+  name: 14|SG_165
   password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
   port: 443
   server: sg2-full.privateip.net
@@ -691,18 +691,37 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: '25,30,33,34,37|🇸🇬 新加坡|@stairnode #1'
+  name: '25,30,33,34|🇸🇬 新加坡|@ripaojiedian #1'
   password: 253bc477d4e43c209f2d427272968280
-  port: 2671
-  server: 36.156.102.116
+  port: 8116
+  server: 43.199.63.145
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
   name: '25,30,33,34,37|🇸🇬 新加坡2|@stairnode #1'
   password: 253bc477d4e43c209f2d427272968280
-  port: 3765
-  server: 36.156.102.116
+  port: 2045
+  server: 43.199.63.145
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: 26|新加坡 001
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 185.18.184.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 30|🇸🇬 新加坡|@stairnode
+  password: 253bc477d4e43c209f2d427272968280
+  port: 8116
+  server: null
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -712,3 +731,11 @@ proxies:
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: '34,37|🇸🇬 新加坡3|@stairnode #1'
+  password: GhYEufnq9M9yvgAc1ylvfq
+  port: 18336
+  server: 165.22.61.177
+  tfo: false
+  type: ss

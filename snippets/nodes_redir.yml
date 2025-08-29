@@ -1,7 +1,7 @@
 proxies:
 - alterId: 2
   cipher: auto
-  name: '0,1,19,27,28|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
+  name: '0,1,19,28|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -11,11 +11,11 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v29.heduian.link
+      host: ocbc.com
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: '0,1|🇩🇰_DK_丹麦->🇺🇸_US_美国_1 #1'
+  name: '0,1,28|🇩🇰_DK_丹麦->🇺🇸_US_美国_1 #2'
   network: ws
   port: 80
   server: csgo.com
@@ -27,7 +27,7 @@ proxies:
     path: /profile/telegram@ssrsub
 - alterId: 0
   cipher: auto
-  name: '0,1|🇩🇰_DK_丹麦->🇺🇸_US_美国_2 #1'
+  name: '0,1,28|🇩🇰_DK_丹麦->🇺🇸_US_美国_2 #2'
   network: ws
   port: 80
   server: fastcup.net
@@ -3645,13 +3645,16 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: 19,20|US美国(mibei77.com 米贝节点分享) 4
-  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
-  port: 13890
-  server: japan001.tmdns-sing.top
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 19|_IR_->_US_
+  network: tcp
+  port: 8880
+  server: 91.99.2.86
+  sni: ''
+  type: vmess
+  uuid: 4c467080-3301-470e-b99b-2a7202039f7e
 - alterId: 0
   cipher: auto
   name: 23|[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国
@@ -3804,80 +3807,40 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
-- alterId: 2
-  cipher: auto
-  name: '27|🇨🇳_CN_中国->🇺🇸_US_美国_1 #1'
+- name: 27|_DK_->_US_
   network: ws
-  port: 30824
-  server: v24.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  password: 62e4250a-fe02-40cc-ad32-c847389956cd
+  port: 8443
+  server: csgo.com
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  udp: true
   ws-opts:
     headers:
-      host: v24.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 28|🇧🇬_BG_保加利亚->🇺🇸_US_美国
+      host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: 27|🇩🇰_DK_丹->🇺🇸_US_美国_1
   network: ws
-  port: 8880
-  server: 185.176.26.215
-  sni: ''
-  type: vmess
-  uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788
+  password: 62e4250a-fe02-40cc-ad32-c847389956cd
+  port: 8443
+  server: pubg.ac
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  udp: true
   ws-opts:
     headers:
-      host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+      host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
 - alterId: 0
   cipher: auto
-  fingerprint: ''
-  name: 28,30|🇪🇸 西班牙 V2CROSS.COM
-  network: tcp
-  port: '32020'
-  server: s3.ipyar.org
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
-- alterId: 0
-  cipher: auto
-  name: 28|🇱🇹_LT_立陶宛->🇺🇸_US_美国
+  name: 27|🇳🇱_NL_荷兰->🇺🇸_US_美国
   network: ws
-  port: 8880
-  server: 185.148.104.215
+  port: 22102
+  server: 45.136.245.177
   type: vmess
-  uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788
+  uuid: c8631767-f45c-4f48-bf19-5405e6d18679
   ws-opts:
-    headers:
-      host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 28|🇸🇮_SI_斯洛文尼亚->🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 92.53.191.209
-  type: vmess
-  uuid: 6f96494c-bdaf-3091-bf7b-29cfe92882b6
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 28|🇷🇴_RO_罗马尼亚->🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 213.182.199.220
-  type: vmess
-  uuid: 470c6d0a-7ee5-3e9d-8f49-1c4e485fafc9
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+    path: /
 - alterId: 2
   cipher: auto
   name: '30|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
@@ -3892,3 +3855,31 @@ proxies:
     headers:
       Host: v24.heduian.link
     path: /oooo
+- name: 30|🇩🇰_DK_丹麦->🇺🇸_US_美国
+  password: 62e4250a-fe02-40cc-ad32-c847389956cd
+  port: 8443
+  server: csgo.com
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+- name: '30|🇩🇰_DK_丹麦->🇺🇸_US_美国 #1'
+  password: 62e4250a-fe02-40cc-ad32-c847389956cd
+  port: 8443
+  server: pubg.ac
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '30|🇳🇱_NL_荷兰->🇺🇸_US_美国 #1'
+  network: ws
+  port: 22102
+  server: 45.136.245.177
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c8631767-f45c-4f48-bf19-5405e6d18679
+  ws-opts:
+    headers:
+      Host: 45.136.245.177
+    path: /

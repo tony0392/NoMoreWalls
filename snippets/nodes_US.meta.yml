@@ -3,23 +3,29 @@ proxies:
   cipher: auto
   name: 0,1,28|🇺🇸_US_美国_1
   network: ws
-  port: 80
-  server: 104.19.235.1
+  port: 2086
+  server: 172.64.99.22
   sni: ''
   type: vmess
-  uuid: aa6c09dc-aa4a-4914-b439-6d8117f733a3
-- cipher: aes-256-gcm
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- alterId: 0
+  cipher: auto
   name: 0,1,28|🇺🇸_US_美国_2
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 23.157.40.120
-  type: ss
-- cipher: aes-256-gcm
-  name: 0,1,28|🇺🇸_US_美国_3
-  password: lGqs95QkFHo2NV
-  port: 5498
-  server: 23.157.40.120
-  type: ss
+  network: ws
+  port: 2086
+  server: 104.20.17.186
+  sni: ''
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- alterId: 0
+  cipher: auto
+  name: 0,1,28|🇸_US_美国_3
+  network: ws
+  port: 2086
+  server: 104.19.21.63
+  sni: ''
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
 - alterId: 0
   cipher: auto
   name: 2|🇺🇸 IEPL专线 美国 NO1
@@ -153,16 +159,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6|美国NO.1
-  port: 45052
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 03605b5e-f014-48f1-a081-5487cc977950
-- alterId: 0
-  cipher: auto
   name: 6,7|美国NO.2-1A-GPT
   port: 45053
   server: xdd.dashuai.cyou
@@ -170,17 +166,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 03605b5e-f014-48f1-a081-5487cc977950
+  uuid: 6b83eae1-b5fc-46d4-b494-ce3a80ff2b33
 - alterId: 0
   cipher: auto
-  name: 7|美国NO.2-1B-GPT
-  port: 45053
-  server: xdd.dashuai.cyou
+  name: 6,7|美国NO.1-1A-GPT
+  port: 45052
+  server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 60958497-4e2a-415c-8ab9-1094de67ac86
+  uuid: 6b83eae1-b5fc-46d4-b494-ce3a80ff2b33
 - alterId: 0
   cipher: auto
   name: 7|美国NO.1-1B-GPT
@@ -190,7 +186,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 60958497-4e2a-415c-8ab9-1094de67ac86
+  uuid: eb187e98-973e-4bac-b428-28b983e47551
 - cipher: aes-128-gcm
   name: 11|🇺🇸 us
   password: shadowsocks
@@ -271,267 +267,145 @@ proxies:
   type: vmess
   udp: true
   uuid: dd565d75-3bc9-4469-9811-5e1f1f364949
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 14| US_153
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.161
-  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇸 US
-  name: 14|🇸 US_154
+  name: 14| US_142
   password: f8f7aCzcPKbsF8p3
   port: 990
-  server: 38.54.45.129
+  server: 154.205.159.100
   type: ss
 - cipher: aes-128-gcm
   country: 🇸 US
-  name: 14|🇸 US_155
+  name: 14|🇸 US_143
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
 - cipher: aes-128-gcm
   country: 🇸 US
-  name: 14|🇺🇸 US_156
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.170
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 14|🇺🇸 US_157
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.164
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 14|🇺🇸 US_158
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.163
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 14|🇺🇸 US_159
+  name: 14|🇸 US_144
   password: shadowsocks
   port: 443
   server: 212.102.47.130
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸 US
-  name: 14|🇺🇸 US_160
-  password: zI7kiNZ0UfV9cXB73a4nRD
-  port: 24206
-  server: 164.92.156.41
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
-  name: 14|🇸 US_161
+  name: 14|🇺🇸 US_145
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 64.74.163.130
   type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 14|🇸 US_146
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.161
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇸 US
-  name: 14|🇺🇸 US_162
+  name: 14|🇺🇸 US_147
   password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
   port: 42029
   server: 208.67.105.196
   type: ss
-- cipher: aes-256-gcm
-  country: 🇸 US
-  name: 14|🇺🇸 US_163
-  password: TG:@Enkelte_notif&&TG:@Notif_Chat
-  port: 34045
-  server: 152.53.2.128
-  type: ss
 - cipher: aes-128-gcm
   country: 🇸 US
-  name: 14|🇺🇸 US_164
+  name: 14|🇸 US_148
   password: shadowsocks
   port: 443
   server: 156.146.38.167
   type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 14|🇺🇸 US_149
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 14|🇺🇸 US_150
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.164
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 14|🇺🇸 US_151
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.163
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇸 US
+  name: 14|🇺🇸 US_152
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 38.54.45.129
+  type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸 US
-  name: 14|🇺🇸 US_165
+  name: 14|🇺🇸 US_153
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.165.233.93
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
-  name: 14|🇺🇸 US_166
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 104.192.226.106
-  type: ss
-- cipher: chacha20-ietf-poly1305
   country: 🇸 US
-  name: 14|🇺🇸 US_167
+  name: 14|🇸 US_154
   password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
   port: 54075
   server: 94.131.21.174
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇸 US
-  name: 14|🇸 US_168
+- cipher: aes-256-cfb
+  country: 🇺🇸 US
+  name: 14|🇸 US_155
   password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 154.205.159.100
+  port: 989
+  server: 156.146.40.194
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸 US
-  name: 14|🇺🇸 US_169
+  name: 14|🇺🇸 US_156
   password: f8f7aCzcPKbsF8p3
   port: 990
-  server: 38.165.233.18
+  server: 104.192.226.106
   type: ss
 - cipher: aes-256-cfb
   country: 🇸 US
-  name: 14|🇺🇸 US_170
+  name: 14|🇺🇸 US_157
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
 - cipher: aes-256-cfb
-  country: 🇺🇸 US
-  name: 14|🇸 US_171
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 156.146.40.194
-  type: ss
-- cipher: aes-256-cfb
   country: 🇸 US
-  name: 14|🇺🇸 US_172
+  name: 14|🇺🇸 US_158
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸 US
-  name: 14|🇺🇸 US_173
+  name: 14|🇺🇸 US_159
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.54.57.90
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸 US
+  name: 14|🇸 US_160
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 38.165.233.18
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺🇸 US_174
-  network: tcp
-  port: 45294
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_175
-  network: tcp
-  port: 45271
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_176
-  network: tcp
-  port: 45235
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_177
-  network: ws
-  port: 443
-  server: 15.235.83.228
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_178
-  network: tcp
-  port: 45247
-  server: fa.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_179
-  network: tcp
-  port: 45417
-  server: 216.227.168.157
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_180
-  network: tcp
-  port: 45417
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_181
-  network: tcp
-  port: 41100
-  server: 15.204.234.200
-  skip-cert-verify: true
-  type: vmess
-  uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_182
+  name: 14|🇸 US_161
   network: ws
   port: 443
   server: 15.235.50.172
@@ -545,40 +419,12 @@ proxies:
   ws-path: /linkvws
 - alterId: 0
   cipher: auto
-  country: 🇺🇸 US
+  country: 🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇸 US_183
+  name: 14|🇸 US_162
   network: tcp
-  port: 45258
-  server: lt.fxlcn.com
-  servername: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_184
-  network: tcp
-  port: 45288
-  server: lt.fxlcn.com
-  servername: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_185
-  network: tcp
-  port: 45276
+  port: 45417
   server: lt.fxlcn.com
   skip-cert-verify: true
   type: vmess
@@ -589,52 +435,7 @@ proxies:
   country: 🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺🇸 US_186
-  network: ws
-  port: 443
-  server: 15.235.83.227
-  servername: mankadmu.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: mankadmu.com
-  ws-path: /linkvws
-- alterId: 64
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_187
-  network: tcp
-  port: 30002
-  server: 38.12.83.217
-  servername: loosely.freetrade.link
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_188
-  network: tcp
-  port: 45287
-  server: lt.fxlcn.com
-  servername: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_189
+  name: 14|🇸 US_163
   network: tcp
   port: 45237
   server: fa.fxlcn.com
@@ -648,7 +449,147 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺🇸 US_190
+  name: 14|🇺🇸 US_164
+  network: tcp
+  port: 45287
+  server: lt.fxlcn.com
+  servername: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_165
+  network: ws
+  port: 443
+  server: 15.235.83.228
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇸 US_166
+  network: tcp
+  port: 45291
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_167
+  network: tcp
+  port: 45271
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_168
+  network: tcp
+  port: 45417
+  server: 216.227.168.157
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_169
+  network: tcp
+  port: 45247
+  server: fa.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_170
+  network: ws
+  port: 443
+  server: 15.235.83.227
+  servername: mankadmu.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: mankadmu.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_171
+  network: tcp
+  port: 45294
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_172
+  network: tcp
+  port: 30002
+  server: 38.12.83.217
+  servername: loosely.freetrade.link
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_173
+  network: tcp
+  port: 45276
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_174
   network: ws
   port: 443
   server: 38.99.82.193
@@ -660,16 +601,62 @@ proxies:
   ws-headers:
     HOST: tilebani.com
   ws-path: /linkvws
-- country: 🇸 US
-  name: 14|🇺🇸 US_191
-  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
-  port: 443
-  server: hinet.mjt000.com
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_175
+  network: tcp
+  port: 45258
+  server: lt.fxlcn.com
+  servername: lt.fxlcn.com
   skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇺🇸 US
-  name: 14|🇸 US_192
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_176
+  network: tcp
+  port: 45288
+  server: lt.fxlcn.com
+  servername: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_177
+  network: tcp
+  port: 45235
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇸 US_178
+  network: tcp
+  port: 41100
+  server: 15.204.234.200
+  skip-cert-verify: true
+  type: vmess
+  uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
+  ws-path: /
+- country: 🇸 US
+  name: 14|🇺🇸 US_179
   password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
   port: 443
   server: guy-trace-lyric.stark-industries.solutions
@@ -677,7 +664,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 14|🇺🇸 US_193
+  name: 14|🇸 US_180
   password: ea17601d-8ebf-4431-b815-4d644821ca7e
   port: 443
   server: kz.mjt000.com
@@ -685,7 +672,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 14|🇺🇸 US_194
+  name: 14|🇺🇸 US_181
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
@@ -693,50 +680,57 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 14|🇺🇸 US_195
+  name: 14|🇺🇸 US_182
   password: e6a2e741-0fce-440b-910c-b81325e2263a
   port: 443
   server: cache-giver-wife.stark-industries.solutions
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 14|🇺🇸US_196
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 23.157.40.101
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇺🇸US
-  name: 14|🇺🇸US_197
+  country: 🇸US
+  name: 14|🇺🇸US_183
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.66
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  name: 14|🇸US_198
+  name: 14|🇸US_184
   password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
   port: 52952
   server: exchange.gameaurela.click
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 14|🇺🇸US_199
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 23.157.40.101
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 14|🇺🇸US_200
+  name: 14|🇸US_185
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 23.157.40.101
   type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 14|🇸US_186
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 23.157.40.101
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇺🇸US
+  name: 14|🇺🇸US_187
+  password: Yc2CtrIz8L
+  port: 16899
+  server: 2.58.87.221
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 14|🇺🇸US_188
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 23.157.40.101
+  type: ss
 - country: 🇺🇸US
-  name: 14|🇺🇸US_201
+  name: 14|🇺🇸US_189
   password: 0280b529-2747-4b7a-ab11-bad6453150b9
   port: 443
   server: fr2-full.privateip.net
@@ -813,11 +807,11 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '20,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #14'
+- name: 20|US美国(mibei77.com 米贝节点分享) 7
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
   server: aio.zipzap.biz.id
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: aio.zipzap.biz.id
   type: trojan
   udp: true
@@ -1048,17 +1042,6 @@ proxies:
   uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '25,34,37|🇺🇸 美国|@stairnode #1'
-  port: 443
-  server: 165.140.216.141
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
 - cipher: rc4-md5
   name: 25|[SS] 🇺🇸 美国2|@ripaojiedian
   password: efanccyun
@@ -1083,11 +1066,11 @@ proxies:
   type: trojan
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 25,34,37|🇺🇸 美国2|@stairnode
+  name: '25,34|🇺🇸 美国2|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-UsfARRoWJx.download.microsoft.com
+    host: 202508150964186-OTqy9HvgIK.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -1095,724 +1078,459 @@ proxies:
   type: ss
 - name: 26|美国 001
   network: ws
-  password: tg-fq521free
-  port: 443
-  server: 198.62.62.67
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
+  password: slch2024
+  port: 2096
+  server: 216.205.52.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
   type: trojan
-  udp: true
   ws-opts:
     headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
 - name: 26|美国 002
   network: ws
-  password: tg-fq521free
-  port: 443
-  server: 216.24.57.30
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
+  password: slch2024
+  port: 2096
+  server: 216.24.57.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
   type: trojan
-  udp: true
   ws-opts:
     headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 26|美国 003
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 209.46.30.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
 - name: 26|美国 004
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 216.205.52.194
+  server: 204.93.210.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 005
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 216.24.57.194
+  server: 199.181.197.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 006
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 209.46.30.194
+  server: 199.68.156.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 007
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 204.93.210.194
+  server: 199.34.230.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 008
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 199.181.197.194
+  server: 199.34.229.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 009
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 199.68.156.194
+  server: 199.34.228.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 010
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 199.34.230.194
+  server: 198.202.211.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 011
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 199.34.229.194
+  server: 198.177.57.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 012
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 199.34.228.194
+  server: 198.177.56.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 013
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 198.202.211.194
+  server: 198.71.233.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 014
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 198.177.57.194
+  server: 198.71.232.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 015
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 198.177.56.194
+  server: 198.71.191.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 016
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 198.71.233.194
+  server: 198.71.190.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 017
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 198.71.232.194
+  server: 198.71.189.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 018
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 198.71.191.194
+  server: 198.71.188.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 019
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 198.71.190.194
+  server: 198.62.62.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 020
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 198.71.189.194
+  server: 198.12.145.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 021
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 198.71.188.194
+  server: 198.12.144.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 022
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 198.62.62.194
+  server: 192.200.160.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 023
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 198.12.145.194
+  server: 192.169.223.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 024
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 198.12.144.194
+  server: 192.169.222.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 025
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 192.200.160.194
+  server: 192.169.221.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 026
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 192.169.223.194
+  server: 192.169.220.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 027
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 192.169.222.194
+  server: 192.0.63.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 028
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 192.169.221.194
+  server: 192.0.54.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 029
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 192.169.220.194
+  server: 190.93.245.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|美国 030
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 192.0.63.194
+  server: 190.93.244.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 031
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 192.0.54.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 032
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 190.93.245.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 033
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 190.93.244.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|亚美尼亚 001
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 188.164.159.194
+  server: 188.164.159.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|亚美尼亚 002
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 188.164.158.194
+  server: 188.164.158.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|亚美尼亚 003
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 185.162.231.194
+  server: 185.162.231.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 26|亚美尼亚 004
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 185.162.230.194
+  server: 185.162.230.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 26|美国 034
+- name: 26|美国 031
   network: ws
-  password: ttfang
+  password: slch2024
   port: 2096
-  server: 185.149.135.194
+  server: 185.149.135.195
   skip-cert-verify: true
-  sni: ttfang.fange.me
+  sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
-      Host: ttfang.fange.me
+      Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 26|美国 035
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 184.174.80.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 036
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 184.168.47.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 037
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 170.114.46.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 038
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 170.114.45.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 039
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 168.100.6.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 040
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 167.68.42.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 041
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 167.68.11.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 042
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 167.68.5.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 043
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 167.68.4.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 044
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.115.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 045
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.114.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 046
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.113.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 047
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.112.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 048
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.111.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 049
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.110.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 050
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.109.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 051
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.108.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 052
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.107.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 053
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.106.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 054
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.105.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 26|美国 055
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.104.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: 26|美国 057
-  network: ws
-  port: 80
-  server: GgGgGGgGggggGg.222769.XYZ
-  tls: false
-  type: vmess
-  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
-  ws-opts:
-    headers:
-      Host: gggggggggggggg.222769.xyz
-    path: /f6taOMcOSZb9TPR
 - alterId: 0
   cipher: auto
   name: 30|🇺🇸 _US_美国
   network: ws
-  port: '80'
-  server: 104.19.235.1
+  port: '2086'
+  server: 172.64.99.22
   tls: false
   type: vmess
-  uuid: aa6c09dc-aa4a-4914-b439-6d8117f733a3
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '30|🇺🇸 _US_美国 #1'
+  network: ws
+  port: '2086'
+  server: 104.20.17.186
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '30|🇺🇸 _US_美国 #2'
+  network: ws
+  port: '2086'
+  server: 104.19.21.63
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
       Host: ''
@@ -1832,154 +1550,7 @@ proxies:
     path: /horsen
 - alterId: 0
   cipher: auto
-  name: 30,33|美国|@ripaojiedian
-  network: tcp
-  port: '443'
-  server: 165.140.216.141
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-- alterId: 0
-  cipher: auto
   name: 30|🇺🇸 美国 CloudFlare节点
-  network: ws
-  port: '443'
-  server: linux.do
-  tls: true
-  type: vmess
-  uuid: 2fbe41db-0797-44f6-a3eb-9c680e5f09ce
-  ws-opts:
-    headers:
-      Host: designs-cycles-submission-really.trycloudflare.com
-    path: /2fbe41db-0797-44f6-a3eb-9c680e5f09ce-vm
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #19'
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: 172.67.181.173
-  skip-cert-verify: false
-  sni: vpn.stupidworld.web.id
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #4'
-  network: ws
-  port: '443'
-  server: klo.986986.shop
-  tls: true
-  type: vmess
-  uuid: b75c9731-408d-4aa6-8ae9-3857205113a1
-  ws-opts:
-    headers:
-      Host: klo.986986.shop
-    path: /nvjx6j7kbDQIQMZvbeVA9
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #5'
-  network: ws
-  port: '80'
-  server: bBbbbbbBb.222769.XYZ
-  tls: false
-  type: vmess
-  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
-  ws-opts:
-    headers:
-      Host: bbbbbbbbb.222769.xyz
-    path: /f6taOMcOSZb9TPR
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #6'
-  network: ws
-  port: '443'
-  server: 172.67.150.132
-  tls: true
-  type: vmess
-  uuid: 20e89a95-cedf-4fe3-9421-517ce66be170
-  ws-opts:
-    headers:
-      Host: eeeddcvfg.444682.xyz
-    path: /SHToRcqfiraYkzOdf
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #7'
-  network: ws
-  port: '80'
-  server: gggggggggggggg.222769.xyz
-  tls: false
-  type: vmess
-  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
-  ws-opts:
-    headers:
-      Host: gggggggggggggg.222769.xyz
-    path: /f6taOMcOSZb9TPR
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #8'
-  network: ws
-  port: '8880'
-  server: 185.193.29.215
-  tls: false
-  type: vmess
-  uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 2
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #9'
-  network: ws
-  port: '30808'
-  server: v8.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v8.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #10'
-  network: ws
-  port: '8880'
-  server: 188.164.248.224
-  tls: false
-  type: vmess
-  uuid: 64076cae-b5ba-32c8-a316-fa782f0a553b
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #12'
-  network: ws
-  port: '8880'
-  server: 185.148.105.223
-  tls: false
-  type: vmess
-  uuid: 761310d9-538d-3b2a-8874-1cc47a23498e
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #15'
-  network: ws
-  port: '80'
-  server: OOoOOOooOp.222769.XYZ
-  tls: false
-  type: vmess
-  uuid: ce921385-2b31-45fe-84c5-1843e8ae845b
-  ws-opts:
-    headers:
-      Host: OOoOOOooOp.222769.XYZ
-    path: /VaaSEfNLHdW3I98dxLkez
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #16'
   network: ws
   port: '80'
   server: 104.18.14.54
@@ -1992,30 +1563,17 @@ proxies:
     path: /index.html?ed=2048
 - alterId: 0
   cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #20'
+  name: '30|🇺🇸 美国 CloudFlare节点 #1'
   network: ws
-  port: '80'
-  server: OOoOOOooOp.222769.XYZ
-  tls: false
+  port: '443'
+  server: cg1c10.waimaogogogo.cc
+  tls: true
   type: vmess
-  uuid: ce921385-2b31-45fe-84c5-1843e8ae845b
+  uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10
   ws-opts:
     headers:
-      Host: ooooooooop.222769.xyz
-    path: /VaaSEfNLHdW3I98dxLkez
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #21'
-  network: ws
-  port: '80'
-  server: 172.66.3.211
-  tls: false
-  type: vmess
-  uuid: bd8f4c3a-b55a-4a55-a4be-d2ead4a4c66a
-  ws-opts:
-    headers:
-      Host: 331612932360382025082820102757744.s15.chibaba.filegear-sg.me
-    path: /index.html?ed=2048
+      Host: cg1c10.waimaogogogo.cc
+    path: /api/v1/graphql
 - name: 31|美国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 658
@@ -2028,3 +1586,123 @@ proxies:
   server: 45.83.140.22
   skip-cert-verify: true
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 36,38|US_speednode_0018
+  port: 15988
+  server: 64.81.33.196
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8ec3bede-e979-4063-bdab-034fbd16f7f7
+- alterId: 0
+  cipher: auto
+  name: 36,38|US_speednode_0019
+  port: 31971
+  server: 64.81.34.113
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 983abe73-28fd-4ce5-cee8-dcce8e56d71a
+- alterId: 0
+  cipher: auto
+  name: 36,38|US_speednode_0020
+  port: 46611
+  server: 64.81.33.109
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 363d7952-cd0f-41df-be8a-386a64e15f8b
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 36,38|US_speednode_0021
+  network: http
+  port: 25740
+  server: 192.3.216.180
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 43cf14a5-5b85-47e2-a4c2-b514beab7054
+- alterId: 0
+  cipher: auto
+  name: 36,38|US_speednode_0022
+  port: 7998
+  server: 206.119.191.9
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 984429ed-3959-4022-e248-cbcb19c96f9a
+- alterId: 0
+  cipher: auto
+  name: 36,38|US_speednode_0023
+  port: 7998
+  server: 206.119.191.20
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 984429ed-3959-4022-e248-cbcb19c96f9a
+- alterId: 0
+  cipher: auto
+  name: 36,38|US_speednode_0024
+  port: 40083
+  server: 66.253.5.58
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 19003217-0407-43d5-bf22-9aa642469a83
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 36,38|US_speednode_0025
+  network: http
+  port: 59081
+  server: 156.238.225.160
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ce42a56d-06fb-4cf0-bddd-18cdc3114622
+- cipher: chacha20-ietf-poly1305
+  name: 36,38|US_speednode_0026
+  password: YA4zGmd4OPLkKZGyLfR6PN
+  port: 10721
+  server: 159.203.173.101
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 37|🇺🇸 美国|@stairnode
+  port: 443
+  server: 165.140.216.141
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 37|🇺🇸 美国2|@stairnode
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202508150964186-UsfARRoWJx.download.microsoft.com
+    mode: http
+  port: 8774
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss

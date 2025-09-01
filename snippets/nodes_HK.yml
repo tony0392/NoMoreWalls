@@ -206,7 +206,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 03605b5e-f014-48f1-a081-5487cc977950
+  uuid: 6b83eae1-b5fc-46d4-b494-ce3a80ff2b33
 - alterId: 0
   cipher: auto
   name: 6,7|3x备用专线香港1-1A
@@ -216,7 +216,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 03605b5e-f014-48f1-a081-5487cc977950
+  uuid: 6b83eae1-b5fc-46d4-b494-ce3a80ff2b33
 - alterId: 0
   cipher: auto
   name: 6,7|香港NO.1-1A-GPT
@@ -226,17 +226,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 03605b5e-f014-48f1-a081-5487cc977950
-- alterId: 0
-  cipher: auto
-  name: 7|香港NO.1-1B-GPT
-  port: 45050
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 60958497-4e2a-415c-8ab9-1094de67ac86
+  uuid: 6b83eae1-b5fc-46d4-b494-ce3a80ff2b33
 - alterId: 0
   cipher: auto
   name: 7|香港NO.2-1B-GPT
@@ -246,17 +236,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 60958497-4e2a-415c-8ab9-1094de67ac86
-- alterId: 0
-  cipher: auto
-  name: 7|3x备用专线香港1-1B
-  port: 50051
-  server: xh.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 60958497-4e2a-415c-8ab9-1094de67ac86
+  uuid: eb187e98-973e-4bac-b428-28b983e47551
 - alterId: 0
   cipher: auto
   name: 9|HK | 香港 LB-1V
@@ -898,26 +878,42 @@ proxies:
   server: 156.224.77.215
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 14| HK_69
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
 - cipher: aes-256-cfb
   country: 🇰 HK
-  name: 14|🇰 HK_70
+  name: 14| HK_65
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
-- alterId: 2
+- cipher: chacha20-ietf
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_66
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- alterId: 0
   cipher: auto
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 14|🇰 HK_71
+  name: 14|🇰 HK_67
+  network: ws
+  port: 80
+  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_68
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -927,37 +923,36 @@ proxies:
   ws-path: /
 - alterId: 2
   cipher: auto
-  name: 18,23|[VMess] 🇭🇰 香港 电讯盈科有限公司
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰 HK_69
+  network: ws
+  port: 80
+  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_70
   network: ws
   port: 30807
   server: v10.heduian.link
+  servername: baidu.com
   skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: '25,30,33,34,37|🇭🇰 香港|@stairnode #1'
-  network: ws
-  port: 30809
-  server: v9.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
+  ws-headers:
+    HOST: baidu.com
+  ws-path: /oooo
 - cipher: aes-256-gcm
   name: 25|[SS] 🇭🇰 香港2|@ripaojiedian
   password: 9969db7a2f51
@@ -967,14 +962,14 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '25,34,37|🇭🇰 香港3|@stairnode #1'
-  port: 51571
-  server: 38.147.188.96
+  name: '25,34|🇭🇰 香港3|@ripaojiedian #2'
+  port: 25013
+  server: 38.147.188.160
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 740ec514-d2bd-45bb-b410-7ea5a05cdd87
+  uuid: e90bfc71-1a0a-43e8-9272-6be036e9d88e
 - client-fingerprint: chrome
   name: '25,30,33,34,37|🇭🇰 香港4|@stairnode #1'
   password: 253bc477d4e43c209f2d427272968280
@@ -983,6 +978,17 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: '25,34|🇭🇰 香港5|@ripaojiedian #2'
+  port: 47272
+  server: 183.240.245.250
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
   name: '25,30,33,34,37|🇭🇰 香港6|@stairnode #1'
   password: 253bc477d4e43c209f2d427272968280
@@ -1011,12 +1017,22 @@ proxies:
   cipher: auto
   name: 30,33|香港3|@ripaojiedian
   network: tcp
-  port: '51571'
-  server: 38.147.188.96
+  port: '25013'
+  server: 38.147.188.160
   servername: ''
   tls: false
   type: vmess
-  uuid: 740ec514-d2bd-45bb-b410-7ea5a05cdd87
+  uuid: e90bfc71-1a0a-43e8-9272-6be036e9d88e
+- alterId: 64
+  cipher: auto
+  name: 30,33|香港5|@ripaojiedian
+  network: tcp
+  port: '47272'
+  server: 183.240.245.250
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 30,33|香港v2|@ripaojiedian
@@ -1039,3 +1055,49 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 36,38|HK_speednode_0009
+  port: 24229
+  server: 203.184.246.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 50b9297e-c728-46c0-de4b-36ddf8948007
+- alterId: 0
+  cipher: auto
+  name: 36,38|HK_speednode_0010
+  port: 51043
+  server: 203.184.246.211
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c05b241c-0de2-4959-b3a0-ec3df5bfda99
+- alterId: 0
+  cipher: auto
+  name: 36,38|HK_speednode_0011
+  network: ws
+  port: 80
+  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '37|🇭🇰 香港3|@stairnode #1'
+  port: 51571
+  server: 38.147.188.96
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 740ec514-d2bd-45bb-b410-7ea5a05cdd87

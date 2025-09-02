@@ -468,19 +468,9 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6,7|日本NO.2-1A
+  name: 7|日本NO.2-1A
   port: 45057
   server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6b83eae1-b5fc-46d4-b494-ce3a80ff2b33
-- alterId: 0
-  cipher: auto
-  name: 6,7|日本NO.1-1A
-  port: 45056
-  server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -496,6 +486,16 @@ proxies:
   type: vmess
   udp: true
   uuid: eb187e98-973e-4bac-b428-28b983e47551
+- alterId: 0
+  cipher: auto
+  name: 7|日本NO.1-1A
+  port: 45056
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6b83eae1-b5fc-46d4-b494-ce3a80ff2b33
 - alterId: 0
   cipher: auto
   name: 7|日本NO.1-1B
@@ -1076,6 +1076,24 @@ proxies:
   type: vmess
   udp: true
   uuid: dd565d75-3bc9-4469-9811-5e1f1f364949
+- client-fingerprint: chrome
+  name: '18,23,25,26,30,33,34,37|🇸🇬 新加坡|@stairnode #1'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 9160
+  server: xx.baku7.com
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  tfo: false
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 20|JP日本(mibei77.com 米贝节点分享)
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_38...
   password: 70a0b8103356
@@ -1128,12 +1146,13 @@ proxies:
   server: cn01.efan8867801.xyz
   type: ss
 - client-fingerprint: chrome
-  name: '25,30,33,34,37|🇯🇵 日本3|@stairnode #1'
+  name: '25,26,30,33,34,37|🇯🇵 日本4|@stairnode #1'
+  network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 3270
-  server: 36.150.215.203
+  port: 1924
+  server: xx.baku7.com
   skip-cert-verify: true
-  sni: www.baidu.com
+  sni: 23.45.86.28
   type: trojan
 - cipher: aes-256-gcm
   name: 25|[SS] 🇯🇵 日本2|@ripaojiedian
@@ -1142,25 +1161,14 @@ proxies:
   server: 137.220.142.150
   type: ss
 - client-fingerprint: chrome
-  name: '25,30,33,34,37|🇯🇵 日本4|@stairnode #1'
+  name: '25,26,30,33,34,37|🇯🇵 日本3|@stairnode #1'
+  network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 40950
-  server: 36.150.215.203
+  port: 4613
+  server: xx.baku7.com
   skip-cert-verify: true
-  sni: www.baidu.com
+  sni: 23.45.86.28
   type: trojan
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: '25,34|🇯🇵 日本|@ripaojiedian #1'
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202508150964186-OTqy9HvgIK.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 25,34,37|🇯🇵 日本2|@stairnode
@@ -1177,6 +1185,18 @@ proxies:
   server: 137.220.142.150
   tfo: false
   type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 25,34,37|🇯🇵 日本|@stairnode
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202508150964186-YHuMkhj2A5.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 30,33|日本v2|@ripaojiedian
@@ -1189,7 +1209,7 @@ proxies:
   uuid: 8a9150bc-b9c8-40ac-be83-aaec45176a81
 - alterId: 0
   cipher: auto
-  name: 36,38|JP_speednode_0014
+  name: 36,38|JP_speednode_0020
   port: 50414
   server: 103.13.19.254
   skip-cert-verify: false
@@ -1197,23 +1217,3 @@ proxies:
   type: vmess
   udp: true
   uuid: aacec49a-c6eb-43a0-b14a-e3b4302e5f1a
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 37|🇯🇵 日本|@stairnode
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202508150964186-UsfARRoWJx.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 37|🇯🇵 日本5|@stairnode
-  password: 940031a6-fd32-4d6b-901d-77b7f943698e
-  port: 50414
-  server: bl.sytes.net
-  tfo: false
-  type: ss

@@ -1,16 +1,15 @@
 proxies:
 - cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: '0,1,14,22,28|🇷🇺_RU_俄罗斯_1 #2'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.112
+  name: '0,1,28|_RU__1 #2'
+  password: VP8ZPxQpJtZRCjfZ
+  port: 9080
+  server: 80.92.204.106
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '0,1,28|🇷🇺_RU_俄罗斯_2 #2'
-  password: NbQNqngaIwS7
-  port: 443
-  server: 83.217.9.101
+- cipher: aes-256-cfb
+  name: 0,1,28|🇺_RU_俄罗斯_2
+  password: BejrQvtu9sqUeNuZ
+  port: 9024
+  server: 80.92.204.106
   type: ss
 - alterId: 0
   cipher: auto
@@ -38,17 +37,31 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14|🇷🇺 RU_131
+  name: 14| RU_130
+  password: 360e21d21977dc11
+  port: 57456
+  server: 45.139.24.24
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 14|🇺 RU_131
   password: eUh4lSpi7nOYj0vSrqLUh0
   port: 8506
   server: 95.163.176.37
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷 RU
+  name: 14,22,27|_MD_->🇺_RU_
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_132
+  name: 14|🇷🇺 RU_133
   network: tcp
   port: 45215
   server: fa.fxlcn.com
@@ -61,7 +74,7 @@ proxies:
   country: 🇷🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_133
+  name: 14|🇺 RU_134
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -71,49 +84,14 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
 - country: 🇺 RU
-  name: 14|🇷🇺 RU_134
+  name: 14|🇷🇺 RU_135
   password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
   port: 1066
   server: 194.104.147.74
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  country: 🇺RU
-  name: 14|🇺RU_135
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
-  server: 45.89.52.66
-  type: ss
-- name: '18,23,25,26,33,36,38|RU_speednode_0017 #1'
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.221.160.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #49'
-  network: ws
-  port: '8880'
-  server: 5.182.84.249
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 0acfeb7d-7ff5-39e1-be97-af07eb666319
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s2.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- name: '25,26,33,36,38|RU_speednode_0015 #1'
+- name: '25,26,33,36,38|RU_speednode_0023 #1'
   network: ws
   password: slch2024
   port: 2096
@@ -126,7 +104,20 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /TelegramU0001F1E8U0001F1F3
-- name: '25,33,36,38|RU_speednode_0016 #1'
+- name: 25,26|俄罗斯 002
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.221.160.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: 25,26|俄罗斯 001
   network: ws
   password: slch2024
   port: 2096
@@ -139,7 +130,71 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 26|俄罗斯 002
+- name: '25,33,36,38|RU_speednode_0025 #1'
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.59.218.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: '25,33,36,38|RU_speednode_0026 #1'
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.148.107.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: '25,33,36,38|RU_speednode_0024 #1'
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 193.9.49.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: 25|[Trojan] RU_speednode_0035
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 213.219.247.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: '25,33,36,38|RU_speednode_0022 #1'
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.176.24.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: 26|俄罗斯 003
   network: ws
   password: slch2024
   port: 2096
@@ -151,7 +206,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 26|俄罗斯 003
+- name: 26|俄罗斯 004
   network: ws
   password: slch2024
   port: 2096
@@ -163,7 +218,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 26|俄罗斯 004
+- name: 26|俄罗斯 005
   network: ws
   password: slch2024
   port: 2096
@@ -175,7 +230,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 26|俄罗斯 005
+- name: 26|俄罗斯 006
   network: ws
   password: slch2024
   port: 2096
@@ -187,7 +242,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 26|俄罗斯 006
+- name: 26|俄罗斯 007
   network: ws
   password: slch2024
   port: 2096
@@ -199,7 +254,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 26|俄罗斯 007
+- name: 26|俄罗斯 008
   network: ws
   password: slch2024
   port: 2096
@@ -211,7 +266,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 26|俄罗斯 008
+- name: 26|俄罗斯 009
   network: ws
   password: slch2024
   port: 2096
@@ -223,7 +278,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 26|俄罗斯 009
+- name: 26|俄罗斯 010
   network: ws
   password: slch2024
   port: 2096
@@ -235,7 +290,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 26|俄罗斯 010
+- name: 26|俄罗斯 011
   network: ws
   password: slch2024
   port: 2096
@@ -247,7 +302,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 26|俄罗斯 011
+- name: 26|俄罗斯 012
   network: ws
   password: slch2024
   port: 2096
@@ -259,15 +314,16 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 26|俄罗斯 012
+- name: '33,36,38|RU_speednode_0027 #1'
   network: ws
   password: slch2024
   port: 2096
-  server: 185.174.138.195
-  skip-cert-verify: true
+  server: 188.42.145.195
+  skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
+  udp: true
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
+    path: /Telegram🇨🇳

@@ -56,16 +56,16 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇪 DE
   name: 14|🇪 DE_43
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 92.118.205.228
+  password: 5ZQh4pssSk4aK1JG1XhBRg
+  port: 1080
+  server: 84.200.91.228
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇩🇪 DE
   name: 14|🇪 DE_44
-  password: 5ZQh4pssSk4aK1JG1XhBRg
-  port: 1080
-  server: 84.200.91.228
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 92.118.205.228
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇪 DE
@@ -83,11 +83,32 @@ proxies:
   sni: de2-full.privateip.net
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 22|🔴_🇩🇪_💻_github.com/Ruk1ng001_62...
+  network: none
+  port: 18861
+  server: 161.35.221.25
+  tls: false
+  type: vmess
+  uuid: d891bcf7-9919-41aa-95ba-398971a11009
 - name: 26|德国 001
   network: ws
   password: slch2024
   port: 2096
   server: 185.158.133.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 26|德国 002
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.135.9.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -134,3 +155,10 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 30|🇩🇪 德国 V2CROSS.COM
+  password: slch2024
+  port: 2096
+  server: 195.13.44.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan

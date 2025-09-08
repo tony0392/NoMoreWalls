@@ -21,7 +21,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
-  name: '0,1,28|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
+  name: '0,1,27,28|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
   network: ws
   port: 30835
   server: v35.heduian.link
@@ -3856,21 +3856,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 27|_NL_->_US_
+  name: 27|_NL_->🇺🇸_US_美国
   network: ws
-  port: 25150
+  port: 22107
   server: 45.144.174.211
   skip-cert-verify: true
   type: vmess
-  uuid: 61f90f6b-c471-43d6-9e18-6cb4b4a46a86
+  uuid: ca840767-e6c3-4149-bcf1-c5c61e450bcc
   ws-opts:
     path: /
-- cipher: aes-256-cfb
-  name: 27|_GB_国->🇷_FR_国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.23.63
-  type: ss
 - alterId: 2
   cipher: auto
   name: 30|🇺🇸 _CN_中国->🇺🇸_US_美国
@@ -3884,16 +3878,30 @@ proxies:
     headers:
       Host: ocbc.com
     path: /
+- alterId: 2
+  cipher: auto
+  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国
+  network: ws
+  port: 30835
+  server: v35.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v35.heduian.link
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: 30|🇳🇱_NL_荷兰->🇺🇸_US_美国
   network: ws
-  port: 25150
+  port: 22107
   server: 45.144.174.211
   servername: ''
   tls: false
   type: vmess
-  uuid: 61f90f6b-c471-43d6-9e18-6cb4b4a46a86
+  uuid: ca840767-e6c3-4149-bcf1-c5c61e450bcc
   ws-opts:
     headers:
       Host: 45.144.174.211

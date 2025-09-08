@@ -143,24 +143,24 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6,7|美国NO.1-1A-GPT
+  name: 6|美国NO.1
   port: 45052
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: eefeeaf9-f63b-4b57-9c66-b905429e0035
+  uuid: 4abd59a0-f01e-4067-bf7b-f1d7c12a4535
 - alterId: 0
   cipher: auto
-  name: 6,7|美国NO.2-1A-GPT
+  name: 6|美国NO.2
   port: 45053
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: eefeeaf9-f63b-4b57-9c66-b905429e0035
+  uuid: 4abd59a0-f01e-4067-bf7b-f1d7c12a4535
 - alterId: 0
   cipher: auto
   name: 7|美国NO.1-1B-GPT
@@ -181,6 +181,26 @@ proxies:
   type: vmess
   udp: true
   uuid: 6391b0f9-95bd-425b-98a1-52cc86597a9f
+- alterId: 0
+  cipher: auto
+  name: 7|美国NO.1-1A-GPT
+  port: 45052
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: eefeeaf9-f63b-4b57-9c66-b905429e0035
+- alterId: 0
+  cipher: auto
+  name: 7|美国NO.2-1A-GPT
+  port: 45053
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: eefeeaf9-f63b-4b57-9c66-b905429e0035
 - cipher: aes-128-gcm
   name: 11|🇺🇸 us
   password: shadowsocks
@@ -261,11 +281,11 @@ proxies:
   type: vmess
   udp: true
   uuid: dd565d75-3bc9-4469-9811-5e1f1f364949
-- name: '18,23,25,26,33,36,38|US_speednode_0046 #1'
+- name: '18,23,25,26,33,36,38|US_speednode_0031 #1'
   network: ws
   password: slch2024
   port: 2096
-  server: 192.0.54.195
+  server: 209.94.90.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   tfo: false
@@ -275,20 +295,22 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: '18,23,25,26,33,36,38|US_speednode_0045 #1'
+- alterId: 0
+  cipher: auto
+  name: 18,23|[VMess] 🇺🇸 美国 CloudFlare节点
   network: ws
-  password: slch2024
-  port: 2096
-  server: 192.0.63.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
+  port: 443
+  server: 104.18.149.76
+  skip-cert-verify: true
   tfo: false
-  type: trojan
+  tls: true
+  type: vmess
   udp: true
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
   ws-opts:
     headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
+      Host: us.kkp.me.eu.org
+    path: /aa
 - alterId: 0
   cipher: auto
   name: 20|美国(yudou123.top 玉豆免费节点)
@@ -600,109 +622,60 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 22|❓_🇺🇸_💻_github.com/Ruk1ng001_66...
-  password: gs4BXwT6SW
-  port: 10988
-  server: 154.26.192.123
-  type: http
-  username: fQ67Dpe5dU
 - alterId: 0
   cipher: auto
-  name: 22|🟡_🇺🇸_💻_github.com/Ruk1ng001_66...
-  network: none
-  port: 37533
-  server: 47.254.125.234
-  tls: false
+  client-fingerprint: chrome
+  name: 22|🟡_🇺🇸_📶_github.com/Ruk1ng001_33...
+  network: ws
+  port: 49151
+  server: 216.24.181.49
+  servername: usantls0830.crvesoft.top
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vmess
-  uuid: 08d55231-ddc8-454c-8fc6-0d9ca7a5a055
+  udp: true
+  uuid: e1003a4a-7a1d-47e3-a932-ae19810f0c71
+  ws-opts:
+    headers:
+      Host: usantls0830.crvesoft.top
+    path: /
 - name: 22|❓_🇺🇸_📶_github.com/Ruk1ng001_36...
   password: gA30l1F
   port: 27207
   server: 38.107.175.141
   type: http
   username: kZXMC3Z1
-- alterId: 0
-  cipher: auto
-  name: 22|🟡_🇺🇸_📶_github.com/Ruk1ng001_31...
-  network: none
-  port: 12299
-  server: 154.29.158.139
-  tls: false
-  type: vmess
-  uuid: cccfe679-fbd0-4402-caf2-67e919db436f
-- alterId: 0
-  cipher: auto
-  name: 22|🟡_🇺🇸_💻_github.com/Ruk1ng001_35...
-  network: none
-  port: 53334
-  server: 154.9.255.196
-  tls: false
-  type: vmess
-  uuid: 21035483-622a-48bd-a654-53fb6fa5181d
-- alterId: 0
-  cipher: auto
-  name: 22|🟡_🇺🇸_💻_github.com/Ruk1ng001_39...
-  network: none
-  port: 59674
-  server: 43.162.114.137
-  tls: false
-  type: vmess
-  uuid: 6a4ce5b9-0d60-4a21-a8fe-897798019500
-- alterId: 0
-  cipher: auto
-  name: 22|🟠_🇺🇸_💻_github.com/Ruk1ng001_34...
-  network: none
-  port: 35703
-  server: 107.172.5.52
-  tls: false
-  type: vmess
-  uuid: 420c92f0-16db-4306-8129-935bd942897e
-- alterId: 0
-  cipher: auto
-  name: 22|❓_🇺🇸_📶_github.com/Ruk1ng001_63...
-  network: none
-  port: 25854
-  server: 216.167.89.158
-  tls: false
-  type: vmess
-  uuid: a247ec2b-b296-42bb-8553-61a593d20092
-- alterId: 0
-  cipher: auto
-  name: 22|🟡_🇺🇸_📶_github.com/Ruk1ng001_61...
-  network: none
-  port: 41185
-  server: 64.112.41.92
-  tls: false
-  type: vmess
-  uuid: 9ba1c290-2f90-4fe7-efab-390af3dfd498
 - name: 22|🟡_🇺🇸_📶_github.com/Ruk1ng001_64...
   password: hMAEPF
   port: 34099
   server: 38.34.22.220
   type: http
   username: kZXMC3Z1
-- cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: 22|🟡_🇺🇸_💻_github.com/Ruk1ng001_61...
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 104.192.226.106
-  type: ss
-- name: 22|🟡_🇺🇸_📶_github.com/Ruk1ng001_65...
-  password: xwR9Y4
-  port: 49183
-  server: 38.34.28.188
-  type: http
-  username: kZXMC3Z1
 - alterId: 0
   cipher: auto
-  name: '22|🟡_🇺🇸_📶_github.com/Ruk1ng001_31... #1'
-  network: none
-  port: 10678
-  server: 64.112.41.92
-  tls: false
+  client-fingerprint: chrome
+  name: 22|🟡_🇺🇸_💻_github.com/Ruk1ng001_37...
+  network: ws
+  port: 27507
+  server: 154.21.86.48
+  servername: usantls0830.crvesoft.top
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vmess
-  uuid: c5aec222-3b11-4af8-f01f-f9145b0caabb
+  udp: true
+  uuid: e1003a4a-7a1d-47e3-a932-ae19810f0c71
+  ws-opts:
+    headers:
+      Host: usantls0830.crvesoft.top
+    path: /
+- name: 22|❓_🇺🇸_💻_github.com/Ruk1ng001_66...
+  password: gs4BXwT6SW
+  port: 10988
+  server: 154.26.192.123
+  type: http
+  username: fQ67Dpe5dU
 - alterId: 0
   cipher: auto
   name: 23|[VMess] 🇺🇸 _US_美国_1
@@ -796,12 +769,12 @@ proxies:
   name: '25,26,30,33,34,37|🇺🇸 美国4|@stairnode #1'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 4317
+  port: 47293
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: '25,26,33,36,38|US_speednode_0041 #1'
+- name: '25,26,33,36,38|US_speednode_0029 #1'
   network: ws
   password: slch2024
   port: 2096
@@ -814,7 +787,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: '25,26,33,36,38|US_speednode_0042 #1'
+- name: '25,26,33,36,38|US_speednode_0030 #1'
   network: ws
   password: slch2024
   port: 2096
@@ -827,20 +800,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: '25,26,33,36,38|US_speednode_0043 #1'
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 209.94.90.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: '25,26,33,36,38|US_speednode_0044 #1'
+- name: '25,26,33,36,38|US_speednode_0032 #1'
   network: ws
   password: slch2024
   port: 2096
@@ -853,11 +813,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: '25,26,33,36,38|US_speednode_0047 #1'
+- name: '25,26,33,36,38|US_speednode_0033 #1'
   network: ws
   password: slch2024
   port: 2096
-  server: 192.200.160.195
+  server: 192.0.63.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -866,11 +826,24 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: '25,26,33,36,38|US_speednode_0048 #1'
+- name: '25,26,33,36,38|US_speednode_0034 #1'
   network: ws
   password: slch2024
   port: 2096
-  server: 185.148.104.195
+  server: 192.0.54.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: '25,26,33,36,38|US_speednode_0035 #1'
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.200.160.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -885,13 +858,37 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509031722041-JFOtqRTqqb.download.microsoft.com
+    host: 202509031722041-ZYgtULpH5Q.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- name: 26|美国 011
+- name: 26|美国 002
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 46943
+  server: xingxing.jiasu123.org
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+- name: 26|美国 003
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3043
+  server: xingxing.jiasu123.org
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+- name: 26|美国 005
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4317
+  server: xingxing.jiasu123.org
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+- name: 26|美国 013
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 1523
@@ -899,7 +896,7 @@ proxies:
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: 26|美国 012
+- name: 26|美国 014
   network: ws
   password: slch2024
   port: 2096
@@ -1296,7 +1293,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 26|美国 013
+- name: 26|美国 015
   network: ws
   password: slch2024
   port: 2096
@@ -1309,7 +1306,7 @@ proxies:
     path: /Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '26,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #18'
+  name: '26,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #7'
   network: ws
   port: '443'
   server: ssssssssssssfffffffgh.2032.pp.ua
@@ -1320,23 +1317,6 @@ proxies:
     headers:
       Host: ssssssssssssfffffffgh.2032.pp.ua
     path: /6We3U9Df1WGxgFnoFPw1
-- name: 26|美国 015
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 209.46.30.195
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- cipher: aes-256-cfb
-  name: 27|🇸_US_美国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
-  type: ss
 - alterId: 0
   cipher: auto
   name: 30|🇺🇸 VMESS-未知>美国-NF解锁自制剧-ChatGPT...
@@ -1350,42 +1330,49 @@ proxies:
     headers:
       Host: orvps2.horsenma.net
     path: /horsen
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #7'
-  password: slch2024
-  port: 2096
-  server: 199.68.156.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #17'
-  password: slch2024
-  port: 2096
-  server: 199.34.230.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #1'
-  password: slch2024
-  port: 2096
-  server: 185.148.105.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #2'
+- name: '30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #4'
   password: slch2024
   port: 2096
   server: 209.94.90.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #13'
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #2'
   password: slch2024
   port: 2096
-  server: 185.148.107.195
+  server: 199.34.229.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #3'
+  password: slch2024
+  port: 2096
+  server: 192.0.63.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #16'
+  password: slch2024
+  port: 2096
+  server: 192.0.54.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
 - name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #8'
+  password: slch2024
+  port: 2096
+  server: 199.34.230.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #9'
+  password: slch2024
+  port: 2096
+  server: 199.68.156.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #10'
   password: slch2024
   port: 2096
   server: 216.24.57.195
@@ -1395,28 +1382,49 @@ proxies:
 - name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #11'
   password: slch2024
   port: 2096
-  server: 192.0.63.195
+  server: 192.200.160.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #14'
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #12'
   password: slch2024
   port: 2096
-  server: 192.200.160.195
+  server: 185.148.106.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #13'
+  password: slch2024
+  port: 2096
+  server: 185.148.105.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
 - name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #15'
   password: slch2024
   port: 2096
-  server: 199.34.229.195
+  server: 185.148.104.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #16'
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #17'
   password: slch2024
   port: 2096
-  server: 192.0.54.195
+  server: 185.59.218.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #18'
+  password: slch2024
+  port: 2096
+  server: 185.251.81.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #20'
+  password: slch2024
+  port: 2096
+  server: 185.251.82.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan

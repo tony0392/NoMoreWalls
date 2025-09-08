@@ -199,9 +199,29 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6,7|香港NO.1-1A-GPT
+  name: 6|香港NO.1
   port: 45050
   server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4abd59a0-f01e-4067-bf7b-f1d7c12a4535
+- alterId: 0
+  cipher: auto
+  name: 6|香港NO.2
+  port: 45051
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4abd59a0-f01e-4067-bf7b-f1d7c12a4535
+- alterId: 0
+  cipher: auto
+  name: 7|香港NO.2-1A-GPT
+  port: 45051
+  server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -209,9 +229,9 @@ proxies:
   uuid: eefeeaf9-f63b-4b57-9c66-b905429e0035
 - alterId: 0
   cipher: auto
-  name: 6,7|香港NO.2-1A-GPT
-  port: 45051
-  server: xdd.dashuai.cyou
+  name: 7|香港NO.1-1A-GPT
+  port: 45050
+  server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -887,7 +907,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 25,30,33,34,36,37,38|HK_speednode_0022
+  name: '25,30,33,34,37|🇭🇰 香港3|@stairnode #1'
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -896,57 +916,27 @@ proxies:
   tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     headers:
       Host: hkt.gotochinatown.net
     path: /
 - client-fingerprint: chrome
-  name: '25,30,33,34,37|🇭🇰 香港6|@stairnode #1'
+  name: '25,30,33,34,37|🇭🇰 香港4|@stairnode #1'
   password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 219.77.97.194
+  server: 203.218.174.80
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '25,34,37|🇭🇰 香港5|@stairnode #1'
-  port: 28677
-  server: 43.247.134.80
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: f9575b63-7410-4c76-88db-91c24a429ea8
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 25,34,37|🇭🇰 香港2|@stairnode
-  password: 2b5fad3874e5
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /aqwshiog
-    skip-cert-verify: false
-    tls: true
+- client-fingerprint: chrome
+  name: '25,30,33,34,37|🇭🇰 香港6|@stairnode #1'
+  password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 156.251.179.135
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 30,33|香港5|@ripaojiedian
-  network: tcp
-  port: '28677'
-  server: 43.247.134.80
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f9575b63-7410-4c76-88db-91c24a429ea8
+  server: 218.103.234.218
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 30,33|香港v2|@ripaojiedian
@@ -969,45 +959,3 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 36,38|HK_speednode_0020
-  network: ws
-  port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 36,38|HK_speednode_0021
-  network: ws
-  port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 36,38|HK_speednode_0023
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d

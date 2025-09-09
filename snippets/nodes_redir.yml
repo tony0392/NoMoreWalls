@@ -12,16 +12,22 @@ proxies:
   uuid: f13143a7-542d-49ec-9428-098142b6977c
 - alterId: 64
   cipher: auto
-  name: 0,1,28,30|US_189
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 0,1,14,28,30|US_189
   network: tcp
   port: '30002'
   server: 38.12.83.217
+  servername: loosely.freetrade.link
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
 - alterId: 2
   cipher: auto
-  name: '0,1,27,28|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
+  name: '0,1,22,27,28|🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
   network: ws
   port: 30835
   server: v35.heduian.link
@@ -46,7 +52,7 @@ proxies:
   uuid: 2525a5e5-99f6-45b5-8439-cfaa2d395768
 - alterId: 2
   cipher: auto
-  name: '0,1,19,27,28|🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
+  name: '0,1,19,28|🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -3854,17 +3860,6 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 27|_NL_->🇺🇸_US_美国
-  network: ws
-  port: 22107
-  server: 45.144.174.211
-  skip-cert-verify: true
-  type: vmess
-  uuid: ca840767-e6c3-4149-bcf1-c5c61e450bcc
-  ws-opts:
-    path: /
 - alterId: 2
   cipher: auto
   name: 30|🇺🇸 _CN_中国->🇺🇸_US_美国
@@ -3880,7 +3875,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国
+  name: '30|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
   network: ws
   port: 30835
   server: v35.heduian.link

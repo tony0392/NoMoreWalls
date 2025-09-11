@@ -1,14 +1,89 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: '0,1,28|🇬🇧_GB_英国 #2'
-  network: tcp
-  port: 443
-  server: 89.31.120.192
-  sni: ''
-  type: vmess
-  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
+- name: 0,1,38|DE_speednode_0014
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 188.244.122.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /由零开始
+- name: 0,1,38|GB_speednode_0039
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.156.19.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /由零开始
+- name: 0,1,18,23,25,33,36,38|GB_speednode_0040
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.156.19.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  tfo: false
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram
+- name: 0,1,25,33,36,38|DE_speednode_0017
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 188.244.122.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram
+- name: '0,1,38|CY_speednode_0005 #1'
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 195.26.229.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /由零开始
+- name: '0,1,25,26,33,36,38|CY_speednode_0006 #1'
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 195.26.229.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram
 - alterId: 0
   cipher: auto
   name: 2|🇬🇧 伦敦专线
@@ -35,24 +110,24 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - alterId: 0
   cipher: auto
-  name: 6|英国2
+  name: 6,7|英国2-1A
   port: 45067
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 0a5ff4ff-ce46-4c20-91a2-4d2f39aac812
+  uuid: 57e3817d-62f5-4300-918b-41e553b4e86f
 - alterId: 0
   cipher: auto
-  name: 6|英国1
+  name: 6,7|英国1-1A
   port: 45066
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 0a5ff4ff-ce46-4c20-91a2-4d2f39aac812
+  uuid: 57e3817d-62f5-4300-918b-41e553b4e86f
 - alterId: 0
   cipher: auto
   name: 7|英国2-1B
@@ -62,7 +137,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: aa870dd1-21bd-4ba6-a26f-3c2639c668c3
+  uuid: 1d20e718-4f37-44bd-98c2-11f695c9aef2
 - alterId: 0
   cipher: auto
   name: 7|英国1-1B
@@ -72,7 +147,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: aa870dd1-21bd-4ba6-a26f-3c2639c668c3
+  uuid: 1d20e718-4f37-44bd-98c2-11f695c9aef2
 - alterId: 0
   cipher: auto
   name: 13|🇬🇧 英国 | GBR
@@ -100,23 +175,30 @@ proxies:
   port: 990
   server: 185.126.237.38
   type: ss
-- cipher: aes-128-gcm
+- cipher: chacha20-ietf-poly1305
   country: 🇧 GB
   name: 14|🇧 GB_58
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇧 GB
+  name: 14|🇬🇧 GB_59
   password: shadowsocks
   port: 443
   server: 141.98.101.178
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14|🇧 GB_59
+  name: 14|🇧 GB_60
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇧 GB_60
+  country: 🇧 GB
+  name: 14|🇧 GB_61
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.255.22
@@ -132,39 +214,33 @@ proxies:
   type: ssr
 - cipher: aes-128-gcm
   country: 🇧GB
-  name: 14|🇧GB_62
+  name: 14|🇧GB_63
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 14|🇬🇧GB_63
+  name: 14|🇬🇧GB_64
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
 - country: 🇧GB
-  name: 14|🇬🇧GB_64
+  name: 14|🇬🇧GB_65
   password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
   port: 443
   server: uk2-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 22|❓_🇬🇧_💻_github.com/Ruk1ng001_32...
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.162.228.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: '25,26,33,36,38|GB_speednode_0026 #1'
+- cipher: aes-256-cfb
+  name: 22|🟡_🇬🇧_💻_github.com/Ruk1ng001_36...
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 62.100.205.48
+  type: ss
+- name: 25,26,33,36,38|GB_speednode_0041
   network: ws
   password: slch2024
   port: 2096
@@ -177,20 +253,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /TelegramU0001F1E8U0001F1F3
-- name: '25,33,36,38|GB_speednode_0027 #1'
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.156.19.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: '25,33,36,38|GB_speednode_0030 #1'
+- name: 25,33,36|GB_58121_0030
   network: ws
   password: slch2024
   port: 2096
@@ -203,18 +266,6 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: 26|英国 006
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 195.26.229.87
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
 - name: 26|英国 007
   network: ws
   password: slch2024
@@ -251,6 +302,12 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
+- cipher: aes-256-cfb
+  name: 28|_GB_国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.27.48
+  type: ss
 - alterId: 0
   cipher: auto
   name: 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
@@ -264,17 +321,31 @@ proxies:
     headers:
       Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
     path: /azumase.ren
-- name: 30|🇬🇧 英国 V2CROSS.COM
+- name: '30|GB英国(mibei77.com 米贝节点分享)\r #15'
+  password: slch2024
+  port: 2096
+  server: 188.244.122.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+- name: '30|GB英国(mibei77.com 米贝节点分享)\r #11'
   password: slch2024
   port: 2096
   server: 194.36.55.195
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
-- name: '30|🇬🇧 英国 V2CROSS.COM #1'
+- name: '30|GB英国(mibei77.com 米贝节点分享)\r #8'
   password: slch2024
   port: 2096
   server: 195.26.229.195
-  skip-cert-verify: false
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+- name: '30|GB英国(mibei77.com 米贝节点分享)\r #9'
+  password: slch2024
+  port: 2096
+  server: 185.156.19.195
+  skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan

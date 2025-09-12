@@ -1,5 +1,5 @@
 proxies:
-- name: 0,1,38|NL_speednode_0055
+- name: '0,1,25,26,28,33,36,38|NL_speednode_0055 #1'
   network: ws
   password: slch2024
   port: 2096
@@ -153,16 +153,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|新加坡NO.1
-  port: 45054
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 57e3817d-62f5-4300-918b-41e553b4e86f
-- alterId: 0
-  cipher: auto
   name: 6|新加坡NO.2
   port: 45055
   server: xdd.dashuai.cyou
@@ -170,7 +160,37 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 57e3817d-62f5-4300-918b-41e553b4e86f
+  uuid: a5f57ab0-e5b4-4f8d-b734-a04b22946c80
+- alterId: 0
+  cipher: auto
+  name: 6|新加坡NO.1
+  port: 45054
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a5f57ab0-e5b4-4f8d-b734-a04b22946c80
+- alterId: 0
+  cipher: auto
+  name: 7|新加坡NO.1-1B
+  port: 45054
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: db18f41b-2408-4e86-bd68-660dd77d721d
+- alterId: 0
+  cipher: auto
+  name: 7|新加坡NO.2-1B
+  port: 45055
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: db18f41b-2408-4e86-bd68-660dd77d721d
 - alterId: 0
   cipher: auto
   name: 9|SG | 新加坡 LB-1A
@@ -717,29 +737,34 @@ proxies:
   type: ss
   udp: true
 - country: 🇬SG
-  name: 14|SG_133
+  name: 14|SG_149
   password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
   port: 443
   server: sg2-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: '25,26,30,33,34,37|🇸🇬 新加坡|@stairnode #1'
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3957
-  server: xingxing.jiasu123.org
+- alterId: 0
+  cipher: auto
+  name: 26|新加坡 002
+  network: ws
+  port: 443
+  server: 54.169.173.51
   skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-- client-fingerprint: chrome
-  name: '25,30,33,34,37|🇸🇬 新加坡2|@stairnode #1'
-  password: 253bc477d4e43c209f2d427272968280
-  port: 9160
-  server: 36.156.102.77
-  skip-cert-verify: true
-  sni: 23.45.86.28
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 14a79148-3d75-41d6-a998-2be9edef88cb
+  ws-opts:
+    headers:
+      Host: singapore2.helloshuai.com
+    path: /39cb4/
+- name: 30|🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
+  password: slch2024
+  port: 2096
+  server: 185.18.184.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
   type: trojan
 - name: 31|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f

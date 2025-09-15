@@ -1,31 +1,4 @@
 proxies:
-- name: '0,1,17,25,28,33,36,38|FR_speednode_0036 #1'
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.7.240.195
-  servername: ocost-dy.wmlefl.cc
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: '0,1,28|法国_2 #2'
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.7.240.195
-  sni: ocost-dy.wmlefl.cc
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram
 - alterId: 0
   cipher: auto
   name: 2|🇫🇷 法国1
@@ -55,24 +28,44 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: 6|法国2
-  port: 45071
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f3aa9d7-6f10-4303-ad51-3bbe89734b2d
-- alterId: 0
-  cipher: auto
-  name: 6|法国1
+  name: 6,7|法国1-1A
   port: 45072
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 5f3aa9d7-6f10-4303-ad51-3bbe89734b2d
+  uuid: dde923a2-2ea5-44f3-af43-40e1d735aa9f
+- alterId: 0
+  cipher: auto
+  name: 6,7|法国2-1A
+  port: 45071
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: dde923a2-2ea5-44f3-af43-40e1d735aa9f
+- alterId: 0
+  cipher: auto
+  name: 7|法国1-1B
+  port: 45072
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f8f87df4-f669-41d3-8c41-eaf3297a6131
+- alterId: 0
+  cipher: auto
+  name: 7|法国2-1B
+  port: 45071
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f8f87df4-f669-41d3-8c41-eaf3297a6131
 - alterId: 0
   cipher: auto
   name: 13|🇫🇷 法国 | FRA
@@ -103,6 +96,68 @@ proxies:
   type: vmess
   udp: true
   uuid: dd565d75-3bc9-4469-9811-5e1f1f364949
+- cipher: chacha20-ietf-poly1305
+  country: 🇷 FR
+  name: 14| FR_55
+  password: qXvO7zYU7KeaB0Md7DQLow
+  port: 1080
+  server: 51.195.119.47
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷FR
+  name: 14|🇷FR_56
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.185.174
+  type: ss
+- country: 🇷FR
+  name: 14|🇷FR_57
+  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
+  port: 443
+  server: fr-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇷FR
+  name: 14|🇷FR_58
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: uk-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇫🇷FR
+  name: 14|🇫🇷FR_59
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
+  port: 443
+  server: de-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇷FR
+  name: 14|🇫🇷FR_60
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: 198.244.190.189
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 1
+  cipher: auto
+  name: 18,23|[VMess] 🇫🇷 法国 国际航空电讯集团公司(SITA)
+  network: ws
+  port: 443
+  server: jamekk.org
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: jamekk.org
+    path: linkvws
 - cipher: aes-256-cfb
   name: 23|[SS] 🇫🇷 _FR_法国
   password: asdKkaskJKfnsa
@@ -111,7 +166,7 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- name: '25,33,36,38|FR_speednode_0032 #1'
+- name: 25|[Trojan] FR_speednode_0032
   network: ws
   password: slch2024
   port: 2096
@@ -119,12 +174,11 @@ proxies:
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  udp: true
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram@ShadowProxy66
-- name: '25,33,36,38|FR_speednode_0033 #1'
+- name: 25|[Trojan] FR_speednode_0033
   network: ws
   password: slch2024
   port: 2096
@@ -132,12 +186,25 @@ proxies:
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  udp: true
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: '25,26,33,36,38|FR_speednode_0035 #1'
+- name: 25,26,28|德国_2
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.16.110.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: 25,26|法国 001
   network: ws
   password: slch2024
   port: 2096
@@ -150,13 +217,31 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: '30|🇫🇷 FR法国(mibei77.com 米贝节点分享) #3'
+- name: 25,28|法国_1
+  network: ws
   password: slch2024
   port: 2096
   server: 185.7.240.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
+  tls: true
   type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: 28|法国_2
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.7.240.195
+  sni: ocost-dy.wmlefl.cc
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram
 - alterId: 0
   cipher: auto
   name: 30|🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...

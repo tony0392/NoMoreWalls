@@ -1142,12 +1142,12 @@ proxies:
   server: 8.216.33.14
   type: http
   username: TcIVARdTgR
-- name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_38...
-  password: pFibFRwNeR
-  port: 52770
-  server: 8.221.142.181
+- name: 22|🟡_🇯🇵_📶_github.com/Ruk1ng001_32...
+  password: Etlmz84L
+  port: 24233
+  server: 192.243.123.93
   type: http
-  username: a9I0VZgxP6
+  username: kZXMC3Z1
 - cipher: rc4-md5
   name: 25|[SS] 🇯🇵 日本|@ripaojiedian
   password: efanccyun
@@ -1164,17 +1164,17 @@ proxies:
   name: '25,26,30,33,34,37|🇯🇵 日本3|@stairnode #1'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 3160
-  server: 153.121.76.9
-  skip-cert-verify: true
-  sni: 23.45.86.28
+  port: 327
+  server: 153.121.45.139
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
   name: '25,30,33,34,37|🇯🇵 日本4|@stairnode #1'
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
   server: 36.151.251.6
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - cipher: aes-256-gcm
@@ -1182,19 +1182,7 @@ proxies:
   name: '25,34,37|🇯🇵 日本5|@stairnode #1'
   password: amazongreatvpn
   port: 16888
-  server: 13.230.37.83
-  tfo: false
-  type: ss
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 25,34,37|🇯🇵 日本|@stairnode
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202509121565513-hDcp24etDx.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
+  server: 3.115.88.171
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -1213,13 +1201,46 @@ proxies:
   server: 137.220.142.139
   tfo: false
   type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 25,34,37|🇯🇵 日本|@stairnode
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202509121565513-XAa9x2cfsM.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 30,33|日本v2|@ripaojiedian
   network: kcp
-  port: '40354'
-  server: 47.74.42.174
+  port: '40916'
+  server: 8.209.200.91
   servername: ''
   tls: false
   type: vmess
-  uuid: 79f0cb97-d631-493e-84a1-82a0576fa952
+  uuid: af07bf42-c942-4085-a7cb-80f9bed88776
+- alterId: 0
+  cipher: auto
+  name: '30|🇯🇵 JP日本(mibei77.com 米贝节点分享) #1'
+  network: ws
+  port: '54516'
+  server: 158.101.146.3
+  tls: true
+  type: vmess
+  uuid: 6d0b24b6-6622-44b2-8da0-ef1e67651325
+  ws-opts:
+    headers:
+      Host: serv00_vmess.sweetrx.eu.org
+    path: /vmess
+- name: '33,36,38|JP_speednode_0018 #1'
+  password: 9e76767d-4bfa-4f04-a800-42e2f63afed2
+  port: 443
+  server: www.tiktok.com.jp2.viefast.net
+  skip-cert-verify: true
+  sni: www.linemo.jp
+  type: trojan
+  udp: true

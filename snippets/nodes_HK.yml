@@ -199,26 +199,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6|香港NO.2
-  port: 45051
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8c5453bf-a669-4e7b-b480-3c6650769a77
-- alterId: 0
-  cipher: auto
-  name: 6|香港NO.1
-  port: 45050
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8c5453bf-a669-4e7b-b480-3c6650769a77
-- alterId: 0
-  cipher: auto
   name: 7|香港NO.2-1B-GPT
   port: 45051
   server: xdd.dashuai.cyou
@@ -938,33 +918,53 @@ proxies:
   server: 156.224.77.215
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 14| HK_73
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- cipher: chacha20-ietf
-  country: 🇰 HK
-  name: 14|🇰 HK_74
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
-  type: ss
 - cipher: aes-256-cfb
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_75
+  country: 🇰 HK
+  name: 14| HK_68
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇰 HK
+  name: 14|🇰 HK_69
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 15099
+  server: ss.026.node-for-bigairport.win
+  type: ss
+- cipher: chacha20-ietf
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_70
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_71
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
   type: ss
 - alterId: 2
   cipher: auto
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 14|🇰 HK_76
+  name: 14|🇰 HK_72
+  network: ws
+  port: 80
+  server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14,22|github.com/Ruk1ng001_356633356...
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -988,6 +988,35 @@ proxies:
   ws-headers:
     HOST: broadcastlv.chat.bilibili.com
   ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 18|香港 电讯盈科有限公司
+  network: ws
+  port: 80
+  server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 18,23,30|🇭🇰 香港 电讯盈科有限公司
+  network: ws
+  port: '80'
+  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 20|HK香港(mibei77.com 米贝节点分享)
@@ -998,6 +1027,22 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 2
+  cipher: auto
+  name: '23,30|🇭🇰 香港 电讯盈科有限公司 #1'
+  network: ws
+  port: '80'
+  server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
+    path: /
 - cipher: aes-256-gcm
   name: 25|[SS] 🇭🇰 香港2|@ripaojiedian
   password: 2b5fad3874e5
@@ -1019,27 +1064,69 @@ proxies:
   name: '25,30,33,34,37|🇭🇰 香港4|@stairnode #1'
   password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 112.118.248.22
+  server: 1.64.115.53
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 25|[VMess] 🇭🇰 香港5|@ripaojiedian 2
+  port: 47030
+  server: 103.224.80.67
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b088a19a-70dd-4eb6-a9f1-e9cbba0a64c2
+- client-fingerprint: chrome
+  name: '25,30,33,34,37|🇭🇰 香港6|@stairnode #1'
+  password: 253bc477d4e43c209f2d427272968280
+  port: 447
+  server: 160.16.70.180
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 25,34,36,37,38|US_speednode_0033
-  password: amazongreatvpn
-  port: 16888
-  server: 54.46.38.22
-  tfo: false
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: '25,26,30,33,34,37|🇭🇰 香港6|@stairnode #1'
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 447
-  server: 160.16.63.16
+- alterId: 0
+  cipher: auto
+  name: 25|[VMess] 🇭🇰 香港7|@ripaojiedian 2
+  port: 25119
+  server: 38.147.188.25
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 361f1769-cac1-4dd1-adca-92592929b3de
+- alterId: 0
+  cipher: auto
+  name: 25|[VMess] 🇭🇰 香港8|@ripaojiedian 2
+  port: 28210
+  server: 38.147.188.53
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b738a6b6-7b7d-41a9-87a5-f246256c5c95
+- alterId: 0
+  cipher: auto
+  name: 25|[VMess] 🇭🇰 香港9|@ripaojiedian 2
+  port: 35436
+  server: 103.30.78.138
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 084928cf-ed55-42e8-b686-b8e271dfb0ce
+- alterId: 0
+  cipher: auto
+  name: 25|[VMess] 🇭🇰 香港10|@ripaojiedian ...
+  port: 32026
+  server: 103.224.80.45
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 1193769d-bea4-4f0e-bab7-70640e1a0b2e
+- name: 25,30|🇨🇦 加拿大
+  password: 1640ef52-2db0-44ab-b3f3-8690b762ebc9
+  port: 12000
+  server: 165.154.112.107
   skip-cert-verify: true
-  sni: www.baidu.com
+  sni: aliyun.com
   type: trojan
 - alterId: 0
   cipher: auto
@@ -1053,6 +1140,56 @@ proxies:
   uuid: e43b6c20-2f61-4e8c-a692-c737fa5cfa0d
 - alterId: 0
   cipher: auto
+  name: 30,33|香港5|@ripaojiedian
+  network: tcp
+  port: '47030'
+  server: 103.224.80.67
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b088a19a-70dd-4eb6-a9f1-e9cbba0a64c2
+- alterId: 0
+  cipher: auto
+  name: 30,33|香港7|@ripaojiedian
+  network: tcp
+  port: '25119'
+  server: 38.147.188.25
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 361f1769-cac1-4dd1-adca-92592929b3de
+- alterId: 0
+  cipher: auto
+  name: 30,33|香港8|@ripaojiedian
+  network: tcp
+  port: '28210'
+  server: 38.147.188.53
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b738a6b6-7b7d-41a9-87a5-f246256c5c95
+- alterId: 0
+  cipher: auto
+  name: 30,33|香港9|@ripaojiedian
+  network: tcp
+  port: '35436'
+  server: 103.30.78.138
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 084928cf-ed55-42e8-b686-b8e271dfb0ce
+- alterId: 0
+  cipher: auto
+  name: 30,33|香港10|@ripaojiedian
+  network: tcp
+  port: '32026'
+  server: 103.224.80.45
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1193769d-bea4-4f0e-bab7-70640e1a0b2e
+- alterId: 0
+  cipher: auto
   name: 30,33|香港v2|@ripaojiedian
   network: kcp
   port: '28590'
@@ -1061,6 +1198,31 @@ proxies:
   tls: false
   type: vmess
   uuid: d75481c7-b5c8-40a9-811a-02b709e74816
+- alterId: 64
+  cipher: auto
+  name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #2'
+  network: tcp
+  port: '52512'
+  server: 183.240.180.47
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: '30,37|🇭🇰 香港7|@stairnode #1'
+  network: ws
+  port: 80
+  server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158
@@ -1073,3 +1235,76 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '33,34|🇭🇰 香港5|@ripaojiedian #2'
+  network: http
+  port: 47030
+  server: 103.224.80.67
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b088a19a-70dd-4eb6-a9f1-e9cbba0a64c2
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '33,34|🇭🇰 香港7|@ripaojiedian #2'
+  network: http
+  port: 25119
+  server: 38.147.188.25
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 361f1769-cac1-4dd1-adca-92592929b3de
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '33,34|🇭🇰 香港8|@ripaojiedian #2'
+  network: http
+  port: 28210
+  server: 38.147.188.53
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b738a6b6-7b7d-41a9-87a5-f246256c5c95
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '33,34|🇭🇰 香港9|@ripaojiedian #2'
+  network: http
+  port: 35436
+  server: 103.30.78.138
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 084928cf-ed55-42e8-b686-b8e271dfb0ce
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '33,34|🇭🇰 香港10|@ripaojiedian #2'
+  network: http
+  port: 32026
+  server: 103.224.80.45
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1193769d-bea4-4f0e-bab7-70640e1a0b2e
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '37|🇭🇰 香港5|@stairnode #1'
+  password: amazongreatvpn
+  port: 16888
+  server: 54.46.38.22
+  tfo: false
+  type: ss

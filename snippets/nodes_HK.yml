@@ -878,32 +878,17 @@ proxies:
   server: 156.224.77.215
   type: ss
   udp: true
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 18,22,23|[VMess] 🇭🇰 香港 Cloudie机房
+  name: 18,23|[VMess] 🇭🇰 香港 电讯盈科有限公司
   network: ws
-  port: 57206
-  server: 103.229.127.212
+  port: 30807
+  server: v10.heduian.link
   skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
   udp: true
-  uuid: 6768839e-fa1b-488e-a715-2a8dfaebbea6
-  ws-opts:
-    path: /arki?ed=2048
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: '25,30,33,34,37|🇭🇰 香港|@stairnode #1'
-  network: ws
-  port: 30809
-  server: v9.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
@@ -918,14 +903,20 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '25,34,37|🇭🇰 香港3|@stairnode #1'
-  port: 57405
-  server: 103.224.80.73
+  name: '25,30,33,34,37|🇭🇰 香港3|@stairnode #1'
+  network: ws
+  port: 41311
+  server: xiaoniu.v.jsqcdn.bid
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 282bc2b9-8aaf-400a-86eb-1cf981a8a1da
+  uuid: bd64d2a3-76a1-407f-af7f-bdcdcb78d21e
+  ws-opts:
+    headers:
+      Host: img14.360buyimg.com
+    path: /obj
 - client-fingerprint: chrome
   name: '25,26,30,33,34,37|🇭🇰 香港4|@stairnode #1'
   network: tcp
@@ -935,6 +926,17 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '25,34,37|🇭🇰 香港5|@stairnode #1'
+  port: 57586
+  server: 45.89.233.236
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 862d48d2-115b-432d-8115-f5aaa1a4b186
 - client-fingerprint: chrome
   name: '25,26,30,33,34,37|🇭🇰 香港6|@stairnode #1'
   network: tcp
@@ -944,39 +946,52 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 30|🇭🇰 香港 电讯盈科有限公司
-  network: ws
-  port: '80'
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 0
   cipher: auto
-  name: 30,33|香港3|@ripaojiedian
+  client-fingerprint: chrome
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: '25,30,33,34,37|🇭🇰 香港HK|@stairnode #1'
+  network: http
+  port: 24939
+  server: 38.147.188.112
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 928408df-3114-4b57-b852-f8d120ce056c
+- alterId: 0
+  cipher: auto
+  name: 25|[VMess] 🇭🇰 香港HK|@ripaojiedian ...
+  port: 24939
+  server: 38.147.188.112
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 928408df-3114-4b57-b852-f8d120ce056c
+- alterId: 0
+  cipher: auto
+  name: 30,33|香港5|@ripaojiedian
   network: tcp
-  port: '57405'
-  server: 103.224.80.73
+  port: '57586'
+  server: 45.89.233.236
   servername: ''
   tls: false
   type: vmess
-  uuid: 282bc2b9-8aaf-400a-86eb-1cf981a8a1da
+  uuid: 862d48d2-115b-432d-8115-f5aaa1a4b186
 - alterId: 0
   cipher: auto
   name: 30,33|香港v2|@ripaojiedian
   network: kcp
-  port: '21523'
-  server: 47.242.215.154
+  port: '5043'
+  server: 47.242.186.1
   servername: ''
   tls: false
   type: vmess
-  uuid: f6c894a3-f326-4807-9270-f236da4120c1
+  uuid: 93c35277-ee3f-4ab2-9d9e-462b97a8795f
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158

@@ -101,13 +101,16 @@ proxies:
     path: /6We3U9Df1WGxgFnoFPw1
 - alterId: 0
   cipher: auto
-  name: '0,1,28,30|🇺🇸 美国 #14'
+  name: '0,1,18,22,23,28,30|🇺🇸 美国 #14'
   network: ws
   port: '443'
   server: dddvvbn.931.pp.ua
   servername: dddvvbn.931.pp.ua
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vmess
+  udp: true
   uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
   ws-opts:
     headers:
@@ -384,50 +387,6 @@ proxies:
   uuid: dd565d75-3bc9-4469-9811-5e1f1f364949
 - alterId: 0
   cipher: auto
-  name: 18,22,23,30|🇺🇸 美国 阿里云
-  network: ws
-  port: '62960'
-  server: 47.238.235.98
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 87d97741-45e5-4677-b90c-df5ea8bfdeba
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 18,22,23|[VMess] 🇺🇸 美国 华盛顿Cogent通信公司
-  network: ws
-  port: 62656
-  server: 38.54.98.150
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b771d99f-ef69-4b5c-8398-665bf851a661
-  ws-opts:
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 18,22,23|[VMess] 🇺🇸 美国 V2CROSS.COM
-  network: ws
-  port: 56334
-  server: 23.27.99.10
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1545ae5a-e218-4bd2-b01c-045f13518de9
-  ws-opts:
-    path: /1545ae5a
-- alterId: 0
-  cipher: auto
   name: 20|US美国(mibei77.com 米贝节点分享)
   network: ws
   port: 443
@@ -448,68 +407,39 @@ proxies:
   sni: aio.zipzap.biz.id
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 22|🟡_🇺🇸_📶_github.com/Ruk1ng001_61...
-  network: ws
-  port: 32878
-  server: 38.244.34.79
-  tls: false
-  type: vmess
-  uuid: 616211c5-f24a-4711-a019-a7c3d88e4b98
-  ws-opts:
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 22|🟡_🇺🇸_📶_github.com/Ruk1ng001_33...
-  network: ws
-  port: 34261
-  server: 38.244.34.76
-  tls: false
-  type: vmess
-  uuid: 70d55a8b-8bb5-4078-84a0-ab88d2408da3
-  ws-opts:
-    path: /arki?ed=2048
-- name: 22|❓_🇺🇸_💻_github.com/Ruk1ng001_66...
-  password: gs4BXwT6SW
-  port: 10988
-  server: 154.26.192.123
-  type: http
-  username: fQ67Dpe5dU
-- alterId: 0
-  cipher: auto
-  name: 22|🟡_🇺🇸_💻_github.com/Ruk1ng001_32...
-  network: none
-  port: 15491
-  server: 154.64.228.236
-  tls: false
-  type: vmess
-  uuid: 389b52ba-d936-4800-87a6-1e9765e35079
-- alterId: 0
-  cipher: auto
-  name: 22|❓_🇺🇸_📶_github.com/Ruk1ng001_33...
-  port: 31971
-  server: 64.81.34.113
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 983abe73-28fd-4ce5-cee8-dcce8e56d71a
-- alterId: 0
-  cipher: auto
-  name: 22|🟡_🇺🇸_💻_github.com/Ruk1ng001_65...
-  network: none
-  port: 41128
-  server: 72.249.200.122
-  tls: false
-  type: vmess
-  uuid: e699faa1-d333-4736-b5e5-e6edf9f5c2b5
 - name: 22|❓_🇺🇸_📶_github.com/Ruk1ng001_36...
   password: gA30l1F
   port: 27207
   server: 38.107.175.141
   type: http
   username: kZXMC3Z1
+- name: 22|❓_🇺🇸_💻_github.com/Ruk1ng001_66...
+  password: gs4BXwT6SW
+  port: 10988
+  server: 154.26.192.123
+  type: http
+  username: fQ67Dpe5dU
+- name: 22|🟡_🇺🇸_💻_github.com/Ruk1ng001_63...
+  password: ZYxVNDT9pS
+  port: 6770
+  server: 47.254.121.69
+  type: http
+  username: HlZHOwkdIL
+- name: 22|🟡_🇺🇸_📶_github.com/Ruk1ng001_33...
+  password: 9yedrr
+  port: 61885
+  server: 38.246.240.208
+  type: http
+  username: kZXMC3Z1
+- country: 🇺🇸US
+  name: 22|🟡_🇺🇸_💻_github.com/Ruk1ng001_37...
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 192.3.107.252
+  skip-cert-verify: true
+  sni: rc8.freeguard.org
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 22|❓_🇺🇸_💻_github.com/Ruk1ng001_33...
@@ -521,68 +451,6 @@ proxies:
   uuid: 1fe231c4-d760-4759-e45a-8382d5f3ae0a
 - alterId: 0
   cipher: auto
-  name: '22|🟡_🇺🇸_💻_github.com/Ruk1ng001_32... #1'
-  network: none
-  port: 41061
-  server: 154.64.228.236
-  tls: false
-  type: vmess
-  uuid: 9aa06f32-5d1b-4eb5-88fa-354d258a2924
-- alterId: 0
-  cipher: auto
-  name: '22|❓_🇺🇸_💻_github.com/Ruk1ng001_66... #1'
-  network: ws
-  port: 443
-  server: 205.233.181.3
-  servername: farid.1.berozha.ir
-  tls: true
-  type: vmess
-  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-  ws-opts:
-    headers:
-      Host: farid.1.berozha.ir
-    path: /us.kkp.me.eu.org/aa
-- name: 22|🟡_🇺🇸_💻_github.com/Ruk1ng001_63...
-  password: ZYxVNDT9pS
-  port: 6770
-  server: 47.254.121.69
-  type: http
-  username: HlZHOwkdIL
-- alterId: 0
-  cipher: auto
-  name: 22|🟠_🇺🇸_💻_github.com/Ruk1ng001_33...
-  network: none
-  port: 33604
-  server: 23.95.133.4
-  tls: false
-  type: vmess
-  uuid: 77b03507-c6bf-448e-8b1a-d12d398fe509
-- alterId: 0
-  cipher: auto
-  name: '22|🟡_🇺🇸_💻_github.com/Ruk1ng001_65... #1'
-  network: none
-  port: 33606
-  server: 192.3.233.216
-  tls: false
-  type: vmess
-  uuid: 19d74f4a-e9a8-4942-9061-53f53af0c024
-- country: 🇺🇸US
-  name: 22|🟡_🇺🇸_💻_github.com/Ruk1ng001_37...
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 192.3.107.252
-  skip-cert-verify: true
-  sni: rc8.freeguard.org
-  type: trojan
-  udp: true
-- name: '22|🟡_🇺🇸_📶_github.com/Ruk1ng001_33... #1'
-  password: 9yedrr
-  port: 61885
-  server: 38.246.240.208
-  type: http
-  username: kZXMC3Z1
-- alterId: 0
-  cipher: auto
   name: 22|🟠_🇺🇸_💻_github.com/Ruk1ng001_35...
   network: none
   port: 14827
@@ -590,15 +458,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 4abcc4f8-c147-4c5b-fd7d-e3824eb4c473
-- alterId: 0
-  cipher: auto
-  name: 22|❓_🇺🇸_💻_github.com/Ruk1ng001_61...
-  network: none
-  port: 46100
-  server: 156.238.226.207
-  tls: false
-  type: vmess
-  uuid: 71dbcca9-1116-4bb0-c641-12f50b9ce41e
 - alterId: 0
   cipher: auto
   name: 23|[VMess] 🇺🇸 _US_美国_1
@@ -673,31 +532,6 @@ proxies:
   uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 23|[SS] 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
-  password: p78naCf2EfOlRSLTX0wFVx
-  port: 443
-  server: pupas-shirting-unsung.freesocks.work
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '25,30,33,34,37|🇺🇸 美国|@stairnode #1'
-  network: ws
-  port: 41317
-  server: a.lyazzz.online
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: c76b20d5-7f82-4990-9687-4bde24397493
-  ws-opts:
-    headers:
-      Host: img14.360buyimg.com
-    path: /obj
 - cipher: rc4-md5
   name: 25|[SS] 🇺🇸 美国2|@ripaojiedian
   password: efanccyun
@@ -705,7 +539,17 @@ proxies:
   server: cn01.efan8867801.xyz
   type: ss
 - client-fingerprint: chrome
-  name: '25,30,33,34,37|🇺🇸 美国4|@stairnode #1'
+  name: '25,26,30,33,34,37|🇺🇸 美国3|@stairnode #1'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1700
+  server: 153.121.45.139
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: '25,26,30,33,34,37|🇺🇸 美国4|@stairnode #1'
+  network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 3296
   server: 160.16.117.182
@@ -718,7 +562,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509121565513-d3qOpZwqIw.download.microsoft.com
+    host: 202509121565513-HpWeCj5Hza.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -726,7 +570,17 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 26|美国 001
+  name: 26,30,33|香港HK|@ripaojiedian
+  network: tcp
+  port: '24939'
+  server: 38.147.188.112
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 928408df-3114-4b57-b852-f8d120ce056c
+- alterId: 0
+  cipher: auto
+  name: 26|美国 003
   network: ws
   port: 443
   server: 104.17.148.22
@@ -741,7 +595,7 @@ proxies:
     path: /b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top/azumase.ren
 - alterId: 0
   cipher: auto
-  name: 26|美国 002
+  name: 26|美国 004
   network: tcp
   port: 45276
   server: lt.fxlcn.com
@@ -752,7 +606,7 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
-  name: 26|美国 003
+  name: 26|美国 005
   network: ws
   port: 443
   server: cf.fovi.tk
@@ -767,7 +621,7 @@ proxies:
     path: /eisasqa
 - alterId: 0
   cipher: auto
-  name: 26|美国 004
+  name: 26|美国 006
   network: tcp
   port: 45246
   server: ye.fxlcn.com
@@ -794,7 +648,7 @@ proxies:
     path: /horsen
 - alterId: 0
   cipher: auto
-  name: 26|美国 006
+  name: 26|美国 008
   network: tcp
   port: 45271
   server: lt.fxlcn.com
@@ -805,7 +659,7 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
-  name: 26|美国 007
+  name: 26|美国 009
   network: tcp
   port: 45417
   server: lt.fxlcn.com
@@ -816,7 +670,7 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
-  name: 26|美国 008
+  name: 26|美国 010
   network: tcp
   port: 45235
   server: lt.fxlcn.com
@@ -827,7 +681,7 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
-  name: 26|美国 009
+  name: 26|美国 011
   network: ws
   port: 443
   server: codepen.io
@@ -842,7 +696,7 @@ proxies:
     path: /us.kkp.me.eu.org/aa
 - alterId: 0
   cipher: auto
-  name: 26|美国 010
+  name: 26|美国 012
   network: tcp
   port: 45291
   server: lt.fxlcn.com
@@ -853,7 +707,7 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
-  name: 26|美国 011
+  name: 26|美国 013
   network: tcp
   port: 45233
   server: lt.fxlcn.com
@@ -862,7 +716,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 26|美国 012
+- name: 26|美国 014
   network: ws
   password: vip
   port: 443
@@ -876,7 +730,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 013
+- name: 26|美国 015
   network: ws
   password: vip
   port: 443
@@ -890,7 +744,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 014
+- name: 26|美国 016
   network: ws
   password: trojan
   port: 8443
@@ -904,7 +758,7 @@ proxies:
     headers:
       Host: pangpi.pages.dev
     path: /?ed=2560
-- name: 26|美国 015
+- name: 26|美国 017
   network: ws
   password: vip
   port: 443
@@ -918,7 +772,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 016
+- name: 26|美国 018
   network: ws
   password: vip
   port: 443
@@ -932,7 +786,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 017
+- name: 26|美国 019
   network: ws
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
@@ -946,7 +800,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /tro8sFW1S91B6sZrM1?ed=2560
-- name: 26|美国 018
+- name: 26|美国 020
   network: ws
   password: vip
   port: 443
@@ -960,7 +814,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 019
+- name: 26|美国 021
   network: ws
   password: auto
   port: 443
@@ -974,7 +828,7 @@ proxies:
     headers:
       Host: dcf741e8.epeius-2gy.pages.dev
     path: /?ed=2560
-- name: 26|美国 020
+- name: 26|美国 022
   network: ws
   password: vip
   port: 8443
@@ -988,7 +842,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 021
+- name: 26|美国 023
   network: ws
   password: vip
   port: 443
@@ -1002,7 +856,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 022
+- name: 26|美国 024
   network: ws
   password: vip
   port: 443
@@ -1016,7 +870,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 023
+- name: 26|美国 025
   network: ws
   password: vip
   port: 443
@@ -1030,7 +884,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 024
+- name: 26|美国 026
   network: ws
   password: vip
   port: 443
@@ -1044,7 +898,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 025
+- name: 26|美国 027
   network: ws
   password: vip
   port: 443
@@ -1058,7 +912,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 026
+- name: 26|美国 028
   network: ws
   password: '!!str 123456'
   port: 8443
@@ -1072,7 +926,7 @@ proxies:
     headers:
       Host: top-azx.pages.dev
     path: /Az1.vpn.33.TOP/?ed=2560
-- name: 26|美国 027
+- name: 26|美国 029
   network: ws
   password: vip
   port: 443
@@ -1086,7 +940,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 028
+- name: 26|美国 030
   network: ws
   password: '!!str 123456'
   port: 8443
@@ -1100,7 +954,7 @@ proxies:
     headers:
       Host: top-azx.pages.dev
     path: /Az1.vpn.33.TOP/?ed=2560
-- name: 26|美国 029
+- name: 26|美国 031
   network: ws
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
@@ -1114,7 +968,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /tro8sFW1S91B6sZrM1?ed=2560
-- name: 26|美国 030
+- name: 26|美国 032
   network: ws
   password: vip
   port: 2087
@@ -1128,7 +982,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 031
+- name: 26|美国 033
   network: ws
   password: auto
   port: 443
@@ -1142,7 +996,7 @@ proxies:
     headers:
       Host: dcf741e8.epeius-2gy.pages.dev
     path: /?ed=2560
-- name: 26|美国 032
+- name: 26|美国 034
   network: ws
   password: trojan
   port: 8443
@@ -1156,7 +1010,7 @@ proxies:
     headers:
       Host: fofang.pages.dev
     path: /?ed=2560
-- name: 26|美国 033
+- name: 26|美国 035
   network: ws
   password: vip
   port: 443
@@ -1170,7 +1024,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 034
+- name: 26|美国 036
   network: ws
   password: vip
   port: 443
@@ -1184,7 +1038,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 035
+- name: 26|美国 037
   network: ws
   password: redfree8
   port: 443
@@ -1198,7 +1052,7 @@ proxies:
     headers:
       Host: redfree8-p1.pooriashop.ir
     path: /trTelegram
-- name: 26|美国 036
+- name: 26|美国 038
   network: ws
   password: vip
   port: 443
@@ -1212,7 +1066,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 037
+- name: 26|美国 039
   network: ws
   password: f8b7cd5e-60c4-4e95-9b7b-d561ef4eed8c
   port: 443
@@ -1226,7 +1080,7 @@ proxies:
     headers:
       Host: yellow-cloud-d53f.vavovi6084.workers.dev
     path: /?ed=2560
-- name: 26|美国 038
+- name: 26|美国 040
   network: ws
   password: vip
   port: 443
@@ -1240,7 +1094,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 039
+- name: 26|美国 041
   network: ws
   password: vip
   port: 443
@@ -1254,7 +1108,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 040
+- name: 26|美国 042
   network: ws
   password: vip
   port: 443
@@ -1268,7 +1122,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 041
+- name: 26|美国 043
   network: ws
   password: vip
   port: 443
@@ -1282,7 +1136,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 042
+- name: 26|美国 044
   network: ws
   password: vip
   port: 443
@@ -1296,7 +1150,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 043
+- name: 26|美国 045
   network: ws
   password: vip
   port: 443
@@ -1310,7 +1164,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 044
+- name: 26|美国 046
   network: ws
   password: redfree8
   port: 80
@@ -1324,7 +1178,7 @@ proxies:
     headers:
       Host: redfree8-p1.pooriashop.ir
     path: /trLwW5jwrnymnOdqki?ed=2560
-- name: 26|美国 045
+- name: 26|美国 047
   network: ws
   password: vpn
   port: 2025
@@ -1338,7 +1192,7 @@ proxies:
     headers:
       Host: dns.google.com
     path: /
-- name: 26|美国 046
+- name: 26|美国 048
   network: ws
   password: trojan
   port: 10002
@@ -1352,7 +1206,7 @@ proxies:
     headers:
       Host: qingming-b08.pages.dev
     path: /?ed=2560
-- name: 26|美国 047
+- name: 26|美国 049
   network: ws
   password: rXzh%3B%3FnW1GGKB(K8
   port: 443
@@ -1366,7 +1220,7 @@ proxies:
     headers:
       Host: sAiKOXpUbGm.ZhkinGkuRD13.WorkErs.dEV
     path: /tr4BCdusB84159lWnu
-- name: 26|美国 048
+- name: 26|美国 050
   network: ws
   password: vip
   port: 443
@@ -1380,7 +1234,7 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 26|美国 049
+- name: 26|美国 051
   network: ws
   password: '!!str 123456'
   port: 8443
@@ -1396,7 +1250,7 @@ proxies:
     path: /Az1.vpn.33.TOP/?ed=2560
 - alterId: 0
   cipher: auto
-  name: 26|美国 071
+  name: 26|美国 073
   network: ws
   port: 443
   server: v2ray.codefyinc.com
@@ -1411,7 +1265,7 @@ proxies:
     path: /vmessws
 - alterId: 0
   cipher: auto
-  name: 26|美国 074
+  name: 26|美国 076
   network: tcp
   port: 6506
   server: 193.124.24.247
@@ -1422,7 +1276,7 @@ proxies:
   uuid: c53d41d1-7d56-43ce-9994-408780c6476a
 - alterId: 0
   cipher: auto
-  name: 26|美国 075
+  name: 26|美国 077
   network: ws
   port: 80
   server: s1.db-link.in
@@ -1437,7 +1291,7 @@ proxies:
     path: /dabai.inc09e03012ee5d2d79229cdf0acfb9a12
 - alterId: 0
   cipher: auto
-  name: 26|美国 081
+  name: 26|美国 083
   network: tcp
   port: 443
   server: 165.140.216.141
@@ -1448,17 +1302,24 @@ proxies:
   uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
 - alterId: 0
   cipher: auto
-  name: 26|美国 085
+  name: '30|🇺🇸 美国 CloudFlare节点 #1'
   network: ws
-  port: 80
-  server: GgGgGGgGggggGg.222769.XYZ
+  port: '80'
+  server: s3.houge.ggff.net
   tls: false
   type: vmess
-  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
+  uuid: 305419ed-4ef5-3e5a-8d48-b803c58853d3
   ws-opts:
     headers:
-      Host: gggggggggggggg.222769.xyz
-    path: /f6taOMcOSZb9TPR
+      Host: d2cea61d1fb4fbea81d762dad2795273.s3.houge.ggff.net
+    path: /dabai.in?=d2cea61d1fb4fbea81d762dad2795273
+- name: 30|🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing...
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 198.46.152.83
+  skip-cert-verify: false
+  sni: sj3.freeguard.org
+  type: trojan
 - name: 31|美国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 658
@@ -1471,29 +1332,3 @@ proxies:
   server: 45.83.140.22
   skip-cert-verify: true
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 36,38|US_speednode_0062
-  port: 15491
-  server: 154.64.228.236
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 389b52ba-d936-4800-87a6-1e9765e35079
-- alterId: 0
-  cipher: auto
-  name: 36,38|US_speednode_0089
-  network: ws
-  port: 443
-  server: cf.877774.xyz
-  servername: enlargement-decreased-directors-consensus.trycloudflare.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 2c833c5d-cbcc-4afb-89ba-d17dc39db6f0
-  ws-opts:
-    headers:
-      Host: enlargement-decreased-directors-consensus.trycloudflare.com
-    path: /vmess-argo?ed=2560

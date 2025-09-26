@@ -25,14 +25,14 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - alterId: 0
   cipher: auto
-  name: 6|英国1
+  name: 6,7|英国1-1A
   port: 45066
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 5de94493-6ce4-4f1d-bd28-f9d3dd6fb78d
+  uuid: 701ed64e-e105-4add-9026-e17d7956c9a9
 - alterId: 0
   cipher: auto
   name: 6,7|英国2-1A
@@ -42,7 +42,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 5de94493-6ce4-4f1d-bd28-f9d3dd6fb78d
+  uuid: 701ed64e-e105-4add-9026-e17d7956c9a9
+- alterId: 0
+  cipher: auto
+  name: 7|英国1-1B
+  port: 45066
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 62cbdff8-11da-4202-b8e3-56e061d0eaa0
 - alterId: 0
   cipher: auto
   name: 7|英国2-1B
@@ -52,7 +62,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: f392a9cc-b730-4062-aaea-f36d478b6f2c
+  uuid: 62cbdff8-11da-4202-b8e3-56e061d0eaa0
 - alterId: 0
   cipher: auto
   name: 13|🇬🇧 英国 | GBR
@@ -73,25 +83,80 @@ proxies:
   type: vmess
   udp: true
   uuid: dd565d75-3bc9-4469-9811-5e1f1f364949
-- name: 18,23,30|🇬🇧 英国 社会保险安全部
-  password: 1ce1df7962f71c6f
-  port: 8443
-  server: uk-03.allhubb.info
-  skip-cert-verify: false
-  tfo: false
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14| GB_66
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.250
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧 GB
+  name: 14|🇧 GB_67
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇧 GB_68
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.237.38
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇬🇧 GB_69
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇬🇧 GB_70
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.255.22
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇬🇧 GB
+  name: 14,19,22|🟡_🇬🇧_💻_github.com/Ruk1ng001_65...
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 62.100.205.48
+  type: ssr
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 14|🇧GB_72
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇧GB
+  name: 14|🇬🇧GB_73
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- country: 🇧GB
+  name: 14|🇬🇧GB_74
+  password: 30761083-5dcd-49d6-85b5-33756ef1f7ed
+  port: 443
+  server: uk2-full.privateip.net
+  skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 22|🟡_🇬🇧_💻_github.com/Ruk1ng001_39...
-  network: none
-  port: 49580
-  server: 89.213.40.48
-  tls: false
-  type: vmess
-  uuid: d2266deb-d24c-4fbd-c4ae-59b4c59765a7
 - cipher: aes-256-cfb
-  name: 22,27|🇬🇧_GB_英国_1
+  name: 19,22|🟠_🇳🇱_📶_github.com/Ruk1ng001_62...
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.17.169
+  type: ss
+- cipher: aes-256-cfb
+  name: 19,22,27|_GB_国
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 62.100.205.48
@@ -107,14 +172,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- cipher: aes-256-cfb
-  name: 27|_GB_
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 62.100.205.48
-  type: ssr
 - alterId: 0
   cipher: auto
   name: 30|🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...

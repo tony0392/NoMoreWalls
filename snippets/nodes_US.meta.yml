@@ -69,8 +69,7 @@ proxies:
   tls: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  country: ' ZZ'
-  name: '0,1,14,20,28|美国_9 #2'
+  name: '0,1,20,28|美国_9 #2'
   password: Nk9asglDzHzjktVzTkvhaA
   port: 443
   server: arxfw2b78fi2q9hzylhn.freesocks.work
@@ -107,12 +106,11 @@ proxies:
     path: /6We3U9Df1WGxgFnoFPw1
 - alterId: 0
   cipher: auto
-  name: '0,1,22,28,30|🇺🇸 美国 #14'
+  name: 0,1,26,28,30|🇺🇸 美国 CloudFlare节点
   network: ws
   port: '443'
   server: dddvvbn.931.pp.ua
   servername: dddvvbn.931.pp.ua
-  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
@@ -281,16 +279,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6|美国NO.2
-  port: 45053
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 701ed64e-e105-4add-9026-e17d7956c9a9
-- alterId: 0
-  cipher: auto
   name: 6,7|美国NO.1-1A-GPT
   port: 45052
   server: haa.dashuai.cyou
@@ -298,7 +286,27 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 701ed64e-e105-4add-9026-e17d7956c9a9
+  uuid: aa6a03dc-eddf-44bf-9f5f-ed28c045559e
+- alterId: 0
+  cipher: auto
+  name: 6,7|美国NO.2-1A-GPT
+  port: 45053
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aa6a03dc-eddf-44bf-9f5f-ed28c045559e
+- alterId: 0
+  cipher: auto
+  name: 7|美国NO.2-1B-GPT
+  port: 45053
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ed332a90-7d1e-43ab-aa07-a86d6cc14c91
 - cipher: aes-128-gcm
   name: 11|🇺🇸 us
   password: shadowsocks
@@ -381,35 +389,56 @@ proxies:
   uuid: dd565d75-3bc9-4469-9811-5e1f1f364949
 - cipher: aes-128-gcm
   country: 🇸 US
-  name: 14| US_152
+  name: 14| US_151
   password: shadowsocks
   port: 443
-  server: 156.146.62.164
+  server: 156.146.62.163
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 14|🇸 US_152
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.162
+  type: ss
+- cipher: aes-128-gcm
   country: 🇺 US
-  name: 14|🇸 US_153
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 154.205.159.100
+  name: 14|🇺🇸 US_153
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.130
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 14|🇺🇸 US_154
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.161
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 14|🇺🇸 US_155
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.167
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 14|🇺🇸 US_156
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
-  name: 14|🇸 US_154
+  country: 🇸 US
+  name: 14|🇺🇸 US_157
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 38.54.45.129
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇸 US
-  name: 14|🇺🇸 US_155
-  password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
-  port: 42029
-  server: 208.67.105.196
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇸 US
-  name: 14|🇺🇸 US_156
+  country: 🇺🇸 US
+  name: 14|🇸 US_158
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 64.74.163.130
@@ -422,158 +451,68 @@ proxies:
   server: 38.165.233.93
   type: ss
 - cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 14|🇸 US_158
-  password: shadowsocks
-  port: 443
-  server: 212.102.47.130
-  type: ss
-- cipher: aes-128-gcm
   country: 🇸 US
-  name: 14|🇺🇸 US_159
+  name: 14|🇸 US_160
   password: shadowsocks
   port: 443
-  server: 156.146.62.162
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 14|🇺🇸 US_160
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.161
+  server: 156.146.62.164
   type: ss
 - cipher: aes-256-cfb
   country: 🇸 US
   name: 14|🇺🇸 US_161
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 154.90.62.168
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: 🇸 US
-  name: '14,25,34,37|🇰🇷 韩国|@stairnode #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 14|🇺🇸 US_163
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.167
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 14|🇺🇸 US_164
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.170
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 14|🇺🇸 US_165
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.163
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇺🇸 US
-  name: 14|🇺🇸 US_166
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇺🇸 US
-  name: 14,22,27|_SK_->🇺_RU_斯
-  password: f8f7aCzcPKbsF8p3
-  port: 989
   server: 156.146.40.194
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇸 US
-  name: 14|🇺🇸 US_168
+  name: 14|🇺🇸 US_162
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 104.192.226.106
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇸 US
+  name: 14|🇸 US_163
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 38.165.233.18
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸 US
-  name: 14|🇺🇸 US_169
+  name: 14|🇺🇸 US_164
+  password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
+  port: 42029
+  server: 208.67.105.196
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸 US
+  name: 14,36,38|KR_speednode_0024
   password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 104.192.226.106
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇺🇸 US
+  name: 14,22|🔴_🇰🇷_💻_github.com/Ruk1ng001_37...
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇺 US
+  name: 14|🇺🇸 US_167
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.54.57.90
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺🇸 US_170
-  network: ws
-  port: 20521
-  server: 154.9.254.63
-  skip-cert-verify: true
-  type: vmess
-  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
-  ws-path: /
-- alterId: 1
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_171
-  network: ws
-  port: 443
-  server: jamekk.org
-  servername: jamekk.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: jamekk.org
-  ws-path: linkvws
-- alterId: 64
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_172
-  network: tcp
-  port: 30002
-  server: 38.12.83.217
-  servername: loosely.freetrade.link
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_173
-  network: ws
-  port: 443
-  server: 15.235.50.172
-  servername: baradiha.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: baradiha.com
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_174
+  name: 14|🇺🇸 US_168
   network: ws
   port: 443
   server: 15.235.83.227
@@ -585,212 +524,30 @@ proxies:
   ws-headers:
     HOST: mankadmu.com
   ws-path: /linkvws
-- alterId: 1
-  cipher: auto
-  country: 🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_175
-  network: ws
-  port: 443
-  server: serkat.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-path: linkvws
 - alterId: 0
   cipher: auto
-  country: 🇸 US
+  country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14,26|美国 008
-  network: tcp
-  port: 45271
-  server: lt.fxlcn.com
+  name: 14|🇸 US_169
+  network: ws
+  port: 20521
+  server: 154.9.254.63
   skip-cert-verify: true
-  tfo: true
   type: vmess
-  udp: true
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
   ws-path: /
 - alterId: 0
   cipher: auto
   country: 🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇸 US_177
-  network: tcp
-  port: 45237
-  server: fa.fxlcn.com
-  servername: fa.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_178
-  network: tcp
-  port: 45287
-  server: lt.fxlcn.com
-  servername: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_179
-  network: tcp
-  port: 41100
-  server: 15.204.234.200
-  skip-cert-verify: true
-  type: vmess
-  uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_180
-  network: ws
-  port: 443
-  server: 15.235.83.228
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_181
-  network: ws
-  port: 443
-  server: 38.99.82.193
-  servername: tilebani.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: tilebani.com
-  ws-path: /linkvws
-- alterId: 1
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_182
-  network: ws
-  port: 443
-  server: masjide.org
-  servername: masjide.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: masjide.org
-  ws-path: linkvws
-- alterId: 1
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_183
-  network: ws
-  port: 443
-  server: yichueng.org
-  servername: yichueng.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: yichueng.org
-  ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14,26|美国 012
-  network: tcp
-  port: 45291
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  tfo: true
-  type: vmess
-  udp: true
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_185
+  name: 14|🇸 US_170
   network: tcp
   port: 45294
   server: lt.fxlcn.com
   skip-cert-verify: true
   type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_186
-  network: tcp
-  port: 45247
-  server: fa.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_187
-  network: tcp
-  port: 45258
-  server: lt.fxlcn.com
-  servername: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14,26|美国 004
-  network: tcp
-  port: 45276
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  tfo: true
-  type: vmess
-  udp: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
 - alterId: 0
@@ -813,9 +570,225 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇸 US_190
+  name: 14|🇸 US_172
+  network: ws
+  port: 443
+  server: 15.235.50.172
+  servername: baradiha.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: baradiha.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇸 US_173
   network: tcp
-  port: 45288
+  port: 45237
+  server: fa.fxlcn.com
+  servername: fa.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  country: 🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇸 US_174
+  network: ws
+  port: 443
+  server: yichueng.org
+  servername: yichueng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: yichueng.org
+  ws-path: linkvws
+- alterId: 1
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_175
+  network: ws
+  port: 443
+  server: jamekk.org
+  servername: jamekk.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: jamekk.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_176
+  network: ws
+  port: 443
+  server: 15.235.83.228
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_177
+  network: ws
+  port: 443
+  server: 38.99.82.193
+  servername: tilebani.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: tilebani.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_178
+  network: tcp
+  port: 45287
+  server: lt.fxlcn.com
+  servername: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_179
+  network: ws
+  port: 443
+  server: masjide.org
+  servername: masjide.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: masjide.org
+  ws-path: linkvws
+- alterId: 1
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_180
+  network: ws
+  port: 443
+  server: serkat.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14,26|美国 008
+  network: tcp
+  port: 45271
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇸 US_182
+  network: tcp
+  port: 30002
+  server: 38.12.83.217
+  servername: loosely.freetrade.link
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_183
+  network: ws
+  port: 20521
+  server: 47.238.252.154
+  skip-cert-verify: true
+  type: vmess
+  uuid: 87bb9d49-6345-42d4-9ee4-91dd8a6ca544
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14,26|美国 012
+  network: tcp
+  port: 45291
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14,26|美国 004
+  network: tcp
+  port: 45276
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_186
+  network: tcp
+  port: 45258
   server: lt.fxlcn.com
   servername: lt.fxlcn.com
   skip-cert-verify: true
@@ -827,7 +800,20 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺🇸 US_191
+  name: 14|🇺🇸 US_187
+  network: tcp
+  port: 45247
+  server: fa.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_188
   network: ws
   port: 443
   server: 148.113.176.192
@@ -839,16 +825,35 @@ proxies:
   ws-headers:
     HOST: fapeng.org
   ws-path: linkvws
-- country: 🇸 US
-  name: 14|🇸 US_192
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: cache-giver-wife.stark-industries.solutions
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇸 US_189
+  network: tcp
+  port: 41100
+  server: 15.204.234.200
   skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇺🇸 US
-  name: 14|🇸 US_193
+  type: vmess
+  uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇸 US_190
+  network: tcp
+  port: 45288
+  server: lt.fxlcn.com
+  servername: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- country: 🇸 US
+  name: 14|🇺🇸 US_191
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
   server: hinet.mjt000.com
@@ -856,7 +861,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 14|🇺🇸 US_194
+  name: 14|🇸 US_192
   password: D0AASSpCKFjOBSwlwqylnOep8BDlgN3e3RY9S3Op2RaZZ58gID8yY3ej56CSuYacZz3EA
   port: 443
   server: delight.appagent.net
@@ -864,23 +869,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 14|🇺🇸 US_195
-  password: 3ZFDxASRw0XIcKYFlp4RSCeSwA8ap7lEAzZB7uNnO38yDYOzDe3p23CxF0OlTx6YSK3j3
-  port: 443
-  server: toaster.isquirrel.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇺🇸 US
-  name: 14|🇸 US_196
-  password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
-  port: 443
-  server: 154.17.24.29
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇺🇸 US
-  name: 14|🇺🇸 US_197
+  name: 14|🇺🇸 US_193
   password: ea17601d-8ebf-4431-b815-4d644821ca7e
   port: 443
   server: kz.mjt000.com
@@ -888,15 +877,15 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 14|🇺🇸 US_198
-  password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
+  name: 14|🇺🇸 US_194
+  password: 3ZFDxASRw0XIcKYFlp4RSCeSwA8ap7lEAzZB7uNnO38yDYOzDe3p23CxF0OlTx6YSK3j3
   port: 443
-  server: usla.mjt000.com
+  server: toaster.isquirrel.net
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 14|🇺🇸 US_199
+  name: 14|🇺🇸 US_195
   password: 4xS33pu88RaTF37ZxRjzAZc9zxe8OaYBX9CSO3p5SSxquFOFEySnDlCleCFA2DN3gaeDl
   port: 443
   server: mintaka.appagent.net
@@ -904,77 +893,127 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 14|🇺🇸 US_201
+  name: 14|🇺🇸 US_197
+  password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
+  port: 443
+  server: usla.mjt000.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇺🇸 US
+  name: 14|🇺🇸 US_198
+  password: e6a2e741-0fce-440b-910c-b81325e2263a
+  port: 443
+  server: cache-giver-wife.stark-industries.solutions
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇺🇸 US
+  name: 14|🇺🇸 US_199
   password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
   port: 443
   server: guy-trace-lyric.stark-industries.solutions
   skip-cert-verify: true
   type: trojan
   udp: true
+- country: 🇸 US
+  name: 14|🇺🇸 US_200
+  password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
+  port: 443
+  server: 154.17.24.29
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 14|🇺🇸US_202
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 38.110.1.122
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 14|🇸US_203
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 38.110.1.122
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 14|🇺🇸US_204
+  name: 14|🇺🇸US_201
   password: KixLvKzwjekG00rm
   port: 8000
   server: 23.157.40.101
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸US
-  name: 14|🇺🇸US_205
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.66
-  type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 14|🇸US_206
+  name: 14|🇸US_202
   password: XKFKl2rULjIp74
   port: 8008
   server: 23.157.40.101
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 14|🇺🇸US_207
+  name: 14|🇺🇸US_203
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 23.157.40.101
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 14|🇺🇸US_208
-  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
-  port: 52952
-  server: exchange.gameaurela.click
+  name: 14|🇺🇸US_204
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 38.110.1.122
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 14|🇸US_209
+  name: 14|🇺🇸US_205
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 38.110.1.122
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 14|🇺🇸US_206
   password: XKFKl2rULjIp74
   port: 8009
   server: 23.157.40.101
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸US
+  name: 14|🇺🇸US_207
+  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
+  port: 52952
+  server: exchange.gameaurela.click
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇸US
+  name: 14|🇸US_208
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.66
+  type: ss
 - country: 🇸US
-  name: 14|🇺🇸US_210
+  name: 14|🇸US_209
   password: 0280b529-2747-4b7a-ab11-bad6453150b9
   port: 443
   server: fr2-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
+- alpn:
+  - http/1.1
+  name: 17|🇺🇸👖我的鸡巴18厘米丨8
+  network: tcp
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  servername: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: null
+  sni: twmoon1-cdn-route.couldflare-cdn.com
+  tfo: false
+  tls: true
+  type: http
+  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- cipher: aes-256-cfb
+  name: 17,22,36,38|KR_speednode_0023
+  password: test.+
+  port: 30446
+  server: testkr3.ssv.vc
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: http
+  udp: true
+  username: test
 - cipher: chacha20-ietf-poly1305
   name: 20|US美国(mibei77.com 米贝节点分享) 2
   password: p78naCf2EfOlRSLTX0wFVx
@@ -1034,27 +1073,18 @@ proxies:
   ws-headers:
     Host: yyhhnmjk.008880888.xyz
   ws-path: /YFhRqvQTiFgNjEuZUTo
-- alterId: 0
-  cipher: auto
-  name: 22|❓_🇺🇸_💻_github.com/Ruk1ng001_61...
-  network: none
-  port: 46100
-  server: 156.238.226.207
-  tls: false
-  type: vmess
-  uuid: 71dbcca9-1116-4bb0-c641-12f50b9ce41e
-- name: 22|❓_🇺🇸_💻_github.com/Ruk1ng001_66...
-  password: gs4BXwT6SW
-  port: 10988
-  server: 154.26.192.123
-  type: http
-  username: fQ67Dpe5dU
 - name: 22|🟡_🇺🇸_📶_github.com/Ruk1ng001_33...
   password: 9yedrr
   port: 61885
   server: 38.246.240.208
   type: http
   username: kZXMC3Z1
+- name: 22|❓_🇺🇸_💻_github.com/Ruk1ng001_66...
+  password: gs4BXwT6SW
+  port: 10988
+  server: 154.26.192.123
+  type: http
+  username: fQ67Dpe5dU
 - alterId: 0
   cipher: auto
   name: 23|[VMess] 🇺🇸 _US_美国_1
@@ -1129,20 +1159,21 @@ proxies:
   uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 23|[SS] 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
-  password: XUMTygEM1jVYIvysXKqA5T
-  port: 443
-  server: hackney-latest-strike.freesocks.work
-  tfo: false
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   name: '25,26,30,33,34,37|🇺🇸 美国|@stairnode #1'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 1700
   server: 160.16.87.174
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: '25,26,30,33,34,37|🇺🇸 美国2|@stairnode #1'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3296
+  server: 160.16.117.182
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -1845,15 +1876,55 @@ proxies:
     headers:
       Host: bbbbbbbbb.222769.xyz
     path: /f6taOMcOSZb9TPR
-- name: 27,30|🇺🇸_US_美国
+- name: '27,30|🇺🇸_US_美国 #1'
+  network: tcp
   password: 1ce1df7962f71c6f
   port: 8443
   server: uk-03.allhubb.info
   skip-cert-verify: true
   type: trojan
+- alterId: 1
+  cipher: auto
+  name: 30|🇺🇸 美国 惠普公司
+  network: ws
+  port: '443'
+  server: jamekk.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: jamekk.org
+    path: linkvws
 - alterId: 0
   cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #4'
+  name: 30|🇺🇸 US美国(mibei77.com 米贝节点分享)
+  network: ws
+  port: '443'
+  server: HHhjjMKi.457.PP.Ua
+  tls: true
+  type: vmess
+  uuid: 9f1673a0-688a-4f31-85fa-af40b03c708a
+  ws-opts:
+    headers:
+      Host: HHhjjMKi.457.PP.Ua
+    path: /hepNwpzuxszIxZMQZRJ
+- alterId: 0
+  cipher: auto
+  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #1'
+  network: ws
+  port: '443'
+  server: HhHjJMki.457.pP.uA
+  tls: true
+  type: vmess
+  uuid: da7e8bcf-b195-4d69-a667-24f9a7673a11
+  ws-opts:
+    headers:
+      Host: HhHjJMki.457.pP.uA
+    path: /hepNwpzuxszIxZMQZRJ
+- alterId: 0
+  cipher: auto
+  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #3'
   network: ws
   port: '41315'
   server: xiaoniu.v.jsqcdn.bid
@@ -1864,28 +1935,6 @@ proxies:
     headers:
       Host: img14.360buyimg.com
     path: /obj
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #5'
-  network: tcp
-  port: '41128'
-  server: 72.249.200.122
-  tls: false
-  type: vmess
-  uuid: e699faa1-d333-4736-b5e5-e6edf9f5c2b5
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #7'
-  network: ws
-  port: '80'
-  server: yyhhnmjk.008880888.xyz
-  tls: false
-  type: vmess
-  uuid: df36ace8-640b-42bb-8169-198901af6d9e
-  ws-opts:
-    headers:
-      Host: yyhhnmjk.008880888.xyz
-    path: /YFhRqvQTiFgNjEuZUTo
 - name: 31|美国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 658

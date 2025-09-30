@@ -169,7 +169,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 005
+  name: 5,26|中国 006
   network: ws
   port: 36101
   server: 120.82.70.149
@@ -199,7 +199,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 5,26|中国 010
+  name: 5,26|中国 011
   network: ws
   port: 1552
   server: nas.ruyo.in
@@ -3761,27 +3761,15 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 27|_CN_->_US_国
+  name: 27|_CN_国->_unKnow_
   network: ws
-  port: 30829
-  server: v29.heduian.link
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v29.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 30|🇨🇳_CN_中国->🇺🇸_US_美国
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v29.heduian.link
+      host: v8.heduian.link
     path: /oooo

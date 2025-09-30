@@ -213,7 +213,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 5,26|中国 009
+  name: 5,26|中国 010
   network: ws
   port: 8080
   server: 176.119.149.46
@@ -475,7 +475,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2045bb60-9ce4-4af6-9401-7274a3be1e4b
+  uuid: ba4693d2-2c70-464d-9877-95147b17c93e
 - alterId: 0
   cipher: auto
   name: 6|日本NO.1
@@ -485,7 +485,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2045bb60-9ce4-4af6-9401-7274a3be1e4b
+  uuid: ba4693d2-2c70-464d-9877-95147b17c93e
+- alterId: 0
+  cipher: auto
+  name: 7|日本NO.2-1B
+  port: 45057
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fa72f9b9-d625-4168-bec9-6b12f069a035
 - alterId: 0
   cipher: auto
   name: 7|日本NO.1-1B
@@ -495,17 +505,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 87c4ff78-6f9c-43f7-aeee-f01fc8d0a933
-- alterId: 0
-  cipher: auto
-  name: 7|日本NO.1-1A
-  port: 45056
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 21c94523-0d83-491f-9f8b-8510e9c8e3df
+  uuid: fa72f9b9-d625-4168-bec9-6b12f069a035
 - alterId: 0
   cipher: auto
   name: 9,26|美国 123
@@ -1076,33 +1076,134 @@ proxies:
   type: vmess
   udp: true
   uuid: dd565d75-3bc9-4469-9811-5e1f1f364949
-- cipher: aes-256-cfb
-  name: 17,22,36,38|KR_speednode_0013
-  password: test.+
-  port: 30446
-  server: testkr3.ssv.vc
+- alterId: 0
+  cipher: auto
+  name: 18,23|[VMess] 🇯🇵 日本 东京Amazon数据中心
+  network: ws
+  port: 68
+  server: awsjp2.iamlazy.vip
   skip-cert-verify: true
   tfo: false
-  tls: true
-  type: http
+  tls: false
+  type: vmess
   udp: true
-  username: test
-- alpn:
-  - http/1.1
-  name: 17|👖🇯🇵TG频道@stymei1丨34
+  uuid: f1d9d662-7fc9-4995-b047-05c98ad05286
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /?ed=2048
+- name: 22|🟠_🇯🇵_💼_github.com/Ruk1ng001_63...
+  password: MyH37ZD
+  port: 52771
+  server: 123.108.70.211
+  type: http
+  username: kZXMC3Z1
+- alterId: 0
+  cipher: auto
+  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_35...
+  network: none
+  port: 51629
+  server: 43.165.184.30
+  tls: false
+  type: vmess
+  uuid: f2315052-70b5-4a9a-ccbd-e98c0a148940
+- name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_65...
+  password: 9ixjDF
+  port: 53855
+  server: 47.79.151.130
+  type: http
+  username: kZXMC3Z1
+- alterId: 0
+  cipher: auto
+  name: 22|🟠_🇯🇵_💻_github.com/Ruk1ng001_62...
+  network: ws
+  port: 46049
+  server: 47.74.10.111
+  tls: false
+  type: vmess
+  uuid: 728257b1-5158-47d9-a1a1-6ac29faab878
+  ws-opts:
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 22|🔴_🇯🇵_💻_github.com/Ruk1ng001_63...
+  network: none
+  port: 12996
+  server: 103.93.76.145
+  tls: false
+  type: vmess
+  uuid: 969053ca-7473-47a0-b21d-ed1a2e1575e7
+- name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_39...
+  password: ka1roO
+  port: 48453
+  server: 47.79.151.191
+  type: http
+  username: kZXMC3Z1
+- alterId: 0
+  cipher: auto
+  name: 22|🟡_🇯🇵_🌀_github.com/Ruk1ng001_33...
+  network: none
+  port: 51897
+  server: 31.57.172.235
+  tls: false
+  type: vmess
+  uuid: 2b281c56-3fc2-449c-ab39-a7da5a022404
+- alterId: 0
+  cipher: auto
+  name: 22|🔴_🇯🇵_💻_github.com/Ruk1ng001_33...
+  network: none
+  port: 13470
+  server: 103.93.76.157
+  tls: false
+  type: vmess
+  uuid: 78a67329-f6d2-49a8-a276-430d9cd50ff6
+- alterId: 0
+  cipher: auto
+  name: 22|🟠_🇯🇵_💻_github.com/Ruk1ng001_33...
+  network: ws
+  port: 52131
+  server: 144.48.8.51
+  tls: false
+  type: vmess
+  uuid: 8f75cbdf-4a32-49b5-a790-2f530f5d8668
+  ws-opts:
+    path: /arki?ed=2048
+- name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_31...
+  password: 6bRDEuy
+  port: 37469
+  server: 47.79.94.28
+  type: http
+  username: kZXMC3Z1
+- alterId: 0
+  cipher: auto
+  name: 22|🟠_🇯🇵_💻_github.com/Ruk1ng001_36...
+  network: ws
+  port: 34221
+  server: 47.74.10.111
+  tls: false
+  type: vmess
+  uuid: 07a5f229-899d-43dd-beb0-f1412a2a85fd
+  ws-opts:
+    path: /arki?ed=2048
+- name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_61...
+  password: DIp64gZ6
+  port: 56977
+  server: 47.79.148.189
+  type: http
+  username: kZXMC3Z1
+- alterId: 0
+  client-fingerprint: chrome
+  name: '22,26,37|🇺🇸 美国2|@stairnode #1'
   network: tcp
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  servername: twmoon1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: null
-  sni: twmoon1-cdn-route.couldflare-cdn.com
-  tfo: false
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3296
+  server: 160.16.117.182
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   tls: true
-  type: http
+  type: trojan
   udp: true
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_35...
+- name: '22|🟡_🇯🇵_💻_github.com/Ruk1ng001_35... #1'
   password: Ny0I3R6r
   port: 30861
   server: 47.79.149.70
@@ -1115,50 +1216,16 @@ proxies:
   type: http
   username: kZXMC3Z1
 - alterId: 0
-  client-fingerprint: chrome
-  name: '22,25,26,30,33,34,37|🇺🇸 美国2|@stairnode #1'
+  name: 22,26|日本 016
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 3296
-  server: 160.16.117.182
+  port: 443
+  server: 160.16.236.32
   skip-cert-verify: false
   sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 22|🟡_🇯🇵_🌀_github.com/Ruk1ng001_33...
-  network: none
-  port: 51897
-  server: 31.57.172.235
-  tls: false
-  type: vmess
-  uuid: 2b281c56-3fc2-449c-ab39-a7da5a022404
-- name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_31...
-  password: auh2qWZuNd
-  port: 6770
-  server: 8.216.33.14
-  type: http
-  username: TcIVARdTgR
-- name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_61...
-  password: DIp64gZ6
-  port: 56977
-  server: 47.79.148.189
-  type: http
-  username: kZXMC3Z1
-- name: '22|🟡_🇯🇵_💻_github.com/Ruk1ng001_39... #1'
-  password: ka1roO
-  port: 48453
-  server: 47.79.151.191
-  type: http
-  username: kZXMC3Z1
-- name: '22|🟡_🇯🇵_💻_github.com/Ruk1ng001_31... #1'
-  password: 6bRDEuy
-  port: 37469
-  server: 47.79.94.28
-  type: http
-  username: kZXMC3Z1
 - name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_66...
   password: hMzd6764
   port: 21897
@@ -1171,27 +1238,28 @@ proxies:
   server: 47.79.41.4
   type: http
   username: kZXMC3Z1
-- name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_65...
-  password: 9ixjDF
-  port: 53855
-  server: 47.79.151.130
-  type: http
-  username: kZXMC3Z1
+- alterId: 0
+  cipher: auto
+  name: 22|🟠_🇯🇵_💻_github.com/Ruk1ng001_35...
+  network: ws
+  port: 34029
+  server: 47.74.10.111
+  tls: false
+  type: vmess
+  uuid: 2e80d0c8-16c8-420a-b86c-c2e7e2e4f764
+  ws-opts:
+    path: /arki?ed=2048
+- cipher: aes-128-gcm
+  name: 25|[SS] 🇯🇵 日本|@ripaojiedian
+  password: 722a54414ae6ee706ac9
+  port: 45572
+  server: jp07.jd.kunlunpx.com
+  type: ss
 - client-fingerprint: chrome
-  name: 22,26|日本 013
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 1331
-  server: 160.16.231.103
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- client-fingerprint: chrome
-  name: '25,26,30,33,34,37|🇯🇵 日本2|@stairnode #1'
-  network: tcp
+  name: '25,30,33,34|🇯🇵 日本2|@ripaojiedian #1'
   password: 253bc477d4e43c209f2d427272968280
   port: 3160
-  server: 160.16.231.103
+  server: 160.16.130.66
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -1204,7 +1272,74 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 26|日本 003
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 25,34,36,38|CN_speednode_0008
+  password: 722a54414ae6ee706ac9
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45572
+  server: jp07.jd.kunlunpx.com
+  tfo: false
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: '26,37|🇭🇰 香港4|@stairnode #1'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 126.116.225.149
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: '26,37|🇯🇵 日本2|@stairnode #1'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3160
+  server: 160.16.231.103
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: '26,37|🇸🇬 新加坡|@stairnode #1'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 2045
+  server: 160.16.130.66
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: '26,37|🇸🇬 新加坡2|@stairnode #1'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3957
+  server: 160.16.87.174
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: '26,37|🇺🇸 美国|@stairnode #1'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4317
+  server: 160.16.117.182
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 26|日本 008
+  network: kcp
+  port: 30391
+  server: 54.168.151.169
+  tls: false
+  type: vmess
+  uuid: c977388d-4550-4135-bbc6-0199daa76352
+- name: 26|日本 009
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 3160
@@ -1212,7 +1347,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 26|日本 005
+- name: 26|日本 010
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 449
@@ -1220,7 +1355,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 26|日本 006
+- name: 26|日本 011
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 1700
@@ -1230,23 +1365,21 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 26|日本 008
+  name: 26|日本 012
   network: kcp
   port: 5106
   server: 47.74.14.30
   tls: false
   type: vmess
   uuid: 1cc84891-1657-4f71-97d0-287df565820e
-- alterId: 0
-  cipher: auto
-  name: 26,30,33|日本v2|@ripaojiedian
-  network: kcp
-  port: '30391'
-  server: 54.168.151.169
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c977388d-4550-4135-bbc6-0199daa76352
+- name: 26|日本 013
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1331
+  server: 160.16.231.103
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - name: 26|日本 014
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -1261,14 +1394,6 @@ proxies:
   port: 443
   server: 202.181.103.246
   skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 26|日本 016
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 160.16.236.32
-  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 26|日本 017
@@ -1348,3 +1473,26 @@ proxies:
     headers:
       Host: serv00_vmess.sweetrx.eu.org
     path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 30|🇯🇵 日本 东京Amazon数据中心
+  network: ws
+  port: '80'
+  server: awsjp1.iamlazy.vip
+  tls: false
+  type: vmess
+  uuid: f1d9d662-7fc9-4995-b047-05c98ad05286
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 30,33|日本v2|@ripaojiedian
+  network: kcp
+  port: '20932'
+  server: 43.207.83.60
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bc4e0275-2a83-43be-a5b7-332a61615f1d

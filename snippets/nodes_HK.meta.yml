@@ -49,7 +49,7 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 007
+  name: 5,26|中国 008
   network: ws
   port: 8080
   server: 104.208.85.56
@@ -79,7 +79,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 008
+  name: 5,26|中国 009
   network: ws
   port: 8080
   server: 156.251.176.167
@@ -184,7 +184,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 012
+  name: 5,26|中国 013
   network: ws
   port: 8080
   server: 101.33.120.19
@@ -206,7 +206,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2045bb60-9ce4-4af6-9401-7274a3be1e4b
+  uuid: ba4693d2-2c70-464d-9877-95147b17c93e
 - alterId: 0
   cipher: auto
   name: 6|香港NO.2
@@ -216,7 +216,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2045bb60-9ce4-4af6-9401-7274a3be1e4b
+  uuid: ba4693d2-2c70-464d-9877-95147b17c93e
+- alterId: 0
+  cipher: auto
+  name: 7|香港NO.2-1B-GPT
+  port: 45051
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fa72f9b9-d625-4168-bec9-6b12f069a035
 - alterId: 0
   cipher: auto
   name: 7|香港NO.1-1B-GPT
@@ -226,17 +236,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 87c4ff78-6f9c-43f7-aeee-f01fc8d0a933
-- alterId: 0
-  cipher: auto
-  name: 7|香港NO.1-1A-GPT
-  port: 45050
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 21c94523-0d83-491f-9f8b-8510e9c8e3df
+  uuid: fa72f9b9-d625-4168-bec9-6b12f069a035
 - alterId: 0
   cipher: auto
   name: 9,26|美国 124
@@ -878,33 +878,82 @@ proxies:
   server: 156.224.77.215
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf
   country: 🇰 HK
-  name: 14| HK_72
+  name: 14| HK_53
+  password: asd123456
+  port: 8388
+  server: 103.149.182.191
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇰 HK
+  name: 14|🇭🇰 HK_54
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 15099
+  server: ss.026.node-for-bigairport.win
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_55
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
 - cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 14|🇰 HK_73
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_56
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
-  type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_74
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
   type: ss
 - alterId: 2
   cipher: auto
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 14|🇰 HK_75
+  name: 14|🇭🇰 HK_57
+  network: ws
+  port: 80
+  server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14,22|github.com/Ruk1ng001_356633356...
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_59
+  network: ws
+  port: 80
+  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_60
   network: ws
   port: 30807
   server: v10.heduian.link
@@ -915,96 +964,32 @@ proxies:
   ws-headers:
     HOST: baidu.com
   ws-path: /oooo
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14,22|github.com/Ruk1ng001_393130313...
-  network: ws
-  port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰 HK_77
-  network: ws
-  port: 80
-  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰 HK_78
-  network: ws
-  port: 80
-  server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 18|香港 电讯盈科有限公司
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 18,23|[VMess] 🇭🇰 香港 电讯盈科有限公司 2
-  network: ws
-  port: 30807
-  server: v10.heduian.link
+- alpn:
+  - http/1.1
+  name: 17|👖🇭🇰官网https://kelayun.notepin.c...
+  network: tcp
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  servername: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: null
+  sni: twmoon1-cdn-route.couldflare-cdn.com
+  tfo: false
+  tls: true
+  type: http
+  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- cipher: aes-256-cfb
+  name: 17|👖🇭🇰永久无限流量200元
+  password: test.+
+  port: 30446
+  server: testkr3.ssv.vc
   skip-cert-verify: true
   tfo: false
-  tls: false
-  type: vmess
+  tls: true
+  type: http
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 18,23|[VMess] 🇭🇰 香港 电讯盈科有限公司 3
-  network: ws
-  port: 80
-  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+  username: test
 - alterId: 0
   cipher: auto
   name: 20|HK香港(mibei77.com 米贝节点分享)
@@ -1019,12 +1004,28 @@ proxies:
   ws-headers:
     Host: img14.360buyimg.com
   ws-path: /obj
+- cipher: aes-256-gcm
+  name: 25|[SS] 🇭🇰 香港2|@ripaojiedian
+  password: ccf426f1fe78
+  port: 443
+  server: 103.103.245.158
+  type: ss
+- client-fingerprint: chrome
+  name: '25,30,33,34|🇭🇰 香港4|@ripaojiedian #1'
+  password: 253bc477d4e43c209f2d427272968280
+  port: 446
+  server: 221.128.195.217
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - alterId: 2
   cipher: auto
-  name: 23|[VMess] 🇭🇰 香港 电讯盈科有限公司
+  client-fingerprint: chrome
+  name: 25,26,30,33,34,36,38|HK_speednode_0047
   network: ws
   port: 80
-  server: hkt.gotochinatown.net
+  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  servername: ''
   skip-cert-verify: true
   tfo: false
   tls: false
@@ -1033,32 +1034,42 @@ proxies:
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- client-fingerprint: chrome
+  name: '25,30,33,34|🇭🇰 香港6|@ripaojiedian #1'
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 221.128.195.217
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 30|🇭🇰 香港 电讯盈科有限公司
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
       Host: hkt.gotochinatown.net
     path: /
-- cipher: aes-256-gcm
-  name: 25|[SS] 🇭🇰 香港2|@ripaojiedian
-  password: ccf426f1fe78
-  port: 443
-  server: 103.103.245.158
-  type: ss
-- client-fingerprint: chrome
-  name: '25,26,30,33,34,37|🇭🇰 香港4|@stairnode #1'
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 126.116.225.149
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- client-fingerprint: chrome
-  name: '25,26,30,33,34,37|🇭🇰 香港6|@stairnode #1'
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 203.198.123.174
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 30|🇭🇰 香港3|@stairnode
+  network: ws
+  port: '31469'
+  server: 149.30.232.103
+  tls: false
+  type: vmess
+  uuid: 5381445d-6ae4-4948-b61a-a16d9498d21b
+  ws-opts:
+    headers:
+      Host: 149.30.232.103
+    path: /arki?ed=2048
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158
@@ -1071,3 +1082,19 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
+- alterId: 2
+  cipher: auto
+  name: 36,38|HK_speednode_0046
+  network: ws
+  port: 80
+  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+    path: /

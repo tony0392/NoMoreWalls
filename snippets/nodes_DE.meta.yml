@@ -10,7 +10,7 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 098
+  name: 5,26|美国 168
   network: ws
   port: 17511
   server: 5.180.253.31
@@ -25,7 +25,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 5,26|德国 002
+  name: 5,26|德国 015
   network: ws
   port: 8080
   server: 130.61.253.111
@@ -40,7 +40,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 099
+  name: 5,26|美国 169
   network: ws
   port: 8080
   server: 181.214.99.228
@@ -53,39 +53,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- cipher: chacha20-ietf-poly1305
-  country: 🇪 DE
-  name: 14|🇪 DE_40
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 92.118.205.228
-  type: ss
-- alterId: 1
-  cipher: auto
-  country: 🇪 DE
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇪 DE_41
-  network: ws
-  port: 443
-  server: kampong.org
-  servername: kampong.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: kampong.org
-  ws-path: linkvws
-- country: 🇪DE
-  name: 14|🇪DE_42
-  password: 665c944d-047d-4659-80d5-3eaac70241a9
-  port: 443
-  server: 139.162.158.172
-  skip-cert-verify: true
-  sni: de2-full.privateip.net
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 26|德国 001
@@ -99,7 +66,63 @@ proxies:
   uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
 - alterId: 0
   cipher: auto
-  name: 26|德国 048
+  name: 26|德国 002
+  network: ws
+  port: 443
+  server: 141.95.126.134
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: jamekk.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 26|德国 003
+  network: ws
+  port: 443
+  server: 141.94.155.224
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 26|德国 004
+  network: ws
+  port: 443
+  server: 141.94.155.228
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kampong.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 26|德国 014
+  network: tcp
+  port: 40878
+  server: 85.195.101.122
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: f3d4167e-b15e-4e46-82e9-9286ef93fda7
+- alterId: 0
+  cipher: auto
+  name: 26|德国 053
   network: ws
   port: 8880
   server: 185.16.110.212
@@ -112,7 +135,7 @@ proxies:
     path: /dabai
 - alterId: 0
   cipher: auto
-  name: 26|德国 049
+  name: 26|德国 054
   network: tcp
   port: 28011
   server: 62.146.235.193
@@ -121,64 +144,13 @@ proxies:
   uuid: cfc5a87f-3c13-4e25-b556-176cdd6b5c6a
 - alterId: 0
   cipher: auto
-  name: 26|德国 050
-  network: ws
-  port: 443
-  server: 141.94.155.228
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kampong.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 26|德国 051
+  name: 26|德国 055
   network: tcp
   port: 44799
   server: de.netwatchvpn.sbs
   skip-cert-verify: true
   type: vmess
   uuid: d48de346-aaea-424a-9338-0049e1f1c865
-- alterId: 0
-  cipher: auto
-  name: 26|德国 059
-  network: tcp
-  port: 40878
-  server: 85.195.101.122
-  skip-cert-verify: true
-  type: vmess
-  uuid: f3d4167e-b15e-4e46-82e9-9286ef93fda7
-- alterId: 0
-  cipher: auto
-  name: 26|德国 061
-  network: ws
-  port: 443
-  server: 141.95.126.134
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: jamekk.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 26|德国 064
-  network: ws
-  port: 443
-  server: 141.94.155.224
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: fapeng.org
-    path: linkvws
 - alterId: 0
   cipher: auto
   name: 26|德国 069
@@ -190,16 +162,13 @@ proxies:
   uuid: 68bfcb00-d329-48c9-9143-52896a05e24f
 - alterId: 0
   cipher: auto
-  fingerprint: ''
-  name: 27,30|🇩🇪_DE_德国
+  name: 26|德国 070
   network: tcp
-  port: 8443
-  server: panel-de2.turkcloud.ir
-  servername: ''
-  sni: ''
-  tls: false
+  port: 12213
+  server: 37.114.33.109
+  skip-cert-verify: true
   type: vmess
-  uuid: 6b3a7034-39ec-f057-377d-cf6af57b4db4
+  uuid: cdc95a8e-3acb-436f-8fc3-336ebd544003
 - alterId: 0
   cipher: auto
   name: 30|🇩🇪 VMESS-未知>德国-NF解锁德国地区非自制剧-Ch...

@@ -58,7 +58,7 @@ proxies:
   udp: true
 - alterId: 1
   cipher: auto
-  name: 5,26|日本 044
+  name: 5,26|日本 046
   network: ws
   port: 33333
   server: 146.56.45.242
@@ -88,7 +88,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 5,26|日本 047
+  name: 5,26|日本 049
   network: ws
   port: 8080
   server: 146.56.157.76
@@ -103,7 +103,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|日本 048
+  name: 5,26|日本 050
   network: ws
   port: 8080
   server: 146.56.179.139
@@ -148,7 +148,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|日本 050
+  name: 5,26|日本 052
   network: ws
   port: 8080
   server: bst.n48.net
@@ -161,14 +161,6 @@ proxies:
     headers:
       Host: i1.hdslb.com
     path: /download
-- name: 6|韩国-三网优化2-1B
-  password: 1d9f1932-540d-46eb-89ad-77b7d7c8b560
-  port: 44732
-  server: kr-qingyun.dwyun.me
-  skip-cert-verify: true
-  sni: kr-qingyun.dwyun.me
-  type: trojan
-  udp: true
 - name: 6|韩国-三网优化2-1C
   password: 0357a969-bea8-4ca8-810f-8fcff26445a7
   port: 44732
@@ -177,8 +169,32 @@ proxies:
   sni: kr-qingyun.dwyun.me
   type: trojan
   udp: true
+- name: 6|韩国-三网优化2-1D
+  password: 63aa5f60-6210-4fbb-a851-f037f1ec05fc
+  port: 44732
+  server: kr-qingyun.dwyun.me
+  skip-cert-verify: true
+  sni: kr-qingyun.dwyun.me
+  type: trojan
+  udp: true
 - name: 6|韩国-三网优化2-1A
+  password: 1d9f1932-540d-46eb-89ad-77b7d7c8b560
+  port: 44732
+  server: kr-qingyun.dwyun.me
+  skip-cert-verify: true
+  sni: kr-qingyun.dwyun.me
+  type: trojan
+  udp: true
+- name: 6|韩国-三网优化2-1B
   password: 2ccc8e63-d293-49f1-a892-60182168598c
+  port: 44732
+  server: kr-qingyun.dwyun.me
+  skip-cert-verify: true
+  sni: kr-qingyun.dwyun.me
+  type: trojan
+  udp: true
+- name: 6|韩国-三网优化2-1E
+  password: 5b98db7b-dea6-4df7-aeff-c346734e8b6e
   port: 44732
   server: kr-qingyun.dwyun.me
   skip-cert-verify: true
@@ -187,14 +203,44 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 7|韩国 专线NO1
+  name: 6|韩国 专线NO2
+  port: 45075
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 73c6f956-5283-4c2b-931a-3725b897442b
+- alterId: 0
+  cipher: auto
+  name: 6|韩国 专线NO1
   port: 45076
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: ea392420-9b82-4bbc-8124-9f132c7be2d6
+  uuid: 73c6f956-5283-4c2b-931a-3725b897442b
+- alterId: 0
+  cipher: auto
+  name: 7|韩国 专线NO1-1B
+  port: 45076
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 88559839-798e-4c32-8c5d-e7b05d773c75
+- alterId: 0
+  cipher: auto
+  name: 7|韩国 专线NO2-1B
+  port: 45075
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 88559839-798e-4c32-8c5d-e7b05d773c75
 - cipher: aes-256-cfb
   name: 11|🇰🇷 KR, Incheon
   password: amazonskr05
@@ -256,3 +302,10 @@ proxies:
   server: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
   skip-cert-verify: false
   type: trojan
+- cipher: aes-256-cfb
+  name: 36,38|KR_speednode_0014
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true

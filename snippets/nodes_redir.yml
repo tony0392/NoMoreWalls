@@ -169,7 +169,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 018
+  name: 5,26|中国 024
   network: ws
   port: 36101
   server: 120.82.70.149
@@ -184,7 +184,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|日本 045
+  name: 5,26|日本 047
   network: ws
   port: 14954
   server: 91.200.242.187
@@ -199,7 +199,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 5,26|中国 023
+  name: 5,26|中国 029
   network: ws
   port: 1552
   server: nas.ruyo.in
@@ -3609,7 +3609,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 19|_CN_国->_unKnow_
+  name: 19,27|_CN_->_US_国
   network: ws
   port: 30808
   server: v8.heduian.link
@@ -3773,19 +3773,7 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
-- alterId: 2
-  cipher: auto
-  name: 27|_CN_->_US_国
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- name: 27|🇺🇸_US_美国->_unKnow_未知
+- name: 27|🇺🇸_US_美国->_IR_
   network: ws
   password: YwuvGJk36B
   port: 2053
@@ -3795,7 +3783,32 @@ proxies:
   udp: true
   ws-opts:
     path: /yamtekodasayahhh
-- name: 30|🇺🇸_US_美国->🏳️_unKnow_未知
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 27,30|🇮🇹_IT_意大利->🇺🇸_US_美国
+  network: tcp
+  port: 28927
+  server: 31.14.142.189
+  servername: ''
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: 46b16e33-97eb-4334-f632-072cbd4e6d86
+- alterId: 2
+  cipher: auto
+  name: 27|🇨🇳_CN_中国->🇺🇸_US_美国_1
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- name: 30|🇺🇸_US_美国->🇮🇷_IR_伊朗
   password: YwuvGJk36B
   port: 2053
   server: creativecommons.org

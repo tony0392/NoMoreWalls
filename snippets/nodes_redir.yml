@@ -169,7 +169,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 025
+  name: 5,26|中国 034
   network: ws
   port: 36101
   server: 120.82.70.149
@@ -184,7 +184,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|日本 050
+  name: 5,26|日本 061
   network: ws
   port: 14954
   server: 91.200.242.187
@@ -199,7 +199,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 5,26|中国 030
+  name: 5,26|中国 039
   network: ws
   port: 1552
   server: nas.ruyo.in
@@ -3609,15 +3609,17 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 19|_CN_->_US_国
+  name: '19,27|未命名 #1'
   network: ws
   port: 30829
   server: v29.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: ocbc.com
+      host: v29.heduian.link
     path: /oooo
 - name: 19|🇸_US_美国->_unKnow_未知
   network: ws
@@ -3783,22 +3785,11 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 27|_CN_国->_US_国
-  network: ws
-  port: 30824
-  server: v24.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v24.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 27|🇨🇳_CN_中国->🇺🇸_US_美国_1
+  name: 27|🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
   port: 30808
   server: v8.heduian.link
+  skip-cert-verify: true
   sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -3806,39 +3797,9 @@ proxies:
     headers:
       host: v8.heduian.link
     path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 27|🇳_CN_中国->🇺🇸_US_美国_2
-  network: ws
-  port: 30805
-  server: v5.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v5.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 27|🇪🇸_ES_->🇺🇸_US_美国
-  network: ws
-  port: 23185
-  server: 212.192.15.244
-  type: vmess
-  uuid: 5115c9e9-a90c-4f9f-a38d-5985a5e52ebd
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇪🇸_ES_西班牙->🇺🇸_US_美国
-  network: ws
-  port: 23185
-  server: 212.192.15.244
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5115c9e9-a90c-4f9f-a38d-5985a5e52ebd
-  ws-opts:
-    headers:
-      Host: 212.192.15.244
-    path: /
+- cipher: aes-256-cfb
+  name: 27|_GB_国->🇺_HU_
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss

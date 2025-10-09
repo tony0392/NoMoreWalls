@@ -49,7 +49,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,26|新加坡 001
+  name: 5,26|新加坡 004
   network: ws
   port: 8848
   server: 23.101.27.60
@@ -64,7 +64,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|新加坡 002
+  name: 5,26|新加坡 005
   network: ws
   port: 8080
   server: 18.139.108.70
@@ -79,7 +79,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|新加坡 003
+  name: 5,26|新加坡 006
   network: ws
   port: 8080
   server: 52.221.29.32
@@ -94,7 +94,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|新加坡 004
+  name: 5,26|新加坡 007
   network: ws
   port: 8080
   server: 18.141.185.144
@@ -109,7 +109,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|新加坡 005
+  name: 5,26|新加坡 008
   network: ws
   port: 8080
   server: 124.156.207.12
@@ -124,7 +124,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 033
+  name: 5,26|中国 042
   network: ws
   port: 443
   server: 8.219.53.156
@@ -179,7 +179,7 @@ proxies:
   uuid: 2a26bec3-9199-4ce0-8b80-28b79b639be8
 - alterId: 0
   cipher: auto
-  name: 9,26|美国 221
+  name: 9,26|美国 284
   network: ws
   port: 443
   server: sgcft01.xqc.best
@@ -695,6 +695,28 @@ proxies:
   port: 443
   server: 13.113.17.246
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 14| SG_129
+  network: ws
+  port: 8231
+  server: bgroup.node3.v.nodelist-airport.com
+  servername: bgroup.node3.v.nodelist-airport.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: a2e7d484-6e45-4ef6-81b7-e5bffce1e850
+  ws-headers:
+    HOST: bgroup.node3.v.nodelist-airport.com
+  ws-path: /
+- name: 22|🟠_🇸🇬_💼_github.com/Ruk1ng001_35...
+  password: yunxi8848
+  port: 52871
+  server: 101.32.245.58
+  type: http
+  username: yunxi8848
 - cipher: chacha20-ietf
   name: 22|🟡_🇸🇬_💼_github.com/Ruk1ng001_38...
   password: asd123456
@@ -702,37 +724,56 @@ proxies:
   server: 103.36.91.32
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 22|🟠_🇸🇬_💼_github.com/Ruk1ng001_32...
-  network: ws
-  port: 32061
-  server: 47.236.198.2
-  tls: false
-  type: vmess
-  uuid: 45eb28e8-f3b2-4836-91fb-18655e19b016
-  ws-opts:
-    path: /arki?ed=2048
 - name: 22|🟠_🇸🇬_💻_github.com/Ruk1ng001_32...
   password: tXA14Qlh
   port: 45235
   server: 47.237.20.174
   type: http
   username: kZXMC3Z1
-- name: 22|🟠_🇸🇬_💼_github.com/Ruk1ng001_35...
-  password: yunxi8848
-  port: 52871
-  server: 101.32.245.58
-  type: http
-  username: yunxi8848
 - client-fingerprint: chrome
-  name: '25,30,33,34,37|🇸🇬 新加坡2|@stairnode #1'
+  name: '25,26,30,33,34,37|🇸🇬 新加坡|@stairnode #1'
+  network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 1085
-  server: 153.121.39.240
+  port: 5041
+  server: 153.121.70.134
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- client-fingerprint: chrome
+  name: '25,26,30,33,34,37|🇸🇬 新加坡2|@stairnode #1'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1536
+  server: 160.16.81.84
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '25,26,33,36,38|SG_speednode_0050 #1'
+  network: ws
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: hsdgbuys.pages.dev
+    path: /
+- name: 26|新加坡 002
+  network: ws
+  password: 1b26d982-fd68-44f4-bf6d-22fe17a9249a
+  port: 20230
+  server: sg006.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.alibaba.com
+    path: /
 - name: 31|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

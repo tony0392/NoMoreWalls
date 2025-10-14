@@ -213,7 +213,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 5,26|中国 048
+  name: 5,26|中国 050
   network: ws
   port: 8080
   server: 176.119.149.46
@@ -468,24 +468,44 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 7|日本NO.1
-  port: 45056
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 03adfa8d-c5b9-40f4-a883-4eaaa574bd53
-- alterId: 0
-  cipher: auto
-  name: 7|日本NO.2
+  name: 7|日本NO.2-1A
   port: 45057
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 03adfa8d-c5b9-40f4-a883-4eaaa574bd53
+  uuid: c03ac95f-2cfd-4b44-99b1-d9c9580c9630
+- alterId: 0
+  cipher: auto
+  name: 7|日本NO.2-1B
+  port: 45057
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d1ebc245-54b5-464e-bd73-0266f8d77f07
+- alterId: 0
+  cipher: auto
+  name: 7|日本NO.1-1A
+  port: 45056
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c03ac95f-2cfd-4b44-99b1-d9c9580c9630
+- alterId: 0
+  cipher: auto
+  name: 7|日本NO.1-1B
+  port: 45056
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d1ebc245-54b5-464e-bd73-0266f8d77f07
 - alterId: 0
   cipher: auto
   name: 9,26|美国 303
@@ -1022,20 +1042,93 @@ proxies:
   port: 443
   server: 54.199.83.184
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|JP日本(mibei77.com 米贝节点分享)
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 22|🟡_🇯🇵_💼_github.com/Ruk1ng001_34...
+  network: ws
+  port: 20522
+  server: 8.211.164.215
+  tls: false
+  type: vmess
+  uuid: 73193cce-7ca1-4b08-93ff-4ee8b0147374
+  ws-opts:
+    path: /telegram_@sswia
+- alterId: 0
+  cipher: auto
+  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_33...
+  network: none
+  port: 31625
+  server: 154.83.95.26
+  tls: false
+  type: vmess
+  uuid: 8ad52ea0-e2b2-4c72-c6a7-e823b4d75dd9
+- alterId: 0
+  cipher: auto
+  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_37...
+  network: none
+  port: 57435
+  server: 141.11.139.191
+  tls: false
+  type: vmess
+  uuid: 796673d2-2d89-4a93-c91d-03c706a61a85
+- alterId: 0
+  cipher: auto
+  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_62...
+  network: none
+  port: 53359
+  server: 141.11.139.191
+  tls: false
+  type: vmess
+  uuid: 57639e4d-702a-4d6f-f801-a7f51fe2d23e
 - client-fingerprint: chrome
-  name: '25,33,34,37|🇯🇵 日本2|@stairnode #1'
-  password: 253bc477d4e43c209f2d427272968280
+  name: '25,30,33,34,37|🇯🇵 日本2|@stairnode #1'
+  password: e9368912c4ed6046dca6949229cbff02
   port: 1920
   server: 36.156.102.84
   skip-cert-verify: false
   sni: www.nintendogames.net
+  type: trojan
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: '25,26,30,33,34,37|🇯🇵 日本|@stairnode #1'
+  network: ws
+  port: 30806
+  server: v6.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- client-fingerprint: chrome
+  name: '25,26,30,33,34,37|🇯🇵 日本3|@stairnode #1'
+  network: tcp
+  password: e9368912c4ed6046dca6949229cbff02
+  port: 3271
+  server: 36.156.102.84
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '25,34,37|🇯🇵 日本4|@stairnode #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 194.68.27.76
+  tfo: false
+  type: ss
+- name: 26|日本 001
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 126.47.92.160
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
   type: trojan
 - name: 26|日本 002
   network: tcp
@@ -1507,3 +1600,16 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: f248d0e9-19f7-ea7f-6659-17a610dfe8d6
+- alterId: 0
+  cipher: auto
+  name: 26|日本 102
+  network: ws
+  port: 22211
+  server: tls.07.node-for-bigairport.win
+  tls: false
+  type: vmess
+  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  ws-opts:
+    headers:
+      Host: tls.07.node-for-bigairport.win
+    path: /

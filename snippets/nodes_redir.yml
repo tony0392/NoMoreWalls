@@ -169,7 +169,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 044
+  name: 5,26|中国 046
   network: ws
   port: 36101
   server: 120.82.70.149
@@ -199,7 +199,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 5,26|中国 049
+  name: 5,26|中国 051
   network: ws
   port: 1552
   server: nas.ruyo.in
@@ -3607,9 +3607,29 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: 19,22,27|_GB_国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.17.169
+  type: ss
 - alterId: 2
   cipher: auto
-  name: 19,27|🇨🇳_CN_中国->🇺🇸_US_美国_3
+  name: 19,27|🇳_CN_中国->🇸_US_国
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v8.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 19|🇨🇳_CN_中国->🇺🇸_US_美国_1
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -3620,16 +3640,21 @@ proxies:
     headers:
       host: v29.heduian.link
     path: /oooo
-- name: 19|🇸_US_美国->_unKnow_未知
-  network: ws
-  password: YwuvGJk36B
-  port: 2053
-  server: creativecommons.org
-  sni: kotlet.arshiacomplus.dpdns.org
+- cipher: aes-256-cfb
+  name: 19|🇬🇧_GB_英国->_DE_国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
+- name: 19,26|中国 019
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 6752
+  server: 36.156.102.84
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
   udp: true
-  ws-opts:
-    path: /yamtekodasayahhh
 - alterId: 0
   cipher: auto
   name: 23|[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国
@@ -3781,46 +3806,4 @@ proxies:
   ws-opts:
     headers:
       Host: jd3.shabijichang.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 27|🇨🇳_CN_中国->🇺🇸_US_美国_2
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v8.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 30|🇪🇸_ES_西班牙->🇺🇸_US_美国
-  network: ws
-  port: 23185
-  server: 212.192.15.176
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b509c04c-9d6c-48bc-9627-6a64296d525f
-  ws-opts:
-    headers:
-      Host: 212.192.15.176
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '30|🇪🇸_ES_西班牙->🇺🇸_US_美国 #1'
-  network: ws
-  port: 25168
-  server: 212.192.15.176
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0b4d2a2c-7ac1-4cf5-bac8-c6b8fa9afd77
-  ws-opts:
-    headers:
-      Host: 212.192.15.176
     path: /

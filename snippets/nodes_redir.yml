@@ -169,7 +169,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 046
+  name: 5,26|中国 051
   network: ws
   port: 36101
   server: 120.82.70.149
@@ -184,7 +184,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|日本 068
+  name: 5,26|日本 069
   network: ws
   port: 14954
   server: 91.200.242.187
@@ -199,7 +199,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 5,26|中国 051
+  name: 5,26|中国 056
   network: ws
   port: 1552
   server: nas.ruyo.in
@@ -3615,7 +3615,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 19,27|🇳_CN_中国->🇸_US_国
+  name: 19,27|🇳_CN_中国->🇺🇸_US_美国_1
   network: ws
   port: 30808
   server: v8.heduian.link
@@ -3646,15 +3646,13 @@ proxies:
   port: 989
   server: 51.15.23.63
   type: ss
-- name: 19,26|中国 019
-  network: tcp
+- name: 19|🇨🇳_CN_中国->🇺🇸_US_美国_2
   password: 253bc477d4e43c209f2d427272968280
   port: 6752
   server: 36.156.102.84
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 23|[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国
@@ -3807,3 +3805,25 @@ proxies:
     headers:
       Host: jd3.shabijichang.com
     path: /
+- name: 27,30|🇨🇳_CN_中国->🇩🇪_DE_德国
+  network: tcp
+  password: 15387474-c50e-4eab-ae51-47f60436fb46
+  port: 52312
+  server: 205.198.95.254
+  skip-cert-verify: true
+  sni: 0.0.0.0
+  type: trojan
+- name: 27,30|🇺🇸_US_美国->🇩🇪_DE_德国
+  network: tcp
+  password: 15387474-c50e-4eab-ae51-47f60436fb46
+  port: 52155
+  server: 46.3.36.215
+  skip-cert-verify: true
+  sni: 0.0.0.0
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 27|🇷_IR_伊朗->_NL_
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 151.242.251.142
+  type: ss

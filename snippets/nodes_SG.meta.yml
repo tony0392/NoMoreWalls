@@ -124,7 +124,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 054
+  name: 5,26|中国 059
   network: ws
   port: 443
   server: 8.219.53.156
@@ -657,7 +657,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬 SG
-  name: 14| SG_150
+  name: 14| SG_134
   password: GjUtzQIjhyYSzhdN2ZMRft
   port: 80
   server: 167.71.205.112
@@ -667,20 +667,7 @@ proxies:
   country: 🇬 SG
   h2-opts: {}
   http-opts: {}
-  name: 14|🇬 SG_151
-  network: ws
-  port: 20522
-  server: 8.217.92.110
-  skip-cert-verify: true
-  type: vmess
-  uuid: 31e1f90f-0218-4097-91f9-a42df9b3334a
-  ws-path: /telegram_@sswia
-- alterId: 0
-  cipher: auto
-  country: 🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇬 SG_152
+  name: 14|🇬 SG_135
   network: ws
   port: 20522
   server: 8.210.52.211
@@ -688,14 +675,6 @@ proxies:
   type: vmess
   uuid: 37827036-1fc5-41ea-9fc5-111af1db49dc
   ws-path: /telegram_@sswia
-- country: 🇬SG
-  name: 14|🇸🇬SG_153
-  password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
-  port: 443
-  server: sg2-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   http-opts:
@@ -704,11 +683,24 @@ proxies:
     - /
   name: 22|🟡_🇸🇬_💼_github.com/Ruk1ng001_39...
   network: http
-  port: 22525
+  port: 22286
   server: 47.245.106.193
   tls: false
   type: vmess
-  uuid: cabe905a-28ea-4e7e-c34d-2fa38604001f
+  uuid: 8646218f-a600-4b73-8721-aa5d4567819e
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 22|🟡_🇸🇬_💼_github.com/Ruk1ng001_35...
+  network: http
+  port: 22433
+  server: 47.245.106.193
+  tls: false
+  type: vmess
+  uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
 - alterId: 0
   cipher: auto
   http-opts:
@@ -717,11 +709,24 @@ proxies:
     - /
   name: '22|🟡_🇸🇬_💼_github.com/Ruk1ng001_39... #1'
   network: http
-  port: 22286
+  port: 22525
   server: 47.245.106.193
   tls: false
   type: vmess
-  uuid: 8646218f-a600-4b73-8721-aa5d4567819e
+  uuid: cabe905a-28ea-4e7e-c34d-2fa38604001f
+- name: 22|🟠_🇸🇬_💻_github.com/Ruk1ng001_32...
+  password: tXA14Qlh
+  port: 45235
+  server: 47.237.20.174
+  type: http
+  username: kZXMC3Z1
+- cipher: chacha20-ietf
+  name: 22|🟡_🇸🇬_💼_github.com/Ruk1ng001_38...
+  password: asd123456
+  port: 8388
+  server: 103.36.91.32
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 22,36,38|SG_speednode_0019
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -746,53 +751,20 @@ proxies:
   server: 5.44.249.43
   tfo: false
   type: ss
-- alterId: 0
-  name: 22|🟡_🇸🇬_📶_github.com/Ruk1ng001_63...
-  password: installshield
-  port: 8443
-  server: 38.180.249.177
-  skip-cert-verify: true
-  sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: trojan
-  udp: true
-- name: 22|🟠_🇸🇬_💼_github.com/Ruk1ng001_35...
-  password: yunxi8848
-  port: 52871
-  server: 101.32.245.58
-  type: http
-  username: yunxi8848
-- name: 22|🟠_🇸🇬_💻_github.com/Ruk1ng001_32...
-  password: tXA14Qlh
-  port: 45235
-  server: 47.237.20.174
-  type: http
-  username: kZXMC3Z1
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 22|🟡_🇸🇬_💼_github.com/Ruk1ng001_35...
-  network: http
-  port: 22433
-  server: 47.245.106.193
-  tls: false
-  type: vmess
-  uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
 - client-fingerprint: chrome
-  name: '25,30,33,34,37|🇸🇬 新加坡|@stairnode #1'
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 2173
+  name: '25,26,30,33,34,37|🇸🇬 新加坡|@stairnode #1'
+  network: tcp
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 2283
   server: 36.156.102.84
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
-  name: '25,30,33,34,37|🇸🇬 新加坡2|@stairnode #1'
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 5321
+  name: '25,26,30,33,34,37|🇸🇬 新加坡2|@stairnode #1'
+  network: tcp
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 1085
   server: 36.156.102.84
   skip-cert-verify: false
   sni: www.nintendogames.net
@@ -803,6 +775,30 @@ proxies:
   port: 2377
   server: 5.44.249.43
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '25,34,37|🇸🇬 新加坡4|@stairnode #1'
+  port: 22433
+  server: 47.245.106.193
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
+- name: '25,26,33,36,38|SG_speednode_0018 #1'
+  network: ws
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: hsdgbuys.pages.dev
+    path: /
 - name: '25,33,36,38|SG_speednode_0020 #1'
   password: installshield
   port: 8443
@@ -885,6 +881,16 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 3393cc9e-7498-4942-9bc4-c6da73080fd9
+- alterId: 0
+  cipher: auto
+  name: 30,33|新加坡4|@ripaojiedian
+  network: tcp
+  port: '22433'
+  server: 47.245.106.193
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
 - name: 31|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

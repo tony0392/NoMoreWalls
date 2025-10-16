@@ -1,5 +1,29 @@
 proxies:
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  name: '0,1,14,22,27,28|德国_1 #2'
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 45.87.175.155
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇹 LT
+  name: '0,1,14,28|德国_2 #2'
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 45.87.175.174
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  name: '0,1,14,22,27,28|德国_3 #2'
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 45.87.175.197
+  type: ss
+- alterId: 0
   cipher: auto
   name: 2|🇩🇪 IEPL专线 德国 NO1
   port: 54787
@@ -55,7 +79,7 @@ proxies:
     path: /download
 - cipher: chacha20-ietf-poly1305
   country: 🇪 DE
-  name: 14|🇪 DE_42
+  name: 14|🇪 DE_38
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 92.118.205.228
@@ -65,7 +89,7 @@ proxies:
   country: 🇪 DE
   h2-opts: {}
   http-opts: {}
-  name: 14|🇩🇪 DE_43
+  name: 14|🇪 DE_39
   network: ws
   port: 443
   server: kampong.org
@@ -78,7 +102,7 @@ proxies:
     HOST: kampong.org
   ws-path: linkvws
 - country: 🇪DE
-  name: 14|🇪DE_44
+  name: 14|🇪DE_40
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -259,45 +283,11 @@ proxies:
   tls: true
   type: vmess
   uuid: b5e4a13b-4f58-4bad-a2d0-279fa7534188
-- name: 27,30|🇩🇪_DE_德国
-  network: tcp
-  password: 15387474-c50e-4eab-ae51-47f60436fb46
-  port: 52312
-  server: 139.162.180.57
-  skip-cert-verify: true
-  sni: 0.0.0.0
-  type: trojan
-- name: '27,30|🇩🇪_DE_德国 #1'
-  network: tcp
-  password: 15387474-c50e-4eab-ae51-47f60436fb46
-  port: 52312
-  server: 139.162.144.54
-  skip-cert-verify: true
-  sni: 0.0.0.0
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 27|🇪_DE_德国_3
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  name: 27|🇪_DE_德国_1
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
-  server: 45.87.175.197
-  type: ss
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: '27,30|🇩🇪_DE_德国 #2'
-  network: tcp
-  port: 80
-  server: 78.47.12.94
-  servername: ''
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: 00451b7a-e0a9-4e19-a6e9-7e38693e3f1f
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇩🇪_DE_德国_5
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 45.87.175.174
+  server: 45.87.175.177
   type: ss
 - alterId: 0
   cipher: auto
@@ -338,3 +328,27 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 30|🇩🇪_DE_德国
+  password: 15387474-c50e-4eab-ae51-47f60436fb46
+  port: 52312
+  server: 139.162.180.57
+  skip-cert-verify: true
+  sni: 0.0.0.0
+  type: trojan
+- name: '30|🇩🇪_DE_德国 #1'
+  password: 15387474-c50e-4eab-ae51-47f60436fb46
+  port: 52312
+  server: 139.162.144.54
+  skip-cert-verify: true
+  sni: 0.0.0.0
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '30|🇩🇪_DE_德国 #2'
+  network: tcp
+  port: 80
+  server: 78.47.12.94
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 00451b7a-e0a9-4e19-a6e9-7e38693e3f1f

@@ -70,11 +70,11 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '0,1,22,28,30|🇰🇷 KR韩国(mibei77.com 米贝节点分享) #2'
+  name: 0,1,22,28,30|🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
-  port: '30829'
+  port: 30829
   server: v29.heduian.link
-  servername: ocbc.com
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -84,11 +84,12 @@ proxies:
       Host: ocbc.com
     path: /oooo
 - cipher: chacha20-ietf-poly1305
-  name: '0,1,28|美国_9 #2'
+  name: '0,1,20,28|美国_9 #2'
   password: 9tqhMdIrTkgQ46PvhyAtMH
   port: 443
   server: switcher-nick-croquet.freesocks.work
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '0,1,28|美国_10 #2'
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -298,24 +299,24 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6,7|美国NO.2-1A-GPT
-  port: 45053
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 596d6f02-2616-4715-8548-e95b20d060e0
-- alterId: 0
-  cipher: auto
-  name: 6,7|美国NO.1-1A-GPT
+  name: 6|美国NO.1
   port: 45052
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 596d6f02-2616-4715-8548-e95b20d060e0
+  uuid: 6e4e8db7-52e5-43b5-9202-84eaaf92f038
+- alterId: 0
+  cipher: auto
+  name: 6|美国NO.2
+  port: 45053
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6e4e8db7-52e5-43b5-9202-84eaaf92f038
 - alterId: 0
   cipher: auto
   name: 7|美国NO.1-1B-GPT
@@ -325,7 +326,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: b1ef0d88-319f-44a8-9faf-f724424c0b7d
+  uuid: 3167a48a-15bd-433f-b420-46e6d3b106ff
+- alterId: 0
+  cipher: auto
+  name: 7|美国NO.2-1B-GPT
+  port: 45053
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3167a48a-15bd-433f-b420-46e6d3b106ff
 - cipher: aes-128-gcm
   name: 11|🇺🇸 us
   password: shadowsocks
@@ -344,112 +355,28 @@ proxies:
   port: 443
   server: 18.246.235.247
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 18,23,30|🇺🇸 美国 CloudFlare节点
-  network: ws
-  port: '80'
-  server: s1.db-link03.top
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 25fbcec6-e45a-3a86-977a-12c40bf649ba
-  ws-opts:
-    headers:
-      Host: f7f48a0f7685b208efdf4956ae5eb0a0.s1.db-link03.top
-    path: /dabai.in?=f7f48a0f7685b208efdf4956ae5eb0a0
-- cipher: chacha20-ietf-poly1305
-  name: 20|美国(yudou123.top 玉豆免费节点) 10
-  password: p78naCf2EfOlRSLTX0wFVx
+- name: 20|US美国(mibei77.com 米贝节点分享) 3
+  password: acdd585a-6bcf-40ff-875e-657f168e4202
   port: 443
-  server: pupas-shirting-unsung.freesocks.work
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 20|美国(yudou123.top 玉豆免费节点) 4
-  network: ws
-  port: 30808
-  server: v8.heduian.link
+  server: bestcdn1.868863.xyz
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: v8.heduian.link
-  ws-path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou123.top 玉豆免费节点) 5
-  network: ws
-  port: 443
-  server: bestcdn3.the-best-airport.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 27c291e8-0391-42d1-a79b-4e491e0d7502
-  ws-headers:
-    Host: vv-a3-cdn.the-best-airport.top
-  ws-path: /aejynik
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou123.top 玉豆免费节点) 6
-  network: ws
-  port: 8443
-  server: ebc.zoom.us
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
-  ws-headers:
-    Host: node4.rtxconfigz.com
-  ws-path: /@Malinda6104
-- alterId: 2
-  cipher: auto
-  name: 20|美国(yudou123.top 玉豆免费节点) 7
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: ocbc.com
-  ws-path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou123.top 玉豆免费节点) 8
-  network: ws
-  port: 8080
-  server: support.zoom.us
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
-  ws-headers:
-    Host: node4.rtxconfigz.com
-  ws-path: /@Malinda6104
-- client-fingerprint: chrome
-  name: 22|🟠_🇺🇸_💻_github.com/Ruk1ng001_36...
-  network: ws
-  password: e4cbe8b8-37db-4aaa-8469-b84f34c51ebc
-  port: 443
-  server: 104.21.14.54
-  skip-cert-verify: false
-  sni: 6666YHjU.777159.xYz
+  sni: bestcdn1.868863.xyz
   type: trojan
-  ws-opts:
-    headers:
-      Host: 6666YHjU.777159.xYz
-    path: /dilyfCPEmLvYr5hYXD
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 20|US美国(mibei77.com 米贝节点分享) 4
+  network: ws
+  port: 443
+  server: bestcdn3.868863.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: acdd585a-6bcf-40ff-875e-657f168e4202
+  ws-headers:
+    Host: vv-c1-cdn.the-best-airport.top
+  ws-path: /aejynik
 - alterId: 0
   cipher: auto
   name: 23|[VMess] 🇺🇸 _US_美国_1
@@ -528,18 +455,26 @@ proxies:
   name: '25,30,33,34,37|🇺🇸 美国|@stairnode #1'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2381
-  server: 160.16.132.158
-  skip-cert-verify: true
-  sni: www.baidu.com
+  server: 202.181.103.235
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
   name: '25,30,33,34,37|🇺🇸 美国2|@stairnode #1'
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2467
-  server: 160.16.132.158
-  skip-cert-verify: true
-  sni: www.baidu.com
+  server: 202.181.103.235
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
+- client-fingerprint: chrome
+  name: 25,30,33,34,37,38|CN_speednode_0008
+  password: BxceQaOe
+  port: 26876
+  server: 36.156.102.115
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: 26|美国 001
   network: ws
   password: d0728e94-82c2-456b-b5d4-eeab540599df
@@ -3438,6 +3373,19 @@ proxies:
     path: /ZVrc7MGZcKzYE40sF9Z5
 - alterId: 0
   cipher: auto
+  name: 26|美国 832
+  network: ws
+  port: 443
+  server: 46.3.26.12
+  tls: true
+  type: vmess
+  uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
+  ws-opts:
+    headers:
+      Host: hk.nbee.pp.ua
+    path: /aa
+- alterId: 0
+  cipher: auto
   name: 26|美国 840
   network: ws
   port: 2082
@@ -4426,9 +4374,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|美国 1043
+  name: 26,30|🇺🇸 美国 CloudFlare节点
   network: ws
-  port: 443
+  port: '443'
   server: sy4.620720.xyz
   skip-cert-verify: true
   tls: true
@@ -4704,6 +4652,20 @@ proxies:
     headers:
       Host: putihb.org
     path: linkvws
+- alterId: 1
+  cipher: auto
+  name: 26|美国 1137
+  network: ws
+  port: 443
+  server: jannah.homes
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: jannah.homes
+    path: linkvws
 - name: '30|🇺🇸 美国 #12'
   password: iwangjie
   port: 443
@@ -4732,39 +4694,6 @@ proxies:
   skip-cert-verify: false
   sni: nodes.830901.xyz
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 美国 CloudFlare节点 #1'
-  network: ws
-  port: '8880'
-  server: s1.db-link03.top
-  tls: false
-  type: vmess
-  uuid: 25fbcec6-e45a-3a86-977a-12c40bf649ba
-  ws-opts:
-    headers:
-      Host: 4e43bd24150af811e255fc226bef0a46.s1.db-link03.top
-    path: /dabai.in?=4e43bd24150af811e255fc226bef0a46
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #2'
-  password: acdd585a-6bcf-40ff-875e-657f168e4202
-  port: 443
-  server: bestcdn1.868863.xyz
-  skip-cert-verify: false
-  sni: tt-a2-cdn.the-best-airport.top
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #3'
-  network: ws
-  port: '443'
-  server: bestcdn3.868863.xyz
-  tls: true
-  type: vmess
-  uuid: acdd585a-6bcf-40ff-875e-657f168e4202
-  ws-opts:
-    headers:
-      Host: vv-c1-cdn.the-best-airport.top
-    path: /aejynik
 - name: 31|美国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 658

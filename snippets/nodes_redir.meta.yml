@@ -169,7 +169,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 056
+  name: 5,26|中国 057
   network: ws
   port: 36101
   server: 120.82.70.149
@@ -184,7 +184,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|日本 086
+  name: 5,26|日本 092
   network: ws
   port: 14954
   server: 91.200.242.187
@@ -199,7 +199,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 5,26|中国 061
+  name: 5,26|中国 062
   network: ws
   port: 1552
   server: nas.ruyo.in
@@ -3608,51 +3608,11 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 19|_GB_国->_unKnow_
+  name: 19,22|🔴_🇲🇩_💼_github.com/Ruk1ng001_65...
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 51.15.17.169
+  server: 185.153.197.5
   type: ss
-- alterId: 2
-  cipher: auto
-  name: 19|🇨🇳_CN_中国->🇸_US_国
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v8.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 19|🇨🇳_CN_中国->🇺🇸_US_美国_1
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v29.heduian.link
-    path: /oooo
-- cipher: aes-256-cfb
-  name: 19|🇬🇧_GB_英国->_DE_国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.23.63
-  type: ss
-- name: 19|🇨🇳_CN_中国->🇺🇸_US_美国_2
-  password: 253bc477d4e43c209f2d427272968280
-  port: 6752
-  server: 36.156.102.84
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 23|[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国
@@ -3804,4 +3764,41 @@ proxies:
   ws-opts:
     headers:
       Host: jd3.shabijichang.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 27|_CN_->_US_国
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 27|🇸_ES_->🇺🇸_US_美国
+  network: ws
+  port: 25169
+  server: 212.192.15.176
+  sni: ''
+  type: vmess
+  uuid: 566bf452-a086-41f0-a474-d7ae067956ee
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🇪🇸_ES_西班牙->🇺🇸_US_美国
+  network: ws
+  port: 25169
+  server: 212.192.15.176
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 566bf452-a086-41f0-a474-d7ae067956ee
+  ws-opts:
+    headers:
+      Host: 212.192.15.176
     path: /

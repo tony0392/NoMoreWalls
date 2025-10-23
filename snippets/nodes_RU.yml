@@ -23,6 +23,13 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 14| RU_137
+  password: CDAGEYAB1gvcIrFZYhUbEM
+  port: 48981
+  server: 62.133.63.222
+  type: ss
 - cipher: aes-256-cfb
   country: 🇺 RU
   name: 14,19,22,27|_MD_->🇺_RU_
@@ -32,21 +39,14 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14|🇷🇺 RU_143
+  name: 14|🇷🇺 RU_139
   password: eUh4lSpi7nOYj0vSrqLUh0
   port: 8506
   server: 95.163.176.37
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14|🇺 RU_144
-  password: c40641c1f89e7acb
-  port: 57456
-  server: tr.vpnsparta.pro
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14|🇷🇺 RU_145
+  country: 🇷 RU
+  name: 14|🇺 RU_140
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
@@ -56,7 +56,7 @@ proxies:
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_146
+  name: 14|🇺 RU_141
   network: tcp
   port: 45215
   server: fa.fxlcn.com
@@ -64,28 +64,20 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
-- cipher: aes-256-cfb
-  country: 🇺RU
-  name: 14|🇺RU_147
-  password: PeHSHm5SqEjBuEXE
-  port: 9065
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 14|🇷RU_148
-  password: ZET59LF6DvCC8KVt
-  port: 9005
-  server: 45.89.52.66
-  type: ss
-- country: 🇺RU
-  name: 14|🇷🇺RU_149
-  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
-  port: 443
-  server: hk-full.privateip.net
+- alterId: 0
+  cipher: auto
+  name: 18,23|[VMess] 🇷🇺 俄罗斯 V2CROSS.COM
+  network: ws
+  port: 23185
+  server: 212.192.15.176
   skip-cert-verify: true
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 6ef68525-0e2b-40ad-b72b-155b8244a482
+  ws-opts:
+    path: /
 - name: 26|俄罗斯 001
   network: ws
   password: wb6368

@@ -488,16 +488,6 @@ proxies:
   uuid: b1a6f1cd-5e0e-4af1-9c5f-1584955611f8
 - alterId: 0
   cipher: auto
-  name: '7|日本NO.1 #1'
-  port: 45056
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e325323f-8233-444e-8b08-613204072ee2
-- alterId: 0
-  cipher: auto
   name: '7|日本NO.2 #1'
   port: 45057
   server: xdd.dashuai.cyou
@@ -505,7 +495,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: e325323f-8233-444e-8b08-613204072ee2
+  uuid: e70ec686-bcdf-402b-9f4d-452b600646d2
+- alterId: 0
+  cipher: auto
+  name: '7|日本NO.1 #1'
+  port: 45056
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e70ec686-bcdf-402b-9f4d-452b600646d2
 - alterId: 0
   cipher: auto
   name: 9,26|美国 303
@@ -1042,13 +1042,20 @@ proxies:
   port: 443
   server: 54.199.83.184
   type: ss
-- cipher: aes-256-cfb
-  name: 22|🟡_🇯🇵_💻_github.com/Ruk1ng001_33...
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 194.68.27.76
-  tfo: false
-  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 14| JP_73
+  network: tcp
+  port: 53231
+  server: cgroup.node1.v.nodelist-airport.com
+  servername: cgroup.node1.v.nodelist-airport.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  ws-path: /
 - client-fingerprint: chrome
   name: '25,30,33,34,37|🇯🇵 日本|@stairnode #1'
   password: BxceQaOe
@@ -1060,7 +1067,7 @@ proxies:
   name: '25,30,33,34,37|🇯🇵 日本2|@stairnode #1'
   password: ea39fa94f1ee00999337ea1fd3318e69
   port: 4452
-  server: 160.16.81.84
+  server: 160.16.196.59
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -1068,23 +1075,9 @@ proxies:
   name: '25,30,33,34,37|🇯🇵 日本3|@stairnode #1'
   password: ea39fa94f1ee00999337ea1fd3318e69
   port: 3161
-  server: 160.16.81.84
+  server: 182.237.0.26
   skip-cert-verify: true
   sni: www.baidu.com
-  type: trojan
-- client-fingerprint: chrome
-  name: '25,30,33,34,37|🇯🇵 日本4|@stairnode #1'
-  password: 82e0ff78-c281-4806-99ee-24c1d9912b4c
-  port: 32002
-  server: lazy.rsqpq.cn
-  skip-cert-verify: true
-  sni: lazy.rsqpq.cn
-  type: trojan
-- name: 25,30,33|日本4|@ripaojiedian
-  password: 82e0ff78-c281-4806-99ee-24c1d9912b4c
-  port: 32002
-  server: lazy.rsqpq.cn
-  skip-cert-verify: true
   type: trojan
 - name: 26|日本 001
   network: tcp
@@ -1769,3 +1762,13 @@ proxies:
     headers:
       Host: tls.07.node-for-bigairport.win
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36,38|JP_speednode_0008
+  port: 14760
+  server: 45.32.45.45
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: dbf7a6e4-d518-4f9b-a55e-27ef892ffac1

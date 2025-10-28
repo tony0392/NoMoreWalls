@@ -468,19 +468,29 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6,7|日本NO.2-1A
+  name: 6|日本NO.2
   port: 45057
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: a51cb4ee-6ccb-4940-91b6-3e48ccbbdba7
+  uuid: 021b84da-8289-4ab0-b96c-d2ef50eb0437
 - alterId: 0
   cipher: auto
-  name: 6,7|日本NO.1-1A
+  name: 6|日本NO.1
   port: 45056
   server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 021b84da-8289-4ab0-b96c-d2ef50eb0437
+- alterId: 0
+  cipher: auto
+  name: 7|日本NO.2-1A
+  port: 45057
+  server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -506,6 +516,16 @@ proxies:
   type: vmess
   udp: true
   uuid: 740ff771-8803-4af2-a93a-7ce4b8b281f2
+- alterId: 0
+  cipher: auto
+  name: 7|日本NO.1-1A
+  port: 45056
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a51cb4ee-6ccb-4940-91b6-3e48ccbbdba7
 - alterId: 0
   cipher: auto
   name: 9,26|美国 303
@@ -1018,20 +1038,65 @@ proxies:
     headers:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
+- cipher: aes-128-gcm
+  name: 11|🇯🇵
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|🇯🇵 JP, Osaka
+  password: amazonskr05
+  port: 443
+  server: 18.136.197.165
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|🇯🇵 JP, Tokyo 2
+  password: amazonskr05
+  port: 443
+  server: 13.250.25.159
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|🇯🇵 JP, Tokyo
+  password: amazonskr05
+  port: 443
+  server: 54.199.83.184
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 14| JP_66
+  network: tcp
+  port: 53231
+  server: cgroup.node1.v.nodelist-airport.com
+  servername: cgroup.node1.v.nodelist-airport.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  ws-path: /
+- client-fingerprint: chrome
+  name: '25,30,33,34,37|🇯🇵 日本|@stairnode #1'
+  password: BxceQaOe
+  port: 1821
+  server: 36.150.215.237
+  skip-cert-verify: true
+  type: trojan
 - client-fingerprint: chrome
   name: '25,30,33,34,37|🇯🇵 日本2|@stairnode #1'
-  password: ea39fa94f1ee00999337ea1fd3318e69
+  password: bca467b8c15211d189008a93c7519d3b
   port: 4452
-  server: 160.16.131.243
+  server: 160.16.240.91
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
   name: '25,30,33,34,37|🇯🇵 日本3|@stairnode #1'
-  password: ea39fa94f1ee00999337ea1fd3318e69
+  password: bca467b8c15211d189008a93c7519d3b
   port: 3161
-  server: 160.16.131.243
-  skip-cert-verify: false
+  server: 160.16.240.91
+  skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - name: 26|日本 001

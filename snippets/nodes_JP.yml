@@ -495,7 +495,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2a79f7bc-e004-4768-8f36-5536f826c51b
+  uuid: 2651bea0-7583-4d0e-b7b6-05639b9584cc
 - alterId: 0
   cipher: auto
   name: '7|日本NO.2 #1'
@@ -505,7 +505,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2a79f7bc-e004-4768-8f36-5536f826c51b
+  uuid: 2651bea0-7583-4d0e-b7b6-05639b9584cc
 - alterId: 0
   cipher: auto
   name: 9,26|美国 303
@@ -1018,42 +1018,45 @@ proxies:
     headers:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
-- alterId: 0
-  cipher: auto
-  country: 🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 14| JP_72
-  network: tcp
-  port: 53231
-  server: cgroup.node1.v.nodelist-airport.com
-  servername: cgroup.node1.v.nodelist-airport.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
-  ws-path: /
-- client-fingerprint: chrome
-  name: '25,30,33,34,37|🇯🇵 日本|@stairnode #1'
-  password: BxceQaOe
-  port: 401
-  server: 36.150.215.236
-  skip-cert-verify: true
-  type: trojan
+- cipher: aes-128-gcm
+  name: 11|🇯🇵
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|🇯🇵 JP, Osaka
+  password: amazonskr05
+  port: 443
+  server: 18.136.197.165
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|🇯🇵 JP, Tokyo 2
+  password: amazonskr05
+  port: 443
+  server: 13.250.25.159
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|🇯🇵 JP, Tokyo
+  password: amazonskr05
+  port: 443
+  server: 54.199.83.184
+  type: ss
 - client-fingerprint: chrome
   name: '25,30,33,34,37|🇯🇵 日本2|@stairnode #1'
   password: bca467b8c15211d189008a93c7519d3b
   port: 1332
-  server: 160.16.144.208
+  server: 221.128.195.8
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
   name: '25,30,33,34,37|🇯🇵 日本3|@stairnode #1'
   password: bca467b8c15211d189008a93c7519d3b
-  port: 3161
-  server: 160.16.144.208
+  port: 4452
+  server: 160.16.63.16
   skip-cert-verify: true
-  sni: www.baidu.com
+  sni: www.nintendogames.net
   type: trojan
 - name: 26|日本 001
   network: tcp
@@ -1742,8 +1745,8 @@ proxies:
   cipher: auto
   name: 30|🇯🇵 日本 V2CROSS.COM
   network: tcp
-  port: '23211'
-  server: tls.19.node-for-bigairport.win
+  port: '53231'
+  server: cgroup.node1.v.nodelist-airport.com
   tls: false
   type: vmess
-  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae

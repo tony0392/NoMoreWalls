@@ -159,6 +159,26 @@ proxies:
   uuid: 021b84da-8289-4ab0-b96c-d2ef50eb0437
 - alterId: 0
   cipher: auto
+  name: '7|新加坡NO.2 #1'
+  port: 45055
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d3cc16c2-9da5-4bcc-a2fc-c696edb777df
+- alterId: 0
+  cipher: auto
+  name: '7|新加坡NO.1 #1'
+  port: 45054
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d3cc16c2-9da5-4bcc-a2fc-c696edb777df
+- alterId: 0
+  cipher: auto
   name: 9,26|美国 302
   network: ws
   port: 443
@@ -669,77 +689,29 @@ proxies:
     headers:
       Host: d16henb377mok4.cloudfront.net
     path: /stream
-- cipher: aes-256-cfb
-  name: 11|🇸🇬 SG, Singapore
-  password: amazonskr05
-  port: 443
-  server: 13.113.17.246
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 14| SG_293
-  network: ws
-  port: 20522
-  server: 8.217.92.110
-  skip-cert-verify: true
-  type: vmess
-  uuid: 31e1f90f-0218-4097-91f9-a42df9b3334a
-  ws-path: /telegram_@sswia
-- alterId: 0
-  cipher: auto
-  country: 🇸🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 SG_294
-  network: ws
-  port: 20522
-  server: 8.210.52.211
-  skip-cert-verify: true
-  type: vmess
-  uuid: 37827036-1fc5-41ea-9fc5-111af1db49dc
-  ws-path: /telegram_@sswia
-- country: 🇸SG
-  name: 14|🇸🇬SG_295
-  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
-  port: 443
-  server: sg-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 22|🟡_🇸🇬_💼_github.com/Ruk1ng001_39...
-  network: http
-  port: 22286
-  server: 47.245.106.193
-  tls: false
-  type: vmess
-  uuid: 8646218f-a600-4b73-8721-aa5d4567819e
 - client-fingerprint: chrome
-  name: '25,30,33,34,36,37,38|CN_speednode_0005 #1'
+  name: '25,30,33,34,37|🇸🇬 新加坡|@stairnode #1'
   password: bca467b8c15211d189008a93c7519d3b
-  port: 5041
+  port: 2283
   server: 117.172.176.24
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
 - client-fingerprint: chrome
-  name: '25,30,33,34,36,37,38|CN_speednode_0007 #1'
+  name: '25,30,33,34,37|🇸🇬 新加坡2|@stairnode #1'
   password: bca467b8c15211d189008a93c7519d3b
-  port: 5321
-  server: 117.172.176.24
+  port: 5048
+  server: 160.16.107.37
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
+- client-fingerprint: chrome
+  name: '25,30,33,34,37|🇸🇬 新加坡3|@stairnode #1'
+  password: BxceQaOe
+  port: 51825
+  server: 36.150.215.197
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 26|新加坡 001
@@ -821,3 +793,10 @@ proxies:
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
+- cipher: aes-256-gcm
+  name: 36,38|SG_speednode_0023
+  password: bd080898-b41a-48ae-b164-1baae4124627
+  port: 8443
+  server: 15.235.186.140
+  type: ss
+  udp: true

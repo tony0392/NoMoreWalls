@@ -488,16 +488,6 @@ proxies:
   uuid: 7715463e-2f64-4cd1-8ca4-26199d6e5371
 - alterId: 0
   cipher: auto
-  name: '7|日本NO.1 #1'
-  port: 45056
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 08e049e5-9b20-491a-abc8-77d85977b483
-- alterId: 0
-  cipher: auto
   name: '7|日本NO.2 #1'
   port: 45057
   server: xdd.dashuai.cyou
@@ -505,7 +495,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 08e049e5-9b20-491a-abc8-77d85977b483
+  uuid: 703c9b8b-f8f7-4ae6-a5d1-72ba2f7de539
+- alterId: 0
+  cipher: auto
+  name: '7|日本NO.1 #1'
+  port: 45056
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 703c9b8b-f8f7-4ae6-a5d1-72ba2f7de539
 - alterId: 0
   cipher: auto
   name: 9,26|美国 303
@@ -1042,6 +1042,22 @@ proxies:
   port: 443
   server: 54.199.83.184
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 18,23|[VMess] 🇯🇵 日本东京 Amazon数据中心
+  network: ws
+  port: 8080
+  server: jp4.nodea6a6.skynode.me
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c3f95b7e-0fc7-3311-9a3d-e34e675632d4
+  ws-opts:
+    headers:
+      Host: node-59-175-206-86.speedtest.cn
+    path: /download?ed=2560
 - name: 20|JP日本(mibei77.com 米贝节点分享)
   password: adbac894-90b9-4913-b77e-a715a8d4ebc8
   port: 20021
@@ -1051,18 +1067,10 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: '25,30,33,34,37|🇯🇵 日本|@stairnode #1'
-  password: BxceQaOe
-  port: 4041
-  server: 36.150.215.245
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- client-fingerprint: chrome
   name: '25,30,33,34,37|🇯🇵 日本2|@stairnode #1'
   password: 1b57001bd214304027025a740b6cf1ac
   port: 4452
-  server: 117.172.176.23
+  server: 202.181.103.246
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -1070,7 +1078,7 @@ proxies:
   name: '25,30,33,34,37|🇯🇵 日本3|@stairnode #1'
   password: 1b57001bd214304027025a740b6cf1ac
   port: 1332
-  server: 117.172.176.23
+  server: 202.181.103.246
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan

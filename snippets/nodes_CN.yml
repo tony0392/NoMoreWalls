@@ -1,6 +1,5 @@
 proxies:
-- alterId: 0
-  name: 0,1,22,28,30|🇯🇵 JP日本(mibei77.com 米贝节点分享)
+- name: 0,1,28,30|🇯🇵 JP日本(mibei77.com 米贝节点分享)
   network: tcp
   password: adbac894-90b9-4913-b77e-a715a8d4ebc8
   port: 20021
@@ -9,7 +8,6 @@ proxies:
   sni: dingding-doc.com
   tls: true
   type: trojan
-  udp: true
 - name: '0,1,28,30|_CN_中国 #1'
   network: tcp
   password: BxceQaOe
@@ -46,45 +44,24 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 18|广东省广州市 移动
-  network: tcp
-  port: 38637
-  server: tkcmi.5tk.top
-  tls: false
-  type: vmess
-  uuid: 93058ab5-bb29-44d4-c309-d224c0967732
-- alterId: 0
-  name: 22|❓_🇨🇳_📶_github.com/Ruk1ng001_34...
-  network: tcp
-  password: e4e262d453466988575c397a30562337
-  port: 2173
-  server: 117.172.176.23
+  client-fingerprint: chrome
+  name: '22,23,25,34,37|🇭🇰 香港6|@stairnode #1'
+  port: 49509
+  server: 36.150.27.76
   skip-cert-verify: false
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '22|❓_🇨🇳_📶_github.com/Ruk1ng001_32... #1'
-  password: e4e262d453466988575c397a30562337
-  port: 1332
-  server: 117.172.176.23
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 23|[VMess] 🇨🇳 广东省广州市 移动
-  port: 38637
-  server: tkcmi.5tk.top
-  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
   udp: true
-  uuid: 93058ab5-bb29-44d4-c309-d224c0967732
+  uuid: aed41f1e-75e7-41ce-a2d4-38f65a6bbc86
+- cipher: aes-128-gcm
+  name: 23|[SS] 🇨🇳 广东省广州市 电信
+  password: I1qrYxOXxPYCOkhT
+  port: 50609
+  server: in1.web3sp.com
+  tfo: false
+  type: ss
+  udp: true
 - name: 26|中国 002
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
@@ -353,6 +330,21 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- alterId: 2
+  cipher: auto
+  name: 26|中国 034
+  network: ws
+  port: 30839
+  server: v39.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - alterId: 2
   cipher: auto
   name: 26|中国 035
@@ -1063,19 +1055,6 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
-- alterId: 2
-  cipher: auto
-  name: 26|中国 135
-  network: ws
-  port: 30807
-  server: v10.heduian.link
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v10.heduian.link
-    path: /oooo
 - alterId: 64
   cipher: auto
   name: 26|中国 137
@@ -1139,13 +1118,32 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
-- name: '30|_CN_中国 #7'
-  password: BxceQaOe
-  port: 5156
-  server: 36.150.215.137
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 30|🇨🇳 VN²_1|5.8MB/s|GPT⁺|YT-CN|NF...
+  network: ws
+  port: '12891'
+  server: gtm1.ktmwan.net
+  tls: false
+  type: vmess
+  uuid: 0d36b2c4-a554-4e54-bd53-1975fc960ba6
+  ws-opts:
+    headers:
+      Host: gtm1.ktmwan.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 30|CN_31
+  network: ws
+  port: '12883'
+  server: gtm1.ktmwan.net
+  tls: false
+  type: vmess
+  uuid: 0d36b2c4-a554-4e54-bd53-1975fc960ba6
+  ws-opts:
+    headers:
+      Host: v1.pstatp.com
+    path: /
 - alterId: 0
   name: 35|Trojan2 CN
   password: BxceQaOe

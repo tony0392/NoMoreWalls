@@ -488,26 +488,6 @@ proxies:
   uuid: 7715463e-2f64-4cd1-8ca4-26199d6e5371
 - alterId: 0
   cipher: auto
-  name: '7|日本NO.2 #1'
-  port: 45057
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 703c9b8b-f8f7-4ae6-a5d1-72ba2f7de539
-- alterId: 0
-  cipher: auto
-  name: '7|日本NO.1 #1'
-  port: 45056
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 703c9b8b-f8f7-4ae6-a5d1-72ba2f7de539
-- alterId: 0
-  cipher: auto
   name: 9,26|美国 303
   network: ws
   port: 443
@@ -1018,46 +998,23 @@ proxies:
     headers:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
-- cipher: aes-128-gcm
-  name: 11|🇯🇵
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
+- cipher: aes-256-gcm
+  country: 🇵 JP
+  name: 14| JP_68
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 10079
+  server: ss.027.node-for-bigairport.win
   type: ss
-- cipher: aes-256-cfb
-  name: 11|🇯🇵 JP, Osaka
-  password: amazonskr05
-  port: 443
-  server: 18.136.197.165
-  type: ss
-- cipher: aes-256-cfb
-  name: 11|🇯🇵 JP, Tokyo 2
-  password: amazonskr05
-  port: 443
-  server: 13.250.25.159
-  type: ss
-- cipher: aes-256-cfb
-  name: 11|🇯🇵 JP, Tokyo
-  password: amazonskr05
-  port: 443
-  server: 54.199.83.184
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 18,23|[VMess] 🇯🇵 日本东京 Amazon数据中心
-  network: ws
-  port: 8080
-  server: jp4.nodea6a6.skynode.me
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  name: '18,23,30,33,34,37|🇺🇸 美国|@stairnode #1'
+  password: 1b57001bd214304027025a740b6cf1ac
+  port: 1328
+  server: 153.121.44.99
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   tfo: false
-  tls: false
-  type: vmess
+  type: trojan
   udp: true
-  uuid: c3f95b7e-0fc7-3311-9a3d-e34e675632d4
-  ws-opts:
-    headers:
-      Host: node-59-175-206-86.speedtest.cn
-    path: /download?ed=2560
 - name: 20|JP日本(mibei77.com 米贝节点分享)
   password: adbac894-90b9-4913-b77e-a715a8d4ebc8
   port: 20021
@@ -1066,22 +1023,6 @@ proxies:
   sni: oss-cn-shanghai.letssepub.com
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: '25,30,33,34,37|🇯🇵 日本2|@stairnode #1'
-  password: 1b57001bd214304027025a740b6cf1ac
-  port: 4452
-  server: 202.181.103.246
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- client-fingerprint: chrome
-  name: '25,30,33,34,37|🇯🇵 日本3|@stairnode #1'
-  password: 1b57001bd214304027025a740b6cf1ac
-  port: 1332
-  server: 202.181.103.246
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - name: 26|日本 001
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
@@ -1765,3 +1706,19 @@ proxies:
     headers:
       Host: tls.07.node-for-bigairport.win
     path: /
+- client-fingerprint: chrome
+  name: '30,33,34,37|🇯🇵 日本3|@stairnode #1'
+  password: 1b57001bd214304027025a740b6cf1ac
+  port: 4095
+  server: 117.172.176.22
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: '34,37|🇯🇵 日本4|@stairnode #1'
+  password: 89d52514-f5a4-45c6-96ea-49e113e60129
+  port: 10007
+  server: 183.2.133.119
+  tfo: false
+  type: ss

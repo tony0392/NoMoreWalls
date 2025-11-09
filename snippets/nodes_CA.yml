@@ -54,6 +54,16 @@ proxies:
   uuid: 7715463e-2f64-4cd1-8ca4-26199d6e5371
 - alterId: 0
   cipher: auto
+  name: '7|加拿大1 #1'
+  port: 45064
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7ede806b-4728-486a-97d9-6801c9c70557
+- alterId: 0
+  cipher: auto
   name: '7|加拿大2 #1'
   port: 45065
   server: xdd.dashuai.cyou
@@ -61,18 +71,19 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 703c9b8b-f8f7-4ae6-a5d1-72ba2f7de539
-- cipher: aes-256-cfb
-  name: 11|🇨🇦 CA, Vancouver
-  password: amazonskr05
-  port: 443
-  server: 54.200.54.11
+  uuid: 7ede806b-4728-486a-97d9-6801c9c70557
+- cipher: chacha20-ietf-poly1305
+  country: 🇦CA
+  name: 14|CA_29
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: ca225.vpnbook.com
   type: ss
 - alterId: 0
   cipher: auto
-  name: 23|[VMess] 🇨🇦 _CA_加拿大
+  name: 23,30|🇨🇦 _CA_加拿大
   network: ws
-  port: 80
+  port: '80'
   server: 108.181.10.17
   skip-cert-verify: true
   tfo: false
@@ -81,6 +92,8 @@ proxies:
   udp: true
   uuid: 474e8680-701f-11ee-b436-205c6d5f5d78
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -152,16 +165,3 @@ proxies:
     headers:
       Host: ''
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇦 CA²_3|3.6MB/s|GPT⁺|YT|NF|23...
-  network: ws
-  port: '12897'
-  server: gtm1.ktmwan.net
-  tls: false
-  type: vmess
-  uuid: 0d36b2c4-a554-4e54-bd53-1975fc960ba6
-  ws-opts:
-    headers:
-      Host: gtm1.ktmwan.net
-    path: /

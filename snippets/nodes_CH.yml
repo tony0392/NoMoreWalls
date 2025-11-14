@@ -1,9 +1,16 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 23|[SS] 🇨🇭 _CH_瑞士
-  password: asdKkaskJKfnsa
-  port: 80
-  server: 84.17.53.163
+- alterId: 0
+  cipher: auto
+  name: 26|瑞士 002
+  network: ws
+  port: 8080
+  server: 64.110.66.235
+  skip-cert-verify: false
   tfo: false
-  type: ss
-  udp: true
+  tls: false
+  type: vmess
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+  ws-opts:
+    headers:
+      Host: download.windowsupdate.com
+    path: /download

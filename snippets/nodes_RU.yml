@@ -23,13 +23,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14| RU_144
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 45.159.250.190
-  type: ss
 - cipher: aes-256-cfb
   country: 🇺 RU
   name: 14,27|_MD_->🇺_RU_
@@ -42,7 +35,7 @@ proxies:
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_146
+  name: 14|🇺 RU_147
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -51,7 +44,15 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
-- name: 25,36,38|RU_speednode_0009
+- country: 🇺RU
+  name: 14|🇷🇺RU_148
+  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
+  port: 443
+  server: hk-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 25,36,38|RU_speednode_0044
   network: ws
   password: 14d6efcf-b0d3-4054-9d4e-e1347e3ceaa2
   port: 2053
@@ -93,6 +94,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 26|俄罗斯 040
+  network: ws
+  port: 8080
+  server: 194.87.106.131
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+  ws-opts:
+    headers:
+      Host: download.windowsupdate.com
+    path: /download
+- alterId: 0
+  cipher: auto
   name: 26|俄罗斯 066
   network: tcp
   port: 47555
@@ -132,3 +148,10 @@ proxies:
     headers:
       Host: wellyoumust.goahead.rf.gd
     path: /multipath
+- name: 30|🇷🇺 _RU_俄罗斯
+  password: edeff73d-065d-4b0a-b848-aad9d3380223
+  port: 443
+  server: 77.221.141.207
+  skip-cert-verify: false
+  sni: joss.dus.biz.id
+  type: trojan

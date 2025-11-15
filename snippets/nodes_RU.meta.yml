@@ -1,4 +1,10 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: '0,1,28|🇷🇺_RU_俄罗斯 #2'
+  password: 17ZDORWIliQHuO6WRGHChXYMzdRtAYVP
+  port: 443
+  server: 45.14.245.2
+  type: ss
 - alterId: 0
   cipher: auto
   name: 2|🇷🇺 莫斯科专线
@@ -25,17 +31,24 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - cipher: aes-256-cfb
   country: 🇺 RU
-  name: 14,27|_MD_->🇺_RU_
+  name: 14,22,27|_MD_->🇺_RU_
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 14|🇺 RU_150
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 45.159.250.190
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_147
+  name: 14|🇺 RU_151
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -45,14 +58,14 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
 - country: 🇺RU
-  name: 14|🇷🇺RU_148
+  name: 14|🇺RU_152
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 25,36,38|RU_speednode_0044
+- name: 22,25|[Trojan] RU_speednode_0044
   network: ws
   password: 14d6efcf-b0d3-4054-9d4e-e1347e3ceaa2
   port: 2053
@@ -94,21 +107,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 040
-  network: ws
-  port: 8080
-  server: 194.87.106.131
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
-  ws-opts:
-    headers:
-      Host: download.windowsupdate.com
-    path: /download
-- alterId: 0
-  cipher: auto
   name: 26|俄罗斯 066
   network: tcp
   port: 47555
@@ -148,10 +146,53 @@ proxies:
     headers:
       Host: wellyoumust.goahead.rf.gd
     path: /multipath
-- name: 30|🇷🇺 _RU_俄罗斯
+- alterId: 0
+  cipher: auto
+  name: '30|🇷🇺 RU俄罗斯(mibei77.com 米贝节点分享) #2'
+  network: tcp
+  port: '80'
+  server: 152.70.92.69
+  tls: false
+  type: vmess
+  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
+- name: '30|🇷🇺 RU俄罗斯(mibei77.com 米贝节点分享) #4'
   password: edeff73d-065d-4b0a-b848-aad9d3380223
   port: 443
   server: 77.221.141.207
   skip-cert-verify: false
   sni: joss.dus.biz.id
   type: trojan
+- name: '30|🇷🇺 RU俄罗斯(mibei77.com 米贝节点分享) #7'
+  password: 0c7edd8f-96d8-4227-b086-1ffc3aeecc96
+  port: 8443
+  server: 193.233.115.79
+  skip-cert-verify: false
+  sni: joss.dus.biz.id
+  type: trojan
+- name: '30|🇷🇺 RU俄罗斯(mibei77.com 米贝节点分享) #9'
+  password: 19f8e29a-3f0b-448c-92e8-ae035ea5f9ba
+  port: 81
+  server: 45.159.251.8
+  skip-cert-verify: false
+  sni: joss.dus.biz.id
+  type: trojan
+- name: '30|🇦🇺 AU澳大利亚(mibei77.com 米贝节点分享) #1'
+  password: 14d6efcf-b0d3-4054-9d4e-e1347e3ceaa2
+  port: 2053
+  server: 213.159.208.88
+  skip-cert-verify: false
+  sni: joss.dus.biz.id
+  type: trojan
+- name: 36,38|RU_speednode_0016
+  network: ws
+  password: -4146XJHYAzJ4K8Ov6_LBQ
+  port: 11000
+  server: 194.35.116.62
+  skip-cert-verify: false
+  sni: f4e23c6c168f0e91.noproblemvpn.ru
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: f4e23c6c168f0e91.noproblemvpn.ru
+    path: /tw

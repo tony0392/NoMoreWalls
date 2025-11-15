@@ -167,88 +167,119 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 6,7|香港-高速中转-1A
-  password: b234f52b-82d7-4acc-be42-0b9b392f2ea3
-  port: 32189
-  server: gyaa.yy9866.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 6,7|韩国-高速中转-1A
-  password: b234f52b-82d7-4acc-be42-0b9b392f2ea3
-  port: 32191
-  server: gyaa.fnnnt.cn
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 6,7|日本-高速中转-1A
-  password: b234f52b-82d7-4acc-be42-0b9b392f2ea3
-  port: 32199
-  server: gyaa.fnnnt.cn
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 6,7|新加坡-高速中转-1A
-  password: b234f52b-82d7-4acc-be42-0b9b392f2ea3
-  port: 32194
-  server: gyaa.yy9866.com
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 5,26|中国 057
+  network: ws
+  port: 36101
+  server: 120.82.70.149
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+  ws-opts:
+    headers:
+      Host: download.windowsupdate.com
+    path: /download
+- alterId: 0
+  cipher: auto
+  name: 5,26|日本 092
+  network: ws
+  port: 14954
+  server: 91.200.242.187
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+  ws-opts:
+    headers:
+      Host: download.windowsupdate.com
+    path: /download
+- alterId: 1
+  cipher: auto
+  name: 5,26|中国 062
+  network: ws
+  port: 1552
+  server: nas.ruyo.in
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+  ws-opts:
+    headers:
+      Host: download.windowsupdate.com
+    path: /download
 - cipher: chacha20-ietf-poly1305
   name: 6,7|美国-高速中转-1A
-  password: b234f52b-82d7-4acc-be42-0b9b392f2ea3
+  password: 2bed1405-314e-4419-977d-4514b8172265
   port: 32193
   server: gyaa.fnnnt.cn
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 6,7|台湾-高速中转-1A
-  password: b234f52b-82d7-4acc-be42-0b9b392f2ea3
-  port: 32160
-  server: gyaa.yy9866.com
+  name: 6,7|韩国-高速中转-1A
+  password: 2bed1405-314e-4419-977d-4514b8172265
+  port: 32191
+  server: gyaa.fnnnt.cn
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 7|新加坡-高速中转-1B
-  password: f36619f4-b055-47ef-8638-e4b6d3bf5a42
+  name: 6|日本-高速中转
+  password: 2bed1405-314e-4419-977d-4514b8172265
+  port: 32199
+  server: gyaa.fnnnt.cn
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 6|新加坡-高速中转
+  password: 2bed1405-314e-4419-977d-4514b8172265
   port: 32194
   server: gyaa.yy9866.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  name: 6,7|台湾-高速中转-1A
+  password: 2bed1405-314e-4419-977d-4514b8172265
+  port: 32160
+  server: gyaa.yy9866.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 6,7|香港-高速中转-1A
+  password: 2bed1405-314e-4419-977d-4514b8172265
+  port: 32189
+  server: gyaa.yy9866.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 7|香港-高速中转-1B
+  password: 83964e53-3b62-49a6-a0df-7921d312f125
+  port: 32189
+  server: gyaa.yy9866.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 7|韩国-高速中转-1B
-  password: f36619f4-b055-47ef-8638-e4b6d3bf5a42
+  password: 83964e53-3b62-49a6-a0df-7921d312f125
   port: 32191
   server: gyaa.fnnnt.cn
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 7|台湾-高速中转-1B
-  password: f36619f4-b055-47ef-8638-e4b6d3bf5a42
+  password: 83964e53-3b62-49a6-a0df-7921d312f125
   port: 32160
   server: gyaa.yy9866.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 7|美国-高速中转-1B
-  password: f36619f4-b055-47ef-8638-e4b6d3bf5a42
-  port: 32193
-  server: gyaa.fnnnt.cn
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 7|香港-高速中转-1B
-  password: f36619f4-b055-47ef-8638-e4b6d3bf5a42
-  port: 32189
+  name: 7|新加坡-高速中转-1B
+  password: 83964e53-3b62-49a6-a0df-7921d312f125
+  port: 32194
   server: gyaa.yy9866.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 7|日本-高速中转-1B
-  password: f36619f4-b055-47ef-8638-e4b6d3bf5a42
-  port: 32199
-  server: gyaa.fnnnt.cn
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -3646,6 +3677,166 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 23,30|🇨🇳 _TW_台湾->🇺🇸_US_美国
+  network: ws
+  port: '80'
+  server: 107.167.182.230
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: efcb7d7c-c582-46f5-eeff-0e553342528d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /tg@hkaa0
+- alterId: 0
+  cipher: auto
+  name: 23,30|🇺🇸 _US_美国->🇩🇪_DE_德国
+  network: ws
+  port: '80'
+  server: flkf2.shabijichang.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: flkf2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23,30|🇺🇸 _US_美国->🇬🇧_GB_英国_1
+  network: ws
+  port: '80'
+  server: mrb2.shabijichang.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: mrb2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23,30|🇺🇸 _US_美国->🇬🇧_GB_英国_2
+  network: ws
+  port: '80'
+  server: ld2.shabijichang.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: ld2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23,30|🇺🇸 _US_美国->🇮🇳_IN_印度_1
+  network: ws
+  port: '80'
+  server: 104.17.18.26
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23,30|🇺🇸 _US_美国->🇮🇳_IN_印度_2
+  network: ws
+  port: '80'
+  server: 104.26.8.44
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23,30|🇺🇸 _US_美国->🇮🇳_IN_印度_3
+  network: ws
+  port: '80'
+  server: mm2.shabijichang.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: mm2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23,30|🇺🇸 _US_美国->🇮🇳_IN_印度_4
+  network: ws
+  port: '80'
+  server: mm3.shabijichang.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: mm3.shabijichang.com
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 23,30|🇺🇸 _US_美国->🇳🇱_NL_荷兰
+  network: ws
+  port: '30000'
+  server: 45.199.138.191
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/1696251522438
+- alterId: 0
+  cipher: auto
+  name: 23,30|🇺🇸 _US_美国->🇸🇦_SA_沙特阿拉伯
+  network: ws
+  port: '80'
+  server: jd3.shabijichang.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: jd3.shabijichang.com
+    path: /
 - name: 27|_CN_->_JP_
   password: BxceQaOe
   port: 26876
@@ -3679,133 +3870,3 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇳 _TW_台湾->🇺🇸_US_美国
-  network: ws
-  port: '80'
-  server: 107.167.182.230
-  tls: false
-  type: vmess
-  uuid: efcb7d7c-c582-46f5-eeff-0e553342528d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /tg@hkaa0
-- alterId: 0
-  cipher: auto
-  name: 30|🇺🇸 _US_美国->🇩🇪_DE_德国
-  network: ws
-  port: '80'
-  server: flkf2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: flkf2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇺🇸 _US_美国->🇬🇧_GB_英国_1
-  network: ws
-  port: '80'
-  server: mrb2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mrb2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇺🇸 _US_美国->🇬🇧_GB_英国_2
-  network: ws
-  port: '80'
-  server: ld2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: ld2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇺🇸 _US_美国->🇮🇳_IN_印度_1
-  network: ws
-  port: '80'
-  server: 104.17.18.26
-  tls: false
-  type: vmess
-  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇺🇸 _US_美国->🇮🇳_IN_印度_2
-  network: ws
-  port: '80'
-  server: 104.26.8.44
-  tls: false
-  type: vmess
-  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇺🇸 _US_美国->🇮🇳_IN_印度_3
-  network: ws
-  port: '80'
-  server: mm2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mm2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 30|🇺🇸 _US_美国->🇮🇳_IN_印度_4
-  network: ws
-  port: '80'
-  server: mm3.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mm3.shabijichang.com
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 30|🇺🇸 _US_美国->🇳🇱_NL_荷兰
-  network: ws
-  port: '30000'
-  server: 45.199.138.191
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/1696251522438
-- alterId: 0
-  cipher: auto
-  name: 30|🇺🇸 _US_美国->🇸🇦_SA_沙特阿拉伯
-  network: ws
-  port: '80'
-  server: jd3.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: jd3.shabijichang.com
-    path: /

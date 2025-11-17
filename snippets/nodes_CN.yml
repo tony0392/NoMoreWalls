@@ -36,6 +36,41 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- alterId: 64
+  cipher: auto
+  country: 🇳 CN
+  h2-opts: {}
+  http-opts: {}
+  name: 14| CN_40
+  network: tcp
+  port: 59003
+  server: 183.236.51.36
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
+- country: 🇳 CN
+  name: 14|🇳 CN_41
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 3462
+  server: a03.taipeicitygovernment.cn.ua
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 18,23|[VMess] 🇨🇳 中国 阿里云
+  network: ws
+  port: 39174
+  server: 8.218.140.27
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5854b877-2b30-457a-b730-837aa5976279
+  ws-opts:
+    path: /arki?ed=2048
 - name: 19|_CN_国
   network: tcp
   password: 1b57001bd214304027025a740b6cf1ac
@@ -1047,6 +1082,19 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
+- alterId: 2
+  cipher: auto
+  name: 26|中国 135
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v10.heduian.link
+    path: /oooo
 - alterId: 64
   cipher: auto
   name: 26|中国 137
@@ -1117,7 +1165,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '30|_CN_中国 #3'
+- name: '30|_CN_中国 #1'
   password: BxceQaOe
   port: 4094
   server: 116.49.237.130

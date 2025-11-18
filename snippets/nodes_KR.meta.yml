@@ -1,6 +1,6 @@
 proxies:
 - cipher: aes-256-cfb
-  name: '0,1,28|🇰🇷_KR_韩国 #2'
+  name: '0,1,22,28|🇰🇷_KR_韩国 #2'
   password: qwerREWQ@@
   port: 37008
   server: 221.139.79.57
@@ -169,24 +169,40 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 7|韩国 专线NO1
+  name: 7|韩国 专线NO1-1A
   port: 45076
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 0bd50587-eb67-408e-9465-e6f01412d316
+  uuid: ca0b7e99-5b5a-49a1-bd31-014a83ef2c66
 - alterId: 0
   cipher: auto
-  name: 7|韩国 专线NO2
+  name: 7|韩国 专线NO2-1A
   port: 45075
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 0bd50587-eb67-408e-9465-e6f01412d316
+  uuid: ca0b7e99-5b5a-49a1-bd31-014a83ef2c66
+- alterId: 0
+  cipher: auto
+  name: 7|韩国 专线NO2-1B
+  port: 45075
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 38928033-4f4f-4a56-9569-a36f0dbad8d1
+- cipher: aes-256-cfb
+  name: 11|🇰🇷 KR, Incheon
+  password: amazonskr05
+  port: 443
+  server: 52.221.255.53
+  type: ss
 - alterId: 0
   cipher: auto
   name: 20|KR韩国(mibei77.com 米贝节点分享)
@@ -197,13 +213,28 @@ proxies:
   type: vmess
   udp: true
   uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
-- cipher: aes-256-cfb
-  country: 🇰🇷 KR
-  name: 22|❓_🇰🇷_📶_github.com/Ruk1ng001_31...
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 22|🟡_🇰🇷_💼_github.com/Ruk1ng001_64...
+  network: none
+  port: 24351
+  server: 43.164.131.70
+  tls: false
+  type: vmess
+  uuid: 4db20d82-0a65-432b-c16b-d2aacfe88073
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 22|🔴_🇰🇷_💻_github.com/Ruk1ng001_65...
+  network: http
+  port: 52178
+  server: 1.32.216.163
+  tls: false
+  type: vmess
+  uuid: b79c418a-e377-45dc-bbf0-3099a6f95ef5
 - alterId: 0
   cipher: auto
   name: 26|韩国 004
@@ -253,6 +284,15 @@ proxies:
     headers:
       Host: time.is
     path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🇰🇷 KR韩国(mibei77.com 米贝节点分享)
+  network: tcp
+  port: '80'
+  server: 152.70.92.69
+  tls: false
+  type: vmess
+  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
 - name: 31|韩国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

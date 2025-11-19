@@ -789,58 +789,40 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- cipher: aes-256-cfb
-  name: 11|🇭🇰 HK, Kowloon
-  password: amazonskr05
-  port: 443
-  server: 47.129.170.82
-  type: ss
-- cipher: aes-256-cfb
-  name: 11|🇭🇰 HK, New Territories
-  password: amazonskr05
-  port: 443
-  server: 54.95.5.168
-  type: ss
-- cipher: aes-256-cfb
-  name: 11|🇭🇰 HK, Los Angeles
-  password: amazonskr05
-  port: 443
-  server: 44.244.21.125
-  type: ss
-- cipher: chacha20-ietf
+- cipher: aes-256-gcm
   country: 🇰 HK
-  name: 14| HK_63
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰 HK
-  name: 14|🇰 HK_64
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
+  name: 14| HK_66
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 15099
+  server: ss.026.node-for-bigairport.win
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇭🇰 HK
-  name: 14|🇰 HK_65
+  name: 14|🇰 HK_67
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
 - cipher: aes-256-gcm
-  country: 🇰 HK
-  name: 14|🇰 HK_66
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_68
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 36888
   server: ss.007.node-for-bigairport.win
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰 HK
+  name: 14|🇭🇰 HK_69
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
   type: ss
 - alterId: 2
   cipher: auto
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 14|🇰 HK_67
+  name: 14|🇰 HK_70
   network: ws
   port: 30807
   server: v10.heduian.link
@@ -851,6 +833,38 @@ proxies:
   ws-headers:
     HOST: baidu.com
   ws-path: /oooo
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰 HK_71
+  network: ws
+  port: 80
+  server: 8685e774-sv2sg0-svq7uu-1gevg.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇭🇰 HK_72
+  network: ws
+  port: 80
+  server: e507f11c-sv2sg0-sv7gs8-1lkbs.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 5a4c13ae-6673-11ee-a149-f23c9164ca5d
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
 - name: '18,23,25,30,33,34,37|🇭🇰 香港5|@stairnode #1'
   password: BxceQaOe
   port: 443
@@ -862,8 +876,18 @@ proxies:
   udp: true
 - name: '18,23,25,30,33,34,37|🇸🇬 新加坡3|@stairnode #1'
   password: BxceQaOe
-  port: 2673
+  port: 3127
   server: 116.49.237.130
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  tfo: false
+  type: trojan
+  udp: true
+- name: '18,22,23,25,30,33,34,37|🇭🇰 香港4|@stairnode #1'
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.26.173
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   tfo: false
@@ -878,7 +902,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20,22|github.com/Ruk1ng001_646532613...
+  name: 20|HK香港(mibei77.com 米贝节点分享) 2
   password: 014e90df-a3ee-4654-a9f6-d118e02dd02a
   port: 41047
   server: sl.fgmcx.top
@@ -894,27 +918,24 @@ proxies:
   type: vmess
   udp: true
   uuid: 2906e19e-c99f-456e-bcb3-c5472fd594e5
-- alterId: 2
-  cipher: auto
-  name: '25,26,30,33,34,37|🇭🇰 香港|@stairnode #1'
-  network: ws
-  port: 30809
-  server: v9.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
 - cipher: aes-256-gcm
   name: 25|[SS] 🇭🇰 香港2|@ripaojiedian
   password: ccf426f1fe78
   port: 443
   server: 103.103.245.158
+  type: ss
+- name: '25,30,33,34,37|🇭🇰 香港3|@stairnode #1'
+  password: dd2f25b4c70689de8bc0f7fa9d6591cb
+  port: 443
+  server: 58.152.110.206
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: chacha20-ietf
+  name: '25,34,37|🇭🇰 香港6|@stairnode #1'
+  password: asd123456
+  port: 8388
+  server: 103.149.183.191
   type: ss
 - cipher: aes-256-gcm
   name: 25,34,37|🇭🇰 香港2|@stairnode
@@ -930,22 +951,50 @@ proxies:
   port: 443
   server: 103.103.245.158
   type: ss
-- name: '30|🇭🇰 香港 电讯盈科有限公司 #1'
+- name: 30|🇭🇰 香港 电讯盈科有限公司
   password: BxceQaOe
-  port: 443
-  server: 219.79.165.55
+  port: 3127
+  server: 116.49.237.130
   skip-cert-verify: false
   sni: t.me%252Fripaojiedian
   type: trojan
+- name: '30|🇫🇷 FR法国(mibei77.com 米贝节点分享) #6'
+  password: 17178783-0dd7-4544-bf6b-e0694a1e3da7
+  port: 2053
+  server: 141.94.222.214
+  skip-cert-verify: false
+  sni: joss.gpj.web.id
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #7'
+  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #7'
   network: tcp
-  port: '59516'
-  server: 43.247.134.213
+  port: '8080'
+  server: 103.243.26.209
   tls: false
   type: vmess
-  uuid: 2906e19e-c99f-456e-bcb3-c5472fd594e5
+  uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09
+- name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #4'
+  password: dd2f25b4c70689de8bc0f7fa9d6591cb
+  port: 443
+  server: 203.198.122.135
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '30|🇳🇱 NL荷兰(mibei77.com 米贝节点分享) #3'
+  password: cc09e855-dfad-4587-9775-369a2df36a1f
+  port: 81
+  server: 45.159.251.8
+  skip-cert-verify: false
+  sni: joss.gpj.web.id
+  type: trojan
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #24'
+  password: 3b38715b-f08a-46dd-9904-7531ca4bb6e8
+  port: 2053
+  server: 95.182.120.208
+  skip-cert-verify: false
+  sni: joss.gpj.web.id
+  type: trojan
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158

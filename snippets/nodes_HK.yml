@@ -199,16 +199,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6|香港NO.1
-  port: 45050
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 74d24777-ce70-4721-9c78-c5889871ce5e
-- alterId: 0
-  cipher: auto
   name: 6|香港NO.2
   port: 45051
   server: xdd.dashuai.cyou
@@ -216,27 +206,37 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 74d24777-ce70-4721-9c78-c5889871ce5e
+  uuid: e9399c64-0f6a-4fd0-b53d-e4c315642427
 - alterId: 0
   cipher: auto
-  name: 7|香港NO.1-1B-GPT
+  name: 6|香港NO.1
   port: 45050
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: adec5f30-5c36-4cf7-b0d2-f33fff2f1d00
+  uuid: e9399c64-0f6a-4fd0-b53d-e4c315642427
 - alterId: 0
   cipher: auto
-  name: 7|香港NO.2-1B-GPT
+  name: 7|香港NO.2-GPT
   port: 45051
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: adec5f30-5c36-4cf7-b0d2-f33fff2f1d00
+  uuid: a740310c-fb6c-4fc2-aa84-f398f3814d81
+- alterId: 0
+  cipher: auto
+  name: 7|香港NO.1-GPT
+  port: 45050
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a740310c-fb6c-4fc2-aa84-f398f3814d81
 - alterId: 0
   cipher: auto
   name: 9,26|美国 304
@@ -749,30 +749,12 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- cipher: aes-256-cfb
-  name: 11|🇭🇰 HK, Kowloon
-  password: amazonskr05
-  port: 443
-  server: 47.129.170.82
-  type: ss
-- cipher: aes-256-cfb
-  name: 11|🇭🇰 HK, New Territories
-  password: amazonskr05
-  port: 443
-  server: 54.95.5.168
-  type: ss
-- cipher: aes-256-cfb
-  name: 11|🇭🇰 HK, Los Angeles
-  password: amazonskr05
-  port: 443
-  server: 44.244.21.125
-  type: ss
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf
   country: 🇰 HK
   name: 14| HK_63
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇰 HK
@@ -781,33 +763,42 @@ proxies:
   port: 990
   server: 203.23.128.33
   type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰 HK
+- cipher: aes-256-cfb
+  country: 🇰 HK
   name: 14|🇰 HK_65
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_66
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
   type: ss
 - alterId: 2
   cipher: auto
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 14|🇭🇰 HK_67
+  name: 14|🇰 HK_66
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  servername: baidu.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    HOST: baidu.com
+  ws-path: /oooo
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰 HK_67
   network: ws
   port: 80
-  server: hkt.gotochinatown.net
+  server: 98e590b8-t0kxs0-t5xs0q-1462e.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
   type: vmess
-  uuid: b585dac6-dc69-11ef-9f1c-f23c913c8d2b
+  uuid: a6cf58d6-14d1-11eb-a8bf-f23c91cfbbc9
   ws-headers:
     HOST: broadcastlv.chat.bilibili.com
   ws-path: /
@@ -816,48 +807,37 @@ proxies:
   country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 14|🇰 HK_68
+  name: 14|🇭🇰 HK_68
   network: ws
   port: 80
   server: hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
+  servername: hkt.gotochinatown.net
   skip-cert-verify: true
   type: vmess
-  uuid: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
+  uuid: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
   ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
+    HOST: hkt.gotochinatown.net
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 18|香港 阿里云
-  network: ws
-  port: 443
-  server: n1744453320.lie5d.cyou
-  tls: true
-  type: vmess
-  uuid: 8889a08a-09f8-4c97-bed2-df31b62fcf23
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- name: 18,23,30|🇭🇰 香港 电讯盈科有限公司
+- name: 18|香港+电讯盈科有限公司
   password: BxceQaOe
   port: 443
   server: 58.152.25.241
-  skip-cert-verify: false
   sni: t.me%252Fripaojiedian
-  tfo: false
   type: trojan
-  udp: true
-- name: '18,23,30|_CN_中国 #1'
+- name: '18,25,30,33,34,37|🇭🇰 香港4|@stairnode #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.18.95
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 18,30|_CN_中国
   password: BxceQaOe
   port: 443
   server: 219.79.165.55
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
-  tfo: false
   type: trojan
-  udp: true
 - name: 20|HK香港(mibei77.com 米贝节点分享)
   password: adbac894-90b9-4913-b77e-a715a8d4ebc8
   port: 20021
@@ -867,7 +847,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20,22|github.com/Ruk1ng001_646532613...
+  name: 20|HK香港(mibei77.com 米贝节点分享) 2
   password: 014e90df-a3ee-4654-a9f6-d118e02dd02a
   port: 41047
   server: sl.fgmcx.top
@@ -889,28 +869,6 @@ proxies:
   port: 443
   server: 103.103.245.158
   type: ss
-- name: '25,30,33,34,37|🇭🇰 香港3|@stairnode #1'
-  password: dd2f25b4c70689de8bc0f7fa9d6591cb
-  port: 443
-  server: 58.152.18.124
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '25,30,33,34,37|🇭🇰 香港4|@stairnode #1'
-  password: BxceQaOe
-  port: 443
-  server: 112.120.31.96
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '25,30,33,34,36,37,38|HK_speednode_0013 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.241
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-  udp: true
 - cipher: aes-256-gcm
   name: 25,34,37|🇭🇰 香港2|@stairnode
   password: ccf426f1fe78
@@ -925,6 +883,15 @@ proxies:
   port: 443
   server: 103.103.245.158
   type: ss
+- alterId: 0
+  cipher: auto
+  name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #2'
+  network: tcp
+  port: '59516'
+  server: 43.247.134.213
+  tls: false
+  type: vmess
+  uuid: 2906e19e-c99f-456e-bcb3-c5472fd594e5
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158

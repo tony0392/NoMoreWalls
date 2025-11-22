@@ -1,32 +1,12 @@
 proxies:
-- name: '0,1|🇨🇳_CN_中国 #1'
+- name: 0,1,28,30|_CN_中国
   network: tcp
   password: dd2f25b4c70689de8bc0f7fa9d6591cb
   port: 443
   server: 58.152.110.206
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- alterId: 64
-  cipher: auto
-  country: 🇳 CN
-  h2-opts: {}
-  http-opts: {}
-  name: 14| CN_40
-  network: tcp
-  port: 59003
-  server: 183.236.51.36
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
-- country: 🇨 CN
-  name: 14|🇳 CN_41
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 3462
-  server: a03.taipeicitygovernment.cn.ua
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - name: 19|_CN_国
   network: tcp
   password: 1b57001bd214304027025a740b6cf1ac
@@ -45,6 +25,12 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- cipher: aes-128-gcm
+  name: 22|🟡_🇨🇳_📶_github.com/Ruk1ng001_33...
+  password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74
+  port: 21712
+  server: 103.219.103.217
+  type: ss
 - name: 26|中国 002
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
@@ -313,6 +299,21 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- alterId: 2
+  cipher: auto
+  name: 26|中国 034
+  network: ws
+  port: 30839
+  server: v39.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - alterId: 2
   cipher: auto
   name: 26|中国 035
@@ -1086,6 +1087,20 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
+- name: '30|_CN_中国 #5'
+  password: BxceQaOe
+  port: 443
+  server: 219.79.165.55
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '30|_CN_中国 #4'
+  password: ZZRSKlyjjAR36CS0CD8uYFBgNODpgTeC9A7aERSp3aFaq42na8KZzuDIn3D9Yw3xX3A6e
+  port: 443
+  server: levuior.missionsec.us
+  skip-cert-verify: true
+  sni: levuior.missionsec.us
+  type: trojan
 - alterId: 0
   name: 35|Trojan2 CN
   password: BxceQaOe
@@ -1095,38 +1110,34 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|CN_747ca_0009
+  port: 3304
+  server: 113.57.36.148
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f0305e21-30bb-32f9-9b1b-9e02dcf3af54
 - cipher: chacha20-ietf-poly1305
-  name: 36,38|CN_speednode_0002
-  password: db8a0e6b-5fd7-435d-9558-5c86b0679c4d
-  port: 55407
-  server: slur.izenny.com
+  name: 38|CN_speednode_0005
+  password: 5b92201f-402e-4e35-94bf-c2aa2e8d7513
+  port: 21104
+  server: sd1.dns-yun.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 36,38|CN_speednode_0003
-  password: d9b85218-da37-42a7-8906-67bab810252c
-  port: 55407
-  server: slur.izenny.com
+  name: 38|CN_speednode_0006
+  password: 5b92201f-402e-4e35-94bf-c2aa2e8d7513
+  port: 24050
+  server: sd1.dns-yun.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 36,38|CN_speednode_0004
-  password: db8a0e6b-5fd7-435d-9558-5c86b0679c4d
-  port: 40063
-  server: slur.izenny.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 36,38|CN_speednode_0005
-  password: db8a0e6b-5fd7-435d-9558-5c86b0679c4d
-  port: 48907
-  server: slur.izenny.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 36,38|CN_speednode_0006
-  password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74
-  port: 23344
-  server: 103.219.103.217
+  name: 38|CN_speednode_0007
+  password: 5b92201f-402e-4e35-94bf-c2aa2e8d7513
+  port: 20302
+  server: sd1.dns-yun.com
   type: ss
   udp: true

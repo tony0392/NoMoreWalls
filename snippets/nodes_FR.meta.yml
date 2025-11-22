@@ -26,70 +26,30 @@ proxies:
   type: vmess
   udp: true
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
-- alterId: 0
-  cipher: auto
-  name: 6|法国1
-  port: 45072
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9399c64-0f6a-4fd0-b53d-e4c315642427
-- alterId: 0
-  cipher: auto
-  name: 6|法国2
-  port: 45071
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e9399c64-0f6a-4fd0-b53d-e4c315642427
-- alterId: 0
-  cipher: auto
-  name: '7|法国1 #1'
-  port: 45072
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a740310c-fb6c-4fc2-aa84-f398f3814d81
-- alterId: 0
-  cipher: auto
-  name: '7|法国2 #1'
-  port: 45071
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a740310c-fb6c-4fc2-aa84-f398f3814d81
 - cipher: chacha20-ietf-poly1305
   country: 🇷 FR
-  name: 14| FR_49
+  name: 14| FR_50
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
   type: ss
 - cipher: aes-256-cfb
   country: 🇷FR
-  name: 14|🇷FR_50
+  name: 14|🇷FR_51
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
 - country: 🇷FR
-  name: 14|🇷FR_51
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  name: 14|🇷FR_52
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
-  server: uk-full.privateip.net
+  server: de-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 14|🇷FR_52
+  name: 14|🇫🇷FR_53
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
@@ -97,22 +57,30 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 14|🇫🇷FR_53
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
+  name: 14|🇫🇷FR_54
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
-  server: de-full.privateip.net
+  server: uk-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: 🇷FR
-  name: 14|🇫🇷FR_54
+  name: 14|🇫🇷FR_55
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 25,36,38|FR_speednode_0011
+- cipher: aes-256-cfb
+  name: 23|[SS] 🇫🇷 _FR_法国
+  password: asdKkaskJKfnsa
+  port: 443
+  server: 51.158.54.209
+  tfo: false
+  type: ss
+  udp: true
+- name: 25,36,38|FR_speednode_0017
   network: ws
   password: e6f0e8b0-3dc5-4d53-a23a-86c02d5ba098
   port: 443
@@ -363,3 +331,32 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
+- name: 38|FR_speednode_0013
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.39.169.16
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 38|FR_speednode_0014
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.169.16
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 38|FR_speednode_0018
+  network: ws
+  password: c2de1269-17cb-41f6-ab97-f8c11a6f0f4f
+  port: 8443
+  server: 158.178.206.197
+  skip-cert-verify: false
+  sni: joss.gpj1.web.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.gpj1.web.id
+    path: /Free-VPN-CF-Geo-Project/158.178.206.197=8443

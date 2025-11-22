@@ -25,24 +25,25 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14| RU_147
+  name: 14|🇷 RU_151
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
   type: ss
 - cipher: aes-256-cfb
-  country: 🇷🇺 RU
-  name: 14,22,27|_MD_->🇺_RU_
+  country: 🇺 RU
+  name: 14,22,27,36|MD_747ca_0095
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_149
+  name: 14|🇺 RU_153
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -52,7 +53,7 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
 - country: 🇺RU
-  name: 14|🇺RU_150
+  name: 14|🇺RU_154
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
@@ -127,10 +128,23 @@ proxies:
     headers:
       Host: wellyoumust.goahead.rf.gd
     path: /multipath
-- cipher: chacha20-ietf-poly1305
-  name: 28|🇷🇺_RU_俄罗斯_2
-  password: 2fwufOmJ9ELfN4umzcHBfV
-  port: 12224
-  server: 194.87.82.28
-  type: ss
+- name: '30|🇷🇺 _RU_俄罗斯 #1'
+  password: 1a758d17-149a-47f3-9336-d1cc33232cc9
+  port: 443
+  server: 91.103.253.193
+  skip-cert-verify: false
+  sni: joss.gpj1.web.id
+  type: trojan
+- name: 38|RU_speednode_0044
+  network: ws
+  password: d78d48df-b788-4a95-9e9f-77c9b2f69822
+  port: 8443
+  server: 193.233.114.58
+  skip-cert-verify: false
+  sni: joss.gpj1.web.id
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: joss.gpj1.web.id
+    path: /Free-VPN-CF-Geo-Project/193.233.114.58=8443

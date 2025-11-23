@@ -1,12 +1,71 @@
 proxies:
-- name: 0,1,28,30|_CN_中国
+- name: '0,1,22,28,30|_CN_中国 #7'
+  network: tcp
+  password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
+  port: 5223
+  server: psg2-ag.t.sgateway.link
+  skip-cert-verify: false
+  sni: pod-kr-g1.psusercontent.com
+  tls: true
+  type: trojan
+- alterId: 0
+  cipher: aes-128-gcm
+  name: '0,1,22,28|🇨🇳_CN_中国_1 #3'
+  password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74
+  port: 21712
+  server: wangcai.singdns.com
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- name: '0,1,22,28,30|_CN_中国 #9'
+  network: tcp
+  password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
+  port: 5223
+  server: hk3.t.sgateway.link
+  skip-cert-verify: false
+  sni: pod-hk-z1.psusercontent.com
+  tls: true
+  type: trojan
+- name: '0,1,28,30|_CN_中国 #3'
   network: tcp
   password: dd2f25b4c70689de8bc0f7fa9d6591cb
   port: 443
-  server: 58.152.110.206
+  server: 58.152.18.98
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- alterId: 0
+  name: '0,1,22,28|🇨🇳_CN_中国_4 #2'
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.18.95
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 64
+  cipher: auto
+  country: 🇳 CN
+  h2-opts: {}
+  http-opts: {}
+  name: 14| CN_38
+  network: tcp
+  port: 59003
+  server: 183.236.51.36
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
+- country: 🇨 CN
+  name: 14|🇳 CN_39
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 3462
+  server: a03.taipeicitygovernment.cn.ua
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: 19|_CN_国
   network: tcp
   password: 1b57001bd214304027025a740b6cf1ac
@@ -25,12 +84,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- cipher: aes-128-gcm
-  name: 22|🟡_🇨🇳_📶_github.com/Ruk1ng001_33...
-  password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74
-  port: 21712
-  server: 103.219.103.217
-  type: ss
 - name: 26|中国 002
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
@@ -299,21 +352,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 26|中国 034
-  network: ws
-  port: 30839
-  server: v39.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
 - alterId: 2
   cipher: auto
   name: 26|中国 035
@@ -1088,18 +1126,18 @@ proxies:
   type: vmess
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
 - name: '30|_CN_中国 #5'
-  password: BxceQaOe
-  port: 443
-  server: 219.79.165.55
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '30|_CN_中国 #4'
   password: ZZRSKlyjjAR36CS0CD8uYFBgNODpgTeC9A7aERSp3aFaq42na8KZzuDIn3D9Yw3xX3A6e
   port: 443
   server: levuior.missionsec.us
   skip-cert-verify: true
   sni: levuior.missionsec.us
+  type: trojan
+- name: '30|_CN_中国 #6'
+  password: BxceQaOe
+  port: 443
+  server: 219.79.165.55
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 0
   name: 35|Trojan2 CN
@@ -1110,32 +1148,22 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|CN_747ca_0009
-  port: 3304
-  server: 113.57.36.148
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f0305e21-30bb-32f9-9b1b-9e02dcf3af54
 - cipher: chacha20-ietf-poly1305
-  name: 38|CN_speednode_0005
+  name: 36,38|CN_speednode_0005
   password: 5b92201f-402e-4e35-94bf-c2aa2e8d7513
   port: 21104
   server: sd1.dns-yun.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 38|CN_speednode_0006
+  name: 36,38|CN_speednode_0006
   password: 5b92201f-402e-4e35-94bf-c2aa2e8d7513
   port: 24050
   server: sd1.dns-yun.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 38|CN_speednode_0007
+  name: 36,38|CN_speednode_0007
   password: 5b92201f-402e-4e35-94bf-c2aa2e8d7513
   port: 20302
   server: sd1.dns-yun.com

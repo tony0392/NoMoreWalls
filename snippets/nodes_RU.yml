@@ -42,6 +42,13 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 14| RU_154
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 45.159.250.190
+  type: ss
 - cipher: aes-256-cfb
   country: 🇺 RU
   name: 14,22,27|_MD_->🇺_RU_
@@ -54,7 +61,7 @@ proxies:
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_145
+  name: 14|🇺 RU_156
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -64,20 +71,36 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
 - country: 🇺RU
-  name: 14|🇺RU_146
+  name: 14|🇺RU_157
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 18,23|[Trojan] 🇷🇺 俄罗斯 V2CROSS.COM
+- alterId: 0
+  cipher: auto
+  name: 18,22,23|[VMess] 🇷🇺 俄罗斯 V2CROSS.COM
+  network: ws
+  port: 15745
+  server: 62.192.173.86
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b564b504-17bf-4ff3-fe42-17569844e526
+  ws-opts:
+    path: /
+- alterId: 0
+  name: '22,25,33,36,38|RU_speednode_0030 #1'
   password: Qzy7tgpRhu
   port: 443
   server: 37.18.14.33
   skip-cert-verify: true
   sni: m.vk.com
   tfo: false
+  tls: true
   type: trojan
   udp: true
 - name: 26|俄罗斯 001
@@ -152,13 +175,6 @@ proxies:
   password: d78d48df-b788-4a95-9e9f-77c9b2f69822
   port: 8443
   server: 193.233.114.58
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-- name: '30|🇷🇺 _RU_俄罗斯 #2'
-  password: 35f8e682-54bd-42c7-b537-94a8e4c84bcd
-  port: 443
-  server: 89.110.120.197
   skip-cert-verify: false
   sni: joss.gpj1.web.id
   type: trojan

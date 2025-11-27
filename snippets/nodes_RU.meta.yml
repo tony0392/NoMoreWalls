@@ -1,10 +1,11 @@
 proxies:
 - fingerprint: randomized
-  name: '0,1,28|🇷🇺_RU_俄罗斯 #2'
+  name: '0,1,25,28|🇷🇺_RU_俄罗斯 #2'
   network: ws
   password: d78d48df-b788-4a95-9e9f-77c9b2f69822
   port: 8443
   server: 193.233.114.58
+  skip-cert-verify: false
   sni: joss.gpj1.web.id
   tls: true
   type: trojan
@@ -44,7 +45,7 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14| RU_148
+  name: 14| RU_134
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
@@ -61,7 +62,7 @@ proxies:
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_150
+  name: 14|🇺 RU_136
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -71,51 +72,35 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
 - country: 🇺RU
-  name: 14|🇺RU_151
+  name: 14,25|[Trojan] 未知 TROJAN-549@free-no...
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
   udp: true
-- alterId: 0
-  name: '22,25,33,36,38|RU_speednode_0030 #1'
+- cipher: chacha20-ietf-poly1305
+  name: 20,22|github.com/Ruk1ng001_326637643...
+  password: mbhqsStnFQT1cTZYCdsmkugGUC6GT6rp
+  port: 443
+  server: 213.159.67.124
+  type: ss
+  udp: true
+- name: '22,25,33,36,38|RU_speednode_0030 #1'
   password: Qzy7tgpRhu
   port: 443
   server: 37.18.14.33
   skip-cert-verify: true
   sni: m.vk.com
   tfo: false
-  tls: true
   type: trojan
   udp: true
-- name: 26|俄罗斯 001
-  network: ws
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: false
-  sni: hsdgbuys.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: hsdgbuys.pages.dev
-    path: /
-- name: 26|俄罗斯 039
-  network: ws
-  password: vpn
-  port: 2025
-  server: 109.120.132.80
-  skip-cert-verify: true
-  sni: vkvd127.mycdn.me
-  tfo: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vkvd127.mycdn.me
-    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 25|[SS] 🇷🇺 RU SS-76@free-nodes
+  password: yYLiE0LOsr0CwIjbiCSLy2
+  port: 49115
+  server: 147.45.235.63
+  type: ss
 - alterId: 0
   cipher: auto
   name: 26|俄罗斯 066

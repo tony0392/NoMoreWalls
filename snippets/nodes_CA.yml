@@ -61,7 +61,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 3116ed5e-d8de-4b58-9910-24376579bc2c
+  uuid: 2b8a31e4-fc45-46d0-a999-e135f54d7936
 - alterId: 0
   cipher: auto
   name: '7|加拿大1 #1'
@@ -71,24 +71,20 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 3116ed5e-d8de-4b58-9910-24376579bc2c
+  uuid: 2b8a31e4-fc45-46d0-a999-e135f54d7936
+- cipher: aes-256-cfb
+  name: 11|🇨🇦 CA, Vancouver
+  password: amazonskr05
+  port: 443
+  server: 54.200.54.11
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 14|CA_38
+  name: 14|CA_37
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
-- name: 18,23,25|[Trojan] 🇨🇦 CA TROJAN-109@free...
-  network: tcp
-  password: 6pRjKQJ0CWyFtG.9
-  port: 12990
-  server: 198.57.27.27
-  skip-cert-verify: false
-  sni: diningtable.electricbanana.click
-  tfo: false
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 23,30|🇨🇦 _CA_加拿大
@@ -105,6 +101,20 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 25|[Trojan] 未知 TROJAN-442@free-no...
+  password: .ie4rghJuMkcf0oF
+  port: 18509
+  server: 38.96.254.102
+  skip-cert-verify: false
+  sni: shoppingmall.electricbanana.click
+  type: trojan
+- name: 25,30|🇨🇦 加拿大多伦多 V2CROSS.COM
+  password: 6pRjKQJ0CWyFtG.9
+  port: 12990
+  server: 198.57.27.27
+  skip-cert-verify: false
+  sni: diningtable.electricbanana.click
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 25|[SS] 🇨🇦 CA SS-122@free-nodes
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=

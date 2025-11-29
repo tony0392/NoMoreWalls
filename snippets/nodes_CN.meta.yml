@@ -8,16 +8,13 @@ proxies:
   sni: pod-kr-g1.psusercontent.com
   tls: true
   type: trojan
-- alterId: 0
-  cipher: aes-128-gcm
-  name: '0,1,22,28|🇨🇳_CN_中国_1 #2'
+- cipher: aes-128-gcm
+  name: '0,1,28|🇨🇳_CN_中国_1 #2'
   password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74
   port: 21712
   server: wangcai.singdns.com
-  skip-cert-verify: true
-  tls: true
   type: ss
-- name: '0,1,25,28|🇨🇳_CN_中国_2 #3'
+- name: '0,1,25,28,30|🇺🇸 US美国(mibei77.com 米贝节点分享)-cl... #18'
   network: tcp
   password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
   port: 5223
@@ -34,33 +31,15 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '0,1,28|🇨🇳_CN_中国_4 #2'
+- alterId: 0
+  name: '0,1,22,28|🇨🇳_CN_中国_4 #2'
   network: tcp
   password: BxceQaOe
   port: 443
   server: 58.152.18.95
   skip-cert-verify: true
   sni: t.me/ripaojiedian
-  type: trojan
-- alterId: 64
-  cipher: auto
-  country: 🇳 CN
-  h2-opts: {}
-  http-opts: {}
-  name: 14| CN_38
-  network: tcp
-  port: 59003
-  server: 183.236.51.36
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
-- country: 🇨 CN
-  name: 14,25|[Trojan] 未知 TROJAN-395@free-no...
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 3462
-  server: a03.taipeicitygovernment.cn.ua
-  skip-cert-verify: false
+  tls: true
   type: trojan
   udp: true
 - fingerprint: randomized
@@ -78,11 +57,10 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/36.50.90.241=35951
 - alterId: 2
   cipher: auto
-  name: '26,30,33,34,37|🇭🇰 香港|@stairnode #1'
+  name: 26|中国 001
   network: ws
   port: 30809
   server: v9.heduian.link
-  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false

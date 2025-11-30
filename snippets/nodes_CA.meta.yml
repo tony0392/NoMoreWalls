@@ -34,44 +34,57 @@ proxies:
     path: /xyz
 - alterId: 0
   cipher: auto
-  name: 6|加拿大1
-  port: 45064
-  server: hxa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f8d02684-119c-4e7d-9c19-898e18e1a741
-- alterId: 0
-  cipher: auto
   name: 6|加拿大2
-  port: 45065
-  server: hxb.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f8d02684-119c-4e7d-9c19-898e18e1a741
-- alterId: 0
-  cipher: auto
-  name: '7|加拿大2 #1'
   port: 45065
   server: hxb.dashuai.help
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 11c36283-1947-4710-9ff3-d61603f3f415
+  uuid: ed02852f-3af7-4acd-9bff-83bf62073dd5
 - alterId: 0
   cipher: auto
-  name: '7|加拿大1 #1'
+  name: 6|加拿大1
   port: 45064
   server: hxa.dashuai.help
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 11c36283-1947-4710-9ff3-d61603f3f415
+  uuid: ed02852f-3af7-4acd-9bff-83bf62073dd5
+- alterId: 0
+  cipher: auto
+  name: 7|加拿大1-1B
+  port: 45064
+  server: hxa.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9e62df3b-23ee-4840-9864-5adfc5241bc4
+- alterId: 0
+  cipher: auto
+  name: 7|加拿大2-1B
+  port: 45065
+  server: hxb.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9e62df3b-23ee-4840-9864-5adfc5241bc4
+- cipher: aes-256-cfb
+  name: 11|🇨🇦 CA, Vancouver
+  password: amazonskr05
+  port: 443
+  server: 54.200.54.11
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇦CA
+  name: 14|🇦CA_37
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: ca225.vpnbook.com
+  type: ss
 - alterId: 0
   cipher: auto
   name: 23,30|🇨🇦 _CA_加拿大
@@ -88,6 +101,13 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 25|[Trojan] 未知 TROJAN-442@free-no...
+  password: .ie4rghJuMkcf0oF
+  port: 18509
+  server: 38.96.254.102
+  skip-cert-verify: false
+  sni: shoppingmall.electricbanana.click
+  type: trojan
 - name: 25|[Trojan] 🇨🇦 CA TROJAN-109@free...
   password: 6pRjKQJ0CWyFtG.9
   port: 12990

@@ -1,24 +1,4 @@
 proxies:
-- fingerprint: randomized
-  name: '0,1,25,28|🇷🇺_RU_俄罗斯 #2'
-  network: ws
-  password: d78d48df-b788-4a95-9e9f-77c9b2f69822
-  port: 8443
-  server: 193.233.114.58
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: joss.gpj1.web.id
-    path: /Free-VPN-CF-Geo-Project/193.233.114.58=8443
-- cipher: chacha20-ietf-poly1305
-  name: '0,1,28|🇷🇺_RU_俄罗斯_1 #2'
-  password: 17ZDORWIliQHuO6WRGHChXYMzdRtAYVP
-  port: 443
-  server: 45.14.245.2
-  type: ss
 - alterId: 0
   cipher: auto
   name: 2|🇷🇺 莫斯科专线
@@ -52,17 +32,24 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14|🇺 RU_286
+  name: 14|🇺 RU_253
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 14,22|🟡_🇳🇱_💻_github.com/Ruk1ng001_31...
+  password: YQCSKoCF3QazW8YlvDBWA4
+  port: 56689
+  server: 109.71.246.210
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_287
+  name: 14|🇺 RU_255
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -71,23 +58,27 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
-- alterId: 0
-  name: 18,22,23,25|[Trojan] 🇷🇺 RU TROJAN-60@free-...
-  password: Qzy7tgpRhu
-  port: 443
-  server: 37.18.14.33
-  skip-cert-verify: false
-  sni: m.vk.com
-  tfo: false
-  tls: true
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 20,22|github.com/Ruk1ng001_326637643...
   password: mbhqsStnFQT1cTZYCdsmkugGUC6GT6rp
   port: 443
   server: 213.159.67.124
   type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|🟡_🇷🇺_💻_github.com/Ruk1ng001_36...
+  password: d3837224ed465f00
+  port: 57456
+  server: 45.139.26.173
+  type: ss
+- name: 22,25,30|🇷🇺 俄罗斯 V2CROSS.COM
+  password: Qzy7tgpRhu
+  port: 443
+  server: 37.18.14.33
+  skip-cert-verify: true
+  sni: m.vk.com
+  tfo: false
+  type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 25|[SS] 🇷🇺 RU SS-76@free-nodes
@@ -136,3 +127,9 @@ proxies:
     headers:
       Host: wellyoumust.goahead.rf.gd
     path: /multipath
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇷🇺_RU_俄罗斯_1
+  password: 17ZDORWIliQHuO6WRGHChXYMzdRtAYVP
+  port: 443
+  server: 45.14.245.2
+  type: ss

@@ -1,24 +1,4 @@
 proxies:
-- fingerprint: randomized
-  name: '0,1,25,28|🇫🇷_FR_法国 #2'
-  network: ws
-  password: be94cd60-8e91-4cd6-9c53-26ee1314edfd
-  port: 2053
-  server: 178.33.161.196
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: joss.gpj1.web.id
-    path: /Free-VPN-CF-Geo-Project/178.33.161.196=2053
-- cipher: chacha20-ietf-poly1305
-  name: '0,1,22,28|🇫🇷_FR_法国_1 #2'
-  password: ODfxioK0VkKxTdpVQJ4rv8HglAu0vzv6
-  port: 443
-  server: 146.19.49.251
-  type: ss
 - alterId: 0
   cipher: auto
   name: 2|🇫🇷 法国1
@@ -91,7 +71,7 @@ proxies:
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 14| FR_47
+  name: 14| FR_50
   network: ws
   port: 20521
   server: 45.136.12.37
@@ -99,13 +79,33 @@ proxies:
   type: vmess
   uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935
   ws-path: /
-- cipher: aes-256-cfb
-  country: 🇷FR
-  name: 14|🇷FR_48
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 195.154.185.174
-  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇷 FR_51
+  network: ws
+  port: 443
+  server: 91.134.8.101
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇷 FR_52
+  network: none
+  port: 38141
+  server: 45.136.12.37
+  skip-cert-verify: true
+  type: vmess
+  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
+  ws-path: /
 - country: 🇷FR
   name: 14,25|[Trojan] 未知 TROJAN-437@free-no...
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
@@ -115,22 +115,6 @@ proxies:
   type: trojan
   udp: true
 - country: 🇷FR
-  name: 14|🇷FR_50
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
-  port: 443
-  server: de-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: 14|🇫🇷FR_51
-  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
-  port: 443
-  server: fr-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇫🇷FR
   name: 14,25|[Trojan] 未知 TROJAN-592@free-no...
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
@@ -138,22 +122,6 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 18,23,30|🇫🇷 法国 OVH SAS
-  network: ws
-  port: '443'
-  server: 91.134.8.101
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 19|🇷FR²_4|4.2MB/s|100%|GPT⁺|YT|TK...

@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,1,30|🇨🇳 中国 V2CROSS.COM #2'
+  name: '0,1,28,30|🇨🇳 中国 V2CROSS.COM #4'
   network: tcp
   port: '30812'
   server: v12.hdacd.com
@@ -17,6 +17,15 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: '18,30|🇨🇳 中国 阿里云 #1'
+  network: none
+  port: '33185'
+  server: 8.217.176.108
+  tls: false
+  type: vmess
+  uuid: ebb5a5db-c0dc-487a-c41f-07219c9a0ddc
 - fingerprint: randomized
   name: 19|🇨🇳_CN_中国_2
   network: ws
@@ -923,12 +932,15 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
-- cipher: aes-128-gcm
-  name: 28|🇨🇳_CN_中国_1
-  password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74
-  port: 21712
-  server: wangcai.singdns.com
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: '30|🇨🇳 中国 阿里云 #2'
+  network: none
+  port: '52986'
+  server: 8.218.17.136
+  tls: false
+  type: vmess
+  uuid: 7363d47e-ac8b-4fe0-d23e-99077999a70d
 - alterId: 0
   name: 35|Trojan2 CN
   password: BxceQaOe

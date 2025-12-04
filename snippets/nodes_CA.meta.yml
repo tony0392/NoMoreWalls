@@ -72,13 +72,41 @@ proxies:
   type: vmess
   udp: true
   uuid: 59e126b9-b887-40fd-a48b-198a621c8f96
+- cipher: aes-256-cfb
+  name: 11|🇨🇦 CA, Vancouver
+  password: amazonskr05
+  port: 443
+  server: 54.200.54.11
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 14|🇦CA_42
+  name: 14|🇦CA_40
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
+- name: 18,23|[Trojan] 🇨🇦 加拿大多伦多 V2CROSS.COM
+  password: 6pRjKQJ0CWyFtG.9
+  port: 12990
+  server: 198.57.27.27
+  skip-cert-verify: true
+  tfo: false
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 20|CA加拿大(mibei77.com 米贝节点分享)
+  network: ws
+  port: 3787
+  server: 47.242.162.235
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e748fe05-2678-4c31-84c6-14ed825b92b4
+  ws-headers:
+    Host: 47.242.162.235
+  ws-path: /arki?ed=2048
 - alterId: 0
   cipher: auto
   name: 23,30|🇨🇦 _CA_加拿大
@@ -95,19 +123,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 25|[Trojan] 🇨🇦 CA TROJAN-109@free...
-  password: 6pRjKQJ0CWyFtG.9
-  port: 12990
-  server: 198.57.27.27
-  skip-cert-verify: false
-  sni: diningtable.electricbanana.click
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 25|[SS] 🇨🇦 CA SS-122@free-nodes
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 23.95.76.59
-  type: ss
 - alterId: 0
   cipher: auto
   name: 26|加拿大 003
@@ -191,16 +206,3 @@ proxies:
     headers:
       Host: ''
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- alterId: 0
-  cipher: auto
-  name: 30|🇨🇦 CA加拿大(mibei77.com 米贝节点分享)
-  network: ws
-  port: '3787'
-  server: 47.242.162.235
-  tls: false
-  type: vmess
-  uuid: e748fe05-2678-4c31-84c6-14ed825b92b4
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048

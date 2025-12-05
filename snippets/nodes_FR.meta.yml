@@ -28,16 +28,6 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: 6|法国1
-  port: 45072
-  server: hxa.dashuai.help
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7082f5d7-8ea3-4f80-8c1d-b3855ce68cea
-- alterId: 0
-  cipher: auto
   name: 6|法国2
   port: 45071
   server: hxb.dashuai.help
@@ -45,7 +35,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7082f5d7-8ea3-4f80-8c1d-b3855ce68cea
+  uuid: 1279ad5f-188a-4cfd-a1ac-26c4a17031eb
+- alterId: 0
+  cipher: auto
+  name: 6|法国1
+  port: 45072
+  server: hxa.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1279ad5f-188a-4cfd-a1ac-26c4a17031eb
 - alterId: 0
   cipher: auto
   name: 7|法国2-1B
@@ -71,7 +71,20 @@ proxies:
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 14| FR_50
+  name: 14| FR_46
+  network: none
+  port: 38141
+  server: 45.136.12.37
+  skip-cert-verify: true
+  type: vmess
+  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇷 FR_47
   network: ws
   port: 443
   server: 91.134.8.101
@@ -80,45 +93,32 @@ proxies:
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇷 FR_51
-  network: none
-  port: 38141
-  server: 45.136.12.37
-  skip-cert-verify: true
-  type: vmess
-  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
-  ws-path: /
 - country: 🇷FR
-  name: 14,25|[Trojan] 未知 TROJAN-1411 | free...
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: uk-full.privateip.net
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: 14,25|[Trojan] 未知 TROJAN-1291 | free...
+  name: 14,25|[Trojan] 未知 TROJAN-425 | free-...
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: false
   type: trojan
   udp: true
-- country: 🇷FR
-  name: 14,25|[Trojan] 未知 TROJAN-1330 | free...
+- country: 🇫🇷FR
+  name: 14,25|[Trojan] 未知 TROJAN-1436 | free...
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
-  server: 198.244.190.189
+  server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
   udp: true
+- country: 🇷FR
+  name: 14|🇫🇷FR_50
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: 198.244.190.189
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 19,20,25|[SS] 未知 SS-137 | free-nodes
+  name: 19,20,25|[SS] 未知 SS-109 | free-nodes
   password: SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa
   port: 443
   server: 95.111.222.113
@@ -134,19 +134,19 @@ proxies:
   udp: true
 - alpn:
   - http%2F1.1
-  name: 25|[Trojan] 🇫🇷 FR TROJAN-03 | fre...
+  name: 25|[Trojan] 🇫🇷 FR TROJAN-04 | fre...
   password: telegram-id-privatevpns
   port: 22222
-  server: 15.236.162.5
+  server: 35.181.161.94
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
   - http%2F1.1
-  name: 25|[Trojan] 🇫🇷 FR TROJAN-04 | fre...
+  name: 25|[Trojan] 🇫🇷 FR TROJAN-05 | fre...
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.37.96.120
+  server: 13.37.103.10
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
@@ -388,3 +388,11 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
+- name: '33,36,38|FR_speednode_0001 #1'
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.39.61.165
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true

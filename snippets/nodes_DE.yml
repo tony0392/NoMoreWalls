@@ -58,7 +58,7 @@ proxies:
   country: 🇪 DE
   h2-opts: {}
   http-opts: {}
-  name: 14|🇪 DE_44
+  name: 14| DE_40
   network: ws
   port: 443
   server: 141.95.126.134
@@ -75,7 +75,7 @@ proxies:
   country: 🇩🇪 DE
   h2-opts: {}
   http-opts: {}
-  name: 14|🇪 DE_45
+  name: 14|🇪 DE_41
   network: ws
   port: 443
   server: 141.94.155.224
@@ -88,7 +88,7 @@ proxies:
     HOST: fapeng.org
   ws-path: linkvws
 - country: 🇪DE
-  name: 14,25|[Trojan] 未知 TROJAN-214 | free-...
+  name: 14,25|[Trojan] 未知 TROJAN-1179 | free...
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -96,11 +96,26 @@ proxies:
   sni: de2-full.privateip.net
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: 25|[SS] 🇩🇪 DE SS-08 | free-nodes
-  password: 8JCsPssfgS8tiRwiMlhARg==
-  port: 12000
-  server: 57.128.214.100
+- alpn:
+  - http%2F1.1
+  name: 25|[Trojan] 🇩🇪 DE TROJAN-06 | fre...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.197.203.30
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 25|[SS] 🇩🇪 DE SS-28 | free-nodes
+  password: JGv616hMWdjfuZ00jYfq7XkBHJZrOBrg
+  port: 443
+  server: 87.121.162.249
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 25|[SS] 🇩🇪 DE SS-41 | free-nodes
+  password: VeUJj6HWCyDZeSaqpmf8AM
+  port: 7425
+  server: 162.19.175.40
   type: ss
 - alterId: 0
   cipher: auto

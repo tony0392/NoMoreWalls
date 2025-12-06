@@ -475,7 +475,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 1279ad5f-188a-4cfd-a1ac-26c4a17031eb
+  uuid: 64f272a6-a305-472c-84c2-25d9b2e982f9
 - alterId: 0
   cipher: auto
   name: 6|日本NO.2
@@ -485,7 +485,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 1279ad5f-188a-4cfd-a1ac-26c4a17031eb
+  uuid: 64f272a6-a305-472c-84c2-25d9b2e982f9
 - alterId: 0
   cipher: auto
   name: 7|日本NO.2-1B
@@ -1008,18 +1008,85 @@ proxies:
     headers:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
-- name: 25|[Trojan] 🇺🇸 US TROJAN-1808 | f...
+- cipher: aes-128-gcm
+  name: 11|🇯🇵
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|🇯🇵 JP, Osaka
+  password: amazonskr05
+  port: 443
+  server: 18.136.197.165
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|🇯🇵 JP, Tokyo 2
+  password: amazonskr05
+  port: 443
+  server: 13.250.25.159
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|🇯🇵 JP, Tokyo
+  password: amazonskr05
+  port: 443
+  server: 54.199.83.184
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 14| JP_70
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
+  servername: seoul03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-headers:
+    HOST: seoul03.zgjok.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 18|日本 东京Amazon数据中心
+  network: tcp
+  port: 53231
+  server: cgroup.node1.v.nodelist-airport.com
+  tls: false
+  type: vmess
+  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+- alterId: 0
+  cipher: auto
+  name: 23|[VMess] 🇯🇵 日本 东京Amazon数据中心
+  port: 53231
+  server: cgroup.node1.v.nodelist-airport.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+- name: 25|[Trojan] 🇺🇸 US TROJAN-1387 | f...
   password: FDIypSwe64a3DA7un2R8DFjYXZO3NS05gKZTTOC8SxO0Fy3cqYg3EaFDA3ABaEYKNx39D
   port: 443
   server: kuame.missionsec.us
   skip-cert-verify: false
   sni: kuame.missionsec.us
   type: trojan
-- name: 26|日本 006
+- cipher: chacha20-ietf-poly1305
+  name: 25|[SS] 🇯🇵 JP SS-141 | free-nodes
+  password: XLOrvLWkCBBBxLqSEe9S8lnC5PLsNfRh
+  port: 443
+  server: 103.75.118.125
+  type: ss
+- name: 26|日本 002
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 2467
-  server: 160.16.132.158
+  port: 316
+  server: 160.16.240.91
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -1039,13 +1106,21 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 26|日本 028
+- name: 26|日本 017
   network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 1331
-  server: 160.16.116.227
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 2381
+  server: 160.16.106.144
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: 26|日本 022
+  network: tcp
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 5041
+  server: 160.16.138.24
+  skip-cert-verify: true
+  sni: www.baidu.com
   type: trojan
 - alterId: 0
   cipher: auto
@@ -1062,6 +1137,22 @@ proxies:
     headers:
       Host: seoul.lonxin.net
     path: /c399917/
+- name: 26|日本 037
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4451
+  server: 153.121.70.134
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 26|日本 047
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1085
+  server: 153.121.39.240
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 26|日本 056
@@ -1081,6 +1172,14 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- name: 26|日本 059
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 6752
+  server: 160.16.124.55
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 26|日本 060
@@ -1090,10 +1189,26 @@ proxies:
   tls: false
   type: vmess
   uuid: dc2fd6a5-36fe-4b06-8b31-a5c5d26add98
-- name: 26|日本 072
+- name: 26|日本 061
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 4317
+  port: 443
+  server: 126.116.225.149
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 26|日本 070
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 2045
+  server: 160.16.130.66
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 26|日本 073
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3296
   server: 160.16.117.182
   skip-cert-verify: false
   sni: www.nintendogames.net
@@ -1116,6 +1231,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 1cc84891-1657-4f71-97d0-287df565820e
+- name: 26|日本 081
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 160.16.236.32
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - name: 26|日本 082
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -1124,11 +1247,11 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 26|日本 083
+- name: 26|日本 088
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 1700
-  server: 153.121.45.139
+  port: 3294
+  server: 153.121.73.102
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -1196,22 +1319,32 @@ proxies:
     path: /
 - name: '30,33,34,37|🇯🇵 日本|@stairnode #1'
   password: BxceQaOe
-  port: 26378
+  port: 4012
   server: jp.baidu.com
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: '30,33,34,37|🇯🇵 日本2|@stairnode #1'
   password: 79314e99f0a473fe86efc7827942ad00
-  port: 1331
-  server: 160.16.70.180
+  port: 3169
+  server: 160.16.87.174
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34,37|🇯🇵 日本3|@stairnode #1'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 3093
-  server: 160.16.130.66
+  server: 160.16.72.33
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 34,37|🇯🇵 日本4|@stairnode
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: a4ebd80:164401
+    mode: tls
+  port: 2377
+  server: 172.237.6.53
+  type: ss

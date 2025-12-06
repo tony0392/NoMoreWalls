@@ -542,7 +542,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 1279ad5f-188a-4cfd-a1ac-26c4a17031eb
+  uuid: 64f272a6-a305-472c-84c2-25d9b2e982f9
 - alterId: 0
   cipher: auto
   name: 6|香港NO.2
@@ -552,7 +552,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 1279ad5f-188a-4cfd-a1ac-26c4a17031eb
+  uuid: 64f272a6-a305-472c-84c2-25d9b2e982f9
 - alterId: 0
   cipher: auto
   name: 7|香港NO.1-1B-GPT
@@ -1085,61 +1085,50 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- cipher: chacha20-ietf
-  country: 🇰 HK
-  name: 14| HK_60
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
+- cipher: aes-256-cfb
+  name: 11|🇭🇰 HK, Kowloon
+  password: amazonskr05
+  port: 443
+  server: 47.129.170.82
   type: ss
 - cipher: aes-256-cfb
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_61
+  name: 11|🇭🇰 HK, New Territories
+  password: amazonskr05
+  port: 443
+  server: 54.95.5.168
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|🇭🇰 HK, Los Angeles
+  password: amazonskr05
+  port: 443
+  server: 44.244.21.125
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰 HK
+  name: 14| HK_55
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
-- alterId: 2
-  cipher: auto
+- cipher: chacha20-ietf
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_56
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- cipher: chacha20-ietf-poly1305
   country: 🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰 HK_62
-  network: ws
-  port: 80
-  server: d9864c5f-sv6hs0-sv75lj-1swf9.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2bb1edc8-fa5d-11ef-9dd9-f23c9164ca5d
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- name: '18,23,30,33,34,37|🇭🇰 香港4|@stairnode #1'
+  name: 14|🇰 HK_57
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- name: '18,22,23,25,30,33,34,37|🇭🇰 香港4|@stairnode #1'
   password: BxceQaOe
   port: 443
   server: 219.79.186.107
   skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tfo: false
-  type: trojan
-  udp: true
-- name: 18,22,23,25|[Trojan] 未知 TROJAN-1805 | free...
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.30.120
-  skip-cert-verify: false
-  sni: t.me%2Fripaojiedian
-  tfo: false
-  type: trojan
-  udp: true
-- name: 18,22,23,25|[Trojan] 未知 TROJAN-1492 | free...
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.8
-  skip-cert-verify: false
   sni: t.me%2Fripaojiedian
   tfo: false
   type: trojan
@@ -1161,6 +1150,13 @@ proxies:
   type: vmess
   udp: true
   uuid: 22550b74-3ebf-49b5-ea36-3078b5d47ed9
+- name: 25|[Trojan] 未知 TROJAN-517 | free-...
+  password: 92690597d6298061459918a371e8d77d
+  port: 443
+  server: 47.242.225.242
+  skip-cert-verify: false
+  sni: hezijiasuqi.com
+  type: trojan
 - name: 25,26|美国 210
   network: ws
   password: vip
@@ -1178,9 +1174,9 @@ proxies:
 - name: 30|🇭🇰 香港 电讯盈科有限公司
   password: BxceQaOe
   port: 443
-  server: 219.79.186.107
+  server: 58.152.25.242
   skip-cert-verify: false
-  sni: t.me%25252Fripaojiedian
+  sni: t.me%252Fripaojiedian
   type: trojan
 - alterId: 2
   cipher: auto
@@ -1195,32 +1191,10 @@ proxies:
 - name: '30,33,34,37|🇭🇰 香港3|@stairnode #1'
   password: 79314e99f0a473fe86efc7827942ad00
   port: 443
-  server: 58.152.18.78
+  server: 58.152.110.154
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '30,33,34,37|🇭🇰 香港5|@stairnode #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.242
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: '30,33,34,37|🇭🇰 香港6|@stairnode #1'
-  network: ws
-  port: 80
-  server: fe3a9432-sv0xs0-sywkhi-1o4kv.hk3.p5pv.com
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 87b31a02-172e-11ee-a11f-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: fe3a9432-sv0xs0-sywkhi-1o4kv.hk3.p5pv.com
-    path: /
 - alterId: 2
   cipher: auto
   name: 30|🇭🇰 HK²_5|2.7MB/s|YT|X
@@ -1288,7 +1262,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 30|🇭🇰 HK-203.198.28.145-4994
+  name: '30|🇭🇰 HK-203.198.28.145-4994 #1'
   network: ws
   port: '52512'
   server: aflzzul.meiquankongjian.com
@@ -1425,6 +1399,28 @@ proxies:
   tls: false
   type: vmess
   uuid: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '30|🇫🇷 FR法国(mibei77.com 米贝节点分享) #8'
+  network: tcp
+  port: '30830'
+  server: v30.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: 30|🇭🇰 HK²_16|3.0MB/s|NF|D+|X|Keep...
+  network: ws
+  port: '80'
+  server: 06e6b075-sum4g0-sx1cxx-1tfjk.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 49396d98-f4b4-11ef-8c3f-f23c913c8d2b
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com

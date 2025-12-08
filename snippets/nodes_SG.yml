@@ -159,6 +159,26 @@ proxies:
   uuid: e9b7e121-c334-4df3-bf37-b4019d151b0f
 - alterId: 0
   cipher: auto
+  name: '7|新加坡NO.1 #1'
+  port: 45054
+  server: hxa.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 68bec5a6-dc47-4770-af65-aadba818ad35
+- alterId: 0
+  cipher: auto
+  name: '7|新加坡NO.2 #1'
+  port: 45055
+  server: hxb.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 68bec5a6-dc47-4770-af65-aadba818ad35
+- alterId: 0
+  cipher: auto
   name: 9,26|美国 302
   network: ws
   port: 443
@@ -669,12 +689,18 @@ proxies:
     headers:
       Host: d16henb377mok4.cloudfront.net
     path: /stream
+- cipher: aes-256-cfb
+  name: 11|🇸🇬 SG, Singapore
+  password: amazonskr05
+  port: 443
+  server: 13.113.17.246
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇬 SG
   h2-opts: {}
   http-opts: {}
-  name: 14| SG_233
+  name: 14| SG_171
   network: ws
   port: 58607
   server: 68.183.178.131
@@ -686,21 +712,27 @@ proxies:
   ws-headers:
     HOST: www.12333.monster
   ws-path: /
-- name: 25|[Trojan] 未知 TROJAN-1828 | free...
+- cipher: chacha20-ietf-poly1305
+  name: 25|[SS] 🇸🇬 SG SS-34 | free-nodes
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 95.173.218.203
+  type: ss
+- name: 25|[Trojan] 未知 TROJAN-1749 | free...
   password: 79314e99f0a473fe86efc7827942ad00
   port: 507
-  server: 160.16.107.37
+  server: 153.121.44.99
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 25|[Trojan] 未知 TROJAN-1765 | free...
+- name: 25|[Trojan] 未知 TROJAN-1822 | free...
   password: 79314e99f0a473fe86efc7827942ad00
   port: 1596
   server: 160.16.150.76
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 25|[Trojan] 未知 TROJAN-1900 | free...
+- name: 25|[Trojan] 未知 TROJAN-1751 | free...
   password: 79314e99f0a473fe86efc7827942ad00
   port: 3145
   server: 160.16.144.208
@@ -783,24 +815,24 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 3393cc9e-7498-4942-9bc4-c6da73080fd9
-- name: '30,33,34|🇸🇬 新加坡|@ripaojiedian #1'
-  password: 79314e99f0a473fe86efc7827942ad00
-  port: 443
-  server: 68.183.231.236
+- name: 30,33,34,37|🇸🇬 新加坡|@stairnode
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  port: 2760
+  server: 202.181.103.246
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '30,33,34|🇸🇬 新加坡2|@ripaojiedian #1'
-  password: 79314e99f0a473fe86efc7827942ad00
+- name: 30,33,34,37|🇸🇬 新加坡2|@stairnode
+  password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 507
-  server: 160.16.212.152
+  server: 160.16.233.76
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '30,33,34|🇸🇬 新加坡3|@ripaojiedian #1'
+- name: 30,33,34,37|🇸🇬 新加坡3|@stairnode
   password: BxceQaOe
-  port: 3579
-  server: 43.199.190.102
+  port: 804
+  server: 3.112.225.115
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan

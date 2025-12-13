@@ -468,16 +468,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6|日本NO.1
-  port: 45056
-  server: hxa.dashuai.help
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0f8c87b1-da8b-45cd-aabb-7710e49ad2b0
-- alterId: 0
-  cipher: auto
   name: 6|日本NO.2
   port: 45057
   server: hxb.dashuai.help
@@ -485,7 +475,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 0f8c87b1-da8b-45cd-aabb-7710e49ad2b0
+  uuid: 1f3025de-56ae-487c-9f6c-c4a3431808ea
+- alterId: 0
+  cipher: auto
+  name: 6|日本NO.1
+  port: 45056
+  server: hxa.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1f3025de-56ae-487c-9f6c-c4a3431808ea
 - alterId: 0
   cipher: auto
   name: 9|JP | 日本 LB-1T
@@ -998,54 +998,47 @@ proxies:
     headers:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
-- cipher: aes-128-gcm
-  name: 11|🇯🇵
-  password: shadowsocks
+- alterId: 0
+  cipher: auto
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 14| JP_84
+  network: ws
   port: 443
-  server: 149.22.87.240
-  type: ss
-- cipher: aes-256-cfb
-  name: 11|🇯🇵 JP, Osaka
-  password: amazonskr05
-  port: 443
-  server: 18.136.197.165
-  type: ss
-- cipher: aes-256-cfb
-  name: 11|🇯🇵 JP, Tokyo 2
-  password: amazonskr05
-  port: 443
-  server: 13.250.25.159
-  type: ss
-- cipher: aes-256-cfb
-  name: 11|🇯🇵 JP, Tokyo
-  password: amazonskr05
-  port: 443
-  server: 54.199.83.184
-  type: ss
+  server: seoul03.zgjok.com
+  servername: seoul03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-headers:
+    HOST: seoul03.zgjok.com
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 25|[SS] 🇯🇵 JP SS-96 | free-nodes
   password: xgoOsyyBv2Yn4w0hSqjsNqf5IGbIETZ6
   port: 443
   server: 5.253.41.46
   type: ss
-- name: '30,33,34|🇯🇵 日本|@ripaojiedian #1'
+- name: '30,33,34,37|🇯🇵 日本|@stairnode #1'
   password: BxceQaOe
-  port: 26378
-  server: 3.112.202.47
+  port: 1924
+  server: 52.195.194.77
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '30,33,34|🇯🇵 日本2|@ripaojiedian #1'
+- name: '30,33,34,37|🇯🇵 日本2|@stairnode #1'
   password: 76d630f2af6619c4a5de0ef953df3c6a
-  port: 3093
-  server: 153.121.65.107
+  port: 1331
+  server: 160.16.70.180
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '30,33,34|🇯🇵 日本3|@ripaojiedian #1'
+- name: '30,33,34,37|🇯🇵 日本3|@stairnode #1'
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 3093
-  server: 153.121.53.187
+  server: 54.238.222.14
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan

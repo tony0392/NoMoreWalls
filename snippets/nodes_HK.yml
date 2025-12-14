@@ -79,12 +79,11 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 0,1,28,30|HK_128
+  name: '0,1,28|🇭🇰 HK_173 #2'
   network: ws
-  port: '80'
+  port: 80
   server: cf9c1166-sv2sg0-tcp4th-1c4g6.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
-  tls: false
   type: vmess
   uuid: 676c67c6-5e73-11ee-9a79-f23c9164ca5d
   ws-opts:
@@ -249,12 +248,11 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 0,1,28,30|HK_84
+  name: '0,1,28|🇭🇰 HK_171 #2'
   network: ws
-  port: '80'
+  port: 80
   server: 6bbeaaf6-sv4n40-t8tsp0-1szmi.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
-  tls: false
   type: vmess
   uuid: ba151628-b3a2-11ef-bdb9-f23c91cfbbc9
   ws-opts:
@@ -289,12 +287,11 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 0,1,28,30|HK_142
+  name: '0,1,28|🇭🇰 HK_104 #2'
   network: ws
-  port: '80'
+  port: 80
   server: 10cd2f16-sv2sg0-t7hu58-1q1la.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
-  tls: false
   type: vmess
   uuid: 25b46954-9a33-11ee-8b86-f23c91cfbbc9
   ws-opts:
@@ -316,7 +313,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '0,1,28|🇭🇰 HK_64 #3'
+  name: '0,1,28|🇭🇰 HK_64 #2'
   network: ws
   port: 80
   server: 4cdbea97-t53wg0-to8xn3-l4nv.hk3.p5pv.com
@@ -329,7 +326,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '0,1,28|🇭🇰 HK_66 #3'
+  name: '0,1,28|🇭🇰 HK_66 #2'
   network: ws
   port: 80
   server: dfed4efb-t4n8g0-t636g9-luwe.hk3.p5pv.com
@@ -540,16 +537,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 6|香港NO.1
-  port: 45050
-  server: hxa.dashuai.help
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1f3025de-56ae-487c-9f6c-c4a3431808ea
-- alterId: 0
-  cipher: auto
   name: 6|香港NO.2
   port: 45051
   server: hxb.dashuai.help
@@ -557,7 +544,37 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 1f3025de-56ae-487c-9f6c-c4a3431808ea
+  uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
+- alterId: 0
+  cipher: auto
+  name: 6|香港NO.1
+  port: 45050
+  server: hxa.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
+- alterId: 0
+  cipher: auto
+  name: 7|香港NO.2-GPT
+  port: 45051
+  server: hxb.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 89bc31d2-97d7-4783-a607-0ce86a2f8f4b
+- alterId: 0
+  cipher: auto
+  name: 7|香港NO.1-GPT
+  port: 45050
+  server: hxa.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 89bc31d2-97d7-4783-a607-0ce86a2f8f4b
 - alterId: 0
   cipher: auto
   name: 9|HK | 香港 LB-1V
@@ -1070,147 +1087,44 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- cipher: chacha20-ietf
-  country: 🇰 HK
-  name: 14| HK_57
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
+- cipher: aes-256-cfb
+  name: 11|🇭🇰 HK, Kowloon
+  password: amazonskr05
+  port: 443
+  server: 47.129.170.82
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|🇭🇰 HK, New Territories
+  password: amazonskr05
+  port: 443
+  server: 54.95.5.168
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|🇭🇰 HK, Los Angeles
+  password: amazonskr05
+  port: 443
+  server: 44.244.21.125
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇰 HK
-  name: 14|🇰 HK_58
+  name: 14| HK_60
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_59
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
 - cipher: aes-256-cfb
-  country: 🇭🇰 HK
-  name: 14|🇭🇰 HK_60
+  country: 🇰 HK
+  name: 14|🇰 HK_61
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
-- cipher: aes-256-gcm
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_61
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 36888
-  server: ss.007.node-for-bigairport.win
-  type: ss
-- alterId: 2
+- alterId: 0
   cipher: auto
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
   name: 14|🇰 HK_62
-  network: ws
-  port: 80
-  server: d6732c26-sv8cg0-sxxbmq-1szgv.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰 HK_63
-  network: ws
-  port: 80
-  server: f42f46ca-sv0xs0-sv37gm-81nv.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 47e91fb6-25b8-df52-bc18-3cdc8548192f
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: '14|🇭🇰 HK_64 #2'
-  network: ws
-  port: 80
-  server: 5bf9e2f8-t15b40-t6eg6k-1pckg.hk3.p5pv.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 526a1128-7487-11ee-9bca-f23c913c8d2b
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰 HK_65
-  network: ws
-  port: 80
-  server: 64309899-t15b40-t2c3sq-1spnr.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 127e3f92-f714-11ef-bbb0-f23c91cfbbc9
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: '14|🇭🇰 HK_66 #2'
-  network: none
-  port: 10234
-  server: 156.245.232.15
-  skip-cert-verify: true
-  type: vmess
-  uuid: 0e9a3ed8-64d3-4adc-aa30-f7ff8f4b69ae
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰 HK_67
-  network: none
-  port: 39811
-  server: 156.245.232.15
-  skip-cert-verify: true
-  type: vmess
-  uuid: 76ee6d1f-e608-4041-b263-b74186a8ca23
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰 HK_68
-  network: none
-  port: 21246
-  server: 156.245.232.15
-  skip-cert-verify: true
-  type: vmess
-  uuid: 9526b462-c45f-4940-83b9-a204462b0744
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰 HK_69
   network: none
   port: 13852
   server: 45.207.157.29
@@ -1218,24 +1132,7 @@ proxies:
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
   ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰 HK_70
-  network: ws
-  port: 80
-  server: b8ffcda3-sv2sg0-sv37gm-81nv.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 47e91fb6-25b8-df52-bc18-3cdc8548192f
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- name: '18,22,23,25,30,33,34,37|🇭🇰 香港5|@stairnode #1'
-  network: tcp
+- name: '18,23,30,33,34,37|🇭🇰 香港5|@stairnode #1'
   password: BxceQaOe
   port: 443
   server: 219.78.209.224
@@ -1244,88 +1141,12 @@ proxies:
   tfo: false
   type: trojan
   udp: true
-- name: 18,22,23,25|[Trojan] 未知 TROJAN-1201 | free...
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.242
-  skip-cert-verify: false
-  sni: t.me%2Fripaojiedian
-  tfo: false
-  type: trojan
-  udp: true
-- name: '18,22,23,25,30,33,34,37|🇭🇰 香港4|@stairnode #1'
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.174
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tfo: false
-  type: trojan
-  udp: true
-- name: 18,22,23,25|[Trojan] 未知 TROJAN-2002 | free...
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.30.120
-  skip-cert-verify: false
-  sni: t.me%2Fripaojiedian
-  tfo: false
-  type: trojan
-  udp: true
-- name: 25|[Trojan] 未知 TROJAN-204 | free-...
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.174
-  skip-cert-verify: false
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 25|[Trojan] 未知 TROJAN-1611 | free...
-  password: 76d630f2af6619c4a5de0ef953df3c6a
-  port: 443
-  server: 58.152.110.82
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 25|[Trojan] 未知 TROJAN-2051 | free...
-  password: 92690597d6298061459918a371e8d77d
-  port: 443
-  server: 47.242.225.242
-  skip-cert-verify: false
-  sni: hezijiasuqi.com
-  type: trojan
-- name: 25|[Trojan] 未知 TROJAN-1717 | free...
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.242
-  skip-cert-verify: false
-  sni: t.me%25252Fripaojiedian
-  type: trojan
-- name: 25|[Trojan] 🇭🇰 HK TROJAN-1850 | f...
-  network: ws
-  password: vip
-  port: 8443
-  server: www.visa.com.hk
-  skip-cert-verify: false
-  sni: heihu880.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-    path: /?ed=2560
 - name: 30|🇭🇰 香港 电讯盈科有限公司
   password: BxceQaOe
   port: 443
-  server: 58.152.30.120
+  server: 58.152.18.155
   skip-cert-verify: false
   sni: t.me%25252Fripaojiedian
-  type: trojan
-- name: '30|🇭🇰 香港 电讯盈科有限公司 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.20
-  skip-cert-verify: false
-  sni: t.me%252Fripaojiedian
   type: trojan
 - alterId: 2
   cipher: auto
@@ -1347,7 +1168,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 0f227b79-c26c-4a85-a6b8-fb3f5017f0d3
-- name: '30,33,34,37|🇭🇰 香港3|@stairnode #1'
+- name: 30,33|香港3|@ripaojiedian
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 443
   server: 112.118.116.127
@@ -1356,95 +1177,39 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: 30|HK_113
+  name: '30,33,34,37|🇭🇰 香港2|@stairnode #1'
   network: ws
-  port: '80'
-  server: e0349a52-sv8cg0-t7uinf-i8ie.hk3.p5pv.com
+  port: 80
+  server: 74ebcaaa-t70f40-t8be2y-1ryup.hkt.gotochinatown.net
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 990e8f34-bd4f-11ef-bdb9-f23c91cfbbc9
+  uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 2
-  cipher: auto
-  name: 30|HK_131
-  network: ws
-  port: '80'
-  server: 2e3ac5d1-sv2sg0-t7udc0-1pqhp.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: b02327ac-a49a-11ef-a673-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 30|HK_122
-  network: ws
-  port: '80'
-  server: fb6f1580-sv2sg0-svpmdc-nx3b.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 32315324-cf6b-11ed-979b-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 30|HK_82
-  network: ws
-  port: '80'
-  server: 1b6c49f6-sv2sg0-tcmken-19les.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 30|HK_89
-  network: ws
-  port: '80'
-  server: 6de4b9d4-suk9s0-t8ro7t-1ey07.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 203d1d64-3313-11ed-bb74-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 30|HK_114
-  network: ws
-  port: '80'
-  server: 4f8acdc9-sv0xs0-sw5wi7-ufc0.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 30|HK_111
-  network: ws
-  port: '80'
-  server: 548481b2-sv2sg0-t2hqlr-1s3mx.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: b58095f0-52dc-11ef-bc74-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+- name: '30,33,34,37|🇭🇰 香港3|@stairnode #1'
+  password: e2722c0fb503f8a592436c12bce0509a
+  port: 443
+  server: 112.118.116.198
+  skip-cert-verify: false
+  sni: www.baidu.com
+  type: trojan
+- name: '30,33,34,37|🇭🇰 香港4|@stairnode #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.18.155
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '30,33,34,37|🇭🇰 香港6|@stairnode #1'
+  password: c9f83e78-e03b-4080-b882-d8676e52adaa
+  port: 49213
+  server: 120.232.218.114
+  skip-cert-verify: false
+  sni: t.me%2FWangCai2
+  type: trojan
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158
@@ -1457,24 +1222,6 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: '34,37|🇭🇰 香港|@stairnode #1'
-  port: 30807
-  server: v10.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: '34,37|🇭🇰 香港2|@stairnode #1'
-  port: 59501
-  server: 183.236.97.72
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 0f227b79-c26c-4a85-a6b8-fb3f5017f0d3
 - alterId: 0
   name: 35|trojan1 CN
   password: BxceQaOe

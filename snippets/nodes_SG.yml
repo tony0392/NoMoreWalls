@@ -139,16 +139,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|新加坡NO.1
-  port: 45054
-  server: hxa.dashuai.help
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1f3025de-56ae-487c-9f6c-c4a3431808ea
-- alterId: 0
-  cipher: auto
   name: 6|新加坡NO.2
   port: 45055
   server: hxb.dashuai.help
@@ -156,7 +146,37 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 1f3025de-56ae-487c-9f6c-c4a3431808ea
+  uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
+- alterId: 0
+  cipher: auto
+  name: 6|新加坡NO.1
+  port: 45054
+  server: hxa.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
+- alterId: 0
+  cipher: auto
+  name: '7|新加坡NO.2 #1'
+  port: 45055
+  server: hxb.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 89bc31d2-97d7-4783-a607-0ce86a2f8f4b
+- alterId: 0
+  cipher: auto
+  name: '7|新加坡NO.1 #1'
+  port: 45054
+  server: hxa.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 89bc31d2-97d7-4783-a607-0ce86a2f8f4b
 - alterId: 0
   cipher: auto
   name: 9|SG | 新加坡 LB-1A
@@ -669,12 +689,18 @@ proxies:
     headers:
       Host: d16henb377mok4.cloudfront.net
     path: /stream
+- cipher: aes-256-cfb
+  name: 11|🇸🇬 SG, Singapore
+  password: amazonskr05
+  port: 443
+  server: 13.113.17.246
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇬 SG
   h2-opts: {}
   http-opts: {}
-  name: 14| SG_153
+  name: 14| SG_145
   network: ws
   port: 58607
   server: 68.183.178.131
@@ -686,88 +712,51 @@ proxies:
   ws-headers:
     HOST: www.12333.monster
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 25|[SS] 🇸🇬 SG SS-42 | free-nodes
-  password: uA1rLP5m0mMOQ8FcxRXxgr
-  port: 26515
-  server: 209.74.82.227
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25|[SS] 🇸🇬 SG SS-49 | free-nodes
-  password: 8Ij4seif85QQHfLmR0zYkQ
-  port: 48918
-  server: 209.74.82.196
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25|[SS] 🇸🇬 SG SS-74 | free-nodes
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 95.173.218.203
-  type: ss
-- name: 25|[Trojan] 未知 TROJAN-2017 | free...
-  password: 76d630f2af6619c4a5de0ef953df3c6a
-  port: 507
-  server: 160.16.233.76
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 25|[Trojan] 未知 TROJAN-1981 | free...
-  password: 76d630f2af6619c4a5de0ef953df3c6a
-  port: 3145
-  server: 160.16.153.13
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 25|[Trojan] 🇸🇬 SG TROJAN-662 | fr...
-  password: trojan
-  port: 8443
-  server: www.visa.com.sg
-  skip-cert-verify: false
-  sni: pangpi.pages.dev
-  type: trojan
-- name: '30,33,34,37|🇸🇬 新加坡|@stairnode #1'
+- name: 30,33|新加坡|@ripaojiedian
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 507
   server: 18.183.180.31
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '30,33,34,37|🇸🇬 新加坡2|@stairnode #1'
+- name: 30,33|新加坡2|@ripaojiedian
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 3145
   server: 18.183.180.31
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '30,33,34,37|🇸🇬 新加坡3|@stairnode #1'
+- name: 30,33|新加坡3|@ripaojiedian
   password: BxceQaOe
   port: 3127
   server: 18.183.180.31
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 30,33|新加坡4|@ripaojiedian
-  network: tcp
-  port: '30812'
-  server: v12.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '30,33,34,37|🇸🇬 新加坡|@stairnode #1'
+  password: e2722c0fb503f8a592436c12bce0509a
+  port: 3145
+  server: 160.16.150.76
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '30,33,34,37|🇸🇬 新加坡2|@stairnode #1'
+  password: e2722c0fb503f8a592436c12bce0509a
+  port: 1507
+  server: 160.16.68.250
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '30,33,34,37|🇸🇬 新加坡3|@stairnode #1'
+  password: BxceQaOe
+  port: 804
+  server: 16.162.21.116
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - name: 31|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '34,37|🇸🇬 新加坡4|@stairnode #1'
-  port: 30812
-  server: v12.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484

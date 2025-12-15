@@ -23,6 +23,13 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 14| RU_145
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 45.159.250.190
+  type: ss
 - cipher: aes-256-cfb
   country: 🇺 RU
   name: 14,22,27|_MD_->🇺_RU_
@@ -30,19 +37,12 @@ proxies:
   port: 989
   server: 185.153.197.5
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14|🇺 RU_140
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 45.159.250.190
-  type: ss
 - alterId: 0
   cipher: auto
   country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺 RU_141
+  name: 14|🇺 RU_147
   network: tcp
   port: 45245
   server: ye.fxlcn.com
@@ -52,7 +52,7 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
 - country: 🇺RU
-  name: 14|🇺RU_142
+  name: 14|🇺RU_148
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: hk-full.privateip.net
@@ -66,10 +66,16 @@ proxies:
   server: 109.71.246.210
   type: ss
   udp: true
-- name: 30|🇷🇺 _RU_俄罗斯
-  password: af4b064a9c39472fb34ad8b113acdc6b
-  port: 443
-  server: 46.29.161.237
-  skip-cert-verify: true
-  sni: 46.29.161.237
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 30|🇷🇺 俄罗斯 03
+  network: ws
+  port: '2052'
+  server: yx1.xn--11x.org
+  tls: false
+  type: vmess
+  uuid: 705a4b47-c2d7-4c0e-8963-e52a18a4070b
+  ws-opts:
+    headers:
+      Host: 2112136940.online.video.downloader.0123456789ru.xn--11x.org
+    path: /

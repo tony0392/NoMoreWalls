@@ -495,7 +495,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2cde990d-bcf9-441c-8cee-58c6f9da73c8
+  uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - alterId: 0
   cipher: auto
   name: '7|日本NO.2 #1'
@@ -505,7 +505,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2cde990d-bcf9-441c-8cee-58c6f9da73c8
+  uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - alterId: 0
   cipher: auto
   name: 9|JP | 日本 LB-1T
@@ -1018,12 +1018,36 @@ proxies:
     headers:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
+- cipher: aes-128-gcm
+  name: 11|🇯🇵
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|🇯🇵 JP, Osaka
+  password: amazonskr05
+  port: 443
+  server: 18.136.197.165
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|🇯🇵 JP, Tokyo 2
+  password: amazonskr05
+  port: 443
+  server: 13.250.25.159
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|🇯🇵 JP, Tokyo
+  password: amazonskr05
+  port: 443
+  server: 54.199.83.184
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇵 JP
   h2-opts: {}
   http-opts: {}
-  name: 14| JP_76
+  name: 14| JP_74
   network: ws
   port: 443
   server: seoul03.zgjok.com
@@ -1051,40 +1075,34 @@ proxies:
 - name: '30,33,34,37|🇯🇵 日本|@stairnode #1'
   password: BxceQaOe
   port: 5156
-  server: 13.231.191.82
+  server: 13.113.164.125
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: '30,33,34,37|🇯🇵 日本2|@stairnode #1'
   password: e2722c0fb503f8a592436c12bce0509a
   port: 3093
-  server: 160.16.72.33
+  server: 153.121.45.139
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34,37|🇯🇵 日本3|@stairnode #1'
   password: e2722c0fb503f8a592436c12bce0509a
   port: 3169
-  server: 160.16.87.174
+  server: 13.231.90.117
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 30,33|日本4|@ripaojiedian
-  network: tcp
-  port: '30806'
-  server: v6.hdacd.com
-  servername: ''
-  tls: false
+  name: 30|🇯🇵 JP²_1|4.7MB/s|4%|GPT⁺|YT|TK...
+  network: ws
+  port: '443'
+  server: yg1.ygkkk.dpdns.org
+  tls: true
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: '34,37|🇯🇵 日本4|@stairnode #1'
-  port: 30806
-  server: v6.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 7a88d322-eb4a-4a59-8c62-8c60d76abf4b
+  ws-opts:
+    headers:
+      Host: jporacleyg.336697.xyz
+    path: /7a88d322-eb4a-4a59-8c62-8c60d76abf4b-vm?ed=2048

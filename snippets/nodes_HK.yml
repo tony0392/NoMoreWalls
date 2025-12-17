@@ -1087,24 +1087,6 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- cipher: aes-256-cfb
-  name: 11|🇭🇰 HK, Kowloon
-  password: amazonskr05
-  port: 443
-  server: 47.129.170.82
-  type: ss
-- cipher: aes-256-cfb
-  name: 11|🇭🇰 HK, New Territories
-  password: amazonskr05
-  port: 443
-  server: 54.95.5.168
-  type: ss
-- cipher: aes-256-cfb
-  name: 11|🇭🇰 HK, Los Angeles
-  password: amazonskr05
-  port: 443
-  server: 44.244.21.125
-  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇰 HK
   name: 14| HK_58
@@ -1112,40 +1094,51 @@ proxies:
   port: 990
   server: 203.23.128.33
   type: ss
-- cipher: chacha20-ietf
+- cipher: aes-256-cfb
   country: 🇰 HK
   name: 14|🇰 HK_59
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_60
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf
   country: 🇭🇰 HK
-  name: 14|🇰 HK_61
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 15099
-  server: ss.026.node-for-bigairport.win
+  name: 14|🇰 HK_60
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
   type: ss
-- alterId: 0
+- alterId: 2
   cipher: auto
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 14|🇰 HK_62
-  network: none
-  port: 13852
-  server: 45.207.157.29
+  name: 14|🇰 HK_61
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
   skip-cert-verify: true
   type: vmess
-  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
   ws-path: /
+- name: 18,23|[Trojan] 🇭🇰 香港 电讯盈科有限公司
+  password: BxceQaOe
+  port: 443
+  server: 219.79.214.159
+  skip-cert-verify: true
+  sni: t.me%25252Fripaojiedian
+  tfo: false
+  type: trojan
+  udp: true
+- name: '18,23,30,33,34,37|🇭🇰 香港5|@stairnode #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.30.31
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  tfo: false
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   name: 30|🇭🇰 HK²_49|18.4MB/s|2%|GPT⁺|YT|...
@@ -1190,22 +1183,41 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- name: '30,33,34,36,37,38|HK_speednode_0005 #1'
-  password: BxceQaOe
-  port: 443
-  server: 219.79.214.159
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-  udp: true
-- name: '30,33,34,36,37,38|HK_speednode_0009 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.89
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #5'
+  network: tcp
+  port: '52752'
+  server: 8.218.105.196
+  tls: false
+  type: vmess
+  uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
+- alterId: 2
+  cipher: auto
+  name: 30|🇭🇰 HK²_2|11.0MB/s|2%|GPT|YT|NF...
+  network: ws
+  port: '80'
+  server: e66ecabe-t7h340-tq9o8d-1d3bw.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 0fcf5a7a-e1b7-11ec-a352-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: e66ecabe-t7h340-tq9o8d-1d3bw.hkt.gotochinatown.net
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 30|🇭🇰 HK²_3|9.9MB/s|2%|GPT⁺|YT|NF...
+  network: ws
+  port: '80'
+  server: 6af671a9-t70f40-t7c05o-n09f.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 6af671a9-t70f40-t7c05o-n09f.hkt.gotochinatown.net
+    path: /
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158
@@ -1224,6 +1236,14 @@ proxies:
   server: 219.79.214.159
   skip-cert-verify: true
   sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
+- name: '33,36,38|HK_speednode_0009 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.89
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
   type: trojan
   udp: true
 - alterId: 0

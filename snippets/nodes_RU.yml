@@ -1,4 +1,10 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: '0,1|🇷🇺_RU_俄罗斯_1 #1'
+  password: HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk
+  port: 443
+  server: 194.246.114.101
+  type: ss
 - alterId: 0
   cipher: auto
   name: 2|🇷🇺 莫斯科专线
@@ -23,20 +29,58 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 14| RU_134
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 45.159.250.190
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 18,22,30|🇸🇬 俄罗斯 新西伯利亚justhost
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 14,22,30|🇸🇬 俄罗斯 新西伯利亚justhost
   network: none
   port: '34895'
   server: 2.56.242.210
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇷🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺 RU_136
+  network: tcp
+  port: 45215
+  server: fa.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - name: '33,36,38|RU_speednode_0018 #1'
   network: ws
   password: 5a2c16f9
   port: 443
   server: cf.130519.xyz
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- name: '33,36,38|RU_speednode_0020 #1'
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: freeyx.cloudflare88.eu.org
   skip-cert-verify: false
   sni: snippets.kkii.eu.org
   type: trojan

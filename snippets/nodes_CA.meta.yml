@@ -72,39 +72,24 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- cipher: aes-256-cfb
+  name: 11|🇨🇦 CA, Vancouver
+  password: amazonskr05
+  port: 443
+  server: 54.200.54.11
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 14|CA_31
+  name: 14|🇦CA_32
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
-- name: 18,23,30|🇨🇦 加拿大多伦多 V2CROSS.COM
-  password: 6pRjKQJ0CWyFtG.9
-  port: 12990
-  server: 198.57.27.27
-  skip-cert-verify: false
-  tfo: false
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|🔴_🇨🇦_💻_github.com/Ruk1ng001_36...
-  password: S6jUK9Fw5fMHgNqlqXObHZWv8Tf4nEkm
-  port: 443
-  server: 193.203.203.66
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|🟠_🇨🇦_💻_github.com/Ruk1ng001_65...
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 23.95.76.59
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 23|[VMess] 🇨🇦 _CA_加拿大
+  name: 23,30|🇨🇦 _CA_加拿大
   network: ws
-  port: 80
+  port: '80'
   server: 108.181.10.17
   skip-cert-verify: true
   tfo: false
@@ -113,6 +98,8 @@ proxies:
   udp: true
   uuid: 474e8680-701f-11ee-b436-205c6d5f5d78
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto

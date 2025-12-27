@@ -769,58 +769,31 @@ proxies:
   type: ss
 - cipher: chacha20-ietf
   country: 🇰 HK
-  name: 14| HK_56
+  name: 14| HK_53
   password: asd123456
   port: 8388
   server: 103.36.91.23
   type: ss
-- cipher: aes-256-gcm
-  country: 🇰 HK
-  name: 14|🇰 HK_57
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 36888
-  server: ss.007.node-for-bigairport.win
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 14|🇰 HK_58
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_59
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
-  type: ss
 - cipher: aes-256-cfb
   country: 🇭🇰 HK
-  name: 14|🇭🇰 HK_60
+  name: 14|🇰 HK_54
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
-- alterId: 0
+- cipher: chacha20-ietf-poly1305
+  country: 🇰 HK
+  name: 14|🇰 HK_55
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- alterId: 2
   cipher: auto
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 14|🇰 HK_61
-  network: none
-  port: 13852
-  server: 45.207.157.29
-  skip-cert-verify: true
-  type: vmess
-  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰 HK_62
+  name: 14|🇰 HK_56
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -828,15 +801,19 @@ proxies:
   type: vmess
   uuid: d70a9508-5477-11ef-bf61-f23c913c8d2b
   ws-path: /
-- name: '18,23,30,33,34,37|🇭🇰 香港4|@stairnode #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
+- alterId: 0
+  cipher: auto
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰 HK_57
+  network: none
+  port: 13852
+  server: 45.207.157.29
   skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tfo: false
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+  ws-path: /
 - cipher: aes-128-gcm
   name: 20|HK香港(mibei77.com 米贝节点分享)
   password: XMj65epCcyjN6DSqz0W0VLlZWaW+XLQdMftFQIXff6s=
@@ -898,16 +875,16 @@ proxies:
 - name: 30|🇭🇰 香港 电讯盈科有限公司
   password: BxceQaOe
   port: 443
-  server: 203.198.84.221
-  skip-cert-verify: false
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: '30|🇭🇰 香港 电讯盈科有限公司 #1'
-  password: BxceQaOe
-  port: 443
   server: 58.152.46.60
   skip-cert-verify: false
-  sni: t.me%252Fripaojiedian
+  sni: t.me%25252Fripaojiedian
+  type: trojan
+- name: 30|🇭🇰 香港 Amazon数据中心
+  password: BxceQaOe
+  port: 3579
+  server: 18.167.99.12
+  skip-cert-verify: false
+  sni: t.me%2525252Fripaojiedian
   type: trojan
 - alterId: 2
   cipher: auto
@@ -919,13 +896,40 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '30,33,34,37|🇭🇰 香港5|@stairnode #1'
-  password: BxceQaOe
+- name: '30,33,34,37|🇭🇰 香港3|@stairnode #1'
+  password: f36f4495b4b26cc2fe346cfa23e05b1b
   port: 443
-  server: 203.198.84.221
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
+  server: 112.118.116.8
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
+- name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #1'
+  password: bcb12795-9b04-4293-93e5-42f448481532
+  port: 35502
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #2'
+  password: 9c206dfa-409d-4814-8091-1547da8ec868
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #3'
+  network: ws
+  port: '80'
+  server: dDdCCVFg.922922.SHOP
+  tls: false
+  type: vmess
+  uuid: bce0c7cb-08d1-46a7-b77b-7bff8b46252f
+  ws-opts:
+    headers:
+      Host: dDdCCVFg.922922.SHOP
+    path: /RkUUbqhA9GJZBROjL3Q5vTymr
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158
@@ -938,3 +942,11 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
+- name: 38|HK_speednode_0002
+  password: BxceQaOe
+  port: 443
+  server: 203.198.84.221
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true

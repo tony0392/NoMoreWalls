@@ -1042,23 +1042,6 @@ proxies:
   port: 443
   server: 54.199.83.184
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 14| JP_100
-  network: ws
-  port: 443
-  server: seoul03.zgjok.com
-  servername: seoul03.zgjok.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
-  ws-headers:
-    HOST: seoul03.zgjok.com
-  ws-path: /
 - name: 20|JP日本(mibei77.com 米贝节点分享)
   password: 5a2c16f9
   port: 443
@@ -1073,59 +1056,105 @@ proxies:
   server: hd.yuyan.vin
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 30|🇳🇬 尼日利亚 V2CROSS.COM
+  network: none
+  port: '36334'
+  server: 160.119.196.92
+  tls: false
+  type: vmess
+  uuid: 575ac7a3-0127-4420-a9ea-5ff3f6c02ac7
 - name: '30,33,34,37|🇯🇵 日本|@stairnode #1'
   password: BxceQaOe
-  port: 3194
-  server: 54.238.144.17
+  port: 26378
+  server: 54.199.47.127
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: '30,33,34,37|🇯🇵 日本2|@stairnode #1'
-  password: f36f4495b4b26cc2fe346cfa23e05b1b
-  port: 1933
-  server: 52.198.241.226
+  password: 381f2e86233720eacda26d50e9aa26da
+  port: 4006
+  server: 54.199.47.127
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34,37|🇯🇵 日本3|@stairnode #1'
-  password: f36f4495b4b26cc2fe346cfa23e05b1b
-  port: 4006
-  server: 52.198.241.226
+  password: 381f2e86233720eacda26d50e9aa26da
+  port: 1933
+  server: 54.199.47.127
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 33|#031 JP3
-  password: 09e71e3b-1f9f-44ab-9a10-02e0e10e2f05
-  port: 25010
-  server: 37.202.200.19
+- name: 33|#011 JP2 CF2
+  network: ws
+  password: 5a2c16f9
+  port: 50090
+  server: 203.137.166.120
   skip-cert-verify: true
-  sni: 37.202.200.19
+  sni: snippets.kkii.eu.org
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 33|#114 JP10
+  ws-opts:
+    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
+- name: 33|#059 JP10 CF3
   network: ws
-  port: '443'
-  server: n1753598451.74qxv.top
-  servername: n1753598451.74qxv.top
-  tls: true
-  type: vmess
-  uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
+  password: 5a2c16f9
+  port: 443
+  server: 103.53.81.139
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
   ws-opts:
     headers:
-      Host: n1753598451.74qxv.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 33|#119 JP12
+      Host: snippets.kkii.eu.org
+    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
+- name: 33|#090 JP11 CF6
   network: ws
-  port: '443'
-  server: n1753598448.74qxv.top
-  servername: n1753598448.74qxv.top
-  tls: true
-  type: vmess
-  uuid: 3cd6f849-078e-4da9-8080-a2791b51b766
+  password: 5a2c16f9
+  port: 50090
+  server: 203.137.166.120
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
   ws-opts:
     headers:
-      Host: n1753598448.74qxv.top
-    path: /
+      Host: snippets.kkii.eu.org
+    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
+- name: 33|#097 JP12 CF13
+  network: ws
+  password: 5a2c16f9
+  port: 10129
+  server: 138.2.59.96
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
+- name: 33|#134 JP16 CF23
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 103.53.81.139
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  ws-opts:
+    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
+- name: 33|#148 JP17 CF37
+  network: ws
+  password: 5a2c16f9
+  port: 10129
+  server: 138.2.59.96
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  ws-opts:
+    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2'
+- cipher: chacha20-ietf-poly1305
+  name: '34,37|🇯🇵 日本4|@stairnode #1'
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 103.106.228.247
+  type: ss

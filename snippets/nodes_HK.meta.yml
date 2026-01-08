@@ -1,4 +1,18 @@
 proxies:
+- alterId: 2
+  cipher: auto
+  name: '0,1,22,30|🇭🇰 HK²_23|2.8MB/s|0%|GPT⁺|YT|X... #2'
+  network: ws
+  port: '80'
+  server: 010ece56-t6r5s0-thd0h1-1rz5s.hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 40e084d6-0316-11f0-90e2-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 010ece56-t6r5s0-thd0h1-1rz5s.hkt.gotochinatown.net
+    path: /
 - alterId: 0
   cipher: auto
   name: 2|🇭🇰 香港NO.1
@@ -767,52 +781,33 @@ proxies:
   port: 443
   server: 44.244.21.125
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: 14| HK_55
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
 - cipher: aes-256-cfb
   country: 🇰 HK
-  name: 14|🇰 HK_56
+  name: 14| HK_52
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   country: 🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰 HK_57
-  network: none
-  port: 28985
-  server: 156.245.232.15
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbe408ad-cc35-4e4e-efca-ac5c095bb99d
-  ws-path: /
-- alterId: 0
-  cipher: auto
+  name: 14|🇰 HK_53
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- cipher: aes-256-gcm
   country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰 HK_58
-  network: none
-  port: 21246
-  server: 156.245.232.15
-  skip-cert-verify: true
-  type: vmess
-  uuid: 9526b462-c45f-4940-83b9-a204462b0744
-  ws-path: /
+  name: 14|🇰 HK_54
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 15099
+  server: ss.026.node-for-bigairport.win
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 14|🇭🇰 HK_59
+  name: 14|🇰 HK_55
   network: none
   port: 13852
   server: 45.207.157.29
@@ -820,18 +815,25 @@ proxies:
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
   ws-path: /
-- name: '18,30,33,34,37|🇭🇰 香港5|@stairnode #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.236
+- alterId: 0
+  cipher: auto
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰 HK_56
+  network: none
+  port: 28985
+  server: 156.245.232.15
   skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '18|香港+电讯盈科有限公司 #1'
+  type: vmess
+  uuid: cbe408ad-cc35-4e4e-efca-ac5c095bb99d
+  ws-path: /
+- name: 18,30|🇭🇰 香港 电讯盈科有限公司
   password: BxceQaOe
   port: 443
   server: 58.152.46.60
-  sni: t.me%25252525252Fripaojiedian
+  skip-cert-verify: false
+  sni: t.me%252Fripaojiedian
   type: trojan
 - name: '18,22,30,33,34,37|🇭🇰 香港4|@stairnode #1'
   network: tcp
@@ -841,232 +843,193 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 20|US美国(mibei77.com 米贝节点分享) 32
-  port: 30830
-  server: v30.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 2
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10024
-  server: hd.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 3
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10023
-  server: hz.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 4
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10002
-  server: hn.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 5
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10021
-  server: hd.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 6
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 11003
-  server: hn.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|US美国(mibei77.com 米贝节点分享) 11
-  password: wwzVn2ZnHfqYa6l8EWh3eY
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 8
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 11001
-  server: hn.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 9
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10012
-  server: hn.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 10
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10053
-  server: hz.yuyan.vin
-  type: ss
-  udp: true
-- name: 20|HK香港(mibei77.com 米贝节点分享) 12
+- name: 19|香港(yudou789.top 玉豆免费节点)_1
+  network: ws
   password: 5a2c16f9
   port: 443
-  server: 104.17.167.134
+  server: 219.76.13.180
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: 19|港(yudou789.top 玉豆免费节点)_3
+  network: ws
+  password: 5a2c16f9
+  port: 36619
+  server: 118.141.64.192
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: 19|港(yudou789.top 玉豆免费节点)_4
+  network: ws
+  password: 5a2c16f9
+  port: 10002
+  server: 223.16.138.113
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: 19|香港(yudou789.top 玉豆免费节点)_6
+  network: ws
+  password: 5a2c16f9
+  port: 10201
+  server: 223.16.138.113
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: 19|香港(yudou789.top 玉豆免费节点)_16
+  network: ws
+  password: 5a2c16f9
+  port: 8443
+  server: 152.32.215.105
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: 19|香港(yudou789.top 玉豆免费节点)_20
+  network: ws
+  password: 5a2c16f9
+  port: 46639
+  server: 192.131.142.161
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: 19|香港(yudou789.top 玉豆免费节点)_21
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 47.76.218.163
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: 19|香港(yudou789.top 玉豆免费节点)_22
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 8.212.27.131
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: 19|香港(yudou789.top 玉豆免费节点)_30
+  network: ws
+  password: 5a2c16f9
+  port: 12082
+  server: 141.11.149.195
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: 19|香港(yudou789.top 玉豆免费节点)_31
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 47.79.20.64
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: 19|香港(yudou789.top 玉豆免费节点)_32
+  network: ws
+  password: 5a2c16f9
+  port: 8080
+  server: 85.208.104.34
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: Telegram🇨🇳WangCai2
+- name: 20|HK香港(mibei77.com 米贝节点分享)
+  password: 5a2c16f9
+  port: 443
+  server: 47.79.20.64
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 13
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10005
-  server: hn.yuyan.vin
-  type: ss
+- name: 20|HK香港(mibei77.com 米贝节点分享) 2
+  password: 5a2c16f9
+  port: 443
+  server: 8.212.27.131
+  skip-cert-verify: true
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 14
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10047
-  server: hn.yuyan.vin
-  type: ss
+- name: 20|HK香港(mibei77.com 米贝节点分享) 3
+  password: 5a2c16f9
+  port: 36619
+  server: 118.141.64.192
+  skip-cert-verify: true
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 15
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10048
-  server: hn.yuyan.vin
-  type: ss
+- name: 20|HK香港(mibei77.com 米贝节点分享) 4
+  password: 5a2c16f9
+  port: 443
+  server: 47.76.218.163
+  skip-cert-verify: true
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 16
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10007
-  server: hd.yuyan.vin
-  type: ss
+- name: 20|HK香港(mibei77.com 米贝节点分享) 5
+  password: 5a2c16f9
+  port: 8443
+  server: 152.32.215.105
+  skip-cert-verify: true
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 17
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10011
-  server: hn.yuyan.vin
-  type: ss
+- name: 20|HK香港(mibei77.com 米贝节点分享) 6
+  password: 5a2c16f9
+  port: 443
+  server: 219.76.13.180
+  skip-cert-verify: true
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 18
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10008
-  server: hd.yuyan.vin
-  type: ss
+- name: 20|HK香港(mibei77.com 米贝节点分享) 7
+  password: 5a2c16f9
+  port: 443
+  server: 219.76.13.167
+  skip-cert-verify: true
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 19
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10017
-  server: hd.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 20
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10040
-  server: hn.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 21
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10009
-  server: hd.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 22
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10050
-  server: hn.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 23
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10039
-  server: hd.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 24
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10022
-  server: hn.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 25
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 11004
-  server: hn.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 26
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10033
-  server: hn.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 27
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10019
-  server: hd.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 28
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10010
-  server: hn.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 29
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10030
-  server: hn.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 30
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 11002
-  server: hn.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 31
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10044
-  server: hd.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 32
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10038
-  server: hn.yuyan.vin
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|HK香港(mibei77.com 米贝节点分享) 33
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 10013
-  server: hn.yuyan.vin
-  type: ss
+- name: 20|HK香港(mibei77.com 米贝节点分享) 8
+  password: 5a2c16f9
+  port: 8443
+  server: 192.142.4.33
+  skip-cert-verify: true
+  type: trojan
   udp: true
 - alterId: 2
   cipher: auto
@@ -1078,124 +1041,23 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
+- alterId: 0
   cipher: auto
   name: 30,33|香港2|@ripaojiedian
   network: tcp
-  port: '30809'
-  server: v9.hdacd.com
+  port: '19226'
+  server: jy-hk.kunlun07dns.com
   servername: ''
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 30|🇭🇰 HK香港(mibei77.com 米贝节点分享)
-  password: 5a2c16f9
+  uuid: 48d361a8-e9a1-3c28-9b51-47775d62077e
+- name: '30,33,34,37|🇭🇰 香港5|@stairnode #1'
+  password: BxceQaOe
   port: 443
-  server: 47.79.20.64
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
+  server: 58.152.18.21
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
   type: trojan
-- name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #1'
-  password: 5a2c16f9
-  port: 443
-  server: 8.212.27.131
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
-- name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #2'
-  password: 5a2c16f9
-  port: 36619
-  server: 118.141.64.192
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
-- name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #3'
-  password: 5a2c16f9
-  port: 443
-  server: 47.76.218.163
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
-- name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #4'
-  password: 5a2c16f9
-  port: 8443
-  server: 152.32.215.105
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
-- name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #5'
-  password: 5a2c16f9
-  port: 443
-  server: 219.76.13.180
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
-- name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #6'
-  password: 5a2c16f9
-  port: 443
-  server: 219.76.13.167
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
-- name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #7'
-  password: 5a2c16f9
-  port: 8443
-  server: 192.142.4.33
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 30|🇭🇰 HK²_76|1.1MB/s|0%|YT|NF|X|[...
-  network: ws
-  port: '80'
-  server: 6acf7544-t6r5s0-tnkuks-wujn.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 6acf7544-t6r5s0-tnkuks-wujn.hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 30|🇭🇰 HK²_17|0.9MB/s|0%|GPT|YT|X|...
-  network: ws
-  port: '80'
-  server: 9c402b0d-t70f40-tfeciy-1iddy.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 9c402b0d-t70f40-tfeciy-1iddy.hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 30|🇭🇰 HK²_66|0.6MB/s|0%|YT|NF|X|H...
-  network: ws
-  port: '80'
-  server: bdcfc55c-t70f40-tonrqx-1khwf.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: bdcfc55c-t70f40-tonrqx-1khwf.hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 30|🇭🇰 HK²_27|7.1MB/s|0%|YT|X|[原生|...
-  network: ws
-  port: '80'
-  server: 203a83c0-t70f40-t9uin7-19ord.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: dcdb1278-4b7d-11ed-bb74-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 203a83c0-t70f40-t9uin7-19ord.hkt.gotochinatown.net
-    path: /
 - alterId: 2
   cipher: auto
   name: 30|🇭🇰 HK-42.98.241.59-5038
@@ -1237,19 +1099,6 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 30|🇭🇰 HK²_23|2.8MB/s|0%|GPT⁺|YT|X...
-  network: ws
-  port: '80'
-  server: 010ece56-t6r5s0-thd0h1-1rz5s.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 40e084d6-0316-11f0-90e2-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 010ece56-t6r5s0-thd0h1-1rz5s.hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
   name: 30|🇭🇰 HK²_18|1.6MB/s|0%|GPT|YT|X|...
   network: ws
   port: '80'
@@ -1263,32 +1112,6 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 30|🇭🇰 HK²_30|4.3MB/s|0%|YT|X|[原生|...
-  network: ws
-  port: '80'
-  server: 71ac3d4f-t6r5s0-t85e8f-141tv.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 71ac3d4f-t6r5s0-t85e8f-141tv.hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 30|🇭🇰 HK²_53|1.8MB/s|0%|YT|NF|X|[...
-  network: ws
-  port: '80'
-  server: 6fdda999-t70f40-tlm64c-xm0q.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 3437f34e-1b77-11eb-8684-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 6fdda999-t70f40-tlm64c-xm0q.hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
   name: 30|🇭🇰 HK²_75|4.4MB/s|0%|YT|NF|X|[...
   network: ws
   port: '80'
@@ -1299,19 +1122,6 @@ proxies:
   ws-opts:
     headers:
       Host: 6c4abe27-t70f40-tfjz9x-1t5n1.hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 30|🇭🇰 HK²_8|5.5MB/s|0%|YT|X|[原生|住...
-  network: ws
-  port: '80'
-  server: 2cdfba7a-t70f40-t9lc3n-z93q.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 40639730-e027-11ea-87ad-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 2cdfba7a-t70f40-t9lc3n-z93q.hkt.gotochinatown.net
     path: /
 - alterId: 2
   cipher: auto
@@ -1352,6 +1162,32 @@ proxies:
     headers:
       Host: afd934fd-t7ixs0-0-1t0fu.hkt.gotochinatown.net
     path: /
+- alterId: 0
+  cipher: auto
+  name: 30|🇭🇰 HK-8.210.166.22-0466
+  network: ws
+  port: '443'
+  server: n1761214911.74qxv.top
+  tls: true
+  type: vmess
+  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+  ws-opts:
+    headers:
+      Host: n1761214911.74qxv.top
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 30|🇭🇰 HK-42.98.241.59-0368
+  network: ws
+  port: '80'
+  server: 74ebcaaa-t70f40-t8be2y-1ryup.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 74ebcaaa-t70f40-t8be2y-1ryup.hkt.gotochinatown.net
+    path: /
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158
@@ -1364,18 +1200,18 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: '34,37|🇭🇰 香港2|@stairnode #1'
-  port: 30809
-  server: v9.hdacd.com
+  http-opts:
+    method: GET
+    path:
+    - /使用此节点需要先沐浴焚香然后给群主磕800个响头(ಡωಡ)
+  name: 36,38|HK_speednode_0007
+  network: http
+  port: 53947
+  server: 156.245.232.15
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: chacha20-ietf-poly1305
-  name: '34,37|🇭🇰 香港6|@stairnode #1'
-  password: sxnCPKb70DGRo62-goXFVHrjzF-5oMbD
-  port: 33007
-  server: 103.109.23.165
-  type: ss
+  udp: true
+  uuid: 8cb243df-fa82-472c-be25-b00acd4fcd3f

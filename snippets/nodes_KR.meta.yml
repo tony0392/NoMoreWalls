@@ -245,18 +245,31 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇷 KR
+  name: 14|🇷 KR_81
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷 KR
   name: 14,39|218.237.185.230_Claude
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
   type: ss
-- cipher: aes-256-cfb
-  country: 🇰🇷 KR
-  name: 14|🇰🇷 KR_75
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 18|韩国 首尔Oracle云计算数据中心
+  network: ws
+  port: 2087
+  server: lv4.789900.xyz
+  tls: true
+  type: vmess
+  uuid: 7dd16ab1-2a36-4b32-86fd-eb49fb039752
+  ws-opts:
+    headers:
+      Host: lv4.789900.xyz
+    path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
 - name: 19|韩国(yudou789.top 玉豆免费节点)_1
   network: ws
   password: 5a2c16f9
@@ -477,6 +490,20 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- name: 22,39|121.169.46.116_Gemini_Claude
+  port: 1090
+  server: 121.169.46.116
+  type: socks5
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 22|🟡_🇰🇷_📶_github.com/Ruk1ng001_38...
+  password: qwerREWQ@@
+  port: 44112
+  server: 168.126.234.230
+  tfo: true
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 22|❓_🇰🇷_📶_github.com/Ruk1ng001_39...
@@ -495,29 +522,6 @@ proxies:
   tfo: true
   type: ss
   udp: true
-- name: 22,39|121.169.46.116_Gemini_Claude
-  port: 1090
-  server: 121.169.46.116
-  type: socks5
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 22|❓_🇰🇷_📶_github.com/Ruk1ng001_31...
-  password: qwerREWQ@@
-  port: 41240
-  server: 221.139.79.41
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 22|🟡_🇰🇷_📶_github.com/Ruk1ng001_38...
-  password: qwerREWQ@@
-  port: 44112
-  server: 168.126.234.230
-  tfo: true
-  type: ss
-  udp: true
 - name: 31|韩国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
@@ -532,19 +536,4 @@ proxies:
   server: 152.70.92.69
   tls: false
   type: vmess
-  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 36|KR_54349_0019
-  network: http
-  port: 80
-  server: 152.70.92.69
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
   uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b

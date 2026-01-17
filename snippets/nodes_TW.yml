@@ -125,7 +125,14 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- name: 19,33|HK178｜原生/疑似家宽｜非常安全
+- name: 18,22,33|HK24｜原生/疑似家宽｜非常安全
+  password: c91410bb-b777-4daf-988b-d5445d143e6b
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 19|台灣
   network: tcp
   password: b7aa4e87-d990-4f2d-8880-73b206953efc
   port: 31102
@@ -134,3 +141,23 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
+- name: 33|TW4｜机房｜低风险
+  password: 37eb07c6-7ecb-4955-86dc-6284c5dc3b5c
+  port: 41274
+  server: xiaozhu1.kkieo555.cn
+  skip-cert-verify: true
+  sni: douyin.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 33|TW5｜机房｜低风险
+  network: ws
+  port: '12888'
+  server: gtm1.ktmwan.net
+  tls: false
+  type: vmess
+  uuid: 4ff18004-8e47-4a8f-bc85-d317d888ed99
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /

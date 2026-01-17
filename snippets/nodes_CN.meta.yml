@@ -11,66 +11,37 @@ proxies:
   port: 11201
   server: 154.205.147.237
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 18,22,30,33|US29｜原生/疑似家宽｜非常安全
-  network: tcp
-  port: '47084'
-  server: tunnel1.qqa678.com
-  tls: false
-  type: vmess
-  uuid: 3fc3310d-fd84-4933-b370-8cb2d565fab9
-- alterId: 0
-  cipher: auto
-  name: 18,33|HK151｜机房｜低风险
-  network: tcp
-  port: '47081'
-  server: oss-4.qqa678.com
-  tls: false
-  type: vmess
-  uuid: e49b8721-f124-4999-814a-fc777c0ae190
-- cipher: aes-128-gcm
-  name: 22|🟡_🇨🇳_📶_github.com/Ruk1ng001_32...
-  password: b637f2e47b7827b308ebf399008075d2
-  port: 53596
-  server: 223.95.183.132
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  name: '22,34,37|🇸🇬 新加坡4|@stairnode #1'
-  password: b637f2e47b7827b308ebf399008075d2
-  port: 25819
-  server: 223.95.183.132
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: '22,34,37|🇯🇵 日本4|@stairnode #1'
-  password: b637f2e47b7827b308ebf399008075d2
-  port: 26334
-  server: 223.95.183.132
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: '22|🟡_🇨🇳_📶_github.com/Ruk1ng001_38... #1'
-  password: b637f2e47b7827b308ebf399008075d2
-  port: 47116
-  server: 223.95.183.132
-  type: ss
-  udp: true
 - alterId: 64
   cipher: auto
-  name: 22,33|CN2｜家宽｜非常安全
+  country: 🇳 CN
+  h2-opts: {}
+  http-opts: {}
+  name: 14,22,33|CN2｜家宽｜非常安全
   network: tcp
   port: '59003'
   server: 183.236.51.36
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
+- country: 🇨 CN
+  name: 14|🇳 CN_33
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 3462
+  server: a03.taipeicitygovernment.cn.ua
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 22,30,33|US116｜原生/疑似家宽｜非常安全
+  network: tcp
+  port: '47084'
+  server: 120.198.71.161
+  tls: false
+  type: vmess
+  uuid: 3fc3310d-fd84-4933-b370-8cb2d565fab9
 - alterId: 0
   cipher: aes-256-gcm
   name: 22|🟡_🇨🇳_📶_github.com/Ruk1ng001_31...
@@ -80,17 +51,42 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- name: '30|_CN_中国 #1'
-  password: a545b52f-f4e4-4fcf-a0ec-059a483b5801
-  port: 41273
-  server: xiaozhu1.kkieo555.cn
-  skip-cert-verify: true
-  sni: douyin.com
-  type: trojan
-- name: '30|_CN_中国 #2'
-  password: ab9273cc-c5a1-4624-8244-04501ea41dec
-  port: 49214
-  server: xiaozhu1.kkieo555.cn
-  skip-cert-verify: true
-  sni: douyin.com
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 33|CN3｜家宽｜非常安全
+  network: ws
+  port: '80'
+  server: 61.184.8.51
+  tls: false
+  type: vmess
+  uuid: 927d2b5e-a8ac-4e52-a9f6-0521c6e9af7e
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 33|CN4｜家宽｜非常安全
+  network: ws
+  port: '80'
+  server: 60.215.152.142
+  tls: false
+  type: vmess
+  uuid: 927d2b5e-a8ac-4e52-a9f6-0521c6e9af7e
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 33|CN5｜家宽｜非常安全
+  network: ws
+  port: '80'
+  server: 36.151.251.63
+  tls: false
+  type: vmess
+  uuid: 927d2b5e-a8ac-4e52-a9f6-0521c6e9af7e
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /

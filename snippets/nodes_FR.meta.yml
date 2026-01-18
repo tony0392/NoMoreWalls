@@ -71,7 +71,7 @@ proxies:
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 14| FR_42
+  name: 14| FR_37
   network: ws
   port: 443
   server: 91.134.8.101
@@ -81,23 +81,15 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
 - country: 🇷FR
-  name: 14|🇷FR_43
-  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
+  name: 14|🇷FR_38
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
-  server: fr-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇷FR
-  name: 14|🇷FR_44
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: 198.244.190.189
+  server: de-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 14|🇫🇷FR_45
+  name: 14|🇷FR_39
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -105,10 +97,18 @@ proxies:
   type: trojan
   udp: true
 - country: 🇫🇷FR
-  name: 14|🇫🇷FR_46
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
+  name: 14|🇫🇷FR_40
+  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
-  server: de-full.privateip.net
+  server: fr-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇷FR
+  name: 14|🇫🇷FR_41
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: 198.244.190.189
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -125,42 +125,43 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- alterId: 0
+- name: 33|FR1｜机房｜低风险
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.180.16.16
+  skip-cert-verify: true
+  sni: 35.180.16.16
+  type: trojan
+- alterId: 2
   cipher: auto
-  name: 33|FR5｜机房｜低风险
-  network: ws
-  port: '12898'
-  server: gtm1.ktmwan.net
+  name: 33|FR2｜机房｜低风险
+  network: tcp
+  port: '30835'
+  server: v35.hdacd.com
   tls: false
   type: vmess
-  uuid: 4ff18004-8e47-4a8f-bc85-d317d888ed99
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 33|FR6｜机房｜低风险
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 33|FR6｜机房｜低风险
   network: ws
-  port: '12886'
-  server: gtm1.ktmwan.net
-  tls: false
-  type: vmess
-  uuid: 4ff18004-8e47-4a8f-bc85-d317d888ed99
+  password: iwangjie
+  port: 2053
+  server: 141.94.68.216
+  skip-cert-verify: true
+  sni: nodes.830901.xyz
+  type: trojan
   ws-opts:
     headers:
-      Host: baidu.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 33|FR7｜机房｜低风险
+      Host: nodes.830901.xyz
+    path: '%2F%3Fed%3D2560'
+- name: 33|FR4｜机房｜低风险
   network: ws
-  port: '12899'
-  server: gtm1.ktmwan.net
-  tls: false
-  type: vmess
-  uuid: 4ff18004-8e47-4a8f-bc85-d317d888ed99
+  password: iwangjie
+  port: 2053
+  server: 141.94.68.216
+  skip-cert-verify: true
+  sni: nodes.830901.xyz
+  type: trojan
   ws-opts:
     headers:
-      Host: baidu.com
-    path: /
+      Host: nodes.830901.xyz
+    path: '%2F'

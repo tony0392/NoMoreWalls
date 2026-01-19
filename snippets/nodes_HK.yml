@@ -781,40 +781,39 @@ proxies:
   port: 443
   server: 44.244.21.125
   type: ss
-- cipher: aes-256-gcm
-  country: 🇰 HK
-  name: 14| HK_52
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 15099
-  server: ss.026.node-for-bigairport.win
-  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇰 HK
-  name: 14|🇰 HK_53
+  name: 14| HK_55
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
-- cipher: aes-256-gcm
-  country: 🇭🇰 HK
-  name: 14|🇰 HK_54
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 10079
-  server: ss.030.node-for-bigairport.win
-  type: ss
 - cipher: chacha20-ietf
-  country: 🇭🇰 HK
-  name: 14|🇭🇰 HK_55
+  country: 🇰 HK
+  name: 14|🇰 HK_56
   password: asd123456
   port: 8388
   server: 103.36.91.23
   type: ss
+- alterId: 2
+  cipher: auto
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰 HK_57
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 14|🇰 HK_56
+  name: 14|🇰 HK_58
   network: none
   port: 13852
   server: 45.207.157.29
@@ -822,6 +821,39 @@ proxies:
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
   ws-path: /
+- alterId: 0
+  name: 18,22,33|HK55｜家宽｜非常安全
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.246
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '18,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #53'
+  network: tcp
+  port: '30812'
+  server: v12.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '18,30,33,36,38|HK_speednode_0013 #1'
+  password: 4843e94d205f3893f588255a591abe94
+  port: 443
+  server: 58.152.18.124
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- name: '18|香港+电讯盈科有限公司 #2'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.219
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - name: 19|香港_2
   network: tcp
   password: BxceQaOe
@@ -977,13 +1009,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 30|🇭🇰 香港 电讯盈科有限公司
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.246
-  skip-cert-verify: false
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - alterId: 2
   cipher: auto
   name: 30,33|香港|@ripaojiedian
@@ -997,31 +1022,30 @@ proxies:
 - name: '30,33,34,37|🇭🇰 香港3|@stairnode #1'
   password: 4843e94d205f3893f588255a591abe94
   port: 443
-  server: 58.152.18.124
+  server: 58.152.18.247
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34,37|🇭🇰 香港4|@stairnode #1'
   password: BxceQaOe
-  port: 443
-  server: 58.152.46.246
+  port: 3830
+  server: 54.95.183.161
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '30,33,34,36,37,38|HK_speednode_0014 #1'
+- name: '30,33,34,37|🇭🇰 香港5|@stairnode #1'
   password: BxceQaOe
-  port: 443
-  server: 58.152.110.50
+  port: 2266
+  server: 54.238.101.170
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-  udp: true
-- name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #2'
-  password: 4843e94d205f3893f588255a591abe94
+- name: 30,33|HK25｜机房｜低风险
+  password: 30077070-596e-48ea-9400-14c8ed07bd97
   port: 443
-  server: 58.152.18.147
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+  server: tuntro000.instconn.com
+  skip-cert-verify: true
+  sni: hkip5.686911.xyz
   type: trojan
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
@@ -1049,13 +1073,6 @@ proxies:
   skip-cert-verify: true
   sni: 58.152.110.50
   type: trojan
-- name: 33|HK32｜家宽｜非常安全
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.246
-  skip-cert-verify: true
-  sni: 58.152.46.246
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 33|HK48｜机房｜低风险
@@ -1074,21 +1091,12 @@ proxies:
   tls: false
   type: vmess
   uuid: ef5a32e2-ec6f-4d8b-b084-9736f912432c
-- alterId: 2
-  cipher: auto
-  name: 33|HK79｜机房｜低风险
-  network: tcp
-  port: '30809'
-  server: v9.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 33|HK57｜原生/疑似家宽｜非常安全
-  password: 9d23ec89-a50a-4634-b09e-37330ce09b37
-  port: 31101
-  server: green2.cdntencentmusic.com
+- name: 33|HK47｜家宽｜非常安全
+  password: BxceQaOe
+  port: 443
+  server: 58.152.110.50
   skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
+  sni: t.me%2Fripaojiedian
   type: trojan
 - name: 33|HK60｜家宽｜非常安全
   password: BxceQaOe
@@ -1096,13 +1104,6 @@ proxies:
   server: 58.152.110.50
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 33|HK61｜原生/疑似家宽｜非常安全
-  password: 259dc1a9-d8f5-4db5-924d-d846ec7fbd9b
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
   type: trojan
 - name: 33|HK62｜原生/疑似家宽｜非常安全
   password: 637d3df8-69f7-4ce0-9625-830eb609364f
@@ -1127,3 +1128,10 @@ proxies:
   tls: false
   type: vmess
   uuid: 17e96792-d8c3-4741-9c34-e5d1c11d754f
+- name: '33,36,38|HK_speednode_0014 #1'
+  password: 4843e94d205f3893f588255a591abe94
+  port: 443
+  server: 58.152.18.124
+  skip-cert-verify: true
+  type: trojan
+  udp: true

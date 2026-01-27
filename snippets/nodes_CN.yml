@@ -1,4 +1,12 @@
 proxies:
+- country: 🇳 CN
+  name: 14| CN_25
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 3462
+  server: a03.taipeicitygovernment.cn.ua
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 22,33|CN3｜家宽｜非常安全
@@ -32,25 +40,19 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '30,33|JP7｜原生/疑似家宽｜非常安全 #1'
-  network: tcp
-  port: '47083'
-  server: tunnel2.qqa678.com
-  tls: false
-  type: vmess
-  uuid: 0e497122-8ee0-44fe-b7be-6c5de6cf938b
-- name: 30,33|HK40｜家宽｜非常安全
-  password: BxceQaOe
-  port: 443
-  server: 219.76.135.98
-  skip-cert-verify: true
-  sni: 219.76.135.98
-  type: trojan
-- alterId: 0
-  cipher: auto
   name: 36,38|CN_speednode_0004
   port: 47083
   server: tunnel2.qqa678.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0e497122-8ee0-44fe-b7be-6c5de6cf938b
+- alterId: 0
+  cipher: auto
+  name: 36,38|CN_speednode_0005
+  port: 47083
+  server: tunnel1.qqa678.com
   skip-cert-verify: false
   tls: false
   type: vmess

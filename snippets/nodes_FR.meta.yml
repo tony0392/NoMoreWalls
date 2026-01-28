@@ -82,25 +82,25 @@ proxies:
   ws-path: /linkvws
 - country: 🇷FR
   name: 14|🇷FR_32
-  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
-  port: 443
-  server: fr-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇷FR
-  name: 14|🇷FR_33
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: 🇫🇷FR
-  name: 14|🇫🇷FR_34
+- country: 🇷FR
+  name: 14|🇷FR_33
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇫🇷FR
+  name: 14|🇫🇷FR_34
+  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
+  port: 443
+  server: fr-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -129,3 +129,34 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
+- name: 33|FR5｜机房｜高风险 (黑名单)
+  network: ws
+  password: iwangjie
+  port: 2053
+  server: 141.94.68.216
+  skip-cert-verify: true
+  sni: nodes.830901.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nodes.830901.xyz
+    path: '%2F%3Fed%3D2560'
+- name: 33|FR3｜机房｜低风险
+  network: ws
+  password: iwangjie
+  port: 2053
+  server: 141.94.68.216
+  skip-cert-verify: true
+  sni: nodes.830901.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nodes.830901.xyz
+    path: '%2F'
+- cipher: aes-256-cfb
+  name: 36,38|FR_speednode_0009
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
+  udp: true

@@ -767,32 +767,40 @@ proxies:
   port: 443
   server: 44.244.21.125
   type: ss
-- cipher: chacha20-ietf
-  country: 🇰 HK
-  name: 14| HK_55
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- alterId: 0
+- alterId: 2
   cipher: auto
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 14|🇰 HK_56
-  network: none
-  port: 13852
-  server: 45.207.157.29
+  name: 14| HK_59
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
   skip-cert-verify: true
   type: vmess
-  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+  uuid: 40639730-e027-11ea-87ad-f23c913c8d2b
   ws-path: /
-- name: 18,30|🇭🇰 香港 电讯盈科有限公司
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰 HK_60
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: b585dac6-dc69-11ef-9f1c-f23c913c8d2b
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- name: 18|香港+电讯盈科有限公司
   password: BxceQaOe
   port: 443
-  server: 219.76.135.98
-  skip-cert-verify: false
-  sni: 219.76.135.98
+  server: 58.152.25.130
+  sni: t.me%252Fripaojiedian
   type: trojan
 - name: 19|香港_1
   network: tcp
@@ -1895,13 +1903,6 @@ proxies:
     headers:
       Host: 010ece56-t6r5s0-thd0h1-1rz5s.hkt.gotochinatown.net
     path: /
-- name: '30|🇭🇰 香港 电讯盈科有限公司 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.45
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - alterId: 2
   cipher: auto
   name: 30,33|香港|@ripaojiedian
@@ -1913,7 +1914,7 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: '30,33,34,37|🇭🇰 香港3|@stairnode #1'
-  password: 869e9086806483ca4744a4cb0f3d6e16
+  password: c1d83c0c7d57cead4379ba14a82df69b
   port: 443
   server: 58.152.110.210
   skip-cert-verify: false
@@ -1922,135 +1923,17 @@ proxies:
 - name: '30,33,34,37|🇭🇰 香港4|@stairnode #1'
   password: BxceQaOe
   port: 2266
-  server: 95.40.75.51
+  server: 95.40.16.175
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: '30,33,34,37|🇭🇰 香港5|@stairnode #1'
   password: BxceQaOe
-  port: 2826
-  server: 52.196.16.120
+  port: 2266
+  server: 95.40.9.178
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 30|🇭🇰 HK香港(mibei77.com 米贝节点分享)-cl...
-  network: tcp
-  port: '43525'
-  server: faq1.lieerr222.cn
-  tls: false
-  type: vmess
-  uuid: 9fd7e59f-9087-4e6f-ad65-d8708f25f77a
-- alterId: 0
-  cipher: auto
-  name: 30|🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
-  network: tcp
-  port: '30812'
-  server: v12.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 30,33|TW7｜原生/疑似家宽｜非常安全
-  network: tcp
-  port: '31224'
-  server: tw.yiciyuanquicken.online
-  servername: tw.yiciyuanquicken.online
-  tls: true
-  type: vmess
-  uuid: d51abb35-94a4-4529-9244-2808beaa4624
-- alterId: 0
-  cipher: auto
-  name: 30,33|VN7｜商宽｜非常安全
-  network: tcp
-  port: '43528'
-  server: faq1.lieerr222.cn
-  tls: false
-  type: vmess
-  uuid: a50d2ea3-a221-4869-934d-ba83c0f600a5
-- alterId: 0
-  cipher: auto
-  name: 30,33|VN3｜商宽｜非常安全
-  network: tcp
-  port: '43528'
-  server: faq1.lieerr222.cn
-  tls: false
-  type: vmess
-  uuid: 1fb9173e-8ab6-489a-b229-cc7ac87df1ae
-- alterId: 0
-  cipher: auto
-  name: 30,33|VN6｜商宽｜非常安全
-  network: tcp
-  port: '43528'
-  server: faq1.lieerr222.cn
-  tls: false
-  type: vmess
-  uuid: 86199dde-be12-4285-8572-91aa55bcb646
-- alterId: 0
-  cipher: auto
-  name: 30,33|VN2｜商宽｜非常安全
-  network: tcp
-  port: '43528'
-  server: faq1.lieerr222.cn
-  tls: false
-  type: vmess
-  uuid: fb1348c8-c0c0-48a0-bb0a-753f0e7ba7da
-- alterId: 0
-  cipher: auto
-  name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享)-cl... #12'
-  network: tcp
-  port: '43527'
-  server: faq1.lieerr222.cn
-  tls: false
-  type: vmess
-  uuid: 2305ee7e-556d-4939-8711-87b42abe5c01
-- alterId: 0
-  cipher: auto
-  name: 30,33|VN8｜商宽｜非常安全
-  network: tcp
-  port: '43528'
-  server: faq1.lieerr222.cn
-  tls: false
-  type: vmess
-  uuid: 0d21bd4d-95fa-4d11-b6d3-9a433566ea59
-- alterId: 0
-  cipher: auto
-  name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享)-cl... #18'
-  network: tcp
-  port: '59510'
-  server: ffiw.owwoedu.com
-  tls: false
-  type: vmess
-  uuid: 6f927063-4f4e-43c5-9e70-8cabcb40a0ae
-- alterId: 0
-  cipher: auto
-  name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享)-cl... #20'
-  network: tcp
-  port: '43525'
-  server: faq1.lieerr222.cn
-  tls: false
-  type: vmess
-  uuid: fb08c412-24db-4a5e-9bc2-0893dde8a50d
-- alterId: 0
-  cipher: auto
-  name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享)-cl... #21'
-  network: tcp
-  port: '43525'
-  server: faq1.lieerr222.cn
-  tls: false
-  type: vmess
-  uuid: 843416e0-675e-4180-87dd-9701e2da6b00
-- alterId: 0
-  cipher: auto
-  name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享)-cl... #23'
-  network: tcp
-  port: '59510'
-  server: ffiw.owwoedu.com
-  tls: false
-  type: vmess
-  uuid: 01443adc-1846-4851-af06-4f10469240b4
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158

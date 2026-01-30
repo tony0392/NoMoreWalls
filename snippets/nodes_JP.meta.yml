@@ -1042,6 +1042,23 @@ proxies:
   port: 443
   server: 54.199.83.184
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 14| JP_72
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
+  servername: seoul03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-headers:
+    HOST: seoul03.zgjok.com
+  ws-path: /
 - cipher: chacha20-ietf
   name: 22|🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001...
   obfs: plain
@@ -1108,99 +1125,75 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 30|🇯🇵 日本 东京阿里云
-  network: ws
-  port: '443'
-  server: n1753598448.74qxv.top
-  tls: true
+  name: 30,33|VN1｜机房｜低风险
+  network: tcp
+  port: '58623'
+  server: 160.191.245.48
+  tls: false
   type: vmess
-  uuid: 3cd6f849-078e-4da9-8080-a2791b51b766
-  ws-opts:
-    headers:
-      Host: n1753598448.74qxv.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '30|🇯🇵 日本 东京阿里云 #2'
-  network: ws
-  port: '443'
-  server: n1753598451.74qxv.top
-  tls: true
-  type: vmess
-  uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
-  ws-opts:
-    headers:
-      Host: n1753598451.74qxv.top
-    path: /
+  uuid: 8d74803e-aa74-47ef-e3ae-23eeaa96f89d
 - name: '30,33,34,37|🇯🇵 日本|@stairnode #1'
   password: BxceQaOe
-  port: 2595
-  server: 57.181.41.46
+  port: 26378
+  server: 54.249.137.88
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: '30,33,34,37|🇯🇵 日本2|@stairnode #1'
   password: c1d83c0c7d57cead4379ba14a82df69b
   port: 1933
-  server: 160.16.57.238
+  server: 57.180.246.207
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34,37|🇯🇵 日本3|@stairnode #1'
   password: c1d83c0c7d57cead4379ba14a82df69b
-  port: 3423
-  server: 153.121.45.139
+  port: 4006
+  server: 43.207.157.137
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- alterId: 0
+- name: 33|JP19｜商宽｜非常安全
+  password: 407b6b2e-59e5-4466-9911-08f6f1263bc9
+  port: 54225
+  server: ptxl01.xsaym.com
+  skip-cert-verify: true
+  sni: www.volcengine.com
+  type: trojan
+- name: 33|JP20｜机房｜低风险
+  password: 407b6b2e-59e5-4466-9911-08f6f1263bc9
+  port: 54032
+  server: ptxl01.xsaym.com
+  skip-cert-verify: true
+  sni: www.volcengine.com
+  type: trojan
+- name: 33|JP21｜机房｜低风险
+  password: 407b6b2e-59e5-4466-9911-08f6f1263bc9
+  port: 54029
+  server: ptxl02.xsaym.com
+  skip-cert-verify: true
+  sni: www.volcengine.com
+  type: trojan
+- alterId: 2
   cipher: auto
-  name: 33|JP1｜原生/疑似家宽｜非常安全
+  name: 33|JP22｜机房｜低风险
   network: tcp
-  port: '47083'
-  server: tunnel2.qqa678.com
+  port: '30806'
+  server: v6.hdacd.com
   tls: false
   type: vmess
-  uuid: 2ab2ff5b-9684-4150-bec0-6bd036ae7c26
-- name: 33|JP2｜机房｜低风险
-  password: cdfb1e22-e278-4eca-8030-916b906a3169
-  port: 41273
-  server: xiaozhu1.kkieo555.cn
-  skip-cert-verify: true
-  sni: xiaozhu1.kkieo555.cn
-  type: trojan
-- name: 33|JP3｜机房｜低风险
-  password: 6c4cd8b6-2524-4dbc-97b2-f832ffd83687
-  port: 41273
-  server: xiaozhu1.kkieo555.cn
-  skip-cert-verify: true
-  sni: xiaozhu1.kkieo555.cn
-  type: trojan
-- name: 33|JP4｜机房｜低风险
-  password: d1505dbc-d89e-4c4d-8a7e-de95ec332de5
-  port: 41273
-  server: xiaozhu1.kkieo555.cn
-  skip-cert-verify: true
-  sni: xiaozhu1.kkieo555.cn
-  type: trojan
-- name: 33|JP5｜机房｜低风险
-  password: BxceQaOe
-  port: 2595
-  server: 13.158.129.83
-  skip-cert-verify: true
-  sni: 13.158.129.83
-  type: trojan
-- name: 33|JP6｜机房｜低风险
-  password: cdfb1e22-e278-4eca-8030-916b906a3169
-  port: 41273
-  server: xiaozhu1.kkieo555.cn
-  skip-cert-verify: true
-  sni: douyin.com
-  type: trojan
-- name: 33|JP7｜机房｜低风险
-  password: d1505dbc-d89e-4c4d-8a7e-de95ec332de5
-  port: 41273
-  server: xiaozhu1.kkieo555.cn
-  skip-cert-verify: true
-  sni: douyin.com
-  type: trojan
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: 33|JP26｜机房｜低风险
+  network: ws
+  port: '443'
+  server: n1753598446.wpg27.xyz
+  servername: n1753598446.wpg27.xyz
+  tls: true
+  type: vmess
+  uuid: a5047d95-24b8-451a-93e3-f2a387b93d5a
+  ws-opts:
+    headers:
+      Host: n1753598446.wpg27.xyz
+    path: /

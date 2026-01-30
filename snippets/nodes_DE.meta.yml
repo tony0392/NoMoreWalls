@@ -53,25 +53,19 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   country: 🇪 DE
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇪 DE_30
-  network: none
-  port: 18355
-  server: 92.246.87.170
-  skip-cert-verify: true
-  type: vmess
-  uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇪 DE
-  h2-opts: {}
-  http-opts: {}
   name: 14|🇪 DE_31
+  password: 54c303c2866c8399
+  port: 11201
+  server: 141.95.105.216
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇪 DE_32
   network: ws
   port: 443
   server: 141.94.155.224
@@ -88,7 +82,7 @@ proxies:
   country: 🇩🇪 DE
   h2-opts: {}
   http-opts: {}
-  name: 14|🇪 DE_32
+  name: 14|🇪 DE_33
   network: ws
   port: 443
   server: 141.95.126.134
@@ -100,8 +94,21 @@ proxies:
   ws-headers:
     HOST: jamekk.org
   ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇪 DE_34
+  network: none
+  port: 18355
+  server: 92.246.87.170
+  skip-cert-verify: true
+  type: vmess
+  uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
+  ws-path: /
 - country: 🇪DE
-  name: 14|🇪DE_33
+  name: 14|🇪DE_35
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -109,6 +116,32 @@ proxies:
   sni: de2-full.privateip.net
   type: trojan
   udp: true
+- name: 19|德國_8
+  network: ws
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  port: 443
+  server: 5.39.249.146
+  skip-cert-verify: true
+  sni: 0000.hkvip.ip-ddns.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: 0000.hkvip.ip-ddns.com
+    path: /?ed=2560
+- name: 19|德國_9
+  network: ws
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  port: 443
+  server: 194.58.33.218
+  skip-cert-verify: true
+  sni: 0000.hkvip.ip-ddns.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: 0000.hkvip.ip-ddns.com
+    path: /?ed=2560
 - name: 22|🔴🇩🇪_github.com/Ruk1ng001_d9f11...
   password: '@193.233.254.9:'
   port: 1080
@@ -158,6 +191,22 @@ proxies:
   username: Og@193.233.254.7
 - alterId: 0
   cipher: auto
+  name: 22|🔴🇩🇪[🎬📺🎪🎞️]_github.com/Ruk1ng00...
+  network: ws
+  port: 8080
+  server: 104.21.69.44
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: nasnet-511952424.mcitel.co
+    path: /nasnet/cdn
+- alterId: 0
+  cipher: auto
   name: 22|🔴🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001...
   network: ws
   port: 8080
@@ -192,27 +241,12 @@ proxies:
     headers:
       Host: 547.rtxconfigz.shop
     path: /@Malinda6104
-- name: 33|DE38｜机房｜低风险
-  network: ws
-  password: iwangjie
-  port: 2053
-  server: 135.125.232.253
-  skip-cert-verify: true
-  sni: nodes.830901.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: nodes.830901.xyz
-    path: '%2F'
-- name: 33|DE40｜机房｜低风险
-  network: ws
-  password: iwangjie
-  port: 2053
-  server: 135.125.232.253
-  skip-cert-verify: true
-  sni: nodes.830901.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: nodes.830901.xyz
-    path: '%2F%3Fed%3D2560'
+- alterId: 2
+  cipher: auto
+  name: 33|DE28｜机房｜低风险
+  network: tcp
+  port: '30833'
+  server: v33.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484

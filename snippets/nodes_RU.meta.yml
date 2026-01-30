@@ -25,21 +25,54 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14| RU_135
-  password: gKYygTcRYhc3skc2x6tZ073lYz0DnieX
-  port: 443
-  server: 5.181.21.246
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 14|🇷🇺 RU_136
+  name: 14| RU_134
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
   type: ss
-- name: 18|俄罗斯+V2CROSS.COM
-  password: ZblhWr0mqMakCPg.N
-  port: 36158
-  server: 212.193.18.144
-  sni: ya.ru
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 14|🇺 RU_135
+  password: gKYygTcRYhc3skc2x6tZ073lYz0DnieX
+  port: 443
+  server: 5.181.21.246
+  type: ss
+- name: 19|俄羅斯_2
+  network: ws
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  port: 8443
+  server: 176.109.106.61
+  skip-cert-verify: true
+  sni: 0000.hkvip.ip-ddns.com
   type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: 0000.hkvip.ip-ddns.com
+    path: /?ed=2560
+- name: 19|俄羅斯_3
+  network: ws
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  port: 443
+  server: 45.89.52.247
+  skip-cert-verify: true
+  sni: 0000.hkvip.ip-ddns.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: 0000.hkvip.ip-ddns.com
+    path: /?ed=2560
+- name: 19|俄羅斯_4
+  network: ws
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  port: 443
+  server: 89.169.13.12
+  skip-cert-verify: true
+  sni: 0000.hkvip.ip-ddns.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: 0000.hkvip.ip-ddns.com
+    path: /?ed=2560

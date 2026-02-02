@@ -1,4 +1,19 @@
 proxies:
+- country: 🇳 CN
+  name: 14| CN_33
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 3462
+  server: a03.taipeicitygovernment.cn.ua
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: 22|🔴🇨🇳_github.com/Ruk1ng001_4cb76...
+  password: '!!str 123'
+  port: 6100
+  server: 14.18.106.88
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 22,33|CN4｜家宽｜非常安全
@@ -11,31 +26,23 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   xudp: true
-- cipher: aes-256-gcm
-  name: '22|🔴🇨🇳[🧠🎞️📦]_github.com/Ruk1ng001... #1'
-  password: '!!str 123'
-  port: 6100
-  server: 14.18.106.88
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 28|🇨🇳_CN_中国
+  name: 28|_CN_国
   password: 34bafa5f59fc339f
   port: 11201
   server: 156.244.36.105
   type: ss
-- name: '33,36,38|CN_speednode_0003 #1'
-  password: 685343f2-49e1-41f8-a7fc-5d0993afb6c6
-  port: 43533
-  server: faq1.lieerr222.cn
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: '33,36,38|CN_speednode_0004 #1'
-  password: 685343f2-49e1-41f8-a7fc-5d0993afb6c6
-  port: 43533
-  server: faq1.lieerr222.cn
-  skip-cert-verify: true
-  sni: faq1.lieerr222.cn
-  type: trojan
-  udp: true
+- alterId: 2
+  cipher: auto
+  name: 28|中国 -  - PCCW IMS Limited - 45
+  network: ws
+  port: 80
+  server: 5804d996-t70f40-tonrmx-8n27.hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
+  ws-opts:
+    headers:
+      Host: 5804d996-t70f40-tonrmx-8n27.hkt.gotochinatown.net
+    path: /

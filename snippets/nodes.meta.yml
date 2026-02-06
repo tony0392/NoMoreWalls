@@ -7272,7 +7272,7 @@ proxies:
   server: 37.19.198.160
   type: ss
 - cipher: aes-128-cfb
-  name: 11,14|_02
+  name: 11,14|_03
   password: shadowsocks
   port: 443
   server: 109.201.152.181
@@ -7384,63 +7384,49 @@ proxies:
   name: 14|_01
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 154.223.20.79
+  server: 171.22.254.17
   type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 14|_03
-  password: EXN3S3eQpjE7EJu8
-  port: 9027
+  name: 14|_02
+  password: JdmRK9gMEqFgs8nP
+  port: 9003
   server: 5.188.181.201
   type: ss
 - cipher: aes-256-cfb
   name: 14|_04
   password: f8f7aCzcPKbsF8p3
   port: 989
+  server: 154.223.20.79
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 14|_05
+  password: VcFuyXvND2yQWSFY
+  port: 9054
+  server: 5.188.181.201
+  type: ss
+- cipher: aes-256-cfb
+  name: 14|_06
+  password: f8f7aCzcPKbsF8p3
+  port: 989
   server: 192.71.249.78
   type: ss
 - cipher: aes-256-cfb
-  name: 14|_05
+  name: 14|_07
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 192.71.244.150
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 14|_06
+  name: 14|_08
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 192.36.27.94
   type: ss
-- cipher: aes-256-cfb
-  name: 14|_07
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 171.22.254.17
-  type: ss
-- alpn:
-  - h3%2Ch2%2Chttp%2F1.1
-  name: 14|_08
-  password: dreDeMpIQpnv
-  port: 2053
-  server: 104.21.44.185
-  skip-cert-verify: true
-  sni: aryanews.onetwothree123.ir
-  type: trojan
-  udp: true
 - alpn:
   - http%2F1.1
   name: 14|_09
-  password: psycho
-  port: 443
-  server: 104.21.112.1
-  skip-cert-verify: true
-  sni: pSYcho.sUeX12.IR
-  type: trojan
-  udp: true
-- alpn:
-  - http%2F1.1
-  name: 14|_10
   password: 2fec7227-9abe-46f2-af18-78302b836c45
   port: 443
   server: 104.21.30.167
@@ -7450,7 +7436,7 @@ proxies:
   udp: true
 - alpn:
   - http%2F1.1
-  name: 14|_11
+  name: 14|_10
   password: psycho
   port: 443
   server: 104.21.80.1
@@ -7458,12 +7444,49 @@ proxies:
   sni: PSYchO.SueX12.Ir
   type: trojan
   udp: true
+- alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  name: 14|_11
+  password: dreDeMpIQpnv
+  port: 2053
+  server: 104.21.44.185
+  skip-cert-verify: true
+  sni: aryanews.onetwothree123.ir
+  type: trojan
+  udp: true
+- alpn:
+  - http%2F1.1
+  name: 14|_12
+  password: psycho
+  port: 443
+  server: 104.21.112.1
+  skip-cert-verify: true
+  sni: pSYcho.sUeX12.IR
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: 14| BE_13
+  network: ws
+  port: 443
+  server: 57.129.59.195
+  servername: kampong.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: kampong.org
+  ws-path: linkvws
 - alterId: 1
   cipher: auto
   country: 🇧🇪 BE
   h2-opts: {}
   http-opts: {}
-  name: 14| BE_12
+  name: 14|🇧🇪 BE_14
   network: ws
   port: 443
   server: 57.129.25.20
@@ -7480,24 +7503,7 @@ proxies:
   country: 🇧🇪 BE
   h2-opts: {}
   http-opts: {}
-  name: 14|🇧🇪 BE_13
-  network: ws
-  port: 443
-  server: 57.129.59.195
-  servername: kampong.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: kampong.org
-  ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇧🇪 BE
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇧🇪 BE_14
+  name: 14|🇧🇪 BE_15
   network: ws
   port: 443
   server: 57.128.189.253
@@ -7509,80 +7515,12 @@ proxies:
   ws-headers:
     HOST: kapelleng.com
   ws-path: /linkvws
-- alterId: 1
-  cipher: auto
-  country: 🇧🇪 BE
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇧🇪 BE_15
-  network: ws
-  port: 443
-  server: 57.129.24.131
-  servername: kampong.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: kampong.org
-  ws-path: linkvws
 - alterId: 0
   cipher: auto
   country: 🇧🇪 BE
   h2-opts: {}
   http-opts: {}
   name: 14|🇧🇪 BE_16
-  network: ws
-  port: 443
-  server: 57.129.25.23
-  servername: yichueng.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: yichueng.org
-  ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇧🇪 BE
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇧🇪 BE_17
-  network: ws
-  port: 443
-  server: 57.129.28.69
-  servername: baradiha.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: baradiha.com
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇧🇪 BE
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇧🇪 BE_18
-  network: ws
-  port: 443
-  server: 57.129.25.25
-  servername: f.khilei.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: f.khilei.com
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇧🇪 BE
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇧🇪 BE_19
   network: ws
   port: 443
   server: 57.129.24.125
@@ -7599,58 +7537,7 @@ proxies:
   country: 🇧🇪 BE
   h2-opts: {}
   http-opts: {}
-  name: 14|🇧🇪 BE_20
-  network: ws
-  port: 443
-  server: 57.129.64.238
-  servername: kapelleng.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: kapelleng.com
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇧🇪 BE
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇧🇪 BE_21
-  network: ws
-  port: 443
-  server: 57.129.64.157
-  servername: lammaland.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: lammaland.org
-  ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇧🇪 BE
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇧🇪 BE_22
-  network: ws
-  port: 443
-  server: 57.129.28.213
-  servername: fapeng.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: fapeng.org
-  ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇧🇪 BE
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇧🇪 BE_23
+  name: 14|🇧🇪 BE_17
   network: ws
   port: 443
   server: 57.128.189.240
@@ -7664,75 +7551,7 @@ proxies:
   country: 🇧🇪 BE
   h2-opts: {}
   http-opts: {}
-  name: 14|🇧🇪 BE_24
-  network: ws
-  port: 443
-  server: 57.129.25.22
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇧🇪 BE
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇧🇪 BE_25
-  network: ws
-  port: 443
-  server: 57.129.24.124
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇧🇪 BE
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇧🇪 BE_26
-  network: ws
-  port: 443
-  server: 57.129.64.199
-  servername: pelang.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: pelang.org
-  ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇧🇪 BE
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇧🇪 BE_27
-  network: ws
-  port: 443
-  server: 57.129.24.130
-  servername: serkat.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: serkat.org
-  ws-path: linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇧🇪 BE
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇧🇪 BE_28
+  name: 14|🇧🇪 BE_18
   network: ws
   port: 443
   server: 57.129.59.199
@@ -7749,7 +7568,7 @@ proxies:
   country: 🇧🇪 BE
   h2-opts: {}
   http-opts: {}
-  name: 14|🇧🇪 BE_29
+  name: 14|🇧🇪 BE_19
   network: ws
   port: 443
   server: 57.129.28.212
@@ -7766,7 +7585,7 @@ proxies:
   country: 🇧🇪 BE
   h2-opts: {}
   http-opts: {}
-  name: 14|🇧🇪 BE_30
+  name: 14|🇧🇪 BE_20
   network: ws
   port: 443
   server: 57.129.28.64
@@ -7778,27 +7597,201 @@ proxies:
   ws-headers:
     HOST: serkat.org
   ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇧🇪 BE_21
+  network: ws
+  port: 443
+  server: 57.129.24.130
+  servername: serkat.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: serkat.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇧🇪 BE_22
+  network: ws
+  port: 443
+  server: 57.129.64.199
+  servername: pelang.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: pelang.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇧🇪 BE_23
+  network: ws
+  port: 443
+  server: 57.129.64.238
+  servername: kapelleng.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: kapelleng.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇧🇪 BE_24
+  network: ws
+  port: 443
+  server: 57.129.25.25
+  servername: f.khilei.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: f.khilei.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇧🇪 BE_25
+  network: ws
+  port: 443
+  server: 57.129.25.22
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇧🇪 BE_26
+  network: ws
+  port: 443
+  server: 57.129.64.157
+  servername: lammaland.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: lammaland.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇧🇪 BE_27
+  network: ws
+  port: 443
+  server: 57.129.28.69
+  servername: baradiha.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: baradiha.com
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇧🇪 BE_28
+  network: ws
+  port: 443
+  server: 57.129.25.23
+  servername: yichueng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: yichueng.org
+  ws-path: linkvws
+- alterId: 1
+  cipher: auto
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇧🇪 BE_29
+  network: ws
+  port: 443
+  server: 57.129.24.131
+  servername: kampong.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: kampong.org
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇧🇪 BE_30
+  network: ws
+  port: 443
+  server: 57.129.24.124
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇧🇪 BE_31
+  network: ws
+  port: 443
+  server: 57.129.28.213
+  servername: fapeng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: fapeng.org
+  ws-path: linkvws
 - country: 🇳 CN
-  name: 14| CN_31
+  name: 14| CN_32
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  country: 🇪 DE
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇪 DE_32
-  network: none
-  port: 18355
-  server: 92.246.87.170
-  skip-cert-verify: true
-  type: vmess
-  uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
-  ws-path: /
 - alterId: 0
   cipher: auto
   country: 🇪 DE
@@ -7818,7 +7811,7 @@ proxies:
   ws-path: linkvws
 - alterId: 0
   cipher: auto
-  country: 🇪 DE
+  country: 🇩🇪 DE
   h2-opts: {}
   http-opts: {}
   name: 14|🇪 DE_34
@@ -7833,8 +7826,21 @@ proxies:
   ws-headers:
     HOST: jamekk.org
   ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇪 DE_35
+  network: none
+  port: 18355
+  server: 92.246.87.170
+  skip-cert-verify: true
+  type: vmess
+  uuid: caf921c7-ac63-40bc-faa1-cda097fd7e42
+  ws-path: /
 - country: 🇪DE
-  name: 14|🇪DE_35
+  name: 14|🇪DE_36
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
@@ -7844,17 +7850,24 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: ' DK'
-  name: 14|🇩 DK_36
+  name: 14|🇩 DK_37
   password: 93498539-7838-4836-b9b3-8311ffc79bcf
   port: 35652
   server: 82.180.146.173
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇸 ES
+  name: 14|🇪 ES_38
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 37.143.130.203
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 14| FR_37
+  name: 14| FR_39
   network: ws
   port: 443
   server: 91.134.8.101
@@ -7864,106 +7877,91 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
 - country: 🇷FR
-  name: 14|🇷FR_38
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: uk-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: 14|🇷FR_39
-  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
-  port: 443
-  server: fr-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: 14|🇫🇷FR_40
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
-  port: 443
-  server: de-full.privateip.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇷FR
-  name: 14|🇫🇷FR_41
+  name: 14|🇷FR_40
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   skip-cert-verify: true
   type: trojan
   udp: true
+- country: 🇷FR
+  name: 14|🇷FR_41
+  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
+  port: 443
+  server: de-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇫🇷FR
+  name: 14|🇫🇷FR_42
+  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
+  port: 443
+  server: uk-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇧 GB
-  name: 14| GB_42
+  name: 14| GB_43
   password: iZDJs2CDckHKqJ5W7cpvCq2veqsqWn95iqs6Kr6F3YNnyMsk2uPdRrChQfShvH1v56Br1qWEW44qJna5QcMcZF7RCJmdvwuq
   port: 55988
   server: 185.5.38.111
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇧 GB
-  name: 14|🇧 GB_43
+  country: 🇬🇧 GB
+  name: 14|🇧 GB_44
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.194
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_44
-  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
-  port: 55988
-  server: 185.5.38.111
+  server: 82.38.31.184
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
   name: 14|🇬🇧 GB_45
-  password: y3SowqUkrt1cbm487g74Ac
-  port: 443
-  server: 78.129.140.11
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_46
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.179
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_47
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.208
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_48
-  password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_49
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.214
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_50
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.191
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 14|🇬🇧 GB_51
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
+  name: 14|🇬🇧 GB_46
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.194
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇬🇧 GB_47
+  password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
   port: 55988
   server: mx2.drawnrisha.one
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇧 GB
+  name: 14|🇧 GB_48
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.208
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_49
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.179
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_50
+  password: y3SowqUkrt1cbm487g74Ac
+  port: 443
+  server: 78.129.140.11
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 14|🇬🇧 GB_51
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.214
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
@@ -7972,16 +7970,16 @@ proxies:
   port: 8080
   server: 82.38.31.218
   type: ss
-- cipher: aes-128-gcm
+- cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
   name: 14|🇬🇧 GB_53
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
+  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
+  port: 55988
+  server: 185.5.38.111
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 14|🇧 GB_54
+  name: 14|🇬🇧 GB_54
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.82
@@ -7989,17 +7987,31 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
   name: 14|🇬🇧 GB_55
-  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
+  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
   port: 55988
-  server: 185.5.38.111
+  server: mx2.drawnrisha.one
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-128-gcm
   country: 🇬🇧 GB
   name: 14|🇬🇧 GB_56
-  password: 4ju873evpjeaAi8Zq12YoRHWp63o5exdnZ71aUg1YEChiPTc2HkasYhUBxRz7UGi4K6cLrsGaU6b44H4Qa6f4cJn3zBp2cnX
-  port: 55988
-  server: 185.5.38.111
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇧 GB
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇧 GB_57
+  network: ws
+  port: 443
+  server: singapore02.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 780c7671-e8c8-45ab-922b-4fdfc4310aa0
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: 🇧 GB
@@ -8015,23 +8027,8 @@ proxies:
   type: vmess
   uuid: 656920dc-ed05-4f41-8c49-bdff41e383a9
   ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇧 GB
-  h2-opts: {}
-  http-opts: {}
-  name: '14,18,30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #6'
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-path: /
 - country: 🇧 GB
-  name: 14|🇧 GB_59
+  name: 14|🇬🇧 GB_59
   password: 255a0a50-3f10-11f0-b0d6-1239d0255272
   port: 443
   server: 51.38.65.155
@@ -8069,122 +8066,19 @@ proxies:
   port: 989
   server: 154.223.16.212
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰 HK_64
-  network: none
-  port: 13852
-  server: 45.207.157.29
-  skip-cert-verify: true
-  type: vmess
-  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
-  ws-path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇺 HU
-  name: 14| HU_65
+  name: 14| HU_64
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 109.61.39.28
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇷 IR
-  name: 14|🇷 IR_66
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 151.242.251.153
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇷 IR
-  name: 14|🇮🇷 IR_67
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 151.242.251.147
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇮🇷 IR
-  name: 14|🇮🇷 IR_68
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 151.242.251.131
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇷 IR
-  name: 14|🇮🇷 IR_69
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 151.242.251.144
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇮🇷 IR
-  name: 14|🇷 IR_70
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 151.242.251.133
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇷 IR
-  name: 14|🇷 IR_71
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 151.242.251.152
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇮🇷 IR
-  name: 14,39|NL_Amsterdam_Greenhost BV_Clau...
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 151.242.251.142
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇮🇷 IR
-  name: 14|🇮🇷 IR_73
-  password: o5osZg269v5zHpYjr1xY9s
-  port: 8080
-  server: 151.242.251.137
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇵 JP
   h2-opts: {}
   http-opts: {}
-  name: 14| JP_74
-  network: ws
-  port: 443
-  server: n1753598448.74qxv.top
-  servername: n1753598448.74qxv.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3cd6f849-078e-4da9-8080-a2791b51b766
-  ws-headers:
-    HOST: n1753598448.74qxv.top
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇵 JP_75
-  network: ws
-  port: 443
-  server: seoul03.zgjok.com
-  servername: seoul03.zgjok.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
-  ws-headers:
-    HOST: seoul03.zgjok.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇯🇵 JP_76
+  name: 14| JP_65
   network: ws
   port: 443
   server: seoul02.zgjok.com
@@ -8196,416 +8090,124 @@ proxies:
   ws-headers:
     HOST: seoul02.zgjok.com
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇵 JP_66
+  network: ws
+  port: 443
+  server: n1753598448.74qxv.top
+  servername: n1753598448.74qxv.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3cd6f849-078e-4da9-8080-a2791b51b766
+  ws-headers:
+    HOST: n1753598448.74qxv.top
+  ws-path: /
 - cipher: aes-256-cfb
   country: 🇷 KR
-  name: 14|🇷 KR_77
+  name: 14|🇷 KR_67
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹 LT
-  name: 14| LT_78
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.166
+- cipher: aes-256-cfb
+  country: 🇷 KR
+  name: 14,39|218.237.185.230_Claude
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇹 LT
-  name: 14|🇹 LT_79
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹 LT
-  name: 14|🇱🇹 LT_80
+  name: 14| LT_69
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 147.78.0.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇹 LT_81
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹 LT
-  name: 14|🇹 LT_82
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇹 LT_83
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.70
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_84
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: beesyar.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇹 LT_85
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: beesyar.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_86
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.192
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_87
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.180
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_88
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹 LT
-  name: 14|🇱🇹 LT_89
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.183
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_90
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹 LT
-  name: 14|🇱🇹 LT_91
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.171
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹 LT
-  name: 14|🇱🇹 LT_92
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_93
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.154
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_94
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.192
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_95
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: beesyar.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_96
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.171
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇹 LT_97
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.65
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_98
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_99
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_100
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_101
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_102
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.154
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_103
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_104
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_105
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_106
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.154
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹 LT
-  name: 14|🇱🇹 LT_107
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_108
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.171
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_109
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.69
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹 LT
-  name: 14|🇱🇹 LT_110
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 45.87.175.197
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇹 LT_111
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 45.87.175.155
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_112
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_113
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 45.87.175.174
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_114
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.193
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_115
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.35
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_116
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.177
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_117
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_118
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.192
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹 LT
-  name: 14|🇱🇹 LT_119
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.58
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 14|🇱🇹 LT_120
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.92
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹 LT
-  name: 14|🇱🇹 LT_121
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.28
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱 LV
-  name: 14|🇱 LV_122
+  country: 🇻 LV
+  name: 14| LV_70
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 46.183.217.204
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇩 MD
-  name: 14| MD_123
+  name: 14| MD_71
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 185.93.173.60
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇩 MD
-  name: 14|🇲🇩 MD_124
+  name: 14|🇲🇩 MD_72
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 188.214.157.58
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇩 MD
-  name: 14|🇲🇩 MD_125
+  name: 14|🇲🇩 MD_73
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 176.123.1.175
   type: ss
-- cipher: aes-256-cfb
-  country: MK
-  name: 14,36,38|MK_speednode_0024
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.183.185.37
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱 NL
-  name: 14|🇱 NL_127
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.141
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱 NL
-  name: 14|🇱 NL_128
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 193.29.139.189
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇳🇱 NL
-  name: 14|🇱 NL_129
+  name: 14| NL_74
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 193.29.139.189
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱 NL
-  name: 14|🇱 NL_130
+  name: 14|🇱 NL_75
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.141
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇳🇱 NL
+  name: 14|🇱 NL_76
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 193.29.139.177
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱 NL
-  name: 14|🇳🇱 NL_131
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 193.29.139.179
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱 NL
-  name: 14|🇳🇱 NL_132
+  name: 14|🇳🇱 NL_77
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 193.29.139.227
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇳🇱 NL
-  name: 14,28|🇺🇸_US_美国_4
-  password: kaQH3hGdcP80XEDI
-  port: 443
-  server: admin.c2.havij.co
+  name: 14|🇳🇱 NL_78
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 193.29.139.189
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇳🇱 NL
+  name: 14|🇳🇱 NL_79
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 193.29.139.179
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱NL
-  name: 14|🇱NL_134
+  name: 14|🇳🇱NL_80
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 193.29.139.202
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇳🇱NL
-  name: 14|🇳🇱NL_135
+  country: 🇱NL
+  name: 14|🇳🇱NL_81
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 193.29.139.251
@@ -8615,7 +8217,7 @@ proxies:
   country: ' NO'
   h2-opts: {}
   http-opts: {}
-  name: 14|🇳 NO_136
+  name: 14|🇳 NO_82
   network: ws
   port: 443
   server: 146.59.55.50
@@ -8629,181 +8231,109 @@ proxies:
   ws-path: /linkvws
 - cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14| RU_137
+  name: 14| RU_83
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 45.159.250.190
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 14|🇺 RU_84
   password: Ul0rGyAAed5HRDpvFqr2C0
   port: 37096
   server: 62.133.63.169
   type: ss
-- cipher: aes-256-cfb
-  country: 🇺 RU
-  name: 14,27|_MD_->🇺_RU_
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- cipher: aes-128-cfb
-  country: 🇪 SE
-  name: 14| SE_139
-  obfs: http_post
-  password: $$Turb0VPN$$
-  port: 443
-  protocol: auth_aes128_md5
-  server: ssca.irundns.net
-  type: ssr
-- alterId: 0
-  cipher: auto
-  country: 🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 14| SG_140
-  network: ws
-  port: 443
-  server: n1761214911.74qxv.top
-  servername: n1761214911.74qxv.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
-  ws-headers:
-    HOST: n1761214911.74qxv.top
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇬 SG_141
-  network: none
-  port: 43425
-  server: 8.210.248.133
-  skip-cert-verify: true
-  type: vmess
-  uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
-  ws-path: /
 - country: 🇦UA
-  name: 14|UA_142
+  name: 14|UA_85
   password: 8d16a256-42d7-4431-8039-da1eb06cafbc
   port: 443
   server: it-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇸 US
-  name: 14| US_143
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 38.165.231.25
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇸 US
-  name: 14|🇸 US_144
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.170
-  type: ss
 - cipher: aes-256-cfb
   country: 🇸 US
-  name: 14|🇸 US_145
+  name: 14| US_86
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 154.90.62.168
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸 US
-  name: 14|🇸 US_146
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 14|🇺🇸 US_147
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.167
+  server: 38.165.233.93
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇸 US
-  name: 14|🇺🇸 US_148
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 193.135.174.135
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇸 US
-  name: 14|🇸 US_149
-  password: b0c9d775-32f7-459a-b24d-ecda7c9f3720
-  port: 11688
-  server: ss.020.node-for-bigairport.win
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
-  name: 14|🇸 US_150
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 38.89.142.56
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
-  name: 14|🇺🇸 US_151
-  password: 2272de48c53e0a57
-  port: 11201
-  server: 154.205.147.237
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇸 US
-  name: 14|🇸 US_152
+  name: 14|🇺🇸 US_87
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.54.59.180
   type: ss
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
   country: 🇸 US
-  name: 14|🇺🇸 US_153
+  name: 14|🇸 US_88
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 38.165.231.25
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇺🇸 US
+  name: 14|🇺🇸 US_89
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.54.57.90
   type: ss
 - cipher: aes-256-cfb
-  country: 🇺🇸 US
-  name: 14|🇸 US_154
+  country: 🇸 US
+  name: 14|🇺🇸 US_90
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 38.165.233.93
+  server: 154.90.63.177
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸 US
+  name: 14|🇺🇸 US_91
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 193.135.174.135
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸 US
+  name: 14|🇺🇸 US_92
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸 US
+  name: 14|🇺🇸 US_93
+  password: 2272de48c53e0a57
+  port: 11201
+  server: 154.205.147.237
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸 US
+  name: 14|🇺 US_94
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 38.89.142.56
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇸 US
+  name: 14|🇺🇸 US_95
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇺🇸 US
+  name: 14|🇸 US_96
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.167
   type: ss
 - alterId: 0
   cipher: auto
   country: 🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇺🇸 US_155
-  network: none
-  port: 53822
-  server: 38.180.190.4
-  skip-cert-verify: true
-  type: vmess
-  uuid: 18fc2339-1f46-4399-d6cb-7d68b34ffcd5
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺 US_156
-  network: none
-  port: 53530
-  server: 38.180.190.4
-  skip-cert-verify: true
-  type: vmess
-  uuid: 074d03e8-6232-4ee0-f705-fc61e1a6c7f8
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_157
+  name: 14|🇺🇸 US_97
   network: ws
   port: 443
   server: 15.235.50.172
@@ -8820,50 +8350,24 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇸 US_158
+  name: 14|🇸 US_98
   network: ws
   port: 443
-  server: n1753598452.wpg27.xyz
-  servername: n1753598452.wpg27.xyz
+  server: 15.235.83.228
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-headers:
-    HOST: n1753598452.wpg27.xyz
-  ws-path: /
+    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  ws-path: /linkvws
 - alterId: 0
   cipher: auto
-  country: 🇺🇸 US
+  country: 🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇸 US_159
-  network: none
-  port: 13097
-  server: 38.180.190.4
-  skip-cert-verify: true
-  type: vmess
-  uuid: b30bd103-83e6-4e3d-b8b2-41e6845c5b39
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_160
-  network: none
-  port: 27641
-  server: 192.227.249.227
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3b134252-e7c2-43df-98b7-da204104aa79
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_161
+  name: 14|🇸 US_99
   network: ws
   port: 443
   server: 148.113.176.192
@@ -8880,7 +8384,54 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 14|🇸 US_162
+  name: 14|🇸 US_100
+  network: none
+  port: 27641
+  server: 192.227.249.227
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3b134252-e7c2-43df-98b7-da204104aa79
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇸 US_101
+  network: ws
+  port: 443
+  server: n1753598452.wpg27.xyz
+  servername: n1753598452.wpg27.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
+  ws-headers:
+    HOST: n1753598452.wpg27.xyz
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇸 US_102
+  network: ws
+  port: 443
+  server: n1761214919.mv7wh.tech
+  servername: n1761214919.mv7wh.tech
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c592f040-faff-47dc-a464-9bccf2dd4e7b
+  ws-headers:
+    HOST: n1761214919.mv7wh.tech
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺🇸 US_103
   network: ws
   port: 443
   server: 15.235.83.227
@@ -8892,94 +8443,16 @@ proxies:
   ws-headers:
     HOST: mankadmu.com
   ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_163
-  network: none
-  port: 27090
-  server: 64.176.56.21
-  skip-cert-verify: true
-  type: vmess
-  uuid: a9a9d0c5-aba0-4b15-dac1-621af6edfbd2
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_164
-  network: ws
-  port: 443
-  server: 15.235.83.228
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_165
-  network: ws
-  port: 443
-  server: n1761214908.wpg27.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3514a93f-bb26-4442-8f99-971b2ff3388a
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇸 US_166
-  network: none
-  port: 27493
-  server: 38.180.190.4
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3462f294-4731-4eb0-86a9-d09e91be420c
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇺🇸 US_167
-  network: none
-  port: 34460
-  server: 216.238.86.158
-  skip-cert-verify: true
-  type: vmess
-  uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
-  ws-path: /
 - country: 🇸 US
-  name: 14|🇺🇸 US_168
-  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
+  name: 14|🇺🇸 US_104
+  password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
-  server: hinet.mjt000.com
+  server: usla.mjt000.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: 🇺🇸 US
-  name: 14|🇺🇸 US_169
-  password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
-  port: 443
-  server: 154.17.24.29
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇺🇸 US
-  name: 14|🇺🇸 US_170
+- country: 🇸 US
+  name: 14|🇺🇸 US_105
   password: 6d0a7f2f-c26c-466a-8f90-d6630ba97928
   port: 443
   server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.9d8f269f96b25232-759cbb36d6548597.kaufen
@@ -8987,243 +8460,244 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 14|🇺🇸 US_171
-  password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
+  name: 14|🇺🇸 US_106
+  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
-  server: usla.mjt000.com
+  server: hinet.mjt000.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇺🇸 US
+  name: 14|🇺🇸 US_107
+  password: x3wOepOcT04FnR8YYF35pzSACDgRBa3CAe9qNalDCy6a2uE8Z7xlX3SSyZKDIj
+  port: 443
+  server: 154.17.24.29
   skip-cert-verify: true
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  name: 14|🇺🇸US_172
+  name: 14|🇺🇸US_108
   password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
   port: 52952
   server: exchange.gameaurela.click
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇸US
-  name: 14|🇸US_173
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.66
-  type: ss
-- cipher: chacha20-ietf-poly1305
   country: 🇦 ZA
-  name: 14|🇦 ZA_174
+  name: 14|🇦 ZA_109
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 156.38.168.58
   type: ss
 - cipher: aes-256-cfb
   country: ' ZZ'
-  name: 14| ZZ_175
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.27
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 14| ZZ_176
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.19
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 14|🏁 ZZ_177
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.24
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 14|🏁 ZZ_178
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.112
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 14| ZZ_179
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.37
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 14|🏁 ZZ_180
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.20
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 14|🏁 ZZ_181
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.35
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 14|🏁 ZZ_182
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.33
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 14|🏁 ZZ_183
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.30
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 14|🏁 ZZ_184
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.19
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 14|🏁 ZZ_185
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.36
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 14|🏁 ZZ_186
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.28
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 14|🏁 ZZ_187
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.38
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 14|🏁 ZZ_188
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.21
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🏁 ZZ
-  name: 14|🏁 ZZ_189
-  password: d121385f700a6915
-  port: 11201
-  server: 163.171.213.46
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 14| ZZ_190
+  name: 14| ZZ_110
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.29
   type: ss
-- cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 14|🏁 ZZ_191
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.31
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 14|🏁 ZZ_192
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.32
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 14|🏁 ZZ_193
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.22
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 14|🏁 ZZ_194
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 103.163.218.2
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 14|🏁 ZZ_195
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.24
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 14|🏁 ZZ_196
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.21
-  type: ss
-- cipher: aes-256-cfb
-  country: ' ZZ'
-  name: 14|🏁 ZZ_197
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.133
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 14|🏁 ZZ_198
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.25
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 14|🏁 ZZ_199
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.23
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 14|🏁 ZZ_200
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.25
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🏁 ZZ
-  name: 14|🏁 ZZ_201
+  country: ' ZZ'
+  name: 14| ZZ_111
   password: VpKABcOpNNA0l5G2AVOmw8
   port: 62685
   server: 213.109.147.242
   type: ss
 - cipher: aes-256-cfb
   country: 🏁 ZZ
-  name: 14|🏁 ZZ_202
+  name: 14| ZZ_112
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.22
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 14|🏁 ZZ_113
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.24
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 14|🏁 ZZ_114
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 14| ZZ_115
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.33
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 14|🏁 ZZ_116
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.21
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 14|🏁 ZZ_117
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.30
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 14|🏁 ZZ_118
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.19
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 14|🏁 ZZ_119
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.36
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 14|🏁 ZZ_120
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.28
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 14|🏁 ZZ_121
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.35
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 14|🏁 ZZ_122
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.38
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 14|🏁 ZZ_123
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.21
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 14|🏁 ZZ_124
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.19
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 14|🏁 ZZ_125
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.31
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 14|🏁 ZZ_126
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.32
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🏁 ZZ
+  name: 14|🏁 ZZ_127
+  password: d121385f700a6915
+  port: 11201
+  server: 163.171.213.46
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 14|🏁 ZZ_128
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.20
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 14|🏁 ZZ_129
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.24
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 14|🏁 ZZ_130
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.133
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 14|🏁 ZZ_131
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.25
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 14|🏁 ZZ_132
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 103.163.218.2
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 14|🏁 ZZ_133
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.26
+  type: ss
+- cipher: aes-256-cfb
+  country: ' ZZ'
+  name: 14|🏁 ZZ_134
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.27
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 14|🏁 ZZ_135
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.23
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 14|🏁 ZZ_136
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.18
   type: ss
 - cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 14|🏁 ZZ_203
+  country: ' ZZ'
+  name: 14|🏁 ZZ_137
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.26
+  server: 103.186.154.37
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 14|🏁 ZZ_138
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.25
   type: ss
 - alterId: 0
   cipher: auto
   country: ' ZZ'
   h2-opts: {}
   http-opts: {}
-  name: 14|🏁 ZZ_204
+  name: 14|🏁 ZZ_139
   network: ws
   port: 443
   server: 134.195.198.147
@@ -9753,102 +9227,74 @@ proxies:
     path: /path/191019072927
 - alterId: 0
   cipher: auto
-  name: 18|美国 CloudFlare节点
-  network: ws
-  port: 8443
-  server: 162.159.152.4
-  servername: frsys.fl-dl.com
-  tls: true
-  type: vmess
-  uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
-  ws-opts:
-    headers:
-      Host: ''
-    path: /gbt
-- name: 18|俄罗斯+V2CROSS.COM
-  password: ZblhWr0mqMakCPg.N
-  port: 36158
-  server: 212.193.18.144
-  sni: ya.ru
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '18|美国 CloudFlare节点 #1'
+  name: 18,30|🇧🇷 巴西圣保罗 CloudFlare节点
   network: ws
   port: '8080'
-  server: 172.64.149.182
+  server: 188.114.98.0
   servername: ''
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     headers:
-      Host: nasnet-5712964102.sharghdaily.co
-    path: /nasnet/cdn?ed=2560
-- name: 18|西班牙+V2CROSS.COM
-  password: wp9IsiY82uQhcmgNC1eoBM
-  port: 12420
-  server: 80.173.231.254
-  sni: www.semanticstaplegun.click
-  type: trojan
+      Host: nasnet-162191099.sharghdaily.co
+    path: /nasnet/cdn?ed=2560/?TELEGRAM--KANAL--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN
 - alterId: 0
   cipher: auto
-  name: '18,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #5'
-  network: ws
-  port: '443'
-  server: jjjmki.930.pp.ua
-  tls: true
-  type: vmess
-  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
-  ws-opts:
-    headers:
-      Host: jjjmki.930.pp.ua
-    path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
-- alterId: 0
-  cipher: auto
-  name: '18,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #20'
-  network: ws
-  port: '80'
-  server: gggnnjui.191292.xyz
+  name: 18|香港 阿里云
+  network: none
+  port: 43425
+  server: 8.210.248.133
   tls: false
   type: vmess
-  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
-  ws-opts:
-    headers:
-      Host: gggnnjui.191292.xyz
-    path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
-- alterId: 0
-  cipher: auto
-  name: 18,30|🇺🇸 美国 CloudFlare节点
-  network: ws
-  port: '80'
-  server: hhhhhhhhj.191266.xyz
-  tls: false
-  type: vmess
-  uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
-  ws-opts:
-    headers:
-      Host: hhhhhhhhj.191266.xyz
-    path: /t1UV4HSrzbWGmJtbBhmKb8nOkg
+  uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
 - alterId: 0
   cipher: auto
   name: '18|美国 CloudFlare节点 #5'
   network: ws
-  port: '443'
-  server: Hhhjjkio.huaNGshanG.OnliNe
+  port: 8443
+  server: c7.620720.xyz
+  servername: c7.620720.xyz
   tls: true
   type: vmess
-  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
   ws-opts:
     headers:
-      Host: HhhjjKIo.huanGSHAng.OnLINE
-    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
+      Host: c7.620720.xyz
+    path: /
 - alterId: 0
   cipher: auto
-  name: '18|美国 CloudFlare节点 #6'
+  name: '18|美国 CloudFlare节点 #1'
+  network: ws
+  port: 80
+  server: bbgtr.7777198.xyz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+  ws-opts:
+    headers:
+      Host: BBGTR.7777198.XYZ
+    path: /GgigazFGDLgFWDItkD5XgXAL
+- alterId: 0
+  cipher: auto
+  name: 18,30|🇦🇺 VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-C...
+  network: ws
+  port: '443'
+  server: sy4.620720.xyz
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: sy4.620720.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '18|美国 CloudFlare节点 #3'
   network: ws
   port: '8080'
-  server: 104.21.69.44
+  server: 172.67.204.84
   servername: ''
   tls: false
   type: vmess
@@ -9859,957 +9305,533 @@ proxies:
     path: /nasnet/cdn
 - alterId: 0
   cipher: auto
-  name: '18,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #39'
+  name: '18,30|🇺🇸 美国 CloudFlare节点 #2'
   network: ws
   port: '80'
-  server: mmmki.890634.xYZ
+  server: nnmjkio.taipei101.indevs.in
   tls: false
   type: vmess
-  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  uuid: 98b419ef-83a2-4d1b-a23d-566b7f24477b
   ws-opts:
     headers:
-      Host: Mmmki.890634.XYz
-    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
-- name: 19|🇿🇦ZA_1|⬇️1.4MB/s
-  network: tcp
-  password: 2f0e3d6c-87b2-49a6-8091-99373bf39ab5
-  port: 53759
-  server: mofahx2.til69.com
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
+      Host: NnMJkIO.tAIpEI101.INDevs.in
+    path: /Iu415Fpf5REYxWLpTGA5AqzZ2Mj
+- name: 18|冰岛+V2CROSS.COM
+  password: qmBSKnAl6LYi9=z23Rs.Z
+  port: 28099
+  server: 37.235.49.209
+  skip-cert-verify: false
+  sni: celestialcorset.crystalhamster.click
   type: trojan
-  udp: true
-- name: 19|🇦🇺AU_2|⬇️4.0MB/s
-  network: tcp
-  password: 2f0e3d6c-87b2-49a6-8091-99373bf39ab5
-  port: 50757
-  server: mofahx2.til69.com
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
-  type: trojan
-  udp: true
-- name: 19|🇳🇬NG_1|⬇️3.4MB/s
-  network: tcp
-  password: 2f0e3d6c-87b2-49a6-8091-99373bf39ab5
-  port: 34183
-  server: mofahx2.til69.com
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
-  type: trojan
-  udp: true
-- name: 19|🇫🇷FR_3|⬇️7.7MB/s
-  network: tcp
-  password: 2f0e3d6c-87b2-49a6-8091-99373bf39ab5
-  port: 14651
-  server: mofahx2.til69.com
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
-  type: trojan
-  udp: true
-- name: 19|🇪🇸ES_2|⬇️2.7MB/s
-  network: tcp
-  password: 2f0e3d6c-87b2-49a6-8091-99373bf39ab5
-  port: 34249
-  server: mofahx2.til69.com
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
-  type: trojan
-  udp: true
-- name: 19|🇸🇦SA_1|⬇️1.1MB/s
-  network: tcp
-  password: 2f0e3d6c-87b2-49a6-8091-99373bf39ab5
-  port: 59137
-  server: mofahx2.til69.com
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
-  type: trojan
-  udp: true
-- name: 19|🇲🇲MM_1|⬇️4.1MB/s
-  network: tcp
-  password: 2f0e3d6c-87b2-49a6-8091-99373bf39ab5
-  port: 19797
-  server: mofahx2.til69.com
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
-  type: trojan
-  udp: true
-- name: 19|🇹🇼台湾12
-  network: tcp
-  password: 2f0e3d6c-87b2-49a6-8091-99373bf39ab5
-  port: 42765
-  server: mofahx1.til69.com
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
-  type: trojan
-  udp: true
-- name: 19|🇮🇳印度|IND8
-  network: tcp
-  password: 2f0e3d6c-87b2-49a6-8091-99373bf39ab5
-  port: 33243
-  server: mofahx2.til69.com
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
-  type: trojan
-  udp: true
-- name: 19|🇮🇩印度尼西亚01
-  network: tcp
-  password: 2f0e3d6c-87b2-49a6-8091-99373bf39ab5
-  port: 40391
-  server: mofahx2.til69.com
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
-  type: trojan
-  udp: true
-- name: 19|荷蘭_1
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+- name: 18,30,33|HK2｜家宽｜非常安全
+  password: BxceQaOe
   port: 443
-  server: 163.5.207.235
+  server: 219.76.135.98
   skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
+  sni: t.me%252Fripaojiedian
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|荷蘭_2
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+- cipher: chacha20-ietf-poly1305
+  name: 19|🇭🇰HK_2
+  password: dd1049c9-b242-4d1c-a598-f71d2a552ea1
+  port: 44591
+  server: 120.237.27.72
+  type: ss
+- name: 19|未命名
+  password: BxceQaOe
   port: 443
-  server: 163.5.207.31
+  server: 58.152.53.45
   skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
+  sni: t.me%2Fripaojiedian
+  tls: true
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|美國_2
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 54443
-  server: 173.249.201.109
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|新加坡
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+- name: 20|US美国(mibei77.com 米贝节点分享) 3
+  password: 5cccb4da-8aee-4b01-be84-2056265e52dc
   port: 443
-  server: saas.sin.fan
+  server: ggghj.www890604.dpdns.org
   skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
+  sni: ggghj.www890604.dpdns.org
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|美國_3
-  network: grpc
-  password: iWnFtzMiac
-  port: 19258
-  server: 205.185.115.223
-  skip-cert-verify: true
-  sni: cloudflare.com
-  type: trojan
-  udp: true
-- name: 19|荷蘭_3
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 444
-  server: 2.59.183.233
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|波蘭_1
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 2053
-  server: 31.133.0.167
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|荷蘭_4
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+- name: 20|US美国(mibei77.com 米贝节点分享) 39
+  password: humanity
   port: 443
-  server: 2.59.183.219
+  server: 104.21.40.34
   skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|俄羅斯_2
+- name: 20|US美国(mibei77.com 米贝节点分享) 45
+  password: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  port: 443
+  server: mmmk.288288.shop
+  skip-cert-verify: true
+  sni: mmmk.288288.shop
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 20|US美国(mibei77.com 米贝节点分享) 6
   network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  port: 443
+  server: jjjmki.930.pp.ua
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
+  ws-headers:
+    Host: jjjmki.930.pp.ua
+  ws-path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
+- alterId: 0
+  cipher: auto
+  name: 20|US美国(mibei77.com 米贝节点分享) 21
+  network: ws
+  port: 80
+  server: gggnnjui.191292.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
+  ws-headers:
+    Host: gggnnjui.191292.xyz
+  ws-path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
+- name: 20|US美国(mibei77.com 米贝节点分享) 49
+  password: T9BpZIVMNv
   port: 8443
-  server: 176.109.106.61
+  server: vip2.kaixincloud.top
   skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
+  sni: vip2.kaixincloud.top
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|英國
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 31687
-  server: 185.245.83.41
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|美國_4
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+- name: 20|US美国(mibei77.com 米贝节点分享) 57
+  password: T9BpZIVMNv
   port: 8443
-  server: 176.105.253.102
+  server: vip3.kaixincloud.top
   skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
+  sni: vip3.kaixincloud.top
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|波蘭_2
+- alterId: 0
+  cipher: auto
+  name: 20|GB英国(mibei77.com 米贝节点分享) 4
   network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 2053
-  server: 31.133.0.159
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|荷蘭_5
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
   port: 443
-  server: 2.59.183.181
+  server: 172.67.219.254
   skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
+  tls: true
+  type: vmess
   udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|德國_8
+  uuid: 0c6b96bc-5e3a-4500-8497-6dead1965609
+  ws-headers:
+    Host: 42214edb-ec81-4091-bfa7-c4ced68ee019.661.qzz.io
+  ws-path: /KHtPvNZl371C8NsbbZ1wwDhJ3
+- alterId: 0
+  cipher: auto
+  name: 20|US美国(mibei77.com 米贝节点分享) 10
   network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
   port: 443
-  server: 5.39.249.146
+  server: 172.67.193.64
   skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
+  tls: true
+  type: vmess
   udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|俄羅斯_3
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  uuid: 0c6b96bc-5e3a-4500-8497-6dead1965609
+  ws-headers:
+    Host: 858C-EA07c71F67F1.X19890604.qZZ.IO
+  ws-path: /KHtPvNZl371C8NsbbZ1wwDhJ3
+- name: 20|US美国(mibei77.com 米贝节点分享) 34
+  password: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
   port: 443
-  server: 45.89.52.247
+  server: eed4.7777125.xyz
   skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
+  sni: eed4.7777125.xyz
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|德國_9
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+- name: '20,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #3'
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
   port: 443
-  server: 194.58.33.218
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
+  server: blackshadow.dpdns.org
+  skip-cert-verify: false
+  sni: blackshadow.dpdns.org
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|烏克蘭
+- alterId: 0
+  cipher: auto
+  name: 20|US美国(mibei77.com 米贝节点分享) 20
   network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 2053
-  server: 80.66.85.115
+  port: 80
+  server: CCCVFffF.191288.Xyz
   skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|拉脫維亞_4
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 2053
-  server: 5.34.209.139
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|亞美尼亞
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 443
-  server: 2.56.204.183
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|美國_5
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 8443
-  server: 193.17.183.157
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|西班牙
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 2053
-  server: 193.17.183.157
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|拉脫維亞_5
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 443
-  server: 195.135.253.29
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: 19|俄羅斯_4
-  network: ws
-  password: 42bbf526-5530-470a-aeec-3b919b21c58d
-  port: 443
-  server: 89.169.13.12
-  skip-cert-verify: true
-  sni: 0000.hkvip.ip-ddns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 0000.hkvip.ip-ddns.com
-    path: /?ed=2560
-- name: '20,30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #1'
+  uuid: 4a7baca1-8048-4a91-8316-595b36657a54
+  ws-headers:
+    Host: cCCVfffF.191288.xyZ
+  ws-path: /TaBvkrUbsyvsvinsGGg
+- name: 20|GB英国(mibei77.com 米贝节点分享) 2
   password: Aimer
   port: 2053
   server: 167.68.4.199
-  skip-cert-verify: false
-  sni: epge.muarua.filegear-sg.me
-  tls: true
+  skip-cert-verify: true
   type: trojan
-  ws-opts:
-    headers:
-      Host: epge.muarua.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 20|(yudou789.top 玉豆免费节点)
-  password: 47c07984-4f34-472c-93b0-15021fcdceb8
-  port: 31102
-  server: 220.130.58.136
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_140
-  port: 30830
-  server: v30.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_157
-  port: 30812
-  server: v12.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 20|台湾(yudou789.top 玉豆免费节点)_1
-  password: 157db8b8-45bb-46dd-9d27-13e9b2b5ab91
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-- name: 20|台湾(yudou789.top 玉豆免费点)_2
-  password: c16f2114-c6bb-4c8e-88e3-87d7ce428228
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_9
-  port: 30809
-  server: v9.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_11
-  password: 6H905uR3Pm0Lv7H
-  port: 46026
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  type: ss
-- name: 20|国(yudou789.top 玉豆免费节点)
-  password: 30077070-596e-48ea-9400-14c8ed07bd97
-  port: 443
-  server: tuntro006.instconn.com
-  skip-cert-verify: false
-  sni: torontorm1.686911.xyz
-  tls: true
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_12
-  port: 43525
-  server: faq1.lieerr222.cn
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: fb08c412-24db-4a5e-9bc2-0893dde8a50d
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_54
-  port: 30812
-  server: 202.85.53.179
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 20|台湾(yudou789.top 玉豆免费节点)_3
-  password: e1b8cd44-b643-4952-ab49-b62e1da7d08b
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_18
-  password: 6H905uR3Pm0Lv7H
-  port: 46048
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  type: ss
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_19
-  password: 6H905uR3Pm0Lv7H
-  port: 46033
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  type: ss
-- name: 20|美国(yudou789.top 玉豆免费节点)_91
-  password: trojan
-  port: 2087
-  server: 109.234.211.66
-  skip-cert-verify: false
-  sni: store.timimi.dpdns.org
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: store.timimi.dpdns.org
-    path: /
-- name: 20|台湾(yudou789.top 玉豆免费节点)_4
-  password: 49f42d5b-7c92-4f26-aeb6-89b9dd7fa0a5
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_21
-  password: 6H905uR3Pm0Lv7H
-  port: 46024
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  type: ss
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_23
-  password: 57bc0c04-8184-48f5-906b-897d095ed445
-  port: 17459
-  server: liubu9.singdns.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|美国(yudou789.top 玉豆免费节点)_24
-  password: f1e442f1-8abb-4df6-9c6e-ddd114224b3a
-  port: 10702
-  server: mbqg940.26i6c42.rkzn8ni.vm331.cn
-  type: ss
-- name: 20|香港(yudou789.top 玉豆免费节点)_3
-  password: 30077070-596e-48ea-9400-14c8ed07bd97
-  port: 443
-  server: tuntro000.instconn.com
-  skip-cert-verify: false
-  sni: hkip5.686911.xyz
-  tls: true
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 20|美国(yudou789.top 玉豆免费节点)_26
-  password: f1e442f1-8abb-4df6-9c6e-ddd114224b3a
-  port: 12125
-  server: mbqg940.26i6c42.rkzn8ni.vm331.cn
-  type: ss
-- name: 20|台湾(yudou789.top 玉豆免费节点)_5
-  password: 1989ec16-fe97-4e28-9eae-3be9b601a5b9
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_27
-  password: 6H905uR3Pm0Lv7H
-  port: 46074
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_28
-  port: 43525
-  server: faq1.lieerr222.cn
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9fd7e59f-9087-4e6f-ad65-d8708f25f77a
-- cipher: chacha20-ietf-poly1305
-  name: 20|美国(yudou789.top 玉豆免费节点)_30
-  password: f1e442f1-8abb-4df6-9c6e-ddd114224b3a
-  port: 10019
-  server: mbqg940.26i6c42.rkzn8ni.vm331.cn
-  type: ss
-- name: 20|台湾(yudou789.top 玉豆免费节点)_7
-  password: cce7d9cb-fef1-4a74-b1c5-afaf7f0428ac
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_33
-  password: 6H905uR3Pm0Lv7H
-  port: 46020
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_35
-  port: 59510
-  server: ffiw.owwoedu.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f98b8cd2-9bd6-4116-a0d1-d156d6e6f3d1
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_36
-  port: 59510
-  server: ffiw.owwoedu.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: feb0268a-f78a-4b79-b64c-b19a89fb9fd2
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_38
-  port: 59510
-  server: ffiw.owwoedu.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 01443adc-1846-4851-af06-4f10469240b4
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_39
-  port: 43528
-  server: faq1.lieerr222.cn
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 0d21bd4d-95fa-4d11-b6d3-9a433566ea59
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_40
-  port: 59510
-  server: ffiw.owwoedu.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 6f927063-4f4e-43c5-9e70-8cabcb40a0ae
-- name: 20|台湾(yudou789.top 玉豆免费节点)_9
-  password: d81fa396-b58d-4b6d-bd83-161f761c3452
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_43
-  port: 59510
-  server: ffiw.owwoedu.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 741f489f-15d8-4f90-9ff0-156604634fad
-- name: 20|台湾(yudou789.top 玉豆免费节点)_10
-  password: 3b100ed1-75ad-48e3-94cd-92152a8ef2d3
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_49
-  port: 30833
-  server: v33.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 20|西班牙(yudou789.top 玉豆免费节点)_1
-  password: trojan
+  udp: true
+- name: 20|US美国(mibei77.com 米贝节点分享) 32
+  password: T9BpZIVMNv
   port: 8443
-  server: 109.234.211.66
-  skip-cert-verify: false
-  sni: store.timimi.dpdns.org
-  tls: true
+  server: vip1.kaixincloud.top
+  skip-cert-verify: true
+  sni: vip1.kaixincloud.top
   type: trojan
-  ws-opts:
-    headers:
-      Host: store.timimi.dpdns.org
-    path: /
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_52
-  password: 48f75928-fc99-4ac0-b209-ca7bdd62dc67
-  port: 22354
-  server: ddns.wcaffcff.com
-  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_53
-  port: 43528
-  server: faq1.lieerr222.cn
-  skip-cert-verify: false
+  name: 20|US美国(mibei77.com 米贝节点分享) 37
+  network: ws
+  port: 80
+  server: vVVbNHj.191288.xYz
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 1fb9173e-8ab6-489a-b229-cc7ac87df1ae
-- name: 20|台湾(yudou789.top 玉豆免费节点)_11
-  password: 75725bfa-0764-44df-8559-a313dc04ca60
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
+  udp: true
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-headers:
+    Host: VvVBnHj.191288.XYZ
+  ws-path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
 - alterId: 0
   cipher: auto
-  name: 20,36,38|GB_speednode_0013
+  name: 20|US美国(mibei77.com 米贝节点分享) 17
+  network: ws
+  port: 443
+  server: llloooiu.191292.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
+  ws-headers:
+    Host: llloooiu.191292.xyz
+  ws-path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
+- alterId: 0
+  cipher: auto
+  name: 20|US美国(mibei77.com 米贝节点分享) 44
+  network: ws
+  port: 80
+  server: HHhjki.TAIwaN2028.indEvS.in
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-headers:
+    Host: hHHJkI.taiwAn2028.iNDEVs.in
+  ws-path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
+- name: 20|CA加拿大(mibei77.com 米贝节点分享)
+  password: 98b419ef-83a2-4d1b-a23d-566b7f24477b
+  port: 443
+  server: ooiuyt.890699.xyz
+  skip-cert-verify: true
+  sni: ooiuyt.890699.xyz
+  type: trojan
+  udp: true
+- name: 20|US美国(mibei77.com 米贝节点分享) 22
+  password: 0c6b96bc-5e3a-4500-8497-6dead1965609
+  port: 443
+  server: 60a22220-8a8f-46e7-82ba-76d42df68c34.661.qzz.io
+  skip-cert-verify: true
+  sni: 60a22220-8a8f-46e7-82ba-76d42df68c34.661.qzz.io
+  type: trojan
+  udp: true
+- name: '20,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #9'
+  password: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+  port: 443
+  server: rrrrrrr5.191262.xyz
+  skip-cert-verify: false
+  sni: rrrrrrr5.191262.xyz
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 20|US美国(mibei77.com 米贝节点分享) 24
+  network: ws
+  port: 443
+  server: YyYYuUI.iRAn1912.dpDNs.oRG
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4a7baca1-8048-4a91-8316-595b36657a54
+  ws-headers:
+    Host: YYyYUui.iran1912.dpdNS.OrG
+  ws-path: /TaBvkrUbsyvsvinsGGg
+- name: 20|US美国(mibei77.com 米贝节点分享) 55
+  password: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  port: 443
+  server: kkko9.191288.xyz
+  skip-cert-verify: true
+  sni: kkko9.191288.xyz
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 20|US美国(mibei77.com 米贝节点分享) 26
+  network: ws
+  port: 443
+  server: vvVBNhJ.191288.xyZ
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-headers:
+    Host: VvvbnhJ.191288.xyZ
+  ws-path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
+- name: 20|US美国(mibei77.com 米贝节点分享) 27
+  password: T9BpZIVMNv
+  port: 8443
+  server: v1.dabache.top
+  skip-cert-verify: true
+  sni: v1.dabache.top
+  type: trojan
+  udp: true
+- name: 20|US美国(mibei77.com 米贝节点分享) 51
+  password: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  port: 443
+  server: mmmhu.huangshang.online
+  skip-cert-verify: true
+  sni: mmmhu.huangshang.online
+  type: trojan
+  udp: true
+- name: 20|DE德国(mibei77.com 米贝节点分享) 2
+  password: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  port: 443
+  server: mk.huangshang.online
+  skip-cert-verify: true
+  sni: mk.huangshang.online
+  type: trojan
+  udp: true
+- name: 20|FR法国(mibei77.com 米贝节点分享)
+  password: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  port: 443
+  server: bbbnmkl.taiwan2028.indevs.in
+  skip-cert-verify: true
+  sni: bbbnmkl.taiwan2028.indevs.in
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 20|US美国(mibei77.com 米贝节点分享) 31
+  network: ws
+  port: 80
+  server: fffffg.890602.pp.ua
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4a7baca1-8048-4a91-8316-595b36657a54
+  ws-headers:
+    Host: fffffg.890602.pp.ua
+  ws-path: /TaBvkrUbsyvsvinsGGg
+- alterId: 0
+  cipher: auto
+  name: 20|US美国(mibei77.com 米贝节点分享) 40
+  network: ws
+  port: 80
+  server: mmmki.890634.xYZ
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-headers:
+    Host: Mmmki.890634.XYz
+  ws-path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
+- alterId: 0
+  cipher: auto
+  name: 20|CA加拿大(mibei77.com 米贝节点分享) 2
+  network: ws
+  port: 80
+  server: mmmju.890634.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
+  ws-headers:
+    Host: mmmju.890634.xyz
+  ws-path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
+- alterId: 0
+  cipher: auto
+  name: 20|US美国(mibei77.com 米贝节点分享) 33
+  network: ws
+  port: 443
+  server: 6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0c6b96bc-5e3a-4500-8497-6dead1965609
+  ws-headers:
+    Host: 6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io
+  ws-path: /KHtPvNZl371C8NsbbZ1wwDhJ3
+- alterId: 0
+  cipher: auto
+  name: 20|GB英国(mibei77.com 米贝节点分享) 7
   port: 180
   server: 82.198.246.97
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: 20|台湾(yudou789.top 玉豆免费节点)_12
-  password: dd46276b-1e48-4c33-829c-fe8bb1fa3272
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  tls: true
+- name: 20|US美国(mibei77.com 米贝节点分享) 35
+  password: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  port: 443
+  server: mmkk.www890604.dpdns.org
+  skip-cert-verify: true
+  sni: mmkk.www890604.dpdns.org
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_60
-  port: 30808
-  server: v8.hdacd.com
+  udp: true
+- name: '20,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #11'
+  password: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+  port: 443
+  server: yyyyu.taiwan2026.indevs.in
   skip-cert-verify: false
+  sni: yyyyu.taiwan2026.indevs.in
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 20|US美国(mibei77.com 米贝节点分享) 38
+  network: ws
+  port: 80
+  server: bbbnmkl.2030.pp.ua
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 32
+  udp: true
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-headers:
+    Host: bbbnmkl.2030.pp.ua
+  ws-path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
+- alterId: 0
   cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_90
+  name: 20|US美国(mibei77.com 米贝节点分享) 42
   network: ws
   port: 443
-  server: vc.fly.dev
-  servername: vc.fly.dev
-  skip-cert-verify: false
+  server: bBbNHJ.890634.xyz
+  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
-- name: 20|台湾(yudou789.top 玉豆免费节点)_13
-  password: 6f0d3131-13d9-4832-9f0e-72f48b8ba139
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_94
-  password: 6H905uR3Pm0Lv7H
-  port: 46060
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  type: ss
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_95
-  password: 6H905uR3Pm0Lv7H
-  port: 46046
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_97
-  port: 43528
-  server: faq1.lieerr222.cn
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 86199dde-be12-4285-8572-91aa55bcb646
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_98
-  password: 6H905uR3Pm0Lv7H
-  port: 46045
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_100
-  port: 43528
-  server: faq1.lieerr222.cn
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: fb1348c8-c0c0-48a0-bb0a-753f0e7ba7da
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_102
-  password: 6H905uR3Pm0Lv7H
-  port: 46023
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  type: ss
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_106
-  password: 6H905uR3Pm0Lv7H
-  port: 46022
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_110
-  port: 43528
-  server: faq1.lieerr222.cn
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: a50d2ea3-a221-4869-934d-ba83c0f600a5
-- name: 20|台湾(yudou789.top 玉豆免费节点)_15
-  password: 47c07984-4f34-472c-93b0-15021fcdceb8
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_121
-  port: 43527
-  server: faq1.lieerr222.cn
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 2305ee7e-556d-4939-8711-87b42abe5c01
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_129
-  password: 6H905uR3Pm0Lv7H
-  port: 46043
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  type: ss
-- name: 20|台湾(yudou789.top 玉豆免费节点)_16
-  password: 3f58bbd2-4bac-4c33-9dd9-788d7a35d8bf
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-- name: 20|台湾(yudou789.top 玉豆免费节点)_17
-  password: 6ecb4c83-10f0-47a6-b366-a1a922b34002
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_155
-  password: 6H905uR3Pm0Lv7H
-  port: 46047
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_156
-  port: 31224
-  server: tw.yiciyuanquicken.online
-  servername: tw.yiciyuanquicken.online
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: d51abb35-94a4-4529-9244-2808beaa4624
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_159
-  password: 6H905uR3Pm0Lv7H
-  port: 46041
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  type: ss
-- name: 20|台湾(yudou789.top 玉豆免费节点)_18
-  password: d81fa396-b58d-4b6d-bd83-161f761c3452
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_161
-  port: 43525
-  server: faq1.lieerr222.cn
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 843416e0-675e-4180-87dd-9701e2da6b00
-- cipher: aes-128-gcm
-  name: 20|美国(yudou789.top 玉豆免费节点)_163
-  password: 6H905uR3Pm0Lv7H
-  port: 46063
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  type: ss
+  udp: true
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-headers:
+    Host: bbbnHJ.890634.XYz
+  ws-path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
 - alterId: 2
   cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_164
-  port: 30836
-  server: v36.hdacd.com
-  skip-cert-verify: false
+  name: 20|US美国(mibei77.com 米贝节点分享) 43
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '20,30|🇨🇦 CA加拿大(mibei77.com 米贝节点分享) #1'
+  password: b9bb332d-5e0d-41af-adac-49362dde8661
+  port: 443
+  server: lll9.7777198.xyz
+  skip-cert-verify: false
+  sni: lll9.7777198.xyz
+  type: trojan
+  udp: true
+- name: 20|US美国(mibei77.com 米贝节点分享) 47
+  password: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+  port: 443
+  server: jjji.2030.pp.ua
+  skip-cert-verify: true
+  sni: jjji.2030.pp.ua
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 20|美国(yudou789.top 玉豆免费节点)_165
+  name: 20|US美国(mibei77.com 米贝节点分享) 48
   network: ws
   port: 443
-  server: cfn.cdn.moe233.org
-  servername: d232fuc3xd1vzm.cloudfront.net
-  skip-cert-verify: false
+  server: NmK.288288.SHop
+  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 36989e03-b3b9-4e85-8a96-6d02de7c4f3a
-  ws-opts:
-    headers:
-      Host: d232fuc3xd1vzm.cloudfront.net
-    path: /riolu/4
-- name: 20|台湾(yudou789.top 玉豆免费节点)_19
-  password: 602c3ca9-8cbf-4f35-bdfc-fd38b38f7972
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
+  udp: true
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-headers:
+    Host: NMk.288288.shoP
+  ws-path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
+- alterId: 0
+  cipher: auto
+  name: 20|US美国(mibei77.com 米贝节点分享) 50
+  network: ws
+  port: 443
+  server: hHHnmkl.288288.ShoP
+  skip-cert-verify: true
   tls: true
-  type: trojan
-- name: 20|台湾(yudou789.top 玉豆免费节点)_20
-  password: 23bb44e3-2d3b-4a6a-8307-e7ffcb9c1eaa
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
+  type: vmess
+  udp: true
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-headers:
+    Host: HHHnMkL.288288.SHop
+  ws-path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
+- alterId: 0
+  cipher: auto
+  name: 20|US美国(mibei77.com 米贝节点分享) 53
+  network: ws
+  port: 443
+  server: jjjk.191268.xyz
+  skip-cert-verify: true
   tls: true
+  type: vmess
+  udp: true
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-headers:
+    Host: jjjk.191268.xyz
+  ws-path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
+- name: 20|US美国(mibei77.com 米贝节点分享) 56
+  password: 0c6b96bc-5e3a-4500-8497-6dead1965609
+  port: 443
+  server: 6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io
+  skip-cert-verify: true
+  sni: 6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io
   type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 20|DE德国(mibei77.com 米贝节点分享) 3
+  network: ws
+  port: 80
+  server: eEfrT.890699.xYz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 98b419ef-83a2-4d1b-a23d-566b7f24477b
+  ws-headers:
+    Host: eEFRT.890699.XYz
+  ws-path: /Iu415Fpf5REYxWLpTGA5AqzZ2Mj
+- alterId: 0
+  cipher: auto
+  name: 20|US美国(mibei77.com 米贝节点分享) 58
+  network: ws
+  port: 443
+  server: tttyu.2030.pp.ua
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+  ws-headers:
+    Host: tttyu.2030.pp.ua
+  ws-path: /eszjp4nTT8TxDHFepMpfNkCk8
 - alterId: 0
   cipher: auto
   name: 22,33|CN4｜家宽｜非常安全
@@ -11270,7 +10292,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: '22|🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
+  name: 22,36,38|US_speednode_0032
   password: amazonskr05
   port: 443
   server: 13.217.198.211
@@ -14363,6 +13385,12 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
+- cipher: aes-256-cfb
+  name: 27|_MD_->🇺_RU_
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
 - alterId: 2
   cipher: auto
   name: 28|_CN_国
@@ -14422,12 +13450,17 @@ proxies:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - cipher: aes-256-cfb
-  name: 28,36,38|VN_speednode_0048
+  name: '28|未命名 #1'
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.155.127
   type: ss
-  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|🇺🇸_US_美国_4
+  password: kaQH3hGdcP80XEDI
+  port: 443
+  server: admin.c2.havij.co
+  type: ss
 - alterId: 2
   cipher: auto
   name: 28|🇨🇳_CN_中国_4
@@ -14500,7 +13533,7 @@ proxies:
     path: /@Malinda6104
 - alterId: 0
   cipher: auto
-  name: 30|🇯🇵 VMESS-美国>日本-NF解锁日本地区非自制剧-Ch...
+  name: '30|🇺🇸 美国 CloudFlare节点 #8'
   network: ws
   port: '8443'
   server: t1.620720.xyz
@@ -14637,19 +13670,6 @@ proxies:
     path: /vmessws
 - alterId: 0
   cipher: auto
-  name: 30|🇦🇺 VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-C...
-  network: ws
-  port: '443'
-  server: sy4.620720.xyz
-  tls: true
-  type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  ws-opts:
-    headers:
-      Host: sy4.620720.xyz
-    path: /
-- alterId: 0
-  cipher: auto
   name: 30|🇺🇸 VMESS-未知>美国-NF解锁自制剧-ChatGPT...
   network: ws
   port: '2083'
@@ -14700,53 +13720,45 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: 30|🇨🇦 加拿大 V2CROSS.COM
-  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-  port: 10889
-  server: 167.17.185.169
-  skip-cert-verify: false
-  sni: ya.ru
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #21'
+  network: ws
+  port: '80'
+  server: HHhjki.TAIwaN2028.indEvS.in
+  tls: false
+  type: vmess
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-opts:
+    headers:
+      Host: hHHJkI.taiwAn2028.iNDEVs.in
+    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
 - alterId: 0
   cipher: auto
   name: '30|🇺🇸 美国 CloudFlare节点 #1'
   network: ws
+  port: '8443'
+  server: 162.159.152.4
+  tls: true
+  type: vmess
+  uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '30|🇺🇸 美国 CloudFlare节点 #3'
+  network: ws
   port: '8080'
-  server: digitalocean.com
+  server: tgju.org
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     headers:
-      Host: nasnet-571299667.rahavard365.co
-    path: /NASNET/cdn?ed=2560
-- name: 30|🇳🇴 挪威 V2CROSS.COM
-  password: RPyW62_b9aH.ztJKeArou
-  port: 18581
-  server: 83.143.87.9
-  skip-cert-verify: false
-  sni: 83.143.87.9
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 美国 CloudFlare节点 #2'
-  network: ws
-  port: '80'
-  server: bbgtr.7777198.xyz
-  tls: false
-  type: vmess
-  uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
-  ws-opts:
-    headers:
-      Host: BBGTR.7777198.XYZ
-    path: /GgigazFGDLgFWDItkD5XgXAL
-- name: '30|🇨🇦 加拿大 V2CROSS.COM #1'
-  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-  port: 10889
-  server: 167.17.185.172
-  skip-cert-verify: false
-  sni: web.max.ru
-  type: trojan
+      Host: nasnet-571296497.iranpress.co
+    path: /nasnet/cdn?ed=2560
 - alterId: 0
   cipher: auto
   name: 30,33|US18｜机房｜低风险
@@ -14762,30 +13774,43 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '30|🇺🇸 美国 CloudFlare节点 #3'
-  network: ws
-  port: '443'
-  server: jjjjjjjji.191292.xyz
-  tls: true
-  type: vmess
-  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
-  ws-opts:
-    headers:
-      Host: jjjjjjjji.191292.xyz
-    path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
-- alterId: 0
-  cipher: auto
   name: '30|🇺🇸 美国 CloudFlare节点 #4'
   network: ws
-  port: '8080'
-  server: tgju.org
+  port: '80'
+  server: CCCVFffF.191288.Xyz
   tls: false
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
+  uuid: 4a7baca1-8048-4a91-8316-595b36657a54
   ws-opts:
     headers:
-      Host: nasnet-571296497.iranpress.co
-    path: /nasnet/cdn?ed=2560
+      Host: cCCVfffF.191288.xyZ
+    path: /TaBvkrUbsyvsvinsGGg
+- alterId: 0
+  cipher: auto
+  name: '30|🇺🇸 美国 CloudFlare节点 #5'
+  network: ws
+  port: '80'
+  server: fffffg.890602.pp.ua
+  tls: false
+  type: vmess
+  uuid: 4a7baca1-8048-4a91-8316-595b36657a54
+  ws-opts:
+    headers:
+      Host: fffffg.890602.pp.ua
+    path: /TaBvkrUbsyvsvinsGGg
+- alterId: 0
+  cipher: auto
+  name: '30|🇺🇸 美国 CloudFlare节点 #7'
+  network: ws
+  port: '80'
+  server: HHhjki.TAIwaN2028.indEvS.in
+  tls: false
+  type: vmess
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-opts:
+    headers:
+      Host: hHHJkI.taiwAn2028.iNDEVs.in
+    path: /
 - alterId: 2
   cipher: auto
   name: 30,33|香港|@ripaojiedian
@@ -14799,454 +13824,124 @@ proxies:
 - name: '30,33,34,37|🇭🇰 香港3|@stairnode #1'
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3373
-  server: 3.112.45.123
+  server: 18.179.142.141
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34,37|🇭🇰 香港4|@stairnode #1'
   password: BxceQaOe
   port: 1820
-  server: 13.115.128.246
+  server: 13.112.171.80
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: '30,33,34,37|🇭🇰 香港5|@stairnode #1'
   password: BxceQaOe
-  port: 2266
-  server: 52.195.179.165
+  port: 443
+  server: 112.120.31.36
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: '30,33,34,37|🇯🇵 日本|@stairnode #1'
   password: BxceQaOe
   port: 26378
-  server: 18.183.170.92
+  server: 52.194.222.6
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: '30,33,34,37|🇯🇵 日本2|@stairnode #1'
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
-  server: 202.181.103.246
+  server: 160.16.124.55
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34,37|🇯🇵 日本3|@stairnode #1'
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3423
-  server: 160.16.214.104
+  server: 160.16.116.227
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34,37|🇸🇬 新加坡|@stairnode #1'
   password: 5fb072e0ddd631cf66cf752b09210480
   port: 3076
-  server: 202.181.103.246
+  server: 160.16.89.176
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34,37|🇸🇬 新加坡2|@stairnode #1'
   password: 5fb072e0ddd631cf66cf752b09210480
-  port: 544
-  server: 13.231.234.230
+  port: 3901
+  server: 160.16.236.32
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34,37|🇸🇬 新加坡3|@stairnode #1'
   password: BxceQaOe
-  port: 532
-  server: 57.181.30.136
+  port: 8041
+  server: 3.112.215.135
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: '30,33,34,37|🇺🇸 美国|@stairnode #1'
   password: 5fb072e0ddd631cf66cf752b09210480
-  port: 443
-  server: 38.180.190.13
+  port: 1276
+  server: 160.16.231.103
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34,37|🇺🇸 美国2|@stairnode #1'
   password: 5fb072e0ddd631cf66cf752b09210480
-  port: 443
-  server: 38.180.107.76
+  port: 2760
+  server: 160.16.231.103
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34,37|🇺🇸 美国3|@stairnode #1'
   password: BxceQaOe
-  port: 4569
-  server: 52.194.248.81
+  port: 3159
+  server: 18.181.177.51
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #2'
-  password: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  port: 443
-  server: ggghj.www890604.dpdns.org
-  skip-cert-verify: false
-  sni: ggghj.www890604.dpdns.org
-  type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #38'
-  password: humanity
-  port: 443
-  server: 104.21.40.34
-  skip-cert-verify: false
-  sni: www.gossipglove.com
-  type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #44'
-  password: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  port: 443
-  server: mmmk.288288.shop
-  skip-cert-verify: false
-  sni: Mmmk.288288.shoP
-  type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #48'
-  password: T9BpZIVMNv
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #20'
+  password: '123456'
   port: 8443
-  server: vip2.kaixincloud.top
+  server: bpbg.anguswen.top
   skip-cert-verify: false
-  sni: sweden.vmaxpanel.com
-  type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #56'
-  password: T9BpZIVMNv
-  port: 8443
-  server: vip3.kaixincloud.top
-  skip-cert-verify: false
-  sni: sweden.vmaxpanel.com
+  sni: BpBg.ANGusWeN.top
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #3'
+  name: '30|🇨🇦 CA加拿大(mibei77.com 米贝节点分享) #2'
   network: ws
   port: '443'
-  server: 172.67.219.254
-  tls: true
-  type: vmess
-  uuid: 0c6b96bc-5e3a-4500-8497-6dead1965609
-  ws-opts:
-    headers:
-      Host: 42214edb-ec81-4091-bfa7-c4ced68ee019.661.qzz.io
-    path: /KHtPvNZl371C8NsbbZ1wwDhJ3
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #9'
-  network: ws
-  port: '443'
-  server: 172.67.193.64
-  tls: true
-  type: vmess
-  uuid: 0c6b96bc-5e3a-4500-8497-6dead1965609
-  ws-opts:
-    headers:
-      Host: 858C-EA07c71F67F1.X19890604.qZZ.IO
-    path: /KHtPvNZl371C8NsbbZ1wwDhJ3
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #33'
-  password: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
-  port: 443
-  server: eed4.7777125.xyz
-  skip-cert-verify: false
-  sni: eed4.7777125.xyz
-  type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #11'
-  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  port: 443
-  server: blackshadow.dpdns.org
-  skip-cert-verify: false
-  sni: blackshadow.dpdns.org
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #19'
-  network: ws
-  port: '80'
-  server: CCCVFffF.191288.Xyz
-  tls: false
-  type: vmess
-  uuid: 4a7baca1-8048-4a91-8316-595b36657a54
-  ws-opts:
-    headers:
-      Host: cCCVfffF.191288.xyZ
-    path: /TaBvkrUbsyvsvinsGGg
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #31'
-  password: T9BpZIVMNv
-  port: 8443
-  server: vip1.kaixincloud.top
-  skip-cert-verify: false
-  sni: sweden.vmaxpanel.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #36'
-  network: ws
-  port: '80'
-  server: vVVbNHj.191288.xYz
-  tls: false
-  type: vmess
-  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  ws-opts:
-    headers:
-      Host: VvVBnHj.191288.XYZ
-    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #16'
-  network: ws
-  port: '443'
-  server: llloooiu.191292.xyz
-  tls: true
-  type: vmess
-  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
-  ws-opts:
-    headers:
-      Host: llloooiu.191292.xyz
-    path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #43'
-  network: ws
-  port: '80'
-  server: HHhjki.TAIwaN2028.indEvS.in
-  tls: false
-  type: vmess
-  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  ws-opts:
-    headers:
-      Host: hHHJkI.taiwAn2028.iNDEVs.in
-    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
-- name: 30|🇨🇦 CA加拿大(mibei77.com 米贝节点分享)
-  password: 98b419ef-83a2-4d1b-a23d-566b7f24477b
-  port: 443
-  server: ooiuyt.890699.xyz
-  skip-cert-verify: false
-  sni: OOIuyT.890699.xYZ
-  type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #21'
-  password: 0c6b96bc-5e3a-4500-8497-6dead1965609
-  port: 443
-  server: 60a22220-8a8f-46e7-82ba-76d42df68c34.661.qzz.io
-  skip-cert-verify: false
-  sni: 60a22220-8A8f-46e7-82bA-76D42Df68c34.661.qZZ.Io
-  type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #53'
-  password: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
-  port: 443
-  server: rrrrrrr5.191262.xyz
-  skip-cert-verify: false
-  sni: rrrrrrr5.191262.xyz
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #23'
-  network: ws
-  port: '443'
-  server: YyYYuUI.iRAn1912.dpDNs.oRG
-  tls: true
-  type: vmess
-  uuid: 4a7baca1-8048-4a91-8316-595b36657a54
-  ws-opts:
-    headers:
-      Host: YYyYUui.iran1912.dpdNS.OrG
-    path: /TaBvkrUbsyvsvinsGGg
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #54'
-  password: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  port: 443
-  server: kkko9.191288.xyz
-  skip-cert-verify: false
-  sni: kKko9.191288.xyz
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #25'
-  network: ws
-  port: '443'
-  server: vvVBNhJ.191288.xyZ
-  tls: true
-  type: vmess
-  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  ws-opts:
-    headers:
-      Host: VvvbnhJ.191288.xyZ
-    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #26'
-  password: T9BpZIVMNv
-  port: 8443
-  server: v1.dabache.top
-  skip-cert-verify: false
-  sni: sweden.vmaxpanel.com
-  type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #50'
-  password: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  port: 443
-  server: mmmhu.huangshang.online
-  skip-cert-verify: false
-  sni: mMMhU.HUangSHANG.onlIne
-  type: trojan
-- name: '30|🇩🇪 DE德国(mibei77.com 米贝节点分享) #1'
-  password: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  port: 443
-  server: mk.huangshang.online
-  skip-cert-verify: false
-  sni: mK.huAngshanG.OnlINe
-  type: trojan
-- name: 30|🇫🇷 FR法国(mibei77.com 米贝节点分享)
-  password: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  port: 443
-  server: bbbnmkl.taiwan2028.indevs.in
-  skip-cert-verify: false
-  sni: bBbNmKl.TAIwAn2028.IndEvs.In
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #30'
-  network: ws
-  port: '80'
-  server: fffffg.890602.pp.ua
-  tls: false
-  type: vmess
-  uuid: 4a7baca1-8048-4a91-8316-595b36657a54
-  ws-opts:
-    headers:
-      Host: fffffg.890602.pp.ua
-    path: /TaBvkrUbsyvsvinsGGg
-- alterId: 0
-  cipher: auto
-  name: '30|🇨🇦 CA加拿大(mibei77.com 米贝节点分享) #1'
-  network: ws
-  port: '80'
-  server: mmmju.890634.xyz
-  tls: false
-  type: vmess
-  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
-  ws-opts:
-    headers:
-      Host: mmmju.890634.xyz
-    path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #32'
-  network: ws
-  port: '443'
-  server: 6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io
-  tls: true
-  type: vmess
-  uuid: 0c6b96bc-5e3a-4500-8497-6dead1965609
-  ws-opts:
-    headers:
-      Host: 6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io
-    path: /KHtPvNZl371C8NsbbZ1wwDhJ3
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #34'
-  password: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  port: 443
-  server: mmkk.www890604.dpdns.org
-  skip-cert-verify: false
-  sni: mMKK.WwW890604.DpdNS.OrG
-  type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #35'
-  password: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
-  port: 443
-  server: yyyyu.taiwan2026.indevs.in
-  skip-cert-verify: false
-  sni: yyyyu.taiwan2026.indevs.in
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #37'
-  network: ws
-  port: '80'
   server: bbbnmkl.2030.pp.ua
-  tls: false
+  tls: true
   type: vmess
   uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
   ws-opts:
     headers:
       Host: bbbnmkl.2030.pp.ua
     path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #41'
-  network: ws
-  port: '443'
-  server: bBbNHJ.890634.xyz
-  tls: true
-  type: vmess
-  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  ws-opts:
-    headers:
-      Host: bbbnHJ.890634.XYz
-    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
-- alterId: 2
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #42'
-  network: tcp
-  port: '30829'
-  server: v29.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '30|🇨🇦 CA加拿大(mibei77.com 米贝节点分享) #2'
-  password: b9bb332d-5e0d-41af-adac-49362dde8661
-  port: 443
-  server: lll9.7777198.xyz
+- name: '30|🇨🇦 CA加拿大(mibei77.com 米贝节点分享) #8'
+  password: T9BpZIVMNv
+  port: 8443
+  server: vip1.kaixincloud.top
   skip-cert-verify: false
-  sni: lll9.7777198.xyz
+  sni: sweden.vmaxpanel.com
   type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #46'
-  password: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
-  port: 443
-  server: jjji.2030.pp.ua
+- name: '30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #1'
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
   skip-cert-verify: false
-  sni: jjji.2030.pp.ua
+  sni: epge.muarua.filegear-sg.me
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #47'
-  network: ws
-  port: '443'
-  server: NmK.288288.SHop
-  tls: true
-  type: vmess
-  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  ws-opts:
-    headers:
-      Host: NMk.288288.shoP
-    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #49'
-  network: ws
-  port: '443'
-  server: hHHnmkl.288288.ShoP
-  tls: true
-  type: vmess
-  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  ws-opts:
-    headers:
-      Host: HHHnMkL.288288.SHop
-    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
-- alterId: 0
-  cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #52'
-  network: ws
-  port: '443'
-  server: jjjk.191268.xyz
-  tls: true
-  type: vmess
-  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  ws-opts:
-    headers:
-      Host: jjjk.191268.xyz
-    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #55'
-  password: 0c6b96bc-5e3a-4500-8497-6dead1965609
-  port: 443
-  server: 6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io
-  skip-cert-verify: false
-  sni: 6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '30|🇩🇪 DE德国(mibei77.com 米贝节点分享) #2'
+  name: '30|🇨🇦 CA加拿大(mibei77.com 米贝节点分享) #5'
   network: ws
   port: '80'
   server: eEfrT.890699.xYz
@@ -15259,7 +13954,209 @@ proxies:
     path: /Iu415Fpf5REYxWLpTGA5AqzZ2Mj
 - alterId: 0
   cipher: auto
-  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #57'
+  name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #2'
+  network: ws
+  port: '80'
+  server: gf.usa2030.indevs.in
+  tls: false
+  type: vmess
+  uuid: 5196aae7-1479-4f3c-978b-68e74977b509
+  ws-opts:
+    headers:
+      Host: gf.usa2030.indevs.in
+    path: /kl01iHu1vgbJmQ5IKMBivnR3
+- alterId: 0
+  cipher: auto
+  name: '30|🇨🇦 CA加拿大(mibei77.com 米贝节点分享) #4'
+  network: ws
+  port: '80'
+  server: mmmju.890634.xyz
+  tls: false
+  type: vmess
+  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
+  ws-opts:
+    headers:
+      Host: mmmju.890634.xyz
+    path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
+- alterId: 0
+  cipher: auto
+  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #5'
+  network: ws
+  port: '80'
+  server: mmKk.wWW890604.dpdns.OrG
+  tls: false
+  type: vmess
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-opts:
+    headers:
+      Host: mmKk.wWW890604.DPdNS.OrG
+    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
+- alterId: 0
+  cipher: auto
+  name: '30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #2'
+  network: ws
+  port: '443'
+  server: 172.67.219.254
+  tls: true
+  type: vmess
+  uuid: 0c6b96bc-5e3a-4500-8497-6dead1965609
+  ws-opts:
+    headers:
+      Host: 42214edb-ec81-4091-bfa7-c4ced68ee019.661.qzz.io
+    path: /KHtPvNZl371C8NsbbZ1wwDhJ3
+- alterId: 0
+  cipher: auto
+  name: '30|🇨🇦 CA加拿大(mibei77.com 米贝节点分享) #6'
+  network: ws
+  port: '443'
+  server: eed4.7777125.xyz
+  tls: true
+  type: vmess
+  uuid: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+  ws-opts:
+    headers:
+      Host: eed4.7777125.xyz
+    path: /eszjp4nTT8TxDHFepMpfNkCk8
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #6'
+  password: 5196aae7-1479-4f3c-978b-68e74977b509
+  port: 443
+  server: mkouy.99890604.xyz
+  skip-cert-verify: false
+  sni: mkouy.99890604.xyz
+  type: trojan
+- alterId: 32
+  cipher: auto
+  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #7'
+  network: ws
+  port: '443'
+  server: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
+- alterId: 0
+  cipher: auto
+  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #19'
+  network: tcp
+  port: '30812'
+  server: v12.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #10'
+  network: ws
+  port: '443'
+  server: llloooiu.191292.xyz
+  tls: true
+  type: vmess
+  uuid: b9bb332d-5e0d-41af-adac-49362dde8661
+  ws-opts:
+    headers:
+      Host: llloooiu.191292.xyz
+    path: /iqjxVCqiIAaLCt5Q2GkKGWRMg
+- alterId: 0
+  cipher: auto
+  name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #3'
+  network: ws
+  port: '80'
+  server: rrrgt.2030.pp.ua
+  tls: false
+  type: vmess
+  uuid: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+  ws-opts:
+    headers:
+      Host: rrrgt.2030.pp.ua
+    path: /eszjp4nTT8TxDHFepMpfNkCk8
+- name: '30|🇨🇦 CA加拿大(mibei77.com 米贝节点分享) #7'
+  password: T9BpZIVMNv
+  port: 8443
+  server: vip2.kaixincloud.top
+  skip-cert-verify: false
+  sni: sweden.vmaxpanel.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '30|🇨🇦 CA加拿大(mibei77.com 米贝节点分享) #9'
+  network: ws
+  port: '443'
+  server: YyYYuUI.iRAn1912.dpDNs.oRG
+  tls: true
+  type: vmess
+  uuid: 4a7baca1-8048-4a91-8316-595b36657a54
+  ws-opts:
+    headers:
+      Host: YYyYUui.iran1912.dpdNS.OrG
+    path: /TaBvkrUbsyvsvinsGGg
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #12'
+  password: T9BpZIVMNv
+  port: 8443
+  server: vip3.kaixincloud.top
+  skip-cert-verify: false
+  sni: sweden.vmaxpanel.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #15'
+  network: ws
+  port: '8443'
+  server: 172.64.152.23
+  tls: true
+  type: vmess
+  uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
+  ws-opts:
+    headers:
+      Host: frsys.fl-dl.com
+    path: /gbt
+- alterId: 0
+  cipher: auto
+  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #16'
+  network: ws
+  port: '80'
+  server: vVVbNHj.191288.xYz
+  tls: false
+  type: vmess
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-opts:
+    headers:
+      Host: VvVBnHj.191288.XYZ
+    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
+- name: '30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #3'
+  password: 98b419ef-83a2-4d1b-a23d-566b7f24477b
+  port: 443
+  server: ooiuyt.890699.xyz
+  skip-cert-verify: false
+  sni: OOIuyT.890699.xYZ
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #17'
+  network: ws
+  port: '80'
+  server: bbbnmkl.2030.pp.ua
+  tls: false
+  type: vmess
+  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
+  ws-opts:
+    headers:
+      Host: bbbnmkl.2030.pp.ua
+    path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd
+- alterId: 0
+  cipher: auto
+  name: '30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #4'
+  network: tcp
+  port: '180'
+  server: 82.198.246.97
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: '30|🇬🇧 GB英国(mibei77.com 米贝节点分享) #5'
   network: ws
   port: '443'
   server: tttyu.2030.pp.ua
@@ -15270,6 +14167,13 @@ proxies:
     headers:
       Host: tttyu.2030.pp.ua
     path: /eszjp4nTT8TxDHFepMpfNkCk8
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #25'
+  password: T9BpZIVMNv
+  port: 8443
+  server: v1.dabache.top
+  skip-cert-verify: false
+  sni: sweden.vmaxpanel.com
+  type: trojan
 - name: 30|🇺🇸 _US_美国
   password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
   port: 443
@@ -15464,13 +14368,6 @@ proxies:
   server: 219.76.135.98
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 33|HK2｜家宽｜非常安全
-  password: BxceQaOe
-  port: 443
-  server: 219.76.135.98
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
   type: trojan
 - name: 33|HK3｜家宽｜非常安全
   password: BxceQaOe
@@ -15733,14 +14630,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '33,36,38|IN_speednode_0022 #1'
-  password: M7v%w11Se*
-  port: 443
-  server: amanm.wsone.icu
-  skip-cert-verify: true
-  sni: amanm.wsone.icu
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
   name: '34,37|8元老牌专线机场：cczzuu.top #1'
   password: amazonskr05
@@ -15756,248 +14645,35 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: chacha20-ietf-poly1305
-  name: 36,38|CN_speednode_0002
-  password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
-  port: 19812
-  server: 183.240.138.163
+- cipher: aes-256-cfb
+  name: '34,37|🇰🇷 韩国|@stairnode #1'
+  password: qwerREWQ@@
+  port: 25879
+  server: 168.126.234.233
+  type: ss
+- cipher: aes-256-cfb
+  name: 36,38|PL_speednode_0011
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 217.30.10.70
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 36,38|CN_speednode_0005
-  password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
-  port: 19842
-  server: 183.240.138.163
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 36,38|CN_speednode_0006
-  password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
-  port: 19862
-  server: 183.240.138.163
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 36,38|HK_speednode_0019
-  network: http
-  port: 54732
-  server: 8.217.13.74
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d7c8da9f-d9ff-4198-8543-3983a6bfe5e6
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 36,38|HK_speednode_0020
-  network: http
-  port: 32975
-  server: 47.242.225.0
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ebaad525-e2cf-4c18-8ae9-41af29ac4b9c
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 36,38|HK_speednode_0021
-  network: http
-  port: 25351
-  server: 8.218.1.23
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a6dbf509-5293-4005-b86c-c0fca609a1af
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /x
-  name: 36,38|KR_speednode_0023
-  network: http
-  port: 52850
-  server: 49.128.219.21
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8dc4a51e-9c44-48a5-9e21-ff65a9343c8f
-- cipher: aes-128-gcm
-  name: 36,38|US_speednode_0037
-  password: shadowsocks
+- name: 36,38|US_speednode_0037
+  password: dcdb1278-4b7d-11ed-bb74-f23c9164ca5d
   port: 443
-  server: 37.19.198.236
-  type: ss
+  server: 9f763192-ta3j40-tsw0xs-19ord.de.oshuawei.com
+  tls: true
+  type: http
   udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0043
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.209
-  type: ss
+  username: dcdb1278-4b7d-11ed-bb74-f23c9164ca5d
+- name: 36,38|US_speednode_0044
+  password: 5edb4d21-6cc1-4d46-8823-9a0e14d83455
+  port: 4447
+  server: 4-n67hzkyu.mix.dexiansheng.com
+  tls: true
+  type: http
   udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0044
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.180
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0045
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.44
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0046
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.57
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0047
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.8
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0049
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.119
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0050
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.76
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0051
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.144
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0052
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.237
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0053
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.247
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0054
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.27
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0055
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.203
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0056
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.194
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0057
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.181
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0058
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.254
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0059
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.47
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0060
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.49
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0061
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.28
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0062
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.60
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0063
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.85
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0064
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.17
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 36,38|VN_speednode_0065
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.79
-  type: ss
-  udp: true
+  username: walless
 - cipher: aes-256-cfb
   name: 39|103.186.154.139_Claude
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
@@ -16121,12 +14797,6 @@ proxies:
   port: 443
   server: 213.159.66.206
   type: ss
-- cipher: aes-256-cfb
-  name: 39|218.237.185.230_Claude
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
-  type: ss
 - name: 39|220.128.110.108_Gemini1
   network: ws
   password: 5a2c16f9
@@ -16231,6 +14901,12 @@ proxies:
   password: S6jUK9Fw5fMHgNqlqXObHZWv8Tf4nEkm
   port: 443
   server: 193.203.203.66
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 39|NL_Amsterdam_Greenhost BV_Clau...
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 151.242.251.142
   type: ss
 - name: 39|US_Los Angeles_GTT Communicati...
   password: nX51bl545I

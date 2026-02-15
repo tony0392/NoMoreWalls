@@ -767,61 +767,66 @@ proxies:
   port: 443
   server: 44.244.21.125
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf
   country: 🇰 HK
-  name: 14|🇰 HK_61
+  name: 14| HK_68
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_69
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇭🇰 HK
+  name: 14|🇰 HK_70
   password: yRdxvK32gcKq8xxNguwU99
   port: 62763
   server: 62.60.233.226
   type: ss
+- alterId: 2
+  cipher: auto
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰 HK_71
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: f7d95364-607b-11ee-93af-f23c91369f2d
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰 HK_72
+  network: none
+  port: 13852
+  server: 45.207.157.29
+  skip-cert-verify: true
+  type: vmess
+  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+  ws-path: /
+- name: 18,22,30|🇭🇰 香港 电讯盈科有限公司
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.208
+  skip-cert-verify: false
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 19|🇭🇰HK_2
   password: dd1049c9-b242-4d1c-a598-f71d2a552ea1
   port: 44591
   server: 120.237.27.72
   type: ss
-- cipher: chacha20-ietf
-  name: 22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001...
-  obfs: plain
-  obfs-param: 892da69334.microsoft.com
-  password: HuTaoCloud
-  port: 12408
-  protocol: auth_aes128_sha1
-  protocol-param: 69334:Q4NAywZ1OHYZcsd6
-  server: 113.108.6.198
-  tfo: true
-  type: ssr
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 22|🔴🇭🇰[🎬🤖🧠📺]_github.com/Ruk1ng001...
-  port: 18930
-  server: 120.236.198.111
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  uuid: cdb3511c-b69a-4ac1-b314-09a004a82f5e
-- alterId: 0
-  cipher: auto
-  name: 22|🟢🇭🇰[🎬🤖🧠📺]_github.com/Ruk1ng001...
-  port: 18237
-  server: 183.236.51.43
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  uuid: cdb3511c-b69a-4ac1-b314-09a004a82f5e
-- alterId: 0
-  cipher: auto
-  name: '22|🟢🇭🇰[🎬🤖🧠📺]_github.com/Ruk1ng001... #1'
-  port: 18740
-  server: 120.236.198.111
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  uuid: cdb3511c-b69a-4ac1-b314-09a004a82f5e
 - cipher: aes-256-gcm
   name: 22|🟡🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001...
   password: ec8a5fb8-3a94-48a6-890a-4a80aa70b501
@@ -829,56 +834,6 @@ proxies:
   server: 183.240.179.202
   tfo: true
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '22|🟢🇭🇰[🎬🤖🧠📺]_github.com/Ruk1ng001... #2'
-  port: 18440
-  server: 183.236.51.43
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  uuid: cdb3511c-b69a-4ac1-b314-09a004a82f5e
-- name: 22|🟡🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001...
-  password: 5a8f8889-f529-48eb-99f8-5ef741051fab
-  port: 49966
-  server: 175.29.22.29
-  skip-cert-verify: true
-  sni: hk.naiun.bilibili.com
-  tfo: true
-  type: trojan
-- name: '22|🟡🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001... #1'
-  password: 5a8f8889-f529-48eb-99f8-5ef741051fab
-  port: 45359
-  server: 175.29.22.29
-  skip-cert-verify: true
-  sni: hk.naiun.bilibili.com
-  tfo: true
-  type: trojan
-- name: '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #1'
-  password: BxceQaOe
-  port: 2826
-  server: 95.40.55.141
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '22|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #2'
-  password: BxceQaOe
-  port: 1820
-  server: 43.207.171.246
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '22|🟢🇭🇰[🎬🤖🧠📺]_github.com/Ruk1ng001... #3'
-  port: 17025
-  server: 120.236.198.111
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  uuid: cdb3511c-b69a-4ac1-b314-09a004a82f5e
 - name: '22|🟡🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
   password: ec8a5fb8-3a94-48a6-890a-4a80aa70b501
   port: 34144
@@ -895,13 +850,12 @@ proxies:
   tfo: true
   type: ss
   udp: true
-- name: '22|🔴🇭🇰[🎬🤖🧠📺]_github.com/Ruk1ng001... #1'
-  password: 5a8f8889-f529-48eb-99f8-5ef741051fab
-  port: 41707
-  server: 175.29.22.29
+- name: 22|🟢🇭🇰[📺🎪✨🎞️]_github.com/Ruk1ng00...
+  password: BxceQaOe
+  port: 443
+  server: 112.120.31.135
   skip-cert-verify: true
-  sni: hk.01.naiun.bilibili.com
-  tfo: true
+  sni: t.me%2Fripaojiedian
   type: trojan
 - client-fingerprint: chrome
   name: 22|🟢🇭🇰[🎭✨]_github.com/Ruk1ng001_6...
@@ -914,7 +868,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: '22,34,37|🇭🇰 香港|@stairnode #1'
+  name: 22,34,37|🇭🇰 香港|@stairnode
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -931,24 +885,24 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '30,33,34,37|🇭🇰 香港3|@stairnode #1'
+- name: 30,33,34,37|🇭🇰 香港3|@stairnode
   password: 9372cb81c7b0ad903f91f2f8a4d3f02b
   port: 3373
-  server: 13.231.95.79
+  server: 54.64.61.41
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: '30,33,34,37|🇭🇰 香港4|@stairnode #1'
+- name: 30,33,34,37|🇭🇰 香港4|@stairnode
   password: BxceQaOe
-  port: 443
-  server: 112.120.31.135
+  port: 3292
+  server: 43.199.159.115
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '30,33,34,37|🇭🇰 香港5|@stairnode #1'
+- name: 30,33,34,37|🇭🇰 香港5|@stairnode
   password: BxceQaOe
-  port: 443
-  server: 58.152.25.208
+  port: 26378
+  server: 43.207.149.184
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -964,194 +918,10 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- name: 33|HK23｜家宽｜非常安全
+- name: 33|HK11｜家宽｜非常安全
   password: BxceQaOe
   port: 443
-  server: 203.198.123.162
+  server: 58.152.25.208
   skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
+  sni: 58.152.25.208
   type: trojan
-- name: 33|HK8｜家宽｜非常安全
-  password: BxceQaOe
-  port: 443
-  server: 203.198.123.162
-  skip-cert-verify: true
-  sni: 203.198.123.162
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 33|HK14｜机房｜低风险
-  network: tcp
-  port: '32975'
-  server: 47.242.225.0
-  tls: false
-  type: vmess
-  uuid: ebaad525-e2cf-4c18-8ae9-41af29ac4b9c
-- name: 33|HK9｜原生/疑似家宽｜非常安全
-  password: d1fe20fd-3cd1-4ba4-8413-1cf2ab14c179
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK10｜原生/疑似家宽｜非常安全
-  password: ee4395a5-8dff-4264-897b-20a69b6598a2
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK11｜原生/疑似家宽｜非常安全
-  password: e16613ac-8514-4ede-bba3-31f16d593cbd
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK12｜原生/疑似家宽｜非常安全
-  password: e4b2b196-92cb-4977-ab48-429c533fd97c
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK13｜原生/疑似家宽｜非常安全
-  password: 64f12f30-4b9e-4993-9016-900b8781c98b
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK15｜原生/疑似家宽｜非常安全
-  password: 15ee69de-6235-47b5-a28d-7f746424ea57
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK16｜原生/疑似家宽｜非常安全
-  password: 6a97aa88-eb91-4ea5-a305-d1a4838c1875
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK17｜原生/疑似家宽｜非常安全
-  password: dc3f0636-b06d-4dd9-b30d-dc0aaa3443a7
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK18｜原生/疑似家宽｜非常安全
-  password: 91be2fb5-5543-49af-90d0-52923cceb0be
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK25｜原生/疑似家宽｜非常安全
-  password: 33b3a51e-31c2-4b67-bf27-3cd6dd6c6edb
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK20｜原生/疑似家宽｜非常安全
-  password: 64f12f30-4b9e-4993-9016-900b8781c98b
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK34｜原生/疑似家宽｜非常安全
-  password: 586fb4bd-5369-4c73-a3ee-e1ef5b8093c8
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK35｜原生/疑似家宽｜非常安全
-  password: e16613ac-8514-4ede-bba3-31f16d593cbd
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK36｜原生/疑似家宽｜非常安全
-  password: 0bed90a0-bfc9-4e64-b7dc-165806dd4de0
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK37｜原生/疑似家宽｜非常安全
-  password: f2ea66ab-4b6f-4b0b-8d0a-a00a521a9d68
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK38｜原生/疑似家宽｜非常安全
-  password: b7103676-a866-4f33-a025-431c5a61ab05
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK39｜原生/疑似家宽｜非常安全
-  password: 86c379d8-0565-4a8b-a636-ca80bd42a131
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK40｜原生/疑似家宽｜非常安全
-  password: bd42df14-0524-4d86-ac9f-592a93951684
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK41｜原生/疑似家宽｜非常安全
-  password: 3f83b84d-b69a-4386-887a-ee51b1d18fe8
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK42｜原生/疑似家宽｜非常安全
-  password: f2ea66ab-4b6f-4b0b-8d0a-a00a521a9d68
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK43｜原生/疑似家宽｜非常安全
-  password: bd42df14-0524-4d86-ac9f-592a93951684
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: 33|HK44｜原生/疑似家宽｜非常安全
-  password: b7103676-a866-4f33-a025-431c5a61ab05
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 33|HK47｜机房｜低风险
-  network: ws
-  port: '443'
-  server: n1761214906.wpg27.xyz
-  servername: n1761214906.wpg27.xyz
-  tls: true
-  type: vmess
-  uuid: c28a6258-7baa-40fc-8a51-87f59c847cd7
-  ws-opts:
-    headers:
-      Host: n1761214906.wpg27.xyz
-    path: /

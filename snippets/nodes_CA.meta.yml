@@ -78,6 +78,12 @@ proxies:
   port: 443
   server: 54.200.54.11
   type: ss
+- name: 18|加拿大+V2CROSS.COM
+  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+  port: 10889
+  server: 167.17.185.169
+  sni: ya.ru
+  type: trojan
 - name: 20|CA加拿大(mibei77.com 米贝节点分享)
   password: 98b419ef-83a2-4d1b-a23d-566b7f24477b
   port: 443
@@ -134,13 +140,20 @@ proxies:
     headers:
       Host: ''
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: 30|🇨🇦 加拿大 V2CROSS.COM
-  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-  port: 10889
-  server: 167.17.185.152
-  skip-cert-verify: false
-  sni: ozon.ru
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 33|CA1｜机房｜低风险
+  network: ws
+  port: '2083'
+  server: youxuan.513514.xyz
+  servername: afeicloudca.54141528.xyz
+  tls: true
+  type: vmess
+  uuid: de0c4b78-82d5-4f30-8d57-5302748b6af9
+  ws-opts:
+    headers:
+      Host: afeicloudca.54141528.xyz
+    path: /ca
 - cipher: chacha20-ietf-poly1305
   name: 39|CA_Toronto_Tangram Canada Inc....
   password: S6jUK9Fw5fMHgNqlqXObHZWv8Tf4nEkm

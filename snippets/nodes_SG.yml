@@ -696,11 +696,18 @@ proxies:
   server: 13.113.17.246
   type: ss
 - cipher: chacha20-ietf
-  name: 22|🔴🇸🇬[🎬📺🔍]_github.com/Ruk1ng001_...
+  name: 22|🔴🇸🇬[🎬📺]_github.com/Ruk1ng001_4...
   password: asd123456
   port: 8388
   server: 103.36.91.32
   type: ss
+- cipher: aes-128-gcm
+  name: 22|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001...
+  password: 9592ac52-38f6-4d27-a292-dbb80cc5cab8
+  port: 34711
+  server: cccxr.wgnmdgfw.com
+  type: ss
+  udp: true
 - alterId: '0'
   cipher: auto
   name: 22|🟢🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001...
@@ -749,25 +756,21 @@ proxies:
   udp: true
   uuid: d52d6e7f-95c3-41a1-ba85-756f9bce1b87
   xudp: true
-- cipher: rc4-md5
-  name: 22|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001...
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.4
+- cipher: aes-128-gcm
+  name: '22|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
+  password: 9592ac52-38f6-4d27-a292-dbb80cc5cab8
+  port: 34712
+  server: cccxr.wgnmdgfw.com
   type: ss
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: '22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
-  network: tcp
-  port: 30845
-  server: v45.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '22,30,33,34,37|🇸🇬 新加坡2|@stairnode #1'
+- cipher: aes-128-gcm
+  name: '22|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
+  password: 9592ac52-38f6-4d27-a292-dbb80cc5cab8
+  port: 34710
+  server: cccxr.wgnmdgfw.com
+  type: ss
+  udp: true
+- name: '22|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
   password: 6d29eb2f74293cb01a19b32cf08ad2e9
   port: 4674
   server: 160.16.214.104
@@ -787,19 +790,39 @@ proxies:
   uuid: d52d6e7f-95c3-41a1-ba85-756f9bce1b87
   xudp: true
 - name: '30,33,34,37|🇸🇬 新加坡|@stairnode #1'
-  password: 6d29eb2f74293cb01a19b32cf08ad2e9
+  password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 4674
-  server: 160.16.130.21
+  server: 160.16.85.33
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '30,33,34,37|🇸🇬 新加坡2|@stairnode #1'
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 4674
+  server: 153.121.65.107
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34,37|🇸🇬 新加坡3|@stairnode #1'
   password: BxceQaOe
-  port: 12070
-  server: 95.40.39.213
+  port: 25675
+  server: 16.162.188.208
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
+- alterId: 32
+  cipher: auto
+  name: 30|🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
+  network: ws
+  port: '443'
+  server: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
 - name: 31|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

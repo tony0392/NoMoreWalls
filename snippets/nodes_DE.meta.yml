@@ -53,23 +53,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- country: 🇪 DE
-  name: 14| DE_14
-  password: 4732adfa16c6450bbef87264e41332db
-  port: 443
-  server: 165.22.74.230
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇪DE
-  name: 14|🇩🇪DE_15
-  password: 665c944d-047d-4659-80d5-3eaac70241a9
-  port: 443
-  server: 139.162.158.172
-  skip-cert-verify: true
-  sni: de2-full.privateip.net
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 19,20|NL荷兰(mibei77.com 米贝节点分享)_9
@@ -160,18 +143,58 @@ proxies:
     headers:
       Host: fast.usfaster.top
     path: /images
-- alterId: '2'
-  cipher: auto
-  name: 22|🔴🇩🇪[🎭🎪📦✈️]_github.com/Ruk1ng00...
-  network: tcp
-  port: 30833
-  server: v33.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- cipher: aes-128-gcm
+  name: 22|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001...
+  password: 19ccc0bb7e9238ab
+  plugin: obfs
+  plugin-opts:
+    host: 17080fef5b694bda.alicloudccp.com
+    mode: http
+  port: 44801
+  server: bc569ab28e.n2hlutbws.sbs
+  tfo: false
+  type: ss
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  xudp: true
+- cipher: aes-128-gcm
+  name: '22|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
+  password: 19ccc0bb7e9238ab
+  plugin: obfs
+  plugin-opts:
+    host: 17080fef5b694bda.alicloudccp.com
+    mode: http
+  port: 46349
+  server: bc569ab28e.n2hlutbws.sbs
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '22|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
+  password: 19ccc0bb7e9238ab
+  plugin: obfs
+  plugin-opts:
+    host: 17080fef5b694bda.alicloudccp.com
+    mode: http
+  port: 42761
+  server: bc569ab28e.n2hlutbws.sbs
+  tfo: false
+  type: ss
+  udp: true
+- name: 22|🟢🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001...
+  password: d076280a-0d5f-11f0-8a7b-f23c913c8d2b
+  port: 443
+  server: 96ee6992-t9zts0-tcum62-se45.de.oshuawei.com
+  sni: 96ee6992-t9zts0-tcum62-se45.de.oshuawei.com
+  tls: true
+  type: http
+  username: d076280a-0d5f-11f0-8a7b-f23c913c8d2b
+- name: '22|🟢🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
+  password: 467f2940-77cd-11ee-b5ed-f23c9164ca5d
+  port: 443
+  server: 120bc667-t9zts0-ta42cg-1phla.de.oshuawei.com
+  sni: 120bc667-t9zts0-ta42cg-1phla.de.oshuawei.com
+  tls: true
+  type: http
+  username: 467f2940-77cd-11ee-b5ed-f23c9164ca5d
 - alterId: 0
   cipher: auto
   name: 30|🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch...
@@ -185,6 +208,15 @@ proxies:
     headers:
       Host: 547.rtxconfigz.shop
     path: /@Malinda6104
+- alterId: 0
+  cipher: auto
+  name: 30|🇺🇸 US 217 | ⬇️ 5MB/s
+  network: tcp
+  port: '180'
+  server: 82.198.246.46
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - client-fingerprint: chrome
   name: 35| t.me/PFSub |  NL 074 | ⬇️ 2MB...
   network: ws
@@ -209,7 +241,7 @@ proxies:
   skip-cert-verify: true
   sni: mpvideo.qpic.cn
   type: trojan
-- name: 35|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001...
+- name: '35|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20054
   server: cos-beijing.solidigm-zxcv.com

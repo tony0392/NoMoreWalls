@@ -172,7 +172,7 @@ proxies:
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - alterId: 0
   cipher: auto
-  name: 17,34,37|🇬🇧 英国 CCZZUU.TOP 8
+  name: 17,34,37|🇬🇧 英国 CCZZUU.TOP 10
   port: 180
   server: 82.198.246.233
   skip-cert-verify: true
@@ -193,10 +193,11 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 17,36,38|GB_speednode_0007
+  name: 17,36,37,38|GB_speednode_0007
   port: 180
   server: 82.198.246.214
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -204,10 +205,11 @@ proxies:
 - alterId: 0
   cipher: auto
   fingerprint: chrome
-  name: 17,36,38,39|US_Los Angeles_Datacamp Limite...
+  name: 17,36,37,38,39|US_Los Angeles_Datacamp Limite...
   port: 180
   server: 82.198.246.37
   skip-cert-verify: true
+  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -272,11 +274,11 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: '19,30|美國丨yoyapai.com\r #1'
+- name: 19|美國丨yoyapai.com_4
   password: 8r<[9'l6hAO#8ZQi
   port: 8443
   server: 172.66.44.230
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: Koma-YT.PAGeS.Dev
   tls: true
   type: trojan
@@ -854,13 +856,6 @@ proxies:
       User-Agent: Mozilla/5.0 (Linux; Android 7.1.1; CPH1723 Build/N6F26Q) AppleWebKit/537.36
         (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36
     path: /tr
-- cipher: aes-256-gcm
-  name: 22|🟢🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001...
-  password: 4d4db181-5c93-399d-9fb9-1280ccbfb169
-  port: 20013
-  server: e.q.a.2.m.o.a.e.d.us01-ae5.entry.v51124-5.qpon
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 30|🇺🇸 VMESS-美国-NF解锁自制剧-ChatGPT-Ti...
@@ -978,26 +973,103 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: '30,33,34|🇺🇸 美国|@ripaojiedian #1'
-  password: 69ecb45889d99f31b8ccc10bf8f76a72
-  port: 4019
-  server: 54.238.146.34
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 30|🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '443'
+  server: cf.090227.xyz
+  tls: true
+  type: vmess
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  ws-opts:
+    headers:
+      Host: sgal.dagrate.eu.org
+    path: /
 - name: '30,33,34|🇺🇸 美国2|@ripaojiedian #1'
   password: 69ecb45889d99f31b8ccc10bf8f76a72
-  port: 4019
-  server: 18.183.75.181
+  port: 3057
+  server: 95.40.115.145
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34|🇺🇸 美国3|@ripaojiedian #1'
   password: BxceQaOe
-  port: 49534
-  server: 18.162.96.119
+  port: 38692
+  server: 95.40.19.36
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 30|🇺🇸 US美国(mibei77.com 米贝节点分享)
+  password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
+  port: 24534
+  server: jp2-8sb.6121999.dpdns.org
+  skip-cert-verify: false
+  sni: jp2-8sb.6121999.dpdns.org
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #4'
+  network: tcp
+  port: '30812'
+  server: v12.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 30,35|🇭🇰HK hdacd.com
+  network: tcp
+  port: 30824
+  server: v24.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 30,35|v29.hdacd.com
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: '30,33|C - 🇺🇸 US 67 TG: @nodpai'
+  network: tcp
+  port: 30808
+  server: v8.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #27'
+  password: JaFKnqNcvnBT63t3rquidGsln
+  port: 443
+  server: hl-freedom-1.undef.network
+  skip-cert-verify: false
+  sni: HL-FREEDOM-1.UNDEF.NETWORK
+  type: trojan
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #36'
+  password: humanity
+  port: 443
+  server: www.multiplydose.com
+  skip-cert-verify: false
+  type: trojan
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #37'
+  password: humanity
+  port: 443
+  server: 104.18.11.110
+  skip-cert-verify: false
+  sni: www.multiplydose.com
   type: trojan
 - name: 30|🇺🇸 _US_美国
   password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
@@ -1018,42 +1090,17 @@ proxies:
   server: 45.83.140.22
   skip-cert-verify: true
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '33|B - 🇺🇸 US 47 TG: @nodpai'
+- name: '33|B - 🇺🇸 US 51 TG: @nodpai'
   network: ws
-  port: 443
-  server: cg1c16.waimaojd.com
-  servername: cg1c16.waimaojd.com
-  tls: true
-  type: vmess
-  uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  sni: epge.muarua.filegear-sg.me
+  type: trojan
   ws-opts:
     headers:
-      Host: cg1c16.waimaojd.com
-    path: /api/v1/graphql
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 33,35|🇭🇰HK hdacd.com
-  network: tcp
-  port: 30824
-  server: v24.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: '33|C - 🇺🇸 US 54 TG: @nodpai'
-  network: tcp
-  port: 30808
-  server: v8.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+      Host: epge.muarua.filegear-sg.me
+    path: /?ed
 - alterId: 2
   cipher: auto
   h2-opts: {}
@@ -1066,39 +1113,18 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 33|🇺🇸US_5|2.0MB/s
+- alterId: 0
+  cipher: auto
+  name: 33|🇺🇸US_6|1.3MB/s
   network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2083
-  server: 31.172.79.138
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
+  port: '443'
+  server: xg1a4.waimaofuwujd.cc
+  servername: xg1a4.waimaofuwujd.cc
+  tls: true
+  type: vmess
+  uuid: 1a87fc81-6846-4246-add3-00a38baa8c0f
   ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: 33|🇺🇸US_6|1.1MB/s
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 5.78.78.178
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: 33|🇺🇸US_9|1.1MB/s
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 95.182.101.74
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
+    path: /api/v1/graphql
 - name: 35|🔴🇺🇸[🎬🎭🎞️📦]_github.com/Ruk1ng00...
   password: gs4BXwT6SW
   port: 10988
@@ -1114,7 +1140,7 @@ proxies:
   port: 36887
   server: ss.029.node-for-bigairport.win
   type: ss
-- name: '35|🟢🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
+- name: 35|🟢🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001...
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20044
   server: oss-shanghai.solidigm-zxcv.com
@@ -1135,14 +1161,14 @@ proxies:
   skip-cert-verify: true
   sni: mpvideo.qpic.cn
   type: trojan
-- name: '35|🟢🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
+- name: '35|🟢🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20045
   server: oss-shanghai.solidigm-zxcv.com
   skip-cert-verify: true
   sni: mpvideo.qpic.cn
   type: trojan
-- name: '35|🟢🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
+- name: '35|🟢🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20048
   server: oss-shanghai.solidigm-zxcv.com
@@ -1156,7 +1182,7 @@ proxies:
   server: fgg.idsduf.com
   type: ss
   udp: true
-- name: '35|🟢🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
+- name: '35|🟢🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20047
   server: oss-shanghai.solidigm-zxcv.com
@@ -1179,7 +1205,7 @@ proxies:
   type: http
   username: 47e91fb6-25b8-df52-bc18-3cdc8548192f
 - client-fingerprint: chrome
-  name: '35|🟢🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #5'
+  name: '35|🟢🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
   password: 4123ae62-0999-4984-8ead-091630e594a9
   port: 443
   server: n1.chateditimage.com
@@ -1224,7 +1250,7 @@ proxies:
   server: south.nor1.uops.rtx.al
   type: ss
   udp: true
-- name: '35|🟢🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #6'
+- name: '35|🟢🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001... #5'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20042
   server: oss-shanghai.solidigm-zxcv.com
@@ -1301,10 +1327,10 @@ proxies:
   udp: true
   username: f8eca8df-a1a5-4918-a194-d34112a3673f
 - cipher: chacha20-ietf-poly1305
-  name: '37|🇺🇸 美国 CCZZUU.TOP #1'
-  password: GyZ5Xo0ht41vYmW3H4
-  port: 816
-  server: 149.28.255.6
+  name: '37|🇺🇸 美国 Microsoft数据中心 #2'
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: admin.c1.webramz.co
   tfo: false
   type: ss
 - alterId: 0

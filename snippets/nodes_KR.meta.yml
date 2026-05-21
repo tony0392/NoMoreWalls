@@ -203,13 +203,13 @@ proxies:
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - cipher: aes-256-cfb
   country: 🇷KR
-  name: 14|🇷KR_84
+  name: 14|🇷KR_68
   password: qwerREWQ@@
   port: 6123
   server: 211.178.105.134
   type: ss
 - country: 🇷KR
-  name: 14|🇷KR_85
+  name: 14|🇷KR_69
   password: IL37892054
   port: 443
   server: select-marmoset.rooster465.autos
@@ -217,12 +217,21 @@ proxies:
   type: trojan
   udp: true
 - country: 🇰🇷KR
-  name: 14|🇷KR_86
+  name: 14|🇷KR_70
   password: ZY07256934
   port: 443
   server: glowing-deer.rooster465.autos
   skip-cert-verify: true
   type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: 17|South Korea
+  password: 63d7c17506d1f48b
+  port: 20129
+  server: 203.32.26.24
+  skip-cert-verify: true
+  tfo: false
+  type: ss
   udp: true
 - name: 20|KR韩国(mibei77.com 米贝节点分享)_2
   password: GKHWMe2R4qwNcNxu6l3KMkdd
@@ -254,24 +263,12 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 22|🔴🇰🇷_github.com/Ruk1ng001_629ee...
+  name: 22|🔴🇰🇷[🤖🔍]_github.com/Ruk1ng001_9...
   password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
   port: 27008
-  server: d3d2qm.yytls.top
+  server: drzrbc.yytls.top
   skip-cert-verify: false
-  sni: d3d2qm.yytls.top
-  type: anytls
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 22|🔴🇰🇷[🎬🤖📺]_github.com/Ruk1ng001_...
-  password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
-  port: 27008
-  server: rs11k2.yytls.top
-  skip-cert-verify: false
-  sni: rs11k2.yytls.top
+  sni: drzrbc.yytls.top
   type: anytls
   udp: true
 - alpn:
@@ -290,6 +287,18 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
+  name: 22|🔴🇰🇷[🤖📺🔍]_github.com/Ruk1ng001_...
+  password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+  port: 27008
+  server: cusujn.yytls.top
+  skip-cert-verify: false
+  sni: cusujn.yytls.top
+  type: anytls
+  udp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
   name: 22|🔴🇰🇷[🎬🤖🔍]_github.com/Ruk1ng001_...
   password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
   port: 27008
@@ -298,30 +307,18 @@ proxies:
   sni: hal1lo.yytls.top
   type: anytls
   udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 22|🔴🇰🇷[🤖📺🔍]_github.com/Ruk1ng001_...
-  password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
-  port: 27008
-  server: pdh4v7.yytls.top
+- alterId: 0
+  cipher: auto
+  name: 22|🔴🇰🇷_github.com/Ruk1ng001_98cb1...
+  network: tcp
+  port: 9059
+  server: select-kr.ddnskunlun.com
+  servername: select-kr.ddnskunlun.com
   skip-cert-verify: false
-  sni: pdh4v7.yytls.top
-  type: anytls
+  tls: false
+  type: vmess
   udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 22|🔴🇰🇷[🎬📺🔍]_github.com/Ruk1ng001_...
-  password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
-  port: 27008
-  server: zq28pv.yytls.top
-  skip-cert-verify: false
-  sni: zq28pv.yytls.top
-  type: anytls
-  udp: true
+  uuid: 4d6a19fd-ba4f-36c5-89ad-97224cca5484
 - name: 31|韩国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

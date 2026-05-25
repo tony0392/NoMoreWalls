@@ -23,30 +23,35 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
-- cipher: aes-128-gcm
+- cipher: chacha20-ietf-poly1305
   country: 🇺 RU
-  name: 14| RU_76
-  password: 6784aee2-0dfe-474f-8446-480259ff9918
-  port: 442
-  server: 45.139.25.43
+  name: 14| RU_88
+  password: D1oFY5dskhFuI8PNbSA35s
+  port: 34898
+  server: 195.133.2.2
   type: ss
-- cipher: aes-128-gcm
-  country: 🇺RU
-  name: 14,28|🇺_RU_斯
-  password: 6784aee2-0dfe-474f-8446-480259ff9918
-  port: 442
-  server: ru.safepass.click
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 14|🇷🇺RU_78
-  password: BNmAXXxAHYpTRdzu
-  port: 9020
+  country: 🇺RU
+  name: 14|🇺RU_89
+  password: Lp27rqyJq72bZsqX
+  port: 9045
   server: 217.30.10.70
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇺RU
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇺RU_90
+  network: tcp
+  port: 22324
+  server: 213.156.141.52
+  skip-cert-verify: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  ws-path: /
 - country: 🇺RU
-  name: 14|🇺RU_79
+  name: 14|🇷RU_91
   password: WF42809561
   port: 443
   server: nearby-muskrat.rooster465.autos
@@ -56,58 +61,39 @@ proxies:
 - name: 18|俄罗斯+V2CROSS.COM
   network: ws
   password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 176.124.201.78
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-- name: '18|俄罗斯+V2CROSS.COM #1'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
   port: 8443
-  server: 212.113.112.236
+  server: 195.211.124.140
   sni: Koma-YT.PAGeS.Dev
   type: trojan
   ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳+@WangCai2
-- name: '18|俄罗斯+V2CROSS.COM #2'
+- name: 23|[Trojan] 🇷🇺 俄罗斯 V2CROSS.COM
   network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 77.238.236.134
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 8443
+  server: 92.246.136.90
+  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
+  udp: true
   ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳+@WangCai2
-- name: '18|俄罗斯+V2CROSS.COM #3'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 46.8.236.104
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
+- cipher: aes-128-gcm
+  name: 28|🇺_RU_斯
+  password: 6784aee2-0dfe-474f-8446-480259ff9918
+  port: 442
+  server: ru.safepass.click
+  type: ss
+  udp: true
 - name: 30|🇷🇺 俄罗斯 V2CROSS.COM
   password: 8r<[9'l6hAO#8ZQi
   port: 8443
-  server: 213.232.204.65
+  server: 194.135.38.131
   skip-cert-verify: false
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-- name: 30|🇷🇺 俄罗斯 CCZZUU.TOP
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 62.182.196.202
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-- name: 30|🇷🇺 俄罗斯 CCZZUU.TOP 2
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 77.221.143.81
-  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
 - cipher: aes-256-gcm
@@ -117,42 +103,3 @@ proxies:
   server: 45.140.168.54
   type: ss
   udp: true
-- name: '37|🇷🇺 俄罗斯 CCZZUU.TOP #1'
-  network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 8443
-  server: 213.232.204.65
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tfo: false
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '37|🇷🇺 俄罗斯 CCZZUU.TOP 2 #1'
-  network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 8443
-  server: 62.182.196.202
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tfo: false
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: 37|🇷🇺 俄罗斯 CCZZUU.TOP 4
-  network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 92.243.74.253
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tfo: false
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram

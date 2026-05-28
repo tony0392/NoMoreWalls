@@ -203,14 +203,13 @@ proxies:
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - cipher: aes-256-cfb
   country: 🇷KR
-  name: '14,22|🟢🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
+  name: 14|KR_46
   password: qwerREWQ@@
   port: 6123
   server: 211.178.105.134
-  tfo: false
   type: ss
 - country: 🇷KR
-  name: 14|🇷KR_69
+  name: 14|🇷KR_47
   password: ZY07256934
   port: 443
   server: glowing-deer.rooster465.autos
@@ -218,13 +217,25 @@ proxies:
   type: trojan
   udp: true
 - country: 🇰🇷KR
-  name: 14|🇷KR_70
+  name: 14|🇷KR_48
   password: IL37892054
   port: 443
   server: select-marmoset.rooster465.autos
   skip-cert-verify: true
   type: trojan
   udp: true
+- name: 18|韩国+KT电信
+  network: ws
+  password: 433e785b-2077-47f7-a43d-985f63dd18d1
+  port: 18000
+  server: 121.154.96.50
+  skip-cert-verify: false
+  sni: vpn.rnmcnm.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vpn.rnmcnm.com
+    path: '%2Ftrojan'
 - name: 20|KR韩国(mibei77.com 米贝节点分享)_2
   password: GKHWMe2R4qwNcNxu6l3KMkdd
   port: 10017
@@ -251,42 +262,24 @@ proxies:
     headers:
       Host: vpn1.rnmcnm.com
     path: /trj-ws
-- cipher: aes-256-gcm
+- alpn:
+  - h3
+  congestion-controller: bbr
+  disable-sni: false
   name: 22|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001...
+  password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+  port: 27108
+  reduce-rtt: false
+  server: wogzwc.yydzx.xyz
+  sni: wogzwc.yydzx.xyz
+  type: tuic
+  uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+- cipher: aes-256-gcm
+  name: 22|🔴🇰🇷_github.com/Ruk1ng001_b2881...
   password: 504cb0be-b285-4ec5-9561-bc289aea0d46
   port: 20002
   server: bgroup.node2.s2.nodelist-airport.com
   type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '22|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #9'
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '22|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
-  network: none
-  port: 443
-  server: 140.238.2.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  xudp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 22|🔴🇰🇷[🎬🤖📺]_github.com/Ruk1ng001_...
-  password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
-  port: 27008
-  server: cusujn.yytls.top
-  skip-cert-verify: false
-  sni: cusujn.yytls.top
-  type: anytls
   udp: true
 - cipher: aes-256-gcm
   name: 22|🔴🇰🇷_github.com/Ruk1ng001_1c307...
@@ -295,137 +288,223 @@ proxies:
   server: bgroup.node2.s.nodelist-airport.com
   type: ss
   udp: true
-- alterId: '0'
+- alpn:
+  - ''
+  alterId: 0
   cipher: auto
-  name: '22|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
-  network: ws
-  port: 80
-  server: 132.145.80.230
+  name: '22,33|B - 🇰🇷 KR 01 TG: @nodpai'
+  network: tcp
+  port: 11146
+  server: dotu-krv1.kunlun03dns.com
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers:
-      Host: kr02.a0a.xyz
-    path: /cctv13.m3u8
+  uuid: 6b989fce-172e-37a6-b324-3922008b17f9
   xudp: true
 - alpn:
-  - h3
-  congestion-controller: bbr
-  name: '22|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
-  password: 876d9d25-19c8-462b-b364-7b47e0602f12
-  port: 50020
-  server: hg1.shdetai.cn
-  sni: hg1.shdetai.cn
-  type: tuic
-  udp: true
-  uuid: 876d9d25-19c8-462b-b364-7b47e0602f12
-- cipher: chacha20-ietf-poly1305
-  name: '22|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #5'
-  password: 876d9d25-19c8-462b-b364-7b47e0602f12
-  port: 50060
-  server: hg2.shdetai.cn
-  type: ss
-  udp: true
-- alpn:
-  - h3
-  congestion-controller: bbr
-  name: '22|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #6'
-  password: 876d9d25-19c8-462b-b364-7b47e0602f12
-  port: 50020
-  server: hg2.shdetai.cn
-  sni: hg2.shdetai.cn
-  type: tuic
-  udp: true
-  uuid: 876d9d25-19c8-462b-b364-7b47e0602f12
-- alterId: 0
-  cipher: auto
-  name: '22|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #7'
-  network: ws
-  port: 443
-  server: 152.67.218.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  name: '22|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #11'
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
-  type: ss
-- cipher: aes-256-cfb
-  name: '22|🟢🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
-  password: qwerREWQ@@
-  port: 13979
-  server: 221.139.79.57
-  type: ss
-  udp: true
-- alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '22|🔴🇰🇷[🎬🤖📺]_github.com/Ruk1ng001_... #1'
+  name: '22|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
   password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
   port: 27008
-  server: b87zd5.yytls.top
+  server: zfhnbo.yytls.top
   skip-cert-verify: false
-  sni: b87zd5.yytls.top
-  type: anytls
-  udp: true
-- name: 22,35|🔴🇰🇷_github.com/Ruk1ng001_5b8e1...
-  password: ''
-  port: 1090
-  server: 121.169.46.116
-  skip-cert-verify: true
-  tls: false
-  type: socks5
-  username: Og%3D%3D
-- cipher: chacha20-ietf-poly1305
-  name: '22|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #10'
-  password: 876d9d25-19c8-462b-b364-7b47e0602f12
-  port: 50110
-  server: hg1.shdetai.cn
-  type: ss
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 22|🔴🇰🇷[🎬🤖]_github.com/Ruk1ng001_f...
-  password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
-  port: 27008
-  server: an9pfq.yytls.top
-  skip-cert-verify: false
-  sni: an9pfq.yytls.top
+  sni: zfhnbo.yytls.top
   type: anytls
   udp: true
 - client-fingerprint: chrome
-  name: 22|🔴🇰🇷[🎬📺🔍]_github.com/Ruk1ng001_...
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 18161
-  server: 193.122.102.79
+  name: 22|🔴🇰🇷[🤖📺🔍]_github.com/Ruk1ng001_...
+  network: tcp
+  password: 8de68ddc-e24e-4224-9c2a-457d4a8176df
+  port: 18441
+  server: zkqebcxbnu1ykm40u5ey98xe8kxk7zcgkh0po2rg.gayisme.cc
   skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
+  sni: cdn.bworld.co.kr
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 22|🟢🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001...
+  network: tcp
+  password: 8de68ddc-e24e-4224-9c2a-457d4a8176df
+  port: 51004
+  server: bjaopax5xox8xze0a09ufy0wgg0j3dciyc3rhovo.gayisme.cc
+  skip-cert-verify: true
+  sni: cdn.bworld.co.kr
+  type: trojan
+  udp: true
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '22,30,33|B - 🇭🇰 HK 09 TG: @nodpai'
+  network: tcp
+  port: 11143
+  server: dotu-krv1.kunlun03dns.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+  xudp: true
+- client-fingerprint: chrome
+  name: '22|🔴🇰🇷[🤖📺🔍]_github.com/Ruk1ng001_... #1'
+  network: tcp
+  password: 8de68ddc-e24e-4224-9c2a-457d4a8176df
+  port: 18441
+  server: kzrk016wbfjycurkka62wnadto261gwtlu64h255.gayisme.cc
+  skip-cert-verify: true
+  sni: cdn.bworld.co.kr
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: '22|🟢🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
+  network: tcp
+  password: 8de68ddc-e24e-4224-9c2a-457d4a8176df
+  port: 51004
+  server: zptl7pdh720wq3jwe7uh6cr7tzcqr6zuqvyvdsxw.gayisme.cc
+  skip-cert-verify: true
+  sni: cdn.bworld.co.kr
+  type: trojan
+  udp: true
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '22,30|亚太地区 V2CROSS.COM #5'
+  network: tcp
+  port: '11144'
+  server: dotu-krv1.kunlun03dns.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: '22|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #5'
+  network: tcp
+  port: 11145
+  server: dotu-krv1.kunlun03dns.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+  xudp: true
+- client-fingerprint: chrome
+  name: '22|🔴🇰🇷[🤖📺🔍]_github.com/Ruk1ng001_... #2'
+  network: tcp
+  password: 8de68ddc-e24e-4224-9c2a-457d4a8176df
+  port: 18441
+  server: 6ve0bb4kw925a8aqex068ktd7ibbidgryx279glr.gayisme.cc
+  skip-cert-verify: true
+  sni: cdn.bworld.co.kr
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: '22|🟢🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
+  network: tcp
+  password: 8de68ddc-e24e-4224-9c2a-457d4a8176df
+  port: 51005
+  server: 2zi8jq2q21l4tna0i33077e5eag2woe29skovpxh.gayisme.cc
+  skip-cert-verify: true
+  sni: activity.hdslb.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: '22|🔴🇰🇷[🤖📺🔍]_github.com/Ruk1ng001_... #3'
+  network: tcp
+  password: 8de68ddc-e24e-4224-9c2a-457d4a8176df
+  port: 18441
+  server: k59lp65w94zbk2sueiawgfe4upgpg8g6zdv3cfim.gayisme.cc
+  skip-cert-verify: true
+  sni: cdn.bworld.co.kr
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: '22|🟢🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
+  network: tcp
+  password: 8de68ddc-e24e-4224-9c2a-457d4a8176df
+  port: 51005
+  server: uyjkgybhn29nqe0n1tdx25n1e8az9ogstly18nak.gayisme.cc
+  skip-cert-verify: true
+  sni: activity.hdslb.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 22,36,38|CH_speednode_0011
+  port: 9020
+  server: world.t.51guangtaobao.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
+- client-fingerprint: chrome
+  name: '22|🟢🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
+  network: tcp
+  password: 8de68ddc-e24e-4224-9c2a-457d4a8176df
+  port: 51005
+  server: 84nt1zj4ajl17u5hv15nmxa7q4zr7a6ww4pbo5su.gayisme.cc
+  skip-cert-verify: true
+  sni: activity.hdslb.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 22|🟢🇰🇷[🤖📺🔍]_github.com/Ruk1ng001_...
+  network: tcp
+  password: 8de68ddc-e24e-4224-9c2a-457d4a8176df
+  port: 51005
+  server: m1alb7ddqzcvc0t1jc5tigpkz6eu0ps1ysu3kyc3.gayisme.cc
+  skip-cert-verify: true
+  sni: activity.hdslb.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 22|🟢🇰🇷_github.com/Ruk1ng001_70522...
+  network: tcp
+  password: 8de68ddc-e24e-4224-9c2a-457d4a8176df
+  port: 51005
+  server: ydzeafznijby2dby68ta72s4lhwwp85rfgaatr61.gayisme.cc
+  skip-cert-verify: true
+  sni: activity.hdslb.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: '22|🟢🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #5'
+  network: tcp
+  password: 8de68ddc-e24e-4224-9c2a-457d4a8176df
+  port: 51005
+  server: m0e63wd8waofw2tirey3xxf1mlqesklkr4qyinc7.gayisme.cc
+  skip-cert-verify: true
+  sni: activity.hdslb.com
+  type: trojan
+  udp: true
+- name: '23,33,36,38|KR_speednode_0032 #1'
+  network: ws
+  password: 433e785b-2077-47f7-a43d-985f63dd18d1
+  port: 29999
+  server: 14.53.107.138
+  skip-cert-verify: false
+  sni: vpn.rnmcnm.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /trTelegram🇨🇳 @WangCai2
+      Host: vpn.rnmcnm.com
+    path: /trojan
 - name: 30|🇰🇷 韩国 KT电信
-  password: 8r<[9'l6hAO#8ZQi
-  port: 10443
-  server: 59.22.80.192
+  password: 433e785b-2077-47f7-a43d-985f63dd18d1
+  port: 29999
+  server: 14.53.107.138
   skip-cert-verify: false
-  sni: Koma-YT.PAGeS.Dev
+  sni: vpn.rnmcnm.com
   type: trojan
 - name: 31|韩国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
@@ -433,7 +512,55 @@ proxies:
   server: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: '35|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #12'
+- name: '33,36,38|KR_speednode_0029 #1'
+  network: ws
+  password: 433e785b-2077-47f7-a43d-985f63dd18d1
+  port: 30303
+  server: 121.191.33.84
+  skip-cert-verify: false
+  sni: vpn.rnmcnm.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vpn.rnmcnm.com
+    path: /trojan
+- name: '33,36,38|KR_speednode_0030 #1'
+  network: ws
+  password: 433e785b-2077-47f7-a43d-985f63dd18d1
+  port: 12345
+  server: 59.30.42.194
+  skip-cert-verify: false
+  sni: vpn.rnmcnm.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vpn.rnmcnm.com
+    path: /trojan
+- name: '33,36,38|KR_speednode_0031 #1'
+  network: ws
+  password: 433e785b-2077-47f7-a43d-985f63dd18d1
+  port: 18000
+  server: 121.154.96.50
+  skip-cert-verify: false
+  sni: vpn.rnmcnm.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vpn.rnmcnm.com
+    path: /trojan
+- name: 35,36,38|KR_speednode_0028
+  password: ''
+  port: 1090
+  server: 121.169.46.116
+  skip-cert-verify: true
+  tls: false
+  type: socks5
+  udp: true
+  username: Og%3D%3D
+- name: '35|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #7'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20065
   server: oss-shanghai.solidigm-zxcv.com

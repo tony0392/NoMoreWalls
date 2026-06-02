@@ -751,37 +751,56 @@ proxies:
     path: /stream?ed=2048
 - cipher: aes-256-cfb
   country: 🇰HK
-  name: 14|🇰HK_53
+  name: 14|🇰HK_47
   password: qwerREWQ@@
   port: 41632
-  server: 112.213.102.188
+  server: 185.189.160.105
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇰HK
-  name: 14|🇰HK_54
+  name: 14|🇰HK_48
   password: yKVMoB3AwiTEznpnoq2FYR
   port: 28687
   server: 193.47.60.186
   type: ss
+- cipher: chacha20-ietf
+  country: 🇰HK
+  name: 14,35,36,38|HK_speednode_0021
+  password: asd123456
+  port: 8388
+  server: 103.149.182.79
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   country: 🇰HK
-  name: 14|🇰HK_55
+  name: 14|🇰HK_50
   password: qwerREWQ@@
   port: 41632
-  server: 185.189.160.105
+  server: 112.213.102.188
   type: ss
 - alterId: 2
   cipher: auto
   country: 🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 14,30,33|香港|@ripaojiedian
+  name: 14,35|v4.hdacd.com
   network: tcp
-  port: '30807'
-  server: v10.hdacd.com
-  servername: ''
+  port: 30804
+  server: v4.hdacd.com
   skip-cert-verify: true
-  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 14,35|v29.hdacd.com
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
@@ -792,14 +811,60 @@ proxies:
   server: ss.011.node-for-bigairport.win
   type: ss
   udp: true
-- name: 22|🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001...
-  password: f93486ce-cc84-11ed-9e98-f23c913c8d2b
-  port: 5228
-  server: 8bea89f7-t9zts0-tlvq5w-1jcwu.cm4.oshuawei.com
-  sni: 8bea89f7-t9zts0-tlvq5w-1jcwu.cm4.oshuawei.com
+- cipher: chacha20-ietf
+  name: 22,35|🔴🇭🇰[🎬✨]_github.com/Ruk1ng001_7...
+  password: asd123456
+  port: 8388
+  server: 103.141.221.124
+  type: ss
+  udp: true
+- name: 22|🟡🇭🇰[📺]_github.com/Ruk1ng001_2e...
+  password: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
+  port: 8443
+  server: a7d75baa-te5ts0-tip01z-1gevg.hkt2.cdnhuawei.com
+  skip-cert-verify: true
+  sni: a7d75baa-te5ts0-tip01z-1gevg.hkt2.cdnhuawei.com
+  type: anytls
+  udp: true
+- client-fingerprint: chrome
+  name: '22,35|🟡🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #3'
+  password: 1b609740-eec2-11ef-8543-f23c93136cb3
+  port: 8300
+  server: 8ff2fd1c-t9mv40-tdtaxw-au6.hkt.east.wctype.com
+  skip-cert-verify: true
+  sni: 8ff2fd1c-t9mv40-tdtaxw-au6.hkt.east.wctype.com
+  type: anytls
+  udp: true
+- name: 22|🟡🇭🇰[📺🔍]_github.com/Ruk1ng001_4...
+  password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
+  port: 8443
+  server: c7f72645-te24g0-twuk0i-1hzyr.hkt2.cdnhuawei.com
+  skip-cert-verify: true
+  sni: c7f72645-te24g0-twuk0i-1hzyr.hkt2.cdnhuawei.com
+  type: anytls
+- cipher: chacha20-ietf
+  name: '22,35|🔴🇭🇰_github.com/Ruk1ng001_AJrBn... #1'
+  password: asd123456
+  port: 8388
+  server: 103.149.182.105
+  type: ss
+  udp: true
+- name: 22|🔴🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_...
+  password: 460749c2-bcef-11ee-89fc-f23c913c8d2b
+  port: 8443
+  server: 0bbd66e1-temhs0-tubliy-1la7v.hkt.cdnhuawei.com
+  sni: 0bbd66e1-temhs0-tubliy-1la7v.hkt.cdnhuawei.com
   tls: true
   type: http
-  username: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  username: 460749c2-bcef-11ee-89fc-f23c913c8d2b
+- name: 22,35|🔴🇭🇰[🎬📺🎞️📦]_github.com/Ruk1ng00...
+  password: <password>
+  port: 8443
+  server: 503cc7e8-ta1og0-taz53d-1j0y6.hkt.cdnhuawei.com
+  sni: 503cc7e8-ta1og0-taz53d-1j0y6.hkt.cdnhuawei.com
+  tls: true
+  type: http
+  username: 1cce7df2-251c-11ee-9409-f23c9164ca5d
 - alpn:
   - h2
   - http/1.1
@@ -812,31 +877,58 @@ proxies:
   sni: l8htco.yytls.top
   type: anytls
   udp: true
-- cipher: chacha20-ietf
-  name: 22,35|🔴🇭🇰[🎬✨]_github.com/Ruk1ng001_7...
-  password: asd123456
-  port: 8388
-  server: 103.141.221.124
-  type: ss
-  udp: true
+- name: 22|🔴🇭🇰[🎬📺🎪🔍]_github.com/Ruk1ng001...
+  password: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+  port: 5228
+  server: 8ff74373-t9zts0-tkhmfr-1jm8i.cm4.oshuawei.com
+  sni: 8ff74373-t9zts0-tkhmfr-1jm8i.cm4.oshuawei.com
+  tls: true
+  type: http
+  username: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+- name: '22|🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #1'
+  password: <password>
+  port: 8443
+  server: 4a93c05c-t9zts0-tcr97d-2b2n.hkt.cdnhuawei.com
+  sni: 4a93c05c-t9zts0-tcr97d-2b2n.hkt.cdnhuawei.com
+  tls: true
+  type: http
+  username: fcd39788-ca23-11ed-86e2-f23c913c8d2b
+- name: 22|🔴🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng00...
+  password: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
+  port: 5228
+  server: df142108-t9zts0-tee612-2r82.cm4.oshuawei.com
+  sni: df142108-t9zts0-tee612-2r82.cm4.oshuawei.com
+  tls: true
+  type: http
+  username: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
+- alterId: 2
+  cipher: auto
+  name: 30,33|香港|@ripaojiedian
+  network: tcp
+  port: '30807'
+  server: v10.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: '30,33,34|🇭🇰 香港3|@ripaojiedian #1'
   password: d84665c37878196ecf983cf6910e3b44
-  port: 2008
-  server: 13.115.175.169
-  skip-cert-verify: false
+  port: 53018
+  server: 18.163.33.60
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34|🇭🇰 香港4|@ripaojiedian #1'
   password: BxceQaOe
-  port: 50712
-  server: 13.231.249.183
+  port: 11541
+  server: 43.198.204.47
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: '30,33,34|🇭🇰 香港5|@ripaojiedian #1'
   password: BxceQaOe
-  port: 11233
-  server: 18.162.145.230
+  port: 50712
+  server: 18.183.163.141
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -852,25 +944,45 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- name: '33,36,38|HK_speednode_0007 #1'
-  password: 65fQmPHHbPcBCfvSHt
-  port: 443
-  server: au-4.tr202605.com
-  skip-cert-verify: false
+- name: 33|🇭🇰HK_2|1.2MB/s
+  password: da292191-b895-3264-b41c-200512b8f965
+  port: 40015
+  server: 85.211.198.109
+  skip-cert-verify: true
+  sni: 1.lossyesterday.xyz
+  type: trojan
+- name: 33|🇭🇰HK_3|1.1MB/s
+  password: da292191-b895-3264-b41c-200512b8f965
+  port: 52225
+  server: 85.211.198.109
+  skip-cert-verify: true
+  sni: i.comfortableyou.top
+  type: trojan
+- name: '33,36,38|HK_speednode_0023 #1'
+  password: BxceQaOe
+  port: 47655
+  server: 43.199.61.178
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
   type: trojan
   udp: true
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 35|🇭🇰HK hdacd.com
+  network: tcp
+  port: 30824
+  server: v24.hdacd.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-128-gcm
   name: 35|🟢🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_...
   password: ec4ba5cd-753f-4ce0-9d1e-e28759e20ab1
   port: 4788
   server: south.nor2.uops.rtx.al
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 35|🔴🇭🇰_github.com/Ruk1ng001_AJrBn...
-  password: asd123456
-  port: 8388
-  server: 103.149.182.105
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -895,7 +1007,7 @@ proxies:
   sni: mpvideo.qpic.cn
   type: trojan
 - client-fingerprint: chrome
-  name: 35|🟡🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001...
+  name: '35|🟡🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001... #1'
   password: d720a490-d56b-11ef-a1cb-f23c9313b177
   port: 8300
   server: 1b30bbb8-t9wqo0-tb5ob4-64gc.hkt.east.wctype.com
@@ -1034,7 +1146,7 @@ proxies:
   tls: true
   type: http
   username: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
-- name: '35|🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #1'
+- name: '35|🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #2'
   password: <password>
   port: 8443
   server: 608f580d-ta1og0-tb3p3s-lj7z.hkt.cdnhuawei.com
@@ -1144,14 +1256,6 @@ proxies:
   tls: true
   type: http
   username: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
-- name: 35|🔴🇭🇰[🎬📺🎞️📦]_github.com/Ruk1ng00...
-  password: <password>
-  port: 8443
-  server: 503cc7e8-ta1og0-taz53d-1j0y6.hkt.cdnhuawei.com
-  sni: 503cc7e8-ta1og0-taz53d-1j0y6.hkt.cdnhuawei.com
-  tls: true
-  type: http
-  username: 1cce7df2-251c-11ee-9409-f23c9164ca5d
 - cipher: chacha20-ietf-poly1305
   name: '35|🔴🇭🇰[🎬📺🎭✨]_github.com/Ruk1ng001... #1'
   password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
@@ -1253,15 +1357,6 @@ proxies:
   tls: true
   type: http
   username: c1785de0-212f-11ef-92aa-f23c9164ca5d
-- client-fingerprint: chrome
-  name: '35|🟡🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #3'
-  password: 1b609740-eec2-11ef-8543-f23c93136cb3
-  port: 8300
-  server: 8ff2fd1c-t9mv40-tdtaxw-au6.hkt.east.wctype.com
-  skip-cert-verify: true
-  sni: 8ff2fd1c-t9mv40-tdtaxw-au6.hkt.east.wctype.com
-  type: anytls
-  udp: true
 - name: 35|🟢🇭🇰[📺🎭🔍]_github.com/Ruk1ng001_...
   password: BxceQaOe
   port: 6313

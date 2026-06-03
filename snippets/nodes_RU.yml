@@ -28,7 +28,7 @@ proxies:
   country: 🇺RU
   h2-opts: {}
   http-opts: {}
-  name: 14|RU_83
+  name: 14|RU_84
   network: tcp
   port: 22324
   server: 213.156.141.52
@@ -37,20 +37,12 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   ws-path: /
 - country: 🇺RU
-  name: 14|🇷RU_84
+  name: 14|🇷RU_85
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
   skip-cert-verify: true
   sni: kfm-bn0.pages.dev
-  type: trojan
-  udp: true
-- country: 🇷🇺RU
-  name: 14,18,37|🇷🇺 俄罗斯 starcorenode.com 2
-  password: tunnel-ljlcf
-  port: 8441
-  server: tr-1.stunnel.cc
-  skip-cert-verify: false
   type: trojan
   udp: true
 - country: 🇺RU
@@ -61,3 +53,17 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 18,30|🇷🇺 俄罗斯 Samara State University
+  network: ws
+  port: '443'
+  server: renderer-stream-1-411.mirra.now
+  servername: renderer-stream-1-411.mirra.now
+  tls: true
+  type: vmess
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  ws-opts:
+    headers:
+      Host: renderer-stream-1-411.mirra.now
+    path: /api/v1/gpu-stream/socket

@@ -691,16 +691,24 @@ proxies:
     path: /stream
 - cipher: chacha20-ietf-poly1305
   country: 🇬SG
-  name: 14|SG_90
+  name: 14|SG_84
   password: PWpjPo3tqhPN4yRZ
   port: 20001
   server: 8.209.74.72
   type: ss
 - country: 🇬SG
-  name: 14|🇸🇬SG_91
+  name: 14|🇸🇬SG_85
   password: d30ab83dbde4480082048fb315bedebd
   port: 443
   server: 5.180.78.22
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇸🇬SG
+  name: 14|🇬SG_86
+  password: 8r<[9'l6hAO#8ZQi
+  port: 23779
+  server: 149.129.91.58
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -722,13 +730,18 @@ proxies:
   server: 3.1.195.22
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 22|🔴🇸🇬_github.com/Ruk1ng001_281c4...
-  password: 504cb0be-b285-4ec5-9561-bc289aea0d46
-  port: 50001
-  server: bgroup.node3.s.nodelist-airport.com
-  type: ss
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 22|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001...
+  network: tcp
+  port: 30845
+  server: v45.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-gcm
   name: 22|🔴🇸🇬_github.com/Ruk1ng001_4a5dd...
   password: 6c4bd474-ac23-47fc-8742-c8f990357836
@@ -748,19 +761,68 @@ proxies:
     headers:
       Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
     path: /
+- name: 22|🔴🇸🇬[📺]_github.com/Ruk1ng001_b2...
+  network: ws
+  password: trojan
+  port: 12596
+  server: 213.35.108.135
+  skip-cert-verify: true
+  sni: store.timimi.dpdns.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: store.timimi.dpdns.org
+    path: /?ed=2560&telegram🇨🇳 @wangcai2
+- alterId: 0
+  cipher: auto
+  name: 22|🟢🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001...
+  network: ws
+  port: 10123
+  server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 52f9cbfb-5bb3-3dd3-b947-725e365c59f3
+  ws-opts:
+    headers:
+      Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
+    path: /
+- name: '30,33,34|🇸🇬 新加坡|@ripaojiedian #1'
+  password: d02e3bb7e6b3333e818d36866d40de6e
+  port: 29642
+  server: 16.163.146.65
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
 - name: '30,33,34|🇸🇬 新加坡2|@ripaojiedian #1'
-  password: d84665c37878196ecf983cf6910e3b44
-  port: 6357
-  server: 18.167.51.169
+  password: d02e3bb7e6b3333e818d36866d40de6e
+  port: 48738
+  server: 18.166.208.105
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34|🇸🇬 新加坡3|@ripaojiedian #1'
   password: BxceQaOe
-  port: 28111
-  server: 95.40.47.145
+  port: 32434
+  server: 18.166.29.119
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 30|新加坡節點丨yoyapai.com\r
+  password: b447bda5-35b2-4332-9746-994e5db3fa4e
+  port: 21526
+  server: gg.772fk.cn
+  skip-cert-verify: true
+  sni: sg02.ckcloud.info
+  type: trojan
+- name: '30|新加坡節點丨yoyapai.com\r #1'
+  password: b447bda5-35b2-4332-9746-994e5db3fa4e
+  port: 40276
+  server: g.772fk.cn
+  skip-cert-verify: true
+  sni: sg01.ckcloud.info
   type: trojan
 - name: 31|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
@@ -768,7 +830,7 @@ proxies:
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: '35|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #16'
+- name: '35|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #10'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20025
   server: oss-guangzhou.solidigm-zxcv.com
@@ -782,7 +844,7 @@ proxies:
   server: south.nor2.uops.rtx.al
   type: ss
   udp: true
-- name: '35|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #17'
+- name: '35|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #11'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20023
   server: oss-guangzhou.solidigm-zxcv.com
@@ -803,14 +865,14 @@ proxies:
   server: south.nor2.uops.rtx.al
   type: ss
   udp: true
-- name: '35|🟢🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
+- name: '35|🟢🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20022
   server: oss-guangzhou.solidigm-zxcv.com
   skip-cert-verify: true
   sni: mpvideo.qpic.cn
   type: trojan
-- name: '35|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #18'
+- name: '35|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #12'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20027
   server: oss-guangzhou.solidigm-zxcv.com
@@ -818,27 +880,27 @@ proxies:
   sni: mpvideo.qpic.cn
   type: trojan
 - cipher: aes-128-gcm
-  name: '35|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
+  name: '35|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #2'
   password: ec4ba5cd-753f-4ce0-9d1e-e28759e20ab1
   port: 15808
   server: shrimp-door-9527.gym0boy.com
   type: ss
   udp: true
-- name: '35|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #19'
+- name: '35|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #13'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20024
   server: oss-guangzhou.solidigm-zxcv.com
   skip-cert-verify: true
   sni: mpvideo.qpic.cn
   type: trojan
-- name: '35|🟢🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
+- name: '35|🟢🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20028
   server: oss-guangzhou.solidigm-zxcv.com
   skip-cert-verify: true
   sni: mpvideo.qpic.cn
   type: trojan
-- name: '35|🟢🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
+- name: '35|🟢🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #5'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20021
   server: oss-guangzhou.solidigm-zxcv.com
@@ -853,7 +915,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '35|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #2'
+  name: '35|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #3'
   password: ec4ba5cd-753f-4ce0-9d1e-e28759e20ab1
   port: 1222
   server: south.nor1.uops.rtx.al
@@ -873,7 +935,7 @@ proxies:
   server: fgg.idsduf.com
   type: ss
   udp: true
-- name: '35|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #20'
+- name: '35|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #14'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20026
   server: oss-guangzhou.solidigm-zxcv.com
@@ -888,7 +950,7 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: '35|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #21'
+  name: '35|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #15'
   password: IL37892054
   port: 443
   server: picked-guinea.rooster465.autos
@@ -897,7 +959,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: '35|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #3'
+  name: '35|🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001... #4'
   password: IL37892054
   port: 443
   server: normal-macaque.rooster465.autos
@@ -906,7 +968,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: '35|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #22'
+  name: '35|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #16'
   password: IL37892054
   port: 443
   server: immense-seasnail.rooster465.autos

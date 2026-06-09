@@ -61,27 +61,42 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '22|🟢🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
+  name: 22|🟢🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001...
   password: Xu7h4yO69H7QG_C0A9tY7jP1wN0jSzc8
   port: 26190
   server: 103.244.145.244
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '22|🟢🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
-  password: V6_RXT2UlL5ONSD3Fmvd9XqBGNmespBu
-  port: 28893
-  server: 103.244.145.247
-  type: ss
-  udp: true
-- alterId: 2
+- alterId: '2'
   cipher: auto
-  name: 22|🔴🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001...
+  name: '22|🔴🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
+  network: tcp
   port: 30833
   server: v33.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- name: 22,27,30,33|🇩🇪DE_3|1.1MB/s
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 46424
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: de.01.naiun.bilibili.com
+  tls: false
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 22,36,38|JP_speednode_0012
+  port: 30833
+  server: v33.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
@@ -103,14 +118,16 @@ proxies:
   skip-cert-verify: false
   sni: www.homelywebs.click
   type: trojan
-- name: '33,36,38|DE_speednode_0011 #1'
-  password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
-  port: 9443
-  server: de-1.hysteria.ltd
+- name: 33|🇩🇪DE_7|2.0MB/s
+  network: ws
+  password: 43716b3b-df44-409e-beff-e571e39a889c
+  port: 443
+  server: 193.163.85.39
   skip-cert-verify: false
-  sni: de-1.hysteria.ltd
+  sni: platyscelis.duckdns.org
   type: trojan
-  udp: true
+  ws-opts:
+    path: /vpn
 - client-fingerprint: chrome
   name: 35| t.me/PFSub |  NL 074 | ⬇️ 2MB...
   network: ws
@@ -128,7 +145,7 @@ proxies:
         (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
     max-early-data: 2560
     path: /tro8sFW1S91B6sZrM1
-- name: '35|🟢🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #7'
+- name: '35|🟢🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20055
   server: cos-beijing.solidigm-zxcv.com

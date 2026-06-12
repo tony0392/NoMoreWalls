@@ -53,10 +53,20 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- country: 🇪DE
+  name: 14|DE_09
+  password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
+  port: 443
+  server: 91.233.8.138
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: 18|德国+V2CROSS.COM
+  network: tcp
   password: I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz
   port: 443
   server: 91.233.8.25
+  skip-cert-verify: false
   sni: fra34.tracker-ws.click
   type: trojan
 - cipher: chacha20-ietf-poly1305
@@ -92,22 +102,6 @@ proxies:
   udp: true
   uuid: c5455714-ee65-4eb9-8939-d3ca623eed73
   xudp: true
-- alterId: '0'
-  cipher: auto
-  name: '22|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
-  network: ws
-  port: 16644
-  server: planb.mojcn.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  ws-opts:
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-    path: /
-  xudp: true
 - client-fingerprint: chrome
   name: 22,30|🇨🇦 CA加拿大(mibei77.com 米贝节点分享)
   network: tcp
@@ -118,18 +112,9 @@ proxies:
   sni: de.01.naiun.bilibili.com
   type: trojan
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 22|🔴🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001...
-  port: 30833
-  server: v33.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: '2'
   cipher: auto
-  name: 22|🔴🇩🇪[🎬📺🎭🎪]_github.com/Ruk1ng001...
+  name: 22|🔴🇩🇪[🎭🎪📦]_github.com/Ruk1ng001_...
   network: tcp
   port: 30833
   server: v33.hdacd.com
@@ -139,6 +124,16 @@ proxies:
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   xudp: true
+- client-fingerprint: chrome
+  name: '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #77'
+  network: tcp
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 46424
+  server: 155.117.198.85
+  skip-cert-verify: true
+  sni: de.01.naiun.bilibili.com
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 22|🔴🇩🇪[🔍]_github.com/Ruk1ng001_d5...
   password: e777513e-9df5-4dc3-bc84-74e564345a81
@@ -146,18 +141,13 @@ proxies:
   server: deuts.slianrk.com
   type: ss
   udp: true
-- alterId: '0'
-  cipher: auto
-  name: 22|🟢🇩🇪[🎬🤖📺]_github.com/Ruk1ng001_...
-  network: tcp
-  port: 1020
-  server: nlt.reata.ir
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 22|🔴🇩🇪[📺🔍]_github.com/Ruk1ng001_7...
+  password: e777513e-9df5-4dc3-bc84-74e564345a81
+  port: 13056
+  server: Ukraine.slianrk.com
+  type: ss
   udp: true
-  uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
-  xudp: true
 - alterId: 0
   cipher: auto
   name: 30|🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch...
@@ -178,6 +168,27 @@ proxies:
   skip-cert-verify: false
   sni: www.homelywebs.click
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 33|🇩🇪DE_3|1.8MB/s
+  network: ws
+  port: 8080
+  server: jd.103672.xyz
+  tls: false
+  type: vmess
+  uuid: c14a83db-f333-452e-acff-93b8f7160b10
+  ws-opts:
+    headers:
+      Host: dedasabo.103466.xyz
+    path: /
+- name: '33,36,38|DE_speednode_0001 #1'
+  password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
+  port: 9443
+  server: de-1.hysteria.ltd
+  skip-cert-verify: false
+  sni: de-1.hysteria.ltd
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   name: 35| t.me/PFSub |  NL 074 | ⬇️ 2MB...
   network: ws
@@ -202,7 +213,7 @@ proxies:
   skip-cert-verify: true
   sni: mpvideo.qpic.cn
   type: trojan
-- name: '35|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
+- name: '35|🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20054
   server: cos-beijing.solidigm-zxcv.com

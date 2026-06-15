@@ -3627,10 +3627,10 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 27|🇮🇩_ID_印度尼西亚->🇬🇧_GB_英国
+  name: 27,28|🇮🇩_ID_印度尼西亚->🇧_GB_英国
   port: 30836
   server: v36.hdacd.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3684,6 +3684,16 @@ proxies:
   tls: false
   type: trojan
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 28|_ID_亚->🇷_FR_法国
+  port: 30835
+  server: v35.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: '30|🇭🇰_HK_中国香港->🇺🇸_US_美国 #1'
   password: BxceQaOe
   port: 17801
@@ -3691,6 +3701,19 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- alterId: 2
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 30,35|v4.hdacd.com
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: '30|🇭🇰_HK_中国香港->🇹🇼_TW_中国台湾 #1'

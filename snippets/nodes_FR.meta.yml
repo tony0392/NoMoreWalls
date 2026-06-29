@@ -75,15 +75,33 @@ proxies:
   type: http
   udp: true
   username: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
-- cipher: chacha20-ietf-poly1305
-  name: '22|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
-  password: pf1BozsIFaJeK9yVaraePPMdOMO5iauFm23w4+Ffqck=
-  port: 30874
-  server: e2.cover20.ir
-  type: ss
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 22|🔴🇫🇷[🔍]_github.com/Ruk1ng001_ff...
+  network: ws
+  password: humanity
+  port: 443
+  server: 45.130.125.0
+  skip-cert-verify: false
+  sni: www.calmloud.com
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /assignment
+- name: '22|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
+  password: b585dac6-dc69-11ef-9f1c-f23c913c8d2b
+  port: 443
+  server: 7fc49df7-t9zts0-tb5nzx-1mqag.fr.oshuawei.com
+  sni: 7fc49df7-t9zts0-tb5nzx-1mqag.fr.oshuawei.com
+  tls: true
+  type: http
+  username: b585dac6-dc69-11ef-9f1c-f23c913c8d2b
 - client-fingerprint: chrome
-  name: '22,27,30|🇨🇦_CA_加拿大 #1'
+  name: '22,27,30|🇨🇦_CA_加拿大 #5'
   network: tcp
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45619
@@ -93,14 +111,23 @@ proxies:
   tls: false
   type: trojan
   udp: true
+- name: 22|🔴🇫🇷[🎬🤖🔍]_github.com/Ruk1ng001_...
+  password: bf36227c-0191-11f0-aee1-f23c91cfbbc9
+  port: 443
+  server: cb269db2-t9zts0-tc2sod-1tizo.fr.oshuawei.com
+  sni: cb269db2-t9zts0-tc2sod-1tizo.fr.oshuawei.com
+  tls: true
+  type: http
+  username: bf36227c-0191-11f0-aee1-f23c91cfbbc9
 - client-fingerprint: chrome
-  name: 22|🔴🇫🇷[🔍]_github.com/Ruk1ng001_f2...
+  name: '22,27,30|🇨🇦_CA_加拿大 #3'
   network: tcp
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45619
   server: 103.177.136.42
   skip-cert-verify: true
   sni: fr.01.naiun.bilibili.com
+  tls: true
   type: trojan
   udp: true
 - name: 26,36,38|AE_speednode_0001

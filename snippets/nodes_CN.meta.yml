@@ -1,9 +1,18 @@
 proxies:
+- country: CN
+  name: 14|🇨CN_07
+  password: 736cd94d-7b94-3e44-8106-3419f64eaf09
+  port: 3462
+  server: a12.taipeicitygovernment.org.ua
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: aes-256-gcm
-  name: 22|🟢🇨🇳_github.com/Ruk1ng001_6607b...
+  name: 22,27|🇨🇳_CN_中国
   password: '!!str 123'
   port: 1001
   server: 61.171.92.202
+  skip-cert-verify: true
   type: ss
   udp: true
 - alterId: 64
@@ -1292,3 +1301,45 @@ proxies:
     headers:
       Host: us2.asasas.top
     path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: 26|中国 153
+  network: ws
+  port: 63087
+  server: 116.129.254.65
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f
+  ws-opts:
+    headers:
+      Host: sg-balancer.tencent.best
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 26|中国 154
+  network: ws
+  port: 63086
+  server: 116.129.254.65
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f
+  ws-opts:
+    headers:
+      Host: jp-balancer.myn1des.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 26|中国 155
+  network: ws
+  port: 443
+  server: 119.36.161.40
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 5e38275e-f168-11ec-a6d0-42010a800003
+  ws-opts:
+    headers:
+      Host: us.batcloud.bond
+    path: /

@@ -1,23 +1,24 @@
 proxies:
 - client-fingerprint: chrome
-  name: '22,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #7'
-  network: tcp
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45553
-  server: 103.177.136.42
-  skip-cert-verify: true
-  sni: ch.01.naiun.bilibili.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: '22,27,30|🇨🇦_CA_加拿大->🇨🇭_CH_瑞士 #1'
+  name: '22,27,30|🇨🇦_CA_加拿大 #12'
   network: tcp
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45553
   server: 103.177.136.45
   skip-cert-verify: true
   sni: ch.01.naiun.bilibili.com
-  tls: false
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: '22,27,30|🇨🇦_CA_加拿大 #1'
+  network: tcp
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45553
+  server: 103.177.136.42
+  skip-cert-verify: true
+  sni: ch.01.naiun.bilibili.com
+  tls: true
   type: trojan
   udp: true
 - client-fingerprint: chrome
@@ -72,14 +73,3 @@ proxies:
   tls: true
   type: vmess
   uuid: 1de9d119-12ca-4620-a29c-60b40a7f8650
-- alpn:
-  - h2
-  - http/1.1
-  - h3
-  name: 33|🇨🇭CH_2|4.0MB/s
-  password: SoftNetConnect
-  port: 42549
-  server: 37.156.44.215
-  skip-cert-verify: true
-  sni: www.speedtest.net
-  type: trojan

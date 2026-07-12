@@ -7,13 +7,14 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 26|中国 008
+- name: 26|中国 009
   network: tcp
   password: 1df3ece1218bedba28c6c6ac726a07bb
   port: 39001
   server: 114.80.8.128
   skip-cert-verify: true
   sni: 114.80.8.128
+  tls: true
   type: trojan
   udp: true
 - alterId: 64
@@ -1468,11 +1469,13 @@ proxies:
   uuid: c1f1060c-6168-4931-a63f-817a7ade25e2
 - alterId: 0
   cipher: auto
-  name: 26|中国 175
+  name: '26,30|🇭🇰_HK_中国香港 #2'
   network: ws
   port: 443
   server: n1747624274.4u9ma.icu
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
   ws-opts:
@@ -1493,7 +1496,7 @@ proxies:
     Host: v10.zgtfqs.click
 - alterId: 0
   cipher: auto
-  name: 26|中国 009
+  name: 26|中国 012
   network: tcp
   port: 59121
   server: 129.226.157.220
@@ -1501,3 +1504,18 @@ proxies:
   tls: true
   type: vmess
   uuid: d9865d63-d95c-454b-ba07-8e88b838a801
+- alterId: 0
+  cipher: auto
+  name: '26,30|🇭🇰_HK_中国香港 #1'
+  network: ws
+  port: 443
+  server: n1747624260.4u9ma.icu
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: eee8cb72-7eab-4034-a308-ed06cb07e003
+  ws-opts:
+    headers:
+      Host: n1747624260.4u9ma.icu
+    path: /

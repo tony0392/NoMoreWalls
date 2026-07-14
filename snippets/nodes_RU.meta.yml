@@ -25,13 +25,21 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - cipher: chacha20-ietf-poly1305
   country: 🇺RU
-  name: 14|🇺RU_65
+  name: 14|🇺RU_69
   password: 0GAK2b9gkqBatuxi2cswmH
   port: 25232
   server: 83.217.9.17
   type: ss
 - country: 🇺RU
-  name: 14|🇺RU_66
+  name: 14|🇺RU_70
+  password: WF42809561
+  port: 443
+  server: nearby-muskrat.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇺RU
+  name: 14|🇺RU_71
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
@@ -39,56 +47,47 @@ proxies:
   sni: kfm-bn0.pages.dev
   type: trojan
   udp: true
-- country: 🇺RU
-  name: 14|🇷🇺RU_67
-  password: WF42809561
-  port: 443
-  server: nearby-muskrat.rooster465.autos
+- cipher: aes-256-gcm
+  name: 22,27|🇷🇺_RU_俄罗斯
+  password: cfe685726eea2c4b
+  port: 10921
+  server: 185.22.154.103
   skip-cert-verify: true
-  type: trojan
+  type: ss
   udp: true
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
   name: 26|俄罗斯 002
-  network: tcp
-  password: CFvS99VcEv82u3XFr36EPbumLPadKXT6
-  port: 9443
-  server: trojan-tcp-tls-test.hysteria.ltd
+  network: ws
+  port: 14369
+  server: 195.133.53.192
   skip-cert-verify: false
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 26|俄罗斯 054
-  network: tcp
-  port: 11052
-  server: 45.67.230.79
-  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
+  uuid: 2331affa-1194-45ae-9457-3746120c4751
+  ws-opts:
+    headers:
+      Host: 195.133.53.192
+    path: /
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: /
-  name: 26|俄罗斯 049
+  name: 26|俄罗斯 004
   network: grpc
   port: 32740
   server: 5.42.80.252
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 433f1111-b780-4eae-b7e7-d7823b09e701
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 050
+  name: 26|俄罗斯 005
   network: ws
   port: 443
   server: sg-full.privateip.net
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: b220d0b0-575d-43d4-b88b-896ddd151532
   ws-opts:
     headers:
@@ -96,36 +95,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 051
-  network: tcp
-  port: 1546
-  server: vip3.sanaiehdasti.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6c5fcae3-16e8-4a93-b28e-05588d5d9342
-- alterId: 0
-  cipher: auto
-  name: 26|俄罗斯 052
-  network: tcp
-  port: 57392
-  server: s2.abtinphone.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 47e09a9f-4909-4e2b-8c5c-a37e5b3d26e3
-- alterId: 0
-  cipher: auto
-  name: 26|俄罗斯 057
-  network: tcp
-  port: 2020
-  server: 95.181.162.100
-  skip-cert-verify: true
-  type: vmess
-  uuid: 67744e32-4a46-4805-d42c-70391bdb8dc5
-- alterId: 0
-  cipher: auto
-  name: 26|俄罗斯 058
+  name: 26|俄罗斯 007
   network: ws
   port: 16231
   server: 31.129.105.239
@@ -138,7 +108,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 059
+  name: 26|俄罗斯 008
   network: ws
   port: 443
   server: 37.220.161.249
@@ -152,7 +122,7 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 060
+  name: 26|俄罗斯 009
   network: ws
   port: 80
   server: 195.54.174.18
@@ -165,7 +135,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 061
+  name: 26|俄罗斯 010
   network: http
   port: 26743
   server: 194.87.248.27
@@ -174,7 +144,7 @@ proxies:
   uuid: 59952a8e-b712-4190-d85e-f9aadd65faa0
 - alterId: 64
   cipher: auto
-  name: 26|俄罗斯 062
+  name: 26|俄罗斯 011
   network: http
   port: 37672
   server: 176.119.159.245
@@ -183,7 +153,7 @@ proxies:
   uuid: 86b4e35c-1061-47b3-8c6c-811d1853a477
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 063
+  name: 26|俄罗斯 012
   network: ws
   port: 2095
   server: 185.174.138.209
@@ -196,7 +166,7 @@ proxies:
     path: /az05.beyondy.cfd/link?/TM
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 064
+  name: 26|俄罗斯 013
   network: ws
   port: 2052
   server: 185.174.138.199
@@ -209,7 +179,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 065
+  name: 26|俄罗斯 014
   network: ws
   port: 2082
   server: 185.174.138.196
@@ -222,7 +192,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 066
+  name: 26|俄罗斯 015
   network: ws
   port: 443
   server: 194.76.18.113
@@ -236,7 +206,7 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 067
+  name: 26|俄罗斯 016
   network: ws
   port: 443
   server: 194.76.18.197
@@ -250,7 +220,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 068
+  name: 26|俄罗斯 017
   network: ws
   port: 443
   server: 93.93.89.118
@@ -264,7 +234,7 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 074
+  name: 26|俄罗斯 018
   network: ws
   port: 443
   server: renderer-stream-1-411.mirra.now
@@ -277,7 +247,7 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 075
+  name: 26|俄罗斯 019
   network: ws
   port: 2082
   server: 185.174.138.34
@@ -290,21 +260,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 076
-  network: tcp
-  port: 22324
-  server: 5.188.190.252
-  skip-cert-verify: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 26|俄罗斯 078
+  name: 26|俄罗斯 020
   network: ws
   port: 443
   server: cg1c13.waimaojd.com
-  servername: RELAY-172.67.176.245-6242 | 0.098MB
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 3756f0f8-3973-4e40-97a3-54c811f34e5b
@@ -314,7 +274,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 117
+  name: 26|俄罗斯 021
   network: ws
   port: 43688
   server: 195.133.53.192

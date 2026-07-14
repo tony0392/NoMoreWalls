@@ -49,11 +49,11 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 003
+  name: 5,26|中国 008
   network: ws
   port: 8080
   server: 104.208.85.56
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
@@ -64,11 +64,11 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 010
+  name: 5,26|美国 196
   network: ws
   port: 8080
   server: 154.3.35.27
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
@@ -79,11 +79,11 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 004
+  name: 5,26|中国 009
   network: ws
   port: 8080
   server: 156.251.176.167
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
@@ -94,7 +94,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 5,26|其他 008
+  name: 5|No.22_HK_x0.80_Azure_HK@chenc*...
   network: ws
   port: 8090
   server: tbxiqnheon.eastasia.cloudapp.azure.com
@@ -109,11 +109,11 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 020
+  name: 5,26|美国 205
   network: ws
   port: 8080
   server: 166.88.77.31
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
@@ -124,11 +124,11 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 021
+  name: 5,26|美国 206
   network: ws
   port: 8080
   server: 149.62.46.53
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
@@ -143,7 +143,7 @@ proxies:
   network: ws
   port: 8080
   server: 111.92.240.243
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
@@ -154,7 +154,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 022
+  name: 5|No.721_HK_x1.00_GCP_HK@pixia**...
   network: ws
   port: 10086
   server: 34.92.212.7
@@ -169,11 +169,11 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|澳大利亚 004
+  name: 5,26|澳大利亚 008
   network: ws
   port: 9000
   server: 43.154.53.65
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
@@ -184,11 +184,11 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 006
+  name: 5,26|中国 011
   network: ws
   port: 8080
   server: 101.33.120.19
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
@@ -239,7 +239,7 @@ proxies:
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - alterId: 0
   cipher: auto
-  name: 9,26|其他 025
+  name: 9|HK | 香港 LB-1V
   network: ws
   port: 443
   server: hkcft01.xqc.best
@@ -749,75 +749,49 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- cipher: aes-256-cfb
-  country: 🇰HK
-  name: 14|🇰HK_48
-  password: qwerREWQ@@
-  port: 41632
-  server: 112.213.102.188
-  type: ss
-- alterId: 2
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: 14,35|v29.hdacd.com
+- client-fingerprint: chrome
+  name: '18,22,30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #1'
   network: tcp
-  port: 30829
-  server: v29.hdacd.com
+  password: OccIqeORGQwiNkwS
+  port: 19128
+  server: jpbgp.netvigor.cc
   skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
+  sni: yazhou10.dynu.net
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf
+  name: 22,27,35|🔴🇭🇰[✨]_github.com/Ruk1ng001_aa...
+  password: asd123456
+  port: 8388
+  server: 103.149.182.79
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 22|🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001...
+  network: ws
+  password: 13d29042-ab82-4195-9cd4-2bafc518e201
+  port: 443
+  server: 23.227.38.178
+  skip-cert-verify: true
+  sni: q6clkp794liy3y90.hktimecsgo.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/36.0.1985.125 Safari/537.36
+    path: /images
 - alterId: 2
   cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14,30,33|香港|@ripaojiedian
+  name: 30,33|香港|@ripaojiedian
   network: tcp
   port: '30807'
   server: v10.hdacd.com
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇭🇰HK_51
-  network: tcp
-  port: 30808
-  server: v8.hdacd.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- name: '30,33,34|🇭🇰 香港3|@ripaojiedian #1'
-  password: b490740312aedb5f9f6b84c7aebd08c0
-  port: 20083
-  server: 54.46.117.9
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '30,33,34|🇭🇰 香港4|@ripaojiedian #1'
-  password: BxceQaOe
-  port: 11035
-  server: 95.40.32.196
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '30,33,34|🇭🇰 香港5|@ripaojiedian #1'
-  password: BxceQaOe
-  port: 27161
-  server: 18.162.125.64
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158
@@ -830,24 +804,13 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '33|B - 🇭🇰 HK 04 TG: @nodpai'
-  network: tcp
-  port: 6001
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  tls: false
-  type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-- alterId: 0
-  cipher: auto
-  name: '33|C - 🇭🇰 HK 07 TG: @nodpai'
-  network: tcp
-  port: 51556
-  server: 103.181.164.145
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 33|🇭🇰HK_1|3.9MB/s
+  password: 1df3ece1218bedba28c6c6ac726a07bb
+  port: 39001
+  server: 114.80.8.128
+  skip-cert-verify: true
+  sni: 114.80.8.128
+  type: trojan
 - alterId: 2
   cipher: auto
   country: 🇭🇰HK
@@ -971,7 +934,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: '35|🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
+  name: '35|🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001... #2'
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -1027,7 +990,7 @@ proxies:
   udp: true
 - alterId: '2'
   cipher: auto
-  name: '35|🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001... #3'
+  name: '35|🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001... #4'
   network: ws
   port: 80
   server: 2bb9ebed-t70f40-t7hsj2-1gevg.hkt.gotochinatown.net
@@ -1101,7 +1064,7 @@ proxies:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - cipher: aes-128-gcm
-  name: '35|🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001... #4'
+  name: '35|🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001... #5'
   password: ec4ba5cd-753f-4ce0-9d1e-e28759e20ab1
   port: 10366
   server: south.nor2.uops.rtx.al

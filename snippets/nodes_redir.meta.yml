@@ -169,11 +169,11 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 001
+  name: 5,26|中国 006
   network: ws
   port: 36101
   server: 120.82.70.149
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
@@ -184,11 +184,11 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|日本 002
+  name: 5,26|日本 008
   network: ws
   port: 14954
   server: 91.200.242.187
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
@@ -199,11 +199,11 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 5,26|其他 004
+  name: 5,26|其他 024
   network: ws
   port: 1552
   server: nas.ruyo.in
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
@@ -3607,30 +3607,57 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 27|🇮🇷_IR_伊朗->🇩🇪_DE_德国
-  password: KpikV0WcN54ul7ytP0QOGW7njSS9xqqy/Ji85PM4KQQ=
-  port: 2053
-  server: 2.144.23.23
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- name: '28,33|B - 🇺🇸 US 33 TG: @nodpai'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: az.01.naiun.bilibili.com
-  tls: false
-  type: trojan
-  udp: true
 - alterId: 2
   cipher: auto
-  name: 28|🇮🇩_ID_印度尼西亚->🇧_GB_英国
-  port: 30836
-  server: v36.hdacd.com
+  name: 27|🇭🇰_HK_中国香港->🇺🇸_US_美国
+  port: 30829
+  server: v29.hdacd.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: none
+  name: 27|🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  port: 30833
+  server: v33.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: '30|🇯🇵_JP_日本->🇫🇷_FR_法国 #1'
+  network: tcp
+  port: 30835
+  server: v35.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 30,35|v29.hdacd.com
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: '30|🇭🇰_HK_中国香港->🇩🇪_DE_德国 #1'
+  network: tcp
+  port: 30833
+  server: v33.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484

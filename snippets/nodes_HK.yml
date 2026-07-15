@@ -64,7 +64,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 196
+  name: 5,26|美国 190
   network: ws
   port: 8080
   server: 154.3.35.27
@@ -109,7 +109,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 205
+  name: 5,26|美国 199
   network: ws
   port: 8080
   server: 166.88.77.31
@@ -124,7 +124,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 206
+  name: 5,26|美国 200
   network: ws
   port: 8080
   server: 149.62.46.53
@@ -750,24 +750,6 @@ proxies:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
 - client-fingerprint: chrome
-  name: '18,22,30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #1'
-  network: tcp
-  password: OccIqeORGQwiNkwS
-  port: 19128
-  server: jpbgp.netvigor.cc
-  skip-cert-verify: true
-  sni: yazhou10.dynu.net
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf
-  name: 22,27,35|🔴🇭🇰[✨]_github.com/Ruk1ng001_aa...
-  password: asd123456
-  port: 8388
-  server: 103.149.182.79
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- client-fingerprint: chrome
   name: 22|🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001...
   network: ws
   password: 13d29042-ab82-4195-9cd4-2bafc518e201
@@ -782,6 +764,13 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
         Gecko) Chrome/36.0.1985.125 Safari/537.36
     path: /images
+- name: 30|🇭🇰 HK香港(mibei77.com 米贝节点分享)
+  password: OccIqeORGQwiNkwS
+  port: 19128
+  server: jpbgp.netvigor.cc
+  skip-cert-verify: true
+  sni: yazhou10.dynu.net
+  type: trojan
 - alterId: 2
   cipher: auto
   name: 30,33|香港|@ripaojiedian
@@ -792,6 +781,33 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '30,33,34|🇭🇰 香港3|@ripaojiedian #1'
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 13118
+  server: 18.163.123.154
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '30,33,34|🇭🇰 香港4|@ripaojiedian #1'
+  password: BxceQaOe
+  port: 27161
+  server: 18.163.180.255
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '30,33,34|🇭🇰 香港5|@ripaojiedian #1'
+  password: BxceQaOe
+  port: 11035
+  server: 18.166.236.92
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 30|香港丨yoyapai.com\r
+  password: 65fQmPHHbPcBCfvSHt
+  port: 443
+  server: au-4.tr202605.com
+  skip-cert-verify: true
+  type: trojan
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158
@@ -804,13 +820,26 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- name: 33|🇭🇰HK_1|3.9MB/s
-  password: 1df3ece1218bedba28c6c6ac726a07bb
-  port: 39001
-  server: 114.80.8.128
+- name: 33|🇭🇰HK_1|3.5MB/s
+  network: ws
+  password: 2c366360-0333-4738-9423-6d5b378e3594
+  port: 443
+  server: cdn2.bpcdn.cc
   skip-cert-verify: true
-  sni: 114.80.8.128
+  sni: hkefowhe04.hktimecsgo.xyz
   type: trojan
+  ws-opts:
+    path: /images
+- name: 33|🇭🇰HK_2|3.5MB/s
+  network: ws
+  password: 2c366360-0333-4738-9423-6d5b378e3594
+  port: 443
+  server: hkkk498.cloudflare.182682.xyz
+  skip-cert-verify: false
+  sni: hkefowhe04.hktimecsgo.xyz
+  type: trojan
+  ws-opts:
+    path: /images
 - alterId: 2
   cipher: auto
   country: 🇭🇰HK

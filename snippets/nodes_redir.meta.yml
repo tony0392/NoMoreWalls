@@ -169,7 +169,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 020
+  name: 5,26|中国 018
   network: ws
   port: 36101
   server: 120.82.70.149
@@ -184,7 +184,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|日本 024
+  name: 5,26|日本 032
   network: ws
   port: 14954
   server: 91.200.242.187
@@ -3607,17 +3607,56 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 27|🇺🇸_US_美国->🇫🇷_FR_法国
-  network: ws
-  port: 443
-  server: 4cdn.njkrpl.com
+- alterId: 2
+  cipher: none
+  name: 27|🇨🇳_CN_中国->🇩🇪_DE_德国
+  port: 30833
+  server: v33.hdacd.com
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: 27|🇨🇳_CN_中国->🇺🇸_US_美国_1
+  port: 30804
+  server: v4.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: 27|🇨🇳_CN_中国->🇺🇸_US_美国_2
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: 27,35|v6.hdacd.com
+  port: 30806
+  server: v6.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: 27,35|v9.hdacd.com
+  port: 30809
+  server: v9.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 28|🇺🇸_US_美国->_AZ_
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 41943
@@ -3637,17 +3676,40 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: '30|🇺🇸_US_美国->🇫🇷_FR_法国 #1'
-  network: ws
-  port: 443
-  server: 4cdn.njkrpl.com
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 30,35|🇭🇰HK hdacd.com
+  network: tcp
+  port: 30824
+  server: v24.hdacd.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 30,35|v4.hdacd.com
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: '30|🇨🇳_CN_中国->🇯🇵_JP_日本 #1'
+  network: tcp
+  port: 30806
+  server: v6.hdacd.com
   servername: ''
   tls: false
   type: vmess
-  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
-  ws-opts:
-    headers:
-      Host: 4cdn.njkrpl.com
-    path: /
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484

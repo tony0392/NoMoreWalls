@@ -49,7 +49,7 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 022
+  name: 5,26|中国 016
   network: ws
   port: 8080
   server: 104.208.85.56
@@ -64,7 +64,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 519
+  name: 5,26|美国 515
   network: ws
   port: 8080
   server: 154.3.35.27
@@ -79,7 +79,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 023
+  name: 5,26|中国 017
   network: ws
   port: 8080
   server: 156.251.176.167
@@ -109,7 +109,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 528
+  name: 5,26|美国 524
   network: ws
   port: 8080
   server: 166.88.77.31
@@ -124,7 +124,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 529
+  name: 5,26|美国 525
   network: ws
   port: 8080
   server: 149.62.46.53
@@ -169,7 +169,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|澳大利亚 012
+  name: 5,26|澳大利亚 014
   network: ws
   port: 9000
   server: 43.154.53.65
@@ -184,7 +184,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 025
+  name: 5,26|中国 019
   network: ws
   port: 8080
   server: 101.33.120.19
@@ -749,6 +749,21 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
+- cipher: chacha20-ietf
+  country: 🇰HK
+  name: 14|🇰HK_65
+  password: asd123456
+  port: 8388
+  server: 103.36.91.32
+  type: ss
+- cipher: chacha20-ietf
+  country: 🇰HK
+  name: 14,35|🔴🇭🇰[🎬✨]_github.com/Ruk1ng001_7...
+  password: asd123456
+  port: 8388
+  server: 103.141.221.124
+  type: ss
+  udp: true
 - alterId: 2
   cipher: auto
   country: 🇰HK
@@ -764,24 +779,44 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
+- country: 🇰HK
+  name: 14|🇰HK_68
+  password: 869e9086806483ca4744a4cb0f3d6e16
+  port: 443
+  server: 203.198.122.227
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  client-fingerprint: chrome
+  name: 18,22,26,30|🇭🇰 香港 电讯盈科有限公司
+  network: tcp
+  password: OccIqeORGQwiNkwS
+  port: 19128
+  server: jpbgp.netvigor.cc
+  skip-cert-verify: false
+  sni: yazhou10.dynu.net
+  tls: true
+  type: trojan
+  udp: true
 - name: '30,33,34|🇭🇰 香港3|@ripaojiedian #1'
   password: b490740312aedb5f9f6b84c7aebd08c0
-  port: 47867
-  server: 18.162.155.166
+  port: 13118
+  server: 18.167.109.142
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: '30,33,34|🇭🇰 香港4|@ripaojiedian #1'
   password: BxceQaOe
-  port: 27161
-  server: 18.166.57.77
+  port: 11035
+  server: 43.198.15.160
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: '30,33,34|🇭🇰 香港5|@ripaojiedian #1'
   password: BxceQaOe
-  port: 27161
-  server: 95.40.118.114
+  port: 11231
+  server: 43.198.246.144
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -799,14 +834,11 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 35|🇭🇰HK hdacd.com
-  network: tcp
-  port: 30824
-  server: v24.hdacd.com
-  skip-cert-verify: true
+  name: 34,35|v10.hdacd.com
+  port: 30807
+  server: v10.hdacd.com
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-128-gcm
@@ -814,13 +846,6 @@ proxies:
   password: ec4ba5cd-753f-4ce0-9d1e-e28759e20ab1
   port: 4788
   server: south.nor2.uops.rtx.al
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 35|🔴🇭🇰_github.com/Ruk1ng001_AJrBn...
-  password: asd123456
-  port: 8388
-  server: 103.149.182.105
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -891,13 +916,6 @@ proxies:
   tls: false
   type: vmess
   uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
-- cipher: chacha20-ietf
-  name: 35|🔴🇭🇰[🎬✨]_github.com/Ruk1ng001_7...
-  password: asd123456
-  port: 8388
-  server: 103.141.221.124
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   name: 35|🟡🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_...
   password: 1b609740-eec2-11ef-8543-f23c93136cb3

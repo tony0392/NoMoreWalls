@@ -24,53 +24,26 @@ proxies:
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - cipher: aes-256-gcm
-  country: 🇺RU
-  name: 14|RU_74
-  password: cfe685726eea2c4b
-  port: 10921
-  server: 185.22.154.103
-  type: ss
-- country: 🇷RU
-  name: 14|🇺RU_75
-  password: '!!str 1234567890'
-  port: 443
-  server: 194.87.77.91
-  skip-cert-verify: true
-  sni: kfm-bn0.pages.dev
-  type: trojan
-  udp: true
-- country: 🇷RU
-  name: 14|🇷RU_76
-  password: WG39087154
-  port: 443
-  server: pet-albacore.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇺RU
-  name: 14|🇺RU_77
-  password: IQ68037294
-  port: 443
-  server: still-mastodon.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇷RU
-  name: 14|🇷🇺RU_78
-  password: WF42809561
-  port: 443
-  server: nearby-muskrat.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 19|🇷 RU羅丨yoyapai.com
+  name: 19|🇷 RU俄羅斯丨yoyapai.com
   password: 7e1dd4c55bf85da5
   port: 30129
   server: 212.192.13.91
   skip-cert-verify: true
   type: ss
   udp: true
+- name: 20|RU(mibei77.com 米贝节点分享)
+  password: '!!str 521314'
+  port: 443
+  server: 176.124.223.27
+  skip-cert-verify: true
+  sni: hhtj.hhllfly.kdns.fr
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+    path: /pyip=Telegram-WangCai2🇨🇳
 - client-fingerprint: chrome
   name: 26|俄罗斯 001
   network: tcp
@@ -192,6 +165,16 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
+  name: 26|俄罗斯 013
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: happy-mutt.rooster465.autos
+  skip-cert-verify: false
+  sni: happy-mutt.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
   name: 26|俄罗斯 014
   network: tcp
   password: WG39087154
@@ -293,7 +276,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 024
+  name: 26|俄罗斯 027
   network: tcp
   port: 27343
   server: 46.226.166.205
@@ -303,7 +286,21 @@ proxies:
   uuid: f3cb1cd4-4e56-444d-8d6b-4759fa69dae3
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 025
+  name: 26|俄罗斯 028
+  network: ws
+  port: 443
+  server: jeffptrade.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b86f3b55-04dd-532b-3a05-11d9ebd42604
+  ws-opts:
+    headers:
+      Host: jeffptrade.com
+    path: /odixvws
+- alterId: 0
+  cipher: auto
+  name: 26|俄罗斯 029
   network: ws
   port: 443
   server: lu1.gogogoo.cyou
@@ -317,7 +314,7 @@ proxies:
     path: /go
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 026
+  name: 26|俄罗斯 030
   network: ws
   port: 852
   server: 176.119.156.229
@@ -330,7 +327,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 027
+  name: 26|俄罗斯 031
   network: ws
   port: 14369
   server: 195.133.53.192
@@ -343,7 +340,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 029
+  name: 26|俄罗斯 033
   network: grpc
   port: 32740
   server: 5.42.80.252
@@ -353,7 +350,7 @@ proxies:
   uuid: 433f1111-b780-4eae-b7e7-d7823b09e701
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 031
+  name: 26|俄罗斯 035
   network: ws
   port: 16231
   server: 31.129.105.239
@@ -366,7 +363,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 032
+  name: 26|俄罗斯 036
   network: ws
   port: 443
   server: 37.220.161.249
@@ -380,7 +377,7 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 033
+  name: 26|俄罗斯 037
   network: ws
   port: 80
   server: 195.54.174.18
@@ -393,7 +390,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 034
+  name: 26|俄罗斯 038
   network: http
   port: 26743
   server: 194.87.248.27
@@ -402,7 +399,7 @@ proxies:
   uuid: 59952a8e-b712-4190-d85e-f9aadd65faa0
 - alterId: 64
   cipher: auto
-  name: 26|俄罗斯 035
+  name: 26|俄罗斯 039
   network: http
   port: 37672
   server: 176.119.159.245
@@ -411,7 +408,7 @@ proxies:
   uuid: 86b4e35c-1061-47b3-8c6c-811d1853a477
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 036
+  name: 26|俄罗斯 040
   network: ws
   port: 2095
   server: 185.174.138.209
@@ -424,7 +421,7 @@ proxies:
     path: /az05.beyondy.cfd/link?/TM
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 037
+  name: 26|俄罗斯 041
   network: ws
   port: 2052
   server: 185.174.138.199
@@ -437,7 +434,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 038
+  name: 26|俄罗斯 042
   network: ws
   port: 2082
   server: 185.174.138.196
@@ -450,7 +447,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 039
+  name: 26|俄罗斯 043
   network: ws
   port: 443
   server: 194.76.18.113
@@ -464,7 +461,7 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 040
+  name: 26|俄罗斯 044
   network: ws
   port: 443
   server: 194.76.18.197
@@ -478,7 +475,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 041
+  name: 26|俄罗斯 045
   network: ws
   port: 443
   server: 93.93.89.118
@@ -492,7 +489,7 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 043
+  name: 26|俄罗斯 047
   network: ws
   port: 2082
   server: 185.174.138.34
@@ -505,7 +502,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 044
+  name: 26|俄罗斯 048
   network: ws
   port: 443
   server: cg1c13.waimaojd.com
@@ -519,7 +516,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 045
+  name: 26|俄罗斯 049
   network: ws
   port: 443
   server: haxus3.janechiu.icu
@@ -533,7 +530,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 046
+  name: 26|俄罗斯 050
   network: ws
   port: 443
   server: us03.gogogoo.cyou
@@ -547,7 +544,7 @@ proxies:
     path: /go
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 047
+  name: 26|俄罗斯 051
   network: ws
   port: 443
   server: us02.gogogoo.cyou
@@ -559,3 +556,12 @@ proxies:
     headers:
       Host: us02.gogogoo.cyou
     path: /go
+- alterId: 0
+  cipher: auto
+  name: 26|俄罗斯 053
+  network: tcp
+  port: 22324
+  server: 5.188.190.252
+  skip-cert-verify: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002

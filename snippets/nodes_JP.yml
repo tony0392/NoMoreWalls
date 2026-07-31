@@ -78,7 +78,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|日本 007
+  name: 5,26|日本 009
   network: ws
   port: 10241
   server: 52.197.107.193
@@ -138,7 +138,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|伊朗 003
+  name: 5,26|伊朗 005
   network: ws
   port: 8080
   server: 5.226.49.4
@@ -213,7 +213,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 5,26|中国 020
+  name: 5,26|中国 026
   network: ws
   port: 8080
   server: 176.119.149.46
@@ -243,7 +243,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|澳大利亚 004
+  name: 5,26|澳大利亚 011
   network: ws
   port: 8080
   server: 123.108.70.211
@@ -273,7 +273,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|日本 010
+  name: 5,26|日本 012
   network: ws
   port: 8080
   server: bnm.skyin.net
@@ -303,7 +303,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|澳大利亚 006
+  name: 5,26|澳大利亚 013
   network: ws
   port: 8080
   server: 140.83.50.52
@@ -378,7 +378,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|日本 012
+  name: 5,26|日本 014
   network: ws
   port: 8080
   server: 193.32.151.103
@@ -453,7 +453,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|日本 027
+  name: 5,26|日本 029
   network: ws
   port: 8080
   server: 193.32.148.12
@@ -1018,11 +1018,6 @@ proxies:
     headers:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
-- name: 18|日本+东京Amazon数据中心
-  password: d050aca3-9df2-4461-90ec-92373c1d7636
-  port: 44184
-  server: v2jp.k1.ssnss.live
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 19|日本節點丨yoyapai.com
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -1031,7 +1026,7 @@ proxies:
   skip-cert-verify: true
   type: ss
   udp: true
-- name: 19,30|日本丨yoyapai.com\r
+- name: '19,30|日本丨yoyapai.com\r #2'
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 38937
   server: 54.46.77.161
@@ -1040,7 +1035,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '19,30|日本丨yoyapai.com\r #1'
+- name: '19,30|日本丨yoyapai.com\r #3'
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 40138
   server: 18.166.58.27
@@ -1049,7 +1044,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '19,30|日本丨yoyapai.com\r #2'
+- name: '19,30|日本丨yoyapai.com\r #4'
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 38937
   server: 95.40.51.248
@@ -1058,7 +1053,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '19,30|日本丨yoyapai.com\r #3'
+- name: '19,30|日本丨yoyapai.com\r #5'
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 40138
   server: 35.77.80.32
@@ -1067,7 +1062,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '19,30|日本丨yoyapai.com\r #4'
+- name: '19,30|日本丨yoyapai.com\r #6'
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 38937
   server: 18.163.123.229
@@ -1076,36 +1071,54 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  name: '22,30,33,34|🇯🇵 日本3|@ripaojiedian #1'
+  password: d1960ba9f0f6353353994fa844cf817b
+  port: 40138
+  server: 3.114.9.167
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: '22,30,33,34|🇯🇵 日本2|@ripaojiedian #1'
+  password: d1960ba9f0f6353353994fa844cf817b
+  port: 38937
+  server: 3.114.9.167
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
 - name: '22,27,30|🇭🇰_HK_中国香港->🇯🇵_JP_日本 #1'
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20004
   server: oplosgru-c.catcat321.com
   skip-cert-verify: true
   sni: hk.catxstar.com
-  tls: false
+  tls: true
   type: trojan
   udp: true
-- name: 22|🟡🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001...
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20129
-  server: Hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: '22|🟡🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
+- name: 26,30|日本丨yoyapai.com\r
   network: tcp
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20129
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: false
-  sni: hk.catxstar.com
+  password: d1960ba9f0f6353353994fa844cf817b
+  port: 38937
+  server: 18.181.205.36
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- name: 26,30|美國丨yoyapai.com\r
+  network: tcp
+  password: d1960ba9f0f6353353994fa844cf817b
+  port: 49277
+  server: 18.181.205.36
+  skip-cert-verify: true
+  sni: www.nintendogames.net
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: 26|日本 001
+  name: 26|日本 003
   network: ws
   port: 80
   server: 168.138.43.75
@@ -1119,7 +1132,7 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 0
   cipher: auto
-  name: 26|日本 002
+  name: 26|日本 004
   network: ws
   port: 443
   server: fullaccesstojapannetsubnode1.azurewebsites.net
@@ -1133,7 +1146,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 26|日本 003
+  name: 26|日本 005
   network: ws
   port: 11188
   server: 140.238.42.147
@@ -1146,7 +1159,7 @@ proxies:
     path: /hello
 - alterId: 0
   cipher: auto
-  name: 26|日本 004
+  name: 26|日本 006
   network: ws
   port: 80
   server: 3h-philippines1.09vpn.com
@@ -1160,7 +1173,7 @@ proxies:
     path: /vmess/
 - alterId: 64
   cipher: auto
-  name: 26|日本 013
+  name: 26|日本 015
   network: ws
   port: 443
   server: 134.122.139.79
@@ -1174,7 +1187,7 @@ proxies:
     path: /path/011410073331
 - alterId: 64
   cipher: auto
-  name: 26|日本 014
+  name: 26|日本 016
   network: ws
   port: 30000
   server: 137.220.130.58
@@ -1188,7 +1201,7 @@ proxies:
     path: /path/011410073331
 - alterId: 4
   cipher: auto
-  name: 26|日本 015
+  name: 26|日本 017
   network: ws
   port: 443
   server: 202.61.141.130
@@ -1202,7 +1215,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 26|日本 016
+  name: 26|日本 018
   network: ws
   port: 80
   server: max8.flash5g.com
@@ -1215,7 +1228,7 @@ proxies:
     path: /AnhBin
 - alterId: 0
   cipher: auto
-  name: 26|日本 019
+  name: 26|日本 021
   network: ws
   port: 443
   server: 146.56.162.25
@@ -1229,7 +1242,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 26|日本 020
+  name: 26|日本 022
   network: ws
   port: 3331
   server: f1f3227.u1.glados-config.net
@@ -1243,7 +1256,7 @@ proxies:
     path: /s/f1f3227.fm.apple.com:111548
 - alterId: 0
   cipher: auto
-  name: 26|日本 021
+  name: 26|日本 023
   network: ws
   port: 443
   server: kr-arm2.018999.xyz
@@ -1257,7 +1270,7 @@ proxies:
     path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
 - alterId: 0
   cipher: auto
-  name: 26|日本 022
+  name: 26|日本 024
   network: ws
   port: 443
   server: 172.105.223.136
@@ -1271,7 +1284,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|日本 023
+  name: 26|日本 025
   network: ws
   port: 3331
   server: f1f3227.v1.glados-config.net
@@ -1284,7 +1297,7 @@ proxies:
     path: /s/f1f3227.fm.apple.com:111548
 - alterId: 0
   cipher: auto
-  name: 26|日本 024
+  name: 26|日本 026
   network: ws
   port: 443
   server: 124.156.225.184
@@ -1298,7 +1311,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|日本 025
+  name: 26|日本 027
   network: ws
   port: 443
   server: 47.245.42.92
@@ -1312,7 +1325,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|日本 026
+  name: 26|日本 028
   network: ws
   port: 443
   server: seoul02.zgjok.com
@@ -1326,7 +1339,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|日本 028
+  name: 26|日本 030
   network: ws
   port: 5001
   server: steam.dnspro.icu
@@ -1339,7 +1352,7 @@ proxies:
     path: /iso
 - alterId: 0
   cipher: auto
-  name: 26|日本 029
+  name: 26|日本 031
   network: ws
   port: 20025
   server: sh-cn-1.dnspro.icu
@@ -1352,7 +1365,7 @@ proxies:
     path: /iso
 - alterId: 0
   cipher: auto
-  name: 26|日本 030
+  name: 26|日本 032
   network: ws
   port: 443
   server: cvywfavasdc.cymlr.xyz
@@ -1364,30 +1377,47 @@ proxies:
     headers:
       Host: cvywfavasdc.cymlr.xyz
     path: /ksebupo
-- name: '30,33,34,38|US_speednode_0115 #1'
+- alterId: 0
+  cipher: auto
+  name: 26|日本 033
+  network: tcp
+  port: 8888
+  server: 146.56.112.110
+  skip-cert-verify: true
+  type: vmess
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+- name: '30,33,34|🇯🇵 日本|@ripaojiedian #1'
   password: BxceQaOe
-  port: 41421
-  server: 54.46.46.228
+  port: 49811
+  server: 43.198.187.59
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-  udp: true
-- name: '30,33,34,38|HK_speednode_0012 #1'
-  password: d1960ba9f0f6353353994fa844cf817b
-  port: 40138
-  server: 43.199.32.78
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+- name: '30|🇯🇵 JP日本(mibei77.com 米贝节点分享) #2'
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20004
+  server: oplosgru-c.catcat321.com
+  skip-cert-verify: true
   type: trojan
-  udp: true
-- name: '30,33,34,38|JP_speednode_0015 #1'
-  password: d1960ba9f0f6353353994fa844cf817b
-  port: 38937
-  server: 18.181.205.36
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+- name: '30|🇯🇵 JP日本(mibei77.com 米贝节点分享) #3'
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20129
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
   type: trojan
-  udp: true
+- name: '30|🇮🇳 印度(mibei77.com 米贝节点分享) #2'
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20035
+  server: oplosgru-c.catcat321.com
+  skip-cert-verify: true
+  type: trojan
+- name: '30|🇯🇵 JP日本(mibei77.com 米贝节点分享) #9'
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20129
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: hkdcrtc-e.catcat321.com
+  type: trojan
 - name: 35|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001...
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20033
@@ -1530,15 +1560,3 @@ proxies:
   sni: amazed-mako.rooster465.autos
   type: trojan
   udp: true
-- cipher: aes-128-gcm
-  name: 39|JP_Tokyo_Datacamp Limited_Clau...
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-128-gcm
-  name: 39|JP_Tokyo_Datacamp Limited_Gemi...
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
-  type: ss

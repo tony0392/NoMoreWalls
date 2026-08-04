@@ -169,7 +169,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 018
+  name: 5,26|中国 023
   network: ws
   port: 36101
   server: 120.82.70.149
@@ -199,7 +199,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 5,26|中国 023
+  name: 5,26|中国 028
   network: ws
   port: 1552
   server: nas.ruyo.in
@@ -3607,7 +3607,27 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
-- name: '27,28,30,33,38|US_speednode_0277 #1'
+- alterId: 2
+  cipher: auto
+  name: 27,28,35|v9.hdacd.com
+  port: 30809
+  server: v9.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: 27|🇨🇳_CN_中国->🇸🇬_SG_新加坡
+  port: 30845
+  server: v45.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 28|🇭🇰_HK_中国香港->🇩🇪_DE_德国
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20041
   server: hkdcrtc-e.catcat321.com
@@ -3618,11 +3638,11 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 28,35|v9.hdacd.com
-  port: 30809
-  server: v9.hdacd.com
-  skip-cert-verify: false
+  name: '30|🇨🇳_CN_中国->🇸🇬_SG_新加坡 #1'
+  network: tcp
+  port: 30845
+  server: v45.hdacd.com
+  servername: ''
   tls: false
   type: vmess
-  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484

@@ -23,8 +23,76 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
+- cipher: chacha20-ietf-poly1305
+  country: 🇺RU
+  name: 14|RU_133
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 817aa69.default.nintendo.com:112719
+    mode: tls
+  port: 2377
+  server: 88.210.36.107
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺RU
+  name: 14|🇺RU_134
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 817aa69.default.nintendo.com:112719
+    mode: tls
+  port: 2377
+  server: 88.210.36.109
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺RU
+  name: 14|🇷🇺RU_135
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 817aa69.default.nintendo.com:112719
+    mode: tls
+  port: 2377
+  server: 88.210.36.106
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺RU
+  name: 14|🇷🇺RU_136
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 817aa69.default.nintendo.com:112719
+    mode: tls
+  port: 2377
+  server: 88.210.36.108
+  type: ss
+- country: 🇺RU
+  name: 14|🇷🇺RU_137
+  password: IQ68037294
+  port: 443
+  server: square-anchovy.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇺RU
+  name: 14|🇷RU_138
+  password: WG39087154
+  port: 443
+  server: pet-albacore.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇺RU
+  name: 14|🇺RU_139
+  password: IQ68037294
+  port: 443
+  server: still-mastodon.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - country: 🇷RU
-  name: 14|RU_162
+  name: 14|🇷RU_140
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
@@ -32,55 +100,76 @@ proxies:
   sni: kfm-bn0.pages.dev
   type: trojan
   udp: true
-- country: 🇺RU
-  name: 14|🇷RU_163
-  password: XG59623478
-  port: 443
-  server: classic-duckling.rooster465.autos
+- cipher: aes-256-gcm
+  name: 19|🇺_RU丨yoyapai.com
+  password: 895b4b796a357570
+  port: 10916
+  server: 176.32.35.51
   skip-cert-verify: true
-  type: trojan
+  type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 19|🇷 RU俄羅斯丨yoyapai.com
+  name: 19,20|RU(mibei77.com 米贝节点分享)
+  password: bdb313adf74c2ede
+  port: 20188
+  server: 195.133.5.207
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 19|🇷 RU羅丨yoyapai.com
   password: 7e1dd4c55bf85da5
   port: 30129
   server: 212.192.13.91
   skip-cert-verify: true
   type: ss
   udp: true
-- name: 20|RU(mibei77.com 米贝节点分享)
-  password: '!!str 521314'
-  port: 443
-  server: 176.124.223.27
-  skip-cert-verify: true
-  sni: hhtj.hhllfly.kdns.fr
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-    path: /pyip=Telegram-WangCai2🇨🇳
 - cipher: aes-256-gcm
-  name: 22|🔴🇷🇺[📺🎪✨🎞️]_github.com/Ruk1ng00...
-  password: bdb313adf74c2ede
-  port: 20916
-  server: 195.133.5.207
+  name: 19|🇺_RU俄羅斯丨yoyapai.com_2
+  password: 895b4b796a357570
+  port: 10910
+  server: 176.32.35.51
+  skip-cert-verify: true
   type: ss
-- name: 22|🔴🇷🇺[🎪✨🎞️🔍]_github.com/Ruk1ng00...
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|🟢🇷🇺[📺🎪]_github.com/Ruk1ng001_9...
+  password: eAfQb4p8exIxYlbiO04QPQ
+  port: 1080
+  server: 193.233.216.247
+  type: ss
+- name: 22|🔴🇷🇺[🎪🔍]_github.com/Ruk1ng001_c...
   password: None
   port: 1080
   server: 193.233.218.213
   type: socks5
   udp: true
   username: null
+- name: 22|🔴🇷🇺[📺🎪🔍]_github.com/Ruk1ng001_...
+  port: 4050
+  server: 109.94.1.23
+  type: http
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 001
+  name: 26|俄罗斯 002
+  network: ws
+  port: 43688
+  server: 195.133.53.192
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: bd1c8b57-0a9e-4e9f-a261-48e90c871e41
+  ws-opts:
+    headers:
+      Host: 195.133.53.192
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 26|俄罗斯 003
   network: ws
   port: 443
   server: lu1.gogogoo.cyou
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda
@@ -90,17 +179,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 002
-  network: tcp
-  port: 27343
-  server: 46.226.166.205
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f3cb1cd4-4e56-444d-8d6b-4759fa69dae3
-- alterId: 0
-  cipher: auto
-  name: 26|俄罗斯 003
+  name: 26|俄罗斯 004
   network: ws
   port: 852
   server: 176.119.156.229
@@ -113,7 +192,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 004
+  name: 26|俄罗斯 005
   network: ws
   port: 443
   server: jeffptrade.com
@@ -127,7 +206,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 006
+  name: 26|俄罗斯 007
   network: grpc
   port: 32740
   server: 5.42.80.252
@@ -137,7 +216,7 @@ proxies:
   uuid: 433f1111-b780-4eae-b7e7-d7823b09e701
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 008
+  name: 26|俄罗斯 009
   network: ws
   port: 16231
   server: 31.129.105.239
@@ -150,7 +229,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 009
+  name: 26|俄罗斯 010
   network: ws
   port: 443
   server: 37.220.161.249
@@ -164,7 +243,7 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 010
+  name: 26|俄罗斯 011
   network: ws
   port: 80
   server: 195.54.174.18
@@ -177,7 +256,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 011
+  name: 26|俄罗斯 012
   network: http
   port: 26743
   server: 194.87.248.27
@@ -186,7 +265,7 @@ proxies:
   uuid: 59952a8e-b712-4190-d85e-f9aadd65faa0
 - alterId: 64
   cipher: auto
-  name: 26|俄罗斯 012
+  name: 26|俄罗斯 013
   network: http
   port: 37672
   server: 176.119.159.245
@@ -195,7 +274,7 @@ proxies:
   uuid: 86b4e35c-1061-47b3-8c6c-811d1853a477
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 013
+  name: 26|俄罗斯 014
   network: ws
   port: 2095
   server: 185.174.138.209
@@ -208,7 +287,7 @@ proxies:
     path: /az05.beyondy.cfd/link?/TM
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 014
+  name: 26|俄罗斯 015
   network: ws
   port: 2052
   server: 185.174.138.199
@@ -221,7 +300,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 015
+  name: 26|俄罗斯 016
   network: ws
   port: 2082
   server: 185.174.138.196
@@ -234,7 +313,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 016
+  name: 26|俄罗斯 017
   network: ws
   port: 443
   server: 194.76.18.113
@@ -248,7 +327,7 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 017
+  name: 26|俄罗斯 018
   network: ws
   port: 443
   server: 194.76.18.197
@@ -262,7 +341,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 018
+  name: 26|俄罗斯 019
   network: ws
   port: 443
   server: 93.93.89.118
@@ -276,7 +355,7 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 020
+  name: 26|俄罗斯 021
   network: ws
   port: 2082
   server: 185.174.138.34
@@ -289,7 +368,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 021
+  name: 26|俄罗斯 022
   network: ws
   port: 443
   server: haxus3.janechiu.icu
@@ -303,7 +382,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 022
+  name: 26|俄罗斯 023
   network: ws
   port: 443
   server: us03.gogogoo.cyou
@@ -317,7 +396,7 @@ proxies:
     path: /go
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 023
+  name: 26|俄罗斯 024
   network: ws
   port: 443
   server: us02.gogogoo.cyou
@@ -331,10 +410,17 @@ proxies:
     path: /go
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 024
+  name: 26|俄罗斯 025
   network: tcp
   port: 22324
   server: 5.188.190.252
   skip-cert-verify: true
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- cipher: aes-256-gcm
+  name: 38|RU_speednode_0020
+  password: 895b4b796a357570
+  port: 7011
+  server: 176.32.35.51
+  type: ss
+  udp: true

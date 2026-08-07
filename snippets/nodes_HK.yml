@@ -49,7 +49,7 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 022
+  name: 5,26|中国 027
   network: ws
   port: 8080
   server: 104.208.85.56
@@ -64,7 +64,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 282
+  name: 5,26|美国 306
   network: ws
   port: 8080
   server: 154.3.35.27
@@ -79,7 +79,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 023
+  name: 5,26|中国 028
   network: ws
   port: 8080
   server: 156.251.176.167
@@ -109,7 +109,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 291
+  name: 5,26|美国 315
   network: ws
   port: 8080
   server: 166.88.77.31
@@ -124,7 +124,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 292
+  name: 5,26|美国 316
   network: ws
   port: 8080
   server: 149.62.46.53
@@ -169,7 +169,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|澳大利亚 007
+  name: 5,26|澳大利亚 011
   network: ws
   port: 9000
   server: 43.154.53.65
@@ -184,7 +184,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|中国 027
+  name: 5,26|中国 032
   network: ws
   port: 8080
   server: 101.33.120.19
@@ -749,21 +749,6 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- alterId: 2
-  cipher: auto
-  country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14,30,33|香港|@ripaojiedian
-  network: tcp
-  port: '30807'
-  server: v10.hdacd.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
 - name: 19|香港丨yoyapai.com_2
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 47867
@@ -775,7 +760,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 19,26|中国 010
+  name: 19,26|中国 015
   network: ws
   port: 443
   server: 221.204.41.88
@@ -800,9 +785,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '20,30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #1'
+  name: 20|HK(mibei77.com 米贝节点分享)
   network: ws
-  port: '443'
+  port: 443
   server: 210.138.37.53
   servername: DrBKg16eGf3FZlM3.v.3dns.vip
   skip-cert-verify: true
@@ -814,6 +799,24 @@ proxies:
     headers:
       Host: DrBKg16eGf3FZlM3.v.3dns.vip
     path: /ws-vmess
+- cipher: chacha20-ietf
+  name: 22,35|🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001...
+  password: asd123456
+  port: 8388
+  server: 103.149.183.80
+  type: ss
+- alterId: '2'
+  cipher: auto
+  name: 22|🟢🇭🇰_github.com/Ruk1ng001_9160c...
+  network: tcp
+  port: 30807
+  server: v10.zgtfqs.click
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
 - alterId: 0
   cipher: auto
   http-opts:
@@ -831,6 +834,37 @@ proxies:
   type: vmess
   udp: true
   uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0
+- alterId: 2
+  cipher: auto
+  name: 30,33|香港|@ripaojiedian
+  network: tcp
+  port: '30807'
+  server: v10.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '30,33,34|🇭🇰 香港3|@ripaojiedian #1'
+  password: d1960ba9f0f6353353994fa844cf817b
+  port: 5077
+  server: 18.166.178.12
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '30,33,34|🇭🇰 香港4|@ripaojiedian #1'
+  password: BxceQaOe
+  port: 27161
+  server: 43.198.209.68
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '30,33,34|🇭🇰 香港5|@ripaojiedian #1'
+  password: BxceQaOe
+  port: 29444
+  server: 16.162.161.131
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158
@@ -843,27 +877,6 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 34,35|v10.hdacd.com
-  port: 30807
-  server: v10.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 35|🇭🇰HK hdacd.com
-  network: tcp
-  port: 30824
-  server: v24.hdacd.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-128-gcm
   name: 35|🟢🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_...
   password: ec4ba5cd-753f-4ce0-9d1e-e28759e20ab1
@@ -921,7 +934,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 35|🟢🇭🇰[🎬🤖🧠📺]_github.com/Ruk1ng001...
+  name: '35|🟢🇭🇰[🎬🤖🧠📺]_github.com/Ruk1ng001... #1'
   port: 9006
   server: select-hk.ddnskunlun.com
   skip-cert-verify: false
@@ -965,12 +978,6 @@ proxies:
   sni: www.baidu.com
   type: trojan
   udp: true
-- cipher: chacha20-ietf
-  name: 35|🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001...
-  password: asd123456
-  port: 8388
-  server: 103.149.183.80
-  type: ss
 - alterId: 2
   cipher: auto
   h2-opts: {}
@@ -989,7 +996,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: '35|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #1'
+  name: '35|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #2'
   network: ws
   port: 80
   server: f0525e6f-t8wxs0-tcfo40-17xo8.hkt.gotochinatown.net
@@ -1092,7 +1099,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: '35|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #2'
+  name: '35|🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001... #3'
   network: ws
   port: 80
   server: d928a6f8-t9zts0-tcc9uq-1rnrp.hkt.gotochinatown.net

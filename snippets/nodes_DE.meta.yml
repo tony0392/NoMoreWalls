@@ -10,7 +10,7 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 309
+  name: 5,26|美国 287
   network: ws
   port: 17511
   server: 5.180.253.31
@@ -25,7 +25,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 5,26|德国 012
+  name: 5,26|德国 010
   network: ws
   port: 8080
   server: 130.61.253.111
@@ -40,7 +40,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 5,26|美国 310
+  name: 5,26|美国 288
   network: ws
   port: 8080
   server: 181.214.99.228
@@ -53,13 +53,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- cipher: chacha20-ietf-poly1305
-  country: 🇪DE
-  name: 14|DE_24
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-  port: 59924
-  server: 130.61.150.162
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 19|德國丨yoyapai.com_3
   password: XUMTygEM1jVYIvysXKqA5T
@@ -133,28 +126,35 @@ proxies:
   tls: true
   type: http
   username: testuser1
-- name: 22|🟢🇩🇪[📺🎭🎪📦]_github.com/Ruk1ng001...
+- name: 22,27|🇭🇰_HK_中国香港->🇩🇪_DE_德国
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20041
   server: Hkdcrtc-e.catcat321.com
   skip-cert-verify: true
   sni: de.catxstar.com
+  tls: false
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: 26|德国 004
-  network: ws
-  port: 80
-  server: 159.89.29.136
+  name: 26|德国 003
+  network: tcp
+  port: 2053
+  server: de.connfull.org
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: d20d6ede-433c-11ed-b81f-cfd905df9958
-  ws-opts:
-    headers:
-      Host: cx.com
-    path: /vmess
+  uuid: 169168a8-a59d-4f35-9f2f-612b0c76eeec
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 26|德国 004
+  network: tcp
+  port: 443
+  server: 46.183.187.73
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 92a048ec-a160-497e-8069-c2e902626d7a
 - alterId: 0
   cipher: auto
   name: 26|德国 005
@@ -169,45 +169,15 @@ proxies:
   cipher: auto
   name: 26|德国 006
   network: tcp
-  port: 18003
-  server: 91.107.157.137
+  port: 80
+  server: 128.140.109.232
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: e41f1455-24f5-4d28-9588-a2cba790171c
+  uuid: 05a178f9-e6ba-4006-93d7-3d980cdc3a76
 - alterId: 0
-  cipher: aes-128-gcm
+  cipher: auto
   name: 26|德国 007
-  network: tcp
-  port: 443
-  server: 46.183.187.73
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 92a048ec-a160-497e-8069-c2e902626d7a
-- alterId: 0
-  cipher: auto
-  name: 26|德国 008
-  network: tcp
-  port: 2053
-  server: de.connfull.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 169168a8-a59d-4f35-9f2f-612b0c76eeec
-- alterId: 0
-  cipher: auto
-  name: 26|德国 009
-  network: tcp
-  port: 8585
-  server: 165.227.138.218
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: afedd970-62a2-46f5-88c4-e1f5305d3758
-- alterId: 0
-  cipher: auto
-  name: 26|德国 010
   network: ws
   port: 443
   server: 18.197.218.69
@@ -221,7 +191,7 @@ proxies:
     path: /5f72f180-b21b-4b7a-8484-240759096785
 - alterId: 0
   cipher: auto
-  name: 26|德国 011
+  name: 26|德国 008
   network: ws
   port: 443
   server: sgp.kapok.buzz
@@ -235,7 +205,21 @@ proxies:
     path: /4befdd8a6/
 - alterId: 0
   cipher: auto
-  name: 26|德国 013
+  name: 26|德国 009
+  network: ws
+  port: 80
+  server: 159.89.29.136
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d20d6ede-433c-11ed-b81f-cfd905df9958
+  ws-opts:
+    headers:
+      Host: cx.com
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 26|德国 011
   network: ws
   port: 8880
   server: 185.16.110.212
@@ -248,7 +232,7 @@ proxies:
     path: /dabai
 - alterId: 0
   cipher: auto
-  name: 26|德国 014
+  name: 26|德国 012
   network: ws
   port: 443
   server: 141.94.155.224
@@ -262,7 +246,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 26|德国 015
+  name: 26|德国 013
   network: ws
   port: 443
   server: 141.94.155.228
@@ -276,7 +260,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 26|德国 016
+  name: 26|德国 014
   network: ws
   port: 443
   server: 141.94.155.229
@@ -290,7 +274,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 26|德国 017
+  name: 26|德国 015
   network: ws
   port: 443
   server: 141.95.126.134
@@ -304,7 +288,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 26|德国 018
+  name: 26|德国 016
   network: ws
   port: 443
   server: ua-full.privateip.net
@@ -318,7 +302,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 019
+  name: 26|德国 017
   network: ws
   port: 443
   server: us-full.privateip.net
@@ -332,7 +316,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 020
+  name: 26|德国 018
   network: ws
   port: 443
   server: jp-full.privateip.net
@@ -346,7 +330,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 021
+  name: 26|德国 019
   network: ws
   port: 443
   server: de2-full.privateip.net
@@ -360,7 +344,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 022
+  name: 26|德国 020
   network: ws
   port: 443
   server: kz-full.privateip.net
@@ -374,7 +358,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 023
+  name: 26|德国 021
   network: ws
   port: 443
   server: nl2-full.privateip.net
@@ -388,7 +372,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 024
+  name: 26|德国 022
   network: ws
   port: 443
   server: tr-full.privateip.net
@@ -402,7 +386,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 025
+  name: 26|德国 023
   network: ws
   port: 443
   server: it-full.privateip.net
@@ -416,7 +400,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 026
+  name: 26|德国 024
   network: ws
   port: 443
   server: de-full.privateip.net
@@ -430,7 +414,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 027
+  name: 26|德国 025
   network: ws
   port: 443
   server: fr-full.privateip.net
@@ -444,7 +428,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 028
+  name: 26|德国 026
   network: ws
   port: 443
   server: 185.135.9.208
@@ -458,7 +442,7 @@ proxies:
     path: /nina.bond/linkvws
 - alterId: 0
   cipher: auto
-  name: 26|德国 029
+  name: 26|德国 027
   network: ws
   port: 443
   server: in-full.privateip.net
@@ -472,7 +456,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 030
+  name: 26|德国 028
   network: ws
   port: 443
   server: nl-full.privateip.net
@@ -486,7 +470,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 031
+  name: 26|德国 029
   network: ws
   port: 443
   server: hk-full.privateip.net
@@ -500,7 +484,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 032
+  name: 26|德国 030
   network: ws
   port: 443
   server: ca-full.privateip.net
@@ -514,7 +498,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 033
+  name: 26|德国 031
   network: ws
   port: 443
   server: au-full.privateip.net
@@ -528,7 +512,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 034
+  name: 26|德国 032
   network: ws
   port: 443
   server: es-full.privateip.net
@@ -542,7 +526,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 035
+  name: 26|德国 033
   network: ws
   port: 443
   server: uk2-full.privateip.net
@@ -556,7 +540,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 036
+  name: 26|德国 034
   network: ws
   port: 443
   server: uk-full.privateip.net
@@ -570,7 +554,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 037
+  name: 26|德国 035
   network: ws
   port: 443
   server: sg-full.privateip.net
@@ -584,7 +568,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 038
+  name: 26|德国 036
   network: ws
   port: 443
   server: us2-full.privateip.net
@@ -598,7 +582,7 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 26|德国 041
+  name: 26|德国 039
   network: ws
   port: 443
   server: 139.162.178.95
@@ -612,7 +596,7 @@ proxies:
     path: /linkwsd
 - alterId: 0
   cipher: auto
-  name: 26|德国 042
+  name: 26|德国 040
   network: ws
   port: 443
   server: 130.61.23.77
@@ -626,7 +610,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 26|德国 043
+  name: 26|德国 041
   network: ws
   port: 8080
   server: 138.68.90.231
@@ -639,7 +623,7 @@ proxies:
     path: /cctv13/hd.m3u8
 - alterId: 0
   cipher: auto
-  name: 26|德国 044
+  name: 26|德国 042
   network: http
   port: 40969
   server: 5.161.106.72
@@ -648,7 +632,7 @@ proxies:
   uuid: 2fb9f60e-d4dc-458b-e3b2-d9b44f9bbd9e
 - alterId: 0
   cipher: auto
-  name: 26|德国 045
+  name: 26|德国 043
   network: http
   port: 50978
   server: 5.161.106.72
@@ -657,7 +641,7 @@ proxies:
   uuid: 89e6248b-0152-4317-a6ed-b6a0cf41f2cb
 - alterId: 0
   cipher: auto
-  name: 26|德国 046
+  name: 26|德国 044
   network: http
   port: 443
   server: 157.90.20.18
@@ -666,7 +650,7 @@ proxies:
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 26|德国 047
+  name: 26|德国 045
   network: http
   port: 443
   server: 5.75.168.155
@@ -675,7 +659,7 @@ proxies:
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 26|德国 048
+  name: 26|德国 046
   network: http
   port: 443
   server: 94.130.25.155
@@ -684,7 +668,7 @@ proxies:
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 26|德国 049
+  name: 26|德国 047
   network: http
   port: 443
   server: 167.235.136.155
@@ -693,7 +677,7 @@ proxies:
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 26|德国 050
+  name: 26|德国 048
   network: http
   port: 443
   server: 65.21.240.108
@@ -702,7 +686,7 @@ proxies:
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 26|德国 051
+  name: 26|德国 049
   network: http
   port: 443
   server: 5.75.247.192
@@ -711,7 +695,7 @@ proxies:
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 26|德国 052
+  name: 26|德国 050
   network: http
   port: 443
   server: 88.198.104.211
@@ -720,7 +704,7 @@ proxies:
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 4
   cipher: auto
-  name: 26|德国 053
+  name: 26|德国 051
   network: ws
   port: 443
   server: 146.0.42.87
@@ -734,7 +718,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 26|德国 054
+  name: 26|德国 052
   network: ws
   port: 443
   server: www.vpslook.com
@@ -748,7 +732,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|德国 055
+  name: 26|德国 053
   network: ws
   port: 443
   server: 132.145.232.171
@@ -762,7 +746,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 26|德国 056
+  name: 26|德国 054
   network: ws
   port: 443
   server: 193.122.58.158
@@ -776,7 +760,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|德国 057
+  name: 26|德国 055
   network: ws
   port: 2095
   server: 185.135.9.247
@@ -789,7 +773,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|德国 058
+  name: 26|德国 056
   network: ws
   port: 2095
   server: 185.135.9.19
@@ -802,7 +786,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|德国 059
+  name: 26|德国 057
   network: ws
   port: 443
   server: 172.104.247.121
@@ -816,7 +800,7 @@ proxies:
     path: /linkws
 - alterId: 64
   cipher: auto
-  name: 26|德国 060
+  name: 26|德国 058
   network: ws
   port: 30005
   server: 89.163.231.19
@@ -830,7 +814,7 @@ proxies:
     path: /path/240811062813
 - alterId: 0
   cipher: auto
-  name: 26|德国 061
+  name: 26|德国 059
   network: ws
   port: 443
   server: 80.158.63.104
@@ -844,7 +828,7 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 26|德国 062
+  name: 26|德国 060
   network: ws
   port: 80
   server: 194.233.81.16
@@ -857,7 +841,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|德国 063
+  name: 26|德国 061
   network: ws
   port: 80
   server: 141.94.141.20
@@ -870,7 +854,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|德国 064
+  name: 26|德国 062
   network: tcp
   port: 2053
   server: 178.63.237.158
@@ -879,7 +863,7 @@ proxies:
   uuid: 2d4dd672-180f-415c-9035-e2fc461dd95a
 - alterId: 0
   cipher: auto
-  name: 26|德国 065
+  name: 26|德国 063
   network: tcp
   port: 51459
   server: 91.107.139.186
@@ -888,13 +872,22 @@ proxies:
   uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
 - alterId: 0
   cipher: auto
-  name: 26|德国 066
+  name: 26|德国 064
   network: tcp
-  port: 80
-  server: 128.140.109.232
+  port: 18003
+  server: 91.107.157.137
   skip-cert-verify: true
   type: vmess
-  uuid: 05a178f9-e6ba-4006-93d7-3d980cdc3a76
+  uuid: e41f1455-24f5-4d28-9588-a2cba790171c
+- alterId: 0
+  cipher: auto
+  name: 26|德国 065
+  network: tcp
+  port: 30000
+  server: 176.65.151.89
+  skip-cert-verify: true
+  type: vmess
+  uuid: 0c31de50-ac14-43bd-8907-57dfadf24201
 - client-fingerprint: chrome
   name: 35| t.me/PFSub |  NL 074 | ⬇️ 2MB...
   network: ws

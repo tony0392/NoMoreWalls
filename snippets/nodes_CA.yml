@@ -74,40 +74,40 @@ proxies:
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 14|🇦CA_13
+  name: 14|🇦CA_04
   password: CJmTCCx7Ltud
   port: 8388
-  server: 108.181.58.239
+  server: 108.181.126.122
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇨🇦CA
-  name: 14|🇦CA_14
-  password: G5p6ww4o67HB
-  port: 8388
-  server: 108.181.0.177
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇦CA
-  name: 14|🇨🇦CA_15
-  password: G5p6ww4o67HB
-  port: 8388
-  server: 108.181.118.10
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇨🇦CA
-  name: 14|🇨🇦CA_16
+  name: 14|🇦CA_05
   password: ytw2awn
   port: 443
   server: 142.4.216.225
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇨🇦CA
-  name: 14|🇨🇦CA_17
+  name: 14|🇨🇦CA_06
+  password: G5p6ww4o67HB
+  port: 8388
+  server: 108.181.118.10
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇨🇦CA
+  name: 14|🇨🇦CA_07
   password: CJmTCCx7Ltud
   port: 8388
-  server: 108.181.126.122
+  server: 108.181.58.239
   type: ss
-- name: '19,30|🇺🇸 US美国(mibei77.com 米贝节点分享) #47'
+- cipher: chacha20-ietf-poly1305
+  country: 🇨🇦CA
+  name: 14|🇨🇦CA_08
+  password: G5p6ww4o67HB
+  port: 8388
+  server: 108.181.0.177
+  type: ss
+- name: '19,30|🇯🇵 JP日本(mibei77.com 米贝节点分享) #1'
   password: humanity
   port: 443
   server: 104.18.152.225
@@ -120,7 +120,7 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- name: 19,30|🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
+- name: '19,30|🇫🇷 FR法国(mibei77.com 米贝节点分享) #30'
   password: humanity
   port: 443
   server: 104.18.152.219
@@ -134,95 +134,137 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 26|加拿大 001
-  network: tcp
-  port: 35034
-  server: 165.154.195.38
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   skip-cert-verify: true
   type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
   name: 26|加拿大 002
-  network: tcp
+  network: ws
   port: 443
-  server: 142.132.189.247
+  server: hohm.microsoft.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
+  ws-opts:
+    headers:
+      Host: hohm.microsoft.com
+    path: /9JZFDTKE
+- alterId: 0
+  cipher: auto
+  name: 26|加拿大 003
+  network: ws
+  port: 80
+  server: 165.154.246.71
   skip-cert-verify: true
   type: vmess
-  uuid: b1211a37-ac2b-4cd0-9f3d-732028caa184
-- name: '30|🇨🇦CA加拿大丨yoyapai.com\r #1'
+  uuid: 13581ae8-65c9-4fbe-9c78-77fac9ca503a
+  ws-opts:
+    headers:
+      Host: 165.154.246.71
+    path: ?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 26|加拿大 004
+  network: ws
+  port: 443
+  server: tw-1.qwqjsq.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: b0543a3b-d690-3ed9-9a81-f24f852e74f7
+  ws-opts:
+    headers:
+      Host: tw-1.qwqjsq.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 26|加拿大 005
+  network: ws
+  port: 80
+  server: 165.154.246.107
+  skip-cert-verify: true
+  type: vmess
+  uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- name: '30|🇫🇷 FR法国(mibei77.com 米贝节点分享) #18'
   password: humanity
   port: 443
-  server: 104.18.152.140
-  skip-cert-verify: true
+  server: 104.18.152.229
+  skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #37'
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #61'
+  password: humanity
+  port: 443
+  server: 104.18.152.187
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+- name: '30|🇫🇷 FR法国(mibei77.com 米贝节点分享) #29'
   password: humanity
   port: 443
   server: 104.16.73.213
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
-- name: '30|🇨🇦CA加拿大丨yoyapai.com\r #3'
+- name: '30|🇨🇦CA加拿大丨yoyapai.com\r #4'
   password: humanity
   port: 443
   server: 104.18.152.208
   skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
-- name: '30|🇭🇰 HK香港(mibei77.com 米贝节点分享) #6'
-  password: humanity
-  port: 443
-  server: 104.18.152.77
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-- name: '30|🇯🇵 JP日本(mibei77.com 米贝节点分享) #3'
+- name: '30|🇯🇵 JP日本(mibei77.com 米贝节点分享) #2'
   password: humanity
   port: 443
   server: 104.16.174.44
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #39'
+- name: '30|🇫🇷 FR法国(mibei77.com 米贝节点分享) #24'
+  password: humanity
+  port: 443
+  server: 104.16.174.117
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+- name: '30|🇨🇦CA加拿大丨yoyapai.com\r #9'
+  password: humanity
+  port: 443
+  server: 104.18.152.140
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #59'
   password: humanity
   port: 443
   server: 104.18.152.204
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
-- name: '30|🇫🇷 FR法国(mibei77.com 米贝节点分享) #6'
-  password: humanity
-  port: 443
-  server: 104.17.111.8
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #54'
-  password: humanity
-  port: 443
-  server: 172.67.221.242
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-- name: '30|🇨🇦 CA加拿大(mibei77.com 米贝节点分享) #7'
-  password: humanity
-  port: 443
-  server: 104.16.174.12
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #22'
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #31'
   password: humanity
   port: 443
   server: 104.16.174.34
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
-- name: '30|🇫🇷 FR法国(mibei77.com 米贝节点分享) #15'
+- name: '30|🇺🇸 US美国(mibei77.com 米贝节点分享) #47'
   password: humanity
   port: 443
-  server: 104.16.174.72
+  server: 104.16.174.71
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -234,7 +276,7 @@ proxies:
   sni: mpvideo.qpic.cn
   type: trojan
 - cipher: aes-256-cfb
-  name: '35|🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001... #66'
+  name: '35|🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001... #65'
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.25

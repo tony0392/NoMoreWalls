@@ -3609,9 +3609,27 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 27|🇨🇳_CN_中国->🇫🇷_FR_法国
-  port: 30835
-  server: v35.hdacd.com
+  name: '27,28|🇨🇳_CN_中国->🇺🇸_US_美国_1 #1'
+  port: 30804
+  server: v4.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: aes-256-cfb
+  name: 27|🇨🇳_CN_中国->🇺🇸_US_美国_3
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.232
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 28|_CN_->_US_国
+  port: 30829
+  server: v29.hdacd.com
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -3629,17 +3647,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 28|🇨🇳_CN_中国->🇺🇸_US_美国_1
-  port: 30804
-  server: v4.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: 28|🇨🇳_CN_中国->🇺🇸_US_美国_2
+  name: '28|🇨🇳_CN_中国->🇺🇸_US_美国_2 #1'
   port: 30808
   server: v8.hdacd.com
   skip-cert-verify: true
@@ -3658,22 +3666,29 @@ proxies:
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
-  cipher: none
-  name: 28|🇨🇳_CN_中国->🇪_DE_德国
-  port: 30833
-  server: v33.hdacd.com
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 30,35|v29.hdacd.com
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: '30|🇨🇳_CN_中国->🇫🇷_FR_法国 #1'
+  h2-opts: {}
+  http-opts: {}
+  name: 30,35|v4.hdacd.com
   network: tcp
-  port: 30835
-  server: v35.hdacd.com
+  port: 30804
+  server: v4.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484

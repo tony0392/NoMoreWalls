@@ -689,23 +689,25 @@ proxies:
     headers:
       Host: d16henb377mok4.cloudfront.net
     path: /stream
-- name: 22|D🔴🇸🇬[🎬🤖📺🎭]_dokng.com_328dc0a7
-  password: 3407a014-429c-497c-a859-3e597d1a8520
-  port: 3000
-  server: sg8.443ds443.com
-  sni: sg3.443ds443.com
-  type: anytls
-  udp: true
-- name: 22|C🟠🇸🇬[📺🎭🎪]_dokng.com_d2853196
-  port: 9090
-  server: 167.99.74.174
+- name: 22|A🟢🇸🇬[🎬🤖📺🎭]_dokng.com_e2867af1
+  password: ''
+  port: 9443
+  server: 149.88.99.209
+  skip-cert-verify: true
+  tls: true
   type: http
+  udp: true
+  username: ''
 - name: 22|D🔴🇸🇬_dokng.com_ec84b940
   password: None
   port: 9090
   server: 104.248.151.93
   type: http
   username: null
+- name: 22|D🔴🇸🇬[🎬🤖📺🎭]_dokng.com_47ce18fe
+  port: 9090
+  server: 128.199.254.13
+  type: http
 - name: 22|D🔴🇸🇬[🎬🤖📺🎭]_dokng.com_26d0e430
   password: e4b72b531a2d10900519
   port: 443
@@ -714,17 +716,28 @@ proxies:
   tls: true
   type: http
   username: testuser1
-- name: '26,30,33,34|🇸🇬 新加坡3|@ripaojiedian #1'
-  network: tcp
-  password: BxceQaOe
-  port: 41421
-  server: 54.255.201.71
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 26|新加坡 002
+  name: 22|C🟠🇸🇬[🎬🤖📺🎭]_dokng.com_aa0f76d4
+  network: ws
+  port: 80
+  server: cf-auto.skynode.cfd
+  servername: sg1-t2xkncwc.skynode.me
+  type: vmess
+  udp: true
+  uuid: 588ced63-e299-381b-88f7-c18a4b9b8a3d
+  ws-headers:
+    Host: sg1-t2xkncwc.skynode.me
+  ws-opts:
+    headers:
+      Host: sg1-t2xkncwc.skynode.me
+    path: /sg01hu
+    v2ray-http-upgrade: true
+    v2ray-http-upgrade-fast-open: false
+  ws-path: /sg01hu
+- alterId: 0
+  cipher: auto
+  name: 26|新加坡 001
   network: ws
   port: 443
   server: v2ray1.udpgw.com
@@ -736,29 +749,36 @@ proxies:
     headers:
       Host: v2ray1.udpgw.com
     path: /
+- name: '26,30,33,34|🇸🇬 新加坡3|@ripaojiedian #1'
+  network: tcp
+  password: BxceQaOe
+  port: 41421
+  server: 54.255.201.71
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 26|新加坡 003
-  network: ws
-  port: 18063
-  server: 139.180.211.152
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 0d4f647b-0d96-4820-9de8-0186156185dd
-  ws-opts:
-    headers:
-      Host: m.zoom.us
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 26|新加坡 004
   network: tcp
   port: 47630
   server: 43.228.126.187
   skip-cert-verify: true
   type: vmess
   uuid: 9e5c6ebf-35f9-49a3-9f12-cba2b7cdbccb
+- alterId: 0
+  cipher: auto
+  name: 26|新加坡 005
+  network: ws
+  port: 18063
+  server: 139.180.211.152
+  skip-cert-verify: true
+  type: vmess
+  uuid: 0d4f647b-0d96-4820-9de8-0186156185dd
+  ws-opts:
+    headers:
+      Host: m.zoom.us
+    path: /
 - alterId: 0
   cipher: auto
   name: 26|新加坡 006
@@ -798,9 +818,61 @@ proxies:
     headers:
       Host: 139.99.61.154
     path: /vmess
-- alterId: 4
+- alterId: 0
   cipher: auto
   name: 26|新加坡 009
+  network: ws
+  port: 5001
+  server: steam.dnspro.icu
+  skip-cert-verify: true
+  type: vmess
+  uuid: d4c93465-70f0-30d5-ab5f-a8881f3f49e7
+  ws-opts:
+    headers:
+      Host: steam.dnspro.icu
+    path: /iso
+- alterId: 0
+  cipher: auto
+  name: 26|新加坡 010
+  network: ws
+  port: 9111
+  server: st-1.dnspro.icu
+  skip-cert-verify: true
+  type: vmess
+  uuid: 13ef5f2c-d002-36a2-9e96-a13d5e3ae03b
+  ws-opts:
+    headers:
+      Host: st-1.dnspro.icu
+    path: /iso
+- alterId: 0
+  cipher: auto
+  name: 26|新加坡 011
+  network: ws
+  port: 5100
+  server: st-2.dnspro.icu
+  skip-cert-verify: true
+  type: vmess
+  uuid: 13ef5f2c-d002-36a2-9e96-a13d5e3ae03b
+  ws-opts:
+    headers:
+      Host: st-2.dnspro.icu
+    path: /iso
+- alterId: 0
+  cipher: auto
+  name: 26|新加坡 012
+  network: ws
+  port: 20025
+  server: sh-cn-1.dnspro.icu
+  skip-cert-verify: true
+  type: vmess
+  uuid: 13ef5f2c-d002-36a2-9e96-a13d5e3ae03b
+  ws-opts:
+    headers:
+      Host: sh-cn-1.dnspro.icu
+    path: /iso
+- alterId: 4
+  cipher: auto
+  name: 26|新加坡 013
   network: ws
   port: 443
   server: 103.253.26.134
@@ -814,7 +886,7 @@ proxies:
     path: /ws
 - alterId: 4
   cipher: auto
-  name: 26|新加坡 010
+  name: 26|新加坡 014
   network: ws
   port: 443
   server: 103.253.26.20
@@ -835,13 +907,16 @@ proxies:
   tls: false
   type: trojan
   udp: true
-- name: 30|🇸🇬_SG_新加坡
-  password: fef70590-17a9-4ddc-a38c-2b7467c083b5
-  port: 55766
-  server: yxsgvl.rvvs.im
-  skip-cert-verify: true
-  sni: yxsgvl.rvvs.im
-  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 30|🇸🇬_SG_新加坡
+  network: tcp
+  port: 30845
+  server: v45.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 31|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

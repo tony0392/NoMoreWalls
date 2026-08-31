@@ -761,7 +761,7 @@ proxies:
   ws-opts:
     path: /assignment
 - cipher: aes-256-gcm
-  name: '20,34|🇨🇳 台湾|@ripaojiedian #1'
+  name: 20,34|🇨🇳 台湾|@ripaojiedian
   password: Butterfly123@qwe9527
   port: 30001
   server: 36.33.35.105
@@ -781,11 +781,11 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- name: '20,30|🇺🇸 美国 CloudFlare节点 #1'
+- name: 20|US美国(mibei77.com 米贝节点分享)_131
   password: humanity
   port: 443
   server: 104.16.174.101
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.ignitelimit.com
   tls: true
   type: trojan
@@ -818,76 +818,108 @@ proxies:
   udp: true
   ws-opts:
     path: /assignment
-- name: 22|D🔴🇭🇰[📺🎭]_dokng.com_054bd55d
-  port: 10808
-  server: 123.58.219.171
-  type: socks5
-- name: 22|C🟠🇭🇰[🎬📺🎭🎪]_dokng.com_6738ba5f
-  password: None
-  port: 443
-  server: hk40.240104.xyz
-  skip-cert-verify: false
-  tls: true
-  type: http
-  username: null
-- name: 22|C🟠🇭🇰[🎬📺🎭🎪]_dokng.com_db363b3a
-  password: admin
-  port: 8899
-  server: 47.242.19.215
-  skip-cert-verify: true
-  type: socks5
-  username: admin
-- name: 22|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_d21277d2
-  password: 'null'
-  port: 443
-  server: fan.240104.xyz
-  sni: fan.240104.xyz
-  tls: true
-  type: http
-  username: 'null'
-- name: 22|C🟠🇭🇰[🎬🧠📺🎭]_dokng.com_4c6d8eb9
-  password: '!!str 123'
-  port: 3060
-  server: 43.100.43.112
-  type: socks5
-  username: '123'
-- name: 22|C🟠🇭🇰[📺🎭🎪📦]_dokng.com_099454ad
-  password: '!!str 111'
-  port: 11211
-  server: 47.243.173.50
-  skip-cert-verify: true
-  type: socks5
-  username: '111'
 - name: 22|C🟠🇭🇰[🎬📺🎭🎪]_dokng.com_da7c41d8
   password: admin
   port: 1080
   server: 47.239.116.165
   type: socks5
   username: admin
-- alterId: 2
+- name: 22|C🟠🇭🇰[📺🎭🎪🎞️]_dokng.com_d8a84f16
+  password: abc123
+  port: 1080
+  server: 47.239.98.42
+  type: socks5
+  username: abc123
+- name: 22|C🟠🇭🇰[🎬🧠📺🎭]_dokng.com_8cb372cb
+  port: 443
+  server: hk40.240104.xyz
+  sni: hk40.240104.xyz
+  tls: true
+  type: http
+- alterId: '0'
   cipher: auto
-  name: 30,33|香港|@ripaojiedian
-  network: tcp
-  port: '30807'
-  server: v10.hdacd.com
-  servername: ''
-  tls: false
+  name: 22|C🟠🇭🇰[📺]_dokng.com_8b9a2906
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '30,33,34|🇭🇰 香港4|@ripaojiedian #1'
-  password: BxceQaOe
-  port: 53001
-  server: 95.40.24.249
+  uuid: 2498a366-dd3c-4f0b-832c-f2df12f7ee27
+  ws-opts:
+    headers:
+      Host: 791f9b5b1318471268a2dc21098376cc.mobgslb.tbcache.com
+    path: /
+- name: 22|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_de4eaa15
+  port: 443
+  server: fan.240104.xyz
   skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 30,33|香港5|@ripaojiedian
-  password: BxceQaOe
-  port: 25982
-  server: 52.195.148.119
+  sni: fan.240104.xyz
+  tls: true
+  type: http
+- name: 22|A🟢🇭🇰[🎬🧠📺🎭]_dokng.com_a1b6c46a
+  password: 302cf77d-6fb7-4ac8-ae61-88e286340d59
+  port: 52224
+  server: hk04.qianmoip.win
   skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
+  sni: taobao.com
   type: trojan
+- name: 22|C🟠🇭🇰[📺🎭📦]_dokng.com_db363b3a
+  password: admin
+  port: 8899
+  server: 47.242.19.215
+  skip-cert-verify: true
+  type: socks5
+  username: admin
+- name: 22|D🔴🇭🇰[🎬🧠📺🎭]_dokng.com_6598b91f
+  password: 302cf77d-6fb7-4ac8-ae61-88e286340d59
+  port: 50222
+  server: hk03.qianmoip.win
+  skip-cert-verify: true
+  sni: taobao.com
+  type: trojan
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 22|A🟢🇭🇰[🎬🧠📺🎭]_dokng.com_224b2a1d
+  network: ws
+  password: 04e30e9f-661a-4a40-9973-4f2961298e99
+  port: 28443
+  server: 152.175.28.15
+  skip-cert-verify: true
+  sni: vpn-node.internal
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vpn-node.internal
+    path: /xVpnTrojanWsSvc7f3a
+- name: 22|C🟠🇭🇰[📺️🔍]_dokng.com_099454ad
+  password: '!!str 111'
+  port: 11211
+  server: 47.243.173.50
+  skip-cert-verify: true
+  type: socks5
+  username: '111'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 22|A🟢🇭🇰[🎬📺🎭🎪]_dokng.com_c970db79
+  network: ws
+  password: 0f3963f9-0530-434d-be2c-87e9b61143c8
+  port: 28443
+  server: 58.152.46.127
+  skip-cert-verify: true
+  sni: vpn-node.internal
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vpn-node.internal
+    path: /xVpnTrojanWsSvc7f3a
+- name: 22|C🟠🇭🇰[📺🔍]_dokng.com_0c40d242
+  password: 3QZglKmlgzc9zBCDD5W8tQ==
+  port: 443
+  server: 45.144.136.244
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: anytls
 - name: 31|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158
@@ -900,31 +932,43 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: '33|B - 🇭🇰 HK 04 TG: @nodpai'
+  name: 33|香港|@ripaojiedian
   network: tcp
-  port: 6001
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
+  port: '30807'
+  server: v10.hdacd.com
+  servername: ''
   tls: false
   type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-- alterId: 0
-  cipher: auto
-  name: '33|C - 🇭🇰 HK 07 TG: @nodpai'
-  network: tcp
-  port: 51556
-  server: 103.181.164.145
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '33,34|🇭🇰 香港5|@ripaojiedian #2'
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 33,34|🇭🇰 香港4|@ripaojiedian
   password: BxceQaOe
-  port: 1103
-  server: 54.168.189
+  port: 7674
+  server: 18.142.250.141
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- name: 33,34|🇭🇰 香港5|@ripaojiedian
+  password: BxceQaOe
+  port: 2944
+  server: 35.78.206.14
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 33|🇭🇰HK_1|3.1MB/s
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
+  tls: false
+  type: vmess
+  uuid: d7e9f3c3-57c6-457e-b10f-df27907ef081
+  ws-opts:
+    headers:
+      Host: 18a598fcab3909734096beb9fe7bc5b4.mobgslb.tbcache.com
+    path: /
 - alterId: 2
   cipher: auto
   name: 34,35|v10.hdacd.com
@@ -935,13 +979,13 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-gcm
-  name: '34|🇭🇰 香港2|@ripaojiedian #1'
+  name: 34|🇭🇰 香港2|@ripaojiedian
   password: Butterfly123@qwe9527
   port: 10001
   server: 103.236.66.4
   type: ss
 - cipher: aes-256-gcm
-  name: '34|🇭🇰 香港3|@ripaojiedian #1'
+  name: 34|🇭🇰 香港3|@ripaojiedian
   password: Butterfly123@qwe9527
   port: 10006
   server: 112.28.141.77

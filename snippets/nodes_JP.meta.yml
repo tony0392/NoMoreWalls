@@ -1018,59 +1018,84 @@ proxies:
     headers:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
-- cipher: chacha20-ietf-poly1305
-  name: 22|C🟠🇯🇵[🎬🤖📺🎭]_dokng.com_262a7b88
-  password: ljqdalu13..
-  port: 8313
-  server: 52.193.171.28
+- cipher: chacha20-ietf
+  name: 22|A🟢🇯🇵[🎬🤖📺🎭]_dokng.com_e8a97670
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 37949-LD4JNZAf.download.microsoft.com
+    mode: http
+  port: 8406
+  server: cn12.somethingstranges.com
   type: ss
-  udp: true
-- name: 22|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_9efa9595
+- name: 22|D🔴🇯🇵[🤖📺🎭🎪]_dokng.com_8b89618a
   password: None
-  port: 443
-  server: fan.571589.xyz
-  skip-cert-verify: false
-  tls: true
-  type: http
-  username: null
-- name: 22|D🔴🇯🇵[🤖🎭🎪✨]_dokng.com_5802486e
   port: 10808
   server: 101.36.104.239
   type: socks5
-- name: 22|D🔴🇯🇵_dokng.com_a341bd30
-  port: 8443
-  server: 112.28.149.152
-  type: socks5
-  username: T2c6T2c=
-- name: 22|C🟠🇯🇵[🤖📺📦🔍]_dokng.com_16f5ab4e
+  udp: true
+  username: null
+- name: 22|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_404a572e
+  password: 'null'
+  port: 443
+  server: fan.571589.xyz
+  sni: fan.571589.xyz
+  tls: true
+  type: http
+  username: 'null'
+- name: 22|C🟠🇯🇵[🔍]_dokng.com_16f5ab4e
   password: '!!str 123456'
   port: 1080
   server: 8.209.236.192
   type: socks5
   username: '123456'
-- alterId: 2
-  cipher: auto
-  name: 22,30|🇨🇳_CN_中国->🇯🇵_JP_日本
-  network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  xudp: true
-- name: 22|D🔴🇯🇵[🤖🎭🎪🎞️]_dokng.com_c618c95c
-  password: None
+- name: 22|D🔴🇯🇵_dokng.com_a341bd30
+  port: 8443
+  server: 112.28.149.152
+  type: socks5
+  username: T2c6T2c=
+- name: 22|D🔴🇯🇵[🎬🤖📺🎭]_dokng.com_1b81f86d
   port: 10808
   server: 101.36.104.46
   type: socks5
-  udp: true
-  username: null
+- name: 26|日本 004
+  network: tcp
+  password: BxceQaOe
+  port: 25982
+  server: 52.195.148.119
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alterId: 64
+  cipher: auto
+  name: 26|日本 005
+  network: ws
+  port: 80
+  server: 61.245.11.60
+  skip-cert-verify: true
+  type: vmess
+  uuid: a3e3a710-79f8-4ae0-b83c-607aab40d197
+  ws-opts:
+    headers:
+      Host: 61.245.11.60
+    path: /vmess/
 - alterId: 0
   cipher: auto
-  name: 26|日本 001
+  name: 26|日本 013
+  network: ws
+  port: 443
+  server: fullaccesstojapannetsubnode1.azurewebsites.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
+  ws-opts:
+    headers:
+      Host: fullaccesstojapannetsubnode1.azurewebsites.net
+    path: /ws
+- alterId: 0
+  cipher: auto
+  name: 26|日本 014
   network: ws
   port: 80
   server: 103.35.188.226
@@ -1083,25 +1108,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 26|日本 002
-  network: tcp
-  port: 49499
-  server: 139.162.125.97
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3ce1d2e3-0e1b-4b00-921b-fcc0f8abe1f6
-- alterId: 0
-  cipher: auto
-  name: 26|日本 003
-  network: tcp
-  port: 14935
-  server: 167.179.111.237
-  skip-cert-verify: true
-  type: vmess
-  uuid: e961894f-8e90-472f-98d3-09402e4be453
-- alterId: 0
-  cipher: auto
-  name: 26|日本 004
+  name: 26|日本 015
   network: ws
   port: 8080
   server: www.darkroom.lol
@@ -1112,37 +1119,118 @@ proxies:
     headers:
       Host: www.darkroom.lol
     path: /
-- name: 30,33|日本|@ripaojiedian
-  password: BxceQaOe
-  port: 9408
-  server: 18.163.115.126
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '33|A - 🇯🇵 JP 04 TG: @nodpai'
-  network: tcp
-  port: 6003
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  tls: false
+  name: 26|日本 016
+  network: ws
+  port: 443
+  server: 146.56.162.25
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-- name: '33,34|🇯🇵 日本|@ripaojiedian #2'
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  ws-opts:
+    headers:
+      Host: lg30.cfcdn3.xyz
+    path: /ray
+- alterId: 0
+  cipher: auto
+  name: 26|日本 017
+  network: ws
+  port: 3331
+  server: f1f3227.u1.glados-config.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  ws-opts:
+    headers:
+      Host: f1f3227.u1.glados-config.net
+    path: /s/f1f3227.fm.apple.com:111548
+- alterId: 0
+  cipher: auto
+  name: 26|日本 018
+  network: ws
+  port: 443
+  server: kr-arm2.018999.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e98fc1a0-9c52-4091-91a5-c159b0aa274e
+  ws-opts:
+    headers:
+      Host: kr-arm2.018999.xyz
+    path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
+- alterId: 0
+  cipher: auto
+  name: 26|日本 019
+  network: ws
+  port: 443
+  server: 172.105.223.136
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8964ea79-1422-460e-b6e2-a16e83a22aab
+  ws-opts:
+    headers:
+      Host: www.microsoft.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 26|日本 020
+  network: ws
+  port: 3331
+  server: f1f3227.v1.glados-config.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  ws-opts:
+    headers:
+      Host: f1f3227.v1.glados-config.net
+    path: /s/f1f3227.fm.apple.com:111548
+- alterId: 0
+  cipher: auto
+  name: 26|日本 021
+  network: ws
+  port: 443
+  server: 124.156.225.184
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7a010436-7b4a-4e65-ade4-844ba074ad58
+  ws-opts:
+    headers:
+      Host: azjp.pengui.xyz
+    path: /
+- alterId: 4
+  cipher: auto
+  name: 26|日本 022
+  network: ws
+  port: 443
+  server: 202.61.141.130
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: 202.61.141.130
+    path: /
+- name: 33,34|🇯🇵 日本|@ripaojiedian
   password: BxceQaOe
   port: 9408
-  server: 18.163.11126
+  server: 18.167.96.176
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - cipher: aes-256-gcm
-  name: '34|🇯🇵 日本2|@ripaojiedian #1'
+  name: 34|🇯🇵 日本2|@ripaojiedian
   password: Butterfly123@qwe9527
   port: 40001
   server: 103.236.66.4
   type: ss
 - cipher: aes-256-gcm
-  name: '34|🇯🇵 日本3|@ripaojiedian #1'
+  name: 34|🇯🇵 日本3|@ripaojiedian
   password: Butterfly123@qwe9527
   port: 40002
   server: 103.236.66.4

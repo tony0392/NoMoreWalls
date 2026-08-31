@@ -8,9 +8,23 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
-- alterId: 64
+- alterId: 0
   cipher: auto
   name: 26|瑞典 001
+  network: ws
+  port: 80
+  server: us1.grpc.stream
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678
+  ws-opts:
+    headers:
+      Host: us1.grpc.stream
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 26|瑞典 005
   network: ws
   port: 443
   server: 148.135.38.107
@@ -24,7 +38,7 @@ proxies:
     path: /path/1704363182493
 - alterId: 64
   cipher: auto
-  name: 26|瑞典 002
+  name: 26|瑞典 006
   network: ws
   port: 443
   server: 148.135.9.156
@@ -38,7 +52,7 @@ proxies:
     path: /path/1704363182493
 - alterId: 64
   cipher: auto
-  name: 26|瑞典 003
+  name: 26|瑞典 007
   network: ws
   port: 443
   server: 148.135.14.99
@@ -52,7 +66,7 @@ proxies:
     path: /path/1704188270531
 - alterId: 64
   cipher: auto
-  name: 26|瑞典 004
+  name: 26|瑞典 008
   network: ws
   port: 443
   server: 148.135.31.171
@@ -66,7 +80,7 @@ proxies:
     path: /path/1703924658447
 - alterId: 64
   cipher: auto
-  name: 26|瑞典 005
+  name: 26|瑞典 009
   network: ws
   port: 443
   server: 148.135.33.140

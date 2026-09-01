@@ -157,11 +157,11 @@ proxies:
   type: http
   username: null
 - alterId: 2
-  cipher: none
-  name: 22,28|🇨🇳_CN_中国->🇪_DE_德国
+  cipher: auto
+  name: 22|C🟠🇩🇪_dokng.com_56c5bbea
   port: 30833
   server: v33.hdacd.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
@@ -183,7 +183,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|德国 005
+  name: 26|德国 002
   network: tcp
   port: 2053
   server: 178.63.237.158
@@ -192,7 +192,7 @@ proxies:
   uuid: 2d4dd672-180f-415c-9035-e2fc461dd95a
 - alterId: 64
   cipher: auto
-  name: 26|德国 006
+  name: 26|德国 003
   network: tcp
   port: 31484
   server: 168.119.107.162
@@ -200,17 +200,8 @@ proxies:
   type: vmess
   uuid: 943961b8-4e27-4bdf-a048-c2f724f542fb
 - alterId: 0
-  cipher: auto
-  name: 26|德国 007
-  network: tcp
-  port: 443
-  server: 116.203.54.241
-  skip-cert-verify: true
-  type: vmess
-  uuid: 15247720-17e1-4ea3-9150-b9350099d9fa
-- alterId: 0
   cipher: aes-128-gcm
-  name: 26|德国 008
+  name: 26|德国 004
   network: tcp
   port: 443
   server: 46.183.187.73
@@ -219,7 +210,16 @@ proxies:
   uuid: 92a048ec-a160-497e-8069-c2e902626d7a
 - alterId: 0
   cipher: auto
-  name: 26|德国 009
+  name: 26|德国 005
+  network: tcp
+  port: 443
+  server: 116.203.54.241
+  skip-cert-verify: true
+  type: vmess
+  uuid: 15247720-17e1-4ea3-9150-b9350099d9fa
+- alterId: 0
+  cipher: auto
+  name: 26|德国 006
   network: tcp
   port: 80
   server: 128.140.109.232
@@ -228,7 +228,21 @@ proxies:
   uuid: 05a178f9-e6ba-4006-93d7-3d980cdc3a76
 - alterId: 0
   cipher: auto
-  name: 26|德国 010
+  name: 26|德国 056
+  network: ws
+  port: 443
+  server: sgp.kapok.buzz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c1bac6b8-934a-44e2-9cf2-ee0db1fc1c85
+  ws-opts:
+    headers:
+      Host: sgp.kapok.buzz
+    path: /4befdd8a6/
+- alterId: 0
+  cipher: auto
+  name: 26|德国 057
   network: ws
   port: 28267
   server: 176.65.140.210
@@ -241,7 +255,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|德国 011
+  name: 26|德国 058
   network: ws
   port: 23981
   server: 176.65.140.210
@@ -256,34 +270,6 @@ proxies:
   cipher: auto
   name: 26|德国 059
   network: ws
-  port: 443
-  server: sgp.kapok.buzz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c1bac6b8-934a-44e2-9cf2-ee0db1fc1c85
-  ws-opts:
-    headers:
-      Host: sgp.kapok.buzz
-    path: /4befdd8a6/
-- alterId: 0
-  cipher: auto
-  name: 26|德国 060
-  network: ws
-  port: 443
-  server: in-full.privateip.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 07722fc6-a688-49fd-9896-fb9e1ca748d6
-  ws-opts:
-    headers:
-      Host: in-full.privateip.net
-    path: /racevpn
-- alterId: 0
-  cipher: auto
-  name: 26|德国 061
-  network: ws
   port: 8080
   server: 138.68.90.231
   skip-cert-verify: true
@@ -295,7 +281,7 @@ proxies:
     path: /cctv13/hd.m3u8
 - alterId: 0
   cipher: auto
-  name: 26|德国 062
+  name: 26|德国 060
   network: http
   port: 40969
   server: 5.161.106.72
@@ -304,7 +290,7 @@ proxies:
   uuid: 2fb9f60e-d4dc-458b-e3b2-d9b44f9bbd9e
 - alterId: 0
   cipher: auto
-  name: 26|德国 063
+  name: 26|德国 061
   network: http
   port: 50978
   server: 5.161.106.72
@@ -313,7 +299,7 @@ proxies:
   uuid: 89e6248b-0152-4317-a6ed-b6a0cf41f2cb
 - alterId: 0
   cipher: auto
-  name: 26|德国 064
+  name: 26|德国 062
   network: http
   port: 443
   server: 157.90.20.18
@@ -322,7 +308,7 @@ proxies:
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 26|德国 065
+  name: 26|德国 063
   network: http
   port: 443
   server: 5.75.168.155
@@ -331,7 +317,7 @@ proxies:
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 26|德国 066
+  name: 26|德国 064
   network: http
   port: 443
   server: 94.130.25.155
@@ -340,7 +326,7 @@ proxies:
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 26|德国 067
+  name: 26|德国 065
   network: http
   port: 443
   server: 167.235.136.155
@@ -349,7 +335,7 @@ proxies:
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 26|德国 068
+  name: 26|德国 066
   network: http
   port: 443
   server: 65.21.240.108
@@ -358,7 +344,7 @@ proxies:
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 26|德国 069
+  name: 26|德国 067
   network: http
   port: 443
   server: 5.75.247.192
@@ -367,7 +353,7 @@ proxies:
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 26|德国 070
+  name: 26|德国 068
   network: http
   port: 443
   server: 88.198.104.211

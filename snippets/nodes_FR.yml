@@ -299,7 +299,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|法国 005
+  name: 26|法国 002
   network: ws
   port: 8880
   server: 94.140.0.110
@@ -312,7 +312,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|法国 006
+  name: 26|法国 003
   network: tcp
   port: 26126
   server: 188.165.61.68
@@ -325,6 +325,30 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
+- name: 33|🇫🇷FR_2|1.1MB/s
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.113
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: /assignment
+- alpn:
+  - http/1.1
+  - h2
+  - h3
+  name: 33|🇫🇷FR_3|3.2MB/s
+  network: ws
+  password: humanity
+  port: 443
+  server: 198.41.223.96
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: /assignment
 - alterId: '0'
   cipher: auto
   http-opts:

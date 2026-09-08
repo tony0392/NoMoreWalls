@@ -691,13 +691,21 @@ proxies:
     path: /stream
 - cipher: chacha20-ietf-poly1305
   country: 🇬SG
-  name: 14|🇬SG_166
+  name: 14|🇬SG_145
   password: PWpjPo3tqhPN4yRZ
   port: 20001
   server: 8.209.74.72
   type: ss
 - country: 🇬SG
-  name: 14|🇬SG_167
+  name: 14|🇬SG_146
+  password: NQ26071394
+  port: 443
+  server: emerging-baboon.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇬SG
+  name: 14|🇬SG_147
   password: NQ26071394
   port: 443
   server: promoted-rattler.rooster465.autos
@@ -705,7 +713,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇬SG
-  name: 14|🇬SG_168
+  name: 14|🇸🇬SG_148
   password: PD07395842
   port: 443
   server: national-dingo.rooster465.autos
@@ -713,18 +721,10 @@ proxies:
   type: trojan
   udp: true
 - country: 🇬SG
-  name: 14|🇬SG_169
+  name: 14|🇬SG_149
   password: NQ26071394
   port: 443
   server: square-gnat.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬SG
-  name: 14|🇸🇬SG_170
-  password: NQ26071394
-  port: 443
-  server: emerging-baboon.rooster465.autos
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -738,17 +738,9 @@ proxies:
   protocol-param: 36143:GWgpVE
   server: api.meituan88.com
   type: ssr
-- name: 26|新加坡 001
-  network: tcp
-  password: BxceQaOe
-  port: 7674
-  server: 18.142.250.141
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 26|新加坡 002
+  name: 26|新加坡 001
   network: ws
   port: 443
   server: 128.199.188.214
@@ -760,6 +752,14 @@ proxies:
     headers:
       Host: 128.199.188.214
     path: /
+- name: 26,27,33,34|🇸🇬 新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 41142
+  server: 54.251.190.150
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 26|新加坡 003
@@ -812,22 +812,9 @@ proxies:
     headers:
       Host: 139.99.61.154
     path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 26|新加坡 007
-  network: ws
-  port: 5100
-  server: st-2.dnspro.icu
-  skip-cert-verify: true
-  type: vmess
-  uuid: 13ef5f2c-d002-36a2-9e96-a13d5e3ae03b
-  ws-opts:
-    headers:
-      Host: st-2.dnspro.icu
-    path: /iso
 - alterId: 4
   cipher: auto
-  name: 26|新加坡 008
+  name: 26|新加坡 007
   network: ws
   port: 443
   server: 103.253.26.134
@@ -841,7 +828,7 @@ proxies:
     path: /ws
 - alterId: 4
   cipher: auto
-  name: 26|新加坡 009
+  name: 26|新加坡 008
   network: ws
   port: 443
   server: 103.253.26.20
@@ -855,7 +842,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 26|新加坡 010
+  name: 26|新加坡 009
   network: tcp
   port: 8443
   server: 13.250.114.194
@@ -864,7 +851,7 @@ proxies:
   uuid: 9dcb8d73-cc0b-4fcc-a12d-d7affb56267c
 - alterId: 0
   cipher: auto
-  name: 26|新加坡 011
+  name: 26|新加坡 010
   network: tcp
   port: 47630
   server: 43.228.126.187
@@ -876,13 +863,6 @@ proxies:
   port: 443
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
-  type: trojan
-- name: 33,34|🇸🇬 新加坡3|@ripaojiedian
-  password: BxceQaOe
-  port: 41142
-  server: 54.251.190.150
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
   type: trojan
 - name: '35|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7

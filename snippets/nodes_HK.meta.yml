@@ -756,35 +756,9 @@ proxies:
   port: 8388
   server: 103.149.182.79
   type: ss
-- alterId: 0
+- alterId: 2
   cipher: auto
   country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 14|🇰HK_80
-  network: ws
-  port: 44867
-  server: 47.244.120.197
-  skip-cert-verify: true
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  ws-path: /arki
-- alterId: 2
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: 14,35|v29.hdacd.com
-  network: tcp
-  port: 30829
-  server: v29.hdacd.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
   name: 14,35|v4.hdacd.com
@@ -795,6 +769,19 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 14|🇰HK_81
+  network: ws
+  port: 44867
+  server: 47.244.120.197
+  skip-cert-verify: true
+  type: vmess
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  ws-path: /arki
 - alterId: 0
   cipher: auto
   name: 19|🇰HK香港丨yoyapai.com_8
@@ -820,43 +807,94 @@ proxies:
     headers:
       Host: U2FRxj0G13vDI0Wo.v.3dns.vip
     path: /ws-vmess
-- name: 22|C🟠🇭🇰[📺🔍]_dokng.com_db363b3a
+- cipher: chacha20-ietf
+  name: 22|D🔴🇭🇰[🎬🤖📺🎭]_dokng.com_c12aa327
+  obfs: plain
+  obfs-param: 33f313723.douyin.com
+  password: di15PV
+  port: 7002
+  protocol: auth_aes128_md5
+  protocol-param: 313723:dCwrni
+  server: api.meituan88.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 22|A🟢🇭🇰[🎬🧠📺🎭]_dokng.com_e155d5a8
+  obfs: plain
+  obfs-param: 33f313723.douyin.com
+  password: di15PV
+  port: 7003
+  protocol: auth_aes128_md5
+  protocol-param: 313723:dCwrni
+  server: api.meituan88.com
+  type: ssr
+- name: 22|C🟠🇭🇰[📺🎭🎪]_dokng.com_6738ba5f
+  password: None
+  port: 443
+  server: hk40.240104.xyz
+  skip-cert-verify: false
+  tls: true
+  type: http
+  username: null
+- name: 22|D🔴🇭🇰[📺🔍]_dokng.com_054bd55d
+  port: 10808
+  server: 123.58.219.171
+  type: socks5
+- name: 22|C🟠🇭🇰[🎬🧠📺🎭]_dokng.com_56007c2f
+  password: dCwrni
+  port: 7008
+  server: api.meituan88.com
+  skip-cert-verify: true
+  sni: globalnetworktraffic.com
+  type: anytls
+  udp: true
+- name: 22|C🟠🇭🇰[📺]_dokng.com_d8a84f16
+  password: abc123
+  port: 1080
+  server: 47.239.98.42
+  type: socks5
+  username: abc123
+- name: 22|C🟠🇭🇰[🎬📺🎭✨]_dokng.com_8cb372cb
+  port: 443
+  server: hk40.240104.xyz
+  sni: hk40.240104.xyz
+  tls: true
+  type: http
+- name: 22|C🟠🇭🇰[🎬🧠📺🎭]_dokng.com_da7c41d8
+  password: admin
+  port: 1080
+  server: 47.239.116.165
+  type: socks5
+  username: admin
+- cipher: aes-256-gcm
+  name: 22|C🟠🇭🇰[🎬🧠📺🎭]_dokng.com_7fb4e571
+  password: 72553320ae6bcc8f
+  port: 10661
+  server: 212.192.15.86
+  type: ss
+  udp: true
+- name: 22|D🔴🇭🇰[🎬🧠📺🎭]_dokng.com_d21277d2
+  password: 'null'
+  port: 443
+  server: fan.240104.xyz
+  sni: fan.240104.xyz
+  tls: true
+  type: http
+  username: 'null'
+- name: 22|A🟢🇭🇰[🎬📺🎭🎪]_dokng.com_078efcc4
+  network: tcp
+  password: d742752c-4231-4695-801e-f06d77f0f277
+  port: 52224
+  server: hk04.qianmoip.win
+  skip-cert-verify: true
+  sni: taobao.com
+  type: trojan
+- name: 22|C🟠🇭🇰[📺]_dokng.com_db363b3a
   password: admin
   port: 8899
   server: 47.242.19.215
   skip-cert-verify: true
   type: socks5
   username: admin
-- name: 22|D🔴🇭🇰[🎬📺🎭🎪]_dokng.com_054bd55d
-  port: 10808
-  server: 123.58.219.171
-  type: socks5
-- name: 22|C🟠🇭🇰[🎬📺🎭🎪]_dokng.com_8cb372cb
-  port: 443
-  server: hk40.240104.xyz
-  sni: hk40.240104.xyz
-  tls: true
-  type: http
-- name: 22|C🟠🇭🇰[📺🎭🎪📦]_dokng.com_da7c41d8
-  password: admin
-  port: 1080
-  server: 47.239.116.165
-  type: socks5
-  username: admin
-- name: 22|C🟠🇭🇰[📺🎪📦✈️]_dokng.com_d8a84f16
-  password: abc123
-  port: 1080
-  server: 47.239.98.42
-  type: socks5
-  username: abc123
-- name: 22|D🔴🇭🇰[🎬📺🎭✨]_dokng.com_d85a93d5
-  password: None
-  port: 443
-  server: fan.240104.xyz
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
 - alterId: 2
   cipher: auto
   name: 27,34,35|v10.hdacd.com
@@ -878,26 +916,22 @@ proxies:
   port: 10006
   server: 112.28.141.77
   type: ss
-- alterId: 2
-  cipher: auto
-  name: '27,33|香港|@ripaojiedian #1'
+- name: 27,33,34|🇭🇰 香港4|@ripaojiedian
   network: tcp
-  port: '30807'
-  server: v10.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- fingerprint: ''
-  name: 27|🇭🇰HK_1|5.2MB/s
-  password: dCwrni
-  port: '7008'
-  server: api.meituan88.com
+  password: BxceQaOe
+  port: 2716
+  server: 43.199.146.46
   skip-cert-verify: true
-  sni: globalnetworktraffic.com
-  type: anytls
-  udp: true
-  username: dCwrni
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 27,33,34|🇭🇰 香港5|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 51391
+  server: 13.215.162.132
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - alterId: 0
   cipher: auto
   http-opts:

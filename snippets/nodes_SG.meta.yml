@@ -691,13 +691,13 @@ proxies:
     path: /stream
 - cipher: chacha20-ietf-poly1305
   country: 🇬SG
-  name: 14|🇬SG_148
+  name: 14|🇬SG_146
   password: PWpjPo3tqhPN4yRZ
   port: 20001
   server: 8.209.74.72
   type: ss
 - country: 🇬SG
-  name: 14|🇬SG_149
+  name: 14|🇬SG_147
   password: NQ26071394
   port: 443
   server: promoted-rattler.rooster465.autos
@@ -705,7 +705,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇬SG
-  name: 14|🇬SG_150
+  name: 14|🇬SG_148
   password: PD07395842
   port: 443
   server: national-dingo.rooster465.autos
@@ -713,29 +713,36 @@ proxies:
   type: trojan
   udp: true
 - country: 🇬SG
-  name: 14|🇬SG_151
-  password: NQ26071394
-  port: 443
-  server: square-gnat.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬SG
-  name: 14|🇸🇬SG_152
+  name: 14|🇬SG_149
   password: NQ26071394
   port: 443
   server: emerging-baboon.rooster465.autos
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 22|C🟠🇸🇬[🎬🤖📺🎭]_dokng.com_2e82c540
-  password: 7212418a-c4e9-4378-8722-b34bda5f0467
-  port: 56303
-  server: a3.entrance.app.xdns.men
+- country: 🇬SG
+  name: 14|🇸🇬SG_150
+  password: NQ26071394
+  port: 443
+  server: square-gnat.rooster465.autos
   skip-cert-verify: true
-  sni: www.microsoft.com
-  type: anytls
+  type: trojan
   udp: true
+- name: 22|A🟢🇸🇬[🎬🤖📺🎭]_dokng.com_e2867af1
+  password: ''
+  port: 9443
+  server: 149.88.99.209
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: ''
+- name: 22|D🔴🇸🇬[🤖📺🎭🎪]_dokng.com_ec84b940
+  password: None
+  port: 9090
+  server: 104.248.151.93
+  type: http
+  username: null
 - name: 22|D🔴🇸🇬[🎬🤖📺🎭]_dokng.com_26d0e430
   password: e4b72b531a2d10900519
   port: 443
@@ -750,7 +757,7 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
-- name: 22|D🔴🇸🇬_dokng.com_8496ce1e
+- name: 22|D🔴🇸🇬[📺]_dokng.com_8496ce1e
   password: e4b72b531a2d10900519
   port: 443
   server: 104.248.148.240
@@ -758,17 +765,27 @@ proxies:
   tls: true
   type: http
   username: testuser1
-- name: 26,27,33,34|🇸🇬 新加坡3|@ripaojiedian
+- alterId: 0
+  cipher: auto
+  name: 26|新加坡 001
   network: tcp
-  password: BxceQaOe
-  port: 41142
-  server: 54.251.190.150
+  port: 8443
+  server: 13.250.114.194
   skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
+  type: vmess
+  uuid: 9dcb8d73-cc0b-4fcc-a12d-d7affb56267c
 - alterId: 0
   cipher: auto
   name: 26|新加坡 002
+  network: tcp
+  port: 47630
+  server: 43.228.126.187
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9e5c6ebf-35f9-49a3-9f12-cba2b7cdbccb
+- alterId: 0
+  cipher: auto
+  name: 26|新加坡 003
   network: ws
   port: 16737
   server: 139.180.211.152
@@ -781,7 +798,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|新加坡 003
+  name: 26|新加坡 004
   network: ws
   port: 18063
   server: 139.180.211.152
@@ -792,60 +809,14 @@ proxies:
     headers:
       Host: m.zoom.us
     path: /Dialog Zoom
-- alterId: 1
-  cipher: auto
-  name: 26|新加坡 004
-  network: ws
-  port: 21888
-  server: 104.248.148.147
+- name: 27,33,34|🇸🇬 新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 41142
+  server: 54.251.190.150
   skip-cert-verify: true
-  type: vmess
-  uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89
-  ws-opts:
-    headers:
-      Host: 104.248.148.147
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 26|新加坡 005
-  network: ws
-  port: 80
-  server: 139.99.61.154
-  skip-cert-verify: true
-  type: vmess
-  uuid: 932a1f0d-f5ce-418d-8560-c88f53c534b9
-  ws-opts:
-    headers:
-      Host: 139.99.61.154
-    path: /vmess
-- alterId: 4
-  cipher: auto
-  name: 26|新加坡 006
-  network: ws
-  port: 443
-  server: 103.253.26.134
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-opts:
-    headers:
-      Host: eeh7iewe.com
-    path: /ws
-- alterId: 4
-  cipher: auto
-  name: 26|新加坡 007
-  network: ws
-  port: 443
-  server: 103.253.26.20
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-opts:
-    headers:
-      Host: zecjk.com
-    path: /ws
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - name: 31|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

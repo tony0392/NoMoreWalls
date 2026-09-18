@@ -71,6 +71,20 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 26|俄罗斯 001
+  network: ws
+  port: 443
+  server: haxus3.janechiu.icu
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 0df258cb-a376-4b8e-a378-a556a4658aeb
+  ws-opts:
+    headers:
+      Host: haxus3.janechiu.icu
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 26|俄罗斯 002
   network: http
   port: 26743
   server: 194.87.248.27
@@ -79,7 +93,7 @@ proxies:
   uuid: 59952a8e-b712-4190-d85e-f9aadd65faa0
 - alterId: 64
   cipher: auto
-  name: 26|俄罗斯 002
+  name: 26|俄罗斯 003
   network: http
   port: 37672
   server: 176.119.159.245
@@ -88,15 +102,19 @@ proxies:
   uuid: 86b4e35c-1061-47b3-8c6c-811d1853a477
 - alterId: 0
   cipher: auto
-  name: 26|俄罗斯 003
-  network: ws
-  port: 443
-  server: us02.gogogoo.cyou
+  name: 26|俄罗斯 004
+  network: tcp
+  port: 22324
+  server: 5.188.190.252
   skip-cert-verify: true
-  tls: true
   type: vmess
-  uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda
-  ws-opts:
-    headers:
-      Host: us02.gogogoo.cyou
-    path: /go
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 26|俄罗斯 005
+  network: tcp
+  port: 23957
+  server: 91.228.227.211
+  skip-cert-verify: true
+  type: vmess
+  uuid: 92987ab8-0a53-4a16-8d6c-295d5df86404

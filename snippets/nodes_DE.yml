@@ -53,22 +53,31 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- cipher: aes-256-cfb
-  name: 22,27|🇩🇪_DE_德国
-  password: amazonskr05
-  port: 443
-  server: 63.180.252.123
-  skip-cert-verify: true
-  type: ss
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: 22|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_d7097b...
+  network: tcp
+  password: eZwp12tXna8-s_ysszXnXq25rv1c8w
+  port: 8443
+  server: denode213.velox-network.org
+  skip-cert-verify: false
+  sni: denode213.velox-network.org
+  type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 22,27|🇩🇪_DE_德国_2
-  password: amazonskr05
-  port: 443
-  server: 3.75.89.244
+- alterId: 2
+  cipher: auto
+  name: 22,27,28|🇭🇰_HK_中国香港->🇪_DE_德国
+  port: 30833
+  server: v33.hdacd.com
   skip-cert-verify: true
-  type: ss
+  tls: false
+  type: vmess
   udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
 - alterId: 0
   cipher: auto
   name: 26|德国 001
@@ -191,6 +200,68 @@ proxies:
     headers:
       Host: germany-dusseldorf.mah3Hoet.com
     path: /ws
+- alterId: 0
+  cipher: auto
+  name: 26|德国 014
+  network: tcp
+  port: 2053
+  server: 178.63.237.158
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2d4dd672-180f-415c-9035-e2fc461dd95a
+- alterId: 64
+  cipher: auto
+  name: 26|德国 015
+  network: tcp
+  port: 31484
+  server: 168.119.107.162
+  skip-cert-verify: true
+  type: vmess
+  uuid: 943961b8-4e27-4bdf-a048-c2f724f542fb
+- alterId: 0
+  cipher: auto
+  name: 26|德国 016
+  network: tcp
+  port: 1070
+  server: 193.24.120.6
+  skip-cert-verify: true
+  type: vmess
+  uuid: a8899899-106f-47f2-b247-5795ba37a58d
+- alterId: 0
+  cipher: auto
+  name: 26|德国 017
+  network: tcp
+  port: 2086
+  server: 91.107.146.97
+  skip-cert-verify: true
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 26|德国 018
+  network: tcp
+  port: 443
+  server: 46.183.187.73
+  skip-cert-verify: true
+  type: vmess
+  uuid: 92a048ec-a160-497e-8069-c2e902626d7a
+- alterId: 0
+  cipher: auto
+  name: 26|德国 019
+  network: tcp
+  port: 80
+  server: 128.140.109.232
+  skip-cert-verify: true
+  type: vmess
+  uuid: 05a178f9-e6ba-4006-93d7-3d980cdc3a76
+- cipher: aes-256-cfb
+  name: 27|🇩🇪_DE_德国
+  password: amazonskr05
+  port: 443
+  server: 18.194.210.177
+  skip-cert-verify: true
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   name: 35| t.me/PFSub |  NL 074 | ⬇️ 2MB...
   network: ws
@@ -208,18 +279,6 @@ proxies:
         (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
     max-early-data: 2560
     path: /tro8sFW1S91B6sZrM1
-- alterId: '0'
-  cipher: auto
-  name: '35|🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001... #8'
-  network: tcp
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  xudp: true
 - name: 35|🟢🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001...
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20055

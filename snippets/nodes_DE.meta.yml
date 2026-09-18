@@ -53,64 +53,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- cipher: aes-256-cfb
-  name: 22,27|🇩🇪_DE_德国
-  password: amazonskr05
-  port: 443
-  server: 63.180.252.123
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 22,27|🇩🇪_DE_德国_2
-  password: amazonskr05
-  port: 443
-  server: 3.75.89.244
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- name: 22|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_720459...
-  password: None
-  port: 11111
-  server: 103.237.102.191
-  type: http
-  username: null
-- name: 22|C🟠🇩🇪hos[🎬🤖📺🎪]_dokng.com_febed3...
-  password: None
-  port: 443
-  server: 149.36.50.157
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 22|C🟠🇩🇪hos[🤖📺🎭🎪]_dokng.com_0db00e...
-  port: 443
-  server: 149.36.50.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 22|C🟠🇩🇪hos[🤖📺🎭🎪]_dokng.com_52d5ac...
-  password: None
-  port: 443
-  server: 149.36.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 22|D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_dd7011...
-  password: None
-  port: 9443
-  server: 87.249.132.97
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 22|C🟠🇩🇪hos[🤖📺🎪✨]_dokng.com_cb4b70...
-  port: 443
-  server: 149.36.50.157
-  skip-cert-verify: true
-  tls: true
-  type: http
 - name: 22|C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_9c08cf...
   password: None
   port: 443
@@ -119,10 +61,30 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 22|C🟠🇩🇪hos[🤖📺🎭🎪]_dokng.com_f02413...
-  password: None
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: 22|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_d7097b...
+  network: tcp
+  password: eZwp12tXna8-s_ysszXnXq25rv1c8w
+  port: 8443
+  server: denode213.velox-network.org
+  skip-cert-verify: false
+  sni: denode213.velox-network.org
+  type: trojan
+  udp: true
+- name: 22|C🟠🇩🇪hos[🤖📺🎪✨]_dokng.com_cb4b70...
   port: 443
-  server: 149.36.50.1
+  server: 149.36.50.157
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 22|D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_dd7011...
+  password: None
+  port: 9443
+  server: 87.249.132.97
   skip-cert-verify: true
   tls: true
   type: http
@@ -135,20 +97,48 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 22|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_f46708...
+- name: 22|C🟠🇩🇪hos[🤖📺🎭🎪]_dokng.com_52d5ac...
+  password: None
+  port: 443
+  server: 149.36.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 22,27|🇩🇪DE_1|1.8MB/s
+  password: None
+  port: 443
+  server: 149.36.50.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 22|D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_f46708...
   port: 443
   server: 185.44.107.166
   skip-cert-verify: true
   tls: true
   type: http
-- name: 22|A🟢🇩🇪res[🤖📺🎭🎪]_dokng.com_2a8612...
-  password: 'null'
+- name: 22,27|🇩🇪DE_4|1000KB/s
+  password: None
   port: 443
-  server: fan.973511.xyz
+  server: 149.36.50.157
+  skip-cert-verify: true
   tls: true
   type: http
-  username: 'null'
-- name: 22|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_621134...
+  username: null
+- alterId: 2
+  cipher: auto
+  name: 22,27,28|🇭🇰_HK_中国香港->🇪_DE_德国
+  port: 30833
+  server: v33.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- name: 22|D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_621134...
   password: e4b72b531a2d10900519
   port: 443
   server: 167.172.172.190
@@ -157,12 +147,22 @@ proxies:
   tls: true
   type: http
   username: testuser1
-- name: 22|A🟢🇩🇪res[🤖📺🎭✨]_dokng.com_3ec79e...
+- name: 22|A🟢🇩🇪res[🎬🤖📺🎭]_dokng.com_2a8612...
+  password: 'null'
+  port: 443
+  server: fan.973511.xyz
+  tls: true
+  type: http
+  username: 'null'
+- name: 22|A🟢🇩🇪res[🤖📺🎭🎪]_dokng.com_77e71e...
+  password: ''
   port: 443
   server: 141.17.83.73
   skip-cert-verify: true
   tls: true
   type: http
+  udp: true
+  username: ''
 - alterId: 0
   cipher: auto
   name: 26|德国 001
@@ -285,6 +285,76 @@ proxies:
     headers:
       Host: germany-dusseldorf.mah3Hoet.com
     path: /ws
+- alterId: 0
+  cipher: auto
+  name: 26|德国 014
+  network: tcp
+  port: 2053
+  server: 178.63.237.158
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2d4dd672-180f-415c-9035-e2fc461dd95a
+- alterId: 64
+  cipher: auto
+  name: 26|德国 015
+  network: tcp
+  port: 31484
+  server: 168.119.107.162
+  skip-cert-verify: true
+  type: vmess
+  uuid: 943961b8-4e27-4bdf-a048-c2f724f542fb
+- alterId: 0
+  cipher: auto
+  name: 26|德国 016
+  network: tcp
+  port: 1070
+  server: 193.24.120.6
+  skip-cert-verify: true
+  type: vmess
+  uuid: a8899899-106f-47f2-b247-5795ba37a58d
+- alterId: 0
+  cipher: auto
+  name: 26|德国 017
+  network: tcp
+  port: 2086
+  server: 91.107.146.97
+  skip-cert-verify: true
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 26|德国 018
+  network: tcp
+  port: 443
+  server: 46.183.187.73
+  skip-cert-verify: true
+  type: vmess
+  uuid: 92a048ec-a160-497e-8069-c2e902626d7a
+- alterId: 0
+  cipher: auto
+  name: 26|德国 019
+  network: tcp
+  port: 80
+  server: 128.140.109.232
+  skip-cert-verify: true
+  type: vmess
+  uuid: 05a178f9-e6ba-4006-93d7-3d980cdc3a76
+- cipher: aes-256-cfb
+  name: 27|🇩🇪_DE_德国
+  password: amazonskr05
+  port: 443
+  server: 18.194.210.177
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- name: 27|🇩🇪 德国 | DEU 6
+  password: ac956a1d-3892-4a46-a2ef-45005d3c8e60
+  port: 41450
+  server: xxxxxx3332.luoyun2.com
+  skip-cert-verify: true
+  sni: de915.luoyun2.com
+  type: anytls
+  udp: true
 - client-fingerprint: chrome
   name: 35| t.me/PFSub |  NL 074 | ⬇️ 2MB...
   network: ws
@@ -302,18 +372,6 @@ proxies:
         (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
     max-early-data: 2560
     path: /tro8sFW1S91B6sZrM1
-- alterId: '0'
-  cipher: auto
-  name: '35|🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001... #8'
-  network: tcp
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  xudp: true
 - name: 35|🟢🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001...
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20055

@@ -689,45 +689,26 @@ proxies:
     headers:
       Host: d16henb377mok4.cloudfront.net
     path: /stream
-- cipher: chacha20-ietf-poly1305
-  country: 🇬SG
-  name: 14|🇬SG_144
-  password: PWpjPo3tqhPN4yRZ
-  port: 20001
-  server: 8.209.74.72
-  type: ss
-- country: 🇬SG
-  name: 14|🇬SG_145
-  password: NQ26071394
-  port: 443
-  server: square-gnat.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬SG
-  name: 14|🇬SG_146
-  password: NQ26071394
-  port: 443
-  server: emerging-baboon.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬SG
-  name: 14|🇸🇬SG_147
-  password: NQ26071394
-  port: 443
-  server: promoted-rattler.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬SG
-  name: 14|🇸🇬SG_148
-  password: PD07395842
-  port: 443
-  server: national-dingo.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+- cipher: chacha20-ietf
+  name: 22|A🟢🇸🇬res[🎬📺🎭🎪]_dokng.com_63287a...
+  obfs: plain
+  obfs-param: 33f313723.douyin.com
+  password: di15PV
+  port: 26774
+  protocol: auth_aes128_md5
+  protocol-param: 313723:dCwrni
+  server: api.meituan88.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 22|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_cc3ffe...
+  obfs: plain
+  obfs-param: 33f313723.douyin.com
+  password: di15PV
+  port: 18566
+  protocol: auth_aes128_md5
+  protocol-param: 313723:dCwrni
+  server: api.meituan88.com
+  type: ssr
 - name: 22|A🟢🇸🇬res[🎬🤖📺🎭]_dokng.com_e2867a...
   password: ''
   port: 9443
@@ -737,11 +718,23 @@ proxies:
   type: http
   udp: true
   username: ''
+- name: 22|D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_d28531...
+  port: 9090
+  server: 167.99.74.174
+  type: http
 - name: 22|D🔴🇸🇬hos[🎬🤖📺🎭]_dokng.com_26d0e4...
   password: e4b72b531a2d10900519
   port: 443
   server: 146.70.29.45
   sni: 92461d2d.acsnet.co
+  tls: true
+  type: http
+  username: testuser1
+- name: 22|D🔴🇸🇬hos[🤖📺🎭🎪]_dokng.com_8496ce...
+  password: e4b72b531a2d10900519
+  port: 443
+  server: 104.248.148.240
+  sni: us.acskey.co
   tls: true
   type: http
   username: testuser1
@@ -751,18 +744,26 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
-- alterId: 0
-  cipher: auto
-  name: 22|A🟢🇸🇬res_dokng.com_acf9541c
-  port: 38320
-  server: 124.151.45.60
+- name: 26,27,33,34|🇸🇬 新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 41142
+  server: 54.251.190.150
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d643d6ea-2e48-4ad5-b96e-d11b889cc6a6
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 26|新加坡 001
+  name: 26|新加坡 002
+  network: tcp
+  port: 47630
+  server: 43.228.126.187
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9e5c6ebf-35f9-49a3-9f12-cba2b7cdbccb
+- alterId: 0
+  cipher: auto
+  name: 26|新加坡 003
   network: ws
   port: 16737
   server: 139.180.211.152
@@ -775,7 +776,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 26|新加坡 002
+  name: 26|新加坡 004
   network: ws
   port: 18063
   server: 139.180.211.152
@@ -786,14 +787,99 @@ proxies:
     headers:
       Host: m.zoom.us
     path: /Dialog Zoom
-- name: 27,33,34|🇸🇬 新加坡3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 41142
-  server: 54.251.190.150
+- alterId: 1
+  cipher: auto
+  name: 26|新加坡 005
+  network: ws
+  port: 21888
+  server: 104.248.148.147
   skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
+  type: vmess
+  uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89
+  ws-opts:
+    headers:
+      Host: 104.248.148.147
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 26|新加坡 006
+  network: ws
+  port: 80
+  server: 139.99.61.154
+  skip-cert-verify: true
+  type: vmess
+  uuid: 932a1f0d-f5ce-418d-8560-c88f53c534b9
+  ws-opts:
+    headers:
+      Host: 139.99.61.154
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 26|新加坡 007
+  network: ws
+  port: 9111
+  server: st-1.dnspro.icu
+  skip-cert-verify: true
+  type: vmess
+  uuid: 13ef5f2c-d002-36a2-9e96-a13d5e3ae03b
+  ws-opts:
+    headers:
+      Host: st-1.dnspro.icu
+    path: /iso
+- alterId: 0
+  cipher: auto
+  name: 26|新加坡 008
+  network: ws
+  port: 5100
+  server: st-2.dnspro.icu
+  skip-cert-verify: true
+  type: vmess
+  uuid: 13ef5f2c-d002-36a2-9e96-a13d5e3ae03b
+  ws-opts:
+    headers:
+      Host: st-2.dnspro.icu
+    path: /iso
+- alterId: 0
+  cipher: auto
+  name: 26|新加坡 009
+  network: ws
+  port: 20025
+  server: sh-cn-1.dnspro.icu
+  skip-cert-verify: true
+  type: vmess
+  uuid: 13ef5f2c-d002-36a2-9e96-a13d5e3ae03b
+  ws-opts:
+    headers:
+      Host: sh-cn-1.dnspro.icu
+    path: /iso
+- alterId: 4
+  cipher: auto
+  name: 26|新加坡 010
+  network: ws
+  port: 443
+  server: 103.253.26.134
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: eeh7iewe.com
+    path: /ws
+- alterId: 4
+  cipher: auto
+  name: 26|新加坡 011
+  network: ws
+  port: 443
+  server: 103.253.26.20
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: zecjk.com
+    path: /ws
 - name: 31|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

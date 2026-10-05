@@ -41,31 +41,17 @@ proxies:
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - cipher: chacha20-ietf-poly1305
   country: 🇦CA
-  name: 14|🇦CA_14
-  password: G5p6ww4o67HB
-  port: 8388
-  server: 108.181.118.10
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇦CA
-  name: 14|🇦CA_15
-  password: CJmTCCx7Ltud
-  port: 8388
-  server: 108.181.58.239
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇨🇦CA
-  name: 14|🇨🇦CA_16
-  password: CJmTCCx7Ltud
-  port: 8388
-  server: 108.181.126.122
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇨🇦CA
-  name: 14|🇨🇦CA_17
+  name: 14|🇦CA_04
   password: G5p6ww4o67HB
   port: 8388
   server: 108.181.0.177
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇨🇦CA
+  name: 14|🇨🇦CA_05
+  password: G5p6ww4o67HB
+  port: 8388
+  server: 108.181.118.10
   type: ss
 - name: 19,20|US美国(mibei77.com 米贝节点分享)_156
   password: humanity
@@ -187,47 +173,23 @@ proxies:
   udp: true
   ws-opts:
     path: /assignment
-- name: 22|A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_1647a2...
-  port: 443
-  server: 206.223.183.21
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 22|D🔴🇨🇦hos[🎬🤖📺🎭]_dokng.com_ff0913...
-  port: 9443
-  server: 198.44.157.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 22|A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_c2a21b...
-  port: 443
-  server: 206.223.183.16
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 22|A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_8e59d5...
-  port: 443
-  server: 206.223.161.47
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 22|A🟢🇨🇦res[🎬🤖📺🎭]_dokng.com_42638f...
-  port: 443
-  server: 206.223.183.13
-  skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: chrome
-  name: 22|C🟠🇨🇦hos[🎬🤖📺🎭]_dokng.com_f59641...
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 1009
-  server: iwnp28tz.zf-mix.9999231.xyz
-  sni: co-8ce91c.9999231.xyz
-  type: anytls
-  udp: true
 - alterId: 0
   cipher: auto
   name: 26|加拿大 001
+  network: ws
+  port: 443
+  server: 167.17.68.89
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: vspeedfast.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 26|加拿大 002
   network: ws
   port: 8080
   server: 108.181.23.161
@@ -240,7 +202,7 @@ proxies:
     path: /1IKYjV0r/
 - alterId: 0
   cipher: auto
-  name: 26|加拿大 002
+  name: 26|加拿大 003
   network: ws
   port: 80
   server: 51.79.102.253
@@ -254,7 +216,7 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: 26|加拿大 003
+  name: 26|加拿大 004
   network: tcp
   port: 22324
   server: 198.57.27.190
@@ -263,27 +225,13 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: 26|加拿大 004
+  name: 26|加拿大 005
   network: tcp
   port: 22324
   server: 167.17.68.89
   skip-cert-verify: true
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 26|加拿大 005
-  network: ws
-  port: 443
-  server: 167.17.68.89
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: vspeedfast.org
-    path: /linkvws
 - alterId: 64
   cipher: auto
   name: 26|加拿大 006
@@ -499,17 +447,17 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-- cipher: aes-128-gcm
+- cipher: aes-256-gcm
   name: 27|🇨🇦[www.v2nodes.com] ss-CA-1584...
-  password: 1cbb3e347ee86e1980a7c731e9dd00a0
-  port: 17201
-  server: 64.74.161.148
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  port: 9443
+  server: yyz-ca-01.blncvpn4u.cc
   type: ss
 - cipher: aes-256-gcm
   name: 27|🇨🇦[www.v2nodes.com] ss-CA-1574...
   password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
   port: 9443
-  server: yyz-ca-01.blncvpn4u.cc
+  server: 185.156.47.97
   type: ss
 - cipher: aes-256-gcm
   name: 27|🇨🇦[www.v2nodes.com] ss-CA-1559...
@@ -565,6 +513,18 @@ proxies:
   port: 445
   server: 51.222.12.127
   type: ss
+- name: 27|🇨🇦CA_1|1.3MB/s
+  port: 443
+  server: 206.223.183.16
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 27|🇨🇦CA_2|1.5MB/s
+  port: 9443
+  server: 23.169.224.34
+  skip-cert-verify: true
+  tls: true
+  type: http
 - name: 35|🟢🇨🇦[🎬🤖📺🔍]_github.com/Ruk1ng001...
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20051

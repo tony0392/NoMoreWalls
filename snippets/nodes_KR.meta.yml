@@ -1,7 +1,7 @@
 proxies:
 - alterId: 1
   cipher: auto
-  name: 11|🇰🇷 No.182_KR_x1.00_Oracle_首尔@o...
+  name: 5|🇰🇷 No.182_KR_x1.00_Oracle_首尔@o...
   network: ws
   port: 33333
   server: 146.56.45.242
@@ -16,7 +16,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 11|No.290_KR_x0.50_Oracle_Seoul@J...
+  name: 5|No.290_KR_x0.50_Oracle_Seoul@J...
   network: ws
   port: 8080
   server: 129.154.201.240
@@ -31,7 +31,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 11|🇰🇷 No.171_KR_x0.50_Oracle_韩国[三...
+  name: 5|🇰🇷 No.171_KR_x0.50_Oracle_韩国[三...
   network: ws
   port: 8080
   server: 146.56.157.76
@@ -46,7 +46,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 11|🇰🇷 No.808_KR_x0.50_Oracle_首尔@s...
+  name: 5|🇰🇷 No.808_KR_x0.50_Oracle_首尔@s...
   network: ws
   port: 8080
   server: 146.56.179.139
@@ -61,7 +61,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 11|🇰🇷 No.65_KR_x0.50_Oracle_首尔@m*...
+  name: 5|🇰🇷 No.65_KR_x0.50_Oracle_首尔@m*...
   network: ws
   port: 8080
   server: 130.162.143.176
@@ -76,7 +76,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 11|🇰🇷 No.188_KR_x0.50_Oracle_首尔[c...
+  name: 5|🇰🇷 No.188_KR_x0.50_Oracle_首尔[c...
   network: ws
   port: 8080
   server: 140.238.31.168
@@ -91,7 +91,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 11|🇰🇷 No.543_KR_x0.80_Oracle_首尔_三...
+  name: 5|🇰🇷 No.543_KR_x0.80_Oracle_首尔_三...
   network: ws
   port: 8080
   server: bst.n48.net
@@ -106,7 +106,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 12|韩国 专线NO1
+  name: 6|韩国 专线NO1
   port: 45076
   server: hxa.dashuai.help
   skip-cert-verify: true
@@ -116,7 +116,7 @@ proxies:
   uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
 - alterId: 0
   cipher: auto
-  name: 12|韩国 专线NO2
+  name: 6|韩国 专线NO2
   port: 45075
   server: hxb.dashuai.help
   skip-cert-verify: true
@@ -126,7 +126,7 @@ proxies:
   uuid: 5b5d5027-3aed-4c7b-9678-a44192ba2f0d
 - alterId: 0
   cipher: auto
-  name: '13|韩国 专线NO1 #1'
+  name: '7|韩国 专线NO1 #1'
   port: 45076
   server: hxa.dashuai.help
   skip-cert-verify: true
@@ -136,7 +136,7 @@ proxies:
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - alterId: 0
   cipher: auto
-  name: '13|韩国 专线NO2 #1'
+  name: '7|韩国 专线NO2 #1'
   port: 45075
   server: hxb.dashuai.help
   skip-cert-verify: true
@@ -144,44 +144,23 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- alterId: '0'
-  cipher: auto
-  name: 30,31|489_韩国-395.9KB
-  network: tcp
-  port: '53140'
-  server: sr.v2ssr.xyz
-  tls: 0
-  type: vmess
-  uuid: d4d60924-e920-4fb7-abd6-aa78ade5b3a9
-  ws-headers:
-    host: sr.v2ssr.xyz
-  ws-path: /
-- name: 36|KR丨yoyapai.com
-  network: ws
-  port: 8880
-  server: 104.17.144.29
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 81d55675-8570-4b40-9a77-3125339a0f86
-  ws-opts:
-    headers:
-      Host: spring-sound-8d8e.36-9ff.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-- name: 36|🇰🇷KR國丨yoyapai.com_1
-  network: ws
-  port: 8880
-  server: crimson-smoke-7818.397.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d6bdda67-168d-4501-a2c1-ef01070cb327
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
 - client-fingerprint: chrome
-  name: 36|KR国丨yoyapai.com_1
+  flow: xtls-rprx-vision
+  name: '10,20,35|未命名 #119'
+  network: vless
+  port: 443
+  reality-opts:
+    public-key: fI-eoLmyyeYXgUHr2SWzHcwxkhxmDj2QBnivpUPYfVY
+    short-id: e3db542f549f5504
+  server: 52.141.0.244
+  servername: www.stanford.edu
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 5822b465-036b-4a3b-89d0-b3e52ae20815
+- client-fingerprint: chrome
+  name: 10,20|KR国丨yoyapai.com_1
   network: ws
   port: 25524
   server: 116.93.199.28
@@ -195,15 +174,55 @@ proxies:
     headers:
       Host: ylnhh.cc.cd
     path: /Telegram🇨🇳@WangCai2
-- alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
+- name: 20|KR丨yoyapai.com
+  network: ws
+  port: 8880
+  server: 104.17.144.29
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 81d55675-8570-4b40-9a77-3125339a0f86
+  ws-opts:
+    headers:
+      Host: spring-sound-8d8e.36-9ff.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 20|🇰🇷KR國丨yoyapai.com_1
+  network: ws
+  port: 8880
+  server: crimson-smoke-7818.397.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d6bdda67-168d-4501-a2c1-ef01070cb327
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- client-fingerprint: chrome
   encryption: none
-  name: '39,48|🇩🇪 德国 | DEU #2'
+  flow: xtls-rprx-vision
+  name: 22|C🟠🇰🇷hos[🎬🤖📺🎭]_dokng.com_4a3d6d...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: DHOrfoin7TeRpnIoU3d6qT5Yrq3QPVFp49kApATA4iE
+    short-id: e04a526b0b09c765
+  server: 3.34.96.37
+  servername: api-cadi.dadilabs.com
+  tls: true
+  type: vless
+  uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
+- cipher: aes-128-gcm
+  name: 22|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_49b314...
+  password: e3834037-70dd-4f6e-95f6-c37633664bc1
+  port: 40029
+  server: ruot.ayucloudservices.nl
+  type: ss
+- client-fingerprint: unsafe
+  name: 22|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_e422de...
   network: ws
   port: 443
-  server: 162.159.135.234
+  server: 172.64.150.43
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -212,35 +231,17 @@ proxies:
   ws-opts:
     headers:
       Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
+    path: ''
   xudp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: unsafe
-  encryption: none
-  name: 39|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_dda1ff...
-  network: ws
-  port: 443
-  server: 188.114.98.0
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed
-  xudp: true
-- name: 39|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567...
+- name: 22|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567...
   port: 443
   server: 172.64.69.89
   skip-cert-verify: true
   tls: true
   type: http
-- name: 39|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_6c43e4...
+- name: 22|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_6c43e4...
   port: 443
   server: 172.64.68.89
   skip-cert-verify: true
@@ -248,20 +249,7 @@ proxies:
   type: http
 - alterId: 0
   cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 39|C🟠🇰🇷hos[📺🎞️]_dokng.com_3012d41...
-  network: http
-  port: 123
-  server: 43.108.103.167
-  tls: false
-  type: vmess
-  uuid: 35aa0fda-175a-4aec-c468-0231dee1a121
-- alterId: 0
-  cipher: auto
-  name: 45|韩国 001
+  name: 26|韩国 001
   network: ws
   port: 80
   server: 92.223.61.25
@@ -272,79 +260,42 @@ proxies:
     headers:
       Host: mizban888.servecounterstrike.com
     path: /
+- alterId: 1
+  cipher: auto
+  name: 26|韩国 002
+  network: ws
+  port: 8888
+  server: 54.180.96.67
+  skip-cert-verify: true
+  type: vmess
+  uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89
+  ws-opts:
+    headers:
+      Host: 54.180.96.67
+    path: /
 - alterId: 0
   cipher: auto
-  name: 48|🇰🇷 韩国|@ripaojiedian
+  name: 26|韩国 003
   network: ws
   port: 443
-  server: 8nTzyR5KNivfabaT.v.3dns.vip
-  servername: 8nTzyR5KNivfabaT.v.3dns.vip
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: 8nTzyR5KNivfabaT.v.3dns.vip
-    path: /ws-vmess
-- name: '48,61|韩国|@ripaojiedian #1'
-  network: tcp
-  password: AA885B42-133C-3828-FB69-E45105C06092
-  port: 11171
-  server: 63182sh8-4d7b.aws-agent.net
-  skip-cert-verify: true
-  sni: m.ctrip.com
-  type: trojan
-- name: 48|🇰🇷 韩国 | KOR
-  password: 87c6ad7b-e450-44a8-8088-bc2234d43de1
-  port: 47531
-  server: svip.skycon808.com
-  skip-cert-verify: true
-  sni: tw15.swiftrelay.cc
-  type: anytls
-  udp: true
-- name: 48|🇰🇷 韩国 | KOR 2
-  password: 87c6ad7b-e450-44a8-8088-bc2234d43de1
-  port: 24318
-  server: svip.skycon808.com
-  skip-cert-verify: true
-  sni: hk08.jdddyy01.cc
-  type: anytls
-  udp: true
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '48,61|🇰🇷 韩国 | KOR #1 #1'
-  network: ws
-  port: 443
-  server: seoul02.zgjok.com
-  servername: seoul02.zgjok.com
+  server: fullaccesstokoreannetsubnode1.azurewebsites.net
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
-  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
+  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
   ws-opts:
     headers:
-      Host: seoul02.zgjok.com
-    path: /
-- name: 56|韩国[01]
+      Host: fullaccesstokoreannetsubnode1.azurewebsites.net
+    path: /ws
+- name: 31|韩国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: 60|V2-韩国03∣K16线路∣
-  password: 7daf833c-37b9-4afc-8495-96590f03f781
-  port: 21017
-  server: 120.232.217.96
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '61,63|🇰🇷 韩国|@ripaojiedian #2'
+  name: '34,36|🇰🇷 韩国|@ripaojiedian #2'
   network: ws
   port: 443
   server: 8nTzyR5KNivfabaT.v.3dns.vip
@@ -357,7 +308,164 @@ proxies:
     headers:
       Host: 8nTzyR5KNivfabaT.v.3dns.vip
     path: /ws-vmess
-- name: 64|🔴🇰🇷_github.com/Ruk1ng001_5b8e1...
+- name: 35|🇰🇷KR_1|223KB/s 01
+  network: ws
+  port: 8880
+  server: deepl.com
+  tls: false
+  type: vless
+  uuid: f15a5586-23f6-453f-97f5-c301b949e699
+  ws-opts:
+    headers:
+      Host: mute-sunset-0849.40-aeb.workers.dev
+    path: '%2Fpyip%3DProxyIP.KR.CMLiussss.net'
+- name: 35|🇰🇷KR_2|251KB/s|M003-260806 01
+  network: ws
+  port: 8880
+  server: 172.67.209.127
+  tls: false
+  type: vless
+  uuid: 25844c02-a1fe-43ec-a6b9-44e3bf375b83
+  ws-opts:
+    headers:
+      Host: dark-breeze-a59a.494.workers.dev
+    path: '%2Fpyip%3DProxyIP.KR.CMLiussss.net'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 35|🇰🇷KR_3|108KB/s|C002-260622 01
+  network: tcp
+  port: 18967
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.39.4.109
+  servername: www.apple.com
+  tls: false
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: 35|🇰🇷KR_4|344KB/s|A004-260618 01
+  network: ws
+  port: 8880
+  server: 172.64.151.134
+  tls: false
+  type: vless
+  uuid: f15a5586-23f6-453f-97f5-c301b949e699
+  ws-opts:
+    headers:
+      Host: mute-sunset-0849.40-aeb.workers.dev
+    path: '%2F'
+- name: 35|🇰🇷KR_5|238KB/s|B007-260618 01
+  network: ws
+  port: 8880
+  server: 104.16.97.215
+  servername: super-sunset-010c.24-43d.workers.dev
+  tls: false
+  type: vless
+  uuid: 35e8826f-0873-492d-8b8a-d495c9947480
+  ws-opts:
+    headers:
+      Host: super-sunset-010c.24-43d.workers.dev
+    path: '%2Fpyip%3DProxyIP.KR.CMLiussss.net'
+- name: 35|🇰🇷KR_7|281KB/s|R002-260618 01
+  password: 1671a252e2a97dc2bda4e515475931da
+  port: 50160
+  server: 132.226.226.189
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 35|🇰🇷KR_8|775KB/s|R002-260618 01
+  password: 7302ad33229de166d393cd56143a1e4c
+  port: 50160
+  server: 131.186.19.174
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 35|🇰🇷KR_9|680KB/s|A004-260618 01
+  password: 7302ad33229de166d393cd56143a1e4c
+  port: 50160
+  server: 131.186.19.174
+  skip-cert-verify: true
+  sni: google.com
+  tls: false
+  type: hysteria2
+- name: 35|🇰🇷KR_10|124KB/s|R002-260618 01
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: 152-67-200-82.liao.kdns.fr
+  tls: false
+  type: hysteria2
+- name: 35|🇰🇷KR_11|247KB/s|C002-260622 01
+  network: ws
+  port: 8880
+  server: 104.20.28.74
+  tls: false
+  type: vless
+  uuid: 80cead8e-0d28-4b0a-bacd-8005471a5c39
+  ws-opts:
+    headers:
+      Host: flat-fire-40ed.96-042.workers.dev
+    path: '%2Fpyip%3DProxyIP.KR.CMLiussss.net'
+- name: 35|🇰🇷KR_12|242KB/s|M003-260806 01
+  network: ws
+  port: 8880
+  server: 172.67.152.71
+  tls: false
+  type: vless
+  uuid: c6c5ad2f-b4d5-450f-862f-341cebb7f9b5
+  ws-opts:
+    headers:
+      Host: empty-rain-1df4.332-633.workers.dev
+    path: '%2Fpyip%3DProxyIP.KR.CMLiussss.net'
+- name: 35|🇰🇷KR_13|374KB/s|A004-260618 01
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  port: 50160
+  server: 152-69-231-175.liao.kdns.fr
+  sni: 152-69-231-175.liao.kdns.fr
+  tls: false
+  type: hysteria2
+- name: 35|🇰🇷KR_15|104KB/s|C002-260622 01
+  network: ws
+  port: 8880
+  server: 104.21.55.229
+  tls: false
+  type: vless
+  uuid: 31f345f3-b8eb-4ca6-8b14-bb555ae2c1f9
+  ws-opts:
+    headers:
+      Host: tiny-feather-4c41.227.workers.dev
+    path: '%2Fpyip%3DProxyIP.KR.CMLiussss.net'
+- name: 35|🇰🇷KR_16|171KB/s|A004-260618 01
+  network: ws
+  port: 8880
+  server: 172.67.152.71
+  tls: false
+  type: vless
+  uuid: df26029b-bffe-4ce2-9246-25b52ed2b1c7
+  ws-opts:
+    headers:
+      Host: polished-field-4448.186-705.workers.dev
+    path: '%2F'
+- name: 35|🇰🇷KR_23|121KB/s|A004-260618 01
+  password: 7302ad33229de166d393cd56143a1e4c
+  port: 50160
+  server: 131.186.19.174
+  skip-cert-verify: true
+  sni: 131.186.19.174
+  tls: false
+  type: hysteria2
+- name: 35|🇰🇷KR_24|561KB/s|A004-260618 01
+  password: maintell
+  port: 2053
+  server: 152.70.237.123
+  skip-cert-verify: true
+  sni: 152.70.237.123
+  tls: false
+  type: hysteria2
+- name: 37|🔴🇰🇷_github.com/Ruk1ng001_5b8e1...
   password: ''
   port: 1090
   server: 121.169.46.116
@@ -365,7 +473,7 @@ proxies:
   tls: false
   type: socks5
   username: Og%3D%3D
-- name: 64|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001...
+- name: 37|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001...
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20065
   server: oss-shanghai.solidigm-zxcv.com
@@ -378,7 +486,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 64|🟢🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001...
+  name: 37|🟢🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001...
   network: tcp
   port: 19001
   reality-opts:
@@ -392,21 +500,21 @@ proxies:
   uuid: 6eeb820e-89ef-4b60-9060-ddcaea0580f0
   xudp: true
 - cipher: aes-128-gcm
-  name: 64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001...
+  name: 37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001...
   password: ec4ba5cd-753f-4ce0-9d1e-e28759e20ab1
   port: 1465
   server: south.nor1.uops.rtx.al
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #1'
   password: ec4ba5cd-753f-4ce0-9d1e-e28759e20ab1
   port: 1465
   server: south.nor2.uops.rtx.al
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: '64|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
+  name: '37|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
   network: ws
   port: 10000
   server: 221.163.35.103
@@ -425,7 +533,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 64|🟢🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001...
+  name: 37|🟢🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001...
   network: tcp
   port: 443
   reality-opts:
@@ -439,7 +547,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
   xudp: true
 - client-fingerprint: chrome
-  name: 64|🔴🇰🇷[📺🎭🎪✨]_github.com/Ruk1ng001...
+  name: 37|🔴🇰🇷[📺🎭🎪✨]_github.com/Ruk1ng001...
   network: ws
   port: 50001
   server: 175.208.111.195
@@ -456,7 +564,7 @@ proxies:
     path: /danfeng?ed=2560
   xudp: true
 - client-fingerprint: chrome
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #3'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #3'
   network: ws
   port: 11965
   server: 218.157.158.21
@@ -473,7 +581,7 @@ proxies:
     path: /danfeng?ed=2560
   xudp: true
 - client-fingerprint: chrome
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #4'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #4'
   network: ws
   port: 37020
   server: 121.157.243.134
@@ -491,7 +599,7 @@ proxies:
     path: /danfeng?ed=2560
   xudp: true
 - client-fingerprint: chrome
-  name: '64|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
+  name: '37|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
   network: ws
   port: 30047
   server: 211.194.210.183
@@ -508,7 +616,7 @@ proxies:
     path: /danfeng?ed=2560
   xudp: true
 - client-fingerprint: chrome
-  name: 64|🔴🇰🇷[🎬🤖📺🎪]_github.com/Ruk1ng001...
+  name: 37|🔴🇰🇷[🎬🤖📺🎪]_github.com/Ruk1ng001...
   network: ws
   port: 23791
   server: 106.246.54.30
@@ -526,7 +634,7 @@ proxies:
     path: /danfeng?ed=2560
   xudp: true
 - client-fingerprint: chrome
-  name: '64|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
+  name: '37|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
   network: ws
   port: 12300
   server: 49.142.200.31
@@ -544,7 +652,7 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #6'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #6'
   network: ws
   port: 19071
   server: 220.122.42.198
@@ -561,7 +669,7 @@ proxies:
     path: /danfeng
   xudp: true
 - client-fingerprint: chrome
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #7'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #7'
   network: ws
   port: 16030
   server: 14.55.213.131
@@ -578,7 +686,7 @@ proxies:
     path: /danfeng?ed=2560
   xudp: true
 - client-fingerprint: chrome
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #8'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #8'
   network: ws
   port: 12321
   server: 118.37.73.36
@@ -595,7 +703,7 @@ proxies:
     path: /danfeng?ed=2560
   xudp: true
 - client-fingerprint: chrome
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #9'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #9'
   network: ws
   port: 10035
   server: 27.119.233.90
@@ -614,7 +722,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: random
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #10'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #10'
   network: ws
   port: 15018
   server: 61.79.126.130
@@ -629,7 +737,7 @@ proxies:
     path: /danfeng
 - client-fingerprint: chrome
   encryption: none
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #11'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #11'
   network: ws
   port: 12999
   server: 218.157.10.158
@@ -646,7 +754,7 @@ proxies:
     path: /danfeng
   xudp: true
 - client-fingerprint: chrome
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #12'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #12'
   network: ws
   port: 12100
   server: 112.219.110.147
@@ -664,7 +772,7 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #13'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #13'
   network: ws
   port: 11310
   server: 121.129.33.208
@@ -682,7 +790,7 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #14'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #14'
   network: ws
   port: 12380
   server: 121.178.202.91
@@ -699,7 +807,7 @@ proxies:
     path: /danfeng
   xudp: true
 - client-fingerprint: chrome
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #15'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #15'
   network: ws
   port: 30050
   server: 210.111.173.152
@@ -716,7 +824,7 @@ proxies:
     path: /danfeng?ed=2560
   xudp: true
 - client-fingerprint: random
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #16'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #16'
   network: ws
   port: 25105
   server: 59.14.58.161
@@ -734,7 +842,7 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: '64|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
+  name: '37|🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
   network: ws
   port: 12312
   server: 211.48.77.114
@@ -751,7 +859,7 @@ proxies:
     path: /danfeng
   xudp: true
 - client-fingerprint: chrome
-  name: 64|🔴🇰🇷_github.com/Ruk1ng001_1231f...
+  name: 37|🔴🇰🇷_github.com/Ruk1ng001_1231f...
   network: ws
   port: 11965
   server: 220.85.252.224
@@ -768,7 +876,7 @@ proxies:
     path: /danfeng?ed=2560
   xudp: true
 - client-fingerprint: random
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #17'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #17'
   network: ws
   port: 10000
   server: 222.113.26.172
@@ -785,7 +893,7 @@ proxies:
     path: /danfeng
   xudp: true
 - client-fingerprint: random
-  name: '64|🔴🇰🇷[🎬🤖📺🎪]_github.com/Ruk1ng001... #1'
+  name: '37|🔴🇰🇷[🎬🤖📺🎪]_github.com/Ruk1ng001... #1'
   network: ws
   port: 18979
   server: 59.9.104.98
@@ -802,7 +910,7 @@ proxies:
     path: /danfeng
   xudp: true
 - client-fingerprint: random
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #18'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #18'
   network: ws
   port: 18469
   server: 59.16.228.103
@@ -819,7 +927,7 @@ proxies:
     path: /danfeng
   xudp: true
 - client-fingerprint: chrome
-  name: '64|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #19'
+  name: '37|🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001... #19'
   network: ws
   port: 37900
   server: 121.160.77.89
@@ -835,293 +943,3 @@ proxies:
         (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
     path: /danfeng
   xudp: true
-- name: 66|🇰🇷+KR+韩国+44
-  network: ws
-  port: 18888
-  server: 112.168.91.60
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
-- alterId: 0
-  cipher: auto
-  name: 66|🇰🇷KR-152.67.218.38-0746
-  network: ws
-  port: 443
-  server: 152.67.218.38
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
-  ws-opts:
-    headers:
-      Host: 152.67.218.38
-    path: /
-- name: 66|🇰🇷+KR+韩国+53
-  network: ws
-  port: 20010
-  server: 129.154.222.116
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- name: 66|🇰🇷+KR+韩国+46
-  network: ws
-  port: 10082
-  server: 14.52.249.135
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
-- name: 66|🇰🇷+KR+韩国+39
-  network: ws
-  port: 10548
-  server: 211.52.190.145
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- name: 66|🇰🇷+KR+韩国+22
-  network: ws
-  port: 8443
-  server: 20.249.83.244
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- alterId: 0
-  cipher: auto
-  name: 66|🇰🇷韩国 01
-  network: ws
-  port: '2086'
-  server: cf.iepl1.me
-  tls: false
-  type: vmess
-  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
-  ws-opts:
-    headers:
-      Host: krcc1.topf6.com
-    path: /ws?ed=2048
-- client-fingerprint: random
-  name: 66|TG@ZDYZ2 -KR1
-  network: ws
-  port: 44699
-  server: 129.154.212.181
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: TG%40ZDYZ2
-- alterId: 0
-  cipher: auto
-  name: 66|🇰🇷KR-152.67.218.38-0747
-  network: ws
-  port: 443
-  server: 152.67.218.38
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- client-fingerprint: random
-  name: 66|TG@ZDYZ2 -KR5
-  network: ws
-  port: 443
-  server: 129.154.198.48
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: TG%40ZDYZ2
-- client-fingerprint: random
-  name: 66|TG@ZDYZ2 -KR4
-  network: ws
-  port: 10548
-  server: 211.52.190.145
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: TG%40ZDYZ2
-- client-fingerprint: random
-  name: 66|TG@ZDYZ2 -KR6
-  network: ws
-  port: 20010
-  server: 129.154.222.116
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: TG%40ZDYZ2
-- client-fingerprint: random
-  name: 66|TG@ZDYZ2 -KR3
-  network: ws
-  port: 2053
-  server: 193.122.125.174
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: TG%40ZDYZ2
-- name: 66|🇰🇷+KR+韩国+17
-  network: ws
-  port: 40377
-  server: 193.122.122.16
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- name: 66|🇰🇷+KR+韩国+43
-  network: ws
-  port: 30040
-  server: 59.4.80.188
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
-- client-fingerprint: random
-  name: 66|TG@ZDYZ2 -KR2
-  network: ws
-  port: 2096
-  server: 91.193.58.98
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: TG%40ZDYZ2
-- name: 66|🇰🇷+KR+韩国+26
-  network: ws
-  port: 2053
-  server: 193.122.125.174
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- name: 66|🇰🇷+KR+韩国+50
-  network: ws
-  port: 443
-  server: 140.238.13.96
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- client-fingerprint: random
-  name: 66|TG@ZDYZ2 -KR7
-  network: ws
-  port: 40377
-  server: 193.122.122.16
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: TG%40ZDYZ2
-- alterId: 0
-  cipher: auto
-  name: 66|🇰🇷韩国 02
-  network: ws
-  port: '2086'
-  server: cf.335570.xyz
-  tls: false
-  type: vmess
-  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
-  ws-opts:
-    headers:
-      Host: krcc1.topf6.com
-    path: /ws?ed=2048
-- client-fingerprint: random
-  name: 66|TG@ZDYZ2 -KR8
-  network: ws
-  port: 8443
-  server: 132.145.91.171
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: TG%40ZDYZ2
-- name: 66|🇰🇷+KR+韩国+47
-  network: ws
-  port: 44699
-  server: 129.154.212.181
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- name: 66|🇰🇷+KR+韩国+40
-  network: ws
-  port: 20010
-  server: 146.56.130.56
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2

@@ -684,7 +684,7 @@ proxies:
       Host: mia7.pages.dev
     path: /TG:@MiaChatChannel
 - client-fingerprint: qq
-  name: '13,24|未命名 #173'
+  name: '13,24|未命名 #174'
   network: vless
   port: 443
   reality-opts:
@@ -1031,11 +1031,19 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /fp=chrome
-- name: 20|🇸🇬[www.v2nodes.com] vless-SG-1...
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 20,27|🇸🇬 新加坡 | SGP 5
+  network: tcp
   port: 46105
+  reality-opts:
+    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
+    short-id: 28f5c1f8f98a
   server: funagfrdfs.alixxplay.com
-  tls: false
+  servername: www.lamer.com.sg
+  tls: true
   type: vless
+  udp: true
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
 - name: '20|🇸🇬[www.v2nodes.com] vless-SG-1... #1'
   port: 57541
@@ -1137,7 +1145,7 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /
-- name: '20,27|🇸🇬 新加坡 | SGP #4'
+- name: 20|🇸🇬 新加坡 | SGP
   network: tcp
   port: 10443
   server: 178.94.25.73
@@ -1146,7 +1154,7 @@ proxies:
   type: vless
   udp: true
   uuid: 2dacc738-5720-4824-b8bc-e3db57596ba7
-- name: '20,27|🇸🇬 新加坡 | SGP 2 #1'
+- name: 20|🇸🇬 新加坡 | SGP 2
   network: ws
   port: 14430
   server: 178.94.25.73
@@ -1164,7 +1172,7 @@ proxies:
   client-fingerprint: chrome
   encryption: mlkem768x25519plus.native.0rtt.100-111-1111.75-0-111.50-0-3333.ftcfrMeW8BZe83oGjRMzHnCiatP89lRTLREh9JuodBc
   flow: xtls-rprx-vision
-  name: '20,27|🇸🇬 新加坡 | SGP 3 #1'
+  name: 20|🇸🇬 新加坡 | SGP 3
   network: xhttp
   port: 443
   server: e05be65a.bilibiliapp.cn
@@ -1190,38 +1198,6 @@ proxies:
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: 24|TG@proxyshareCN
-  password: 745a6079-6a61-423d-bdd9-b344c1d26e62
-  port: 20177
-  server: sg1.dexlos.com
-  tls: false
-  type: hysteria2
-- client-fingerprint: random
-  name: '24|免费机场TG@proxyshareCN #3'
-  network: ws
-  port: 443
-  server: ct.877774.xyz
-  servername: ap-south.862400.xyz
-  tls: true
-  type: vless
-  uuid: 4d54856d-f842-4121-8571-6136e8e6e642
-  ws-opts:
-    headers:
-      Host: ap-south.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: chrome
-  name: '24|免费机场TG@proxyshareCN #16'
-  network: ws
-  port: 443
-  server: tongue-expects-begins-old.trycloudflare.com
-  servername: tongue-expects-begins-old.trycloudflare.com
-  tls: true
-  type: vless
-  uuid: c01391fa-7bd3-4b9d-b2db-4829b75e30da
-  ws-opts:
-    headers:
-      Host: tongue-expects-begins-old.trycloudflare.com
-    path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 24|zhuhai.uk-🇸🇬新加坡-144
@@ -1235,19 +1211,6 @@ proxies:
   tls: false
   type: vless
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 24|🇸🇬|SG|AVToday.io|2
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: Uzz3xzDxrpC7NHMkJ3cXMPz88NrgvXbip5dHS-57hko
-    short-id: ae59ee08e3eb8bff
-  server: 43.160.226.41
-  servername: www.samsung.com
-  tls: false
-  type: vless
-  uuid: c01391fa-7bd3-4b9d-b2db-4829b75e30da
 - name: 24|🇸🇬新加坡 zhuhai.uk 40.42MB/s
   network: ws
   port: 443
@@ -1285,6 +1248,51 @@ proxies:
     headers:
       Host: sweet-sun-c70f.317-ba5.workers.dev
     path: '%2Fpyip%3DProxyIP.SG.CMLiussss.net'
+- name: 24|TG@proxyshareCN
+  password: 745a6079-6a61-423d-bdd9-b344c1d26e62
+  port: 20177
+  server: sg1.dexlos.com
+  tls: false
+  type: hysteria2
+- client-fingerprint: random
+  name: '24|免费机场TG@proxyshareCN #3'
+  network: ws
+  port: 443
+  server: ct.877774.xyz
+  servername: ap-south.862400.xyz
+  tls: true
+  type: vless
+  uuid: 4d54856d-f842-4121-8571-6136e8e6e642
+  ws-opts:
+    headers:
+      Host: ap-south.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: chrome
+  name: '24|免费机场TG@proxyshareCN #16'
+  network: ws
+  port: 443
+  server: tongue-expects-begins-old.trycloudflare.com
+  servername: tongue-expects-begins-old.trycloudflare.com
+  tls: true
+  type: vless
+  uuid: c01391fa-7bd3-4b9d-b2db-4829b75e30da
+  ws-opts:
+    headers:
+      Host: tongue-expects-begins-old.trycloudflare.com
+    path: '%2F'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 24|🇸🇬|SG|AVToday.io|2
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Uzz3xzDxrpC7NHMkJ3cXMPz88NrgvXbip5dHS-57hko
+    short-id: ae59ee08e3eb8bff
+  server: 43.160.226.41
+  servername: www.samsung.com
+  tls: false
+  type: vless
+  uuid: c01391fa-7bd3-4b9d-b2db-4829b75e30da
 - name: 24|🇸🇬SG_2|217KB/s|C002-260622 01
   network: ws
   port: 8880
@@ -1775,3 +1783,58 @@ proxies:
   udp: true
   uuid: fab8ca81-80ea-445e-ba31-f900007c2e4e
   xudp: true
+- client-fingerprint: chrome
+  name: '27|🇸🇬 新加坡 | SGP #4'
+  network: ws
+  port: 443
+  server: 104.24.11.68
+  servername: u.srilankangrill.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  ws-opts:
+    headers:
+      Host: u.srilankangrill.online
+    path: /
+- client-fingerprint: chrome
+  name: '27|🇸🇬 新加坡 | SGP 2 #1'
+  network: ws
+  port: 443
+  server: 104.21.70.228
+  servername: u.srilankangrill.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  ws-opts:
+    headers:
+      Host: u.srilankangrill.online
+    path: /
+- client-fingerprint: firefox
+  name: 27|🇸🇬 新加坡 | SGP 6
+  network: tcp
+  port: 25239
+  reality-opts:
+    public-key: 0hYbfdNYeWetabbW1wCcrwi0e1VQA45Jhgi42YxU5nk
+    short-id: 9a382b227140e86f
+  server: 164.37.224.244
+  servername: www.microsoft.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
+- client-fingerprint: chrome
+  name: 27|🇸🇬 新加坡 | SGP 7
+  network: ws
+  port: 443
+  server: 104.21.5.75
+  servername: u.srilankangrill.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  ws-opts:
+    headers:
+      Host: u.srilankangrill.online
+    path: /

@@ -56,7 +56,7 @@ proxies:
     path: /
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '6,13,24|未命名 #136'
+  name: '6,13,24|未命名 #137'
   network: vless
   port: 2053
   reality-opts:
@@ -95,33 +95,29 @@ proxies:
   uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
   ws-opts:
     path: /8f2690e2d016
-- name: 12|英国+V2CROSS.COM
+- alpn:
+  - http/1.1
+  name: 12|英国+伦敦DigitalOcean数据中心
   network: ws
-  port: 8880
-  server: 80.93.202.40
-  tls: false
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  password: humanity
+  port: 443
+  server: 138.68.131.253
+  sni: www.pleadcourt.org
+  type: trojan
   ws-opts:
-    headers:
-      Host: vms.lifetime02.workers.dev
-    path: '%2F'
-- client-fingerprint: chrome
-  name: '12,24|英国+V2CROSS.COM #2'
+    path: '%2Fassignment'
+- name: '12|英国+伦敦DigitalOcean数据中心 #1'
   network: ws
-  port: 8443
-  server: 2.28.42.209
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
+  port: 443
+  server: 167.172.61.197
+  sni: www.volumeroot.com
+  type: trojan
   ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: '%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40public-vpn-200.opengw.net%3A443'
+    path: '%2Fassignment'
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: '13,24|未命名 #183'
+  name: '13,24|未命名 #184'
   network: vless
   port: 443
   reality-opts:
@@ -948,7 +944,7 @@ proxies:
   client-fingerprint: chrome
   encryption: mlkem768x25519plus.native.0rtt.100-111-1111.75-0-111.50-0-3333.o20rq91WYjorNmsatwvkyjIQaD8ItB_MQuDFzjaXSUk
   flow: xtls-rprx-vision
-  name: '20,27|🇬🇧 英国 | GBR #3'
+  name: 20|ProxyPool | 🇬🇧 英国 | GBR
   network: xhttp
   port: 443
   server: fcb30f9f.bilibiliapp.cn
@@ -973,7 +969,7 @@ proxies:
   client-fingerprint: chrome
   encryption: mlkem768x25519plus.native.0rtt.100-111-1111.75-0-111.50-0-3333.o20rq91WYjorNmsatwvkyjIQaD8ItB_MQuDFzjaXSUk
   flow: xtls-rprx-vision
-  name: '20,27|🇬🇧 英国 | GBR 2 #1'
+  name: 20|🇬🇧 英国 | GBR 2
   network: xhttp
   port: 443
   server: 0e8f937e.bilibiliapp.cn
@@ -998,7 +994,7 @@ proxies:
   client-fingerprint: chrome
   encryption: mlkem768x25519plus.native.0rtt.100-111-1111.75-0-111.50-0-3333.o20rq91WYjorNmsatwvkyjIQaD8ItB_MQuDFzjaXSUk
   flow: xtls-rprx-vision
-  name: '20,27|🇬🇧 英国 | GBR 3 #1'
+  name: 20|🇬🇧 英国 | GBR 3
   network: xhttp
   port: 443
   server: 9c3a8e55.bilibiliapp.cn
@@ -1023,7 +1019,7 @@ proxies:
   client-fingerprint: chrome
   encryption: mlkem768x25519plus.native.0rtt.100-111-1111.75-0-111.50-0-3333.o20rq91WYjorNmsatwvkyjIQaD8ItB_MQuDFzjaXSUk
   flow: xtls-rprx-vision
-  name: '20,27|🇬🇧 英国 | GBR 4 #1'
+  name: 20|🇬🇧 英国 | GBR 4
   network: xhttp
   port: 443
   server: 78a12cc9.bilibiliapp.cn
@@ -1048,7 +1044,7 @@ proxies:
   client-fingerprint: chrome
   encryption: mlkem768x25519plus.native.0rtt.100-111-1111.75-0-111.50-0-3333.o20rq91WYjorNmsatwvkyjIQaD8ItB_MQuDFzjaXSUk
   flow: xtls-rprx-vision
-  name: '20,27|🇬🇧 英国 | GBR 5 #1'
+  name: 20|🇬🇧 英国 | GBR 5
   network: xhttp
   port: 443
   server: dd8cfc04.bilibiliapp.cn
@@ -1068,36 +1064,35 @@ proxies:
     sc-min-posts-interval-ms: 5
     sc-stream-up-server-secs: 5-10
     x-padding-bytes: 100-1000
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 24|🇺🇸 (7)
-  network: tcp
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 24|zhuhai.uk-🇬🇧英国-436
+  network: ws
   port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.179
-  servername: yahoo.com
-  tls: false
+  server: 188.114.97.6
+  servername: rnxq-1lpi3m.linmeisoft.com
+  tls: true
   type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 24|🇬🇧
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: -nB-tCeZ4Zr72ArHUKnbUphbs4PlBS6iId6PkrPQQTE
-    short-id: 84f9881951050a30
-  server: gb1.murhost.network
-  servername: gb1.murhost.network
-  tls: false
-  type: vless
-  uuid: a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac
+  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
   ws-opts:
     headers:
-      Host: gb1.murhost.network
-    path: '%2F'
+      Host: rnxq-1lpi3m.linmeisoft.com
+    path: '%2Fb0a100ee-c397-43f2-bdae-2adfb7a0d4e5'
+- client-fingerprint: chrome
+  name: 24|🇬🇧英国 zhuhai.uk 29.57MB/s
+  network: ws
+  port: 443
+  server: 104.17.121.110
+  servername: terazhediii.info
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
+  ws-opts:
+    headers:
+      Host: terazhediii.info
+    path: '%2Fhdgrbws'
 - client-fingerprint: edge
   name: '24|免费机场TG@proxyshareCN #4'
   network: ws
@@ -1150,35 +1145,23 @@ proxies:
     headers:
       Host: rnxq-1lpi3m.linmeisoft.com
     path: '%2Fb0a100ee-c397-43f2-bdae-2adfb7a0d4e5'
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 24|zhuhai.uk-🇬🇧英国-436
-  network: ws
-  port: 443
-  server: 188.114.97.6
-  servername: rnxq-1lpi3m.linmeisoft.com
-  tls: true
-  type: vless
-  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
-  ws-opts:
-    headers:
-      Host: rnxq-1lpi3m.linmeisoft.com
-    path: '%2Fb0a100ee-c397-43f2-bdae-2adfb7a0d4e5'
 - client-fingerprint: chrome
-  name: 24|🇬🇧英国 zhuhai.uk 29.57MB/s
-  network: ws
+  flow: xtls-rprx-vision
+  name: 24|🇬🇧
+  network: tcp
   port: 443
-  server: 104.17.121.110
-  servername: terazhediii.info
-  skip-cert-verify: false
-  tls: true
+  reality-opts:
+    public-key: -nB-tCeZ4Zr72ArHUKnbUphbs4PlBS6iId6PkrPQQTE
+    short-id: 84f9881951050a30
+  server: gb1.murhost.network
+  servername: gb1.murhost.network
+  tls: false
   type: vless
-  uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
+  uuid: a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac
   ws-opts:
     headers:
-      Host: terazhediii.info
-    path: '%2Fhdgrbws'
+      Host: gb1.murhost.network
+    path: '%2F'
 - name: 24|🇬🇧GB_3|302KB/s|C002-260622 01
   network: ws
   port: 8880

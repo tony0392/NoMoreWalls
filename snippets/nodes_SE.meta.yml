@@ -15,7 +15,7 @@ proxies:
       Host: edge.yzkvm.top
     path: /
 - client-fingerprint: ios
-  name: '13,24|未命名 #183'
+  name: '13,24|未命名 #179'
   network: vless
   port: 443
   reality-opts:
@@ -104,13 +104,6 @@ proxies:
   server: 77.232.139.128
   skip-cert-verify: false
   sni: srv-8718e6.frd21.ru
-  tls: false
-  type: hysteria2
-- name: 17|️31@oneclickvpnkeys
-  password: e625f8ef-f935-4c7d-a259-0f154b6842fd
-  port: 443
-  server: 177.3.209.226
-  sni: hy-se.bypassme.online
   tls: false
   type: hysteria2
 - name: 19|瑞典 001
@@ -381,6 +374,20 @@ proxies:
   sni: hy-se.bypassme.online
   type: hysteria2
 - client-fingerprint: random
+  name: 24|SE-LN
+  network: ws
+  port: 443
+  server: www.visa.com.hk
+  servername: se-sto.862400.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: b13e89c1-cc4d-425a-8ec6-5665e1abc71f
+  ws-opts:
+    headers:
+      Host: se-sto.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
   name: 24|zhuhai.uk-🇸🇪瑞典-567
   network: xhttp
   port: 443
@@ -407,20 +414,6 @@ proxies:
   tls: false
   type: vless
   uuid: 0dc40f96-a2d1-4382-88b7-70ee01853229
-- client-fingerprint: random
-  name: 24|SE-LN
-  network: ws
-  port: 443
-  server: www.visa.com.hk
-  servername: se-sto.862400.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: b13e89c1-cc4d-425a-8ec6-5665e1abc71f
-  ws-opts:
-    headers:
-      Host: se-sto.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
 - alpn:
   - h3
   name: 24|🇸🇪|SE|AVToday.io|49
@@ -471,7 +464,7 @@ proxies:
   port: 8443
   reality-opts:
     public-key: IwFiMbtqTA9Xhb3sVPbrfXPanaPLxMqg896uQUlNzAI
-    short-id: 29bbf531
+    short-id: f014
   server: 178.236.251.175
   servername: npdev.uk
   tls: false
@@ -483,7 +476,7 @@ proxies:
   port: 23202
   reality-opts:
     public-key: P9wBRbhP1DUDbHXcJYIWon_OEyHaXvT8w6I5QgK180o
-    short-id: 80065eb941dc
+    short-id: 466d91e6
   server: 178.236.251.175
   servername: www.sony.com
   tls: false
@@ -497,11 +490,24 @@ proxies:
   port: 38388
   server: 103.186.154.37
   type: ss
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: swedenfeed
   name: '27|🇸🇪 瑞典 | SWE #1'
+  network: grpc
+  port: 443
+  server: 45.12.63.219
+  servername: edge-lab-b.10media.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: swedenfeed
+  name: 27|🇸🇪 瑞典 | SWE 2
   network: grpc
   port: 443
   server: edge-lab-b.10media.top

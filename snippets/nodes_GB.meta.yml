@@ -56,7 +56,7 @@ proxies:
     path: /
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '6,13,24|未命名 #137'
+  name: '6,13,24|未命名 #133'
   network: vless
   port: 2053
   reality-opts:
@@ -95,29 +95,9 @@ proxies:
   uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
   ws-opts:
     path: /8f2690e2d016
-- alpn:
-  - http/1.1
-  name: 12|英国+伦敦DigitalOcean数据中心
-  network: ws
-  password: humanity
-  port: 443
-  server: 138.68.131.253
-  sni: www.pleadcourt.org
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '12|英国+伦敦DigitalOcean数据中心 #1'
-  network: ws
-  password: humanity
-  port: 443
-  server: 167.172.61.197
-  sni: www.volumeroot.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: '13,24|未命名 #184'
+  name: '13,24|未命名 #180'
   network: vless
   port: 443
   reality-opts:
@@ -1064,6 +1044,23 @@ proxies:
     sc-min-posts-interval-ms: 5
     sc-stream-up-server-secs: 5-10
     x-padding-bytes: 100-1000
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 24|🇬🇧
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: -nB-tCeZ4Zr72ArHUKnbUphbs4PlBS6iId6PkrPQQTE
+    short-id: 84f9881951050a30
+  server: gb1.murhost.network
+  servername: gb1.murhost.network
+  tls: false
+  type: vless
+  uuid: a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac
+  ws-opts:
+    headers:
+      Host: gb1.murhost.network
+    path: '%2F'
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -1145,23 +1142,6 @@ proxies:
     headers:
       Host: rnxq-1lpi3m.linmeisoft.com
     path: '%2Fb0a100ee-c397-43f2-bdae-2adfb7a0d4e5'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 24|🇬🇧
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: -nB-tCeZ4Zr72ArHUKnbUphbs4PlBS6iId6PkrPQQTE
-    short-id: 84f9881951050a30
-  server: gb1.murhost.network
-  servername: gb1.murhost.network
-  tls: false
-  type: vless
-  uuid: a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac
-  ws-opts:
-    headers:
-      Host: gb1.murhost.network
-    path: '%2F'
 - name: 24|🇬🇧GB_3|302KB/s|C002-260622 01
   network: ws
   port: 8880
@@ -1244,6 +1224,51 @@ proxies:
   server: south.nor2.uops.rtx.al
   type: ss
   udp: true
+- http-opts:
+    headers:
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: '27|🇬🇧 英国 | GBR #3'
+  network: http
+  port: 443
+  server: 3.8.150.222
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+- http-opts:
+    headers:
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: '27|🇬🇧 英国 | GBR 2 #1'
+  network: http
+  port: 443
+  server: 18.171.245.198
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+- http-opts:
+    headers:
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: '27|🇬🇧 英国 | GBR 3 #1'
+  network: http
+  port: 443
+  server: 13.40.65.87
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
 - cipher: aes-256-cfb
   name: 29|GB_London_Amazon Technologies ...
   password: amazonskr05

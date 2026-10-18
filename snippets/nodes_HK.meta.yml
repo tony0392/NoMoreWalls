@@ -869,7 +869,7 @@ proxies:
   uuid: bee21918-0933-430c-904b-c941b92256ba
   ws-opts:
     path: /v1
-- name: '6,13,24|未命名 #99'
+- name: '6,13,24|未命名 #86'
   network: vless
   port: 43630
   server: 47.82.120.47
@@ -880,7 +880,7 @@ proxies:
   uuid: 01a95af3-a2f6-453e-9f88-b2fc011627cc
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '6,13,24|未命名 #128'
+  name: '6,13,24|未命名 #115'
   network: vless
   port: 13443
   reality-opts:
@@ -918,24 +918,22 @@ proxies:
     headers:
       Host: U2FRxj0G13vDI0Wo.v.3dns.vip
     path: /ws-vmess
-- alpn:
-  - ''
-  alterId: 0
+- alterId: 0
   cipher: auto
-  name: '9,20|🇭🇰 香港 | HKG #7'
+  name: 9|🇭🇰HK_63
   network: ws
   port: 44867
   server: 47.244.120.197
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
   ws-opts:
+    headers:
+      Host: ''
     path: /arki
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '13,14,24|未命名 #206'
+  name: '13,14,24|未命名 #193'
   network: vless
   port: 14343
   server: 27.44.143.169
@@ -960,7 +958,7 @@ proxies:
     path: /pyip=Telegram🇳+@WangCai2
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '13,24|未命名 #164'
+  name: '13,24|未命名 #151'
   network: vless
   port: 11674
   reality-opts:
@@ -974,7 +972,7 @@ proxies:
   udp: true
   uuid: fe40f32a-b03d-4ada-8bee-00f41b766098
 - client-fingerprint: chrome
-  name: '13,24|未命名 #202'
+  name: '13,24|未命名 #189'
   network: vless
   port: 443
   reality-opts:
@@ -988,7 +986,7 @@ proxies:
   udp: true
   uuid: 75d38591-267e-4d89-98bc-164f25b50880
 - client-fingerprint: chrome
-  name: '13,24|未命名 #203'
+  name: '13,24|未命名 #190'
   network: vless
   port: 443
   reality-opts:
@@ -1143,71 +1141,41 @@ proxies:
   type: vless
   udp: true
   uuid: 86037609-3790-4901-bd2f-c698092fb1fc
-- name: 15|D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_ff9ee1...
-  port: 443
-  server: 43.155.62.157
-  type: http
-- name: 15|D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_1b8fac...
-  port: 1080
-  server: 47.238.126.208
-  type: socks5
 - name: 15|D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_054bd5...
   port: 10808
   server: 123.58.219.171
   type: socks5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 15|C🟠🇭🇰hos[🎬🤖📺🎭]_dokng.com_36a0a3...
-  network: tcp
-  port: 798
-  reality-opts:
-    public-key: czEoNozTky8HvZ2j4Tnkr6c9L-rAhsdoaBvEz1vjAkU
-    short-id: 6aa9279c1fbab9c9
-  server: hk03.ccdn3.work
-  servername: i1.hdslb.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: fc12fb20-4380-11ec-8c97-d707e267af0b
-- name: 15|D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_de4eaa...
+- name: 15|D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_d21277...
+  password: 'null'
   port: 443
   server: fan.240104.xyz
-  skip-cert-verify: true
   sni: fan.240104.xyz
   tls: true
   type: http
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 15|A🟢🇭🇰res[🎬🤖📺🎭]_dokng.com_42aa23...
-  password: 0324fbc29561
+  username: 'null'
+- name: 15|A🟢🇭🇰res[🎬🤖📺🎭]_dokng.com_18f914...
+  password: ec74bb6a86c2
   port: 443
   server: 56481.df6h451rh.xin
   skip-cert-verify: true
   sni: images.ctfassets.net
   type: anytls
-- name: 15|C🟠🇭🇰hos_dokng.com_db363b3a
-  password: admin
-  port: 8899
-  server: 47.242.19.215
-  skip-cert-verify: true
+  udp: true
+- name: 15|D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_1b8fac...
+  port: 1080
+  server: 47.238.126.208
   type: socks5
-  username: admin
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 20,24|香港 07
-  network: tcp
-  port: 35193
-  reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  server: 156.226.168.221
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
-- name: '20|🇭🇰[www.v2nodes.com] vless-HK-1... #1'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 15|A🟢🇭🇰res[🤖📺🎭🎪]_dokng.com_078c99...
+  password: 0324fbc29561
+  port: 443
+  server: 654968169.df6h451rh.xin
+  skip-cert-verify: true
+  sni: images.ctfassets.net
+  type: anytls
+- name: 20|🇭🇰[www.v2nodes.com] vless-HK-1...
   port: 443
   server: 82.29.36.250
   tls: false
@@ -1215,7 +1183,7 @@ proxies:
   uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: '20,24|免费机场TG@proxyshareCN #2'
+  name: 20,24|zhuhai.uk 🇺🇸 美国 33
   network: tcp
   port: 32134
   reality-opts:
@@ -1226,35 +1194,83 @@ proxies:
   tls: false
   type: vless
   uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
-- name: '20|🇭🇰[www.v2nodes.com] vless-HK-1... #3'
-  network: ws
-  port: 443
-  server: cf.090227.xyz
-  servername: lucasjow.us.ci
-  tls: true
+- name: '20|🇭🇰[www.v2nodes.com] vless-HK-1... #2'
+  port: 13779
+  server: 47.238.210.5
+  tls: false
   type: vless
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  ws-opts:
-    headers:
-      Host: lucasjow.us.ci
-    path: /cart/docs/www/proxyip=108.160.132.132fp=qq
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
 - cipher: aes-128-gcm
-  name: '20|🇭🇰 香港 | HKG #6'
+  name: 20|🇭🇰[www.v2nodes.com] ss-HK-1599...
   password: 30e9c7aa-d86d-4f0d-a0d6-9d0ddf3f5e42
   port: 40006
   server: ruot.ayucloudservices.nl
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇭🇰[www.v2nodes.com] ss-HK-1576...
-  password: 6qmp91myp2jj13dt
-  port: 1081
-  server: sth.free-outline.giize.com
   type: ss
 - name: 20|🇭🇰[www.v2nodes.com] trojan-HK-...
   password: XuMweB2PWs
   port: 45464
   server: 2.27.109.179
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 20|🇭🇰 香港3|@ripaojiedian
+  network: ws
+  port: 443
+  server: ADncdOvLHR4M1P36.v.3dns.vip
+  servername: ADncdOvLHR4M1P36.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: ADncdOvLHR4M1P36.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 20|🇭🇰 香港2|@ripaojiedian
+  network: ws
+  port: 443
+  server: kBONDXW9liFCi4h4.v.3dns.vip
+  servername: kBONDXW9liFCi4h4.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: kBONDXW9liFCi4h4.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 20|🇭🇰 香港4|@ripaojiedian
+  network: ws
+  port: 443
+  server: aZW0eunYVdvRe73k.v.3dns.vip
+  servername: aZW0eunYVdvRe73k.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: aZW0eunYVdvRe73k.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 20|🇭🇰 香港5|@ripaojiedian
+  network: ws
+  port: 443
+  server: syJ2gGUgMwBwQwQx.v.3dns.vip
+  servername: syJ2gGUgMwBwQwQx.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: syJ2gGUgMwBwQwQx.v.3dns.vip
+    path: /ws-vmess
 - alterId: 2
   cipher: auto
   name: 20|香港|@ripaojiedian
@@ -1265,8 +1281,63 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 20|香港2|@ripaojiedian
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 12103
+  server: 7d0a2gz0-7a0c.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
+  type: trojan
+- name: 20|香港3|@ripaojiedian
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 10115
+  server: 7d0a2gz0-7a0c.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
+  type: trojan
+- name: 20|香港4|@ripaojiedian
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 12107
+  server: 7d0a2gz0-7a0c.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
+  type: trojan
+- name: 20|香港5|@ripaojiedian
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 12102
+  server: 7d0a2gz0-7a0c.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 20,27|🇭🇰 香港 | HKG
+  network: ws
+  port: 443
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+    path: /ws-vmess
+- name: '20,27|🇭🇰 香港 | HKG 2 #1'
+  password: 0324fbc29561
+  port: 443
+  server: 56481.df6h451rh.xin
+  skip-cert-verify: true
+  sni: images.ctfassets.net
+  type: anytls
+  udp: true
 - client-fingerprint: chrome
-  name: '20|🇭🇰 香港 | HKG #1'
+  name: 20,27|🇭🇰 香港 | HKG 3
   network: ws
   port: 443
   server: 103.38.236.248
@@ -1279,80 +1350,20 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- name: 20|🇭🇰 香港 | HKG 3
-  password: 0324fbc29561
-  port: 443
-  server: 56481.df6h451rh.xin
-  skip-cert-verify: true
-  sni: images.ctfassets.net
-  type: anytls
-  udp: true
-- cipher: aes-128-gcm
-  name: '20|🇭🇰 香港 | HKG #5'
-  password: 62ec8b67-f6f3-4c83-98d8-712e966f75c9
-  port: 40005
-  server: ruot.ayucloudservices.nl
-  type: ss
-- name: 20,27|🇭🇰 香港 | HKG 6
-  password: 87c6ad7b-e450-44a8-8088-bc2234d43de1
-  port: 24318
-  server: svip.skycon808.com
-  skip-cert-verify: true
-  sni: hk08.jdddyy01.cc
-  type: anytls
-  udp: true
 - client-fingerprint: chrome
-  name: 20|🇭🇰 香港 | HKG
+  name: 20,27|🇭🇰 香港 | HKG 4
   network: ws
   port: 443
-  server: 104.21.13.197
+  server: 85.121.245.104
+  servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
   udp: true
-  uuid: 1c22bf94-702b-49ac-8f5e-24259beed2d8
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   ws-opts:
     headers:
-      Host: hk.lovehk.xyz
-    path: /HK001
-- client-fingerprint: chrome
-  name: 20|🇭🇰 香港 | HKG 2
-  network: ws
-  port: 443
-  server: 104.21.40.53
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1c22bf94-702b-49ac-8f5e-24259beed2d8
-  ws-opts:
-    headers:
-      Host: hk.lovehk.xyz
-    path: /HK001
-- client-fingerprint: chrome
-  name: 20|ProxyPool | 🇭🇰 香港 | HKG 3
-  network: ws
-  port: 443
-  server: 172.67.185.60
-  tls: true
-  type: vless
-  udp: true
-  uuid: 235e318a-8bcb-4480-b256-7b65cc5d0b0a
-  ws-opts:
-    headers:
-      Host: hk.lovehk.xyz
-    path: /HK001
-- client-fingerprint: chrome
-  name: 20|🇭🇰 香港 | HKG 5
-  network: ws
-  port: 443
-  server: 104.21.13.197
-  tls: true
-  type: vless
-  udp: true
-  uuid: 235e318a-8bcb-4480-b256-7b65cc5d0b0a
-  ws-opts:
-    headers:
-      Host: hk.lovehk.xyz
-    path: /HK001
+      Host: snip.edgeoneai.cc.cd
+    path: /
 - name: 23|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158
@@ -1386,6 +1397,14 @@ proxies:
   tls: false
   type: vless
   uuid: 52ac38da-c2fa-4f98-bef1-f3adef5d3ae9
+- name: 24|HK-Hong
+  password: h7mp2xy9kj4nq8wr5tf6vb3z
+  port: 443
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: https%3A%2F%2Ft.me%2Fclashv8%F0%9F%87%A8%F0%9F%87%B3
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 24|HK-Tseung Kwan O-h-31931733-ls...
@@ -1431,6 +1450,19 @@ proxies:
   sni: https%3A%2F%2Ft.me%2Fwangcai2%D1%80%D2%B9%D2%AF%D1%80%D2%B9%D2%AF
   tls: false
   type: hysteria2
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 24|香港 07
+  network: tcp
+  port: 35193
+  reality-opts:
+    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
+    short-id: e8daed2d
+  server: 156.226.168.221
+  servername: www.apple.com
+  tls: false
+  type: vless
+  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
 - alterId: 0
   cipher: auto
   name: '25|🇭🇰 香港3|@ripaojiedian #1'
@@ -2792,29 +2824,5 @@ proxies:
   server: 54e8635c-t9lmo0-tcm6ys-deip.hkt.east.wctype.com
   skip-cert-verify: true
   sni: 54e8635c-t9lmo0-tcm6ys-deip.hkt.east.wctype.com
-  type: anytls
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 27|🇭🇰 香港 | HKG 4
-  network: ws
-  port: 443
-  server: vah4urdzl3jdx5r2.v.3dns.vip
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: VAH4URdZL3jDX5r2.v.3dns.vip
-    path: /ws-vmess
-- name: '27|🇭🇰 香港 | HKG 5 #1'
-  password: ec74bb6a86c2
-  port: 443
-  server: 56481.df6h451rh.xin
-  skip-cert-verify: true
-  sni: images.ctfassets.net
   type: anytls
   udp: true

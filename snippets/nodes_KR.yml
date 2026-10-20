@@ -144,9 +144,28 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- name: 8|🇰🇷KR_81
+  password: ZY07256934
+  port: 443
+  server: glowing-deer.rooster465.autos
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 19|韩国 001
+  network: ws
+  port: 443
+  server: chuncheon02.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d1a1cb91-0f1f-41eb-a307-631bba00f1bb
+  ws-opts:
+    headers:
+      Host: chuncheon02.zgjok.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|韩国 002
   network: ws
   port: 80
   server: 92.223.61.25
@@ -159,7 +178,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 19|韩国 002
+  name: 19|韩国 003
   network: ws
   port: 8888
   server: 54.180.96.67
@@ -172,7 +191,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 19|韩国 003
+  name: 19|韩国 004
   network: ws
   port: 443
   server: fullaccesstokoreannetsubnode1.azurewebsites.net
@@ -184,6 +203,38 @@ proxies:
     headers:
       Host: fullaccesstokoreannetsubnode1.azurewebsites.net
     path: /ws
+- name: '20|🇰🇷 韩国 | KOR #1'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 59099
+  server: fj3x.waimaosass.icu
+  skip-cert-verify: true
+  sni: www.lamer.com.hk
+  type: trojan
+  udp: true
+- name: '20|🇰🇷 韩国 | KOR #2'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 59111
+  server: pokemoniplc-02.waimaosass.icu
+  skip-cert-verify: true
+  sni: www.apple.com.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '20,27|🇰🇷 韩国 | KOR 4 #1'
+  network: ws
+  port: 443
+  server: seoul01.zgjok.com
+  servername: seoul01.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 182f1650-ca13-480c-b0b4-1ca44ed0504e
+  ws-opts:
+    headers:
+      Host: seoul01.zgjok.com
+    path: /henis01
 - name: 23|韩国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443

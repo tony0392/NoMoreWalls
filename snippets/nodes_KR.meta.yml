@@ -144,6 +144,41 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '6,13,24|未命名 #129'
+  network: vless
+  port: 443
+  reality-opts:
+    public-key: fI-eoLmyyeYXgUHr2SWzHcwxkhxmDj2QBnivpUPYfVY
+    short-id: e3db542f549f5504
+  server: 52.141.0.244
+  servername: www.stanford.edu
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 5822b465-036b-4a3b-89d0-b3e52ae20815
+- client-fingerprint: chrome
+  name: 6,13|KR国丨yoyapai.com_1
+  network: ws
+  port: 25524
+  server: 116.93.199.28
+  servername: ylnhh.cc.cd
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  ws-opts:
+    headers:
+      Host: ylnhh.cc.cd
+    path: /Telegram🇨🇳@WangCai2
+- name: 8|🇰🇷KR_81
+  password: ZY07256934
+  port: 443
+  server: glowing-deer.rooster465.autos
+  type: trojan
 - name: 13|KR丨yoyapai.com
   network: ws
   port: 8880
@@ -168,21 +203,6 @@ proxies:
   uuid: d6bdda67-168d-4501-a2c1-ef01070cb327
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
-- client-fingerprint: chrome
-  name: 13|KR国丨yoyapai.com_1
-  network: ws
-  port: 25524
-  server: 116.93.199.28
-  servername: ylnhh.cc.cd
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  ws-opts:
-    headers:
-      Host: ylnhh.cc.cd
-    path: /Telegram🇨🇳@WangCai2
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -229,6 +249,20 @@ proxies:
   cipher: auto
   name: 19|韩国 001
   network: ws
+  port: 443
+  server: chuncheon02.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d1a1cb91-0f1f-41eb-a307-631bba00f1bb
+  ws-opts:
+    headers:
+      Host: chuncheon02.zgjok.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|韩国 002
+  network: ws
   port: 80
   server: 92.223.61.25
   skip-cert-verify: true
@@ -240,7 +274,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 19|韩国 002
+  name: 19|韩国 003
   network: ws
   port: 8888
   server: 54.180.96.67
@@ -253,7 +287,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 19|韩国 003
+  name: 19|韩国 004
   network: ws
   port: 443
   server: fullaccesstokoreannetsubnode1.azurewebsites.net
@@ -265,27 +299,106 @@ proxies:
     headers:
       Host: fullaccesstokoreannetsubnode1.azurewebsites.net
     path: /ws
-- http-opts:
-    headers:
-      Host:
-      - play.googleapis.com
-    method: GET
-    path:
-    - /
-  name: 20,27|🇰🇷 韩国 | KOR 5
-  network: http
-  port: 443
-  server: 43.202.6.222
-  tls: false
+- name: '20|🇰🇷 韩国 | KOR #1'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 59099
+  server: fj3x.waimaosass.icu
+  skip-cert-verify: true
+  sni: www.lamer.com.hk
+  type: trojan
+  udp: true
+- name: '20|🇰🇷 韩国 | KOR #2'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 59111
+  server: pokemoniplc-02.waimaosass.icu
+  skip-cert-verify: true
+  sni: www.apple.com.cn
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '20,27|🇰🇷 韩国 | KOR #3'
+  network: tcp
+  port: 8080
+  reality-opts:
+    public-key: l8pmRRQbIW6ElyaAQBUaWm4M14XqwtDbOJZXefDO4hs
+    short-id: 1d15daf7c72d3d10
+  server: 144.24.77.185
+  servername: www.korea.net
+  tls: true
   type: vless
   udp: true
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+  uuid: 17c125c4-32cf-4962-bc00-64501a965e56
+- client-fingerprint: chrome
+  name: '20,27|🇰🇷 韩国 | KOR 2 #1'
+  network: ws
+  port: 443
+  server: 141.164.56.22
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- alpn:
+  - h2
+  - http/1.1
+  name: '20,27|🇰🇷 韩国 | KOR 3 #1'
+  password: 74d67342-2e3d-4eba-ab0a-01c5bcec4392
+  port: 14210
+  server: hk.zcvip1.com
+  skip-cert-verify: true
+  sni: www.esteelauder.jp
+  type: anytls
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '20,27|🇰🇷 韩国 | KOR 4 #1'
+  network: ws
+  port: 443
+  server: seoul01.zgjok.com
+  servername: seoul01.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 182f1650-ca13-480c-b0b4-1ca44ed0504e
+  ws-opts:
+    headers:
+      Host: seoul01.zgjok.com
+    path: /henis01
+- alpn:
+  - h3
+  auth: FizGVblL7_JqY-tzhmuhXWOAZw8DnwQZ
+  name: '20,27|🇰🇷 韩国 | KOR 5 #1'
+  password: FizGVblL7_JqY-tzhmuhXWOAZw8DnwQZ
+  port: 8090
+  server: 144.24.77.185
+  skip-cert-verify: true
+  sni: 144.24.77.185
+  type: hysteria2
 - name: 23|韩国[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
   skip-cert-verify: false
   type: trojan
+- client-fingerprint: chrome
+  name: 24|zhuhai.uk | 韩国 KR | ICN | 144....
+  network: ws
+  port: 443
+  server: 144.24.71.172
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
 - name: 24|🇰🇷KR_1|223KB/s 01
   network: ws
   port: 8880
@@ -308,19 +421,6 @@ proxies:
     headers:
       Host: dark-breeze-a59a.494.workers.dev
     path: '%2Fpyip%3DProxyIP.KR.CMLiussss.net'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 24|🇰🇷KR_3|108KB/s|C002-260622 01
-  network: tcp
-  port: 18967
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.39.4.109
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 - name: 24|🇰🇷KR_4|344KB/s|A004-260618 01
   network: ws
   port: 8880
@@ -936,81 +1036,3 @@ proxies:
         (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
     path: /danfeng
   xudp: true
-- client-fingerprint: chrome
-  name: 27|🇰🇷 韩国 | KOR
-  network: ws
-  port: 443
-  server: 144.24.90.178
-  servername: nvl-edge-dr-141026.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: ed0b0682-5734-4a50-8728-db68d44a1b94
-  ws-opts:
-    headers:
-      Host: nvl-edge-dr-141026.pages.dev
-    path: /proxyip=ProxyIP.KR.CMLiussss.Net
-- name: 27|🇰🇷 韩国 | KOR 2
-  password: 21b60363-271b-49f0-975b-dbe315215164
-  port: 32076
-  server: 1sw-olo.wjwhi90.com
-  skip-cert-verify: true
-  sni: dvkr.wjwhi90.com
-  type: anytls
-  udp: true
-- client-fingerprint: chrome
-  name: 27|🇰🇷 韩国 | KOR 3
-  network: ws
-  port: 443
-  server: 13.125.141.213
-  servername: nvl-edge-dr-141026.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: ed0b0682-5734-4a50-8728-db68d44a1b94
-  ws-opts:
-    headers:
-      Host: nvl-edge-dr-141026.pages.dev
-    path: /proxyip=ProxyIP.KR.CMLiussss.Net
-- client-fingerprint: chrome
-  name: 27|🇰🇷 韩国 | KOR 4
-  network: ws
-  port: 8443
-  server: 123.111.169.70
-  servername: nvl-edge-dr-141026.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: ed0b0682-5734-4a50-8728-db68d44a1b94
-  ws-opts:
-    headers:
-      Host: nvl-edge-dr-141026.pages.dev
-    path: /proxyip=ProxyIP.KR.CMLiussss.Net
-- client-fingerprint: chrome
-  name: 27|🇰🇷 韩国 | KOR 6
-  network: ws
-  port: 2053
-  server: 123.111.169.70
-  servername: nvl-edge-dr-141026.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: ed0b0682-5734-4a50-8728-db68d44a1b94
-  ws-opts:
-    headers:
-      Host: nvl-edge-dr-141026.pages.dev
-    path: /proxyip=ProxyIP.KR.CMLiussss.Net
-- client-fingerprint: chrome
-  name: 27|🇰🇷 韩国 | KOR 7
-  network: ws
-  port: 443
-  server: 3.37.58.69
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443

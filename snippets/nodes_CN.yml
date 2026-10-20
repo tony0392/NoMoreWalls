@@ -9,6 +9,29 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 8|🇨🇳CN_10
+  password: 736cd94d-7b94-3e44-8106-3419f64eaf09
+  port: 3462
+  server: a12.taipeicitygovernment.org.ua
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 9|🇨🇳CN_08
+  network: tcp
+  port: 30830
+  server: v30.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: 9|🇨🇳CN_09
+  network: tcp
+  port: 30835
+  server: v35.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alpn:
   - ''
   alterId: '0'
@@ -43,6 +66,63 @@ proxies:
     headers: {}
     path: /
   xudp: true
+- alterId: 0
+  cipher: auto
+  name: 19|中国 001
+  network: ws
+  port: 443
+  server: wjofHsQtEuEywxEq.v.3dns.vip
+  servername: wjofHsQtEuEywxEq.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: a9f4de8b-68f1-44b6-b6a2-1db60940503a
+  ws-opts:
+    headers:
+      Host: wjofHsQtEuEywxEq.v.3dns.vip
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|中国 002
+  network: ws
+  port: 443
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|中国 003
+  network: ws
+  port: 443
+  server: 47.243.153.153
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 19|中国 004
+  network: ws
+  port: 443
+  server: 119.36.161.40
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 946ba5df-5771-4873-a3cb-892378526147
+  ws-opts:
+    headers:
+      Host: www.99136853.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 19,20|🇭🇰 香港4|@ripaojiedian
@@ -105,10 +185,10 @@ proxies:
     path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: 19|中国 006
+  name: '19,20|🇭🇰 香港 | HKG #2'
   network: ws
   port: 443
-  server: nycqg19zkwacpm1b.v.3dns.vip
+  server: 8.217.254.88
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -116,97 +196,11 @@ proxies:
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   ws-opts:
     headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+      Host: 2b9hwy8ocx7q74nm.v.3dns.vip
     path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: 19|中国 009
-  network: ws
-  port: 443
-  server: qtkdr8jxe3wefxjm.v.3dns.vip
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 19|中国 010
-  network: ws
-  port: 443
-  server: 119.36.161.40
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 946ba5df-5771-4873-a3cb-892378526147
-  ws-opts:
-    headers:
-      Host: www.99136853.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|中国 011
-  network: ws
-  port: 23026
-  server: 47.244.120.197
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  ws-opts:
-    headers:
-      Host: 47.244.120.197
-    path: /
-- alterId: 0
-  cipher: auto
   name: 19|中国 012
-  network: ws
-  port: 443
-  server: 8.217.254.88
-  servername: 2b9hwy8ocx7q74nm.v.3dns.vip
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: 2b9hwy8ocx7q74nm.v.3dns.vip
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|中国 013
-  network: ws
-  port: 443
-  server: 8.217.13.103
-  servername: qtkdr8jxe3wefxjm.v.3dns.vip
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: qtkdr8jxe3wefxjm.v.3dns.vip
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|中国 014
-  network: ws
-  port: 443
-  server: i2psm3knof5qjjix.v.3dns.vip
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|中国 015
   network: ws
   port: 8080
   server: yh1.dtku41.xyz
@@ -219,7 +213,7 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  name: 19|中国 016
+  name: 19|中国 013
   network: ws
   port: 8080
   server: yh2.dtku41.xyz
@@ -230,60 +224,90 @@ proxies:
     headers:
       Host: per-essex-patterns-bowling.trycloudflare.com
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
-- alterId: 64
-  cipher: auto
-  name: 19|中国 019
-  network: tcp
-  port: 54882
-  server: 183.240.235.162
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 19|中国 020
-  network: tcp
-  port: 55908
-  server: 183.240.235.164
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 19|中国 021
-  network: tcp
-  port: 34602
-  server: 183.240.235.170
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 19|中国 030
-  network: tcp
-  port: 123
-  server: 43.108.103.167
+  name: 19|中国 014
+  network: ws
+  port: 38080
+  server: 120.195.181.81
   skip-cert-verify: true
   type: vmess
-  uuid: 35aa0fda-175a-4aec-c468-0231dee1a121
+  uuid: 6248895b-4255-4f07-9479-d198bc1eb8db
+  ws-opts:
+    headers:
+      Host: i0.hdslb.com
+    path: /guolicheng/hkhgc
 - alterId: 0
   cipher: auto
-  name: '19,20|🇭🇰 香港 | HKG #3'
+  name: 19|中国 015
+  network: ws
+  port: 23026
+  server: 47.244.120.197
+  skip-cert-verify: true
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  ws-opts:
+    headers:
+      Host: 47.244.120.197
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|中国 016
   network: ws
   port: 443
-  server: 47.243.153.153
+  server: qtkdr8jxe3wefxjm.v.3dns.vip
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|中国 017
+  network: ws
+  port: 443
+  server: 8.217.13.103
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: qtkdr8jxe3wefxjm.v.3dns.vip
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|中国 018
+  network: ws
+  port: 443
+  server: i2psm3knof5qjjix.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   ws-opts:
     headers:
       Host: i2psm3knof5qjjix.v.3dns.vip
-    path: /ws-vmess
+    path: /
 - alterId: 0
   cipher: auto
-  name: 19|中国 032
+  name: 19|中国 019
+  network: ws
+  port: 41001
+  server: cn-ar.dnspro.icu
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
+  ws-opts:
+    headers:
+      Host: cn-ar.dnspro.icu
+    path: /iso
+- alterId: 0
+  cipher: auto
+  name: 19|中国 020
   network: ws
   port: 443
   server: 6jdvarazgu3qqr6q.v.3dns.vip
@@ -297,7 +321,7 @@ proxies:
     path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: 19|中国 033
+  name: 19|中国 021
   network: ws
   port: 41000
   server: cn-ar.dnspro.icu
@@ -310,7 +334,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 19|中国 034
+  name: 19|中国 022
   network: ws
   port: 443
   server: 47.243.194.125
@@ -324,7 +348,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 19|中国 035
+  name: 19|中国 023
   network: ws
   port: 31000
   server: 45.199.138.185
@@ -338,7 +362,7 @@ proxies:
     path: /path/1704363182493
 - alterId: 0
   cipher: auto
-  name: 19|中国 036
+  name: 19|中国 024
   network: http
   port: 20715
   server: 45.121.51.103
@@ -347,7 +371,7 @@ proxies:
   uuid: f6406b6d-5487-46da-f793-46611269a306
 - alterId: 0
   cipher: auto
-  name: 19|中国 037
+  name: 19|中国 025
   network: http
   port: 31357
   server: 8.210.131.2
@@ -356,7 +380,7 @@ proxies:
   uuid: 618c0914-e31e-4b82-8289-2e7a47e48dfd
 - alterId: 0
   cipher: auto
-  name: 19|中国 038
+  name: 19|中国 026
   network: http
   port: 54620
   server: 47.242.69.124
@@ -365,7 +389,7 @@ proxies:
   uuid: 7c3008e5-9665-4319-a2b9-ac7370665f1a
 - alterId: 0
   cipher: auto
-  name: 19|中国 039
+  name: 19|中国 027
   network: http
   port: 35668
   server: 47.243.230.222
@@ -374,7 +398,7 @@ proxies:
   uuid: ab4df3ef-e77f-4f2a-bfb8-63604412f73b
 - alterId: 0
   cipher: auto
-  name: 19|中国 040
+  name: 19|中国 028
   network: http
   port: 60808
   server: 47.243.187.171
@@ -383,7 +407,7 @@ proxies:
   uuid: 99c3c1c3-c27c-49a0-9c2c-7c77c3d92bf6
 - alterId: 0
   cipher: auto
-  name: 19|中国 041
+  name: 19|中国 029
   network: http
   port: 47365
   server: 47.243.185.128
@@ -392,7 +416,7 @@ proxies:
   uuid: fb695171-6b24-4255-9893-8921f53a0548
 - alterId: 0
   cipher: auto
-  name: 19|中国 042
+  name: 19|中国 030
   network: http
   port: 41083
   server: 8.210.15.231
@@ -401,7 +425,7 @@ proxies:
   uuid: 1d1ad417-29ed-41e8-aaed-323f797efe6b
 - alterId: 0
   cipher: auto
-  name: 19|中国 043
+  name: 19|中国 031
   network: http
   port: 28045
   server: 47.242.26.30
@@ -410,7 +434,7 @@ proxies:
   uuid: bb73d6fe-9700-4607-8dc1-eb9f15253e9d
 - alterId: 0
   cipher: auto
-  name: 19|中国 044
+  name: 19|中国 032
   network: ws
   port: 443
   server: fullaccesstohongkongnet.azurewebsites.net
@@ -424,7 +448,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 19|中国 045
+  name: 19|中国 033
   network: http
   port: 62307
   server: 47.242.65.80
@@ -433,7 +457,7 @@ proxies:
   uuid: 48f3fa93-1722-4f8d-af74-fcc54c2f21d5
 - alterId: 0
   cipher: auto
-  name: 19|中国 046
+  name: 19|中国 034
   network: http
   port: 61228
   server: 8.210.236.45
@@ -442,7 +466,7 @@ proxies:
   uuid: 7e0ee5c7-46ff-42f8-ab7c-06d8227da454
 - alterId: 0
   cipher: auto
-  name: 19|中国 047
+  name: 19|中国 035
   network: http
   port: 36298
   server: 47.242.1.160
@@ -451,7 +475,7 @@ proxies:
   uuid: 6cea7176-148d-4f51-9bf4-313199c839ba
 - alterId: 0
   cipher: auto
-  name: 19|中国 048
+  name: 19|中国 036
   network: http
   port: 48236
   server: 8.210.166.114
@@ -460,7 +484,7 @@ proxies:
   uuid: 9a3ab916-0662-45ae-8844-8efa29365f84
 - alterId: 0
   cipher: auto
-  name: 19|中国 049
+  name: 19|中国 037
   network: http
   port: 54570
   server: 8.210.248.210
@@ -469,7 +493,7 @@ proxies:
   uuid: aa1d02a4-60e6-4671-8107-4d5e6bacd265
 - alterId: 0
   cipher: auto
-  name: 19|中国 050
+  name: 19|中国 038
   network: http
   port: 51007
   server: 47.242.21.177
@@ -478,7 +502,7 @@ proxies:
   uuid: 318b3dd1-09cf-4980-81ed-6cf689e5825a
 - alterId: 0
   cipher: auto
-  name: 19|中国 051
+  name: 19|中国 039
   network: http
   port: 50797
   server: 124.221.131.176
@@ -487,7 +511,7 @@ proxies:
   uuid: fa4b6f8f-1264-45ec-9651-6160c12cabc5
 - alterId: 0
   cipher: auto
-  name: 19|中国 052
+  name: 19|中国 040
   network: http
   port: 45751
   server: 8.210.20.159
@@ -496,7 +520,7 @@ proxies:
   uuid: 3a0d252e-cddf-4695-ab0f-95a0ce7abcc0
 - alterId: 0
   cipher: auto
-  name: 19|中国 053
+  name: 19|中国 041
   network: http
   port: 48577
   server: 8.210.153.242
@@ -505,7 +529,7 @@ proxies:
   uuid: dd3c5ce4-6741-4cdb-a54d-bf43475969e5
 - alterId: 0
   cipher: auto
-  name: 19|中国 054
+  name: 19|中国 042
   network: http
   port: 45719
   server: 8.210.206.163
@@ -514,7 +538,7 @@ proxies:
   uuid: a220dad2-a34e-4460-b0f7-eaba9c46e639
 - alterId: 0
   cipher: auto
-  name: 19|中国 055
+  name: 19|中国 043
   network: http
   port: 31152
   server: 47.242.52.13
@@ -523,7 +547,7 @@ proxies:
   uuid: 59cf21e6-d029-47d8-9c37-7ef34280b9d1
 - alterId: 0
   cipher: auto
-  name: 19|中国 056
+  name: 19|中国 044
   network: http
   port: 26812
   server: 8.210.48.219
@@ -532,7 +556,7 @@ proxies:
   uuid: cbe5ac22-eb42-4ca9-9fdc-283e57f98008
 - alterId: 0
   cipher: auto
-  name: 19|中国 057
+  name: 19|中国 045
   network: http
   port: 40988
   server: 47.242.95.19
@@ -541,7 +565,7 @@ proxies:
   uuid: 1e60b35a-db17-4283-8b99-7358ee7d5fd5
 - alterId: 0
   cipher: auto
-  name: 19|中国 058
+  name: 19|中国 046
   network: http
   port: 54148
   server: 8.210.70.156
@@ -550,7 +574,7 @@ proxies:
   uuid: 1346261e-3201-4932-bfba-df869ab48116
 - alterId: 0
   cipher: auto
-  name: 19|中国 059
+  name: 19|中国 047
   network: ws
   port: 43815
   server: blog.voewl.com
@@ -563,7 +587,7 @@ proxies:
     path: /abc
 - alterId: 0
   cipher: auto
-  name: 19|中国 060
+  name: 19|中国 048
   network: ws
   port: 8300
   server: hk3.grpc.stream
@@ -576,7 +600,7 @@ proxies:
     path: /event
 - alterId: 0
   cipher: auto
-  name: 19|中国 061
+  name: 19|中国 049
   network: ws
   port: 443
   server: univstar-104-208-117-86.nip.io
@@ -590,7 +614,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 19|中国 062
+  name: 19|中国 050
   network: ws
   port: 443
   server: 211.72.35.110
@@ -604,7 +628,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: 19|中国 063
+  name: 19|中国 051
   network: ws
   port: 443
   server: 220.130.80.179
@@ -617,7 +641,7 @@ proxies:
     path: /howdy
 - alterId: 64
   cipher: auto
-  name: 19|中国 064
+  name: 19|中国 052
   network: ws
   port: 443
   server: 61.216.85.68
@@ -630,7 +654,7 @@ proxies:
     path: /path/243535322906
 - alterId: 0
   cipher: auto
-  name: 19|中国 065
+  name: 19|中国 053
   network: ws
   port: 11463
   server: tw4.594888.xyz
@@ -643,7 +667,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 19|中国 066
+  name: 19|中国 054
   network: ws
   port: 25551
   server: tw3.594888.xyz
@@ -656,7 +680,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 19|中国 067
+  name: 19|中国 055
   network: ws
   port: 11584
   server: 180.215.130.123
@@ -669,7 +693,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 19|中国 068
+  name: 19|中国 056
   network: ws
   port: 443
   server: n1747624260.4u9ma.icu
@@ -683,7 +707,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 19|中国 069
+  name: 19|中国 057
   network: http
   port: 63239
   server: 8.218.83.148
@@ -692,7 +716,7 @@ proxies:
   uuid: bc035c93-4a47-4f06-8833-fadc03527539
 - alterId: 0
   cipher: auto
-  name: 19|中国 070
+  name: 19|中国 058
   network: http
   port: 46644
   server: 8.210.234.189
@@ -701,7 +725,7 @@ proxies:
   uuid: c25a1c9a-1c71-4c58-afba-66eed738b22b
 - alterId: 0
   cipher: auto
-  name: 19|中国 071
+  name: 19|中国 059
   network: http
   port: 58641
   server: 8.218.73.227
@@ -710,7 +734,7 @@ proxies:
   uuid: 4821f5d8-dc31-4bb4-811c-8babcb8aec1a
 - alterId: 0
   cipher: auto
-  name: 19|中国 072
+  name: 19|中国 060
   network: http
   port: 58793
   server: 8.218.80.207
@@ -719,7 +743,7 @@ proxies:
   uuid: 652919af-4b0f-4211-8f06-952958d05038
 - alterId: 0
   cipher: auto
-  name: 19|中国 073
+  name: 19|中国 061
   network: http
   port: 22362
   server: 8.218.86.250
@@ -728,7 +752,7 @@ proxies:
   uuid: 72356bf7-487b-42c0-a7f2-845136b33503
 - alterId: 0
   cipher: auto
-  name: 19|中国 074
+  name: 19|中国 062
   network: http
   port: 51578
   server: 8.210.34.212
@@ -737,7 +761,7 @@ proxies:
   uuid: 24cfd28c-a3d7-4028-89e8-b25fdcb28bac
 - alterId: 0
   cipher: auto
-  name: 19|中国 075
+  name: 19|中国 063
   network: http
   port: 37309
   server: 8.210.203.189
@@ -746,7 +770,7 @@ proxies:
   uuid: 74cdcc28-a0bc-421f-bd15-c6a6e401b523
 - alterId: 0
   cipher: auto
-  name: 19|中国 076
+  name: 19|中国 064
   network: http
   port: 51616
   server: 8.218.86.226
@@ -755,7 +779,7 @@ proxies:
   uuid: bf6bc39e-9453-43b3-805e-7f11965981a4
 - alterId: 0
   cipher: auto
-  name: 19|中国 077
+  name: 19|中国 065
   network: http
   port: 20113
   server: 8.218.63.184
@@ -764,7 +788,7 @@ proxies:
   uuid: cdc72c7d-6ab8-4cb4-a0f7-18b0ec7bfbfa
 - alterId: 0
   cipher: auto
-  name: 19|中国 078
+  name: 19|中国 066
   network: http
   port: 43645
   server: 8.218.85.43
@@ -773,7 +797,7 @@ proxies:
   uuid: 0cd2e2c0-ef4f-4a49-a89f-ee2552aed247
 - alterId: 0
   cipher: auto
-  name: 19|中国 079
+  name: 19|中国 067
   network: http
   port: 37064
   server: 47.242.56.3
@@ -782,7 +806,7 @@ proxies:
   uuid: d2a10a17-6191-472c-896b-782331f49fb9
 - alterId: 0
   cipher: auto
-  name: 19|中国 080
+  name: 19|中国 068
   network: http
   port: 49935
   server: 47.242.205.255
@@ -791,7 +815,7 @@ proxies:
   uuid: 3ffddc7c-80a3-4677-ab9e-30da4190ec6a
 - alterId: 0
   cipher: auto
-  name: 19|中国 081
+  name: 19|中国 069
   network: http
   port: 51784
   server: 47.242.61.125
@@ -800,7 +824,7 @@ proxies:
   uuid: 431c4c01-b596-4d12-a9e6-4f7f21fe82ba
 - alterId: 0
   cipher: auto
-  name: 19|中国 082
+  name: 19|中国 070
   network: http
   port: 48471
   server: 47.242.243.218
@@ -809,7 +833,7 @@ proxies:
   uuid: 7daf0d3d-8c74-4f46-8912-fbf59be05e39
 - alterId: 0
   cipher: auto
-  name: 19|中国 083
+  name: 19|中国 071
   network: http
   port: 55986
   server: 47.243.36.34
@@ -818,7 +842,7 @@ proxies:
   uuid: 87ed289f-cae3-49b4-bbe3-23da298c0e81
 - alterId: 0
   cipher: auto
-  name: 19|中国 084
+  name: 19|中国 072
   network: ws
   port: 8080
   server: cf3.992688.xyz
@@ -831,7 +855,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 19|中国 085
+  name: 19|中国 073
   network: ws
   port: 8080
   server: cf2.992688.xyz
@@ -844,7 +868,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 19|中国 086
+  name: 19|中国 074
   network: ws
   port: 80
   server: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
@@ -855,20 +879,36 @@ proxies:
     headers:
       Host: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
     path: /
+- alterId: 64
+  cipher: auto
+  name: 19|中国 077
+  network: tcp
+  port: 54882
+  server: 183.240.235.162
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 19|中国 078
+  network: tcp
+  port: 55908
+  server: 183.240.235.164
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 19|中国 079
+  network: tcp
+  port: 34602
+  server: 183.240.235.170
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 20|🇨🇳_CN_中国_1
-  network: ws
-  port: 10086
-  server: 39.108.113.127
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397
-- alterId: 0
-  cipher: auto
-  name: 20|🇨🇳_CN_中国_2
   network: ws
   port: 10086
   server: 120.48.133.162
@@ -877,24 +917,3 @@ proxies:
   type: vmess
   udp: true
   uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397
-- cipher: aes-256-cfb
-  name: 28|CN_speednode_0001
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 120.232.251.128
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 28|CN_speednode_0002
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.234
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 28|CN_speednode_0003
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 120.232.250.161
-  type: ss
-  udp: true

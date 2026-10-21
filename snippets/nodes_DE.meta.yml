@@ -1,7 +1,30 @@
 proxies:
+- flow: xtls-rprx-vision
+  name: 0,21|🇪_DE_国
+  port: 7444
+  server: de777.lavivas.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 44e1105d-b46e-402f-933b-eaa136fcbb24
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '0,21|🇩🇪_DE_德国_1 #1'
+  port: 443
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
+  server: gesmankos.sadiepinki.com
+  servername: gesmankos.sadiepinki.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 0,21|🇩🇪_DE_德国_2
+  name: '0,21|🇩🇪_DE_德国_2 #1'
   port: 443
   reality-opts:
     public-key: 1sSmdw90uTiGuitDvp_q8zcXTcHXKQS3IVjA7T1UNiY
@@ -12,19 +35,20 @@ proxies:
   type: vless
   udp: true
   uuid: 88281d02-b387-4fe3-918e-26ed331e6d08
-- client-fingerprint: qq
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 0|🇩🇪_DE_德国_1
+  name: '0,21|🇩🇪_DE_德国_3 #1'
   port: 443
   reality-opts:
-    public-key: O_YZOJVON0LE1U01hAtNUOVRy7z6fkBUXbMtpCGoGEg
-  server: 176.96.138.122
-  servername: plucky-xenon.cdn.cachefleet.com
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
+  server: 45.95.96.236
+  servername: gesmankos.sadiepinki.com
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: b229d38c-35ec-4a0b-9c86-8fceba243d6c
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
 - alterId: 0
   cipher: auto
   name: 1|No.941_DE_x0.50_natseek@我为*人_联...
@@ -87,7 +111,7 @@ proxies:
   http-opts:
     path:
     - /
-  name: '6,13,24|未命名 #87'
+  name: '6,13,24|未命名 #260'
   network: vless
   port: 443
   reality-opts:
@@ -123,7 +147,7 @@ proxies:
     path: /
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '6,13,24|未命名 #115'
+  name: '6,13,24|未命名 #287'
   network: vless
   port: 8443
   reality-opts:
@@ -158,7 +182,7 @@ proxies:
       - fran.sarzamiiinahang.ir
     path:
     - /Meh?di=443
-  name: '6,24|未命名 #120'
+  name: '6,24|未命名 #292'
   network: vless
   port: 443
   server: 104.18.12.149
@@ -174,7 +198,7 @@ proxies:
       - xvh.andishehparenting.com
     path:
     - /
-  name: '6,13,24|未命名 #140'
+  name: '6,13,24|未命名 #311'
   network: vless
   port: 2086
   server: 217.163.76.118
@@ -253,7 +277,7 @@ proxies:
   uuid: 2a650f3b-d95b-4bd6-aadf-16ccc0717155
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: '6,13,24|未命名 #154'
+  name: '6,13,24|未命名 #325'
   network: vless
   port: 443
   reality-opts:
@@ -261,7 +285,7 @@ proxies:
     short-id: c39cc7310a
   server: 169.40.42.229
   servername: yahoo.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vless
   udp: true
@@ -288,7 +312,7 @@ proxies:
       - lunex.store
     path:
     - /Lunex
-  name: '6,24|未命名 #164'
+  name: '6,24|未命名 #333'
   network: vless
   port: 443
   server: 151.101.69.253
@@ -343,7 +367,7 @@ proxies:
     path: /Lunex
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '13,24|未命名 #187'
+  name: '13,24|未命名 #356'
   network: vless
   port: 8545
   reality-opts:
@@ -358,7 +382,7 @@ proxies:
   uuid: 4dc73b6c-ed9e-4d40-8f3f-ebd15d8e702e
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '13,24|未命名 #188'
+  name: '13,24|未命名 #357'
   network: vless
   port: 443
   server: 89.125.112.10
@@ -369,7 +393,7 @@ proxies:
   udp: true
   uuid: 849252f5-b7d0-42e5-b346-0f56885e7869
 - client-fingerprint: firefox
-  name: '13,24|未命名 #189'
+  name: '13,24|未命名 #358'
   network: vless
   port: 443
   reality-opts:
@@ -443,71 +467,113 @@ proxies:
     headers:
       Host: mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net
     path: /
-- name: 15|D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_5ed031...
-  password: None
+- client-fingerprint: chrome
+  encryption: none
+  name: 15|D🔴🇩🇪hos[🎬📺🎭🎪]_dokng.com_047857...
+  network: ws
+  port: 8443
+  server: 178.105.113.205
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.89 Safari/537.36
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+  xudp: true
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  encryption: none
+  name: 15|D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_e47972...
+  network: ws
   port: 443
-  server: 149.36.50.1
+  server: 152.53.197.166
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.110 Safari/537.36
+    path: /
+  xudp: true
+- name: 15|C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_99a404...
+  port: 443
+  server: 213.109.163.119
   skip-cert-verify: true
   tls: true
   type: http
-  username: null
-- name: 15|A🟢🇩🇪res[🤖📺🎭🎪]_dokng.com_33218f...
-  port: 443
-  server: 79.127.156.177
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 15|D🔴🇩🇪hos[📺🎭🎪✨]_dokng.com_3eca1a...
+  network: ws
+  port: 2053
+  server: 178.105.215.151
+  servername: snip.edgeoneai.cc.cd
   tls: true
-  type: http
-- name: '15,20,28|DK_speednode_0002 #1'
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7
+        (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+  xudp: true
+- name: '15,20,28|DK_speednode_0007 #1'
   port: 9002
   server: 158.173.154.4
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 15|C🟠🇩🇪hos[🤖📺🎭🎪]_dokng.com_0db00e...
-  port: 443
-  server: 149.36.50.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 15|C🟠🇩🇪hos[🤖📺🎭🎪]_dokng.com_cb4b70...
-  port: 443
-  server: 149.36.50.157
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 15|D🔴🇩🇪hos[🎬🤖📺🎪]_dokng.com_005f0e...
+- name: 15|D🔴🇩🇪hos[🤖📺🎪✨]_dokng.com_005f0e...
   port: 443
   server: 87.249.132.97
   skip-cert-verify: true
   tls: true
   type: http
-- name: 15,20|🇩🇪DE_1|1.9MB/s
+- name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_08269e...
   port: 443
-  server: 149.36.50.129
+  server: 79.76.126.155
   skip-cert-verify: true
   tls: true
   type: http
-- name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_bd2828...
+- client-fingerprint: chrome
+  encryption: none
+  name: 15|D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_cd4d0a...
+  network: ws
   port: 443
-  server: 116.202.172.99
-  skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: studiofeed
-  name: '15,19,20|🇩🇪[www.v2nodes.com] vless-DE-1... #2'
-  network: grpc
-  port: 443
-  server: 45.12.63.96
-  servername: studio.10media.top
+  server: 87.120.126.131
+  servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
   udp: true
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.110 Safari/537.36
+    path: /
   xudp: true
-- name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_bffcd7...
+- name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_92e5b5...
+  port: 443
+  server: 185.232.70.11
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 15|D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_bffcd7...
   password: None
   port: 443
   server: 87.249.132.97
@@ -516,32 +582,168 @@ proxies:
   tls: true
   type: http
   udp: true
-  username: null
-- name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_d3e5fd...
-  port: 10809
-  server: 91.107.179.68
-  type: socks5
-- name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_08269e...
+- name: 15|C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_f2e896...
+  password: myptyun.Hu5bS3VYUd3iqmaU
+  port: 8443
+  ports: 8443,7044,20000-50000
+  server: 1o2.690423.xyz
+  type: hysteria2
+- client-fingerprint: chrome
+  encryption: none
+  name: 15|D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_d037a6...
+  network: ws
+  port: 8443
+  server: 62.133.60.134
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/47.0.2526.111 Safari/537.36
+    path: /
+  xudp: true
+- name: '15,20,28|DE_speednode_0003 #1'
   port: 443
-  server: 79.76.126.155
+  server: 149.36.50.1
   skip-cert-verify: true
   tls: true
   type: http
+  udp: true
+- name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_bd2828...
+  port: 443
+  server: 116.202.172.99
+  skip-cert-verify: true
+  tls: true
+  type: http
+- client-fingerprint: chrome
+  name: 15|D🔴🇩🇪hos[🎬📺🎭🎪]_dokng.com_42ab8d...
+  network: ws
+  port: 2087
+  server: 45.157.233.109
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.181 Safari/537.36
+    path: /fp=chrome
+  xudp: true
 - name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_29dd5b...
   port: 443
   server: 87.106.223.158
   skip-cert-verify: true
   tls: true
   type: http
-- name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_c7cade...
-  port: 443
-  server: 193.233.75.115
+- name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_d3e5fd...
+  port: 10809
+  server: 91.107.179.68
+  type: socks5
+- name: 15|D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_80a235...
+  port: 9443
+  server: 87.249.132.97
   skip-cert-verify: true
   tls: true
   type: http
-- name: 15|A🟢🇩🇪res[🎬🤖📺🎭]_dokng.com_df2395...
+- client-fingerprint: chrome
+  name: 15|D🔴🇩🇪hos[🎬📺🎭🎪]_dokng.com_7d6f5a...
+  network: ws
+  port: 8443
+  server: 31.70.89.136
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.89 Safari/537.36
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560fp=chromefp=chrome
+  xudp: true
+- name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_9085ec...
+  port: 9002
+  server: 158.173.154.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+- client-fingerprint: chrome
+  encryption: none
+  name: 15|D🔴🇩🇪hos[📦]_dokng.com_99987d3b
+  network: ws
+  port: 443
+  server: 149.154.157.213
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: fp=unsafe
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: unsafe
+  encryption: none
+  name: 15|D🔴🇩🇪hos[🎬📺🎭🎪]_dokng.com_366aff...
+  network: ws
+  port: 443
+  server: 31.77.126.2
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; MYA-L22 Build/HUAWEIMYA-L22) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560
+  xudp: true
+- name: 15|A🟢🇩🇪res[🤖📺🎭✨]_dokng.com_c9afa0...
+  port: 8443
+  server: 188.120.225.125
+  skip-cert-verify: true
+  tls: true
+  type: http
+- client-fingerprint: chrome
+  encryption: none
+  name: 15,20,27|🇩🇪 德国 | DEU 7
+  network: ws
+  port: 443
+  server: 45.95.0.43
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fp=chrome
+  xudp: true
+- name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_f46708...
+  port: 443
+  server: 185.44.107.166
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_3acae6...
   port: 9443
-  server: 79.127.156.177
+  server: 213.177.229.161
   skip-cert-verify: true
   tls: true
   type: http
@@ -551,192 +753,192 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
-- name: 15|C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_99a404...
-  port: 443
-  server: 213.109.163.119
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: '15,20,28|DK_speednode_0004 #1'
-  port: 9002
-  server: 158.173.154.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 15|C🟠🇩🇪hos[🤖📺🎪✨]_dokng.com_dd7011...
-  password: None
-  port: 9443
-  server: 87.249.132.97
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- client-fingerprint: random
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
   encryption: none
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 15,24|🇫🇮|FI|AVToday.io|11
-  network: tcp
+  name: 15|D🔴🇩🇪hos_dokng.com_585335fe
+  network: ws
   port: 443
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  server: 152.233.71.81
-  servername: brointelengence.com
-  tls: false
+  server: 103.13.211.236
+  servername: snip.edgeoneai.cc.cd
+  tls: true
   type: vless
   udp: true
-  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.77 Safari/537.36
+    path: /
   xudp: true
-- name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_9085ec...
-  port: 9002
-  server: 158.173.154.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: '15,20,28|DK_speednode_0003 #1'
-  port: 9002
-  server: 158.173.154.3
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 15|D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_f9a627...
+- client-fingerprint: chrome
+  encryption: none
+  name: 15|D🔴🇩🇪hos[📺🎭🎪]_dokng.com_a157414...
+  network: ws
   port: 443
-  server: 213.177.229.161
-  skip-cert-verify: true
+  server: 159.195.45.210
+  servername: snip.edgeoneai.cc.cd
   tls: true
-  type: http
-- name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_86751a...
-  port: 9002
-  server: 158.173.154.5
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: '15,20,28|DE_speednode_0001 #1'
-  password: e4b72b531a2d10900519
-  port: 443
-  server: 167.172.172.190
-  skip-cert-verify: true
-  sni: a7acacbe.acsnet.co
-  tls: true
-  type: http
+  type: vless
   udp: true
-  username: testuser1
-- name: 15|D🔴🇩🇪hos[🤖📺🎪✨]_dokng.com_3acae6...
-  port: 9443
-  server: 213.177.229.161
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 15|A🟢🇩🇪res[🤖📺✨]_dokng.com_c9afa07...
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/63.0.3239.132 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 15|D🔴🇩🇪hos[📺🎭🎪]_dokng.com_263192e...
+  network: ws
   port: 8443
-  server: 188.120.225.125
-  skip-cert-verify: true
+  server: 93.127.223.238
+  servername: snip.edgeoneai.cc.cd
   tls: true
-  type: http
-- name: 15|D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_c36db8...
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/43.0.2357.65 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 15|D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_c0be54...
+  network: ws
   port: 443
-  server: 217.92.132.233
-  skip-cert-verify: true
+  server: 152.53.127.16
+  servername: snip.edgeoneai.cc.cd
   tls: true
-  type: http
-- name: 15|D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_92e5b5...
-  port: 443
-  server: 185.232.70.11
-  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto C Build/NRD90M.059) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 15|D🔴🇩🇪hos[📺🎭]_dokng.com_98e7a8a3
+  network: ws
+  port: 2053
+  server: 109.120.186.137
+  servername: snip.edgeoneai.cc.cd
   tls: true
-  type: http
-- name: 15|D🔴🇩🇪hos[🤖📺🎪✨]_dokng.com_6da98c...
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
+    path: /fp=unsafe
+  xudp: true
+- name: 15,20|🇩🇪DE_1|1.1MB/s
   port: 443
   server: 152.233.20.206
   skip-cert-verify: true
   tls: true
   type: http
-- name: 15|C🟠🇩🇪hos[🎬🤖📺🎭]_dokng.com_e6a5f0...
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 15|D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_39f364...
+  network: ws
   port: 443
-  server: 194.67.110.12
-  skip-cert-verify: true
+  server: 185.230.44.140
+  servername: snip.edgeoneai.cc.cd
   tls: true
-  type: http
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto C Build/NRD90M.059) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 15|D🔴🇩🇪hos[🤖📺🎭🎪]_dokng.com_ec424d...
+  network: ws
+  port: 443
+  server: 94.159.100.154
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/57.0.2987.133 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 15|D🔴🇩🇪hos[📺🎭🎪]_dokng.com_de859a7...
+  network: ws
+  port: 8443
+  server: 144.31.181.177
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/41.0.2272.118 Safari/537.36
+    path: /
+  xudp: true
 - name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_024b08...
   port: 443
   server: 176.94.74.21
   skip-cert-verify: true
   tls: true
   type: http
-- name: 15|A🟢🇩🇪res[🎬🤖📺🎭]_dokng.com_2a8612...
-  password: 'null'
+- name: 15|D🔴🇩🇪hos[🎬🤖📺🎭]_dokng.com_c7cade...
   port: 443
-  server: fan.973511.xyz
+  server: 193.233.75.115
+  skip-cert-verify: true
   tls: true
   type: http
-  username: 'null'
-- name: '19,20|🇦🇪[www.v2nodes.com] vless-AE-1... #1'
+- client-fingerprint: chrome
+  name: 19|德国 001
   network: ws
-  port: 22573
-  server: uae.unixzone.us
-  tls: false
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  ws-opts:
-    headers:
-      Host: uae.unixzone.us
-    path: /
-- name: 19,20|🇱🇰[www.v2nodes.com] vless-LK-7...
-  network: ws
-  port: 80
-  server: free.sahanwickramasinghe.me
-  tls: false
-  type: vless
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  ws-opts:
-    headers:
-      Host: free.sahanwickramasinghe.me
-    path: /
-- name: '19,20|🇫🇷[www.v2nodes.com] trojan-FR-... #1'
-  network: ws
-  password: humanity
-  port: 443
-  server: 185.220.100.168
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- alterId: 0
-  cipher: auto
-  name: 19|德国 004
-  network: ws
-  port: 443
-  server: sgp.kapok.buzz
+  port: 22222
+  server: 3.126.8.157
+  servername: telegram-channel-vlessconfig.sohala.uk
   skip-cert-verify: true
+  tfo: false
   tls: true
-  type: vmess
-  uuid: c1bac6b8-934a-44e2-9cf2-ee0db1fc1c85
+  type: vless
+  udp: true
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
   ws-opts:
     headers:
-      Host: sgp.kapok.buzz
-    path: /4befdd8a6/
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
 - alterId: 0
   cipher: auto
-  name: 19|德国 005
-  network: grpc
-  port: 30561
-  server: 88.198.91.100
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 7e1eb307-c809-4e13-963e-d17b49806683
-- alterId: 0
-  cipher: auto
-  name: 19|德国 006
+  name: 19|德国 002
   network: ws
   port: 443
   server: 139.162.178.95
@@ -748,9 +950,355 @@ proxies:
     headers:
       Host: fixedfloati.cfd
     path: /linkwsd
+- client-fingerprint: chrome
+  name: 19|德国 003
+  network: grpc
+  port: 2087
+  server: 91.107.144.179
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: bb29c155-d55e-4c07-8403-0581e384f7a2
+- client-fingerprint: chrome
+  name: 19|德国 004
+  network: grpc
+  port: 2087
+  server: 91.107.146.179
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: bb29c155-d55e-4c07-8403-0581e384f7a2
+- client-fingerprint: chrome
+  name: 19|德国 005
+  network: grpc
+  port: 2096
+  server: 91.107.250.45
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c0b9dd6c-9676-4cd1-9e7c-9c6ac59afd37
+- client-fingerprint: chrome
+  name: 19|德国 006
+  network: ws
+  port: 8443
+  server: 91.107.133.198
+  servername: vpkplldw6.athlenic.info
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
+  ws-opts:
+    headers:
+      Host: vpkplldw6.athlenic.info
+- client-fingerprint: chrome
+  name: 19|德国 007
+  network: ws
+  port: 443
+  server: 49.12.189.237
+  servername: aglon.frederick-malaghejoon.info
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: cd2e9541-3fce-4d95-9bec-919d884f911e
+  ws-opts:
+    headers:
+      Host: aglon.frederick-malaghejoon.info
+    path: /tiger
+- client-fingerprint: chrome
+  name: 19|德国 008
+  network: ws
+  port: 443
+  server: 88.99.84.173
+  servername: yhrug.samuel-ghametnabashe.info
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: cd2e9541-3fce-4d95-9bec-919d884f911e
+  ws-opts:
+    headers:
+      Host: yhrug.samuel-ghametnabashe.info
+    path: /tiger
+- client-fingerprint: chrome
+  name: 19|德国 009
+  network: ws
+  port: 8443
+  server: 5.75.199.72
+  servername: asd6.personapps.info
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 65bf2a3d-76fd-4169-ae45-5829945f3d61
+  ws-opts:
+    headers:
+      Host: asd6.personapps.info
+    path: /
+- client-fingerprint: chrome
+  name: 19|德国 010
+  network: ws
+  port: 8443
+  server: 5.75.203.88
+  servername: asd1.personapps.info
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 65bf2a3d-76fd-4169-ae45-5829945f3d61
+  ws-opts:
+    headers:
+      Host: asd1.personapps.info
+    path: /
+- client-fingerprint: chrome
+  name: 19|德国 011
+  network: ws
+  port: 8443
+  server: 168.119.191.52
+  servername: lkrkdral16.movetix.info
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
+  ws-opts:
+    headers:
+      Host: lkrkdral16.movetix.info
+    path: /
+- client-fingerprint: chrome
+  name: 19|德国 012
+  network: ws
+  port: 443
+  server: 77.90.10.16
+  servername: dewuxian.pai50288.uk
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: a8e84392-4d52-4886-afa6-76fdfaf49c86
+  ws-opts:
+    headers:
+      Host: dewuxian.pai50288.uk
+    path: /a8e84392
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 19|德国 013
+  network: tcp
+  port: 443
+  server: 89.144.25.195
+  servername: chopper.lnmarketplace.net
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c3231e14-aca0-43d0-8970-8b4eb2ec3c3f
 - alterId: 0
   cipher: auto
-  name: 19|德国 007
+  name: 19|德国 014
+  network: tcp
+  port: 2095
+  server: 178.128.203.125
+  skip-cert-verify: true
+  type: vmess
+  uuid: 774c11a4-62db-40b7-9b3a-d2a6a1cfc9c6
+- alterId: 0
+  cipher: auto
+  name: 19|德国 015
+  network: tcp
+  port: 15713
+  server: 193.108.118.136
+  skip-cert-verify: true
+  type: vmess
+  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
+- alterId: 0
+  cipher: auto
+  name: 19|德国 016
+  network: tcp
+  port: 24164
+  server: 193.108.117.143
+  skip-cert-verify: true
+  type: vmess
+  uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
+- client-fingerprint: chrome
+  name: 19|德国 017
+  network: ws
+  port: 80
+  server: 91.107.185.161
+  servername: foffmelo.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: /olem/ws?ed=1024
+- client-fingerprint: chrome
+  name: 19|德国 018
+  network: tcp
+  port: 443
+  server: 91.107.153.103
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 95701d09-280b-478f-9812-ae2947cc1b1e
+- client-fingerprint: chrome
+  name: 19|德国 019
+  network: tcp
+  port: 443
+  server: 91.107.246.46
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 95701d09-280b-478f-9812-ae2947cc1b1e
+- client-fingerprint: chrome
+  name: 19|德国 020
+  network: ws
+  port: 2095
+  server: 91.107.188.6
+  servername: da8.speedtest.hopeserver1.tech.
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 848665ec-ca92-4ac4-ba92-c277a0d27558
+  ws-opts:
+    headers:
+      Host: da8.speedtest.hopeserver1.tech.
+    path: /ed=2082
+- client-fingerprint: chrome
+  name: 19|德国 021
+  network: ws
+  port: 80
+  server: 116.202.230.40
+  servername: www.speedtest.net.speedtest2.cfd.
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: www.speedtest.net.speedtest2.cfd.
+    path: /
+- client-fingerprint: chrome
+  name: 19|德国 022
+  network: ws
+  port: 2082
+  server: 195.201.138.38
+  servername: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6bdb153d-c2b6-4552-ada4-164ed36b9acf
+  ws-opts:
+    headers:
+      Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|德国 023
+  network: tcp
+  port: 8880
+  server: 49.13.174.214
+  skip-cert-verify: true
+  type: vmess
+  uuid: a20549a3-1dbb-4376-ea36-4325e7857efb
+- client-fingerprint: chrome
+  name: 19|德国 024
+  network: ws
+  port: 8443
+  server: 65.21.55.252
+  servername: be9aqsoycf.myspdmmeti.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
+  ws-opts:
+    headers:
+      Host: be9aqsoycf.myspdmmeti.com
+    path: /
+- client-fingerprint: chrome
+  name: 19|德国 025
+  network: ws
+  port: 8443
+  server: 135.181.197.223
+  servername: an66mg2gf4.myspdmmeti.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
+  ws-opts:
+    headers:
+      Host: an66mg2gf4.myspdmmeti.com
+    path: /
+- client-fingerprint: chrome
+  name: 19|德国 026
+  network: ws
+  port: 8443
+  server: 157.180.26.112
+  servername: knucwsvj17.cyclomax.info
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
+  ws-opts:
+    headers:
+      Host: knucwsvj17.cyclomax.info
+    path: /
+- client-fingerprint: chrome
+  name: 19|德国 027
+  network: ws
+  port: 80
+  server: 157.180.23.3
+  servername: news6.testsnew.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5c6460ab-5eb1-41c0-8187-6a57d7cfbfab
+  ws-opts:
+    headers:
+      Host: news6.testsnew.com
+    path: /wss
+- alterId: 0
+  cipher: auto
+  name: 19|德国 028
   network: ws
   port: 443
   server: 130.61.23.77
@@ -764,911 +1312,104 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 19|德国 008
-  network: ws
-  port: 8080
-  server: 138.68.90.231
-  skip-cert-verify: true
-  type: vmess
-  uuid: 294ffdc3-5942-45ae-a154-dc6c92eacf1d
-  ws-opts:
-    headers:
-      Host: 138.68.90.231
-    path: /cctv13/hd.m3u8
-- alterId: 0
-  cipher: auto
-  name: 19|德国 009
-  network: http
-  port: 40969
-  server: 5.161.106.72
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2fb9f60e-d4dc-458b-e3b2-d9b44f9bbd9e
-- alterId: 0
-  cipher: auto
-  name: 19|德国 010
-  network: http
-  port: 50978
-  server: 5.161.106.72
-  skip-cert-verify: true
-  type: vmess
-  uuid: 89e6248b-0152-4317-a6ed-b6a0cf41f2cb
-- alterId: 0
-  cipher: auto
-  name: 19|德国 011
-  network: http
-  port: 443
-  server: 157.90.20.18
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
-- alterId: 0
-  cipher: auto
-  name: 19|德国 012
-  network: http
-  port: 443
-  server: 5.75.168.155
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
-- alterId: 0
-  cipher: auto
-  name: 19|德国 013
-  network: http
-  port: 443
-  server: 94.130.25.155
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
-- alterId: 0
-  cipher: auto
-  name: 19|德国 014
-  network: http
-  port: 443
-  server: 167.235.136.155
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
-- alterId: 0
-  cipher: auto
-  name: 19|德国 015
-  network: http
-  port: 443
-  server: 65.21.240.108
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
-- alterId: 0
-  cipher: auto
-  name: 19|德国 016
-  network: http
-  port: 443
-  server: 5.75.247.192
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
-- alterId: 0
-  cipher: auto
-  name: 19|德国 017
-  network: http
-  port: 443
-  server: 88.198.104.211
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
-- alterId: 4
-  cipher: auto
-  name: 19|德国 018
-  network: ws
-  port: 443
-  server: 146.0.42.87
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-opts:
-    headers:
-      Host: germany-dusseldorf.mah3Hoet.com
-    path: /ws
-- name: 19|德国 019
-  network: ws
-  port: 2087
-  server: fert6.localip.ir
-  servername: fert6.localip.ir
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  ws-opts:
-    headers:
-      Host: fert6.localip.ir
-    path: /hokmsecurity=tls
-- alterId: 0
-  cipher: auto
-  name: 19|德国 020
+  name: 19|德国 029
   network: tcp
-  port: 2053
-  server: 178.63.237.158
+  port: 38872
+  server: 94.136.184.156
   skip-cert-verify: true
   type: vmess
-  uuid: 2d4dd672-180f-415c-9035-e2fc461dd95a
+  uuid: 220732cc-9e43-4453-83f1-c9435be25b5b
 - alterId: 0
   cipher: auto
-  name: 19|德国 021
+  name: 19|德国 030
   network: tcp
-  port: 10803
-  server: 5.45.97.147
+  port: 27575
+  server: 194.233.72.228
   skip-cert-verify: true
   type: vmess
-  uuid: 018fbfb7-721a-49a9-b9f5-fb55d92592b6
-- alterId: 64
-  cipher: auto
-  name: 19|德国 022
-  network: tcp
-  port: 31484
-  server: 168.119.107.162
-  skip-cert-verify: true
-  type: vmess
-  uuid: 943961b8-4e27-4bdf-a048-c2f724f542fb
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19|德国 023
-  network: tcp
-  port: 443
-  server: 46.183.187.73
-  skip-cert-verify: true
-  type: vmess
-  uuid: 92a048ec-a160-497e-8069-c2e902626d7a
+  uuid: 16509262-dbe2-43ba-99ce-07913d2a18b4
 - alterId: 0
   cipher: auto
-  name: 19|德国 024
-  network: tcp
-  port: 8080
-  server: 91.107.162.63
-  skip-cert-verify: true
-  type: vmess
-  uuid: d1d5430b-034f-4cec-963b-a18c1e353782
-- alterId: 0
-  cipher: auto
-  name: 19|德国 025
-  network: tcp
-  port: 80
-  server: 128.140.109.232
-  skip-cert-verify: true
-  type: vmess
-  uuid: 05a178f9-e6ba-4006-93d7-3d980cdc3a76
-- name: 19|德国 026
-  network: xhttp
-  port: 443
-  server: 167.233.219.201
-  servername: fsn1.nordlinkcloud.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 05bfcbaa-cba0-4bce-9103-09fe3f5f0667
-- name: 19|德国 027
-  network: tcp
-  port: 8880
-  server: 91.107.167.241
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06f25be2-97d2-4144-9a1e-c6fe4949d41b
-- client-fingerprint: chrome
-  name: 19|德国 028
-  network: ws
-  port: 2053
-  server: 194.76.173.6
-  servername: vpn47.cc.cd
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
-  ws-opts:
-    headers:
-      Host: vpn47.cc.cd
-    path: /
-- name: 19|德国 029
-  network: tcp
-  port: 443
-  server: 91.107.166.1
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0d863091-6358-4cf5-9d3a-a47f29997baf
-- name: 19|德国 030
-  network: tcp
-  port: 443
-  server: 91.107.154.88
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0da6aa8c-0709-48b6-858f-824ae13cfb16
-- client-fingerprint: chrome
   name: 19|德国 031
-  network: ws
-  port: 47090
-  server: 5.9.89.83
-  servername: 5.9.89.83
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 14109d71-1b12-40ff-82a5-5313d8edce86
-  ws-opts:
-    headers:
-      Host: 5.9.89.83
-    path: /
-- client-fingerprint: chrome
+  network: tcp
+  port: 14372
+  server: 62.146.232.159
+  skip-cert-verify: true
+  type: vmess
+  uuid: ed1d7ea8-bf40-4a4a-8eac-8e57798ba6f7
+- alterId: 0
+  cipher: auto
   name: 19|德国 032
-  network: xhttp
-  port: 443
-  server: 179.61.138.133
-  servername: static.lotussec.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-- client-fingerprint: chrome
+  network: tcp
+  port: 33281
+  server: 62.146.232.156
+  skip-cert-verify: true
+  type: vmess
+  uuid: 24eda0ea-acf0-4538-a001-f746a480237a
+- alterId: 0
+  cipher: auto
   name: 19|德国 033
-  network: xhttp
-  port: 443
-  server: 5.175.249.149
-  servername: static.lotussec.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-- client-fingerprint: chrome
+  network: tcp
+  port: 36712
+  server: 62.146.233.112
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9266df42-0830-48c2-8509-4c57b30fe29d
+- alterId: 0
+  cipher: auto
   name: 19|德国 034
-  network: xhttp
-  port: 443
-  server: 89.144.30.154
-  servername: static.lotussec.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-- name: 19|德国 035
   network: tcp
-  port: 28112
-  server: 49.13.19.156
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2e6532d5-3e05-4d2a-9000-fc9d549e707b
-- name: 19|德国 036
-  network: grpc
-  port: 8880
-  server: 157.180.19.140
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2f213d34-c9bd-4caa-876c-1242a1b91f1f
-- name: 19|德国 037
+  port: 38324
+  server: 62.146.233.115
+  skip-cert-verify: true
+  type: vmess
+  uuid: f863ef99-5ef0-4321-aaac-a476a5e8c3fb
+- alterId: 0
+  cipher: auto
+  name: 19|德国 035
   network: tcp
-  port: 2091
-  server: 159.69.89.40
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3789037c-ec91-4438-a3c5-da6513354ea1
-- name: 19|德国 038
-  network: grpc
-  port: 8880
-  server: 157.180.94.33
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 38d9aa32-f728-489d-84f9-0e9a76970ce1
-- name: 19|德国 039
+  port: 43763
+  server: 62.146.233.159
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1ddf3ade-5b8c-420c-84f6-f96979ec3080
+- alterId: 0
+  cipher: auto
+  name: 19|德国 036
   network: tcp
-  port: 8080
-  server: 91.107.151.122
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 39098241-9c6e-4fe7-abbd-7f6f6ed4512c
-- name: 19|德国 040
+  port: 50678
+  server: 62.146.233.53
+  skip-cert-verify: true
+  type: vmess
+  uuid: 5d1ec6e7-fd58-4e85-91c5-6335a86d2775
+- alterId: 0
+  cipher: auto
+  name: 19|德国 037
   network: tcp
-  port: 9090
-  server: 91.107.249.200
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 39a4fc8e-1991-45dc-9a70-89169df89ec9
-- name: 19|德国 041
+  port: 52856
+  server: 62.146.232.157
+  skip-cert-verify: true
+  type: vmess
+  uuid: ed54e388-bfc5-4b36-ae4d-8b3cd460d3d4
+- alterId: 0
+  cipher: auto
+  name: 19|德国 038
   network: tcp
-  port: 443
-  server: 18.192.50.101
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3f3bb5cc-da8b-4551-8b76-ba223f1a5255
-- name: 19|德国 042
-  network: tcp
-  port: 2087
-  server: 167.233.54.146
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4077de3d-64cb-41cb-bee2-9178210e5fb4
-- name: 19|德国 043
-  network: tcp
-  port: 443
-  server: 91.107.253.58
-  servername: je4vkksf427c.dop6.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 43b1a9c1-00b8-4b0d-b77d-c52a8fb38e65
-- name: 19|德国 044
-  network: tcp
-  port: 8880
-  server: 51.38.127.93
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 496dad36-5f9a-4574-9173-a2f80dde6660
-- name: 19|德国 045
-  network: tcp
-  port: 8443
-  server: 49.13.168.128
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4db42a40-9de3-499f-ab5f-85073abb9a46
-- name: 19|德国 046
-  network: tcp
-  port: 443
-  server: 91.107.188.182
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 57565f1e-d42a-49a0-a909-5fff0f07b146
-- name: 19|德国 047
-  network: tcp
-  port: 440
-  server: 167.71.45.85
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 19|德国 048
-  network: tcp
-  port: 443
-  server: 84.201.14.179
-  servername: ddos-protect.surfweb.club
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5b5e4cbf-2366-499a-8327-0cd9918c687d
-- name: 19|德国 049
-  network: tcp
-  port: 9090
-  server: 91.107.152.245
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c19d97e-6f02-4ca8-91b7-d3ef4341c95e
-- name: 19|德国 050
-  network: tcp
-  port: 2053
-  server: 185.231.115.48
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6263516e-13f4-4a29-8c6b-a999aafa438b
-- name: 19|德国 051
-  network: tcp
-  port: 59791
-  server: 91.107.162.52
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6562121a-fa15-448d-a880-b127a1095875
-- name: 19|德国 052
-  network: tcp
-  port: 15003
-  server: 91.107.179.8
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 69d8dc73-20ff-4241-bdd8-a9d6d07553b6
-- name: 19|德国 053
-  network: ws
-  port: 1280
-  server: 167.233.96.254
-  servername: is1-ssl.mzstatic.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6bda1096-457f-4c70-9698-65eb5eee163b
-  ws-opts:
-    headers:
-      Host: is1-ssl.mzstatic.com
-    path: /
-- name: 19|德国 054
-  network: tcp
-  port: 56539
-  server: 5.75.194.217
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6d68f1bd-c636-4985-acc1-e17c53ccedb8
-- name: 19|德国 055
-  network: tcp
-  port: 8080
-  server: 81.7.11.36
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 74ec8e11-a82e-4b89-95aa-97a7b1a6c99b
-- name: 19|德国 056
-  network: tcp
-  port: 35448
-  server: 168.119.107.162
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 788c24fa-af91-4b0d-a589-48381b07101a
-- name: 19|德国 057
-  network: ws
-  port: 8080
-  server: 168.119.48.210
-  servername: fast.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7cd6adff-8849-4fad-b3b3-857721c81477
-  ws-opts:
-    headers:
-      Host: fast.com
-    path: /
-- name: 19|德国 058
-  network: ws
-  port: 8080
-  server: 49.13.74.174
-  servername: fast.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7cd6adff-8849-4fad-b3b3-857721c81477
-  ws-opts:
-    headers:
-      Host: fast.com
-    path: /
-- encryption: mlkem768x25519plus.native.0rtt.ANymG3pbNTc9XneprZhNvxHRz5_PxHksy0egsbnZXFA
-  name: 19,20|🇺🇸[www.v2nodes.com] vless-US-1...
-  network: tcp
-  port: 443
-  server: 194.113.74.166
-  skip-cert-verify: false
-  tfo: false
+  port: 53144
+  server: 62.146.232.153
+  skip-cert-verify: true
+  type: vmess
+  uuid: 13e13a3e-e981-4eea-a9fc-13e50628fd9b
+- encryption: none
+  name: '20,24|未命名 #177'
+  network: vless
+  port: 2052
+  server: edge10.cyrionflare.com
+  skip-cert-verify: true
   tls: false
   type: vless
   udp: true
-  uuid: 7d5cdbb1-9632-483a-9b50-27932cfa9390
-  ws-opts:
-    headers:
-      Host: play.google.com
-- name: 19|德国 060
-  network: tcp
-  port: 24391
-  server: 91.107.255.167
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7d8584e3-410b-4667-a9b3-9a6465d4f999
-- name: 19|德国 061
-  network: tcp
-  port: 1001
-  server: 91.107.169.16
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8038f7de-9bba-4ebd-8352-556bc7316c11
-- name: 19|德国 062
-  network: tcp
-  port: 35696
-  server: 91.107.249.108
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89238afb-0166-4ff0-85de-f7bec650a818
-- client-fingerprint: chrome
-  name: 19|德国 063
-  network: xhttp
-  port: 8443
-  server: 91.107.191.188
-  servername: host.taghvimtime.ir
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90c08c98-7ec8-4fab-da36-cf140d18c708
-- name: 19|德国 064
-  network: tcp
-  port: 8080
-  server: 91.107.244.55
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 92929b0d-a473-4ea2-bba5-f651ea263872
-- name: 19|德国 065
-  network: tcp
-  port: 9090
-  server: 91.107.240.245
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9804f109-f750-4dec-9c3a-091982320501
-- name: 19|德国 066
-  network: tcp
-  port: 2025
-  server: 91.107.249.185
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9804f109-f750-4dec-9c3a-091982320501
-- name: 19|德国 067
-  network: tcp
-  port: 65535
-  server: 5.75.207.9
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-- client-fingerprint: chrome
-  name: 19|德国 068
-  network: xhttp
-  port: 443
-  server: 31.185.108.84
-  servername: daredevil2.manufacturingcity.ir
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-- name: 19|德国 069
-  network: ws
-  port: 47081
-  server: 78.47.104.114
-  servername: dynu.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: dynu.com
-    path: /index.php
-- name: 19|德国 070
-  network: tcp
-  port: 23746
-  server: 116.203.1.152
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 19|德国 071
-  network: tcp
-  port: 443
-  server: 85.93.10.247
-  servername: kings.applepie-recipe.ru
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: a3304281-9ecc-4fed-a6ba-e77e07928877
-- client-fingerprint: chrome
-  name: 19|德国 072
-  network: ws
-  port: 2087
-  server: 94.103.168.125
-  servername: sdcdethyerft.localip.ir
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  ws-opts:
-    headers:
-      Host: sdcdethyerft.localip.ir
-    path: /hokm
-- name: 19|德国 073
-  network: ws
-  port: 2087
-  server: 94.103.168.52
-  servername: fert1qswdfegrthy.localip.ir
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  ws-opts:
-    headers:
-      Host: fert1qswdfegrthy.localip.ir
-    path: /hokm
-- name: 19|德国 074
-  network: tcp
-  port: 56539
-  server: 5.75.193.170
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b710a6da-bcbe-474a-bdc7-9162ba483c4d
-- name: 19|德国 075
-  network: tcp
-  port: 56539
-  server: 5.75.195.244
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b710a6da-bcbe-474a-bdc7-9162ba483c4d
-- name: 19|德国 076
-  network: tcp
-  port: 56539
-  server: 5.75.201.230
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b710a6da-bcbe-474a-bdc7-9162ba483c4d
-- name: 19|德国 077
-  network: tcp
-  port: 56539
-  server: 5.75.201.28
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b710a6da-bcbe-474a-bdc7-9162ba483c4d
-- name: 19|德国 078
-  network: tcp
-  port: 9090
-  server: 167.235.255.207
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b9a0376d-da0d-40c7-9540-73173b0be623
-- name: 19|德国 079
-  network: tcp
-  port: 443
-  server: 91.107.245.59
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c27e9b8b-52ea-43e2-b491-aaca7d955cd4
-- flow: ''
-  name: 19|德国 080
-  network: tcp
-  port: 443
-  server: 18.185.25.147
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c430370a-4b00-4686-bfb9-36ef1b989dcd
-- name: 19|德国 081
-  network: tcp
-  port: 8880
-  server: 91.107.174.119
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: cd37aa8e-11c0-45e6-972b-ef13c416dff8
-- name: 19|德国 082
-  network: tcp
-  port: 1234
-  server: 159.69.193.221
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: cf546c96-ed5e-46cc-b080-1cacf1770a5c
-- name: 19|德国 083
-  network: tcp
-  port: 28117
-  server: 49.13.19.156
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d225a842-cef9-45de-9f8a-2bcbd584953e
-- name: 19|德国 084
-  network: tcp
-  port: 9093
-  server: 91.107.160.117
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d636f99d-c29c-4f95-8a56-bc37806783ae
-- name: 19|德国 085
-  network: tcp
-  port: 23746
-  server: 49.13.36.171
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: de43a9ca-6cc0-441e-981d-53208760cd90
-- name: 19|德国 086
-  network: tcp
-  port: 53224
-  server: 95.179.169.44
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4887910-bcfc-48f8-8cd4-abb592e181af
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 19|德国 087
-  network: tcp
-  port: 5432
-  server: 193.23.201.133
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 19|德国 088
-  network: tcp
-  port: 5432
-  server: 193.23.201.65
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee
-- name: 19|德国 089
-  network: tcp
-  port: 1234
-  server: 167.233.47.127
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f0696c33-61de-42c7-ba69-c0b8cd57b79e
-- name: 19|德国 090
-  network: tcp
-  port: 9093
-  server: 91.107.171.10
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f628a861-f351-4695-ba9d-f27f450d23a2
-- name: 19|德国 091
-  network: tcp
-  port: 443
-  server: 3.126.31.60
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: fa12c1f5-24be-4119-8506-aad16f3bcd35
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 20|🇩🇪192088 | ⚡️Telegram = t.me/v...
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -1688,52 +1429,99 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: '20|🇩🇪 德国 | DEU #4'
+  name: 20|🇩🇪[www.v2nodes.com] vless-DE-1...
+  network: ws
+  port: 443
+  server: wwww.qarvian.ir
+  servername: firefox.com
+  tls: true
+  type: vless
+  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
+  ws-opts:
+    headers:
+      Host: copy_az_channel_NUFiLTER_a11ia.global.ssl.fastly.net.
+    path: /
+- alpn:
+  - http/1.1
+  client-fingerprint: unsafe
+  name: '20|🇩🇪[www.v2nodes.com] vless-DE-1... #1'
+  network: ws
+  port: 443
+  server: shortbig.ir
+  servername: alman.5f2vvtqh5syot.info
+  tls: true
+  type: vless
+  uuid: ed6c724c-435f-4f83-a781-f57579af320b
+  ws-opts:
+    headers:
+      Host: alman.5f2vvtqh5syot.info
+    path: /9d9fdbc18c834cffab4276811501fbae
+- client-fingerprint: chrome
+  name: '20|🇩🇪[www.v2nodes.com] vless-DE-1... #2'
   network: ws
   port: 443
   server: 146.75.59.186
   servername: firefox.com
   tls: true
   type: vless
-  udp: true
   uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
   ws-opts:
     headers:
       Host: copy_az_channel_NUFiLTER_a1i.global.ssl.fastly.net.
     path: /
-- encryption: none
-  name: '20,24|عضو کانال شوید @ShadowProxy66 ... #7'
-  network: tcp
+- client-fingerprint: chrome
+  name: '20|🇩🇪[www.v2nodes.com] vless-DE-1... #3'
+  network: ws
+  port: 443
+  server: 146.75.59.189
+  servername: firefox.com
+  tls: true
+  type: vless
+  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
+  ws-opts:
+    headers:
+      Host: copy_az_channel_NUFiLTER_a1i.global.ssl.fastly.net.
+    path: /
+- name: '20,24|未命名 #169'
+  network: vless
   port: 10000
   server: connect.wecantos.site
   tls: false
   type: vless
   uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-- name: '20|🇩🇪[www.v2nodes.com] vless-DE-1... #3'
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: studiofeed
+  name: '20|🇩🇪[www.v2nodes.com] vless-DE-1... #5'
+  network: grpc
+  port: 443
+  server: 45.12.63.96
+  servername: studio.10media.top
+  tls: true
+  type: vless
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+- name: '20|🇩🇪[www.v2nodes.com] vless-DE-1... #6'
   port: 443
   server: 146.75.59.186
   tls: false
   type: vless
   uuid: eccc053a-7196-47cb-a4b5-f4b8bfd743d9
-- alpn:
-  - http/1.1
-  client-fingerprint: edge
-  name: '20|🇩🇪[www.v2nodes.com] vless-DE-1... #4'
-  network: ws
+- cipher: aes-256-gcm
+  name: 20|🇩🇪[www.v2nodes.com] ss-DE-1602...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 185.176.204.18
+  type: ss
+- name: 20|🇩🇪[www.v2nodes.com] trojan-DE-...
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
-  server: gpt.prem-ai.shop
-  servername: gpt.prem-ai.shop
-  tls: true
-  type: vless
-  uuid: c19ecc7f-8312-4d9d-90c9-1a997d82d3c5
-  ws-opts:
-    headers:
-      Host: gpt.prem-ai.shop
-    path: /stream/v1/session/media
+  server: it1.dedushka.top
+  skip-cert-verify: false
+  sni: it1.dedushka.top
+  type: trojan
 - alpn:
   - http/1.1
-  name: 20|🇩🇪[www.v2nodes.com] trojan-DE-...
-  network: tcp
+  name: '20|🇩🇪[www.v2nodes.com] trojan-DE-... #1'
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: de2.dedushka.top
@@ -1742,18 +1530,15 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '20|🇩🇪[www.v2nodes.com] trojan-DE-... #1'
-  network: tcp
+  name: '20|🇩🇪[www.v2nodes.com] trojan-DE-... #2'
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: de6.dedushka.top
-  skip-cert-verify: false
   sni: de6.dedushka.top
   type: trojan
 - alpn:
   - http/1.1
-  name: '20|🇩🇪[www.v2nodes.com] trojan-DE-... #2'
-  network: tcp
+  name: '20|🇩🇪[www.v2nodes.com] trojan-DE-... #3'
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: de8.dedushka.top
@@ -1762,8 +1547,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '20|🇩🇪[www.v2nodes.com] trojan-DE-... #3'
-  network: tcp
+  name: '20|🇩🇪[www.v2nodes.com] trojan-DE-... #4'
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: de4.dedushka.top
@@ -1772,108 +1556,37 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '20|🇩🇪[www.v2nodes.com] trojan-DE-... #4'
-  network: tcp
+  name: '20|🇩🇪[www.v2nodes.com] trojan-DE-... #5'
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: 188.241.241.236
   skip-cert-verify: false
   sni: de10.dedushka.top
   type: trojan
-- name: '20|🇩🇪[www.v2nodes.com] trojan-DE-... #5'
+- name: '20|🇩🇪[www.v2nodes.com] trojan-DE-... #6'
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: de7.dedushka.top
   sni: de7.dedushka.top
   type: trojan
-- client-fingerprint: chrome
-  name: '20|🇩🇪 德国 | DEU #1'
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: 20,27|🇩🇪 德国 | DEU
   network: ws
-  port: 443
-  server: 155.117.234.52
-  servername: snip.edgeoneai.cc.cd
+  port: 2096
+  server: 144.31.34.146
+  servername: fi1.merky.one
   tls: true
   type: vless
   udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   ws-opts:
     headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /
+      Host: fi1.merky.one
+    path: /mky-ws-4f19c8a7
 - client-fingerprint: chrome
-  name: '20|🇩🇪 德国 | DEU #2'
-  network: ws
-  port: 8443
-  server: 2.28.42.209
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- client-fingerprint: chrome
-  name: '20|🇩🇪 德国 | DEU #3'
-  network: ws
-  port: 443
-  server: 91.107.189.117
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fp=chrome
-- client-fingerprint: chrome
-  name: '20|🇩🇪 德国 | DEU #5'
-  network: ws
-  port: 443
-  server: 103.13.211.236
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- name: '20|🇩🇪 德国 | DEU #6'
-  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
-  port: 59023
-  server: fj3x.waimaosass.icu
-  skip-cert-verify: true
-  sni: iosapps.itunes.apple.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: '20|🇩🇪 德国 | DEU #8'
-  network: ws
-  port: 443
-  server: 46.101.252.80
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- name: '20|🇩🇪 德国 | DEU #10'
-  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
-  port: 59024
-  server: fj3x.waimaosass.icu
-  skip-cert-verify: true
-  sni: iosapps.itunes.apple.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: '20,27|🇩🇪 德国 | DEU #7'
+  name: 20,27|🇩🇪 德国 | DEU 4
   network: ws
   port: 8443
   server: 185.208.172.85
@@ -1886,110 +1599,29 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- client-fingerprint: chrome
-  name: '20,27|🇩🇪 德国 | DEU 2 #1'
-  network: ws
-  port: 8443
-  server: 62.133.60.134
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
+- http-opts:
     headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /
-- client-fingerprint: chrome
-  name: '20,27|🇩🇪 德国 | DEU 3 #1'
-  network: ws
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: 20,27|🇩🇪 德国 | DEU 5
+  network: http
   port: 443
-  server: 109.120.157.35
-  servername: snip.edgeoneai.cc.cd
-  tls: true
+  server: 3.77.199.28
+  tls: false
   type: vless
   udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '20,27|🇩🇪 德国 | DEU 4 #1'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: D16XKCyXDstbMKxA1qHzgL6AfOcwbQBFF9XKdNoVL04
-    short-id: '00000000'
-  server: 13.143.162.138
-  servername: st7-23.vk.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d0c6f95-7e53-45eb-ba93-89c90331954a
-- client-fingerprint: chrome
-  name: '20,27|🇩🇪 德国 | DEU 5 #1'
-  network: ws
-  port: 443
-  server: wwww.qarvian.ir
-  servername: firefox.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  ws-opts:
-    headers:
-      Host: copy_az_channel_NUFiLTER_a11ia.global.ssl.fastly.net.
-    path: /
-- client-fingerprint: chrome
-  name: '20,27|🇩🇪 德国 | DEU 6 #1'
-  network: ws
-  port: 443
-  server: 146.75.59.189
-  servername: firefox.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  ws-opts:
-    headers:
-      Host: copy_az_channel_NUFiLTER_a1i.global.ssl.fastly.net.
-    path: /
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
 - alpn:
+  - h3
   - h2
-  - http/1.1
-  client-fingerprint: unsafe
-  name: '20,27|🇩🇪 德国 | DEU 7 #1'
-  network: xhttp
-  port: 2087
-  server: 188.114.98.0
-  servername: ssmeall.javanrooo.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: fd6fb48f-b324-4a82-9dcd-f8bdb1bd5301
-  xhttp-opts:
-    path: /Reset.You1
-- client-fingerprint: chrome
-  name: '20,27|🇩🇪 德国 | DEU 8 #1'
+  client-fingerprint: chrome
+  name: 20,27|🇩🇪 德国 | DEU 6
   network: ws
   port: 443
-  server: 152.53.127.16
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /
-- client-fingerprint: chrome
-  name: '20,27|🇩🇪 德国 | DEU 9 #1'
-  network: ws
-  port: 8443
-  server: 178.105.113.205
+  server: 162.159.135.234
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -1999,57 +1631,64 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- client-fingerprint: chrome
-  name: '20,27|🇩🇪 德国 | DEU 10 #1'
-  network: ws
-  port: 443
-  server: 103.160.59.198
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
+- http-opts:
     headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /
-- flow: xtls-rprx-vision
-  name: 21|🇪_DE_国
-  port: 7444
-  server: de777.lavivas.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 44e1105d-b46e-402f-933b-eaa136fcbb24
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '21|🇩🇪_DE_德国_1 #1'
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: 20,27|🇩🇪 德国 | DEU 8
+  network: http
   port: 443
-  reality-opts:
-    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
-    short-id: 4fa44664f6a566d3
-  server: gesmankos.sadiepinki.com
-  servername: gesmankos.sadiepinki.com
-  skip-cert-verify: true
-  tls: true
+  server: 63.178.23.66
+  tls: false
   type: vless
   udp: true
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 21|🇩🇪_DE_德国_3
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+- http-opts:
+    headers:
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: 20,27|🇩🇪 德国 | DEU 9
+  network: http
   port: 443
-  reality-opts:
-    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
-    short-id: 4fa44664f6a566d3
-  server: 45.95.96.236
-  servername: gesmankos.sadiepinki.com
+  server: 63.179.5.24
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+- name: '20,28|DE_speednode_0002 #1'
+  password: None
+  port: 9443
+  server: 87.249.132.97
   skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: '20,28|DE_speednode_0004 #1'
+  port: 443
+  server: 149.36.50.157
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: '20,27|🇩🇪 德国 | DEU 3 #1'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg
+  server: 212.87.222.10
+  servername: www.nokia.com
   tls: true
   type: vless
   udp: true
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  uuid: 8afeb33c-b686-43e9-a629-0d98f991ec28
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: studiofeed
@@ -2061,14 +1700,505 @@ proxies:
   tls: true
   type: vless
   uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
-- name: 24|🇩🇪DE_34|951KB/s|K001-260618 01
-  password: h7mp2xy9kj4nq8wr5tf6vb3z
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '24|未命名 #165'
+  network: vless
   port: 443
-  server: vpn-de-002.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-de-002.fastervpn.world
+  reality-opts:
+    public-key: kqKpUiLtm5SPT2NO5Ss4LuH9xpTOxi79UJZWURwulwI
+    short-id: 547f159030aedc64
+  server: 144.31.215.162
+  servername: c1.qwyak.ru
   tls: false
-  type: hysteria2
+  type: vless
+  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
+- name: '24|未命名 #167'
+  network: vless
+  port: 45021
+  server: 31.77.148.89
+  tls: false
+  type: vless
+  uuid: ad263f1c-199e-4aaf-bf22-c3ad0407d377
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_149
+  network: ws
+  port: 8443
+  server: 2.28.42.209
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40public-vpn-200.opengw.net%3A443fp%3Dchrome'
+- client-fingerprint: chrome
+  name: 24|zhuhai.uk 🇩🇪 德国 03
+  network: ws
+  port: 8443
+  server: 178.105.113.205
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40public-vpn-200.opengw.net%3A443'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_155
+  network: ws
+  port: 2053
+  server: 178.105.215.151
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40public-vpn-200.opengw.net%3A443'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_160
+  network: ws
+  port: 8443
+  server: 2.28.42.209
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40public-vpn-200.opengw.net%3A443'
+- client-fingerprint: chrome
+  name: '24|zhuhai.uk 🇩🇪 德国 04 #1'
+  network: ws
+  port: 443
+  server: 91.107.189.117
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2Ffp%3Dchrome'
+- client-fingerprint: chrome
+  name: 24|zhuhai.uk 🇩🇪 德国 06
+  network: ws
+  port: 8443
+  server: 31.70.89.136
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn748359672.opengw.net%3A1458%3Fed%3D2560fp%3Dchrome'
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: 24|🇩🇪_德国_210
+  network: ws
+  port: 443
+  server: 152.53.197.166
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_214
+  network: ws
+  port: 8443
+  server: 178.105.113.205
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_216
+  network: ws
+  port: 2053
+  server: 178.105.215.151
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- name: 24|🇩🇪_德国_222
+  network: ws
+  port: 443
+  server: 45.95.0.43
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_224
+  network: ws
+  port: 4443
+  server: 178.105.133.160
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  tls: true
+  type: vless
+  uuid: fb0818b3-4031-4843-b5f7-1d75177a1758
+  ws-opts:
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+    path: '%2F%40Marisa_kristi'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_225
+  network: ws
+  port: 8443
+  server: 2.28.42.209
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_230
+  network: ws
+  port: 2053
+  server: 89.127.210.245
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_229
+  network: ws
+  port: 2040
+  server: 188.245.191.19
+  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+  tls: true
+  type: vless
+  uuid: bdd897a6-57f2-4311-835f-0b6c5ac5a1a2
+  ws-opts:
+    headers:
+      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+    path: '%2F%40Marisa_kristi'
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: 24|🇩🇪_德国_231
+  network: ws
+  port: 443
+  server: 103.13.211.236
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_232
+  network: ws
+  port: 443
+  server: 91.107.189.117
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_239
+  network: ws
+  port: 8443
+  server: 31.70.89.136
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_254
+  network: ws
+  port: 8443
+  server: 144.31.181.177
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_252
+  network: ws
+  port: 8443
+  server: 93.127.223.238
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_275
+  network: ws
+  port: 443
+  server: 138.124.54.223
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_282
+  network: ws
+  port: 8443
+  server: 209.38.254.20
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_283
+  network: ws
+  port: 56879
+  server: 5.75.195.83
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  tls: true
+  type: vless
+  uuid: 7b0f8733-03cc-472b-9c50-ed159b48ef59
+  ws-opts:
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+    path: '%2F%40Marisa_kristi'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 24|🇩🇪_德国_284
+  network: ws
+  port: 443
+  server: 185.230.44.140
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|zhuhai.uk 🇩🇪 德国 10
+  network: ws
+  port: 8443
+  server: 62.133.60.134
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_329
+  network: ws
+  port: 443
+  server: 157.230.101.36
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_342
+  network: ws
+  port: 443
+  server: 77.239.104.82
+  servername: vp58.cc.cd
+  tls: true
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  ws-opts:
+    path: '%2FTelegram%40VPNine1'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_363
+  network: ws
+  port: 2083
+  server: 167.172.165.106
+  servername: edge.yzkvm.top
+  tls: true
+  type: vless
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  ws-opts:
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_371
+  network: ws
+  port: 2083
+  server: 46.101.253.244
+  servername: edge.yzkvm.top
+  tls: true
+  type: vless
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  ws-opts:
+    path: '%2F'
+- name: 24|🇩🇪_德国_380
+  network: ws
+  port: 2096
+  server: 167.172.183.195
+  servername: edge.yzkvm.top
+  tls: true
+  type: vless
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  ws-opts:
+    path: '%2F'
+- name: 24|🇩🇪_德国_478
+  network: ws
+  port: 2083
+  server: sino.bestsellers1.site
+  servername: sino.bestsellers1.site
+  tls: true
+  type: vless
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  ws-opts:
+    path: '%2F'
+- name: 24|🇩🇪_德国_482
+  network: ws
+  port: 2087
+  server: hoert1rert.localip.ir
+  servername: hoert1rert.localip.ir
+  tls: true
+  type: vless
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  ws-opts:
+    path: '%2Fhokm'
+- name: 24|🇩🇪_德国_485
+  network: ws
+  port: 80
+  server: ov-germany1.09vpn.com
+  servername: OV-Germany1.09vpn.com
+  tls: false
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  ws-opts:
+    path: '%2Fvless%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_489
+  network: ws
+  port: 2087
+  server: 46.225.46.136
+  servername: hoert1rert.localip.ir
+  tls: true
+  type: vless
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  ws-opts:
+    path: '%2Fhokm'
+- name: 24|🇩🇪_德国_490
+  network: ws
+  port: 80
+  server: 57.129.41.216
+  servername: ov-germany1.09vpn.com
+  tls: false
+  type: vless
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  ws-opts:
+    path: '%2Fvless%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_497
+  network: ws
+  port: 443
+  server: sub.merky.top
+  servername: sub.merky.top
+  tls: true
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  ws-opts:
+    path: '%2Fmerky-connect%2Fde6%2F'
+- name: 24|🇩🇪_德国_504
+  network: ws
+  port: 443
+  server: 94.143.231.146
+  servername: sub.merky.top
+  tls: true
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  ws-opts:
+    path: '%2Fmerky-connect%2Fde6%2F'
+- name: 24|🇩🇪_德国_524
+  network: ws
+  port: 80
+  server: free.sahanwickramasinghe.me
+  servername: free.sahanwickramasinghe.me
+  tls: false
+  type: vless
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  ws-opts:
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇩🇪_德国_532
+  network: ws
+  port: 2083
+  server: 91.107.247.173
+  servername: sino.bestsellers1.site
+  tls: true
+  type: vless
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  ws-opts:
+    path: '%2F'
+- client-fingerprint: chrome
+  name: '24|TG@proxyshareCN #16'
+  network: ws
+  port: 443
+  server: 195.133.17.250
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
 - client-fingerprint: random
   flow: xtls-rprx-vision
   name: 24|🇩🇪|DE|AVToday.io|17
@@ -2097,58 +2227,6 @@ proxies:
   sni: finkawwwbroy5.qcloud.surf
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '24|未命名 #47'
-  network: vless
-  port: 443
-  reality-opts:
-    public-key: jcp4Lj_qYzxtkalm_XFjrmvqEMGRG7sb19yMwLe16WE
-    short-id: e0215064d8d1fd7c
-  server: 78.17.178.125
-  servername: cdn.tbank.ru
-  tls: false
-  type: vless
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '24|未命名 #48'
-  network: vless
-  port: 443
-  reality-opts:
-    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
-    short-id: 2c9a2790ad5900b2
-  server: ge-s-1.pythonmakemigreat.wiki
-  servername: ge-s-1.pythonmakemigreat.wiki
-  tls: false
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-- client-fingerprint: chrome
-  name: 24|地区随机 | 德国 DE | TXL | 31.70.89....
-  network: ws
-  port: 8443
-  server: 31.70.89.136
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: '%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40vpn748359672.opengw.net%3A1458%3Fed%3D2560fp%3Dchrome'
-- client-fingerprint: chrome
-  name: 24|🇩🇪德国
-  network: ws
-  port: 443
-  server: 103.13.211.236
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: '%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40public-vpn-200.opengw.net%3A443'
 - name: 24|德国  优质节点_12
   password: jz40_mij934vk0_k9d3jz92_vx48q_gha1_sz0
   port: 8443
@@ -2223,9 +2301,22 @@ proxies:
   tls: false
   type: vless
   uuid: 20717e25-8cea-4634-b9ab-9c9bc9ca0620
-- client-fingerprint: ios
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #24'
+  name: 24|zhuhai.uk 🇩🇪 德国 04
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
+    short-id: 2c9a2790ad5900b2
+  server: ge-s-1.pythonmakemigreat.wiki
+  servername: ge-s-1.pythonmakemigreat.wiki
+  tls: false
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '24|عضو کانال شوید @ShadowProxy66 ... #11'
   network: tcp
   port: 443
   reality-opts:
@@ -2235,188 +2326,158 @@ proxies:
   tls: false
   type: vless
   uuid: 07104d25-afc5-4b3b-a871-c729c57de047
-- grpc-opts:
-    grpc-service-name: vless
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #25'
-  network: grpc
-  port: 3090
-  server: 104.143.219.176
-  tls: false
-  type: vless
-  uuid: 4e52a51a-ebfa-4c22-9206-e10e55438f17
 - client-fingerprint: firefox
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #26'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: jOTeBTdLqbXCaVGTVRqEQVBYsblw1JIX99epK8-Yqx0
-    short-id: b98ef0eef6
-  server: 31.77.8.250
-  servername: npdev.uk
-  tls: false
-  type: vless
-  uuid: a04c750d-3b71-493b-b2c1-6473ff1209dd
-- client-fingerprint: chrome
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #27'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: svJcYa4oCsstPJAyrSAwSxLX0LnOZsAl82rGDOqU_Vs
-    short-id: 713ee0b7c00464
-  server: 201.58.178.185
-  servername: npdev.uk
-  tls: false
-  type: vless
-  uuid: a04c750d-3b71-493b-b2c1-6473ff1209dd
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc_common1
+  flow: xtls-rprx-vision
   name: '24|عضو کانال شوید @ShadowProxy66 ... #28'
-  network: grpc
-  port: 27250
-  reality-opts:
-    public-key: bqV9CFadimhl6zgliRrOdx-XoJ0vioLqmwxU4tWjTgc
-    short-id: 8d1e96
-  server: 135.125.248.200
-  servername: image.samsung.com
-  tls: false
-  type: vless
-  uuid: 36b98b4a-fc76-4738-bd7d-274ca800c8fd
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #29'
   network: tcp
-  port: 22443
+  port: 21221
   reality-opts:
-    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-    short-id: d2061bb1
-  server: 80.66.89.187
-  servername: ya.ru
-  tls: false
-  type: vless
-  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
-- client-fingerprint: ios
-  grpc-opts:
-    grpc-service-name: 43f41cd7fee0
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #30'
-  network: grpc
-  port: 25363
-  reality-opts:
-    public-key: shUbIWcBJdXaDzO80KqTU9exgMarUCOiiZ56Dwl7XVU
-    short-id: 7a8e24da4eb2c1b5
-  server: 193.148.253.239
-  servername: www.chip.de
-  tls: false
-  type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #31'
-  network: tcp
-  port: 20268
-  reality-opts:
-    public-key: 5H_MmyfvF4SkwS84wTbLmtcZDecXJIJtZ3uisiKQpSM
-    short-id: 0c774b50
-  server: 177.3.222.174
+    public-key: RtxGqCtQJeOyUwSe7k6oZOrQWV1hPbC-TMqqgxl9fn4
+    short-id: c430045c
+  server: 201.58.177.38
   servername: metrika.yandex.ru
   tls: false
   type: vless
-  uuid: 408c51e8-9246-483d-ba73-34ab4e202eb9
+  uuid: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
 - client-fingerprint: firefox
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #32'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: XHTvcJ8PdP6Wwk6fQa5QUABpLX_NzEYfgoIwaSrjxxk
-    short-id: 458f336bc2
-  server: 201.58.182.179
-  servername: npdev.uk
-  tls: false
-  type: vless
-  uuid: a04c750d-3b71-493b-b2c1-6473ff1209dd
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #33'
-  network: tcp
-  port: 3443
-  reality-opts:
-    public-key: YIXOvwrCFxQYKOP_GwdhbzZLlwgBIVVISXDpFZQBt0c
-    short-id: a5bb22e6a41ff20a
-  server: 82.202.182.42
-  servername: smartcaptcha.yandexcloud.net
-  tls: false
-  type: vless
-  uuid: 1ba0439d-384c-4a6e-9560-0439698beb2a
-- client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #34'
+  name: '24|عضو کانال شوید @ShadowProxy66 ... #29'
   network: grpc
-  port: 25443
+  port: 1443
   reality-opts:
-    public-key: 3RAtCvqClGsqdQO2RXS91mG_FfEaHEF5RJ9bU1QtqWk
-  server: 94.228.112.36
-  servername: media.uzumaki.lol
+    public-key: vi1vP3RJQgLsRgzaiKvjr44iNRzI62lSYMipnrTMAUs
+  server: 94.228.112.60
+  servername: static.nyx53.shop
   tls: false
   type: vless
   uuid: 92e135b9-4c04-4e7e-8b28-d8074a202cf8
+- name: '24|عضو کانال شوید @ShadowProxy66 ... #31'
+  network: ws
+  port: 2052
+  server: 104.18.0.181
+  tls: false
+  type: vless
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  ws-opts:
+    headers:
+      Host: eu02.123450908.xyz
+    path: '%2Frain1226'
+- name: 24|🇩🇪 Германия — Frankfurt am Mai...
+  password: h7mp2xy9kj4nq8wr5tf6vb3z
+  port: 443
+  server: 18.193.79.104
+  skip-cert-verify: true
+  sni: vpn-de-002.fastervpn.world
+  tls: false
+  type: hysteria2
+- name: '24|🇩🇪 Германия — Frankfurt am Mai... #1'
+  password: h7mp2xy9kj4nq8wr5tf6vb3z
+  port: 443
+  server: 3.69.232.199
+  skip-cert-verify: true
+  sni: vpn-de-002.fastervpn.world
+  tls: false
+  type: hysteria2
+- client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: vless-grpc
+  name: '24|عضو کانال شوید @ShadowProxy66 ... #32'
+  network: grpc
+  port: 8443
+  reality-opts:
+    public-key: EoeKDsLFEs6F6XMnkQZgvHJ4FfB4s5g0hSP5JE2RCl0
+    short-id: a1b2c3d4
+  server: 31.77.251.29
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 2422dbe1-83cb-4bae-9b7e-569e6aaaca00
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: grpc
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #35'
+  name: '24|عضو کانال شوید @ShadowProxy66 ... #33'
   network: grpc
   port: 39443
   reality-opts:
     public-key: YPsphGkQvosdhqZwi_RJDzFIwjZnt9duNWAOAcqKoUc
-  server: 94.228.112.60
+  server: 186.246.29.249
   servername: static.polina.mom
   tls: false
   type: vless
   uuid: 92e135b9-4c04-4e7e-8b28-d8074a202cf8
-- client-fingerprint: ios
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #132'
-  network: xhttp
-  port: 443
-  server: 146.75.32.8
-  servername: Account.fastly.com
-  tls: true
-  type: vless
-  uuid: 7eecba82-6a8a-4f6a-bff9-baa092931150
-  ws-opts:
-    headers:
-      Host: mxnlkmmqi.global.ssl.fastly.net
-- alpn:
-  - http/1.1
-  client-fingerprint: unsafe
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #191'
-  network: ws
-  port: 443
-  server: 104.18.35.86
-  servername: 0Ee6wOQz4W8W0cDqiTgq6XZ-q0o9r6o9.merTEssWAgGEr08.WoRKErs.dEv
-  tls: true
-  type: vless
-  uuid: 1c7f675f-5923-463f-83fb-af4c898cecea
-  ws-opts:
-    headers:
-      Host: 0Ee6wOQz4W8W0cDqiTgq6XZ-q0o9r6o9.merTEssWAgGEr08.WoRKErs.dEv
-    path: '%2FeyJqdW5rIjoiZWhuWFFGNWRISXBjSmRGWSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560'
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #192'
+  name: '24|عضو کانال شوید @ShadowProxy66 ... #64'
   network: ws
-  port: 2053
-  server: 172.64.80.1
-  servername: FaNs.livErpoOl.qZZ.io
+  port: 443
+  server: 104.16.71.200
+  servername: 36Z9gwXP6-QFZHXPojDTktyP-r0eq.MosVSDbdbdbD.WorKErS.DEv
   tls: true
   type: vless
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
+  uuid: ef90e2bc-3a44-4501-a3ea-bf09db2a5add
+  ws-opts:
+    path: '%2Fvl%2FTbCP2PwiJ42OB798hgBhfWy85gAaq%3Fed%3D2560'
+- client-fingerprint: safari
+  name: '24|عضو کانال شوید @ShadowProxy66 ... #65'
+  network: ws
+  port: 443
+  server: 185.141.227.223
+  servername: z1q3pv4g78.rucdncomp.pro
+  tls: true
+  type: vless
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   ws-opts:
     headers:
-      Host: fans.liverpool.qzz.io
-    path: '%2FeyJqdW5rIjoiZXlpMnFWRURmWkp5ZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D'
+      Host: z1q3pv4g78.rucdncomp.pro
+    path: '%2Fuseraction%2Fevents%2Fb892639b7195%2F'
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  name: '24|عضو کانال شوید @ShadowProxy66 ... #243'
+  network: xhttp
+  port: 443
+  server: 199.232.78.160
+  servername: Firefox.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 891b8403-db54-43a5-83de-f10610cd60f2
+  ws-opts:
+    headers:
+      Host: WanCloud.global.ssl.fastly.net
+    path: '%2F%40WanCloudFA'
+- alpn:
+  - http/1.1
+  client-fingerprint: unsafe
+  name: '24|عضو کانال شوید @ShadowProxy66 ... #237'
+  network: ws
+  port: 443
+  server: 104.16.71.222
+  servername: 36z9gwXp6-qFZhxPOjdTkTYp-R0Eq.moSvSdBdBDBd.wORkERs.Dev
+  tls: true
+  type: vless
+  uuid: ef90e2bc-3a44-4501-a3ea-bf09db2a5add
+  ws-opts:
+    path: '%2Fvl%2F5g1MDEoR0C2KFbC80lM7NCdNyj7jh%3Fed%3D2560'
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: '24|عضو کانال شوید @ShadowProxy66 ... #245'
+  network: ws
+  port: 443
+  server: 185.141.227.223
+  servername: z1q3pv4g78.rucdncomp.pro
+  tls: true
+  type: vless
+  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
+  ws-opts:
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+    path: '%2Fuseraction%2Fevents%2Fb892639b7195%2F'
 - client-fingerprint: chrome
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #193'
+  name: '24|عضو کانال شوید @ShadowProxy66 ... #249'
   network: ws
   port: 2053
   server: 172.67.130.187
@@ -2428,123 +2489,6 @@ proxies:
     headers:
       Host: fans.liverpool.qzz.io
     path: '%2FeyJqdW5rIjoiZXlpMnFWRURmWkp5ZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D'
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #194'
-  network: ws
-  port: 443
-  server: 190.93.244.209
-  servername: loaD-Bal-AC000A.sTAGiNg-Api-78c1a1.WorKErs.deV
-  tls: true
-  type: vless
-  uuid: 903883c7-e62f-436e-a28c-e777637bb757
-  ws-opts:
-    headers:
-      Host: LOAd-bal-Ac000a.StaGInG-aPi-78C1A1.wOrkeRs.dEV
-    path: '%2Fvl%2F7yxyRoUx67K43EW4zOdKqawWj2mXHsfh%3Fed%3D2560'
-- client-fingerprint: chrome
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #195'
-  network: ws
-  port: 443
-  server: 162.159.153.4
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  tls: true
-  type: vless
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  ws-opts:
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-    path: '%2F'
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #196'
-  network: ws
-  port: 2053
-  server: 104.21.3.133
-  servername: FaNs.livErpoOl.qZZ.io
-  tls: true
-  type: vless
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
-  ws-opts:
-    headers:
-      Host: FaNs.livErpoOl.qZZ.io
-    path: '%2FeyJqdW5rIjoiZXlpMnFWRURmWkp5ZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D'
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #197'
-  network: ws
-  port: 443
-  server: 104.16.71.222
-  servername: 36z9gwXp6-qFZhxPOjdTkTYp-R0Eq.moSvSdBdBDBd.wORkERs.Dev
-  tls: true
-  type: vless
-  uuid: ef90e2bc-3a44-4501-a3ea-bf09db2a5add
-  ws-opts:
-    path: '%2Fvl%2F5g1MDEoR0C2KFbC80lM7NCdNyj7jh%3Fed%3D2560'
-- client-fingerprint: chrome
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #198'
-  network: ws
-  port: 443
-  server: 188.114.96.9
-  servername: IdB8ONMVbntuYT5t7t6cEJfw8vLrb.paGEs.DeV
-  tls: true
-  type: vless
-  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
-  ws-opts:
-    headers:
-      Host: IdB8ONMVbntuYT5t7t6cEJfw8vLrb.paGEs.DeV
-    path: '%2Fvl%2F9yvcoldzdoxluyfh7r5gwjhu1chrj'
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #199'
-  network: ws
-  port: 443
-  server: 172.66.47.45
-  servername: EZAcCESS-pROjECt-F62c30.PAGES.dEv
-  tls: true
-  type: vless
-  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
-  ws-opts:
-    headers:
-      Host: ezaccess-project-f62c30.pages.dev
-    path: '%2FeyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D'
-- alpn:
-  - http/1.1
-  client-fingerprint: unsafe
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #200'
-  network: ws
-  port: 443
-  server: 188.114.97.6
-  servername: ezaccess-project-f62c30.pages.dev
-  tls: true
-  type: vless
-  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
-  ws-opts:
-    headers:
-      Host: ezaccess-project-f62c30.pages.dev
-    path: '%2FeyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #201'
-  network: ws
-  port: 2053
-  server: 188.114.98.0
-  servername: ovh-gr1.mahkhorshidi.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 3ee10440-225e-4cbc-83ed-3c80b90bcb07
-  ws-opts:
-    headers:
-      Host: ovh-gr1.mahkhorshidi.ir
-    path: '%2Fmovies%2F12345'
 - client-fingerprint: chrome
   name: 24|🇩🇪DE_5|510KB/s 01
   network: ws
@@ -2739,19 +2683,14 @@ proxies:
     headers:
       Host: auto-scale-238b2b.infra-core-1630dd.workers.dev
     path: '%2FeyJqdW5rIjoiUjJBU3JkVlRwSWtnciIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 24|🇩🇪DE_35|226KB/s|A004-260618 01
-  network: raw
+- name: 24|🇩🇪DE_34|951KB/s|K001-260618 01
+  password: h7mp2xy9kj4nq8wr5tf6vb3z
   port: 443
-  reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-  server: prep.wwwinternetvideo.click
-  servername: yandex.ru
+  server: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-de-002.fastervpn.world
   tls: false
-  type: vless
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  type: hysteria2
 - client-fingerprint: unsafe
   name: 24|🇩🇪DE_36|232KB/s|M003-260806 01
   network: ws
@@ -2863,6 +2802,13 @@ proxies:
     headers:
       Host: germanytest.tulnaro.ir
     path: '%2F'
+- name: 24|🇩🇪DE_52|508KB/s|A004-260618 01
+  network: raw
+  port: 22849
+  server: 31.76.11.83
+  tls: false
+  type: vless
+  uuid: 2e511783-125c-466b-925d-a9cd1c98e30e
 - name: 24|🇩🇪DE_49|278KB/s|M002-260618 01
   network: ws
   port: 2052
@@ -2927,6 +2873,18 @@ proxies:
     headers:
       Host: sub.mot.ip-ddns.com
     path: /
+- alterId: '0'
+  cipher: auto
+  name: '26|🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001... #19'
+  network: tcp
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  xudp: true
 - name: 26|🟢🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001...
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20055

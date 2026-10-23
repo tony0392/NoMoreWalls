@@ -1,51 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 1|🇹🇼 No.951_TW_x0.50_GCP_Taiwan@...
-  network: ws
-  port: 8080
-  server: 34.81.49.231
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
-  ws-opts:
-    headers:
-      Host: download.windowsupdate.com
-    path: /download
-- alterId: 0
-  cipher: auto
-  name: 1|🇹🇼 No.729_TW_x0.50_PQS_hinet台湾...
-  network: ws
-  port: 28080
-  server: tw-pqshi.vm.331331.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
-  ws-opts:
-    headers:
-      Host: download.windowsupdate.com
-    path: /download
-- alterId: 0
-  cipher: auto
-  name: 1|🇹🇼 No.742_TW_x1.00_AkileCloud_...
-  network: ws
-  port: 20338
-  server: tw.vayki.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
-  ws-opts:
-    headers:
-      Host: download.windowsupdate.com
-    path: /download
-- alterId: 0
-  cipher: auto
   name: 2|台湾2
   port: 45077
   server: hxb.dashuai.help
@@ -85,7 +40,8 @@ proxies:
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - client-fingerprint: chrome
-  name: 13|🇹TW丨yoyapai.com
+  name: '13,24|未命名 #256'
+  network: vless
   port: 443
   reality-opts:
     public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
@@ -93,28 +49,31 @@ proxies:
   server: 34.80.248.240
   servername: www.cloudflare.com
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   udp: true
   uuid: 31a40f42-4ad6-4a32-a760-71102b459584
-- name: 14|TW(mibei77.com 米贝节点分享)
-  password: 9sK2mP8xQ7vL3nZ6
-  port: 443
-  server: awefd2313fefarg23fr24.pnuqcnp.cn
-  skip-cert-verify: true
-  tls: true
-  type: anytls
-  udp: true
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: 15|A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_e59ee4...
+  name: 14|TW(mibei77.com 米贝节点分享)
   password: 0324fbc29561
   port: 443
-  server: 684616s4.df6h451rh.xin
+  server: er8u54dh.df6h451rh.xin
   skip-cert-verify: true
   sni: px.ads.linkedin.com
+  tls: true
   type: anytls
+  udp: true
+- name: 14,15|A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_a3392a...
+  password: 0324fbc29561
+  port: 443
+  server: er8u54dh.df6h451rh.xin
+  skip-cert-verify: true
+  sni: px.ads.linkedin.com
+  tls: true
+  type: anytls
+  udp: true
 - name: '15,26|🟢🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001... #16'
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 1443
@@ -125,25 +84,106 @@ proxies:
   type: http
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- cipher: chacha20-ietf-poly1305
-  name: 15|C🟠🇹🇼hos[🎬🤖📺🎭]_dokng.com_253b01...
-  password: 2c8c4c3b-4616-400c-a2d4-f3669ea18fe9
-  port: 27005
-  server: c.pro.main.sys-metric-report.com
-  type: ss
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 15|C🟠🇹🇼hos[🎬🤖📺🎭]_dokng.com_e416b0...
-  network: tcp
-  port: 14507
-  reality-opts:
-    public-key: eob9-UdF6SeEtwcnPjECI1HE4iI6Aqef09AMAh3wJTw
-    short-id: d481c1dc
-  server: pyygg0769.sys-metric-report.com
-  servername: tapp.cfastcdn.com
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 15|A🟢🇹🇼res[🎬🤖📺🎭]_dokng.com_e59ee4...
+  password: 0324fbc29561
+  port: 443
+  server: 684616s4.df6h451rh.xin
+  skip-cert-verify: true
+  sni: px.ads.linkedin.com
+  type: anytls
+- name: 15|A🟢🇹🇼res[🤖📺🎭🎪]_dokng.com_245c5b...
+  password: 87c6ad7b-e450-44a8-8088-bc2234d43de1
+  port: 47531
+  server: svip.skycon808.com
+  skip-cert-verify: true
+  sni: tw15.swiftrelay.cc
+  type: anytls
+  udp: true
+- name: 24|TW - zhuhai.uk
+  network: ws
+  port: 443
+  server: 60.248.219.54
+  servername: ty986gfazs.cainiaohub.xyz
+  skip-cert-verify: true
   tls: true
   type: vless
-  uuid: 2c8c4c3b-4616-400c-a2d4-f3669ea18fe9
+  uuid: 06e177f7-240d-4687-bd85-235505801a5e
+  ws-opts:
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+    path: '%2F81574b6b-c9d7-44a0-b83d-dad56e8cb530'
+- client-fingerprint: chrome
+  name: 24|TW - zhuhai.uk 03
+  network: ws
+  port: 443
+  server: 60.248.219.53
+  servername: ty986gfazs.cainiaohub.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  ws-opts:
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+    path: '%2F81574b6b-c9d7-44a0-b83d-dad56e8cb530'
+- client-fingerprint: chrome
+  name: 24|🇹🇼_台湾_144
+  network: ws
+  port: 443
+  server: 140.115.53.51
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|🇹🇼_台湾_154
+  network: ws
+  port: 2053
+  server: 178.83.206.129
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 24|zhuhai.uk 🇹🇼台湾 26
+  network: ws
+  port: 443
+  server: 85.237.207.101
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: '%2F'
+- name: 24|🇹🇼TW_1|449KB/s|A004-260618 01
+  password: h7mp2xy9kj4nq8wr5tf6vb3z
+  port: 443
+  server: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+  sni: vk.com
+  tls: false
+  type: hysteria2
+- name: 24|🇹🇼TW_2|516KB/s|C002-260622 01
+  password: h7mp2xy9kj4nq8wr5tf6vb3z
+  port: 443
+  server: 103.115.109.49
+  skip-cert-verify: true
+  sni: https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
+  tls: false
+  type: hysteria2
 - cipher: chacha20-ietf-poly1305
   name: 26|🟢🇹🇼_github.com/Ruk1ng001_d0aff...
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4

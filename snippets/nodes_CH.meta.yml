@@ -41,6 +41,30 @@ proxies:
   type: vless
   udp: true
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
+- name: 15|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_c3243a...
+  port: 9443
+  server: 37.120.213.210
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 15|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_d5afcc...
+  password: None
+  port: 9443
+  server: 149.88.27.33
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 15|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_bff060...
+  password: None
+  port: 9443
+  server: 149.88.27.46
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
 - name: 15|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_5edb8d...
   password: None
   port: 9443
@@ -49,34 +73,13 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 15|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_4abf4d...
-  password: None
-  port: 9443
-  server: 149.88.27.46
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  username: ''
-- name: 15|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_7844f2...
-  password: None
-  port: 9443
-  server: 149.88.27.33
+- name: 15|C🟠🇨🇭hos[🎬🤖📺🎭]_dokng.com_d10161...
+  port: 443
+  server: 31.7.62.50
   skip-cert-verify: true
   tls: true
   type: http
-- name: 15|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_a05200...
-  password: ''
-  port: 9443
-  server: 149.88.27.33
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  username: ''
-- name: 15|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_a74c39...
+- name: 15|C🟠🇨🇭hos[🎬🤖📺🎭]_dokng.com_a74c39...
   password: None
   port: 443
   server: 31.7.62.50
@@ -84,24 +87,20 @@ proxies:
   tls: true
   type: http
   username: null
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 15|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_3dd2ed...
-  network: tcp
-  port: 8461
-  reality-opts:
-    public-key: Yc75IKp6PRsGSw82GhGepMrRpJweW7WXUp9azkGuMAk
-    short-id: 735f09fb3fedb191
-  server: 5.181.158.193
-  servername: svoboda.bystriynet.online
-  tls: true
+- name: 19|瑞士 001
+  network: ws
+  port: 14430
+  server: 138.124.70.41
+  servername: 138.124.70.41
+  tls: false
   type: vless
-  udp: true
-  uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
-  xudp: true
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  ws-opts:
+    headers:
+      Host: 138.124.70.41
+    path: /vless
 - client-fingerprint: chrome
-  name: 19|瑞士 001
+  name: 19|瑞士 002
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
@@ -116,7 +115,7 @@ proxies:
   http-opts:
     path:
     - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
-  name: 19|瑞士 002
+  name: 19|瑞士 003
   network: http
   packet-encoding: xudp
   port: 22
@@ -126,7 +125,7 @@ proxies:
   type: vless
   udp: true
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 19|瑞士 003
+- name: 19|瑞士 004
   network: ws
   packet-encoding: xudp
   port: 443
@@ -141,13 +140,79 @@ proxies:
     headers:
       Host: nbhhh.mrcool.kdns.fr
     path: /proxyip=3cfb8e26.tp30304.ip.090227.xyz
-- name: 20|🇨🇭CH_1|1.7MB/s
-  port: 9443
-  server: 149.88.27.46
+- alterId: 0
+  cipher: auto
+  name: 19|瑞士 005
+  network: tcp
+  port: 38998
+  server: 178.83.45.29
   skip-cert-verify: true
+  type: vmess
+  uuid: 48422300-458f-4dbb-b0f5-96f45450ab9f
+- name: 19|瑞士 006
+  network: tcp
+  port: 2052
+  server: 178.83.45.226
+  skip-cert-verify: false
+  tfo: false
   tls: true
-  type: http
+  type: vless
   udp: true
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- client-fingerprint: chrome
+  name: 19|瑞士 007
+  network: ws
+  port: 443
+  server: 195.141.65.98
+  servername: 148-253-210-191.sslip.io
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+  ws-opts:
+    headers:
+      Host: 148-253-210-191.sslip.io
+    path: /test-ws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 19|瑞士 008
+  network: tcp
+  port: 8443
+  server: 138.124.244.77
+  servername: fi1.hys.braidx.tech
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8787dd0a-095a-414e-804f-a7d16a1ae166
+- name: 19|瑞士 009
+  network: tcp
+  port: 10000
+  server: 178.83.45.226
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+- name: 19|瑞士 010
+  network: tcp
+  port: 2086
+  server: 138.124.123.127
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b6606cb0-e15d-4813-94af-985028c4b9f3
+- name: 20|🇨🇭[www.v2nodes.com] trojan-CH-...
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 208.69.78.19
+  type: trojan
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 24|zhuhai.uk 🇨🇭瑞士
@@ -161,15 +226,3 @@ proxies:
   tls: false
   type: vless
   uuid: 2d4d2faa-d1c3-402c-8ad3-bd7062940534
-- client-fingerprint: firefox
-  name: '24|عضو کانال شوید @ShadowProxy66 ... #31'
-  network: tcp
-  port: 25879
-  reality-opts:
-    public-key: XuI492LMe1OPIwQH5TQlIo33JRqMM3kfnto62tbx5FU
-    short-id: f1a7a14461a3f389
-  server: ch2.h1cloud.net
-  servername: www.bing.com
-  tls: false
-  type: vless
-  uuid: 241306b3-9f27-4ed3-9524-6c0792c55856

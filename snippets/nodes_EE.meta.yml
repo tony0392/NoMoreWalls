@@ -78,87 +78,52 @@ proxies:
   type: vless
   udp: true
   uuid: 629f88a6-b20b-4489-a22f-4d8b418c0488
-- name: 15|🇪🇪EE_1|2.0MB/s [9bfab8a0502eb6...
+- name: 15,20|🇪🇪EE_1|2.2MB/s
   port: 9443
   server: 95.153.31.66
   skip-cert-verify: true
+  sub_tag: R002-260618
   tls: true
   type: http
-- name: 20|🇪🇪[www.v2nodes.com] vless-EE-1...
-  port: 443
-  server: 185.215.184.78
-  tls: false
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-- flow: xtls-rprx-vision
-  name: 20,24|🇪🇪_爱沙尼亚 (4)
+  udp: true
+  x-toolall-mihomo: true
+- name: 19|爱沙尼亚 001
   network: tcp
   port: 443
-  server: 185.215.184.49
-  servername: dvizhok.su
-  tls: false
+  server: 85.9.194.75
+  skip-cert-verify: false
+  tfo: false
+  tls: true
   type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-- name: '20,24|未命名 #123'
-  network: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+- encryption: none
+  name: 20,24|🇨🇾_塞浦路斯
+  network: tcp
   port: 16443
   server: 45.86.60.174
   tls: false
   type: vless
   uuid: 13e541f3-d09d-4633-89df-8513db0ced20
-- name: 20|🇪🇪EE_1|1.8MB/s
-  password: None
-  port: 9443
-  server: 95.153.31.66
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 24|🇪🇪_爱沙尼亚 (6)
-  network: ws
-  port: 443
-  server: 45.83.182.80
-  servername: fs.qicai99.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  ws-opts:
-    path: '%2F'
-- flow: xtls-rprx-vision
-  name: '24|Channel id: @ShadowProxy66-236'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '20,24,27|🇪🇪 爱沙尼亚 | EST #1'
   network: tcp
   port: 443
   reality-opts:
-    public-key: NLXltMEkWIxv9bL2J4XkPGb4oVwGbCkITCTXF-jVxAE
-    short-id: 2976f793571fb671
-  server: 38.244.155.67
-  servername: node-eu-1.nztpro.com
-  tls: false
+    public-key: NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8
+    short-id: 2ef2b10d5143d798
+  server: 5.129.202.80
+  servername: mirror-50.topp-con.xyz
+  tls: true
   type: vless
-  uuid: d651c9ab-b844-4420-b3d0-20d201ef5f55
+  udp: true
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
 - flow: xtls-rprx-vision
   name: 24|🇪🇪_爱沙尼亚 (2)
   network: tcp
   port: 443
-  server: 185.215.184.85
-  servername: dvizhok.su
-  tls: false
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-- flow: xtls-rprx-vision
-  name: 24|🇪🇪_爱沙尼亚 (3)
-  network: tcp
-  port: 443
   server: ee.subv.ru
-  servername: dvizhok.su
-  tls: false
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-- flow: xtls-rprx-vision
-  name: 24|🇪🇪_爱沙尼亚 (5)
-  network: tcp
-  port: 443
-  server: 185.215.184.53
   servername: dvizhok.su
   tls: false
   type: vless
@@ -176,6 +141,18 @@ proxies:
     headers:
       Host: eu-central.862400.xyz
     path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '24|AVToday.io #41'
+  network: tcp
+  port: 2087
+  reality-opts:
+    public-key: HRmmr0Ii4Tr9jPLwratvLhee3_VWFNK47T8AAo7kzww
+  server: 132.243.74.104
+  servername: ee.song69.fun
+  tls: false
+  type: vless
+  uuid: 92b79c22-f68b-4713-8b21-52f264cb92f5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 24|赛博仙人
@@ -192,97 +169,3 @@ proxies:
     headers:
       Host: us7fs3.proxen.pdevinfra.com
     path: '%2F'
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '24|Channel id: @ShadowProxy66-20 ...'
-  network: ws
-  port: 2083
-  server: 141.0.187.4
-  servername: speedtestmark.com
-  tls: true
-  type: vless
-  uuid: 67c3f089-46cb-4c09-b207-524aa3fd6625
-  ws-opts:
-    path: '%2Fvless-ws'
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '24|Channel id: @ShadowProxy66-21 ...'
-  network: ws
-  port: 2083
-  server: 141.0.187.6
-  servername: speedtestmark.com
-  tls: true
-  type: vless
-  uuid: 67c3f089-46cb-4c09-b207-524aa3fd6625
-  ws-opts:
-    path: '%2Fvless-ws'
-- client-fingerprint: chrome
-  name: '24|Channel id: @ShadowProxy66-23 ...'
-  network: xhttp
-  port: 10488
-  reality-opts:
-    public-key: kDEc42JBZxig3BrLD3V1ofs3oJZk15-ANWN-rM0JW10
-    short-id: f28145401b4f633a
-  server: sub-edge-08-1g.xrent.cloud
-  servername: ligastavok.ru
-  tls: false
-  type: vless
-  uuid: 67c3f089-46cb-4c09-b207-524aa3fd6625
-  ws-opts:
-    path: '%2F'
-- client-fingerprint: chrome
-  name: '24|Channel id: @ShadowProxy66-24 ...'
-  network: xhttp
-  port: 20001
-  reality-opts:
-    public-key: kDEc42JBZxig3BrLD3V1ofs3oJZk15-ANWN-rM0JW10
-    short-id: f28145401b4f633a
-  server: sub-edge-05-1g.whitenw.net
-  servername: ligastavok.ru
-  tls: false
-  type: vless
-  uuid: 67c3f089-46cb-4c09-b207-524aa3fd6625
-  ws-opts:
-    path: '%2F'
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '24|Channel id: @ShadowProxy66-65 ...'
-  network: tcp
-  port: 2087
-  reality-opts:
-    public-key: HRmmr0Ii4Tr9jPLwratvLhee3_VWFNK47T8AAo7kzww
-  server: 132.243.74.105
-  servername: ee.song69.fun
-  tls: false
-  type: vless
-  uuid: 92b79c22-f68b-4713-8b21-52f264cb92f5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '24|Channel id: @ShadowProxy66-42 ... #1'
-  network: raw
-  port: 8445
-  reality-opts:
-    public-key: I_0JD13_bJuD6bNhTfb1PFPJUQqEVHl-YFluNwHAPD4
-  server: 78.159.245.40
-  servername: passport.yandex.ru
-  tls: false
-  type: vless
-  uuid: 84a56b88-2f89-4a57-b925-74abd5b7fd87
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: 204adda7e3da
-  name: 27|🇪🇪 爱沙尼亚 | EST
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  server: 196.196.148.63
-  servername: 717252g.nl8.h1clayd.click
-  tls: true
-  type: vless
-  udp: true
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839

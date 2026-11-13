@@ -565,12 +565,13 @@ proxies:
     headers:
       Host: notls.lukongtou.eu.org
     path: Telegram-WangCai2🇨🇳
-- name: 6|🇯🇵JP日本丨yoyapai.com_1
+- encryption: none
+  name: '6,19,20|🇯🇵[www.v2nodes.com] vless-JP-1... #4'
   network: ws
   port: 11424
   server: 38.47.96.220
   servername: notls.lukongtou.eu.org
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
@@ -666,8 +667,7 @@ proxies:
       Host: rubifen.adaspoloandco.com
     path: /GOrbEh
 - client-fingerprint: chrome
-  name: 6,13,24|🇺🇸 机场推荐:dafei.de 美国 79
-  network: tcp
+  name: 6,13|🇵JP丨yoyapai.com (4)
   port: 58011
   server: us22.sofast.live
   skip-cert-verify: false
@@ -675,7 +675,22 @@ proxies:
   type: vless
   udp: true
   uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-- name: 13|🇵JP日本丨yoyapai.com (2)
+- name: 8|🇯🇵JP_68
+  password: ND91608427
+  port: 443
+  server: 18.179.31.199
+  type: trojan
+- name: 12,15,27|🇳🇬 尼日利亚 | NGA
+  network: tcp
+  password: d9064589-74af-432a-9390-5d8a9da281bf
+  port: 20051
+  server: sclass-c2.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  tls: true
+  type: trojan
+  udp: true
+- name: 13|🇵JP丨yoyapai.com
   network: ws
   port: 18122
   server: 155.248.168.35
@@ -690,7 +705,7 @@ proxies:
     headers:
       Host: notls.lukongtou.eu.org
     path: Telegram-WangCai2🇨🇳
-- name: 13|🇯🇵JP日本丨yoyapai.com (3)
+- name: 13|🇯🇵JP日本丨yoyapai.com (2)
   network: ws
   port: 11424
   server: 38.47.96.220
@@ -737,7 +752,7 @@ proxies:
     path: Telegram-WangCai2🇨🇳
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 13|🇵JP日本丨yoyapai.com (4)
+  name: 13|🇵JP日本丨yoyapai.com (3)
   port: 443
   reality-opts:
     public-key: qBtxq4RZxDLCJT8i48iaGMhacv8MOI0yhIFiuwYJm08
@@ -813,7 +828,7 @@ proxies:
   udp: true
   uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
 - client-fingerprint: chrome
-  name: 13|🇵JP日本丨yoyapai.com (8)
+  name: 13|🇯🇵JP日本丨yoyapai.com (8)
   port: 443
   reality-opts:
     public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
@@ -855,112 +870,23 @@ proxies:
   type: vless
   udp: true
   uuid: b47cc98c-54f4-4ab2-acb9-b493a04ccc6b
-- name: 14|JP(mibei77.com 米贝节点分享)
-  network: ws
-  port: 8880
-  server: 159.242.242.30
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime58.workers.dev
-    path: /
-- name: 14|JP日本(mibei77.com 米贝节点分享) (2)
-  network: ws
-  port: 8880
-  server: 195.85.59.30
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime58.workers.dev
-    path: /
-- client-fingerprint: chrome
-  name: 14|JP日本(mibei77.com 米贝节点分享) (3)
-  network: ws
-  port: 443
-  server: 217.60.2.212
-  servername: coding.grok2.indevs.in
-  skip-cert-verify: false
-  sni: coding.grok2.indevs.in
-  tls: true
-  type: vless
-  udp: true
-  uuid: f0c9ebf7-76cc-44b7-8b30-b33ee0ffc898
-  ws-opts:
-    headers:
-      Host: coding.grok2.indevs.in
-    path: /proxyip=ProxyIP.SG.CMLiussss.Net
-- client-fingerprint: chrome
-  name: 14|JP日本(mibei77.com 米贝节点分享) (4)
-  network: ws
-  port: 443
-  server: kclx.eu.org
-  servername: kclx.eu.org
-  skip-cert-verify: false
-  sni: kclx.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
-  ws-opts:
-    headers:
-      Host: kclx.eu.org
-    path: /154.16.10.34-8080
-- name: 15|🇯🇵JP-104.252.87.200-0585 [b29e...
-  password: 0wcmn0va70ra
-  port: 9177
-  server: 104.252.87.200
-  type: http
-  username: hommkiti
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 15|🇯🇵【亚洲】日本01丨Vless [60a04b2acd63...
-  port: 443
-  server: 18.181.238.222
-  servername: www.bing.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e0379de1-6712-4644-b41b-afde5fa30ad7
-  x-toolall-mihomo: true
-- name: 15|🇯🇵JP_6|2.4MB/s [0f4839b899b0]
-  password: ''
-  port: 443
-  server: fan.571589.xyz
-  skip-cert-verify: true
-  sni: fan.571589.xyz
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  username: ''
-  x-toolall-mihomo: true
 - client-fingerprint: firefox
-  name: 15|🇯🇵日本-Y(通用) [6a2814044b6a]
+  name: 13|JP丨yoyapai.com (12)
   network: ws
   port: 443
-  server: cos-cdn-u.alicdn.win
-  servername: mms-statlc-z7kq-y.hemaapi.men
+  server: 104.21.70.228
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  sni: jp3.yohototo.top
   tls: true
   type: vless
   udp: true
-  uuid: e3bc601b-364e-4304-8fea-46f04a9ccad4
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   ws-opts:
     headers:
-      Host: mms-static-main-y.hemaapi.men
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/120.0.0.0 Safari/537.36
-    path: /newlogin/login.do
-  x-toolall-mihomo: true
-- name: 15,20|🇯🇵JP_1|2.0MB/s
+      Host: jp3.yohototo.top
+    path: /tyxyws
+- name: 15|🇯🇵JP_1|2.0MB/s [2926e1a11f800c...
   password: 'null'
   port: 40583
   server: 120.232.204.58
@@ -968,6 +894,35 @@ proxies:
   tls: true
   type: http
   username: 'null'
+- name: 15|🇯🇵日本 原生IP 0.23MB/s 058 linuxdo...
+  password: ''
+  port: 443
+  server: fan.571589.xyz
+  skip-cert-verify: true
+  sni: fan.571589.xyz
+  tls: true
+  type: http
+  udp: true
+  username: ''
+  x-toolall-mihomo: true
+- name: 15|🇳🇬|尼日利亚-IEPL 02 [37488dee48ad]
+  password: d9064589-74af-432a-9390-5d8a9da281bf
+  port: 20103
+  server: sclass-00.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+  x-toolall-mihomo: true
+- name: 15|🇳🇬|尼日利亚-IEPL 02 [8980b80a2c03]
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  port: 20103
+  server: sclass-00.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+  x-toolall-mihomo: true
 - name: 19|日本 001
   network: ws
   port: 443
@@ -1411,8 +1366,119 @@ proxies:
   ws-opts:
     headers:
       Host: jp01.a0a.xyz
-    path: /cctv13.m3u8
-- name: 19|日本 037
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|日本 037
+  network: ws
+  port: 443
+  server: 146.56.162.25
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  ws-opts:
+    headers:
+      Host: lg30.cfcdn3.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|日本 038
+  network: ws
+  port: 443
+  server: 146.56.166.153
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  ws-opts:
+    headers:
+      Host: lg30.cfcdn3.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|日本 039
+  network: ws
+  port: 443
+  server: 146.56.149.205
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  ws-opts:
+    headers:
+      Host: lg30.cfcdn3.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|日本 040
+  network: ws
+  port: 443
+  server: fullaccesstojapannetsubnode1.azurewebsites.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
+  ws-opts:
+    headers:
+      Host: fullaccesstojapannetsubnode1.azurewebsites.net
+    path: /ws
+- alterId: 0
+  cipher: auto
+  name: 19|日本 041
+  network: ws
+  port: 80
+  server: 103.35.188.226
+  skip-cert-verify: true
+  type: vmess
+  uuid: 098e7cdd-03b4-435d-8c41-ea608fa637c2
+  ws-opts:
+    headers:
+      Host: 103.35.188.226
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 19|日本 044
+  network: ws
+  port: 443
+  server: 172.105.223.136
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8964ea79-1422-460e-b6e2-a16e83a22aab
+  ws-opts:
+    headers:
+      Host: www.microsoft.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|日本 045
+  network: ws
+  port: 443
+  server: 124.156.225.184
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7a010436-7b4a-4e65-ade4-844ba074ad58
+  ws-opts:
+    headers:
+      Host: azjp.pengui.xyz
+    path: /
+- alterId: 4
+  cipher: auto
+  name: 19|日本 046
+  network: ws
+  port: 443
+  server: 202.61.141.130
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: 202.61.141.130
+    path: /
+- name: 19|日本 047
   network: ws
   port: 8880
   server: 156.238.18.221
@@ -1427,7 +1493,20 @@ proxies:
     headers:
       Host: inaslnyekosshernist.borogomsho12pa34.kiling-spoooky---dude.spikevpn.cfd.
     path: /telegram-
-- name: 19|日本 038
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 19|日本 048
+  network: tcp
+  port: 443
+  server: 167.179.87.224
+  servername: u695098u093da7d1s2502.xxti.top
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+- name: 19|日本 049
   network: tcp
   port: 10000
   server: 14.137.238.40
@@ -1437,7 +1516,7 @@ proxies:
   type: vless
   udp: true
   uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-- name: 19|日本 039
+- name: 19|日本 050
   network: tcp
   port: 443
   server: 134.122.154.210
@@ -1447,7 +1526,23 @@ proxies:
   type: vless
   udp: true
   uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-- name: 19|日本 040
+- client-fingerprint: chrome
+  name: 19|日本 051
+  network: ws
+  port: 443
+  server: 91.193.58.117
+  servername: jamph131-1228.pages.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  ws-opts:
+    headers:
+      Host: jamph131-1228.pages.dev
+    path: /Telegram-WangCai2🇨🇳
+- name: 19|日本 052
   network: grpc
   port: 2003
   server: 172.105.252.35
@@ -1458,7 +1553,22 @@ proxies:
   type: vless
   udp: true
   uuid: 99de7aac-d2a5-48fd-92cb-d1e6c3c719a4
-- name: 19|日本 041
+- name: 19|日本 053
+  network: ws
+  port: 2087
+  server: 158.247.253.111
+  servername: shephe.dpdns.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  ws-opts:
+    headers:
+      Host: shephe.dpdns.org
+    path: /fp=chrome
+- name: 19|日本 054
   network: tcp
   port: 443
   server: 137.220.221.179
@@ -1468,7 +1578,23 @@ proxies:
   type: vless
   udp: true
   uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 19|日本 042
+- client-fingerprint: chrome
+  name: 19|日本 055
+  network: ws
+  port: 2087
+  server: 91.193.59.191
+  servername: vlso5.1d.mom
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  ws-opts:
+    headers:
+      Host: vlso5.1d.mom
+    path: /socks5=888:888
+- name: 19|日本 056
   network: ws
   port: 443
   server: 151.101.109.223
@@ -1485,118 +1611,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 19|日本 043
-  network: ws
-  port: 443
-  server: 146.56.162.25
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-  ws-opts:
-    headers:
-      Host: lg30.cfcdn3.xyz
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: 19|日本 044
-  network: ws
-  port: 443
-  server: 146.56.166.153
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-  ws-opts:
-    headers:
-      Host: lg30.cfcdn3.xyz
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: 19|日本 045
-  network: ws
-  port: 443
-  server: 146.56.149.205
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-  ws-opts:
-    headers:
-      Host: lg30.cfcdn3.xyz
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: 19|日本 046
-  network: ws
-  port: 443
-  server: fullaccesstojapannetsubnode1.azurewebsites.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
-  ws-opts:
-    headers:
-      Host: fullaccesstojapannetsubnode1.azurewebsites.net
-    path: /ws
-- alterId: 0
-  cipher: auto
-  name: 19|日本 047
-  network: ws
-  port: 80
-  server: 103.35.188.226
-  skip-cert-verify: true
-  type: vmess
-  uuid: 098e7cdd-03b4-435d-8c41-ea608fa637c2
-  ws-opts:
-    headers:
-      Host: 103.35.188.226
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 19|日本 050
-  network: ws
-  port: 443
-  server: 172.105.223.136
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8964ea79-1422-460e-b6e2-a16e83a22aab
-  ws-opts:
-    headers:
-      Host: www.microsoft.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|日本 051
-  network: ws
-  port: 443
-  server: 124.156.225.184
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 7a010436-7b4a-4e65-ade4-844ba074ad58
-  ws-opts:
-    headers:
-      Host: azjp.pengui.xyz
-    path: /
-- alterId: 4
-  cipher: auto
-  name: 19|日本 052
-  network: ws
-  port: 443
-  server: 202.61.141.130
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-opts:
-    headers:
-      Host: 202.61.141.130
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|日本 053
+  name: 19|日本 057
   network: tcp
   port: 49499
   server: 139.162.125.97
@@ -1605,7 +1620,7 @@ proxies:
   uuid: 3ce1d2e3-0e1b-4b00-921b-fcc0f8abe1f6
 - alterId: 0
   cipher: auto
-  name: 19|日本 054
+  name: 19|日本 058
   network: tcp
   port: 14935
   server: 167.179.111.237
@@ -1624,23 +1639,25 @@ proxies:
     headers:
       Host: fs.qicai99.com
     path: /fp=chrome
-- name: '20|🇯🇵[www.v2nodes.com] vless-JP-1... #1'
+- client-fingerprint: chrome
+  encryption: none
+  name: '20|🇯🇵[www.v2nodes.com] vless-JP-1... #1'
   network: ws
   port: 443
-  server: 207.148.115.152
-  servername: vlso5.1d.mom
+  server: 104.18.42.98
+  servername: jp3.yohototo.top
   tls: true
   type: vless
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   ws-opts:
     headers:
-      Host: vlso5.1d.mom
-    path: /socks5=888:888@hkip.1d.mom:1080fp=chrome
+      Host: jp3.yohototo.top
+    path: /tyxyws
 - client-fingerprint: chrome
-  name: '20|🇯🇵[www.v2nodes.com] vless-JP-1... #4'
+  name: '20|🇯🇵[www.v2nodes.com] vless-JP-1... #3'
   network: ws
   port: 443
-  server: 46.250.254.187
+  server: 46.250.248.210
   servername: fs.qicai99.com
   tls: true
   type: vless
@@ -1650,15 +1667,16 @@ proxies:
       Host: fs.qicai99.com
     path: /
 - cipher: aes-256-gcm
-  name: 20|🇯🇵[www.v2nodes.com] ss-JP-1599...
+  name: '20,27|🇯🇵 日本 | JPN 2 #1'
   password: BeaUf9c0AEWH40Pu
   port: 8388
   server: 154.36.158.197
   type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 20|🇯🇵[www.v2nodes.com] ss-JP-1544...
   password: 3eOFeNssde7PYYMv
-  port: 80
+  port: 443
   server: 84.247.155.196
   type: ss
 - cipher: aes-128-gcm
@@ -1679,172 +1697,14 @@ proxies:
   port: 443
   server: 149.22.87.241
   type: ss
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 20|🇯🇵 日本 | JPN
-  network: tcp
-  port: 12929
-  server: xx.giannaycs.com
-  servername: xx.giannaycs.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d68fbc96-5187-4b8f-965e-eecd7a699e81
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 20|🇯🇵 日本 | JPN 2
-  network: tcp
-  port: 12940
-  server: xx.giannaycs.com
-  servername: xx.giannaycs.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d68fbc96-5187-4b8f-965e-eecd7a699e81
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 20|🇯🇵 日本 | JPN 3
-  network: tcp
-  port: 12928
-  server: xx.giannaycs.com
-  servername: xx.giannaycs.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d68fbc96-5187-4b8f-965e-eecd7a699e81
-- client-fingerprint: chrome
-  name: 20|🇯🇵 日本 | JPN 4
-  network: ws
-  port: 443
-  server: 64.83.37.223
-  servername: vip.freevpn.cloudns.biz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0bb8b560-b056-4245-8b9d-231a0a78c54b
-  ws-opts:
-    headers:
-      Host: vip.freevpn.cloudns.biz
-    path: /0bb8b560-b056-4245-8b9d-231a0a78c54b?ed=2048
-- client-fingerprint: chrome
-  name: 20|🇯🇵 日本 | JPN 5
-  network: ws
-  port: 443
-  server: 154.36.156.220
-  servername: vip.freevpn.cloudns.biz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0bb8b560-b056-4245-8b9d-231a0a78c54b
-  ws-opts:
-    headers:
-      Host: vip.freevpn.cloudns.biz
-    path: /0bb8b560-b056-4245-8b9d-231a0a78c54b?ed=2048
-- client-fingerprint: chrome
-  name: 20|🇯🇵 日本 | JPN 6
-  network: ws
-  port: 443
-  server: 154.36.183.110
-  servername: vip.freevpn.cloudns.biz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0bb8b560-b056-4245-8b9d-231a0a78c54b
-  ws-opts:
-    headers:
-      Host: vip.freevpn.cloudns.biz
-    path: /0bb8b560-b056-4245-8b9d-231a0a78c54b?ed=2048
-- client-fingerprint: chrome
-  name: 20|🇯🇵 日本 | JPN 7
-  network: ws
-  port: 443
-  server: 64.83.36.18
-  servername: vip.freevpn.cloudns.biz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0bb8b560-b056-4245-8b9d-231a0a78c54b
-  ws-opts:
-    headers:
-      Host: vip.freevpn.cloudns.biz
-    path: /0bb8b560-b056-4245-8b9d-231a0a78c54b?ed=2048
-- client-fingerprint: ios
-  name: 20|🇯🇵 日本 | JPN 8
-  network: tcp
-  port: 12955
-  server: tw.giannaycs.com
-  servername: tw.giannaycs.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d68fbc96-5187-4b8f-965e-eecd7a699e81
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 20|🇯🇵 日本 | JPN 9
-  network: tcp
-  port: 12928
-  server: tw.giannaycs.com
-  servername: tw.giannaycs.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d68fbc96-5187-4b8f-965e-eecd7a699e81
-- client-fingerprint: chrome
-  name: 20|🇯🇵 日本 | JPN 10
-  network: ws
-  port: 443
-  server: 154.36.155.12
-  servername: vip.freevpn.cloudns.biz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0bb8b560-b056-4245-8b9d-231a0a78c54b
-  ws-opts:
-    headers:
-      Host: vip.freevpn.cloudns.biz
-    path: /0bb8b560-b056-4245-8b9d-231a0a78c54b?ed=2048
-- client-fingerprint: chrome
-  name: 20|🇯🇵 日本 | JPN 11
-  network: ws
-  port: 443
-  server: 154.36.154.29
-  servername: vip.freevpn.cloudns.biz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0bb8b560-b056-4245-8b9d-231a0a78c54b
-  ws-opts:
-    headers:
-      Host: vip.freevpn.cloudns.biz
-    path: /0bb8b560-b056-4245-8b9d-231a0a78c54b?ed=2048
-- client-fingerprint: edge
-  name: 20|🇯🇵 日本 | JPN 12
-  network: tcp
-  port: 12955
-  server: xx.giannaycs.com
-  servername: xx.giannaycs.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d68fbc96-5187-4b8f-965e-eecd7a699e81
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 20|🇯🇵 日本 | JPN 13
-  network: tcp
-  port: 12929
-  server: tw.giannaycs.com
-  servername: tw.giannaycs.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d68fbc96-5187-4b8f-965e-eecd7a699e81
-- name: '20,27|🇳🇬 尼日利亚 | NGA #1'
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  port: 20103
-  server: sclass-01.catcat321.com
+- name: 20,27|🇯🇵 日本 | JPN 3
+  password: 9922ea3a-7314-4af5-a4cb-eb68a9b94fca
+  port: 2052
+  server: forwarded.frnhk.xyz
   skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
+  sni: jp2.gosthk.site
+  type: anytls
+  udp: true
 - client-fingerprint: chrome
   name: 21|🇵_JP_
   network: ws
@@ -1860,22 +1720,36 @@ proxies:
     headers:
       Host: shuma.ccwu.cc
     path: /
-- client-fingerprint: chrome
-  name: 24|日期：11-12
+- client-fingerprint: firefox
+  name: 24|日期：11-13
   network: ws
   port: 443
-  server: 3.169.9.125
-  servername: dkfsoyk9ju2as.cloudfront.net
+  server: 8.209.108.3
+  servername: dnsss.kdns.fr
   skip-cert-verify: true
   tls: true
   type: vless
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  uuid: 7c03538c-c6dd-4dc1-b35c-5fc0e2a43271
   ws-opts:
     headers:
-      Host: dkfsoyk9ju2as.cloudfront.net
+      Host: dnsss.kdns.fr
     path: '%2F'
+- client-fingerprint: unsafe
+  name: 24|🇯🇵_日本 (3)
+  network: ws
+  port: 443
+  server: 45.153.245.181
+  servername: jp3.yohototo.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
 - client-fingerprint: chrome
-  name: 24|🇯🇵_日本
+  name: 24|🇯🇵_日本 (4)
   network: ws
   port: 443
   server: 162.4.194.35
@@ -1889,7 +1763,7 @@ proxies:
       Host: v5-4b5.pages.dev
     path: '%2F'
 - client-fingerprint: chrome
-  name: 24|🇯🇵_日本 (2)
+  name: 24|🇯🇵_日本 (5)
   network: ws
   port: 443
   server: 167.179.90.137
@@ -1903,7 +1777,7 @@ proxies:
       Host: v5-4b5.pages.dev
     path: '%2F'
 - client-fingerprint: unsafe
-  name: 24|🇯🇵_日本 (3)
+  name: 24|🇯🇵_日本 (6)
   network: ws
   port: 2053
   server: 103.201.131.202
@@ -1916,20 +1790,26 @@ proxies:
     headers:
       Host: jp3.yohototo.top
     path: '%2Ftyxyws'
-- client-fingerprint: unsafe
-  name: 24|🇯🇵_日本 (4)
+- name: 24|🇯🇵_日本 (7)
   network: ws
-  port: 8443
-  server: 45.94.40.153
+  port: 443
+  server: 45.129.8.204
   servername: jp3.yohototo.top
   skip-cert-verify: true
   tls: true
   type: vless
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   ws-opts:
-    headers:
-      Host: jp3.yohototo.top
     path: '%2Ftyxyws'
+- flow: xtls-rprx-vision
+  name: 24|🇯🇵_日本
+  network: tcp
+  port: 10583
+  server: 3.114.220.22
+  servername: www.apple.com
+  tls: false
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 - client-fingerprint: random
   name: 24|zhuhai.uk 🇯🇵日本 01
   network: ws
@@ -2034,20 +1914,6 @@ proxies:
     headers:
       Host: us-lax.862400.xyz
     path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: 24|JP-LN
-  network: ws
-  port: 443
-  server: ct.877774.xyz
-  servername: jp-osa.862400.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: b13e89c1-cc4d-425a-8ec6-5665e1abc71f
-  ws-opts:
-    headers:
-      Host: jp-osa.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
 - client-fingerprint: chrome
   name: 24|🇯🇵日本 zhuhai.uk 5.74MB/s
   network: ws
@@ -2090,6 +1956,20 @@ proxies:
     headers:
       Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
     path: '%2F'
+- client-fingerprint: random
+  name: 24|JP-LN
+  network: ws
+  port: 443
+  server: ct.877774.xyz
+  servername: jp-osa.862400.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: b13e89c1-cc4d-425a-8ec6-5665e1abc71f
+  ws-opts:
+    headers:
+      Host: jp-osa.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 25|🇯🇵 日本|@ripaojiedian
@@ -2203,6 +2083,26 @@ proxies:
   skip-cert-verify: true
   sni: mpvideo.qpic.cn
   type: trojan
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: '26|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
+    short-id: feedbacc
+  server: 67.159.52.81
+  servername: sg.fasti.win
+  tls: true
+  type: vless
+  udp: true
+  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
+  xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '26|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
@@ -2418,24 +2318,13 @@ proxies:
   tls: true
   type: http
   username: b4e40aa2-74a1-11ed-b0b5-f23c9164ca5d
-- auth: abedf59203ff9523
-  name: '27|🇯🇵 日本 | JPN #1'
-  obfs: salamander
-  obfs-password: ce8a8b39835f0ce5340cf548892e8e71
-  password: abedf59203ff9523
-  port: 17826
-  ports: 17826,20000-40000
-  server: 138.2.37.59
+- name: '27|🇯🇵 日本 | JPN #1'
+  password: 81a0f80f-760e-4dda-bbdb-196779814c79
+  port: 50000
+  server: 52.196.143.140
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: 27|🇳🇬 尼日利亚 | NGA 2
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  port: 20051
-  server: sclass-c2.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
+  sni: www.python.org
+  type: anytls
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision

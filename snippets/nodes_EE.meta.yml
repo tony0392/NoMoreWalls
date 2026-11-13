@@ -78,15 +78,12 @@ proxies:
   type: vless
   udp: true
   uuid: 629f88a6-b20b-4489-a22f-4d8b418c0488
-- name: 15,20|🇪🇪EE_1|2.2MB/s
+- name: 15,20|🇪🇪EE_1|2.6MB/s
   port: 9443
   server: 95.153.31.66
   skip-cert-verify: true
-  sub_tag: R002-260618
   tls: true
   type: http
-  udp: true
-  x-toolall-mihomo: true
 - name: 19|爱沙尼亚 001
   network: tcp
   port: 443
@@ -97,34 +94,62 @@ proxies:
   type: vless
   udp: true
   uuid: 88888888-8888-8888-8888-888888888888
-- encryption: none
-  name: 20,24|🇨🇾_塞浦路斯
-  network: tcp
-  port: 16443
-  server: 45.86.60.174
-  tls: false
-  type: vless
-  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '20,24,27|🇪🇪 爱沙尼亚 | EST #1'
+- client-fingerprint: firefox
+  name: 20|🇪🇪 爱沙尼亚 | EST
   network: tcp
   port: 443
   reality-opts:
-    public-key: NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8
-    short-id: 2ef2b10d5143d798
-  server: 5.129.202.80
-  servername: mirror-50.topp-con.xyz
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+  server: 196.196.148.85
+  servername: 5d0319t.nl7.h1clayd.click
   tls: true
   type: vless
   udp: true
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+- name: 24|🇪🇪_爱沙尼亚 (6)
+  network: ws
+  port: 443
+  server: 45.83.182.80
+  servername: fs.qicai99.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    path: '%2F'
 - flow: xtls-rprx-vision
   name: 24|🇪🇪_爱沙尼亚 (2)
   network: tcp
   port: 443
-  server: ee.subv.ru
-  servername: dvizhok.su
+  server: 185.215.184.50
+  tls: false
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+- flow: xtls-rprx-vision
+  name: 24|🇪🇪_爱沙尼亚 (3)
+  network: tcp
+  port: 443
+  server: 185.215.184.54
+  servername: 185.215.184.54
+  tls: false
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+- flow: xtls-rprx-vision
+  name: 24|🇪🇪_爱沙尼亚 (4)
+  network: tcp
+  port: 443
+  server: 185.215.184.86
+  servername: 185.215.184.86
+  tls: false
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+- flow: xtls-rprx-vision
+  name: 24|🇪🇪_爱沙尼亚 (5)
+  network: tcp
+  port: 443
+  server: 185.215.184.79
+  servername: 185.215.184.79
   tls: false
   type: vless
   uuid: 90157e25-cee1-4217-921e-91f300bc1a24
@@ -141,18 +166,6 @@ proxies:
     headers:
       Host: eu-central.862400.xyz
     path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '24|AVToday.io #41'
-  network: tcp
-  port: 2087
-  reality-opts:
-    public-key: HRmmr0Ii4Tr9jPLwratvLhee3_VWFNK47T8AAo7kzww
-  server: 132.243.74.104
-  servername: ee.song69.fun
-  tls: false
-  type: vless
-  uuid: 92b79c22-f68b-4713-8b21-52f264cb92f5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 24|赛博仙人

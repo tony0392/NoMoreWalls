@@ -86,32 +86,42 @@ proxies:
   type: vless
   udp: true
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
-- name: 15|🇨🇭CH_34|1.2MB/s|K001-260618 [8...
-  password: ''
-  port: 9443
-  server: 149.88.27.33
-  skip-cert-verify: true
-  sub_tag: K001-260618
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 13|🇭CH瑞士丨yoyapai.com (5)
+  port: 443
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  server: prvtch.titun.su
+  servername: perevodchiki.su
+  skip-cert-verify: false
+  sni: perevodchiki.su
   tls: true
-  type: http
+  type: vless
   udp: true
-  username: ''
-  x-toolall-mihomo: true
-- name: 15,20|🇨🇭CH_1|1.7MB/s
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 13|🇨🇭CH瑞士丨yoyapai.com (6)
+  port: 443
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  server: 179.43.166.190
+  servername: perevodchiki.su
+  skip-cert-verify: false
+  sni: perevodchiki.su
+  tls: true
+  type: vless
+  udp: true
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+- name: 15,20|🇨🇭CH_1|2.7MB/s
   port: 443
   server: 31.7.62.50
   skip-cert-verify: true
   tls: true
   type: http
-- name: 15,20|🇨🇭CH_3|1.3MB/s|R002-260618
-  port: 9443
-  server: 37.120.213.210
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
 - name: 19,20|🇰🇷[www.v2nodes.com] vless-KR-3...
   network: ws
   port: 8443
@@ -125,20 +135,7 @@ proxies:
       Host: fs.qicai99.com
     path: /fp=chrome
 - client-fingerprint: chrome
-  name: 19,20|🇫🇮[www.v2nodes.com] vless-FI-1...
-  network: ws
-  port: 443
-  server: 138.124.124.157
-  servername: fs.qicai99.com
-  tls: true
-  type: vless
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  ws-opts:
-    headers:
-      Host: fs.qicai99.com
-    path: /
-- client-fingerprint: chrome
-  name: '19,20|🇫🇮[www.v2nodes.com] vless-FI-1... #3'
+  name: 19|瑞士 002
   network: ws
   port: 8443
   server: 138.124.49.108
@@ -151,7 +148,7 @@ proxies:
       Host: fs.qicai99.com
     path: /
 - encryption: none
-  name: '19,20|🇫🇷[www.v2nodes.com] vless-FR-1... #2'
+  name: '19,20|🇫🇷[www.v2nodes.com] vless-FR-1... #4'
   network: ws
   port: 14430
   server: 138.124.70.41
@@ -174,20 +171,8 @@ proxies:
   tls: true
   type: vless
   uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: connect-pl
-  name: 19,20,24|🇵🇱 机场推荐:dafei.de 波兰 06
-  network: grpc
-  port: 8443
-  server: 138.124.242.46
-  servername: pl2-edge.gacvpn.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
 - client-fingerprint: chrome
-  name: 19|瑞士 007
+  name: 19|瑞士 005
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
@@ -202,7 +187,7 @@ proxies:
   http-opts:
     path:
     - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
-  name: 19|瑞士 008
+  name: 19|瑞士 006
   network: http
   packet-encoding: xudp
   port: 22
@@ -212,7 +197,7 @@ proxies:
   type: vless
   udp: true
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 19|瑞士 009
+- name: 19|瑞士 007
   network: ws
   packet-encoding: xudp
   port: 443
@@ -229,14 +214,14 @@ proxies:
     path: /proxyip=3cfb8e26.tp30304.ip.090227.xyz
 - alterId: 0
   cipher: auto
-  name: 19|瑞士 010
+  name: 19|瑞士 008
   network: tcp
   port: 38998
   server: 178.83.45.29
   skip-cert-verify: true
   type: vmess
   uuid: 48422300-458f-4dbb-b0f5-96f45450ab9f
-- name: 19|瑞士 011
+- name: 19|瑞士 009
   network: tcp
   port: 2052
   server: 178.83.45.226
@@ -246,19 +231,21 @@ proxies:
   type: vless
   udp: true
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 19|瑞士 012
-  network: tcp
-  port: 13948
-  server: 204.11.2.90
+- client-fingerprint: chrome
+  name: 19|瑞士 010
+  network: grpc
+  port: 8443
+  server: 138.124.242.46
+  servername: pl2-edge.gacvpn.site
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 1be02a84-467e-45cf-ba73-95498b4d820b
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 19|瑞士 013
+  name: 19|瑞士 011
   network: tcp
   port: 8443
   server: 138.124.244.77
@@ -270,18 +257,18 @@ proxies:
   udp: true
   uuid: 8787dd0a-095a-414e-804f-a7d16a1ae166
 - client-fingerprint: chrome
-  name: '19,24|未命名 #16'
-  network: vless
+  name: 19|瑞士 012
+  network: tcp
   port: 443
   server: 179.43.187.67
   servername: portal.mavexa.ir
   skip-cert-verify: false
   tfo: false
-  tls: false
+  tls: true
   type: vless
   udp: true
   uuid: 9dd38d60-e683-47c6-bd53-d71bdfee78f3
-- name: 19|瑞士 015
+- name: 19|瑞士 013
   network: tcp
   port: 2086
   server: 138.124.123.127
@@ -292,13 +279,13 @@ proxies:
   udp: true
   uuid: b6606cb0-e15d-4813-94af-985028c4b9f3
 - cipher: aes-256-gcm
-  name: 20|🇨🇭[www.v2nodes.com] ss-CH-1616...
+  name: 20|🇨🇭[www.v2nodes.com] ss-CH-1615...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 23.166.88.127
+  server: 186.190.215.251
   type: ss
 - cipher: aes-256-gcm
-  name: 20|🇨🇭[www.v2nodes.com] ss-CH-1615...
+  name: '20|🇨🇭[www.v2nodes.com] ss-CH-1615... #1'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 79.127.184.104
@@ -313,58 +300,30 @@ proxies:
   port: 443
   server: 208.69.78.29
   type: trojan
-- name: 20|🇨🇭CH_2|1.4MB/s|K001-260618
-  password: None
+- name: 20|🇨🇭CH_2|1.4MB/s|R002-260618
   port: 9443
-  server: 149.88.27.46
+  server: 37.120.213.210
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 20|🇨🇭CH_3|1.6MB/s|K001-260618
+  port: 9443
+  server: 149.88.27.33
   skip-cert-verify: true
   sub_tag: K001-260618
   tls: true
   type: http
   udp: true
   x-toolall-mihomo: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '24|AVToday.io #29'
+- flow: xtls-rprx-vision
+  name: 24|🇨🇭_瑞士 (5)
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  server: prvtch.titun.su
-  servername: perevodchiki.su
+  port: 2083
+  server: 74.161.152.237
+  servername: www.apple.com
   tls: false
   type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  ws-opts:
-    headers:
-      Host: perevodchiki.su
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '24|AVToday.io #39'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  server: 179.43.166.190
-  servername: perevodchiki.su
-  tls: false
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '24|AVToday.io #46'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  server: 46.19.138.214
-  servername: perevodchiki.su
-  tls: false
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  ws-opts:
-    headers:
-      Host: perevodchiki.su
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537

@@ -244,19 +244,6 @@ proxies:
   ws-opts:
     path: /assignment
 - client-fingerprint: chrome
-  name: 12|德国+V2CROSS.COM
-  network: ws
-  port: 2096
-  server: 84.235.245.65
-  servername: fs.qicai99.com
-  tls: true
-  type: vless
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  ws-opts:
-    headers:
-      Host: fs.qicai99.com
-    path: '%2F'
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 13|🇬🇧GB英国丨yoyapai.com (3)
   port: 443
@@ -716,34 +703,7 @@ proxies:
   type: vless
   udp: true
   uuid: ebdfaf99-41d8-4e48-8196-d54510ffb556
-- name: 15,20|🇩🇪DE_1|2.0MB/s
-  password: None
-  port: 443
-  server: 172.64.68.89
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 15,20|🇩🇪DE_3|2.1MB/s
-  port: 443
-  server: 172.64.69.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 15|🇩🇪DE_18|322KB/s|K001-260618 [c...
-  password: 'null'
-  port: 443
-  server: 213.109.163.119
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- name: 15|🇩🇪DE_6|3.3MB/s|R002-260618 [d8...
+- name: 15|🇩🇪DE_7|1.2MB/s|R002-260618 [d8...
   port: 443
   server: 87.106.223.158
   skip-cert-verify: true
@@ -752,25 +712,39 @@ proxies:
   type: http
   udp: true
   x-toolall-mihomo: true
-- name: '15,20,28|DE_speednode_0004 #1'
+- name: 15|🇩🇪DE_1|2.0MB/s [8954e053b3ae4d...
+  password: None
   port: 443
-  server: 213.109.163.119
+  server: 172.64.68.89
   skip-cert-verify: true
   tls: true
   type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 15|🇩🇪DE_1|1.3MB/s [072757054c212a...
+- name: 15,20|🇩🇪DE_1|3.0MB/s
+  port: 443
+  server: 172.64.69.89
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 15|🇩🇪DE_8|3.1MB/s [700b4bd38f03]
   port: 443
   server: 213.177.229.161
   skip-cert-verify: true
   tls: true
   type: http
+- name: 15|🇩🇪DE_1|2.5MB/s|R002-260618 [54...
+  port: 9002
+  server: 158.173.154.2
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   down: '55'
-  name: '15,20|🇩🇪_DE_德国_IPV4 #1'
+  name: 15|🇩🇪_DE_德国_IPV4 [6a9ab7ea2aa03f5...
   password: dongtaiwang.com
   port: 54177
   server: 5.83.129.90
@@ -781,70 +755,38 @@ proxies:
   type: hysteria
   up: '11'
   x-toolall-mihomo: true
-- name: 15|❓Other_52|293KB/s|R002-260618 ...
-  port: 443
-  server: 176.94.74.21
+- name: 15|🇩🇪德国 原生IP 0.94MB/s 450 linuxdo...
+  password: freeuser1
+  port: 9251
+  server: nl199.freeconnect.link
+  tls: true
+  type: http
+  username: freeuser1
+- name: 15|🇩🇪DE_12|3.9MB/s|P002-260618 [2...
+  password: None
+  port: 9002
+  server: 158.173.154.2
   skip-cert-verify: true
-  sni: 176.94.74.21
-  sub_tag: R002-260618
+  sub_tag: P002-260618
   tls: true
   type: http
   udp: true
   x-toolall-mihomo: true
-- name: 15|DE - zhuhai.uk 05 [862d0cc7e50...
-  password: 'null'
-  port: 9002
-  server: 158.173.154.4
-  skip-cert-verify: true
-  sni: 158.173.154.4
-  tls: true
-  type: http
-  username: 'null'
-- client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: a9w9wmko0k2od14hv8v
-  name: '19,20|🏳[www.v2nodes.com] vless- #1'
-  network: grpc
-  port: 443
-  server: 5.83.129.236
-  servername: host-de-upscale.cdn.cachefleet.com
-  tls: true
-  type: vless
-  uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
-- encryption: none
-  name: 19|德国 002
-  network: ws
-  packet-encoding: xudp
-  port: 443
-  server: python-graysongon.wasmer.app
-  servername: python-graysongon.wasmer.app
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7bd180e8-1142-4387-93f5-03e8d750a896
-  ws-opts:
-    headers:
-      Host: python-graysongon.wasmer.app
-      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
-        Slackware/Chrome/12.0.742.100 Safari/534.30
-    path: /7bd180e8
-  xudp: true
-- name: 19|德国 003
+- name: 19|德国 001
   network: tcp
   password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
   port: 443
   server: 92.119.35.120
   skip-cert-verify: false
   type: trojan
-- name: 19|德国 004
+- name: 19|德国 002
   network: tcp
   password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
   port: 443
   server: 92.119.35.130
   skip-cert-verify: false
   type: trojan
-- name: 19|德国 005
+- name: 19|德国 003
   network: tcp
   password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
   port: 443
@@ -852,7 +794,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - client-fingerprint: chrome
-  name: 19|德国 006
+  name: 19|德国 004
   network: tcp
   password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
   port: 9443
@@ -860,7 +802,7 @@ proxies:
   skip-cert-verify: false
   sni: de-1.hysteria.ltd
   type: trojan
-- name: 19|德国 007
+- name: 19|德国 005
   network: tcp
   password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
   port: 443
@@ -870,7 +812,7 @@ proxies:
 - alterId: 0
   cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 19|德国 008
+  name: 19|德国 006
   network: tcp
   port: 1234
   server: 141.95.65.9
@@ -881,7 +823,7 @@ proxies:
   udp: true
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
 - encryption: none
-  name: '19,24|Telegram: @vpnbaz #271'
+  name: '19,24|Telgram: @vpnbaz #88'
   network: tcp
   packet-encoding: xudp
   port: 8080
@@ -892,7 +834,7 @@ proxies:
   udp: true
   uuid: fb37aadd-b957-4462-8738-80c55d77a52d
 - encryption: none
-  name: 19|德国 010
+  name: 19|德国 008
   network: xhttp
   packet-encoding: xudp
   port: 7000
@@ -909,133 +851,732 @@ proxies:
     x-padding-bytes: 100-1000
 - alterId: 0
   cipher: auto
-  name: 19|德国 011
-  network: ws
-  port: 443
-  server: 51.75.70.34
+  name: 19|德国 009
+  network: tcp
+  port: 11674
+  server: 176.65.151.175
   skip-cert-verify: true
-  tls: true
   type: vmess
-  uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a
+  uuid: a98a98cb-ae86-43ae-b695-cf0dbcad3fc2
+- name: 19|德国 010
+  network: ws
+  port: 2096
+  server: 185.158.133.43
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
   ws-opts:
     headers:
-      Host: clash1.trump2023.net
-    path: /dongtaiwang.com
-- alterId: 0
-  cipher: auto
-  name: 19|德国 012
-  network: ws
-  port: 443
-  server: 47.91.94.116
-  skip-cert-verify: true
+      Host: kejiland.freewarp.eu.org
+    path: /snippets
+- name: 19|德国 011
+  network: tcp
+  port: 21379
+  server: 91.107.243.12
+  skip-cert-verify: false
+  tfo: false
   tls: true
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  type: vless
+  udp: true
+  uuid: 035a60d2-6f6b-41e6-a805-2b752c5a61aa
+- name: 19|德国 012
+  network: ws
+  port: 80
+  server: tgju.org
+  servername: de.channel.digicyber.click
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 104f1dd2-dc7d-4b15-d42c-566b4e93de62
   ws-opts:
     headers:
-      Host: lg30.cfcdn3.xyz
-    path: /
-- alterId: 0
-  cipher: auto
+      Host: de.channel.digicyber.click
+    path: /olem/ws?ed=1024
+- flow: ''
   name: 19|德国 013
-  network: ws
-  port: 443
-  server: 47.91.87.13
-  skip-cert-verify: true
+  network: tcp
+  port: 33801
+  server: m63a.vip784.com
+  skip-cert-verify: false
+  tfo: false
   tls: true
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  type: vless
+  udp: true
+  uuid: 115e0e05-2820-4ae9-bf62-4142ce058574
+- name: 19|德国 014
+  network: ws
+  port: 2096
+  server: 185.158.133.50
+  servername: saas.sosocn.abrdns.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 12345678-1234-1234-1234-123456789123
   ws-opts:
     headers:
-      Host: lg30.cfcdn3.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|德国 014
+      Host: saas.sosocn.abrdns.com
+    path: /snippets
+- name: 19|德国 015
   network: ws
-  port: 443
-  server: sgp.kapok.buzz
-  skip-cert-verify: true
+  port: 2096
+  server: 91.206.71.54
+  servername: sni.aizrf.com
+  skip-cert-verify: false
+  tfo: false
   tls: true
-  type: vmess
-  uuid: c1bac6b8-934a-44e2-9cf2-ee0db1fc1c85
+  type: vless
+  udp: true
+  uuid: 12345678-1234-1234-1234-123456789123
   ws-opts:
     headers:
-      Host: sgp.kapok.buzz
-    path: /4befdd8a6/
-- alterId: 0
-  cipher: auto
-  name: 19|德国 015
+      Host: sni.aizrf.com
+    path: /snippets
+- name: 19|德国 016
+  network: tcp
+  port: 33801
+  server: m65a.vip784.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1c7baa26-3890-4f01-bf93-c88ad9ed0495
+- name: 19|德国 017
+  network: tcp
+  port: 22933
+  server: 78.47.216.178
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 20eb2d5d-10ba-485d-b4c5-3ff2b8168225
+- name: 19|德国 018
+  network: tcp
+  port: 33801
+  server: m31a.vip784.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 21d29623-3b91-4494-8402-08372da813a9
+- name: 19|德国 019
+  network: tcp
+  port: 2020
+  server: 78.46.251.109
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
+- name: 19|德国 020
+  network: tcp
+  port: 33801
+  server: m10a.vip784.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2e03cdd6-64e9-4aa6-bc00-ea522f845808
+- name: 19|德国 021
+  network: grpc
+  port: 15343
+  server: 84.201.4.247
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2e199883-3f52-49c3-b271-e8e9de0ba89b
+- name: 19|德国 022
+  network: grpc
+  port: 23279
+  server: 141.94.210.231
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30198cba-c828-4b34-8165-25942bad201e
+- name: 19|德国 023
+  network: tcp
+  port: 30052
+  server: 49.13.62.117
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 329e44bd-fc86-4c49-93fc-6e32a3e5a5af
+- name: 19|德国 024
+  network: tcp
+  port: 51476
+  server: 91.107.131.148
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 33e19f0b-1c7d-495d-9c50-81eec51d5195
+- flow: ''
+  name: 19|德国 025
+  network: tcp
+  port: 33801
+  server: m11a.vip784.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 426cb1e2-9390-4ea2-9932-489d38aa7803
+- name: 19|德国 026
+  network: tcp
+  port: 42671
+  server: 157.90.247.32
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4852b1e8-3eec-464c-84f0-05f7fdce85d7
+- name: 19|德国 027
+  network: grpc
+  port: 1598
+  server: 84.201.4.247
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 494e4d9d-e1e6-42be-a9df-8a6fbd46b650
+- client-fingerprint: chrome
+  name: 19|德国 028
   network: ws
   port: 443
-  server: 8.209.69.168
-  skip-cert-verify: true
+  server: 50.7.87.86
+  servername: nb-fi.nitter.ir
+  skip-cert-verify: false
+  tfo: false
   tls: true
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  type: vless
+  udp: true
+  uuid: 5011a449-a2f9-4a98-a0da-7ef0d927e3d2
   ws-opts:
     headers:
-      Host: lg30.cfcdn3.xyz
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: 19|德国 016
+      Host: nb-fi.nitter.ir
+    path: /hajmi?ed=2560
+- name: 19|德国 029
+  network: ws
+  port: 8880
+  server: 5.10.214.123
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /Telegram
+- name: 19|德国 030
+  network: grpc
+  port: 8880
+  server: 157.180.80.98
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a76615b-10e1-46f7-d521-17662f3c7287
+- name: 19|德国 031
+  network: tcp
+  port: 42671
+  server: 195.201.32.169
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 680e9152-1196-4451-a1fd-60830b0f3e4b
+- name: 19|德国 032
+  network: xhttp
+  port: 443
+  server: 139.162.145.100
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 697eabfd-653c-4da2-8b3f-b4806e0b60aa
+- name: 19|德国 033
+  network: tcp
+  port: 33801
+  server: m40a.vip784.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 748bd938-7eaf-4f1c-ac99-ce770c3aad93
+- name: 19|德国 034
+  network: xhttp
+  port: 443
+  server: 91.107.189.149
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7606bb75-416a-4f99-ba20-019cb25543cf
+- name: 19|德国 035
+  network: tcp
+  port: 30052
+  server: 157.90.247.32
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7a7bb043-8669-4c53-886c-f4f49893e6a8
+- flow: ''
+  name: 19|德国 036
   network: ws
   port: 443
-  server: 8.209.71.58
+  server: 91.206.71.202
+  servername: ir-ddos.com
   skip-cert-verify: true
+  tfo: false
   tls: true
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  type: vless
+  udp: true
+  uuid: 7c9e3c1d-a360-4429-9189-e45a98de7fde
   ws-opts:
     headers:
-      Host: lg30.cfcdn3.xyz
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: 19|德国 017
+      Host: ir-ddos.com
+    path: /VPNCUSTOMIZE--VPNCUSTOMIZE--VPNCUSTOMIZE--VPNCUSTOMIZE--VPNCUSTOMIZE?ed=2048
+- flow: ''
+  name: 19|德国 037
+  network: tcp
+  port: 33801
+  server: m37a.vip784.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8e4ec018-b237-48ef-a09b-c8c2b2cee74b
+- flow: ''
+  name: 19|德国 038
+  network: tcp
+  port: 33801
+  server: m45a.vip784.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 93382dc3-a897-402f-8f6a-261f867f1e43
+- name: 19|德国 039
+  network: tcp
+  port: 2085
+  server: 93.127.180.140
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 944445aa-23ce-4994-ab71-9615340e88f5
+- name: 19|德国 040
+  network: tcp
+  port: 2087
+  server: 93.127.180.140
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 944445aa-23ce-4994-ab71-9615340e88f5
+- name: 19|德国 041
+  network: tcp
+  port: 3030
+  server: 93.127.180.140
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 944445aa-23ce-4994-ab71-9615340e88f5
+- name: 19|德国 042
+  network: tcp
+  port: 443
+  server: 93.127.180.140
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 944445aa-23ce-4994-ab71-9615340e88f5
+- name: 19|德国 043
+  network: tcp
+  port: 80
+  server: 93.127.180.140
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 944445aa-23ce-4994-ab71-9615340e88f5
+- name: 19|德国 044
+  network: tcp
+  port: 33801
+  server: m71a.vip784.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9748467e-b5d7-40cc-8ca2-51eca4aa6b3a
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 19|德国 045
+  network: tcp
+  port: 443
+  server: 91.107.140.243
+  servername: mods.lnmarketplace.net
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9e55e24c-8de9-4357-8a37-9cf1212c6491
+- name: 19|德国 046
+  network: tcp
+  port: 1720
+  server: 91.107.190.242
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: a26c2b7b-a277-404b-bc3e-20c05a828eed
+- name: 19|德国 047
+  network: tcp
+  port: 443
+  server: 91.107.172.48
+  servername: de.v2bazzar.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: a4246c1c-207d-40c9-b85f-beca7d88f54f
+- name: 19|德国 048
+  network: tcp
+  port: 33801
+  server: m33a.vip784.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ad069756-c14b-4443-87af-4a503c5c08f5
+- name: 19|德国 049
+  network: grpc
+  port: 15349
+  server: 84.201.4.247
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b797d2a9-37b7-47e2-a7d2-d5f4c41c28e9
+- name: 19|德国 050
+  network: grpc
+  port: 1532
+  server: 84.201.4.247
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: bbe8c684-4b27-4c7d-bbf3-080c4bca3fc4
+- name: 19|德国 051
+  network: tcp
+  port: 666
+  server: 159.69.107.16
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: bfd5560e-d80c-456b-a14f-6d5b66de07f8
+- name: 19|德国 052
+  network: grpc
+  port: 15988
+  server: 84.201.4.247
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c297710c-ac33-4817-a8ff-2368d76dc6b0
+- name: 19|德国 053
+  network: tcp
+  port: 24199
+  server: 195.201.32.169
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d01d04e1-50ea-4308-8201-97407e0065be
+- name: 19|德国 054
+  network: ws
+  port: 8443
+  server: 141.94.221.241
+  servername: fei.634676.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      Host: fei.634676.xyz
+    path: /?ed=2560
+- name: 19|德国 055
+  network: ws
+  port: 2053
+  server: 141.94.223.93
+  servername: fei.634676.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      Host: fei.634676.xyz
+    path: /?ed=2560
+- name: 19|德国 056
+  network: tcp
+  port: 33801
+  server: m24a.vip784.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d36f457f-17a9-4891-a113-322ec6792917
+- name: 19|德国 057
+  network: tcp
+  port: 443
+  server: 78.46.136.143
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8b42cd5-a149-4356-9e61-30ad83662600
+- name: 19|德国 058
+  network: grpc
+  port: 8880
+  server: 157.180.20.123
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 19|德国 059
+  network: grpc
+  port: 8880
+  server: 157.180.20.84
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 19|德国 060
+  network: grpc
+  port: 8880
+  server: 185.242.87.128
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 19|德国 061
+  network: grpc
+  port: 8880
+  server: 185.242.87.154
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 19|德国 062
+  network: grpc
+  port: 8880
+  server: 185.242.87.159
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 19|德国 063
+  network: grpc
+  port: 8880
+  server: 185.242.87.160
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: chrome
+  name: 19|德国 064
+  network: grpc
+  port: 8880
+  server: 185.242.87.195
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 19|德国 065
+  network: grpc
+  port: 8880
+  server: 185.242.87.213
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 19|德国 066
+  network: grpc
+  port: 8880
+  server: 185.242.87.247
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 19|德国 067
+  network: grpc
+  port: 8880
+  server: 185.242.87.69
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 19|德国 068
+  network: grpc
+  port: 8880
+  server: 65.21.245.172
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 19|德国 069
+  network: tcp
+  port: 20087
+  server: 207.154.236.4
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0e67fc-a6e5-41d8-95fd-97dfb96d2802
+- name: 19|德国 070
   network: ws
   port: 443
-  server: 8.209.83.209
-  skip-cert-verify: true
+  server: hdfynpv2d1.farvaharforever.com
+  servername: hdfynpv2d1.farvaharforever.com
+  skip-cert-verify: false
+  tfo: false
   tls: true
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  type: vless
+  udp: true
+  uuid: e959d53c-91e9-459d-a332-d59ae89b3b4c
   ws-opts:
     headers:
-      Host: lg30.cfcdn3.xyz
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: 19|德国 018
+      Host: hdfynpv2d1.farvaharforever.com
+    path: /Iyq035lnud9R8ruNNrqGxZZ2
+- name: 19|德国 071
   network: ws
-  port: 443
-  server: 8.209.104.230
-  skip-cert-verify: true
+  port: 80
+  server: 159.69.21.66
+  servername: www.movieee.ir
+  skip-cert-verify: false
+  tfo: false
   tls: true
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  type: vless
+  udp: true
+  uuid: e9cf7de8-33a6-42da-badd-c40ec172b5a0
   ws-opts:
     headers:
-      Host: lg30.cfcdn3.xyz
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: 19|德国 019
-  network: ws
-  port: 443
-  server: 47.91.72.43
-  skip-cert-verify: true
+      Host: www.movieee.ir
+    path: /stream
+- name: 19|德国 072
+  network: grpc
+  port: 32647
+  server: 141.94.168.171
+  skip-cert-verify: false
+  tfo: false
   tls: true
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-  ws-opts:
-    headers:
-      Host: lg30.cfcdn3.xyz
-    path: /
+  type: vless
+  udp: true
+  uuid: edd716ae-7d5a-44f7-a0ed-a615eab0c766
+- name: 19|德国 073
+  network: tcp
+  port: 20087
+  server: 91.107.178.242
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f2c44225-736e-45a4-9cfb-490fa34e15a0
+- name: 19|德国 074
+  network: tcp
+  port: 33801
+  server: m5a.vip784.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f9f1ed42-9943-4121-9408-8fbe766343ae
 - alterId: 0
   cipher: auto
-  name: 19|德国 020
+  name: 19|德国 075
   network: ws
   port: 8880
   server: 185.16.110.212
@@ -1048,7 +1589,52 @@ proxies:
     path: /dabai
 - alterId: 0
   cipher: auto
-  name: 19|德国 021
+  name: 19|德国 076
+  network: tcp
+  port: 28011
+  server: 62.146.235.193
+  skip-cert-verify: true
+  type: vmess
+  uuid: cfc5a87f-3c13-4e25-b556-176cdd6b5c6a
+- alterId: 0
+  cipher: auto
+  name: 19|德国 077
+  network: tcp
+  port: 550
+  server: 62.146.235.12
+  skip-cert-verify: true
+  type: vmess
+  uuid: 48b986d8-7da2-47a2-85de-2306c9259953
+- alterId: 0
+  cipher: auto
+  name: 19|德国 078
+  network: tcp
+  port: 40878
+  server: 85.195.101.122
+  skip-cert-verify: true
+  type: vmess
+  uuid: f3d4167e-b15e-4e46-82e9-9286ef93fda7
+- alterId: 0
+  cipher: auto
+  name: 19|德国 079
+  network: tcp
+  port: 8081
+  server: 91.107.172.48
+  skip-cert-verify: true
+  type: vmess
+  uuid: 617bda44-08b7-4106-927b-e47c242b4942
+- alterId: 0
+  cipher: auto
+  name: 19|德国 080
+  network: tcp
+  port: 10534
+  server: 94.136.185.230
+  skip-cert-verify: true
+  type: vmess
+  uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
+- alterId: 0
+  cipher: auto
+  name: 19|德国 081
   network: ws
   port: 443
   server: 141.94.155.224
@@ -1062,7 +1648,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 19|德国 022
+  name: 19|德国 082
   network: ws
   port: 443
   server: 141.94.155.228
@@ -1076,7 +1662,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 19|德国 023
+  name: 19|德国 083
   network: ws
   port: 443
   server: 141.94.155.229
@@ -1090,7 +1676,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 19|德国 024
+  name: 19|德国 084
   network: ws
   port: 443
   server: 141.95.126.134
@@ -1104,774 +1690,74 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 19|德国 027
-  network: ws
-  port: 8080
-  server: 138.68.90.231
-  skip-cert-verify: true
-  type: vmess
-  uuid: 294ffdc3-5942-45ae-a154-dc6c92eacf1d
-  ws-opts:
+  http-opts:
     headers:
-      Host: 138.68.90.231
-    path: /cctv13/hd.m3u8
-- alterId: 0
-  cipher: auto
-  name: 19|德国 028
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /QQqun-737805443
+  name: '20|🇩🇪_DE_德国_IPV4 #1'
   network: http
-  port: 40969
-  server: 5.161.106.72
-  skip-cert-verify: true
+  port: 52080
+  server: 23.165.200.150
+  servername: down-cdn.dingtalk.com
+  sni: down-cdn.dingtalk.com
+  tls: false
   type: vmess
-  uuid: 2fb9f60e-d4dc-458b-e3b2-d9b44f9bbd9e
-- alterId: 0
-  cipher: auto
-  name: 19|德国 029
-  network: http
-  port: 50978
-  server: 5.161.106.72
-  skip-cert-verify: true
-  type: vmess
-  uuid: 89e6248b-0152-4317-a6ed-b6a0cf41f2cb
-- alterId: 0
-  cipher: auto
-  name: 19|德国 030
-  network: http
-  port: 443
-  server: 157.90.20.18
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
-- alterId: 0
-  cipher: auto
-  name: 19|德国 031
-  network: http
-  port: 443
-  server: 5.75.168.155
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
-- alterId: 0
-  cipher: auto
-  name: 19|德国 032
-  network: http
-  port: 443
-  server: 94.130.25.155
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
-- alterId: 0
-  cipher: auto
-  name: 19|德国 033
-  network: http
-  port: 443
-  server: 167.235.136.155
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
-- alterId: 0
-  cipher: auto
-  name: 19|德国 034
-  network: http
-  port: 443
-  server: 65.21.240.108
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
-- alterId: 0
-  cipher: auto
-  name: 19|德国 035
-  network: http
-  port: 443
-  server: 5.75.247.192
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
-- alterId: 0
-  cipher: auto
-  name: 19|德国 036
-  network: http
-  port: 443
-  server: 88.198.104.211
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
-- alterId: 4
-  cipher: auto
-  name: 19|德国 037
-  network: ws
-  port: 443
-  server: 146.0.42.87
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-opts:
-    headers:
-      Host: germany-dusseldorf.mah3Hoet.com
-    path: /ws
-- name: 19|德国 038
-  network: tcp
-  port: 62145
-  server: 84.235.170.198
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-- alterId: 0
-  cipher: auto
-  name: 19|德国 039
-  network: tcp
-  port: 2053
-  server: 178.63.237.158
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2d4dd672-180f-415c-9035-e2fc461dd95a
-- alterId: 64
-  cipher: auto
-  name: 19|德国 040
-  network: tcp
-  port: 31484
-  server: 168.119.107.162
-  skip-cert-verify: true
-  type: vmess
-  uuid: 943961b8-4e27-4bdf-a048-c2f724f542fb
-- alterId: 0
-  cipher: auto
-  name: 19|德国 041
-  network: tcp
-  port: 443
-  server: 176.9.199.190
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6bb70a79-c55b-4180-89e3-fc29bfab6662
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 19|德国 042
-  network: tcp
-  port: 443
-  server: 46.183.187.73
-  skip-cert-verify: true
-  type: vmess
-  uuid: 92a048ec-a160-497e-8069-c2e902626d7a
-- alterId: 0
-  cipher: auto
-  name: 19|德国 043
-  network: tcp
-  port: 80
-  server: 128.140.109.232
-  skip-cert-verify: true
-  type: vmess
-  uuid: 05a178f9-e6ba-4006-93d7-3d980cdc3a76
-- alterId: 0
-  cipher: auto
-  name: 19|德国 044
-  network: tcp
-  port: 11674
-  server: 176.65.151.175
-  skip-cert-verify: true
-  type: vmess
-  uuid: a98a98cb-ae86-43ae-b695-cf0dbcad3fc2
-- alterId: 0
-  cipher: auto
-  name: 19|德国 045
-  network: tcp
-  port: 34029
-  server: 185.19.33.123
-  skip-cert-verify: true
-  type: vmess
-  uuid: 577c13ab-311a-432f-83e6-336f0e445fa7
-- client-fingerprint: chrome
-  name: 19|德国 046
-  network: ws
-  port: 2053
-  server: 194.76.173.6
-  servername: vpn47.cc.cd
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
-  ws-opts:
-    headers:
-      Host: vpn47.cc.cd
-    path: /
-- name: 19|德国 047
-  network: tcp
-  port: 443
-  server: 91.107.166.1
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0d863091-6358-4cf5-9d3a-a47f29997baf
-- client-fingerprint: chrome
-  name: 19|德国 048
-  network: xhttp
-  port: 443
-  server: 179.61.138.133
-  servername: static.lotussec.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-- client-fingerprint: chrome
-  name: 19|德国 049
-  network: xhttp
-  port: 443
-  server: 5.175.249.149
-  servername: static.lotussec.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-- client-fingerprint: chrome
-  name: 19|德国 050
-  network: xhttp
-  port: 443
-  server: 89.144.30.154
-  servername: static.lotussec.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 14b48651-3738-4926-bc09-4c04e87ff80b
-- name: 19|德国 051
-  network: ws
-  port: 443
-  server: 185.242.113.75
-  servername: jyfrj1cims.dev.onappjet.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 18615aac-72e2-451b-b7c8-b492e63cf65a
-  ws-opts:
-    headers:
-      Host: jyfrj1cims.dev.onappjet.com
-    path: /jx-8c3iiq92bemzqp
-- name: 19|德国 052
-  network: ws
-  port: 8443
-  server: 62.132.3.104
-  servername: xy1ej.stream-node-us.danfeng.qzz.io
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: xy1ej.stream-node-us.danfeng.qzz.io
-    path: /danfeng
-- name: 19,24|🇩🇪_德国 (24)
-  network: tcp
-  port: 2474
-  server: 167.233.129.126
-  skip-cert-verify: false
-  tfo: false
+  uuid: 672cdade-bb05-4c86-b578-e5d09b79524a
+- name: 20|🇩🇪[www.v2nodes.com] vless-DE-1...
+  port: 3939
+  server: zibanabz.jonsonvip.ir
   tls: false
   type: vless
-  udp: true
-  uuid: 287db857-de04-4212-bd69-5d14083e340e
-- client-fingerprint: chrome
-  name: 19|德国 054
-  network: xhttp
-  port: 443
-  server: 91.107.247.173
-  servername: kala.fortresshost.ir
-  skip-cert-verify: false
-  tfo: false
-  tls: true
+  uuid: 3c152dce-5887-486c-9f0f-693ca271f2e6
+- name: '20,24|未命名 #73'
+  network: vless
+  port: 39653
+  server: online.shop.ir.eeso.cc
+  servername: online.shop.ir.eeso.cc
+  tls: false
   type: vless
-  udp: true
-  uuid: 2edc5c6c-af1a-4858-aceb-87bc23262368
-- name: 19|德国 055
-  network: grpc
-  port: 8880
-  server: 157.180.19.140
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2f213d34-c9bd-4caa-876c-1242a1b91f1f
-- name: 19|德国 056
-  network: grpc
-  port: 8880
-  server: 157.180.94.33
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 38d9aa32-f728-489d-84f9-0e9a76970ce1
-- flow: xtls-rprx-vision
-  name: 19|德国 057
-  network: tcp
-  port: 2091
-  server: 167.233.182.104
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3a667b02-3e6e-439e-9fdb-720ab7a5d306
-- flow: xtls-rprx-vision
-  name: 19|德国 058
-  network: tcp
-  port: 8443
-  server: 167.233.182.104
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3a667b02-3e6e-439e-9fdb-720ab7a5d306
-- name: 19|德国 059
-  network: tcp
-  port: 443
-  server: 18.192.50.101
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3f3bb5cc-da8b-4551-8b76-ba223f1a5255
-- name: 19|德国 060
-  network: tcp
-  port: 2087
-  server: 167.233.54.146
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4077de3d-64cb-41cb-bee2-9178210e5fb4
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 19|德国 061
-  network: tcp
-  port: 443
-  server: 157.180.81.207
-  servername: tcptlsdigikala.savfasf.ir.
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 44285ef8-77e0-4d48-a1fc-e5cf58898f87
-- name: 19|德国 062
-  network: tcp
-  port: 443
-  server: 91.107.188.182
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 57565f1e-d42a-49a0-a909-5fff0f07b146
-- name: 19|德国 063
-  network: tcp
-  port: 440
-  server: 167.71.45.85
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
-- name: 19|德国 064
-  network: tcp
-  port: 59791
-  server: 91.107.162.52
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6562121a-fa15-448d-a880-b127a1095875
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 19|德国 065
-  network: tcp
-  port: 6443
-  server: 92.119.165.51
-  servername: zug-net.locallynet.org
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 68a67906-5b37-4779-a6cc-58a1655f18b4
-- name: 19|德国 066
-  network: tcp
-  port: 15003
-  server: 91.107.179.8
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 69d8dc73-20ff-4241-bdd8-a9d6d07553b6
-- name: 19|德国 067
-  network: tcp
-  port: 56539
-  server: 5.75.194.217
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6d68f1bd-c636-4985-acc1-e17c53ccedb8
-- name: 19|德国 068
-  network: tcp
-  port: 35448
-  server: 168.119.107.162
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 788c24fa-af91-4b0d-a589-48381b07101a
-- name: 19|德国 069
-  network: ws
-  port: 8080
-  server: 168.119.48.210
-  servername: fast.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7cd6adff-8849-4fad-b3b3-857721c81477
-  ws-opts:
-    headers:
-      Host: fast.com
-    path: /
-- name: 19|德国 070
-  network: ws
-  port: 8080
-  server: 49.13.74.174
-  servername: fast.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7cd6adff-8849-4fad-b3b3-857721c81477
-  ws-opts:
-    headers:
-      Host: fast.com
-    path: /
-- name: 19|德国 071
-  network: tcp
-  port: 443
-  server: 194.113.74.166
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7d5cdbb1-9632-483a-9b50-27932cfa9390
-- name: 19|德国 072
-  network: tcp
-  port: 24391
-  server: 91.107.255.167
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7d8584e3-410b-4667-a9b3-9a6465d4f999
-- name: 19|德国 073
-  network: tcp
-  port: 1001
-  server: 91.107.169.16
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8038f7de-9bba-4ebd-8352-556bc7316c11
-- client-fingerprint: chrome
-  name: 19|德国 074
-  network: xhttp
-  port: 443
-  server: 31.185.108.84
-  servername: daredevil2.manufacturingcity.ir
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-- name: 19|德国 075
-  network: tcp
-  port: 23746
-  server: 116.203.1.152
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-- client-fingerprint: chrome
-  name: 19|德国 076
-  network: xhttp
-  port: 443
-  server: 94.237.83.139
-  servername: 3x-ui-upgrade2.seenode.app
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-- flow: xtls-rprx-vision
-  name: 19|德国 077
-  network: tcp
-  port: 443
-  server: 128.140.2.18
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: a156ace9-6f45-4a21-8b88-5d976f6edd06
-- client-fingerprint: chrome
-  name: 19|德国 078
+  uuid: baded307-189c-4ffc-a271-9acdab51a324
+- client-fingerprint: firefox
+  name: '20|🇩🇪[www.v2nodes.com] vless-DE-1... #2'
   network: ws
   port: 443
-  server: 92.223.124.62
-  servername: s-0wuppjbl2e.gcorecdn.net
-  skip-cert-verify: false
-  tfo: false
+  server: 188.225.37.43
+  servername: torvani.cyou
   tls: true
   type: vless
-  udp: true
-  uuid: a4797cd3-9939-4a70-958e-ea6301e871db
+  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
   ws-opts:
     headers:
-      Host: s-0wuppjbl2e.gcorecdn.net
-    path: /newgcore
-- client-fingerprint: chrome
-  name: 19|德国 079
-  network: ws
-  port: 443
-  server: 49.13.34.140
-  servername: vless1.greewebservices.ir
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ade238d6-637e-4f6c-b1fc-268579b262f5
-  ws-opts:
-    headers:
-      Host: vless1.greewebservices.ir
-    path: /timer/
-- client-fingerprint: chrome
-  name: 19|德国 080
-  network: grpc
-  port: 2088
-  server: 5.75.197.39
-  servername: seo.nexun.ir
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ae23e87e-0764-4152-901c-1427b00c81b7
-- name: 19|德国 081
-  network: tcp
-  port: 2023
-  server: 116.203.242.248
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b4b0a963-35fa-43e8-9905-ec8b4e8703e3
-- name: 19|德国 082
-  network: tcp
-  port: 56539
-  server: 5.75.193.170
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b710a6da-bcbe-474a-bdc7-9162ba483c4d
-- name: 19|德国 083
-  network: tcp
-  port: 56539
-  server: 5.75.195.244
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b710a6da-bcbe-474a-bdc7-9162ba483c4d
-- name: 19|德国 084
-  network: tcp
-  port: 56539
-  server: 5.75.201.230
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b710a6da-bcbe-474a-bdc7-9162ba483c4d
-- name: 19|德国 085
-  network: tcp
-  port: 56539
-  server: 5.75.201.28
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b710a6da-bcbe-474a-bdc7-9162ba483c4d
-- flow: ''
-  name: 19|德国 086
-  network: tcp
-  port: 443
-  server: 18.185.25.147
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c430370a-4b00-4686-bfb9-36ef1b989dcd
-- name: 19|德国 087
-  network: ws
-  port: 465
-  server: 91.107.180.176
-  servername: hw7.divarkhaghazi.com.
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d0d3d49c-56e8-40e1-9e83-793d03f83d93
-  ws-opts:
-    headers:
-      Host: hw7.divarkhaghazi.com.
-    path: /
-- name: 19|德国 088
-  network: tcp
-  port: 28117
-  server: 49.13.19.156
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d225a842-cef9-45de-9f8a-2bcbd584953e
-- name: 19|德国 089
-  network: tcp
-  port: 23746
-  server: 49.13.36.171
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: de43a9ca-6cc0-441e-981d-53208760cd90
-- name: 19|德国 090
-  network: tcp
-  port: 28110
-  server: 49.13.19.156
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e15b340b-f1c8-4974-bfca-edc788959f24
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 19|德国 091
-  network: tcp
-  port: 5432
-  server: 193.23.201.133
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 19|德国 092
-  network: tcp
-  port: 5432
-  server: 193.23.201.65
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee
-- name: 19|德国 093
-  network: tcp
-  port: 1234
-  server: 167.233.47.127
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f0696c33-61de-42c7-ba69-c0b8cd57b79e
-- name: 19|德国 094
-  network: tcp
-  port: 443
-  server: 3.126.31.60
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: fa12c1f5-24be-4119-8506-aad16f3bcd35
-- name: 20,24|🇩🇪_德国 (17)
-  network: tcp
+      Host: torvani.cyou
+    path: /api/boards/live
+- name: '20,24|未命名 #71'
+  network: vless
   port: 49313
   server: 159.195.207.238
   tls: false
   type: vless
   uuid: 855c7aaa-e7d6-463e-971e-d36032744428
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  name: '20|🇩🇪[www.v2nodes.com] vless-DE-1... #2'
-  network: ws
+- name: '20|🇩🇪[www.v2nodes.com] vless-DE-1... #4'
+  port: 8443
+  server: 103.31.4.75
+  tls: false
+  type: vless
+  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
+  ws-opts:
+    path: /man
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: a9w9wmko0k2od14hv8v
+  name: '20|🇩🇪[www.v2nodes.com] vless-DE-1... #5'
+  network: grpc
   port: 443
-  server: 188.225.37.175
-  servername: cryptoventura.online
+  server: 5.83.129.236
+  servername: host-de-upscale.cdn.cachefleet.com
   tls: true
   type: vless
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
-  ws-opts:
-    headers:
-      Host: cryptoventura.online
-    path: /api/de3/live
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇩🇪[www.v2nodes.com] ss-DE-1621...
-  password: zZMNTGpPl38ASlbI1EKOBJ
-  port: 46303
-  server: 135.220.178.46
-  type: ss
+  uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
 - cipher: aes-256-gcm
   name: 20|🇩🇪[www.v2nodes.com] ss-DE-1616...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -1890,93 +1776,148 @@ proxies:
   port: 19999
   server: 23.157.88.43
   type: ss
-- cipher: aes-256-gcm
-  name: '20|🇩🇪[www.v2nodes.com] ss-DE-1615... #2'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 193.108.119.2
-  type: ss
-- name: 20|🇩🇪DE_5|2.3MB/s
-  password: 'null'
+- name: 20|🇩🇪DE_2|2.9MB/s|R002-260618
   port: 443
-  server: 172.64.69.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- encryption: none
-  name: 20|🇩🇪DE_7|1.3MB/s
-  network: ws
-  port: 2082
-  server: tally.so
-  type: vless
-  udp: true
-  uuid: 975955b1-0521-49d9-97ad-eed2e626a30f
-  ws-opts:
-    headers:
-      Host: roOz-ryo1kZgj-v1.rOoz-67c.woRKers.deV
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 20|🇩🇪DE_8|1.0MB/s|R002-260618
-  password: None
-  port: 443
-  server: 87.249.132.97
+  server: 172.64.68.89
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
   udp: true
   x-toolall-mihomo: true
-- name: 20|🇩🇪DE_9|3.4MB/s
-  password: 'null'
-  port: 9002
-  server: 158.173.154.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    method: GET
-    path:
-    - /QQqun-737805443
-  name: '20,27|🇩🇪 德国 | DEU 8 #1'
-  network: http
-  port: 52080
-  server: 23.165.200.150
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 672cdade-bb05-4c86-b578-e5d09b79524a
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   name: '20|🇩🇪 德国 | DEU #2'
-  network: ws
+  network: xhttp
   port: 443
-  server: visa.com.sg
-  servername: node.plutocore.vip
+  server: 193.160.208.240
+  servername: 193.160.208.240
   tls: true
   type: vless
   udp: true
-  uuid: 8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2
+  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
+  xhttp-opts:
+    mode: auto
+    path: /assets/twru01/
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '20,27|🇩🇪 德国 | DEU 4 #1'
+  network: xhttp
+  port: 2053
+  server: check-host.net
+  servername: n8.hyby.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: d133dd1c-3084-46c3-ba6e-aa3597c43cc1
+  xhttp-opts:
+    host: n8.hyby.ir
+    mode: auto
+    path: /
+- name: 20|🇩🇪 德国 | DEU 6
+  password: 1caaeda2-7ea1-43c3-b2b6-f8c093a45993
+  port: 23201
+  server: 45.192.198.230
+  skip-cert-verify: true
+  sni: buylite.music.apple.com
+  type: anytls
+  udp: true
+- name: 20|🇩🇪 德国 | DEU 7
+  password: 97e926e8-0fbf-4af5-89de-4a4c8708a12c
+  port: 2086
+  server: forwarded.frnhk.xyz
+  skip-cert-verify: true
+  sni: de.gosthk.site
+  type: anytls
+  udp: true
+- name: 20|🇩🇪 德国 | DEU 8
+  password: 1caaeda2-7ea1-43c3-b2b6-f8c093a45993
+  port: 23200
+  server: 45.192.198.230
+  skip-cert-verify: true
+  sni: buylite.music.apple.com
+  type: anytls
+  udp: true
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de3.v1
+  name: 20|🇩🇪 德国 | DEU 9
+  network: grpc
+  port: 443
+  server: luminexorizon.ink
+  servername: luminexorizon.ink
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+- alpn:
+  - h2
+  - h3
+  - http/1.1
+  name: 20|🇩🇪 德国 | DEU 10
+  network: ws
+  password: X00HagvwL8gQXNDAnsxsN8dv1_VdneEo
+  port: 21443
+  server: 5.59.204.26
+  skip-cert-verify: true
+  sni: fi1.nebulaguard.org
+  type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: node.plutocore.vip
-    path: /f/210/5dffe1d758f42a4ef48f733c
+      Host: fi1.nebulaguard.org
+    path: /trojan/
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '20|🇩🇪 德国 | DEU #8'
+  network: ws
+  port: 443
+  server: 191.217.252.31
+  servername: media.saari.lalibobi.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7d718630-7a1a-4af8-9332-aa0610634e8a
+  ws-opts:
+    path: /live/showroom
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '20|🇩🇪 德国 | DEU #6'
+  network: grpc
+  port: 443
+  server: luminexorizon.ink
+  servername: luminexorizon.ink
+  tls: true
+  type: vless
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+- name: '20|🇩🇪 德国 | DEU #7'
+  password: X00HagvwL8gQXNDAnsxsN8dv1_VdneEo
+  port: 21443
+  server: 5.59.204.26
+  skip-cert-verify: true
+  sni: fi1.nebulaguard.org
+  type: trojan
+- name: '20,28|DE_speednode_0004 #1'
+  port: 443
+  server: 213.109.163.119
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   down: 55
-  name: 20|🇩🇪 德国 | DEU 3
+  name: 20|🇩🇪 德国 | DEU
   port: 54177
   protocol: none
   server: 5.83.129.90
@@ -1985,75 +1926,48 @@ proxies:
   type: hysteria
   udp: true
   up: 11
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  name: '20,27|🇺🇸 美国 | USA 5 #1'
-  network: xhttp
-  port: 443
-  server: 199.232.239.239
-  servername: community.fastly.steamstatic.com
-  tls: true
+- encryption: mlkem768x25519plus.native.0rtt.GlIc2LFlqBQ3itRnw8zoo3tfD7MSknWWmmLVDdr88jE
+  name: 20|🇩🇪 德国 | DEU 2
+  network: ws
+  port: 80
+  server: 104.18.43.144
+  tls: false
   type: vless
   udp: true
-  uuid: 5a4db896-caab-4b9c-f747-52ce95b0f9ad
-  xhttp-opts:
-    host: cloudvpn2026-4.global.prod.fastly.net.global.prod.fastly.net
-    mode: packet-up
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: ''
-  name: '20|🇩🇪 德国 | DEU #5'
-  network: grpc
-  port: 443
-  server: 212.113.116.181
-  servername: de.oncloudvpn.com
-  tls: true
-  type: vless
-  uuid: 1d46250c-f015-439d-a7fd-c4d9e2a4c63d
-- name: '20,27|🇩🇪 德国 | DEU 6 #1'
-  password: 9b24e5d0-62be-41df-b967-9b670cf90ff8
-  port: 2086
-  server: forwarded.frnhk.xyz
-  skip-cert-verify: true
-  sni: de.gosthk.site
-  type: anytls
-  udp: true
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.Fy1WuRvH1VNIEda4AC61jAhcBFLzuYHcwbUO7mNjxwY
-  name: 20,27|🇩🇪 德国 | DEU 9
-  network: xhttp
-  port: 2087
-  server: www.hyby.ir
-  servername: www.hyby.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: b6da1396-cfa7-421c-92b6-8bc947f0d308
-  xhttp-opts:
-    host: www.hyby.ir
-    mode: auto
-    path: /
-- client-fingerprint: firefox
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: erosan.seminar-irani.ir
+    path: /MiMiTDL
+    v2ray-http-upgrade: true
+- client-fingerprint: safari
   grpc-opts:
     grpc-mode: gun
-    grpc-service-name: glush.de2.v1
-  name: 20|🇩🇪 德国 | DEU 8
+    grpc-service-name: api
+  name: '20,27|🇩🇪 德国 | DEU #1'
   network: grpc
   port: 443
-  server: 188.225.56.133
-  servername: astronovalis.wtf
+  reality-opts:
+    public-key: WerkLBuzReJqDK23pG8dd7JPLBcu2rVhUfBR52D4um0
+    short-id: 05c656ffd118ce13
+  server: 200.165.236.84
+  servername: yandex.ru
   tls: true
   type: vless
   udp: true
-  uuid: 820fa845-a1eb-4a83-b613-e6714cea8a1a
+  uuid: a54c6d0b-56d8-4bb8-a4af-8c5a7f0c0b34
+- name: 20|ProxyPool | 🇩🇪 德国 | DEU 6
+  network: ws
+  port: 443
+  server: cdn.cloudof1.ir
+  tls: false
+  type: vless
+  udp: true
+  uuid: 00f7637c-acab-465b-933a-727becde5c1b
+  ws-opts:
+    headers:
+      Host: cdn.cloudof1.ir
+    path: /vcffrt
 - flow: xtls-rprx-vision
   name: 21|🇪_DE_国
   port: 7444
@@ -2104,274 +2018,6 @@ proxies:
   type: vless
   udp: true
   uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-- client-fingerprint: firefox
-  name: 24|🇩🇪_德国 (33)
-  network: ws
-  port: 443
-  server: 213.239.156.175
-  servername: dnsss.kdns.fr
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 7c03538c-c6dd-4dc1-b35c-5fc0e2a43271
-  ws-opts:
-    headers:
-      Host: dnsss.kdns.fr
-    path: '%2F'
-- client-fingerprint: chrome
-  name: 24|🇩🇪_德国 (40)
-  network: ws
-  port: 8443
-  server: 212.113.112.239
-  servername: v6-95o.pages.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: bf14dc50-e9f2-49fd-8642-620446edeafb
-  ws-opts:
-    headers:
-      Host: v6-95o.pages.dev
-    path: '%2F'
-- client-fingerprint: chrome
-  name: 24|🇩🇪_德国 (41)
-  network: ws
-  port: 443
-  server: 109.237.97.238
-  servername: v5-4b5.pages.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: bf14dc50-e9f2-49fd-8642-620446edeafb
-  ws-opts:
-    headers:
-      Host: v5-4b5.pages.dev
-    path: '%2F'
-- client-fingerprint: chrome
-  name: 24|🇩🇪_德国 (42)
-  network: ws
-  port: 8443
-  server: 46.101.220.197
-  servername: v6-95o.pages.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: bf14dc50-e9f2-49fd-8642-620446edeafb
-  ws-opts:
-    headers:
-      Host: v6-95o.pages.dev
-    path: '%2F'
-- name: 24|🇩🇪_德国 (43)
-  network: ws
-  port: 443
-  server: 178.128.199.136
-  servername: fs.qicai99.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  ws-opts:
-    path: '%2F'
-- name: 24|🇩🇪_德国 (44)
-  network: ws
-  port: 8443
-  server: 13.143.165.124
-  servername: fs.qicai99.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  ws-opts:
-    path: '%2F'
-- name: 24|🇩🇪_德国 (45)
-  network: ws
-  port: 80
-  server: 57.129.41.216
-  servername: ov-germany1.09vpn.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  ws-opts:
-    path: '%2Fvless%2F'
-- name: 24|🇩🇪_德国 (46)
-  network: ws
-  port: 2083
-  server: 91.107.247.173
-  servername: sino.bestsellers1.site
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
-  ws-opts:
-    path: '%2F'
-- name: 24|🇩🇪_德国 (47)
-  network: ws
-  port: 2083
-  server: sino.bestsellers1.site
-  servername: sino.bestsellers1.site
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
-  ws-opts:
-    path: '%2F'
-- flow: xtls-rprx-vision
-  name: 24|🇩🇪_德国 (7)
-  network: tcp
-  port: 443
-  server: 169.40.42.202
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- flow: xtls-rprx-vision
-  name: 24|🇩🇪_德国 (8)
-  network: tcp
-  port: 443
-  server: 169.40.42.90
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- flow: xtls-rprx-vision
-  name: 24|🇩🇪_德国 (9)
-  network: tcp
-  port: 443
-  server: 169.40.42.168
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- flow: xtls-rprx-vision
-  name: 24|🇩🇪_德国 (10)
-  network: tcp
-  port: 443
-  server: 169.40.42.89
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- flow: xtls-rprx-vision
-  name: 24|🇩🇪_德国 (22)
-  network: tcp
-  port: 443
-  server: 185.255.115.103
-  servername: 4935e4t.de25.h1clayd.click
-  tls: false
-  type: vless
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 24,27|🇩🇪 德国 | DEU 7
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
-    short-id: 6976d670818644cc
-  server: 4935e4t.de25.h1clayd.click
-  servername: 4935e4t.de25.h1clayd.click
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-- name: 24|🇩🇪_德国 (29)
-  network: tcp
-  port: 443
-  server: f0d7aft.nl17.h1clayd.click
-  servername: f0d7aft.nl17.h1clayd.click
-  tls: false
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-- alpn:
-  - h2
-  - http/1.1
-  - h3
-  client-fingerprint: chrome
-  name: 24|Robert-Germany-c15
-  network: ws
-  port: 443
-  server: 188.114.97.6
-  servername: rubifen.adaspoloandco.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  ws-opts:
-    headers:
-      Host: rubifen.adaspoloandco.com
-    path: '%2FGOrbEh'
-- alpn:
-  - h2
-  - http/1.1
-  - h3
-  client-fingerprint: chrome
-  name: 24|Robert-Germany-c18
-  network: ws
-  port: 443
-  server: 198.202.211.1
-  servername: rubifen.adaspoloandco.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  ws-opts:
-    headers:
-      Host: rubifen.adaspoloandco.com
-    path: '%2FGOrbEh'
-- alpn:
-  - h2
-  - http/1.1
-  - h3
-  client-fingerprint: chrome
-  name: 24|Robert-Germany-c19
-  network: ws
-  port: 443
-  server: 104.26.14.85
-  servername: rubifen.adaspoloandco.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  ws-opts:
-    headers:
-      Host: rubifen.adaspoloandco.com
-    path: '%2FGOrbEh'
-- alpn:
-  - h2
-  - http/1.1
-  - h3
-  client-fingerprint: chrome
-  name: 24|Robert-Germany-c2
-  network: ws
-  port: 443
-  server: 104.19.64.105
-  servername: rubifen.adaspoloandco.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  ws-opts:
-    headers:
-      Host: rubifen.adaspoloandco.com
-    path: '%2FGOrbEh'
-- alpn:
-  - h2
-  - http/1.1
-  - h3
-  client-fingerprint: chrome
-  name: 24|Robert-Germany-c20
-  network: ws
-  port: 443
-  server: 188.114.97.4
-  servername: rubifen.adaspoloandco.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  ws-opts:
-    headers:
-      Host: rubifen.adaspoloandco.com
-    path: '%2FGOrbEh'
 - client-fingerprint: random
   name: 24|zhuhai.uk 🇩🇪德国 01
   network: ws
@@ -2498,6 +2144,133 @@ proxies:
   tls: false
   type: vless
   uuid: 20717e25-8cea-4634-b9ab-9c9bc9ca0620
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '24|AVToday.io #19'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 6PJlXT9xrgJP8RXfhpWDMKPh4eqGt_IZmenc_a6v0gg
+  server: 94.156.170.64
+  servername: gemsubbgem.world
+  tls: false
+  type: vless
+  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '24|AVToday.io #36'
+  network: tcp
+  port: 9889
+  reality-opts:
+    public-key: GPwEGfRBoztNbcAvfX4ojY9FJ1vaMD3v21tnIrN2xyE
+  server: 200.96.106.2
+  servername: tiktok2.transitbp2systems.com
+  tls: false
+  type: vless
+  uuid: 0dcefe19-a42a-4d57-96be-83dcbffd425f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '24|AVToday.io #44'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
+    short-id: 2c9a2790ad5900b2
+  server: 64.188.66.181
+  servername: ge-s-1.pythonmakemigreat.wiki
+  tls: false
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+- alpn:
+  - h2
+  - http/1.1
+  - h3
+  client-fingerprint: chrome
+  name: 24|Robert-Germany-c15
+  network: ws
+  port: 443
+  server: 188.114.97.6
+  servername: rubifen.adaspoloandco.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  ws-opts:
+    headers:
+      Host: rubifen.adaspoloandco.com
+    path: '%2FGOrbEh'
+- alpn:
+  - h2
+  - http/1.1
+  - h3
+  client-fingerprint: chrome
+  name: 24|Robert-Germany-c18
+  network: ws
+  port: 443
+  server: 198.202.211.1
+  servername: rubifen.adaspoloandco.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  ws-opts:
+    headers:
+      Host: rubifen.adaspoloandco.com
+    path: '%2FGOrbEh'
+- alpn:
+  - h2
+  - http/1.1
+  - h3
+  client-fingerprint: chrome
+  name: 24|Robert-Germany-c19
+  network: ws
+  port: 443
+  server: 104.26.14.85
+  servername: rubifen.adaspoloandco.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  ws-opts:
+    headers:
+      Host: rubifen.adaspoloandco.com
+    path: '%2FGOrbEh'
+- alpn:
+  - h2
+  - http/1.1
+  - h3
+  client-fingerprint: chrome
+  name: 24|Robert-Germany-c2
+  network: ws
+  port: 443
+  server: 104.19.64.105
+  servername: rubifen.adaspoloandco.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  ws-opts:
+    headers:
+      Host: rubifen.adaspoloandco.com
+    path: '%2FGOrbEh'
+- alpn:
+  - h2
+  - http/1.1
+  - h3
+  client-fingerprint: chrome
+  name: 24|Robert-Germany-c20
+  network: ws
+  port: 443
+  server: 188.114.97.4
+  servername: rubifen.adaspoloandco.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  ws-opts:
+    headers:
+      Host: rubifen.adaspoloandco.com
+    path: '%2FGOrbEh'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 25|🇩🇪 德国|@ripaojiedian
@@ -2642,35 +2415,47 @@ proxies:
     path: /?ed=2560&Telegram🇨🇳@WangCai2
 - alpn:
   - h2
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: glush.de3.v1
-  name: 27|🇩🇪 德国 | DEU
-  network: grpc
-  port: 443
-  server: luminexorizon.ink
-  servername: luminexorizon.ink
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
-- alpn:
   - http/1.1
-  client-fingerprint: edge
-  name: '27|🇩🇪 德国 | DEU 4 #1'
-  network: ws
-  port: 443
-  server: ws3.falmero.store
-  servername: falmero.store
+  client-fingerprint: chrome
+  name: '27|🇩🇪 德国 | DEU 2 #1'
+  network: xhttp
+  port: 2053
+  server: 104.21.74.214
+  servername: n8.hyby.ir
   tls: true
   type: vless
   udp: true
-  uuid: 820fa845-a1eb-4a83-b613-e6714cea8a1a
-  ws-opts:
-    headers:
-      Host: falmero.store
-    path: /api/de1/stream
+  uuid: d133dd1c-3084-46c3-ba6e-aa3597c43cc1
+  xhttp-opts:
+    host: n8.hyby.ir
+    mode: auto
+    path: /
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: 27|🇩🇪 德国 | DEU 3
+  port: 26032
+  server: 123466.ru
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 804334e2-04ca-434c-8311-3ccee8218175
+- client-fingerprint: chrome
+  name: 27|🇩🇪 德国 | DEU 5
+  network: xhttp
+  port: 443
+  server: 3.174.189.0
+  servername: d1b9pmaut2v26v.cloudfront.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2e69b088-6ef3-417f-8247-125cf257fafd
+  xhttp-opts:
+    host: d1b9pmaut2v26v.cloudfront.net
+    mode: auto
+    path: /cf
 - client-fingerprint: chrome
   name: 29|DE_Frankfurt_Amazon Technologi...
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z

@@ -980,33 +980,67 @@ proxies:
   type: vmess
   udp: true
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+- name: 15|VIP2-HK-Hong Kong-h-2421921-xx...
+  password: admin
+  port: 8899
+  server: 47.242.19.215
+  type: socks5
+  username: admin
+- name: 15|🇭🇰HK_83|650KB/s [d82b6f515b7b]
+  password: ''
+  port: 8443
+  server: 38.76.140.254
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: ''
+  x-toolall-mihomo: true
 - client-fingerprint: chrome
+  name: 15|🇹🇷TR_11|1.2MB/s|C002-260622 [8...
+  network: tcp
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  port: 20028
+  server: sclass-b1.catcat321.com
+  servername: hk.catxstar.com
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  x-toolall-mihomo: true
+- client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: 15|🇭🇰香港|HK|admin@VIP [7e044cdd4d0...
-  port: 51314
+  name: 15|VIP2-HK-Central-h-82502076-xkg...
+  port: 443
   reality-opts:
-    public-key: MF47tJgN-Dd0KNvhjox1S_hSBOG3xP3VfebHgjXN6A4
-    short-id: b3dc010b3fe192c2
-  server: hk3.wawojk.dpdns.org
-  servername: www.asus.com
+    public-key: POkinloWKlvN-mG2Xgh4vBOFI9X4DGnBce9QDtIft0w
+    short-id: 493bac61
+  server: ad6ea328-ace0-45e1-8b69-e698536fa709.67dc6e59-0fd8-4ca5-ba29-26a8817e203b.byteprivatelink.com
+  servername: tw.archive.ubuntu.com
   tls: true
   type: vless
-  uuid: affd72c9-0870-4c92-b6e5-af7d0e06313e
+  uuid: 7f6ee01e-c243-4c84-9cf2-7d8ecc0da202
   x-toolall-mihomo: true
-- name: 15|🇭🇰香港 原生IP 0.24MB/s 534 linuxdo...
+- name: 15|🇭🇰HK_32|176KB/s|R002-260618 [d...
   password: 'null'
   port: 443
   server: fan.240104.xyz
   sni: fan.240104.xyz
+  sub_tag: R002-260618
   tls: true
   type: http
+  udp: true
   username: 'null'
-- name: 15|HK - zhuhai.uk 03 [757fb53364e...
+  x-toolall-mihomo: true
+- name: 15|🇭🇰HK_47|175KB/s|R002-260618 [7...
   port: 443
-  server: 202.85.53.25
+  server: fan.240104.xyz
   skip-cert-verify: true
+  sni: fan.240104.xyz
+  sub_tag: R002-260618
   tls: true
   type: http
+  udp: true
+  x-toolall-mihomo: true
 - name: 20|🇭🇰[www.v2nodes.com] vless-HK-1...
   network: ws
   port: 443
@@ -1023,6 +1057,19 @@ proxies:
   name: '20|🇭🇰[www.v2nodes.com] vless-HK-1... #1'
   network: ws
   port: 443
+  server: 38.207.177.204
+  servername: fs.qicai99.com
+  tls: true
+  type: vless
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+    path: /fp=chrome
+- client-fingerprint: chrome
+  name: '20|🇭🇰[www.v2nodes.com] vless-HK-1... #2'
+  network: ws
+  port: 443
   server: 23.156.153.40
   servername: fs.qicai99.com
   tls: true
@@ -1032,7 +1079,7 @@ proxies:
     headers:
       Host: fs.qicai99.com
     path: /
-- name: '20|🇭🇰[www.v2nodes.com] vless-HK-1... #2'
+- name: '20|🇭🇰[www.v2nodes.com] vless-HK-1... #3'
   network: ws
   port: 443
   server: 68.64.182.205
@@ -1062,109 +1109,20 @@ proxies:
   port: 40010
   server: c17b957c5a76ec76.lebufflonfermegroup.us
   type: ss
-- name: 20|🇭🇰HK_1|1.9MB/s
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 20,27|🇭🇰 香港 | HKG 3
+  network: tcp
   port: 8443
-  server: 38.76.140.254
-  skip-cert-verify: true
+  reality-opts:
+    public-key: 74P0QFvaK6B13rHsxR_t0lqRlg4YLuORD4VaHr5Jd38
+    short-id: 0bf55f64
+  server: 8.217.1.203
+  servername: www.apple.com
   tls: true
-  type: http
-- name: 20|🇭🇰 香港 | HKG
-  password: 1caaeda2-7ea1-43c3-b2b6-f8c093a45993
-  port: 23131
-  server: 45.192.198.230
-  skip-cert-verify: true
-  sni: buylite.music.apple.com
-  type: anytls
+  type: vless
   udp: true
-- name: 20|🇭🇰 香港 | HKG 2
-  password: 1caaeda2-7ea1-43c3-b2b6-f8c093a45993
-  port: 23133
-  server: 45.192.198.230
-  skip-cert-verify: true
-  sni: buylite.music.apple.com
-  type: anytls
-  udp: true
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '20|🇭🇰 香港 | HKG #1'
-  network: ws
-  port: 36703
-  server: 47.244.120.197
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  ws-opts:
-    path: /arki
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '20|🇭🇰 香港 | HKG #2'
-  network: ws
-  port: 44867
-  server: 47.244.120.197
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  ws-opts:
-    path: /arki
-- name: 20|🇭🇰 香港 | HKG 6
-  password: 1caaeda2-7ea1-43c3-b2b6-f8c093a45993
-  port: 23132
-  server: 45.192.198.230
-  skip-cert-verify: true
-  sni: buylite.music.apple.com
-  type: anytls
-  udp: true
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '20|🇭🇰 香港 | HKG #4'
-  network: ws
-  port: 23026
-  server: 47.244.120.197
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  ws-opts:
-    path: /arki
-- name: 20|🇭🇰 香港 | HKG 8
-  password: 1caaeda2-7ea1-43c3-b2b6-f8c093a45993
-  port: 23134
-  server: 45.192.198.230
-  skip-cert-verify: true
-  sni: buylite.music.apple.com
-  type: anytls
-  udp: true
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - openai.com
-    method: GET
-    path:
-    - /QQqun-737805443
-  name: '20,27|🇭🇰 香港 | HKG #3'
-  network: http
-  port: 52080
-  server: 47.242.81.94
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e47b9f77-60e4-4738-8d53-772b6002e146
+  uuid: 8b17beac-b143-447d-aa68-14cbb121a602
 - name: 23|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158
@@ -1177,6 +1135,15 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
+- client-fingerprint: chrome
+  name: 24|HK VLESS-35 | free-nodes
+  network: tcp
+  port: 31884
+  server: 152.175.6.229
+  servername: hk010.zestapp778.com
+  tls: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
 - client-fingerprint: random
   name: 24|zhuhai.uk 🇭🇰香港 01
   network: ws
@@ -1242,70 +1209,6 @@ proxies:
   tls: false
   type: vless
   uuid: d97c80a6-4195-4511-9371-4dd1d5f984db
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 25|🇭🇰 香港|@ripaojiedian
-  network: tcp
-  port: 2083
-  reality-opts:
-    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
-    short-id: 08a4b1f473932632
-  server: 66.90.115.123
-  servername: www.apple.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3b8896fd-ba38-4da7-b365-d0f01f37aa40
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 25|🇭🇰 香港2|@ripaojiedian
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
-    short-id: 08a4b1f473932632
-  server: 66.90.115.133
-  servername: www.apple.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3b8896fd-ba38-4da7-b365-d0f01f37aa40
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 25|🇭🇰 香港3|@ripaojiedian
-  network: tcp
-  port: 2083
-  reality-opts:
-    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
-    short-id: 08a4b1f473932632
-  server: 66.90.115.133
-  servername: www.apple.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3b8896fd-ba38-4da7-b365-d0f01f37aa40
-- client-fingerprint: chrome
-  name: 25|🇭🇰 香港4|@ripaojiedian
-  network: ws
-  port: 8443
-  server: cdn-hk.skyvora.app
-  servername: cdn-hk.skyvora.app
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3b8896fd-ba38-4da7-b365-d0f01f37aa40
-  ws-opts:
-    headers:
-      Host: cdn-hk.skyvora.app
-    path: /zmeadqv620k
 - client-fingerprint: chrome
   encryption: none
   name: 26|🇭🇰  | HKG
@@ -2609,16 +2512,27 @@ proxies:
   sni: 54e8635c-t9lmo0-tcm6ys-deip.hkt.east.wctype.com
   type: anytls
   udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '27|🇭🇰 香港 | HKG 2 #1'
-  network: tcp
-  port: 35600
-  reality-opts:
-    public-key: zHmC_LkSMSrRHcetzsRJZvu6irqviiG3vf9VuXRL6FE
-  server: 45.192.194.104
-  servername: www.iij.ad.jp
-  tls: true
-  type: vless
+- name: 27|🇭🇰 香港 | HKG
+  password: 3de197ca-c3d8-4685-b22d-c5237d3943a2
+  port: 36983
+  server: aws.v4.us.ci
+  skip-cert-verify: true
+  sni: updates.cdn-apple.com
+  type: anytls
   udp: true
-  uuid: d34c4e7c-3eac-4a26-adb9-9004b6981ad8
+- name: '27|🇭🇰 香港 | HKG 2 #1'
+  password: 3de197ca-c3d8-4685-b22d-c5237d3943a2
+  port: 55285
+  server: aws.v4.zh.kg
+  skip-cert-verify: true
+  sni: updates.cdn-apple.com
+  type: anytls
+  udp: true
+- name: 27|🇭🇰 香港 | HKG 4
+  password: 3de197ca-c3d8-4685-b22d-c5237d3943a2
+  port: 25768
+  server: aws.v4.zh.kg
+  skip-cert-verify: true
+  sni: updates.cdn-apple.com
+  type: anytls
+  udp: true

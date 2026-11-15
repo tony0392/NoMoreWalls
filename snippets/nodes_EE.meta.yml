@@ -78,32 +78,27 @@ proxies:
   type: vless
   udp: true
   uuid: 629f88a6-b20b-4489-a22f-4d8b418c0488
-- name: 15|🇪🇪EE_1|2.6MB/s [9bfab8a0502eb6...
-  port: 9443
-  server: 95.153.31.66
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: '20,24|未命名 #104'
-  network: vless
-  port: 16443
-  server: 45.86.60.174
-  tls: false
-  type: vless
-  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 20|🇪🇪 爱沙尼亚 | EST
+- name: 19|爱沙尼亚 001
   network: tcp
   port: 443
-  reality-opts:
-    public-key: Oc8iFCgfl2hRU3yCf2aaZOxiuK5GLwxct3lYy6sw7nk
-  server: saar-est3.lalibobi.online
-  servername: saar-est3.lalibobi.online
+  server: 85.9.194.75
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 7d718630-7a1a-4af8-9332-aa0610634e8a
+  uuid: 88888888-8888-8888-8888-888888888888
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 20|🇪🇪 爱沙尼亚 | EST
+  network: tcp
+  port: 8443
+  server: 165.231.157.148
+  servername: api-6af74a4f.adhil.uk
+  tls: true
+  type: vless
+  udp: true
+  uuid: 97fd7807-7e2b-49da-8a0e-e40197088f97
 - client-fingerprint: random
   name: 24|zhuhai.uk 🇪🇪爱沙尼亚 02
   network: ws
@@ -133,15 +128,3 @@ proxies:
     headers:
       Host: us7fs3.proxen.pdevinfra.com
     path: '%2F'
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '24|AVToday.io #41'
-  network: tcp
-  port: 2087
-  reality-opts:
-    public-key: HRmmr0Ii4Tr9jPLwratvLhee3_VWFNK47T8AAo7kzww
-  server: 132.243.74.104
-  servername: ee.song69.fun
-  tls: false
-  type: vless
-  uuid: 92b79c22-f68b-4713-8b21-52f264cb92f5

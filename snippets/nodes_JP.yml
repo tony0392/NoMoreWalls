@@ -551,31 +551,6 @@ proxies:
     headers:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
-- name: 8|🇯🇵JP_56
-  password: ND91608427
-  port: 443
-  server: 18.179.31.199
-  type: trojan
-- name: 12|日本东京+Amazon数据中心
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  port: 20051
-  server: sclass-c2.catcat321.com
-  sni: hk.catxstar.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 19|日本 001
-  network: ws
-  port: 443
-  server: 47.74.43.158
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-  ws-opts:
-    headers:
-      Host: lg30.cfcdn3.xyz
-    path: /
 - name: 19,20,25|🇯🇵 日本2|@ripaojiedian
   network: tcp
   password: d050aca3-9df2-4461-90ec-92373c1d7636
@@ -593,6 +568,20 @@ proxies:
   sni: ssl.fastly.com
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 19|日本 003
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: jp01.a0a.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 19|日本 004
@@ -938,20 +927,7 @@ proxies:
   uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
 - alterId: 0
   cipher: auto
-  name: 19|日本 038
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: jp01.a0a.xyz
-    path: /cctv13.m3u8
-- alterId: 0
-  cipher: auto
-  name: 19|日本 047
+  name: 19|日本 046
   network: ws
   port: 443
   server: fullaccesstojapannetsubnode1.azurewebsites.net
@@ -963,6 +939,20 @@ proxies:
     headers:
       Host: fullaccesstojapannetsubnode1.azurewebsites.net
     path: /ws
+- alterId: 0
+  cipher: auto
+  name: 19|日本 047
+  network: ws
+  port: 443
+  server: 47.74.43.158
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  ws-opts:
+    headers:
+      Host: lg30.cfcdn3.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 19|日本 048
@@ -1035,6 +1025,19 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 19|日本 055
+  network: ws
+  port: 12889
+  server: gtm1.ktmwan.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  ws-opts:
+    headers:
+      Host: gtm1.ktmwan.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|日本 056
   network: tcp
   port: 49499
   server: 139.162.125.97
@@ -1043,7 +1046,7 @@ proxies:
   uuid: 3ce1d2e3-0e1b-4b00-921b-fcc0f8abe1f6
 - alterId: 0
   cipher: auto
-  name: 19|日本 056
+  name: 19|日本 057
   network: tcp
   port: 14935
   server: 167.179.111.237
@@ -1074,14 +1077,6 @@ proxies:
   port: 443
   server: 149.22.87.241
   type: ss
-- name: '20|🇳🇬 尼日利亚 | NGA #1'
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  port: 20103
-  server: sclass-00.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
 - name: 26|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001...
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20033
@@ -1224,13 +1219,3 @@ proxies:
   sni: amazed-mako.rooster465.autos
   type: trojan
   udp: true
-- alterId: 1
-  cipher: auto
-  name: 27|🇯🇵 日本 | JPN 2
-  port: 28788
-  server: op715tj-g06.jp06-jz-vm0.entry.fr0528.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 72a52b12-fbd2-3fa3-9964-df23590dc0bb

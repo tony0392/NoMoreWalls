@@ -1,4 +1,19 @@
 proxies:
+- client-fingerprint: chrome
+  name: 0,21|🇵_JP_
+  network: ws
+  port: 443
+  server: 35.72.179.15
+  servername: shuma.ccwu.cc
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  ws-opts:
+    headers:
+      Host: shuma.ccwu.cc
+    path: /
 - alterId: 0
   cipher: auto
   name: 2|日本NO.1
@@ -566,7 +581,7 @@ proxies:
       Host: notls.lukongtou.eu.org
     path: Telegram-WangCai2🇨🇳
 - encryption: none
-  name: '6,20|🇯🇵[www.v2nodes.com] vless-JP-1... #1'
+  name: '6,19,20|🇯🇵[www.v2nodes.com] vless-JP-1... #1'
   network: ws
   port: 11424
   server: 38.47.96.220
@@ -667,71 +682,15 @@ proxies:
       Host: rubifen.adaspoloandco.com
     path: /GOrbEh
 - client-fingerprint: chrome
-  name: 6,13|🇵JP丨yoyapai.com (4)
+  name: 6|🇯🇵JP日本丨yoyapai.com_3
   port: 58011
   server: us22.sofast.live
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vless
   udp: true
   uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-- name: 8|🇯🇵JP_56
-  password: ND91608427
-  port: 443
-  server: 18.179.31.199
-  type: trojan
-- name: 12|日本东京+Amazon数据中心
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  port: 20051
-  server: sclass-c2.catcat321.com
-  sni: hk.catxstar.com
-  type: trojan
-- name: 13|🇵JP丨yoyapai.com
-  network: ws
-  port: 18122
-  server: 155.248.168.35
-  servername: notls.lukongtou.eu.org
-  skip-cert-verify: false
-  sni: notls.lukongtou.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  ws-opts:
-    headers:
-      Host: notls.lukongtou.eu.org
-    path: Telegram-WangCai2🇨🇳
-- name: 13|🇯🇵JP日本丨yoyapai.com (2)
-  network: ws
-  port: 11424
-  server: 38.47.96.220
-  servername: notls.lukongtou.eu.org
-  skip-cert-verify: false
-  sni: notls.lukongtou.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  ws-opts:
-    headers:
-      Host: notls.lukongtou.eu.org
-    path: Telegram-WangCai2🇨🇳
-- name: '13|🇯🇵JP日本丨yoyapai.com #1'
-  network: ws
-  port: 443
-  server: 89.125.244.28
-  servername: notls.lukongtou.eu.org
-  skip-cert-verify: false
-  sni: notls.lukongtou.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  ws-opts:
-    headers:
-      Host: notls.lukongtou.eu.org
-    path: Telegram-WangCai2🇨🇳
-- name: 13|🇯🇵JP日本節點丨yoyapai.com (2)
+- name: 13|JP丨yoyapai.com
   network: ws
   port: 443
   server: 154.197.88.253
@@ -748,7 +707,7 @@ proxies:
     path: Telegram-WangCai2🇨🇳
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 13|🇵JP日本丨yoyapai.com (3)
+  name: 13|🇵JP日本丨yoyapai.com
   port: 443
   reality-opts:
     public-key: qBtxq4RZxDLCJT8i48iaGMhacv8MOI0yhIFiuwYJm08
@@ -761,6 +720,36 @@ proxies:
   type: vless
   udp: true
   uuid: 94d2d711-76e5-4d82-a3c9-4f06fd5558c8
+- name: 13|🇯🇵JP日本丨yoyapai.com (2)
+  network: ws
+  port: 18122
+  server: 155.248.168.35
+  servername: notls.lukongtou.eu.org
+  skip-cert-verify: false
+  sni: notls.lukongtou.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  ws-opts:
+    headers:
+      Host: notls.lukongtou.eu.org
+    path: Telegram-WangCai2🇨🇳
+- name: 13|🇯🇵JP日本丨yoyapai.com (3)
+  network: ws
+  port: 11424
+  server: 38.47.96.220
+  servername: notls.lukongtou.eu.org
+  skip-cert-verify: false
+  sni: notls.lukongtou.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  ws-opts:
+    headers:
+      Host: notls.lukongtou.eu.org
+    path: Telegram-WangCai2🇨🇳
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '13|JP日本丨yoyapai.com #1'
@@ -777,111 +766,81 @@ proxies:
   udp: true
   uuid: 12e35bfe-1e79-4cf1-8a8e-22a242e97408
 - client-fingerprint: chrome
-  name: 13|🇵日本丨yoyapai.com
-  network: ws
-  port: 8443
-  server: 82.40.42.204
-  servername: rubifen.adaspoloandco.com
-  skip-cert-verify: false
-  sni: rubifen.adaspoloandco.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  ws-opts:
-    headers:
-      Host: rubifen.adaspoloandco.com
-    path: /GOrbEh
-- client-fingerprint: chrome
-  name: 13|🇯🇵日本丨yoyapai.com (2)
-  network: ws
-  port: 8443
-  server: 45.192.200.66
-  servername: rubifen.adaspoloandco.com
-  skip-cert-verify: false
-  sni: rubifen.adaspoloandco.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  ws-opts:
-    headers:
-      Host: rubifen.adaspoloandco.com
-    path: /GOrbEh
-- client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 13|🇯🇵JP日本丨yoyapai.com (6)
-  port: 443
+  name: 14|JP日本(mibei77.com 米贝节点分享) (14)
+  port: 43149
   reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  server: 210.140.81.172
-  servername: www.amazon.com
+    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+    short-id: 15aa0ad4
+  server: zfapi.zalolink.com
+  servername: psstatic.cdn.bcebos.com
   skip-cert-verify: false
-  sni: www.amazon.com
+  sni: psstatic.cdn.bcebos.com
   tls: true
   type: vless
   udp: true
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-- client-fingerprint: chrome
-  name: 13|🇯🇵JP日本丨yoyapai.com (8)
-  port: 443
-  reality-opts:
-    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
-    short-id: 8380ad05cd21a69f
-  server: 136.110.116.68
-  servername: www.cloudflare.com
-  skip-cert-verify: false
-  sni: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
-- client-fingerprint: chrome
-  name: 13|🇯🇵JP日本丨yoyapai.com (9)
-  network: ws
-  port: 443
-  server: 104.21.81.50
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  ws-opts:
-    headers:
-      Host: jp.lovehk.xyz
-    path: /Tokyo1
-- client-fingerprint: safari
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: 13|🇯🇵JP日本丨yoyapai.com (11)
-  port: 443
+  name: 14|JP日本(mibei77.com 米贝节点分享) (8)
+  port: 30322
   reality-opts:
-    public-key: Kb511WMVMJe1nImN8kCi9PdPQSGu3aZCrffMOvzv43A
-    short-id: f9ca9286d0ff8920
-  server: 141.11.138.132
-  servername: www.cloudflare.com
+    public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
+    short-id: 6a60e7e382d6
+  server: zfapi.zalolink.com
+  servername: psstatic.cdn.bcebos.com
   skip-cert-verify: false
-  sni: www.cloudflare.com
+  sni: psstatic.cdn.bcebos.com
   tls: true
   type: vless
   udp: true
-  uuid: b47cc98c-54f4-4ab2-acb9-b493a04ccc6b
-- client-fingerprint: firefox
-  name: 13|JP丨yoyapai.com (12)
-  network: ws
-  port: 443
-  server: 104.21.70.228
-  servername: jp3.yohototo.top
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 14,15|U⚪🏳️ukn[🤖💬🔮🎵]_dokng.com_a07afe...
+  port: 54528
+  reality-opts:
+    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
+    short-id: 54cca3c1c1c7
+  server: zfapi.zalolink.com
+  servername: www.apple.com
   skip-cert-verify: false
-  sni: jp3.yohototo.top
+  sni: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  ws-opts:
-    headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  x-toolall-mihomo: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 14|JP日本(mibei77.com 米贝节点分享) (11)
+  port: 55688
+  reality-opts:
+    public-key: 6dqd0hqbC0bht9RtsYamvlYdMpxyUbk7uXw0xtO8DzQ
+    short-id: 865c1b2c
+  server: zfapi.zalolink.com
+  servername: bilibili-vn.biliimg.com
+  skip-cert-verify: false
+  sni: bilibili-vn.biliimg.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 14|JP日本(mibei77.com 米贝节点分享) (15)
+  port: 46957
+  reality-opts:
+    public-key: 1SefqLQXrqkiUdf7cTMF53hrMZyo684_uneRC8-qTxI
+    short-id: 8f6683a234d3
+  server: zfapi.zalolink.com
+  servername: psstatic.cdn.bcebos.com
+  skip-cert-verify: false
+  sni: psstatic.cdn.bcebos.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
 - name: 15|D🔴🇯🇵hos_dokng.com_4900a88a
   password: EGJDy5Kg
   port: 42000
@@ -904,9 +863,9 @@ proxies:
   udp: true
   username: ''
   x-toolall-mihomo: true
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 15,24|🇯🇵_日本 (5)
+  name: 15|C🟠🇯🇵hos[🤖💬🧩📺]_dokng.com_6e4dfd...
   network: tcp
   port: 43149
   reality-opts:
@@ -914,28 +873,11 @@ proxies:
     short-id: 15aa0ad4
   server: zfapi.zalolink.com
   servername: psstatic.cdn.bcebos.com
-  tls: false
+  tls: true
   type: vless
   udp: true
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  ws-opts:
-    headers:
-      Host: psstatic.cdn.bcebos.com
   x-toolall-mihomo: true
-- alterId: 0
-  cipher: auto
-  name: 19|日本 001
-  network: ws
-  port: 443
-  server: 47.74.43.158
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-  ws-opts:
-    headers:
-      Host: lg30.cfcdn3.xyz
-    path: /
 - name: 19,20,25|🇯🇵 日本2|@ripaojiedian
   network: tcp
   password: d050aca3-9df2-4461-90ec-92373c1d7636
@@ -953,6 +895,20 @@ proxies:
   sni: ssl.fastly.com
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 19|日本 003
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: jp01.a0a.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 19|日本 004
@@ -1372,20 +1328,7 @@ proxies:
   type: vmess
   udp: true
   uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-- alterId: 0
-  cipher: auto
-  name: 19|日本 038
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  skip-cert-verify: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: jp01.a0a.xyz
-    path: /cctv13.m3u8
-- name: 19|日本 039
+- name: 19|日本 038
   network: ws
   port: 8880
   server: 156.238.18.221
@@ -1400,7 +1343,7 @@ proxies:
     headers:
       Host: inaslnyekosshernist.borogomsho12pa34.kiling-spoooky---dude.spikevpn.cfd.
     path: /telegram-
-- name: 19|日本 040
+- name: 19|日本 039
   network: tcp
   port: 10000
   server: 14.137.238.40
@@ -1410,7 +1353,7 @@ proxies:
   type: vless
   udp: true
   uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-- name: 19|日本 041
+- name: 19|日本 040
   network: ws
   port: 8880
   server: 103.241.67.83
@@ -1425,7 +1368,7 @@ proxies:
     headers:
       Host: arvancloud.ir
     path: /
-- name: 19|日本 042
+- name: 19|日本 041
   network: tcp
   port: 443
   server: 134.122.154.210
@@ -1435,7 +1378,7 @@ proxies:
   type: vless
   udp: true
   uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-- name: 19|日本 043
+- name: 19|日本 042
   network: grpc
   port: 2003
   server: 172.105.252.35
@@ -1446,7 +1389,7 @@ proxies:
   type: vless
   udp: true
   uuid: 99de7aac-d2a5-48fd-92cb-d1e6c3c719a4
-- name: 19|日本 044
+- name: 19|日本 043
   network: tcp
   port: 443
   server: 137.220.221.179
@@ -1457,7 +1400,7 @@ proxies:
   udp: true
   uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
 - client-fingerprint: chrome
-  name: 19|日本 045
+  name: 19|日本 044
   network: ws
   port: 2087
   server: 91.193.59.191
@@ -1472,7 +1415,7 @@ proxies:
     headers:
       Host: vlso5.1d.mom
     path: /socks5=888:888
-- name: 19|日本 046
+- name: 19|日本 045
   network: ws
   port: 443
   server: 151.101.109.223
@@ -1489,7 +1432,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 19|日本 047
+  name: 19|日本 046
   network: ws
   port: 443
   server: fullaccesstojapannetsubnode1.azurewebsites.net
@@ -1501,6 +1444,20 @@ proxies:
     headers:
       Host: fullaccesstojapannetsubnode1.azurewebsites.net
     path: /ws
+- alterId: 0
+  cipher: auto
+  name: 19|日本 047
+  network: ws
+  port: 443
+  server: 47.74.43.158
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  ws-opts:
+    headers:
+      Host: lg30.cfcdn3.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 19|日本 048
@@ -1573,6 +1530,19 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 19|日本 055
+  network: ws
+  port: 12889
+  server: gtm1.ktmwan.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  ws-opts:
+    headers:
+      Host: gtm1.ktmwan.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|日本 056
   network: tcp
   port: 49499
   server: 139.162.125.97
@@ -1581,7 +1551,7 @@ proxies:
   uuid: 3ce1d2e3-0e1b-4b00-921b-fcc0f8abe1f6
 - alterId: 0
   cipher: auto
-  name: 19|日本 056
+  name: 19|日本 057
   network: tcp
   port: 14935
   server: 167.179.111.237
@@ -1590,6 +1560,42 @@ proxies:
   uuid: e961894f-8e90-472f-98d3-09402e4be453
 - client-fingerprint: chrome
   name: 20|🇯🇵_JP_日本_IPV4
+  network: ws
+  port: 443
+  reality-opts:
+    public-key: qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0
+    short-id: e535df57
+  server: 149.28.29.156
+  servername: itunes.apple.com
+  skip-cert-verify: false
+  sni: itunes.apple.com
+  tls: true
+  type: vless
+  uuid: aa1a9052-720f-4bb0-92be-21b6baf9f386
+  ws-opts:
+    headers:
+      Host: itunes.apple.com
+    path: /ws
+- client-fingerprint: chrome
+  name: 20|🇯🇵_JP_日本_IPV4 (2)
+  network: ws
+  port: 443
+  reality-opts:
+    public-key: xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k
+    short-id: 7a7cc838
+  server: 198.13.53.39
+  servername: itunes.apple.com
+  skip-cert-verify: false
+  sni: itunes.apple.com
+  tls: true
+  type: vless
+  uuid: 8f21c635-ef0a-4b05-8356-f44d463b6e34
+  ws-opts:
+    headers:
+      Host: itunes.apple.com
+    path: /ws
+- client-fingerprint: chrome
+  name: 20|🇯🇵_JP_日本_IPV4 (3)
   network: ws
   port: 443
   reality-opts:
@@ -1607,7 +1613,7 @@ proxies:
       Host: itunes.apple.com
     path: /ws
 - client-fingerprint: chrome
-  name: 20|🇯🇵_JP_日本_IPV4 (2)
+  name: 20|🇯🇵_JP_日本_IPV4 (4)
   network: ws
   port: 443
   reality-opts:
@@ -1625,7 +1631,7 @@ proxies:
       Host: itunes.apple.com
     path: /ws
 - client-fingerprint: chrome
-  name: 20|🇯🇵_JP_日本_IPV4 (3)
+  name: 20|🇯🇵_JP_日本_IPV4 (5)
   network: ws
   port: 443
   reality-opts:
@@ -1643,7 +1649,7 @@ proxies:
       Host: itunes.apple.com
     path: /ws
 - client-fingerprint: chrome
-  name: 20|🇯🇵_JP_日本_IPV4 (4)
+  name: 20|🇯🇵_JP_日本_IPV4 (6)
   network: ws
   port: 443
   reality-opts:
@@ -1661,7 +1667,7 @@ proxies:
       Host: itunes.apple.com
     path: /ws
 - client-fingerprint: chrome
-  name: 20|🇯🇵_JP_日本_IPV4 (5)
+  name: 20|🇯🇵_JP_日本_IPV4 (7)
   network: ws
   port: 443
   reality-opts:
@@ -1678,14 +1684,27 @@ proxies:
     headers:
       Host: itunes.apple.com
     path: /ws
-- name: 20|🇯🇵218802 | ⚡️Telegram = t.me/L...
-  password: oracle_hy2_pass_2026
-  port: 8443
-  server: 129.225.181.46
-  skip-cert-verify: true
-  sni: bing.com
+- name: 20| 🇯🇵 20@exclavevpn
+  password: gG1JyjbJgDmEMvdTgcD9wVOS
+  port: 443
+  server: 35.221.91.82
+  sni: www.microsoft.com
   tls: false
   type: hysteria2
+- client-fingerprint: unsafe
+  encryption: none
+  name: 20|🇯🇵[www.v2nodes.com] vless-JP-1...
+  network: ws
+  port: 443
+  server: 43.170.8.95
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
 - cipher: aes-256-gcm
   name: 20|🇯🇵[www.v2nodes.com] ss-JP-1544...
   password: 3eOFeNssde7PYYMv
@@ -1710,101 +1729,76 @@ proxies:
   port: 443
   server: 149.22.87.241
   type: ss
-- name: '20|🇳🇬 尼日利亚 | NGA #1'
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  port: 20103
-  server: sclass-00.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
-  name: 21|🇵_JP_
-  network: ws
-  port: 443
-  server: 35.72.179.15
-  servername: shuma.ccwu.cc
-  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  name: 20|🇯🇵 日本 | JPN
+  network: tcp
+  port: 25680
+  reality-opts:
+    public-key: hARhHGV09mnEUWA1a7pG6_K4lztUhKCK3iGeboGGP2g
+    short-id: 7ce8c8e1
+  server: 77.67.18.254
+  servername: apple.com
   tls: true
   type: vless
   udp: true
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: /
+  uuid: af8e3c87-2a75-44fa-9a8b-0227a9d2cb82
 - client-fingerprint: chrome
-  name: 24|日期：11-19
-  network: ws
-  port: 2096
-  server: saas.sin.fan
-  servername: vp9.1145678.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  ws-opts:
-    path: '%2Fthread%2Flist'
-- client-fingerprint: unsafe
-  name: 24|🇯🇵_日本 (21)
-  network: ws
+  flow: xtls-rprx-vision
+  name: 20|🇯🇵 日本 | JPN 2
+  network: tcp
   port: 443
-  server: 62.106.75.37
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
+  reality-opts:
+    public-key: dtNeCNIcRgs8_EKIJg_oTJEsiA8KBU-QaE1yVpkoX0I
+    short-id: 2c92d6
+  server: jpg1api.jumpernode.site
+  servername: buybox.amazon.com
   tls: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  ws-opts:
-    path: '%2Ftyxyws'
+  udp: true
+  uuid: d508df52-3acb-483f-85d2-3fd5f6a76808
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 24|🇯🇵_日本 (11)
+  name: 20|🇯🇵 日本 | JPN 3
   network: tcp
-  port: 55688
+  port: 443
   reality-opts:
-    public-key: 6dqd0hqbC0bht9RtsYamvlYdMpxyUbk7uXw0xtO8DzQ
-    short-id: 865c1b2c
-  server: zfapi.zalolink.com
-  servername: bilibili-vn.biliimg.com
-  tls: false
+    public-key: CKfGUIOy-k2OfwtxsqeHIQWwR29WAbypOvKH4bAVo18
+    short-id: 3a27ad4ee4
+  server: jp2api.jumpernode.site
+  servername: cstudio.semiconductor.samsung.com
+  tls: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  ws-opts:
-    headers:
-      Host: bilibili-vn.biliimg.com
-- client-fingerprint: safari
+  udp: true
+  uuid: bfc4be28-74cc-4579-9673-8549fe99de71
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 24|🇯🇵_日本 (14)
+  name: 20|🇯🇵 日本 | JPN 4
   network: tcp
-  port: 47691
+  port: 443
   reality-opts:
-    public-key: 6PbC7GxOg_YdXya-53llPReUzoU_yknQbkDvI4uorBg
-    short-id: 2905326a
-  server: zfapi.zalolink.com
-  servername: m.media-amazon.com
-  tls: false
+    public-key: GeKuYNeAqQQkTN9OMJxXA9I-rXs7IiGh4Sl82crCITc
+    short-id: 9e1df8
+  server: jp2api.jumpernode.site
+  servername: buybox.amazon.com
+  tls: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  ws-opts:
-    headers:
-      Host: m.media-amazon.com
-- client-fingerprint: ios
+  udp: true
+  uuid: 7fd8e515-c27a-42fe-96d4-a0233ec3e9f8
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 24|🇯🇵_日本 (17)
+  name: 20|🇯🇵 日本 | JPN 5
   network: tcp
-  port: 54528
+  port: 443
   reality-opts:
-    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
-    short-id: 54cca3c1c1c7
-  server: zfapi.zalolink.com
-  servername: www.apple.com
-  tls: false
+    public-key: GeKuYNeAqQQkTN9OMJxXA9I-rXs7IiGh4Sl82crCITc
+    short-id: 6281f3ef81187ad8
+  server: jp2api.jumpernode.site
+  servername: us.amazon.com
+  tls: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  ws-opts:
-    headers:
-      Host: www.apple.com
+  udp: true
+  uuid: bc808d0e-aabb-47b9-9c5e-765a6e69f27f
 - client-fingerprint: random
   name: 24|JP-LN
   network: ws
@@ -1820,46 +1814,7 @@ proxies:
       Host: jp-osa.862400.xyz
     path: '%2Fannouncement%3Fed%3D2048'
 - client-fingerprint: random
-  name: '24|免费订阅 #104'
-  network: ws
-  port: 443
-  server: 172.104.120.30
-  servername: jp-osa.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: jp-osa.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #109'
-  network: ws
-  port: 443
-  server: 13.231.172.130
-  servername: ap-south.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: ap-south.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #114'
-  network: ws
-  port: 443
-  server: 43.170.8.95
-  servername: jp-osa.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: jp-osa.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #36'
+  name: '24|免费订阅 #64'
   network: ws
   port: 443
   server: 200.180.163.38
@@ -1872,7 +1827,7 @@ proxies:
       Host: it-mil.862400.xyz
     path: '%2Fannouncement%3Fed%3D2048'
 - client-fingerprint: random
-  name: '24|免费订阅 #46'
+  name: '24|免费订阅 #74'
   network: ws
   port: 443
   server: 167.179.77.74
@@ -1885,7 +1840,7 @@ proxies:
       Host: jp-osa.862400.xyz
     path: '%2Fannouncement%3Fed%3D2048'
 - client-fingerprint: random
-  name: '24|免费订阅 #62'
+  name: '24|免费订阅 #90'
   network: ws
   port: 443
   server: 138.2.41.8
@@ -1898,7 +1853,7 @@ proxies:
       Host: jp-osa.862400.xyz
     path: '%2Fannouncement%3Fed%3D2048'
 - client-fingerprint: random
-  name: '24|免费订阅 #68'
+  name: '24|免费订阅 #95'
   network: ws
   port: 443
   server: 198.13.59.163
@@ -1952,6 +1907,610 @@ proxies:
     headers:
       Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
     path: '%2F'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-157...'
+  network: ws
+  port: 443
+  server: 104.17.50.53
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- name: '24|Channel id: @ShadowProxy66-158...'
+  network: ws
+  port: 443
+  server: 104.16.111.102
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-159...'
+  network: ws
+  port: 443
+  server: 104.18.42.98
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-160...'
+  network: ws
+  port: 443
+  server: 104.21.34.106
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: unsafe
+  name: '24|Channel id: @ShadowProxy66-161...'
+  network: ws
+  port: 443
+  server: 104.19.48.107
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-162...'
+  network: ws
+  port: 443
+  server: 104.16.10.56
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-163...'
+  network: ws
+  port: 443
+  server: 104.17.210.74
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: unsafe
+  name: '24|Channel id: @ShadowProxy66-752...'
+  network: ws
+  port: 443
+  server: 104.16.10.104
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-167...'
+  network: ws
+  port: 443
+  server: 104.16.10.22
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-508...'
+  network: ws
+  port: 443
+  server: 104.16.0.1
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: unsafe
+  name: '24|Channel id: @ShadowProxy66-171...'
+  network: ws
+  port: 443
+  server: 104.16.10.63
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-398...'
+  network: ws
+  port: 443
+  server: 104.16.10.135
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: android
+  name: '24|Channel id: @ShadowProxy66-173...'
+  network: ws
+  port: 443
+  server: 104.19.164.155
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-174...'
+  network: ws
+  port: 443
+  server: 131.143.180.53
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: ios
+  name: '24|Channel id: @ShadowProxy66-175...'
+  network: ws
+  port: 8443
+  server: 23.144.68.90
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: unsafe
+  name: '24|Channel id: @ShadowProxy66-176...'
+  network: ws
+  port: 443
+  server: 154.40.59.238
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: edge
+  name: '24|Channel id: @ShadowProxy66-177...'
+  network: ws
+  port: 443
+  server: 104.16.111.202
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- alpn:
+  - http/1.1
+  name: '24|Channel id: @ShadowProxy66-178...'
+  network: ws
+  port: 443
+  server: 188.114.97.6
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: edge
+  name: '24|Channel id: @ShadowProxy66-179...'
+  network: ws
+  port: 443
+  server: 104.16.10.84
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-180...'
+  network: ws
+  port: 443
+  server: 104.21.70.228
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: unsafe
+  name: '24|Channel id: @ShadowProxy66-182...'
+  network: ws
+  port: 443
+  server: 104.16.10.48
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- name: '24|Channel id: @ShadowProxy66-183...'
+  network: ws
+  port: 443
+  server: 104.21.70.21
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-184...'
+  network: ws
+  port: 443
+  server: 104.16.10.9
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- name: '24|Channel id: @ShadowProxy66-185...'
+  network: ws
+  port: 443
+  server: 104.19.33.25
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-186...'
+  network: ws
+  port: 443
+  server: 104.16.10.2
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-187...'
+  network: ws
+  port: 443
+  server: 188.114.98.0
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-188...'
+  network: ws
+  port: 443
+  server: 104.16.10.185
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: android
+  name: '24|Channel id: @ShadowProxy66-195...'
+  network: ws
+  port: 443
+  server: 172.64.190.13
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-196...'
+  network: ws
+  port: 443
+  server: 104.17.50.227
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-197...'
+  network: ws
+  port: 443
+  server: 104.27.46.35
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-198...'
+  network: ws
+  port: 443
+  server: 104.24.0.1
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-233...'
+  network: ws
+  port: 28863
+  server: 129.153.71.28
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  tls: true
+  type: vless
+  uuid: 4f1f5604-a256-4432-a477-52c3dce7dded
+  ws-opts:
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+    path: '%2F%40Marisa_kristi'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-235...'
+  network: ws
+  port: 28863
+  server: 129.153.71.28
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  tls: true
+  type: vless
+  uuid: b3a15df4-c8ad-4e98-b427-7a679aee2b18
+  ws-opts:
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+    path: '%2F%40Marisa_kristi'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-238...'
+  network: ws
+  port: 443
+  server: 162.159.228.255
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  tls: true
+  type: vless
+  uuid: b135a1e0-ebdb-4d46-b3fa-bd1e78580244
+  ws-opts:
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+    path: '%2F%40Marisa_kristi'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-241...'
+  network: ws
+  port: 28863
+  server: 129.153.71.28
+  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  tls: true
+  type: vless
+  uuid: 6c7c10f8-2387-4756-ab4b-64c9c6981f0e
+  ws-opts:
+    headers:
+      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+    path: '%2F%40Marisa_kristi'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-242...'
+  network: ws
+  port: 28863
+  server: 129.153.71.28
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  tls: true
+  type: vless
+  uuid: 775409d5-1183-463c-8f12-e5778cbec078
+  ws-opts:
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+    path: '%2F%40Marisa_kristi'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-253...'
+  network: ws
+  port: 28863
+  server: 129.153.71.28
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+  tls: true
+  type: vless
+  uuid: 02073765-76e0-46d0-9109-82ccb48d3c6f
+  ws-opts:
+    headers:
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+    path: '%2F%40Marisa_kristi'
+- client-fingerprint: unsafe
+  name: '24|Channel id: @ShadowProxy66-260...'
+  network: ws
+  port: 443
+  server: 104.18.153.10
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-261...'
+  network: ws
+  port: 443
+  server: 162.159.254.3
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: safari
+  name: '24|Channel id: @ShadowProxy66-265...'
+  network: ws
+  port: 443
+  server: 104.24.31.89
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: unsafe
+  name: '24|Channel id: @ShadowProxy66-910...'
+  network: ws
+  port: 443
+  server: 104.16.10.104
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws%23telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI'
+- client-fingerprint: unsafe
+  name: '24|Channel id: @ShadowProxy66-568...'
+  network: ws
+  port: 8443
+  server: 154.12.53.59
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- client-fingerprint: unsafe
+  name: '24|Channel id: @ShadowProxy66-971...'
+  network: ws
+  port: 443
+  server: 103.219.195.65
+  servername: jp3.yohototo.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
+- grpc-opts:
+    grpc-service-name: v3-direct
+  name: '24|Channel id: @ShadowProxy66-112... #1'
+  network: grpc
+  port: 443
+  server: sync.2ml.bid
+  servername: sync.2ml.bid
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 8344360f-0349-4784-a19f-33fd92e89389
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-101... #10'
+  network: ws
+  port: 8443
+  server: 172.64.154.113
+  servername: freeceshi6.frii.site
+  tls: true
+  type: vless
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  ws-opts:
+    headers:
+      Host: freeceshi6.frii.site
+    path: '%2Fproxyip%3DProxyIP.JP.CMLiussss.net'
+- client-fingerprint: random
+  name: '24|Channel id: @ShadowProxy66-104... #10'
+  network: ws
+  port: 443
+  server: ct.877774.xyz
+  servername: jp-osa.862400.xyz
+  tls: true
+  type: vless
+  uuid: f520bd45-8e26-4a23-a227-2f91acb67928
+  ws-opts:
+    headers:
+      Host: jp-osa.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
 - client-fingerprint: chrome
   name: 25|🇯🇵 日本|@ripaojiedian
   network: ws
@@ -2250,29 +2809,6 @@ proxies:
   tls: true
   type: http
   username: b4e40aa2-74a1-11ed-b0b5-f23c9164ca5d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 27|🇯🇵 日本 | JPN
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: KTmHnRwiKvQpzP836U2huy7clpeyGqzULqzrNRjtrHA
-    short-id: dd22a4a8
-  server: bgroup.jp1.ilovegairport.com
-  servername: ap-northeast-1.console.aws.amazon.com
-  tls: true
-  type: vless
-  uuid: 3587fe6b-850e-4fba-98d9-db113b416891
-- alterId: 1
-  cipher: auto
-  name: 27|🇯🇵 日本 | JPN 2
-  port: 28788
-  server: op715tj-g06.jp06-jz-vm0.entry.fr0528.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 72a52b12-fbd2-3fa3-9964-df23590dc0bb
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 28|JP_speednode_0018

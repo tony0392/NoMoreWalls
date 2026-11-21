@@ -593,21 +593,6 @@ proxies:
     headers:
       Host: mia7.pages.dev
     path: /TG:@MiaChatChannel
-- name: 8|🇸🇬SG_35
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  port: 20103
-  server: sclass-01.catcat321.com
-  type: trojan
-- name: 8|🇸🇬SG_36
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  port: 20051
-  server: sclass-b1.catcat321.com
-  type: trojan
-- name: 8|🇸🇬SG_37
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  port: 20051
-  server: sclass-c2.catcat321.com
-  type: trojan
 - client-fingerprint: chrome
   name: 13|🇬SG新加坡丨yoyapai.com
   network: ws
@@ -638,12 +623,12 @@ proxies:
     headers:
       Host: sg.lovehk.xyz
     path: /Singapore1
-- name: 14,20|🇳🇬[www.v2nodes.com] trojan-NG-...
+- name: 14,20,27|🇨🇳 CN_39
   password: d7563108-615c-4338-a7bd-77f359869a4a
   port: 20103
   server: sclass-01.catcat321.com
   servername: hk.catxstar.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: hk.catxstar.com
   tls: true
   type: trojan
@@ -664,52 +649,35 @@ proxies:
     headers:
       Host: jp3.yohototo.top
     path: /tyxyws
-- name: 15|D🔴🇸🇬hos[🤖💬🔮🎵]_dokng.com_185196...
+- name: 15,29|SG_Singapore_Alibaba (US) Tech...
+  password: '!!str 8888'
+  port: 1080
+  server: 47.236.168.243
+  skip-cert-verify: true
+  type: socks5
+  username: '8888'
+- name: 15|D🔴🇸🇬hos[🤖💬🔮📺]_dokng.com_185196...
   port: 443
   server: 154.26.139.24
   skip-cert-verify: true
+  sub_tag: R002-260618
   tls: true
   type: http
-- name: 15|D🔴🇸🇬hos[🔮🎵]_dokng.com_c8c444fd
-  password: c0a34a
-  port: 62000
-  server: 66.80.2.252
+  udp: true
+  x-toolall-mihomo: true
+- name: 15|D🔴🇸🇬hos[🐙]_dokng.com_646e207f
+  port: 9090
+  server: 159.223.41.216
+  type: http
+- name: 15|D🔴🇸🇬hos[🐙]_dokng.com_e5f1db4e
+  port: 9090
+  server: 128.199.116.219
+  type: http
+- name: 15|D🔴🇸🇬hos[🤖💬🧩🎵]_dokng.com_45ce63...
+  port: 5555
+  server: 103.248.228.166
   type: socks5
-  username: usereb7d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '15,20,24|Channel id: @ShadowProxy66-860...'
-  network: tcp
-  port: 51283
-  reality-opts:
-    public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
-    short-id: fa514b83
-  server: free.fugui.lol
-  servername: swdist.apple.com
-  tls: false
-  type: vless
-  udp: true
-  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
-  ws-opts:
-    headers:
-      Host: swdist.apple.com
-    path: '%2F'
-  x-toolall-mihomo: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 15|C🟠🇸🇬hos[🤖🎮🔍]_dokng.com_3e981ae...
-  port: 46957
-  reality-opts:
-    public-key: 1SefqLQXrqkiUdf7cTMF53hrMZyo684_uneRC8-qTxI
-    short-id: 8f6683a234d3
-  server: zfapi.zalolink.com
-  servername: psstatic.cdn.bcebos.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  x-toolall-mihomo: true
-- name: 15|A🟢🇸🇬res[💬]_dokng.com_903162eb
+- name: 15|A🟢🇸🇬res[🤖💬🎵🎮]_dokng.com_903162...
   password: ''
   port: 9443
   server: 149.88.99.209
@@ -719,21 +687,19 @@ proxies:
   udp: true
   username: ''
   x-toolall-mihomo: true
-- client-fingerprint: chrome
-  name: '19,20|🇸🇬[www.v2nodes.com] vless-SG-1... #1'
-  network: ws
-  port: 2096
-  server: 139.162.27.96
-  servername: free-server.techsonic.dev
+- name: 15|D🔴🇸🇬hos[🤖💬🔮🎵]_dokng.com_fba9a7...
+  password: None
+  port: 443
+  server: 154.26.139.24
+  skip-cert-verify: true
+  sub_tag: K001-260618
   tls: true
-  type: vless
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  ws-opts:
-    headers:
-      Host: free-server.techsonic.dev
-    path: /free-server.techsonic.dev
+  type: http
+  udp: true
+  username: ''
+  x-toolall-mihomo: true
 - client-fingerprint: chrome
-  name: 19|新加坡 002
+  name: 19|新加坡 001
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
@@ -750,7 +716,7 @@ proxies:
     enable: true
     query-server-name: cloudflare-ech.com
   encryption: none
-  name: 19|新加坡 003
+  name: 19|新加坡 002
   network: ws
   packet-encoding: xudp
   port: 8443
@@ -771,7 +737,7 @@ proxies:
     enable: true
     query-server-name: cloudflare-ech.com
   encryption: none
-  name: 19|新加坡 004
+  name: 19|新加坡 003
   network: ws
   packet-encoding: xudp
   port: 8443
@@ -787,7 +753,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
     path: /
 - client-fingerprint: chrome
-  name: 19|新加坡 005
+  name: 19|新加坡 004
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
@@ -798,7 +764,7 @@ proxies:
     headers:
       Host: tjsp.hhxaf.cc.cd
     path: /
-- name: 19|新加坡 006
+- name: 19|新加坡 005
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 8443
@@ -811,7 +777,7 @@ proxies:
     headers:
       Host: hhcm.hhxaf.cc.cd
     path: /
-- name: 19|新加坡 007
+- name: 19|新加坡 006
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
@@ -825,7 +791,7 @@ proxies:
       Host: tjsp.hhxaf.cc.cd
     path: /
 - client-fingerprint: chrome
-  name: 19|新加坡 008
+  name: 19|新加坡 007
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
@@ -837,7 +803,7 @@ proxies:
       Host: tjsp.hhxaf.cc.cd
     path: /
 - client-fingerprint: chrome
-  name: 19|新加坡 009
+  name: 19|新加坡 008
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
@@ -848,7 +814,7 @@ proxies:
     headers:
       Host: hhcm.hhxaf.cc.cd
     path: /
-- name: 19|新加坡 010
+- name: 19|新加坡 009
   network: ws
   packet-encoding: xudp
   port: 80
@@ -863,7 +829,7 @@ proxies:
       Host: education.panelvps.eu.org
     path: /vless
 - encryption: none
-  name: 19|新加坡 011
+  name: 19|新加坡 010
   network: tcp
   packet-encoding: xudp
   port: 443
@@ -874,7 +840,7 @@ proxies:
   type: vless
   udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- name: 19|新加坡 012
+- name: 19|新加坡 011
   network: ws
   packet-encoding: xudp
   port: 80
@@ -890,31 +856,7 @@ proxies:
     path: /vless
 - alterId: 0
   cipher: auto
-  name: 19|新加坡 013
-  network: tcp
-  port: 47630
-  server: 43.228.126.187
-  skip-cert-verify: true
-  type: vmess
-  uuid: 9e5c6ebf-35f9-49a3-9f12-cba2b7cdbccb
-- name: 19|新加坡 014
-  network: ws
-  port: 80
-  server: 199.232.13.32
-  servername: Channel-ELiV2RAY--ELiV2RAY.nET
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7fed5bf9-a1de-41a0-ab89-694265c4895f
-  ws-opts:
-    headers:
-      Host: Channel-ELiV2RAY--ELiV2RAY.nET
-    path: /Channel-ELiV2RAY---ELiV2RAY?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 19|新加坡 015
+  name: 19|新加坡 012
   network: ws
   port: 16737
   server: 139.180.211.152
@@ -927,7 +869,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 19|新加坡 016
+  name: 19|新加坡 013
   network: ws
   port: 18063
   server: 139.180.211.152
@@ -938,74 +880,17 @@ proxies:
     headers:
       Host: m.zoom.us
     path: /Dialog Zoom
-- alterId: 1
-  cipher: auto
-  name: 19|新加坡 018
-  network: ws
-  port: 21888
-  server: 104.248.148.147
-  skip-cert-verify: true
-  type: vmess
-  uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89
-  ws-opts:
-    headers:
-      Host: 104.248.148.147
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|新加坡 019
-  network: ws
-  port: 80
-  server: 139.99.61.154
-  skip-cert-verify: true
-  type: vmess
-  uuid: 932a1f0d-f5ce-418d-8560-c88f53c534b9
-  ws-opts:
-    headers:
-      Host: 139.99.61.154
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 19|新加坡 020
-  network: ws
+- name: 19|新加坡 014
+  network: grpc
   port: 443
-  server: us3.31vpn.com
-  skip-cert-verify: true
+  server: all.tellmethetrue.shop
+  servername: pqh23v8.hiddendom.shop
+  skip-cert-verify: false
+  tfo: false
   tls: true
-  type: vmess
-  uuid: 2ef64dc8-ca3c-45b8-ad5f-20871452143b
-  ws-opts:
-    headers:
-      Host: us3.31vpn.com
-    path: /fastssh/3102637493qqcom/626cf7d8bd49b/
-- alterId: 4
-  cipher: auto
-  name: 19|新加坡 021
-  network: ws
-  port: 443
-  server: 103.253.26.134
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-opts:
-    headers:
-      Host: eeh7iewe.com
-    path: /ws
-- alterId: 4
-  cipher: auto
-  name: 19|新加坡 022
-  network: ws
-  port: 443
-  server: 103.253.26.20
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-opts:
-    headers:
-      Host: zecjk.com
-    path: /ws
+  type: vless
+  udp: true
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
 - client-fingerprint: chrome
   name: 20|🇸🇬_SG_新加坡_IPV4
   network: ws
@@ -1026,24 +911,6 @@ proxies:
     path: /ws
 - client-fingerprint: chrome
   name: 20|🇸🇬_SG_新加坡_IPV4 (2)
-  network: ws
-  port: 443
-  reality-opts:
-    public-key: u_4r8NRmRsN5Ndbt0koyC73DLC7mCcK4wAA0YiIR4ko
-    short-id: b0af872e
-  server: 172.104.48.194
-  servername: itunes.apple.com
-  skip-cert-verify: false
-  sni: itunes.apple.com
-  tls: true
-  type: vless
-  uuid: a28d0884-193d-4591-aa64-8638ba1481ce
-  ws-opts:
-    headers:
-      Host: itunes.apple.com
-    path: /ws
-- client-fingerprint: chrome
-  name: 20|🇸🇬_SG_新加坡_IPV4 (3)
   network: ws
   port: 443
   reality-opts:
@@ -1068,9 +935,21 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- name: 20|🇸🇬[www.v2nodes.com] vless-SG-9...
+  network: ws
+  port: 8080
+  server: 104.26.13.31
+  servername: ip.sb
+  tls: false
+  type: vless
+  uuid: 3e06b1db-2efb-446e-ba2d-68850dfd2f9d
+  ws-opts:
+    headers:
+      Host: bdfba-cool-tree-b580.v8fz4kbv.workers.dev
+    path: /
 - alpn:
   - h3
-  name: '20|🇸🇬[www.v2nodes.com] vless-SG #...'
+  name: 20|🇸🇬[www.v2nodes.com] vless-SG
   network: ws
   port: 443
   server: 27.50.48.6
@@ -1090,32 +969,19 @@ proxies:
   tls: true
   type: vless
   uuid: bcdb425f-80bc-4ec8-92a5-8edf53639c01
-- alpn:
-  - http/1.1
-  name: 20|🇸🇬[www.v2nodes.com] vless-SG-7...
+- client-fingerprint: chrome
+  name: '20|🇸🇬[www.v2nodes.com] vless-SG-1... #1'
   network: ws
-  port: 443
-  server: 188.114.98.0
-  servername: rayAN21-6yU73878-v3.raYAn-21.woRKers.dEV
+  port: 2096
+  server: 139.162.27.96
+  servername: free-server.techsonic.dev
   tls: true
   type: vless
-  uuid: ec24cde1-6bd9-4b69-baf7-270e8aabd6dd
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   ws-opts:
     headers:
-      Host: rayAN21-6yU73878-v3.raYAn-21.woRKers.dEV
-    path: /?ed=2560fp=unsafe
-- name: 20|🇸🇬[www.v2nodes.com] vless-SG-3...
-  network: ws
-  port: 8443
-  server: 172.64.154.113
-  servername: freeceshi6.frii.site
-  tls: true
-  type: vless
-  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
-  ws-opts:
-    headers:
-      Host: freeceshi6.frii.site
-    path: /proxyip=ProxyIP.JP.CMLiussss.netfp=chrome
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
 - cipher: aes-256-gcm
   name: 20|🇸🇬[www.v2nodes.com] ss-SG-1616...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -1144,7 +1010,7 @@ proxies:
   name: '20|🇸🇬[www.v2nodes.com] ss-SG-1615... #2'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 149.88.107.47
+  server: 149.88.107.74
   type: ss
 - name: 20|🇸🇬[www.v2nodes.com] trojan-SG-...
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
@@ -1153,31 +1019,12 @@ proxies:
   skip-cert-verify: false
   sni: exploredigitaljobplatformandfindonlinework.com
   type: trojan
-- client-fingerprint: chrome
-  name: 20|🇸🇬SG_1|2.4MB/s
-  network: ws
-  port: 8443
-  server: 172.64.154.113
-  servername: freeceshi6.frii.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
-  ws-opts:
-    headers:
-      Host: freeceshi6.frii.site
-    path: /proxyip=ProxyIP.JP.CMLiussss.net
-- name: 20|🇸🇬SG_2|4.4MB/s
-  port: 5555
-  server: 103.248.228.166
-  skip-cert-verify: true
-  type: socks5
 - auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
   fingerprint: C1:FD:40:94:1F:91:9B:5C:78:96:24:40:97:F2:2D:9D:95:8E:62:5C:D9:58:B7:5F:34:CC:FA:42:18:1F:50:B2
-  name: '20,24|未命名 #162'
+  name: 20|🇸🇬 新加坡 | SGP
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 443
-  server: 18.143.179.74
+  server: 13.212.60.244
   skip-cert-verify: true
   sni: www.bing.com
   tls: false
@@ -1186,219 +1033,41 @@ proxies:
   name: '20|🇸🇬 新加坡 | SGP #2'
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 8443
-  server: 18.143.179.74
+  server: 13.212.60.244
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '20|🇸🇬 新加坡 | SGP #4'
-  network: none
-  port: 47630
-  server: 43.228.126.187
-  tls: false
-  type: vmess
-  uuid: 9e5c6ebf-35f9-49a3-9f12-cba2b7cdbccb
 - name: 23|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
-- client-fingerprint: random
-  name: '24|免费订阅 #30'
+- client-fingerprint: chrome
+  name: '24|Channel id: @ShadowProxy66-810...'
   network: ws
+  port: 8443
+  server: 172.64.154.113
+  servername: freeceshi6.frii.site
+  tls: true
+  type: vless
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  ws-opts:
+    headers:
+      Host: freeceshi6.frii.site
+    path: '%2Fproxyip%3DProxyIP.JP.CMLiussss.net'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 24|SG VLESS-39 | free-nodes
+  network: tcp
   port: 443
-  server: 138.2.66.236
-  servername: nl-ams.862400.xyz
-  tls: true
+  reality-opts:
+    public-key: mXQudYHNu0pebcdk1_qn-UgcmwhjaV7y9UrYu3HX7Rg
+    short-id: 0123456789abcdef
+  server: 43.163.112.174
+  servername: www.cloudflare.com
+  tls: false
   type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: nl-ams.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #42'
-  network: ws
-  port: 443
-  server: 82.153.135.54
-  servername: us-lax.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: us-lax.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #53'
-  network: ws
-  port: 443
-  server: 165.22.106.244
-  servername: it-mil.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: it-mil.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #58'
-  network: ws
-  port: 443
-  server: 139.180.187.152
-  servername: jp-osa.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: jp-osa.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #80'
-  network: ws
-  port: 443
-  server: 161.118.211.215
-  servername: us-lax.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: us-lax.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #87'
-  network: ws
-  port: 443
-  server: 209.97.163.209
-  servername: se-sto.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: se-sto.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #94'
-  network: ws
-  port: 443
-  server: 69.8.133.24
-  servername: eu-central.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: eu-central.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #98'
-  network: ws
-  port: 443
-  server: 207.148.73.18
-  servername: it-mil.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: it-mil.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #107'
-  network: ws
-  port: 443
-  server: 168.144.109.68
-  servername: it-mil.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: it-mil.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #114'
-  network: ws
-  port: 443
-  server: 168.144.132.93
-  servername: us-lax.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: us-lax.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #115'
-  network: ws
-  port: 2053
-  server: 217.15.167.34
-  servername: nl-ams.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: nl-ams.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #122'
-  network: ws
-  port: 2053
-  server: 194.233.67.84
-  servername: nl-ams.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: nl-ams.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #124'
-  network: ws
-  port: 443
-  server: 128.1.186.114
-  servername: it-mil.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: it-mil.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #127'
-  network: ws
-  port: 443
-  server: 139.180.159.58
-  servername: it-mil.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: it-mil.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #128'
-  network: ws
-  port: 443
-  server: 161.118.219.55
-  servername: it-mil.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: it-mil.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
+  uuid: 0dedd47d-47b9-4ed1-9c9f-cbeecad57a68
 - name: 24|🇸🇬新加坡 zhuhai.uk 40.42MB/s
   network: ws
   port: 443
@@ -1437,167 +1106,233 @@ proxies:
       Host: sweet-sun-c70f.317-ba5.workers.dev
     path: '%2Fpyip%3DProxyIP.SG.CMLiussss.net'
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '24|Channel id: @ShadowProxy66-156...'
-  network: tcp
-  port: 36442
-  server: xjpp.zjlo.top
-  servername: xjpp.zjlo.top
+  name: '24|未命名 #64'
+  network: vless
+  port: 443
+  server: www.binodes.com
+  servername: www.binodes.com
+  tls: false
+  type: vless
+  uuid: 1af5253b-75e6-4e2c-8b9e-2b7b92dbb845
+  ws-opts:
+    headers:
+      Host: ded2http.samcdn.shop
+    path: '%2Fmsn'
+- client-fingerprint: random
+  name: '24|免费订阅 #20'
+  network: ws
+  port: 443
+  server: 68.183.180.221
+  servername: it-mil.862400.xyz
   tls: true
   type: vless
-  uuid: c6624b96-e346-490b-9145-74c2543a9483
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: it-mil.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #32'
+  network: ws
+  port: 443
+  server: 138.2.66.236
+  servername: nl-ams.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: nl-ams.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #44'
+  network: ws
+  port: 443
+  server: 82.153.135.54
+  servername: us-lax.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: us-lax.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #55'
+  network: ws
+  port: 443
+  server: 165.22.106.244
+  servername: it-mil.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: it-mil.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #60'
+  network: ws
+  port: 443
+  server: 139.180.187.152
+  servername: jp-osa.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: jp-osa.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #82'
+  network: ws
+  port: 443
+  server: 161.118.211.215
+  servername: us-lax.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: us-lax.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #89'
+  network: ws
+  port: 443
+  server: 209.97.163.209
+  servername: se-sto.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: se-sto.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #96'
+  network: ws
+  port: 443
+  server: 69.8.133.24
+  servername: eu-central.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: eu-central.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #100'
+  network: ws
+  port: 443
+  server: 207.148.73.18
+  servername: it-mil.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: it-mil.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #109'
+  network: ws
+  port: 443
+  server: 168.144.109.68
+  servername: it-mil.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: it-mil.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #116'
+  network: ws
+  port: 443
+  server: 168.144.132.93
+  servername: us-lax.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: us-lax.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #117'
+  network: ws
+  port: 2053
+  server: 217.15.167.34
+  servername: nl-ams.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: nl-ams.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #124'
+  network: ws
+  port: 2053
+  server: 194.233.67.84
+  servername: nl-ams.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: nl-ams.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #126'
+  network: ws
+  port: 443
+  server: 128.1.186.114
+  servername: it-mil.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: it-mil.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #129'
+  network: ws
+  port: 443
+  server: 139.180.159.58
+  servername: it-mil.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: it-mil.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #130'
+  network: ws
+  port: 443
+  server: 161.118.219.55
+  servername: it-mil.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: it-mil.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
 - client-fingerprint: firefox
-  name: '24|Channel id: @ShadowProxy66-211...'
-  network: ws
-  port: 443
-  server: 27.50.48.13
-  tls: true
-  type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  ws-opts:
-    headers:
-      Host: vless2-8vx.pages.dev
-- client-fingerprint: chrome
-  name: '24|Channel id: @ShadowProxy66-215...'
-  network: ws
-  port: 443
-  server: 104.17.147.208
-  servername: b.rack.sxsc.dpdns.org
-  tls: true
-  type: vless
-  uuid: 258ca28a-d982-4a40-b620-7c1c81108060
-  ws-opts:
-    headers:
-      Host: b.rack.sxsc.dpdns.org
-- name: '24|Channel id: @ShadowProxy66-216...'
-  network: ws
-  port: 443
-  server: 104.17.147.208
-  servername: b.rack.sxsc.dpdns.org
-  tls: true
-  type: vless
-  uuid: 258ca28a-d982-4a40-b620-7c1c81108060
-  ws-opts:
-    headers:
-      Host: b.rack.sxsc.dpdns.org
-    path: '%2F%3Fed%3D2048fp%3Dchrome'
-- client-fingerprint: qq
-  name: '24|Channel id: @ShadowProxy66-217...'
-  network: ws
-  port: 8443
-  server: 27.50.49.242
-  tls: true
-  type: vless
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  ws-opts:
-    headers:
-      Host: proxy-1cu.pages.dev
-- client-fingerprint: chrome
-  name: '24|Channel id: @ShadowProxy66-220...'
-  network: ws
-  port: 2087
-  server: 104.17.28.83
-  servername: whitecreeper.pages.dev
-  tls: true
-  type: vless
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  ws-opts:
-    headers:
-      Host: whitecreeper.pages.dev
-    path: '%2Fproxyip%3DProxyIP.SG.CMLiussss.Net'
-- client-fingerprint: chrome
-  name: '24|Channel id: @ShadowProxy66-221...'
-  network: ws
-  port: 2083
-  server: 27.50.49.154
-  servername: proxy-34l.pages.dev
-  tls: true
-  type: vless
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  ws-opts:
-    headers:
-      Host: proxy-34l.pages.dev
-    path: '%2F'
-- name: '24|Channel id: @ShadowProxy66-223...'
-  network: ws
-  port: 443
-  server: 27.50.48.6
-  servername: vless2-8vx.pages.dev
-  tls: true
-  type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  ws-opts:
-    headers:
-      Host: vless2-8vx.pages.dev
-    path: '%2Ffp%3Dchrome'
-- client-fingerprint: chrome
-  name: '24|Channel id: @ShadowProxy66-224...'
-  network: ws
-  port: 2096
-  server: 172.67.75.194
-  servername: whitecreeper.pages.dev
-  tls: true
-  type: vless
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  ws-opts:
-    headers:
-      Host: whitecreeper.pages.dev
-    path: '%2Fproxyip%3DProxyIP.SG.CMLiussss.Net'
-- client-fingerprint: ios
-  name: '24|Channel id: @ShadowProxy66-231...'
-  network: ws
-  port: 2083
-  server: 27.50.49.154
-  servername: proxy-34l.pages.dev
-  tls: true
-  type: vless
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  ws-opts:
-    headers:
-      Host: proxy-34l.pages.dev
-    path: '%2F%3FTELEGRAM--MARAMBASHI--MARAMBASHI%3Fed%3D512'
-- client-fingerprint: qq
-  name: '24|Channel id: @ShadowProxy66-234...'
-  network: ws
-  port: 2083
-  server: 27.50.49.154
-  tls: true
-  type: vless
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  ws-opts:
-    headers:
-      Host: proxy-34l.pages.dev
-- client-fingerprint: unsafe
-  name: '24|Channel id: @ShadowProxy66-236...'
-  network: ws
-  port: 443
-  server: 104.21.70.21
-  servername: nautica-cff.kloningstrife002.workers.dev
-  tls: true
-  type: vless
-  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
-  ws-opts:
-    headers:
-      Host: nautica-cff.kloningstrife002.workers.dev
-    path: '%2F138.2.74.219-28616'
-- name: '24|Channel id: @ShadowProxy66-239...'
-  network: ws
-  port: 2083
-  server: 27.50.49.154
-  servername: proxy-34l.pages.dev
-  tls: true
-  type: vless
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  ws-opts:
-    headers:
-      Host: proxy-34l.pages.dev
-    path: '%2Ffp%3Dchrome'
-- client-fingerprint: firefox
-  name: '24|Channel id: @ShadowProxy66-263...'
+  name: '24|Channel id: @ShadowProxy66-703...'
   network: ws
   port: 443
   server: www.zoom.us
   servername: matrix.phonicsindia.mobi
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: b19c62cc-f2c2-4895-aee1-978a0f58f8c8
@@ -1605,7 +1340,7 @@ proxies:
     headers:
       Host: matrix.phonicsindia.mobi
 - client-fingerprint: android
-  name: '24|Channel id: @ShadowProxy66-264...'
+  name: '24|Channel id: @ShadowProxy66-101...'
   network: ws
   port: 443
   server: www.zoom.us
@@ -1618,51 +1353,7 @@ proxies:
       Host: matrix.phonicsindia.mobi
     path: '%2F'
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '24|Channel id: @ShadowProxy66-58 ... #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: KcI3PoYu2yF7whv-e0C7JnRyUoUiUDu6tOlUBPYYbCk
-    short-id: 2e96bf6afa823abb
-  server: 134.255.211.36
-  servername: sg-sin.probe.geomyip.com
-  tls: false
-  type: vless
-  uuid: c5f59ef3-9540-49fa-bd1e-c6c2f79df49a
-  ws-opts:
-    headers:
-      Host: sg-sin.probe.geomyip.com
-- client-fingerprint: chrome
-  name: '24|Channel id: @ShadowProxy66-863...'
-  network: ws
-  port: 443
-  server: 104.17.147.208
-  servername: b.rack.sxsc.dpdns.org
-  tls: true
-  type: vless
-  uuid: 258ca28a-d982-4a40-b620-7c1c81108060
-  ws-opts:
-    headers:
-      Host: b.rack.sxsc.dpdns.org
-    path: '%2F%3Fed%3D2048'
-- alpn:
-  - h3
-  client-fingerprint: chrome
-  name: '24|Channel id: @ShadowProxy66-854...'
-  network: ws
-  port: 443
-  server: 104.17.147.208
-  servername: b.rack.sxsc.dpdns.org
-  tls: true
-  type: vless
-  uuid: 258ca28a-d982-4a40-b620-7c1c81108060
-  ws-opts:
-    headers:
-      Host: b.rack.sxsc.dpdns.org
-    path: '%2F%3Fed%3D2048'
-- client-fingerprint: chrome
-  name: '24|Channel id: @ShadowProxy66-919...'
+  name: '24|Channel id: @ShadowProxy66-734...'
   network: tcp
   port: 2053
   reality-opts:
@@ -1673,19 +1364,6 @@ proxies:
   tls: false
   type: vless
   uuid: 100cfbe2-afd5-40cf-84df-063b010ee759
-- client-fingerprint: random
-  name: '24|Channel id: @ShadowProxy66-105... #2'
-  network: ws
-  port: 443
-  server: www.visa.com.hk
-  servername: ap-south.862400.xyz
-  tls: true
-  type: vless
-  uuid: f520bd45-8e26-4a23-a227-2f91acb67928
-  ws-opts:
-    headers:
-      Host: ap-south.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
 - client-fingerprint: chrome
   name: 25|🇸🇬 新加坡|@ripaojiedian
   network: ws
@@ -2029,31 +1707,19 @@ proxies:
   udp: true
   uuid: fab8ca81-80ea-445e-ba31-f900007c2e4e
   xudp: true
-- client-fingerprint: random
+- auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  fingerprint: C1:FD:40:94:1F:91:9B:5C:78:96:24:40:97:F2:2D:9D:95:8E:62:5C:D9:58:B7:5F:34:CC:FA:42:18:1F:50:B2
+  name: '27|🇸🇬 新加坡 | SGP #3'
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 443
+  server: 54.255.214.149
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
   name: 27|🇸🇬 新加坡 | SGP 2
-  network: ws
-  port: 443
-  server: 139.180.144.145
-  servername: ap-south.862400.xyz
-  tls: true
-  type: vless
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 8443
+  server: 54.255.214.149
+  type: ss
   udp: true
-  uuid: f520bd45-8e26-4a23-a227-2f91acb67928
-  ws-opts:
-    headers:
-      Host: ap-south.862400.xyz
-    path: /announcement
-- client-fingerprint: random
-  name: '27|🇸🇬 新加坡 | SGP 3 #1'
-  network: ws
-  port: 443
-  server: 141.98.41.109
-  servername: ap-south.862400.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: f520bd45-8e26-4a23-a227-2f91acb67928
-  ws-opts:
-    headers:
-      Host: ap-south.862400.xyz
-    path: /announcement

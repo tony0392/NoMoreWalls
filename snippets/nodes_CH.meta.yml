@@ -72,8 +72,31 @@ proxies:
   type: http
   udp: true
   x-toolall-mihomo: true
+- name: 19,20|🇨🇭[www.v2nodes.com] vless-CH-1...
+  network: ws
+  port: 443
+  server: 83.228.193.229
+  servername: cj1-e06.pages.dev
+  tls: true
+  type: vless
+  uuid: 9be9e1e4-d1fc-4423-b22d-cd07a4381acb
+  ws-opts:
+    headers:
+      Host: cj1-e06.pages.dev
+    path: /?ed=2560fp=random
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
+  name: '19,20|🇸🇪[www.v2nodes.com] vless-SE-1... #1'
+  network: grpc
+  port: 48115
+  server: 138.124.86.230
+  servername: 138-124-86-230.sslip.io
+  tls: true
+  type: vless
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
 - client-fingerprint: chrome
-  name: 19|瑞士 001
+  name: 19|瑞士 003
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
@@ -88,7 +111,7 @@ proxies:
   http-opts:
     path:
     - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
-  name: 19|瑞士 002
+  name: 19|瑞士 004
   network: http
   packet-encoding: xudp
   port: 22
@@ -98,7 +121,7 @@ proxies:
   type: vless
   udp: true
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 19|瑞士 003
+- name: 19|瑞士 005
   network: ws
   packet-encoding: xudp
   port: 443
@@ -113,36 +136,59 @@ proxies:
     headers:
       Host: nbhhh.mrcool.kdns.fr
     path: /proxyip=3cfb8e26.tp30304.ip.090227.xyz
-- name: 20|🇨🇭[www.v2nodes.com] vless-CH-1...
-  network: ws
-  port: 443
-  server: 83.228.193.229
-  servername: cj1-e06.pages.dev
+- alterId: 0
+  cipher: auto
+  name: 19|瑞士 006
+  network: tcp
+  port: 38998
+  server: 178.83.45.29
+  skip-cert-verify: true
+  type: vmess
+  uuid: 48422300-458f-4dbb-b0f5-96f45450ab9f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 19|瑞士 007
+  network: tcp
+  port: 8443
+  server: 138.124.244.77
+  servername: fi1.hys.braidx.tech
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
-  uuid: 9be9e1e4-d1fc-4423-b22d-cd07a4381acb
-  ws-opts:
-    headers:
-      Host: cj1-e06.pages.dev
-    path: /?ed=2560fp=random
-- cipher: aes-256-gcm
-  name: 20|🇨🇭[www.v2nodes.com] ss-CH-1616...
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 23.166.88.127
-  type: ss
-- cipher: aes-256-gcm
-  name: 20|🇨🇭[www.v2nodes.com] ss-CH-1615...
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 186.190.215.251
-  type: ss
-- cipher: aes-256-gcm
-  name: '20|🇨🇭[www.v2nodes.com] ss-CH-1615... #1'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 79.127.184.104
-  type: ss
+  udp: true
+  uuid: 8787dd0a-095a-414e-804f-a7d16a1ae166
+- client-fingerprint: chrome
+  name: 19|瑞士 008
+  network: tcp
+  port: 443
+  server: 179.43.187.67
+  servername: portal.mavexa.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9dd38d60-e683-47c6-bd53-d71bdfee78f3
+- name: 19|瑞士 009
+  network: tcp
+  port: 2086
+  server: 138.124.123.127
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b6606cb0-e15d-4813-94af-985028c4b9f3
+- alterId: 0
+  cipher: auto
+  name: 19|瑞士 010
+  network: http
+  port: 42831
+  server: 179.43.140.24
+  skip-cert-verify: true
+  type: vmess
+  uuid: a925a98c-ad7a-40c6-9fdf-130a1de69416
 - name: 20|🇨🇭[www.v2nodes.com] trojan-CH-...
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -154,66 +200,28 @@ proxies:
   port: 443
   server: 208.69.78.158
   type: trojan
-- client-fingerprint: random
-  name: '24|免费订阅 #9'
-  network: ws
-  port: 443
-  server: 79.132.141.219
-  servername: eu-central.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: eu-central.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #16'
-  network: ws
-  port: 443
-  server: 83.228.199.3
-  servername: it-mil.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: it-mil.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
-- client-fingerprint: random
-  name: '24|免费订阅 #108'
-  network: ws
-  port: 443
-  server: 45.59.123.132
-  servername: jp-osa.862400.xyz
-  tls: true
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: jp-osa.862400.xyz
-    path: '%2Fannouncement%3Fed%3D2048'
 - client-fingerprint: firefox
-  name: '24|Channel id: @ShadowProxy66-108...'
+  flow: xtls-rprx-vision
+  name: 24|zhuhai.uk 🇨🇭瑞士
+  network: tcp
+  port: 53443
+  reality-opts:
+    public-key: YvlWGguQktrE_wPwSX81SVj9CBaCEe38PlcJLm1q0jc
+    short-id: f30d7b13beb4fda3
+  server: 136.176.75.174
+  servername: ch.nuvio.ink
+  tls: false
+  type: vless
+  uuid: b8318808-1193-4879-b2c2-6fc638e4101d
+- client-fingerprint: firefox
+  name: 24|🇨🇭_瑞士 (12)
   network: ws
   port: 443
   server: 185.18.250.2
+  servername: worker3.sicoro1729.workers.dev
+  skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 5c9e3f77-5bde-4732-af3c-6a5d3ecee37a
+  uuid: 10997f19-2951-4a9b-a26f-611a6bd72d02
   ws-opts:
-    headers:
-      Host: worker3.wewotes286.workers.dev
-- client-fingerprint: chrome
-  name: '24|Channel id: @ShadowProxy66-893...'
-  network: ws
-  port: 443
-  server: 193.233.219.98
-  servername: vpn-rating.space
-  tls: true
-  type: vless
-  uuid: 265ecca2-4733-49de-b2c9-ed7f0e999655
-  ws-opts:
-    headers:
-      Host: vpn-rating.space
-    path: '%2Fapi%2Fvless'
+    path: '%2F'

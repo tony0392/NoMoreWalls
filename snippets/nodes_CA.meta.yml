@@ -420,30 +420,6 @@ proxies:
     headers:
       Host: jp3.yohototo.top
     path: /tyxyws
-- name: 15|D🔴🇨🇦hos[🤖💬🔮🧩]_dokng.com_8a105a...
-  port: 9443
-  server: 198.44.142.27
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 15|D🔴🇨🇦hos[🤖💬🧩🎭]_dokng.com_201714...
-  port: 9443
-  server: 149.88.98.81
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 15|C🟠🇨🇦hos[🤖💬🔮🎮]_dokng.com_1a96ab...
-  port: 443
-  server: 142.44.210.129
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
 - alterId: 0
   cipher: auto
   name: 19|加拿大 001
@@ -549,22 +525,16 @@ proxies:
   type: vless
   udp: true
   uuid: 0aec6598-7fb5-44e6-bff7-a4d550117830
-- client-fingerprint: chrome
-  name: 19|加拿大 010
-  network: ws
-  port: 443
-  server: 167.17.183.99
-  servername: denot-8up7.edge-mil-jgpthc.workers.dev
+- name: '19,24|未命名 #105'
+  network: vless
+  port: 1003
+  server: 142.132.140.143
   skip-cert-verify: false
   tfo: false
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: 69279e79-7938-4e75-8560-705f3d056ade
-  ws-opts:
-    headers:
-      Host: denot-8up7.edge-mil-jgpthc.workers.dev
-    path: /stream/DEVCOP/705f3d056ade/loc-0?ed=2048
+  uuid: 0e6cd6ca-fba2-4b86-923c-f0a021f7ad15
 - name: 19|加拿大 011
   network: tcp
   port: 443
@@ -782,11 +752,23 @@ proxies:
   port: 5000
   server: 51.222.200.165
   type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇦[www.v2nodes.com] ss-CA-1557...
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 51.222.136.236
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 20|🇨🇦[www.v2nodes.com] ss-CA-1555...
   password: 575hiopq2h28yao6
   port: 8080
   server: 15.235.121.109
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇦[www.v2nodes.com] ss-CA-1546...
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 51.222.155.32
   type: ss
 - cipher: aes-256-gcm
   name: 20|🇨🇦[www.v2nodes.com] ss-CA-1545...
@@ -803,26 +785,224 @@ proxies:
 - name: 20|🇨🇦[www.v2nodes.com] trojan-CA-...
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
+  server: 216.152.147.152
+  type: trojan
+- name: '20|🇨🇦[www.v2nodes.com] trojan-CA-... #1'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
   server: 216.152.147.93
   sni: connectingpeoplewithgreatjobs.com
   type: trojan
-- name: '20|🇨🇦[www.v2nodes.com] trojan-CA-... #1'
+- name: '20|🇨🇦[www.v2nodes.com] trojan-CA-... #2'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.74
+  type: trojan
+- name: '20|🇨🇦[www.v2nodes.com] trojan-CA-... #3'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 216.152.147.79
   skip-cert-verify: false
   sni: blog.connectingpeoplewithgreatjobs.com
   type: trojan
-- name: '20|🇨🇦[www.v2nodes.com] trojan-CA-... #2'
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: 20,27|🇨🇦 加拿大 | CAN 2
+  network: ws
+  port: 16641
+  server: p6-olduser.linuxlh.xin
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  ws-opts:
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 20|🇨🇦 加拿大 | CAN
+  network: tcp
+  port: 2109
+  reality-opts:
+    public-key: 9S_C2iPVkWxxGjYN5xUZ7tzbD7vl18mLg9j7qsC_DzY
+    short-id: cdba94063c08331c
+  server: dtt4.toe.qd.je
+  servername: www.microsoft.com
+  tls: true
+  type: vless
+  uuid: 06dd972d-3916-4ac3-a1de-6def65c751e8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 24|v2go | 🇨🇦 CA | VLESS | 37
+  network: tcp
   port: 443
-  server: 216.152.147.152
-  type: trojan
-- name: '20|🇨🇦[www.v2nodes.com] trojan-CA-... #3'
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  reality-opts:
+    public-key: l0I4SmPtUDyjp1PAeSxBJ5qr9vubCOl9w3b-eDI4x24
+    short-id: d432fe14bbdc17f6
+  server: 51.161.204.242
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 3c778768-d511-4221-8be3-3eba45640e9e
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 24|v2go | 🇨🇦 CA | VLESS | 115
+  network: tcp
   port: 443
-  server: 216.152.147.74
-  type: trojan
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  server: 130.12.242.106
+  servername: deepl.com
+  tls: false
+  type: vless
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+  ws-opts:
+    headers:
+      Host: '%2F%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 24|v2go | 🇨🇦 CA | VLESS | 148
+  network: tcp
+  port: 2093
+  reality-opts:
+    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
+    short-id: 8a9725533854a7e8
+  server: 185.71.216.95
+  servername: www.apple.com
+  tls: false
+  type: vless
+  uuid: 8b7a8f61-74c0-491f-bbba-ea153edb1a4b
+- name: 24|v2go | 🇨🇦 CA | VLESS | 582
+  network: tcp
+  port: 21003
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: f3602a3a1cf928b7
+  server: 103.106.229.177
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+- name: 24|v2go | 🇨🇦 CA | VLESS | 593
+  network: tcp
+  port: 21001
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: ab39fc68ab3dee81
+  server: 103.106.229.37
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+- client-fingerprint: random
+  name: '24|AVToday.io #51'
+  network: ws
+  port: 443
+  server: 104.26.14.111
+  servername: cj1-e06.pages.dev
+  tls: true
+  type: vless
+  uuid: 9be9e1e4-d1fc-4423-b22d-cd07a4381acb
+  ws-opts:
+    headers:
+      Host: cj1-e06.pages.dev
+    path: '%2F'
+- client-fingerprint: random
+  name: '24|AVToday.io #60'
+  network: ws
+  port: 443
+  server: 104.17.125.98
+  servername: cj1-e06.pages.dev
+  tls: true
+  type: vless
+  uuid: 9be9e1e4-d1fc-4423-b22d-cd07a4381acb
+  ws-opts:
+    headers:
+      Host: cj1-e06.pages.dev
+    path: '%2F%3Fed%3D2560'
+- client-fingerprint: random
+  name: '24|AVToday.io #68'
+  network: ws
+  port: 443
+  server: 172.66.0.118
+  servername: cj1-e06.pages.dev
+  tls: true
+  type: vless
+  uuid: 9be9e1e4-d1fc-4423-b22d-cd07a4381acb
+  ws-opts:
+    headers:
+      Host: cj1-e06.pages.dev
+    path: '%2F%3Fed%3D2560'
+- client-fingerprint: random
+  name: '24|AVToday.io #11'
+  network: ws
+  port: 2083
+  server: 147.182.158.54
+  servername: cj1-e06.pages.dev
+  tls: true
+  type: vless
+  uuid: 9be9e1e4-d1fc-4423-b22d-cd07a4381acb
+  ws-opts:
+    headers:
+      Host: cj1-e06.pages.dev
+    path: '%2F'
+- client-fingerprint: random
+  name: '24|AVToday.io #20'
+  network: ws
+  port: 443
+  server: 172.67.67.89
+  servername: it-mil.862400.xyz
+  tls: true
+  type: vless
+  uuid: f520bd45-8e26-4a23-a227-2f91acb67928
+  ws-opts:
+    headers:
+      Host: it-mil.862400.xyz
+    path: '%2Fannouncement'
+- client-fingerprint: random
+  name: '24|AVToday.io #29'
+  network: ws
+  port: 443
+  server: bestcf.030101.xyz
+  servername: ap-south.862400.xyz
+  tls: true
+  type: vless
+  uuid: f520bd45-8e26-4a23-a227-2f91acb67928
+  ws-opts:
+    headers:
+      Host: ap-south.862400.xyz
+    path: '%2Fannouncement'
+- client-fingerprint: random
+  name: '24|AVToday.io #38'
+  network: ws
+  port: 443
+  server: 104.16.240.177
+  servername: cj1-e06.pages.dev
+  tls: true
+  type: vless
+  uuid: 9be9e1e4-d1fc-4423-b22d-cd07a4381acb
+  ws-opts:
+    headers:
+      Host: cj1-e06.pages.dev
+    path: '%2F'
+- client-fingerprint: random
+  name: '24|AVToday.io #39'
+  network: ws
+  port: 443
+  server: 104.19.34.37
+  servername: ap-south.862400.xyz
+  tls: true
+  type: vless
+  uuid: f520bd45-8e26-4a23-a227-2f91acb67928
+  ws-opts:
+    headers:
+      Host: ap-south.862400.xyz
+    path: '%2Fannouncement'
 - client-fingerprint: chrome
   name: 24|🇨🇦加拿大 zhuhai.uk 50.71MB/s
   network: ws
@@ -907,6 +1087,130 @@ proxies:
     headers:
       Host: free-7f1.pages.dev
     path: '%2F'
+- client-fingerprint: random
+  name: '24|免费订阅 #44'
+  network: ws
+  port: 443
+  server: 172.67.67.89
+  servername: us-lax.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: us-lax.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #60'
+  network: ws
+  port: 443
+  server: 104.18.33.121
+  servername: jp-osa.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: jp-osa.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- alpn:
+  - http/1.1
+  client-fingerprint: unsafe
+  flow: xtls-rprx-vision
+  name: '24|免费订阅 #67'
+  network: ws
+  port: 443
+  server: perplexity.com
+  servername: new.exploring.cyou
+  tls: true
+  type: vless
+  uuid: 628347a0-6582-4202-9aa8-2eaa8140dc25
+  ws-opts:
+    headers:
+      Host: new.exploring.cyou
+    path: '%2Ft.me-SubGift'
+- client-fingerprint: random
+  name: '24|免费订阅 #71'
+  network: ws
+  port: 443
+  server: 104.19.149.171
+  servername: eu-central.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: eu-central.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #76'
+  network: ws
+  port: 443
+  server: 104.17.125.98
+  servername: nl-ams.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: nl-ams.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #77'
+  network: ws
+  port: 443
+  server: 162.159.198.1
+  servername: se-sto.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: se-sto.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- client-fingerprint: random
+  name: '24|免费订阅 #79'
+  network: ws
+  port: 443
+  server: 104.26.14.111
+  servername: it-mil.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: it-mil.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '24|免费订阅 #85'
+  network: xhttp
+  port: 2087
+  server: www.hyby.ir
+  servername: www.hyby.ir
+  tls: true
+  type: vless
+  uuid: 316acccc-720d-499e-a92d-9caa7a26c495
+  ws-opts:
+    headers:
+      Host: www.hyby.ir
+    path: '%2F'
+- client-fingerprint: random
+  name: '24|免费订阅 #92'
+  network: ws
+  port: 8443
+  server: 24.150.16.183
+  servername: eu-central.862400.xyz
+  tls: true
+  type: vless
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: eu-central.862400.xyz
+    path: '%2Fannouncement%3Fed%3D2048'
 - name: 26|🟢🇨🇦[🎬🤖📺🔍]_github.com/Ruk1ng001...
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
   port: 20051
@@ -920,4 +1224,12 @@ proxies:
   port: 38388
   server: 103.186.154.25
   type: ss
+  udp: true
+- name: '27|🇨🇦 加拿大 | CAN #1'
+  password: 26ba2310-31aa-4fe6-86b1-47fcd14cabb2
+  port: 443
+  server: im.lovehk.xyz
+  skip-cert-verify: true
+  sni: im.lovehk.xyz
+  type: anytls
   udp: true

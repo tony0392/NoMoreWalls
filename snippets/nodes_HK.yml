@@ -588,37 +588,52 @@ proxies:
     headers:
       Host: U2FRxj0G13vDI0Wo.v.3dns.vip
     path: /ws-vmess
-- name: 12,14,20|🇳🇬[www.v2nodes.com] trojan-NG-...
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  port: 20103
-  server: sclass-01.catcat321.com
-  servername: hk.catxstar.com
-  skip-cert-verify: false
-  sni: hk.catxstar.com
-  tls: true
-  type: trojan
-  udp: true
 - cipher: aes-256-gcm
   name: 20|🇭🇰[www.v2nodes.com] ss-HK-1621...
   password: AMok40FfaM+Ikwre16psBpVk6JHxsQZw
   port: 8388
   server: 209.248.57.105
   type: ss
-- alpn:
-  - ''
-  alterId: 0
+- name: 20,27|🇭🇰 香港 | HKG 7
+  password: '!!str 12012'
+  port: 12012
+  server: 47.242.93.89
+  skip-cert-verify: true
+  sni: ali-hk.b-gfw.cfd
+  type: trojan
+  udp: true
+- alterId: 0
   cipher: auto
-  name: '20|🇭🇰 香港 | HKG #1'
+  name: 20|🇭🇰 香港 | HKG 2
   network: ws
-  port: 36703
-  server: 47.244.120.197
+  port: 16632
+  server: pdmv4.xiaoyan.io
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
   ws-opts:
-    path: /arki
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 20|🇭🇰HK_2|3.1MB/s
+  network: ws
+  port: 16622
+  server: byr3a.xiaoyan.io
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  ws-opts:
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+    path: /
+  xudp: true
 - name: 23|香港[01]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 158

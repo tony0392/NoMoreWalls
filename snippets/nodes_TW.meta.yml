@@ -40,19 +40,6 @@ proxies:
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 12,24|🇹🇼_台湾 (10)
-  network: tcp
-  port: 19482
-  reality-opts:
-    public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
-    short-id: fa514b83
-  server: free.fugui.lol
-  servername: swdist.apple.com
-  tls: false
-  type: vless
-  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
-- client-fingerprint: chrome
   name: 13|🇹TW丨yoyapai.com
   port: 443
   reality-opts:
@@ -68,8 +55,7 @@ proxies:
   uuid: 31a40f42-4ad6-4a32-a760-71102b459584
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 24,28|TW_speednode_0026
-  network: tcp
+  name: 20|🇹🇼_TW_台湾_IPV4
   port: 47396
   reality-opts:
     public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
@@ -77,45 +63,56 @@ proxies:
   server: free.fugui.lol
   servername: swdist.apple.com
   skip-cert-verify: false
+  sni: swdist.apple.com
+  tls: true
+  type: vless
+  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 24|v2go | 🇹🇼 TW | VLESS | 129
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lJz7AGWUC-ZTEIJaU5y1GRrROWJ9J_VzQRyrYPmOygs
+    short-id: fd2fa5e06670120b
+  server: 85.237.207.221
+  servername: dl.google.com
+  tls: false
+  type: vless
+  uuid: b59bcb5b-5150-4c6b-9227-681886197014
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 25|🇹🇼 台湾|@ripaojiedian
+  network: tcp
+  port: 11102
+  reality-opts:
+    public-key: oW6HMjniDmBJdjGKwhBAIS2zMS1VvHORubh9vdazqQ0
+    short-id: ed571d022f7bc3bf
+  server: 116.213.43.43
+  servername: www.apple.com
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
-  ws-opts:
-    headers:
-      Host: swdist.apple.com
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 24|🇹🇼_台湾 (11)
-  network: tcp
-  port: 51283
-  reality-opts:
-    public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
-    short-id: fa514b83
-  server: free.fugui.lol
-  servername: swdist.apple.com
-  tls: false
+  uuid: 530d31fc-2690-49e4-bfc9-3f991e145008
+- client-fingerprint: chrome
+  name: 25|🇹🇼 台湾3|@ripaojiedian
+  network: ws
+  port: 8443
+  server: 154.40.61.186
+  servername: senflarelink-node-wj1gsa.pages.dev
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
-  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
+  udp: true
+  uuid: b69cf773-da16-486e-afce-a45b94f998b3
   ws-opts:
     headers:
-      Host: swdist.apple.com
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 24|🇹🇼_台湾 (9)
-  network: tcp
-  port: 62015
-  reality-opts:
-    public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
-    short-id: fa514b83
-  server: free.fugui.lol
-  servername: swdist.apple.com
-  tls: false
-  type: vless
-  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
-  ws-opts:
-    headers:
-      Host: swdist.apple.com
+      Host: senflarelink-node-wj1gsa.pages.dev
+    path: /
+    v2ray-http-upgrade: false
 - name: '26|🟢🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001... #16'
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 1443

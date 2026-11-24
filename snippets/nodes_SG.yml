@@ -551,21 +551,16 @@ proxies:
     headers:
       Host: d16henb377mok4.cloudfront.net
     path: /stream
-- name: 8|🇸🇬SG_88
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  port: 20051
-  server: sclass-c2.catcat321.com
+- name: 8|🇸🇬SG_79
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  port: 20103
+  server: sclass-01.catcat321.com
   type: trojan
-- name: 12,14|US美国(mibei77.com 米贝节点分享) (18)
+- name: 8|🇸🇬SG_80
   password: d7563108-615c-4338-a7bd-77f359869a4a
   port: 20051
   server: sclass-b1.catcat321.com
-  servername: hk.catxstar.com
-  skip-cert-verify: false
-  sni: hk.catxstar.com
-  tls: true
   type: trojan
-  udp: true
 - name: 14,20|🇳🇬[www.v2nodes.com] trojan-NG-...
   password: d7563108-615c-4338-a7bd-77f359869a4a
   port: 20103
@@ -856,14 +851,28 @@ proxies:
     headers:
       Host: 18.143.101.83
     path: /cctv13/hd.m3u8
+- name: 20,27|🇸🇬 新加坡 | SGP 6
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  port: 443
+  server: 77.93.89.2
+  servername: bgsg1.hikigo.com
+  skip-cert-verify: true
+  sni: bgsg1.hikigo.com
+  tls: true
+  type: trojan
+  udp: true
+- name: '20,27|🇸🇬 新加坡 | SGP 2 #1'
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  port: 443
+  server: bgsg1.hikigo.com
+  servername: bgsg1.hikigo.com
+  skip-cert-verify: true
+  sni: bgsg1.hikigo.com
+  tls: true
+  type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 20|🇸🇬[www.v2nodes.com] ss-SG-1616...
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 51.79.228.131
-  type: ss
-- cipher: aes-256-gcm
-  name: '20|🇸🇬[www.v2nodes.com] ss-SG-1616... #1'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 15.235.182.183
@@ -886,14 +895,6 @@ proxies:
   port: 19999
   server: 149.88.107.47
   type: ss
-- name: 20,27|🇸🇬 新加坡 | SGP 4
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  port: 443
-  server: bgsg1.hikigo.com
-  skip-cert-verify: true
-  sni: bgsg1.hikigo.com
-  type: trojan
-  udp: true
 - name: '20|🇸🇬[www.v2nodes.com] trojan-SG-... #1'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -901,6 +902,34 @@ proxies:
   skip-cert-verify: false
   sni: exploredigitaljobplatformandfindonlinework.com
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '20|🇸🇬 新加坡 | SGP #1'
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 8443
+  server: 13.212.45.108
+  type: ss
+  udp: true
+- name: '20|🇸🇬 新加坡 | SGP #4'
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  port: 443
+  server: hkzfsg1.mateflora.com
+  skip-cert-verify: true
+  sni: hkzfsg1.mateflora.com
+  type: trojan
+  udp: true
+- name: 20|🇸🇬 新加坡 | SGP 3
+  network: ws
+  password: bfc876fe-ecbc-4c13-a969-4b757e9e76fb
+  port: 443
+  server: sg2.998998.best
+  skip-cert-verify: true
+  sni: nat6.9966338.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: nat6.9966338.xyz
+    path: /eriujtheriughwiue?ed=2560
 - name: 23|新加坡[02]
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
@@ -1071,10 +1100,22 @@ proxies:
       Host: aflzzul.meiquankongjian.com
     path: /564dfa20/
   xudp: true
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: 27|🇸🇬 新加坡 | SGP 5
+  port: 37745
+  server: 5.223.59.197
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f5e6c025-8e07-4fb5-92dd-0b856f0fbf12
 - cipher: chacha20-ietf-poly1305
-  name: 27|🇸🇬 新加坡 | SGP 6
+  name: 27|🇸🇬 新加坡 | SGP 8
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 8443
-  server: 13.229.234.50
+  server: 47.129.253.166
   type: ss
   udp: true

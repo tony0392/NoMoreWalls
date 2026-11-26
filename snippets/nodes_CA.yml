@@ -255,7 +255,7 @@ proxies:
   uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
 - alterId: 64
   cipher: auto
-  name: 19|加拿大 008
+  name: 19|加拿大 012
   network: ws
   port: 443
   server: 142.171.79.10
@@ -269,7 +269,7 @@ proxies:
     path: /path/1704276466760
 - alterId: 64
   cipher: auto
-  name: 19|加拿大 009
+  name: 19|加拿大 013
   network: ws
   port: 443
   server: 142.171.215.99
@@ -283,7 +283,7 @@ proxies:
     path: /path/1704188270531
 - alterId: 64
   cipher: auto
-  name: 19|加拿大 010
+  name: 19|加拿大 014
   network: ws
   port: 443
   server: 142.171.61.106
@@ -297,7 +297,7 @@ proxies:
     path: /path/1704188270531
 - alterId: 64
   cipher: auto
-  name: 19|加拿大 011
+  name: 19|加拿大 015
   network: ws
   port: 443
   server: 142.171.238.19
@@ -311,7 +311,7 @@ proxies:
     path: /path/1703493333049
 - alterId: 64
   cipher: auto
-  name: 19|加拿大 012
+  name: 19|加拿大 016
   network: ws
   port: 443
   server: 142.171.237.242
@@ -325,7 +325,7 @@ proxies:
     path: /path/1704188270531
 - alterId: 64
   cipher: auto
-  name: 19|加拿大 013
+  name: 19|加拿大 017
   network: ws
   port: 443
   server: 142.171.141.211
@@ -339,7 +339,7 @@ proxies:
     path: /path/1703924658447
 - alterId: 64
   cipher: auto
-  name: 19|加拿大 014
+  name: 19|加拿大 018
   network: ws
   port: 443
   server: 142.171.215.52
@@ -353,7 +353,7 @@ proxies:
     path: /path/1704188270531
 - alterId: 64
   cipher: auto
-  name: 19|加拿大 015
+  name: 19|加拿大 019
   network: ws
   port: 443
   server: 142.171.187.178
@@ -367,7 +367,7 @@ proxies:
     path: /path/1704188270531
 - alterId: 64
   cipher: auto
-  name: 19|加拿大 016
+  name: 19|加拿大 020
   network: ws
   port: 443
   server: 142.171.149.75
@@ -381,7 +381,60 @@ proxies:
     path: /path/1704188270531
 - alterId: 0
   cipher: auto
-  name: 19|加拿大 017
+  name: 19|加拿大 023
+  network: ws
+  port: 443
+  server: hohm.microsoft.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
+  ws-opts:
+    headers:
+      Host: hohm.microsoft.com
+    path: /9JZFDTKE
+- alterId: 0
+  cipher: auto
+  name: 19|加拿大 024
+  network: ws
+  port: 80
+  server: 165.154.246.71
+  skip-cert-verify: true
+  type: vmess
+  uuid: 13581ae8-65c9-4fbe-9c78-77fac9ca503a
+  ws-opts:
+    headers:
+      Host: 165.154.246.71
+    path: ?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 19|加拿大 025
+  network: ws
+  port: 443
+  server: tw-1.qwqjsq.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: b0543a3b-d690-3ed9-9a81-f24f852e74f7
+  ws-opts:
+    headers:
+      Host: tw-1.qwqjsq.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|加拿大 026
+  network: ws
+  port: 80
+  server: 165.154.246.107
+  skip-cert-verify: true
+  type: vmess
+  uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|加拿大 027
   network: tcp
   port: 22324
   server: 198.57.27.212
@@ -401,16 +454,16 @@ proxies:
   server: 51.79.85.185
   type: ss
 - cipher: aes-256-gcm
+  name: 20|🇨🇦[www.v2nodes.com] ss-CA-1558...
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 51.222.200.165
+  type: ss
+- cipher: aes-256-gcm
   name: 20|🇨🇦[www.v2nodes.com] ss-CA-1557...
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 51.222.136.236
-  type: ss
-- cipher: aes-256-gcm
-  name: 20|🇨🇦[www.v2nodes.com] ss-CA-1546...
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 51.222.155.32
   type: ss
 - cipher: aes-256-gcm
   name: 20|🇨🇦[www.v2nodes.com] ss-CA-1545...
@@ -427,15 +480,22 @@ proxies:
 - name: 20|🇨🇦[www.v2nodes.com] trojan-CA-...
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 216.152.147.152
+  server: 216.152.147.93
+  sni: connectingpeoplewithgreatjobs.com
   type: trojan
 - name: '20|🇨🇦[www.v2nodes.com] trojan-CA-... #1'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 216.152.147.93
-  sni: connectingpeoplewithgreatjobs.com
+  server: 216.152.147.79
+  skip-cert-verify: false
+  sni: blog.connectingpeoplewithgreatjobs.com
   type: trojan
 - name: '20|🇨🇦[www.v2nodes.com] trojan-CA-... #2'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.152
+  type: trojan
+- name: '20|🇨🇦[www.v2nodes.com] trojan-CA-... #3'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 216.152.147.74
@@ -452,5 +512,12 @@ proxies:
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.25
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 27|🇨🇦 加拿大 | CAN
+  password: d98d7ec5-24d7-4ed8-8329-728b2c7ad1c5
+  port: 21195
+  server: 038b7750485a79a0.lebufflonfermegroup.us
   type: ss
   udp: true

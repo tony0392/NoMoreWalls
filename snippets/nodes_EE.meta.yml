@@ -32,6 +32,22 @@ proxies:
   type: vless
   udp: true
   uuid: 629f88a6-b20b-4489-a22f-4d8b418c0488
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '12,24|西班牙(v2clash.blog 2026-11.23更新) #5'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  server: 196.196.148.76
+  servername: 8a2e72t.nl20.h1clayd.shop
+  tls: false
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  ws-opts:
+    headers:
+      Host: 8a2e72t.nl20.h1clayd.shop
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 13|🇪🇪EE爱沙尼亚丨yoyapai.com (2)
@@ -47,40 +63,12 @@ proxies:
   type: vless
   udp: true
   uuid: 2acc3742-c568-11f1-9902-a337233c6cda
-- name: 19|爱沙尼亚 001
-  network: tcp
-  port: 443
-  server: 85.9.194.75
-  skip-cert-verify: false
-  tfo: false
+- name: 20|🇪🇪EE_1|2.1MB/s
+  port: 9443
+  server: 95.153.31.66
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-- client-fingerprint: chrome
-  name: 19|爱沙尼亚 002
-  network: xhttp
-  port: 443
-  server: 107.150.93.43
-  servername: e9958027.ferrin.uk
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e9958027-03be-4eb5-bcec-70415b2e4844
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 20,24|v2go | 🇪🇪 EE | VLESS | 108
-  network: tcp
-  port: 8443
-  server: 165.231.157.126
-  servername: api-6b04608f.adhil.uk
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0173d52e-8e1b-4681-831e-11529677b72f
+  type: http
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 24|赛博仙人
@@ -97,10 +85,25 @@ proxies:
     headers:
       Host: us7fs3.proxen.pdevinfra.com
     path: '%2F'
-- cipher: aes-128-gcm
-  name: '27|🇪🇪 爱沙尼亚 | EST #1'
-  password: d98d7ec5-24d7-4ed8-8329-728b2c7ad1c5
-  port: 35194
-  server: 038b7750485a79a0.lebufflonfermegroup.us
-  type: ss
+- flow: xtls-rprx-vision
+  name: 24|🇪🇪 🔌 Эстония | [🏳️LTE]
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: _MeP-WwmolUvi6wMXNoSs_zo6miG_OW7xk4ibzADiHY
+  server: 31.56.187.209
+  servername: es-maps-revers.keno.su
+  tls: false
+  type: vless
+  uuid: 0259e5aa-c188-4334-b204-32cd5ea859f6
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 27|🇪🇪 爱沙尼亚 | EST
+  network: tcp
+  port: 8443
+  server: 196.198.111.179
+  servername: api-6b04608f.adhil.uk
+  tls: true
+  type: vless
   udp: true
+  uuid: 0173d52e-8e1b-4681-831e-11529677b72f
